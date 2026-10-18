@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_00": {
+  "text": "United 405, runway 27R, wind 080 at 9 August 23, cleared for takeoff.",
+  "asr_s": 0.243
+ },
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_01": {
+  "text": "United 405, cleared for takeoff runway 27R.",
+  "asr_s": 0.186
+ },
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_02": {
+  "text": "Endeavour 10-84, runway 2-7 right, cleared to land.",
+  "asr_s": 0.201
+ },
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_03": {
+  "text": "Endeavour 1084, Roger, cleared to land runway 27R.",
+  "asr_s": 0.212
+ }
+}

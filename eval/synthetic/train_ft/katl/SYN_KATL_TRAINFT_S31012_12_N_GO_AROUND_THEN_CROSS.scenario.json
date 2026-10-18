@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31012_12_N_GO_AROUND_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_GO_AROUND_THEN_CROSS",
+ "basis": "go-around releases the landing (3-8-1), then a crossing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31012,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "R3",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier two seventeen, runway niner right cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31012_12_N_GO_AROUND_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Frontier two seventeen, roger, cleared to land runway niner right.",
+   "id": "SYN_KATL_TRAINFT_S31012_12_N_GO_AROUND_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 30,
+   "speaker": "ATC",
+   "text": "Frontier two seventeen, go around, fly runway heading, climb and maintain two thousand.",
+   "id": "SYN_KATL_TRAINFT_S31012_12_N_GO_AROUND_THEN_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 33,
+   "speaker": "PILOT",
+   "text": "Frontier two seventeen, going around.",
+   "id": "SYN_KATL_TRAINFT_S31012_12_N_GO_AROUND_THEN_CROSS_03",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "ATC",
+   "text": "American twenty one fifty six, cross runway niner right at taxiway Romeo three, without delay.",
+   "id": "SYN_KATL_TRAINFT_S31012_12_N_GO_AROUND_THEN_CROSS_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 49,
+   "speaker": "PILOT",
+   "text": "Crossing runway niner right at Romeo three, American twenty one fifty six.",
+   "id": "SYN_KATL_TRAINFT_S31012_12_N_GO_AROUND_THEN_CROSS_05",
+   "speaker_ref": "b"
+  }
+ ]
+}

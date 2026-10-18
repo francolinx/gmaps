@@ -1,0 +1,26 @@
+{
+ "SYN_KLGA_DEV4_07_C_HOLD_NO_READBACK_00": {
+  "text": "American six two zero, runway four cleared to land.",
+  "asr_s": 0.185
+ },
+ "SYN_KLGA_DEV4_07_C_HOLD_NO_READBACK_01": {
+  "text": "Clear to land four, American six two zero.",
+  "asr_s": 0.18
+ },
+ "SYN_KLGA_DEV4_07_C_HOLD_NO_READBACK_02": {
+  "text": "Delta three four one, hold short of runway four.",
+  "asr_s": 0.191
+ },
+ "SYN_KLGA_DEV4_07_C_HOLD_NO_READBACK_03": {
+  "text": "Roger, Delta three four one.",
+  "asr_s": 0.169
+ },
+ "SYN_KLGA_DEV4_07_C_HOLD_NO_READBACK_04": {
+  "text": "Delta three four one, read back hold instructions.",
+  "asr_s": 0.186
+ },
+ "SYN_KLGA_DEV4_07_C_HOLD_NO_READBACK_05": {
+  "text": "Holding short runway four, Delta three four one.",
+  "asr_s": 0.173
+ }
+}

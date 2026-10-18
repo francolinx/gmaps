@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT3_13_N_LUAW_THEN_TKOF_00": {
+  "text": "Nation C312 Numa, runway 4, line up and wait. Traffic of Boeing 737, 2 mile final.",
+  "asr_s": 0.261
+ },
+ "SYN_KLGA_HELDOUT3_13_N_LUAW_THEN_TKOF_01": {
+  "text": "Citation 2312 Lima, line up and wait runway four.",
+  "asr_s": 0.186
+ },
+ "SYN_KLGA_HELDOUT3_13_N_LUAW_THEN_TKOF_02": {
+  "text": "Citation 2312 Lima, runway 4, full length, cleared for takeoff.",
+  "asr_s": 0.222
+ },
+ "SYN_KLGA_HELDOUT3_13_N_LUAW_THEN_TKOF_03": {
+  "text": "Citation 2312 Lima cleared for takeoff runway 4.",
+  "asr_s": 0.187
+ }
+}

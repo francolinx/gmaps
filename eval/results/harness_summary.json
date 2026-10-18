@@ -1,0 +1,114 @@
+{
+ "synthetic_heldout4": {
+  "set": "synthetic_heldout4_wprompt_runtime_trafficrealistic_llm_repair",
+  "scenarios": 32,
+  "transmissions": 138,
+  "scored": 138,
+  "unscored": 0,
+  "callsign_acc": 0.862,
+  "runway_acc": 0.877,
+  "instruction_acc": 0.971,
+  "by_category": {
+   "conflict_alerts (as in rounds 1-2: conflict + missed_readback)": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1.0,
+    "recall": 0.786
+   },
+   "conflict_alerts without llm_parse alerts": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1.0,
+    "recall": 0.786
+   },
+   "conflict_alerts without callsign_repaired alerts": {
+    "tp": 9,
+    "fp": 0,
+    "fn": 5,
+    "precision": 1.0,
+    "recall": 0.643
+   },
+   "callsign_repaired_alerts": {
+    "scenarios_with_one": 2,
+    "of_which_expected": 2
+   },
+   "llm_parse_tagged_alerts": {
+    "scenarios_with_one": 0,
+    "of_which_expected": 0
+   },
+   "missed_readback (R7) false alarms": 0,
+   "missed_readback (R7) scenarios expected / hit": [
+    2,
+    2
+   ],
+   "readback_mismatch (R14, its own category)": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": null,
+    "recall": 0.0
+   },
+   "readback_mismatch_candidates (R14, shadow; vs wrong-runway readbacks)": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 2,
+    "precision": null,
+    "recall": 0.0
+   },
+   "incomplete_readback (R15, info; vs missing-runway readbacks)": {
+    "tp": 2,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.25,
+    "recall": 1.0
+   },
+   "low_confidence_mismatch (R16, info) scenarios": 2
+  },
+  "llm_fallback": {
+   "calls": 26,
+   "dropped_after_failed_validation": 2,
+   "drop_reasons": {
+    "grounding: flight number not heard": 2
+   },
+   "no_actionable_content": 12,
+   "unidentified_aircraft": 7,
+   "used": 5,
+   "latency_s_median": 0.846
+  },
+  "speaker": {
+   "labelled": 138,
+   "hint_matches_label": 122,
+   "hint_ambiguous_or_none": 16,
+   "hint_wrong": 0,
+   "resolved_matches_label": 125
+  },
+  "alerts": {
+   "scenarios_with_expectation": 32,
+   "tp": 11,
+   "fp": 0,
+   "fn": 3,
+   "precision": 1.0,
+   "recall": 0.786
+  },
+  "lead_time_s": {
+   "n": 0,
+   "median": null,
+   "min": null,
+   "values": []
+  },
+  "latency": {
+   "library_ms_median": 0.21,
+   "whisper_s_median": 0.197,
+   "full_stack_clip_to_alert_s_median (E1, agent)": 13.69
+  },
+  "inputs": {
+   "whisper (synthetic TTS + radio noise)": 138
+  },
+  "kinds": [
+   "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)"
+  ]
+ }
+}

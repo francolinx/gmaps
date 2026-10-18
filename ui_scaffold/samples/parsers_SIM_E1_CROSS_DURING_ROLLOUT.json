@@ -1,0 +1,195 @@
+{
+ "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+ "generated": "2026-10-18T00:18:05-04:00",
+ "source": "script lines as text (the Whisper worker path needs a second GPU container; not used tonight) \u2192 grammar; models on 127.0.0.1:8001, XSIM runways 18/36, taxiway K, traffic list SIM212/RESCUE7",
+ "models": {
+  "base": "Qwen3-4B-Instruct-2507 (untuned)",
+  "gmaps-parser": "gmaps-parser: Qwen3-4B-Instruct-2507 + LoRA, run gmaps-parser-4b-20261017-034510"
+ },
+ "note": "vehicle callsigns (Truck, Rescue) are outside the fine-tune's training set and the fallback schema; the grammar handles them",
+ "rows": [
+  {
+   "t": 0,
+   "script": "SimAir two one two, runway three six, cleared to land.",
+   "whisper": "SimAir two one two, runway three six, cleared to land.",
+   "grammar": {
+    "accepted": true,
+    "fields": {
+     "callsign": "SIM212",
+     "instruction": "LANDING_CLEARANCE"
+    },
+    "speech_act": "instruction",
+    "parse_path": "grammar"
+   },
+   "base": {
+    "accepted": true,
+    "fields": {
+     "actionable": true,
+     "speaker_role": "ATC",
+     "callsign": "SIM212",
+     "runway": "36",
+     "instruction": "LANDING_CLEARANCE",
+     "taxiways": []
+    },
+    "reason": "valid",
+    "latency_s": 1.488
+   },
+   "gmaps-parser": {
+    "accepted": true,
+    "fields": {
+     "actionable": true,
+     "speaker_role": "ATC",
+     "callsign": "SAW212",
+     "runway": "36",
+     "instruction": "LANDING_CLEARANCE",
+     "taxiways": []
+    },
+    "reason": "valid",
+    "latency_s": 1.629
+   }
+  },
+  {
+   "t": 3,
+   "script": "Cleared to land runway three six, SimAir two one two.",
+   "whisper": "Cleared to land runway three six, SimAir two one two.",
+   "grammar": {
+    "accepted": true,
+    "fields": {
+     "callsign": "SIM212",
+     "instruction": "LANDING_CLEARANCE"
+    },
+    "speech_act": "instruction_or_readback",
+    "parse_path": "grammar"
+   },
+   "base": {
+    "accepted": true,
+    "fields": {
+     "actionable": true,
+     "speaker_role": "ATC",
+     "callsign": "SIM212",
+     "runway": "36",
+     "instruction": "LANDING_CLEARANCE",
+     "taxiways": []
+    },
+    "reason": "valid",
+    "latency_s": 1.584
+   },
+   "gmaps-parser": {
+    "accepted": true,
+    "fields": {
+     "actionable": true,
+     "speaker_role": "PILOT",
+     "callsign": "N212",
+     "runway": "36",
+     "instruction": "LANDING_CLEARANCE",
+     "taxiways": []
+    },
+    "reason": "valid",
+    "latency_s": 1.614
+   }
+  },
+  {
+   "t": 24,
+   "script": "Tower, Rescue seven, request to cross runway three six at Kilo.",
+   "whisper": "Tower, Rescue seven, request to cross runway three six at Kilo.",
+   "grammar": {
+    "accepted": true,
+    "fields": {
+     "callsign": "RESCUE7",
+     "instruction": "CROSS_REQUEST"
+    },
+    "speech_act": "request",
+    "parse_path": "grammar"
+   },
+   "base": {
+    "accepted": true,
+    "fields": {
+     "actionable": true,
+     "speaker_role": "PILOT",
+     "callsign": "RES7",
+     "runway": "36",
+     "instruction": "CROSS",
+     "taxiways": []
+    },
+    "reason": "valid",
+    "latency_s": 1.378
+   },
+   "gmaps-parser": {
+    "accepted": false,
+    "fields": null,
+    "reason": "grounding: flight number not heard",
+    "latency_s": 1.629
+   }
+  },
+  {
+   "t": 28,
+   "script": "Rescue seven, cross runway three six at Kilo.",
+   "whisper": "Rescue seven, cross runway three six at Kilo.",
+   "grammar": {
+    "accepted": true,
+    "fields": {
+     "callsign": "RESCUE7",
+     "instruction": "CROSS"
+    },
+    "speech_act": "instruction",
+    "parse_path": "grammar"
+   },
+   "base": {
+    "accepted": true,
+    "fields": {
+     "actionable": true,
+     "speaker_role": "ATC",
+     "callsign": "RES7",
+     "runway": "36",
+     "instruction": "CROSS",
+     "taxiways": [
+      "K"
+     ]
+    },
+    "reason": "valid",
+    "latency_s": 1.422
+   },
+   "gmaps-parser": {
+    "accepted": false,
+    "fields": null,
+    "reason": "grounding: flight number not heard",
+    "latency_s": 1.697
+   }
+  },
+  {
+   "t": 31,
+   "script": "Crossing runway three six at Kilo, Rescue seven.",
+   "whisper": "Crossing runway three six at Kilo, Rescue seven.",
+   "grammar": {
+    "accepted": true,
+    "fields": {
+     "callsign": "RESCUE7",
+     "instruction": "CROSS"
+    },
+    "speech_act": "readback",
+    "parse_path": "grammar"
+   },
+   "base": {
+    "accepted": false,
+    "fields": null,
+    "reason": "grounding: no 'CROSSING_COMPLETE' words in the text",
+    "latency_s": 1.573
+   },
+   "gmaps-parser": {
+    "accepted": true,
+    "fields": {
+     "actionable": true,
+     "speaker_role": "PILOT",
+     "callsign": "RPA7",
+     "runway": "36",
+     "instruction": "CROSS",
+     "taxiways": [
+      "K"
+     ]
+    },
+    "reason": "valid",
+    "latency_s": 1.543
+   }
+  }
+ ]
+}

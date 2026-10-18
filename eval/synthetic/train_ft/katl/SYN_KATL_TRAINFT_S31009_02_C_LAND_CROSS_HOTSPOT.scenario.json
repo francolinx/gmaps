@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31009_02_C_LAND_CROSS_HOTSPOT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_LAND_CROSS_HOTSPOT",
+ "basis": "R1, crossing at a hot-spot taxiway",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31009,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "C",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit four ninety nine, wind one eight zero at two zero, runway two six right, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31009_02_C_LAND_CROSS_HOTSPOT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two six right, Spirit four ninety nine.",
+   "id": "SYN_KATL_TRAINFT_S31009_02_C_LAND_CROSS_HOTSPOT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Spirit six hundred, cross runway two six right at taxiway Charlie, without delay.",
+   "id": "SYN_KATL_TRAINFT_S31009_02_C_LAND_CROSS_HOTSPOT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross two six right at Charlie, Spirit six hundred.",
+   "id": "SYN_KATL_TRAINFT_S31009_02_C_LAND_CROSS_HOTSPOT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

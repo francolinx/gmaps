@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Frontier 1077, runway four, wind three six zero at one eight gust three one, cleared for takeoff.",
+  "asr_s": 0.248
+ },
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Cleared for takeoff four, Frontier 1077.",
+  "asr_s": 0.199
+ },
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Bonanza four four five four Yankee, runway one three, cleared to land.",
+  "asr_s": 0.227
+ },
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Cleared to land, one three. Bonanza four, four, five, four Yankee.",
+  "asr_s": 0.236
+ }
+}

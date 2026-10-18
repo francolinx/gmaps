@@ -1,0 +1,2 @@
+jsonschema>=4.18   # only for data/airports/validate.py; everything else is stdlib
+# venue (already in the NGC vLLM container): torch, transformers; plus soundfile, librosa from GB10_ARSENAL/wheels

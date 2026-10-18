@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31007_02_C_LAND_CROSS_HOTSPOT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_LAND_CROSS_HOTSPOT",
+ "basis": "R1, crossing at a hot-spot taxiway",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31007,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "D",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier three three two, runway two six right, wind one eight zero at one zero, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31007_02_C_LAND_CROSS_HOTSPOT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two six right, Frontier three three two.",
+   "id": "SYN_KATL_TRAINFT_S31007_02_C_LAND_CROSS_HOTSPOT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Southwest ten ninety, at Delta cross runway two six right without delay.",
+   "id": "SYN_KATL_TRAINFT_S31007_02_C_LAND_CROSS_HOTSPOT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross two six right at Delta, Southwest ten ninety.",
+   "id": "SYN_KATL_TRAINFT_S31007_02_C_LAND_CROSS_HOTSPOT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

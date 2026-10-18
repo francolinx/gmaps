@@ -1,0 +1,26 @@
+{
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_00": {
+  "text": "JetBlue Niner 73, runway four, line up and wait. Trafficker Airbus 320, four mile final.",
+  "asr_s": 0.263
+ },
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_01": {
+  "text": "JetBlue Niner 73, line up and wait, runway four.",
+  "asr_s": 0.2
+ },
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_02": {
+  "text": "Delta three six three, runway four, continue traffic holding in position.",
+  "asr_s": 0.199
+ },
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_03": {
+  "text": "Delta 363 continuing.",
+  "asr_s": 0.15
+ },
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_04": {
+  "text": "JetBlue Niner 73, wind two two zero at five gust one four, runway four, cleared for takeoff.",
+  "asr_s": 0.254
+ },
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_05": {
+  "text": "JetBlueNiner73, cleared for takeoff, runway four.",
+  "asr_s": 0.201
+ }
+}

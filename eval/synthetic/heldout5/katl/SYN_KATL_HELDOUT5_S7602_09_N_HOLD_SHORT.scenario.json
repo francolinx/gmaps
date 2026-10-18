@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7602_09_N_HOLD_SHORT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "N_HOLD_SHORT",
+ "basis": "hold short, read back",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7602,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "SC",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor twenty two fifty seven, runway two seven left, cleared to land, wind one three zero at niner.",
+   "id": "SYN_KATL_HELDOUT5_S7602_09_N_HOLD_SHORT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two seven left, cleared to land, Endeavor twenty two fifty seven.",
+   "id": "SYN_KATL_HELDOUT5_S7602_09_N_HOLD_SHORT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Southwest twelve hundred, proceed via Sierra Charlie, hold short of runway two seven left.",
+   "id": "SYN_KATL_HELDOUT5_S7602_09_N_HOLD_SHORT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Hold short of runway two seven left, Southwest twelve hundred.",
+   "id": "SYN_KATL_HELDOUT5_S7602_09_N_HOLD_SHORT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

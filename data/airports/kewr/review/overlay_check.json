@@ -1,0 +1,18 @@
+{
+ "icao": "KEWR",
+ "checked_at": "2026-10-08T23:57:34-0400",
+ "dpi": 300,
+ "ink_level": 250,
+ "tolerance_px": 1,
+ "pdf_sha256": "89f34baa16739a4d9df47a9fcf04fbb9fed12c05a47d3eb9e6109796cda894b2",
+ "faa_ink_px": 857533,
+ "reconstruction_ink_px": 860141,
+ "covered_pct": 99.815,
+ "extra_pct": 0.248,
+ "thresholds": {
+  "min_covered_pct": 99.0,
+  "max_extra_pct": 2.0
+ },
+ "pass": true,
+ "note": "faithful.svg uses original FAA styling; visible-text labels use a substitute font."
+}

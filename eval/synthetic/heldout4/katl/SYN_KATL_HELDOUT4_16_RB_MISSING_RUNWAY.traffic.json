@@ -1,0 +1,28 @@
+{
+ "id": "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "DAL2619",
+  "EDV2362",
+  "EDV3294",
+  "FFT2000",
+  "N7637F",
+  "UAL1300",
+  "UAL2163",
+  "UAL8042",
+  "UAL9217"
+ ],
+ "realistic": [
+  "DAL2619",
+  "EDV2362",
+  "EDV3294",
+  "FFT1675",
+  "FFT2000",
+  "N7637F",
+  "N9935S",
+  "UAL1300",
+  "UAL1788",
+  "UAL2163"
+ ]
+}

@@ -1,0 +1,1695 @@
+{
+ "meta": {
+  "icao": "KSFO",
+  "pdf": "data/airports/sources/sfo_faa_2610_00375AD.pdf",
+  "pdf_sha256": "40018bd03c5fb1f6b54faacd6a05503f97c7ceb7d79eff2ae317325a250938fb",
+  "page_size_pt": [
+   387.36,
+   594.0
+  ],
+  "content_rotation_deg": 90,
+  "frame_size_pt": [
+   594.0,
+   387.36
+  ],
+  "chart_frame_bbox": [
+   44.72,
+   18.04,
+   549.11,
+   369.32
+  ],
+  "extractor": "pdfminer.six 20260107",
+  "styles": "tools/airport_map/styles/faa_apd.json",
+  "debug_text_layer_in_preview": false
+ },
+ "objects_total": 2305,
+ "objects_by_class": {
+  "glyph": 1406,
+  "pavement": 376,
+  "linework": 306,
+  "graticule_label": 35,
+  "arrowhead": 34,
+  "graticule_line": 34,
+  "hot_spot": 28,
+  "symbol": 22,
+  "runway_centerline_extension": 22,
+  "building": 20,
+  "hold_line_candidate": 9,
+  "runway_marking": 6,
+  "runway": 4,
+  "label_background": 2,
+  "frame": 1
+ },
+ "labels_total": 279,
+ "labels_by_class": {
+  "taxiway_candidate": 131,
+  "note": 88,
+  "annotation": 19,
+  "elevation": 8,
+  "runway_end": 8,
+  "heading": 8,
+  "terminal_label": 4,
+  "dimension": 4,
+  "hot_spot_label": 4,
+  "area_label": 3,
+  "closed_marker": 2
+ },
+ "fill_rule": {
+  "evenodd": 1917
+ },
+ "multi_subpath_objects": 510,
+ "bezier_objects": 49,
+ "dashed_objects": [
+  {
+   "index": 1915,
+   "class": "runway_marking",
+   "dash": [
+    [
+     0.87,
+     2.58
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 1916,
+   "class": "runway_marking",
+   "dash": [
+    [
+     0.87,
+     2.58
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 1917,
+   "class": "runway_marking",
+   "dash": [
+    [
+     0.87,
+     2.58
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 1918,
+   "class": "runway_marking",
+   "dash": [
+    [
+     0.87,
+     2.58
+    ],
+    0.0
+   ]
+  }
+ ],
+ "clipped_objects": [],
+ "runways": [
+  {
+   "index": 1670,
+   "long_pt": 206.763,
+   "short_pt": 5.43,
+   "axis_deg": -62.2
+  },
+  {
+   "index": 1671,
+   "long_pt": 307.648,
+   "short_pt": 5.832,
+   "axis_deg": 27.9
+  },
+  {
+   "index": 1672,
+   "long_pt": 233.744,
+   "short_pt": 5.994,
+   "axis_deg": -62.1
+  },
+  {
+   "index": 1673,
+   "long_pt": 320.838,
+   "short_pt": 6.948,
+   "axis_deg": 27.5
+  }
+ ],
+ "runway_end_points_pt": [
+  [
+   287.78,
+   329.22
+  ],
+  [
+   384.21,
+   146.32
+  ],
+  [
+   208.24,
+   148.08
+  ],
+  [
+   480.18,
+   291.94
+  ],
+  [
+   302.29,
+   344.48
+  ],
+  [
+   411.82,
+   137.99
+  ],
+  [
+   205.51,
+   124.87
+  ],
+  [
+   490.02,
+   273.17
+  ]
+ ],
+ "hold_line_groups": [
+  {
+   "group": 7,
+   "dashes": 3,
+   "bbox": [
+    233.25,
+    167.31,
+    245.43,
+    173.41
+   ],
+   "nearest_annotation": "CAT 1",
+   "annotation_dist_pt": 20.1,
+   "indices": [
+    2292,
+    2293,
+    2294
+   ]
+  },
+  {
+   "group": 8,
+   "dashes": 6,
+   "bbox": [
+    216.17,
+    138.16,
+    240.3,
+    150.79
+   ],
+   "nearest_annotation": "CAT 3 (via leader)",
+   "annotation_dist_pt": 17.0,
+   "indices": [
+    2295,
+    2296,
+    2297,
+    2298,
+    2299,
+    2300
+   ]
+  }
+ ],
+ "hot_spot_labels": [
+  "HS 1",
+  "HS 2",
+  "HS 3",
+  "HS 4"
+ ],
+ "runway_end_labels": [
+  "1L",
+  "1R",
+  "10L",
+  "10R",
+  "19L",
+  "19R",
+  "28L",
+  "28R"
+ ],
+ "gate_leadins": [],
+ "elevations": [
+  "11",
+  "13",
+  "6",
+  "7",
+  "9"
+ ],
+ "taxiway_candidates": [
+  "A",
+  "A1",
+  "A2",
+  "A4",
+  "A5",
+  "B",
+  "B1",
+  "B2",
+  "B3",
+  "B4",
+  "B5",
+  "C",
+  "C2",
+  "C3",
+  "D",
+  "E",
+  "F",
+  "F2",
+  "G",
+  "H",
+  "K",
+  "L",
+  "L2",
+  "M",
+  "M1",
+  "M2",
+  "M3",
+  "M4",
+  "M5",
+  "N",
+  "P",
+  "Q",
+  "Q1",
+  "R",
+  "S",
+  "S1",
+  "S2",
+  "S3",
+  "T",
+  "U",
+  "V",
+  "W",
+  "Y",
+  "Z",
+  "Z1",
+  "Z2"
+ ],
+ "terminal_labels": [
+  "A",
+  "D",
+  "E"
+ ],
+ "helipad_labels": [],
+ "unclassified_numbers": [],
+ "visible_text_labels": [
+  "SW-2, 01 OCT 2026 to 29 OCT 2026",
+  "SW-2, 01 OCT 2026 to 29 OCT 2026"
+ ],
+ "label_glyph_shortfall": [],
+ "label_glyphs": [
+  {
+   "text": "(SFO)",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "SAN FRANCISCO, CALIFORNIA",
+   "chars": 23,
+   "glyphs": 23
+  },
+  {
+   "text": "SAN FRANCISCO, CALIFORNIA",
+   "chars": 23,
+   "glyphs": 23
+  },
+  {
+   "text": "(SFO)",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "AL-375 (FAA)",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "AIRPORT DIAGRAM",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "AIRPORT DIAGRAM",
+   "chars": 14,
+   "glyphs": 16
+  },
+  {
+   "text": "Runway Status Lights in operation.",
+   "chars": 30,
+   "glyphs": 33
+  },
+  {
+   "text": "TERMINAL",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "INTL",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "3",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "TERMINAL",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "1",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "TERMINAL",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "NO. 1",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "STATION",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "FIRE",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "USCG",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "AVIATION",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "GENERAL",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "NO. 2",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "FIRE STATION",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "2",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "TERMINAL",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "CUSTOMS",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "US",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B/A",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B/A",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "B/A",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B/A",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B/A",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "TWR",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "RAMP",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B/A",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "G",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B/A",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "G",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "TWR",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "RAMP",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "8650 X 200",
+   "chars": 8,
+   "glyphs": 9
+  },
+  {
+   "text": "11",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "11",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "7650 X 200",
+   "chars": 8,
+   "glyphs": 10
+  },
+  {
+   "text": "11",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 5
+  },
+  {
+   "text": "9",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "11870 X 200",
+   "chars": 9,
+   "glyphs": 10
+  },
+  {
+   "text": "6",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "11381 X 200",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "7",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "13",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "NO. 3",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "FIRE STATION",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "all airport surfaces.",
+   "chars": 19,
+   "glyphs": 20
+  },
+  {
+   "text": "ADS-B (if euipped) enabled on",
+   "chars": 25,
+   "glyphs": 27
+  },
+  {
+   "text": "with altitude reporting mode and",
+   "chars": 28,
+   "glyphs": 31
+  },
+  {
+   "text": "ASSC in use. Operate transponders",
+   "chars": 29,
+   "glyphs": 30
+  },
+  {
+   "text": "than the left side of taxiways.",
+   "chars": 26,
+   "glyphs": 28
+  },
+  {
+   "text": "signs are on the right rather",
+   "chars": 24,
+   "glyphs": 26
+  },
+  {
+   "text": "NOTE: Several runway hold position",
+   "chars": 30,
+   "glyphs": 33
+  },
+  {
+   "text": "B/A: BOARDING AREA",
+   "chars": 16,
+   "glyphs": 17
+  },
+  {
+   "text": "PAD",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "C AT C2 RUN-UP",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "PAD",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "E AT L RUN-UP",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "PAD",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "V AT L RUN-UP",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "Y",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "S-75, D-200, 2D-400, 2D/2D2-877",
+   "chars": 28,
+   "glyphs": 28
+  },
+  {
+   "text": "PCR 866 F/B/W/T",
+   "chars": 13,
+   "glyphs": 13
+  },
+  {
+   "text": "RWY 10R-28L",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "S-75, D-200, 2D-400, 2D/2D2-877",
+   "chars": 28,
+   "glyphs": 28
+  },
+  {
+   "text": "PCR 918 F/C/W/T",
+   "chars": 13,
+   "glyphs": 13
+  },
+  {
+   "text": "RWY 10L-28R",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "S-75, D-200, 2D-400, 2D/2D2-877",
+   "chars": 28,
+   "glyphs": 28
+  },
+  {
+   "text": "PCR 986 F/C/W/T",
+   "chars": 13,
+   "glyphs": 13
+  },
+  {
+   "text": "RWY 01R-19L",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "S-75, D-200, 2D-400, 2D/2D2-877",
+   "chars": 28,
+   "glyphs": 28
+  },
+  {
+   "text": "PCR 956 F/C/W/T",
+   "chars": 13,
+   "glyphs": 13
+  },
+  {
+   "text": "RWY 01L-19R",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "PDC",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "CPDLC",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "118.2",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "CLNC DEL",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "121.8",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "GND CON",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "120.5 269.1",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "SAN FRANCISCO TOWER",
+   "chars": 17,
+   "glyphs": 17
+  },
+  {
+   "text": "113.7 115.8 118.85",
+   "chars": 16,
+   "glyphs": 16
+  },
+  {
+   "text": "D-ATIS",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "SAN FRANCISCO INTL",
+   "chars": 16,
+   "glyphs": 18
+  },
+  {
+   "text": "SAN FRANCISCO INTL",
+   "chars": 16,
+   "glyphs": 18
+  },
+  {
+   "text": "HOLD",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "CAT 3",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "HOLD",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "CAT 1",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "TWR",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "26246",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "26246",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "TDZL/RCLS Rwys 19L and 28R",
+   "chars": 22,
+   "glyphs": 22
+  },
+  {
+   "text": "REIL Rwys 1R, 1L and 10L",
+   "chars": 19,
+   "glyphs": 19
+  },
+  {
+   "text": "HIRL Rwys 1R-19L, 1L-19R, 10L-28R and 10R-28L",
+   "chars": 39,
+   "glyphs": 39
+  },
+  {
+   "text": "JANUARY 2015",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "ANNUAL RATE OF CHANGE",
+   "chars": 18,
+   "glyphs": 18
+  },
+  {
+   "text": "0.1° W",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "FIELD",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "13",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "READBACK OF ALL RUNWAY HOLDING INSTRUCTIONS IS REQUIRED.",
+   "chars": 49,
+   "glyphs": 49
+  },
+  {
+   "text": "CAUTION: BE ALERT TO RUNWAY CROSSING CLEARANCES.",
+   "chars": 42,
+   "glyphs": 43
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "A4",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "A5",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "VAR 14° E",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "HS 1",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "HS 2",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "HS 3",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "HS 4",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "X",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "F2",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "T",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Y",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "M2",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "M4",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "M3",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B5",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "K",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "M5",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "H",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "G",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "Q",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C3",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "A1",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "A1",
+   "chars": 2,
+   "glyphs": 6
+  },
+  {
+   "text": "M2",
+   "chars": 2,
+   "glyphs": 6
+  },
+  {
+   "text": "L2",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "R",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "K",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "M",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 7
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "N",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "V",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "S2",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "S3",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "Z2",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "V",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Z1",
+   "chars": 2,
+   "glyphs": 7
+  },
+  {
+   "text": "R",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "B2",
+   "chars": 2,
+   "glyphs": 7
+  },
+  {
+   "text": "B1",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "Q",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B3",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "N",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "U",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "S",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "S1",
+   "chars": 2,
+   "glyphs": 6
+  },
+  {
+   "text": "R",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "T",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "V",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B4",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "Q1",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "K",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 5
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "G",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C2",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "M1",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "H",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "M1",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "M",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "A2",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "N",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "1R",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "19L",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "1L",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "19R",
+   "chars": 3,
+   "glyphs": 7
+  },
+  {
+   "text": "10L",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "28R",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "10R",
+   "chars": 3,
+   "glyphs": 6
+  },
+  {
+   "text": "28L",
+   "chars": 3,
+   "glyphs": 4
+  },
+  {
+   "text": "EMAS",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "EMAS",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "EMAS",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "EMAS",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "M",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "X",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "W",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "W",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "W",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "194°",
+   "chars": 4,
+   "glyphs": 5
+  },
+  {
+   "text": "014°",
+   "chars": 4,
+   "glyphs": 5
+  },
+  {
+   "text": "194°",
+   "chars": 4,
+   "glyphs": 5
+  },
+  {
+   "text": "014°",
+   "chars": 4,
+   "glyphs": 6
+  },
+  {
+   "text": "284°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "104°",
+   "chars": 4,
+   "glyphs": 5
+  },
+  {
+   "text": "284°",
+   "chars": 4,
+   "glyphs": 6
+  },
+  {
+   "text": "104°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "SW-2, 01 OCT 2026 to 29 OCT 2026",
+   "chars": 25,
+   "glyphs": 0
+  },
+  {
+   "text": "SW-2, 01 OCT 2026 to 29 OCT 2026",
+   "chars": 25,
+   "glyphs": 0
+  }
+ ],
+ "unclassified_objects": [],
+ "area_labels": [
+  "A",
+  "G",
+  "US"
+ ]
+}

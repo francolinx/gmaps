@@ -1,0 +1,274 @@
+{
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_00": {
+  "text": "Southwest 1023, runway two six left, line up and wait, traffic a regional jet, four mile final.",
+  "asr_s": 0.576,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9536
+   },
+   {
+    "w": "1023,",
+    "p": 0.5788
+   },
+   {
+    "w": "runway",
+    "p": 0.9939
+   },
+   {
+    "w": "two",
+    "p": 0.9923
+   },
+   {
+    "w": "six",
+    "p": 0.9977
+   },
+   {
+    "w": "left,",
+    "p": 0.9895
+   },
+   {
+    "w": "line",
+    "p": 0.9978
+   },
+   {
+    "w": "up",
+    "p": 0.9995
+   },
+   {
+    "w": "and",
+    "p": 0.9982
+   },
+   {
+    "w": "wait,",
+    "p": 0.8299
+   },
+   {
+    "w": "traffic",
+    "p": 0.9979
+   },
+   {
+    "w": "a",
+    "p": 0.9915
+   },
+   {
+    "w": "regional",
+    "p": 0.9829
+   },
+   {
+    "w": "jet,",
+    "p": 0.9248
+   },
+   {
+    "w": "four",
+    "p": 0.9946
+   },
+   {
+    "w": "mile",
+    "p": 0.9752
+   },
+   {
+    "w": "final.",
+    "p": 0.9545
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_01": {
+  "text": "Southwest 1023, line up and wait, runway two six left.",
+  "asr_s": 0.488,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9682
+   },
+   {
+    "w": "1023,",
+    "p": 0.6265
+   },
+   {
+    "w": "line",
+    "p": 0.9944
+   },
+   {
+    "w": "up",
+    "p": 0.9998
+   },
+   {
+    "w": "and",
+    "p": 0.7446
+   },
+   {
+    "w": "wait,",
+    "p": 0.5889
+   },
+   {
+    "w": "runway",
+    "p": 0.9956
+   },
+   {
+    "w": "two",
+    "p": 0.994
+   },
+   {
+    "w": "six",
+    "p": 0.9974
+   },
+   {
+    "w": "left.",
+    "p": 0.9644
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_02": {
+  "text": "Spirit 2832, runway two six left, continue, traffic holding in position.",
+  "asr_s": 0.482,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9891
+   },
+   {
+    "w": "2832,",
+    "p": 0.5893
+   },
+   {
+    "w": "runway",
+    "p": 0.9922
+   },
+   {
+    "w": "two",
+    "p": 0.9962
+   },
+   {
+    "w": "six",
+    "p": 0.9983
+   },
+   {
+    "w": "left,",
+    "p": 0.8757
+   },
+   {
+    "w": "continue,",
+    "p": 0.8103
+   },
+   {
+    "w": "traffic",
+    "p": 0.9978
+   },
+   {
+    "w": "holding",
+    "p": 0.9994
+   },
+   {
+    "w": "in",
+    "p": 0.9989
+   },
+   {
+    "w": "position.",
+    "p": 0.9846
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_03": {
+  "text": "Spirit 2832 continuing.",
+  "asr_s": 0.445,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9406
+   },
+   {
+    "w": "2832",
+    "p": 0.703
+   },
+   {
+    "w": "continuing.",
+    "p": 0.8579
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_04": {
+  "text": "Southwest 1023, runway two six left, cleared for takeoff.",
+  "asr_s": 0.477,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9663
+   },
+   {
+    "w": "1023,",
+    "p": 0.403
+   },
+   {
+    "w": "runway",
+    "p": 0.9944
+   },
+   {
+    "w": "two",
+    "p": 0.9931
+   },
+   {
+    "w": "six",
+    "p": 0.9971
+   },
+   {
+    "w": "left,",
+    "p": 0.9735
+   },
+   {
+    "w": "cleared",
+    "p": 0.9987
+   },
+   {
+    "w": "for",
+    "p": 0.9983
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.9551
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_05": {
+  "text": "Southwest 1023, cleared for takeoff runway two six left.",
+  "asr_s": 0.479,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9775
+   },
+   {
+    "w": "1023,",
+    "p": 0.4357
+   },
+   {
+    "w": "cleared",
+    "p": 0.9954
+   },
+   {
+    "w": "for",
+    "p": 0.9962
+   },
+   {
+    "w": "takeoff",
+    "p": 0.9982
+   },
+   {
+    "w": "runway",
+    "p": 0.7447
+   },
+   {
+    "w": "two",
+    "p": 0.9205
+   },
+   {
+    "w": "six",
+    "p": 0.997
+   },
+   {
+    "w": "left.",
+    "p": 0.9539
+   }
+  ]
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_00": {
+  "text": "Southwest 758, runway 22, line up and wait. Traffic of Boeing 737, four mile final.",
+  "asr_s": 0.243
+ },
+ "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_01": {
+  "text": "Southwest 758, line up and wait runway 22.",
+  "asr_s": 0.181
+ },
+ "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_02": {
+  "text": "Cessna 1247 Sierra, runway 22 continues, traffic holding in position.",
+  "asr_s": 0.21
+ },
+ "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_03": {
+  "text": "Cessna 1247 Sierra, continue.",
+  "asr_s": 0.177
+ },
+ "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_04": {
+  "text": "Southwest 758, runway 22, wind 320 at 20, gust 31, cleared for takeoff.",
+  "asr_s": 0.232
+ },
+ "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_05": {
+  "text": "I'll bless 758, cleared for takeoff runway 22.",
+  "asr_s": 0.187
+ }
+}

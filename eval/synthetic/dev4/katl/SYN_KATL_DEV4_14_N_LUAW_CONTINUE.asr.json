@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_00": {
+  "text": "Southwest 1023, runway 26L, line up and wait. Traffic a regional jet, four mile final.",
+  "asr_s": 0.241
+ },
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_01": {
+  "text": "Southwest 1023, line up and wait runway 26L.",
+  "asr_s": 0.191
+ },
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_02": {
+  "text": "Spirit 2832, runway 26L, continue, traffic holding in position.",
+  "asr_s": 0.201
+ },
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_03": {
+  "text": "Spirit 2832 continuing.",
+  "asr_s": 0.147
+ },
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_04": {
+  "text": "Southwest 1023, runway 26L, cleared for takeoff.",
+  "asr_s": 0.202
+ },
+ "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_05": {
+  "text": "Southwest 10-23, cleared for takeoff runway 2-6 left.",
+  "asr_s": 0.201
+ }
+}

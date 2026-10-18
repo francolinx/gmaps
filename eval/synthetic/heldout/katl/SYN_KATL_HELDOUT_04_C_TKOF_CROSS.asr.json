@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_00": {
+  "text": "American 231, runway 27R, wind 270 at 8, cleared for takeoff.",
+  "asr_s": 0.223
+ },
+ "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_01": {
+  "text": "Cleared for takeoff runway 27R, American 231.",
+  "asr_s": 0.188
+ },
+ "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_02": {
+  "text": "United 748, a tango cross runway 27 right.",
+  "asr_s": 0.181
+ },
+ "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_03": {
+  "text": "Crossing runway 27, right at Tango, United 7, 48.",
+  "asr_s": 0.19
+ }
+}

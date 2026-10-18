@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_00": {
+  "text": "Bonanza 4760 Hotel, runway 4 cleared to land.",
+  "asr_s": 0.194
+ },
+ "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_01": {
+  "text": "Lanza 4768 hotel, roger. Clear to land runway 4.",
+  "asr_s": 0.199
+ },
+ "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_02": {
+  "text": "Frontier 600 at Charlie Yankee Cross Runway 4 without delay.",
+  "asr_s": 0.198
+ },
+ "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_03": {
+  "text": "Crossing runway 4 at Charlie Yankee, Frontier 600.",
+  "asr_s": 0.186
+ }
+}

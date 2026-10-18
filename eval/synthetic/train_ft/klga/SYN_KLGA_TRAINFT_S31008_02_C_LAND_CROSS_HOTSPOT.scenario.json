@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31008_02_C_LAND_CROSS_HOTSPOT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_LAND_CROSS_HOTSPOT",
+ "basis": "R1, crossing at a hot-spot taxiway",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31008,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "P",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Delta twenty nine sixty eight, wind one seven zero at eight, runway four, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31008_02_C_LAND_CROSS_HOTSPOT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Delta twenty nine sixty eight, roger, cleared to land runway four.",
+   "id": "SYN_KLGA_TRAINFT_S31008_02_C_LAND_CROSS_HOTSPOT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Spirit one hundred, cross runway four at taxiway Papa, without delay.",
+   "id": "SYN_KLGA_TRAINFT_S31008_02_C_LAND_CROSS_HOTSPOT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway four at Papa, Spirit one hundred.",
+   "id": "SYN_KLGA_TRAINFT_S31008_02_C_LAND_CROSS_HOTSPOT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "icao": "KEWR",
+ "units": "metres; x = east, y = south (SVG), origin = NASR airport reference point",
+ "frame": {
+  "lat0": 40.69248055,
+  "lon0": -74.16868777,
+  "M": 6362579.922174843,
+  "N": 6387231.861357268,
+  "projection": "local equirectangular, WGS84"
+ },
+ "bounds_m": {
+  "x0": -1909.02808469,
+  "y0": -2164.8388917662,
+  "x1": 1434.2528814899997,
+  "y1": 2635.8849141555997
+ },
+ "chart_m_per_pt": 9.5177,
+ "layers": [
+  {
+   "id": "layer-chart",
+   "css_class": "L-chart",
+   "label": "Chart linework",
+   "default": true
+  },
+  {
+   "id": "layer-labels",
+   "css_class": "L-labels",
+   "label": "Chart labels",
+   "default": true
+  },
+  {
+   "id": "layer-osm",
+   "label": "OSM taxiways",
+   "default": false,
+   "requires_attribution": true,
+   "src": "osm/osm_taxiways.geojson"
+  }
+ ],
+ "footer": "Reconstructed from FAA airport diagram AL-285 (FAA), d-TPP cycle 2610 (effective 2026-10-01 to 2026-10-29), sha256 89f34baa1673…, https://aeronav.faa.gov/d-tpp/2610/00285AD.PDF. Graticule: decoded from outlines (checked against NASR runway ends). Display only. Not for navigation. No predictions.",
+ "chart": {
+  "cycle": "2610",
+  "effective_from": "2026-10-01",
+  "effective_to": "2026-10-29",
+  "sha256": "89f34baa16739a4d9df47a9fcf04fbb9fed12c05a47d3eb9e6109796cda894b2",
+  "url": "https://aeronav.faa.gov/d-tpp/2610/00285AD.PDF",
+  "chart_code": "AL-285 (FAA)"
+ },
+ "osm_attribution": "© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+ "osm_data_timestamp": "2026-07-28T02:16:18Z",
+ "georef": {
+  "runway_end_residual_m": {
+   "04L": 15.99,
+   "04R": 0.78,
+   "11": 11.13,
+   "22L": 2.04,
+   "22R": 14.9,
+   "29": 3.8
+  },
+  "helipad_H1_m": 1.27
+ },
+ "review_views": {
+  "full": [
+   -1909.0,
+   -2164.8,
+   3343.3,
+   4800.7
+  ],
+  "runway_intersection": [
+   253.2,
+   -1267.4,
+   520,
+   520
+  ],
+  "runway_ends_04L_04R": [
+   -1149.4,
+   1312.4,
+   933.9,
+   933.9
+  ],
+  "runway_ends_11": [
+   -1266.9,
+   -1385.4,
+   500.0,
+   500.0
+  ],
+  "runway_ends_22L_22R": [
+   344.0,
+   -1469.5,
+   736.5,
+   736.5
+  ],
+  "runway_ends_29": [
+   775.9,
+   -1214.5,
+   500.0,
+   500.0
+  ],
+  "terminal_a": [
+   -1842.6,
+   409.8,
+   840,
+   840
+  ],
+  "terminal_c": [
+   -1108.8,
+   -1025.0,
+   840,
+   840
+  ],
+  "terminal_b": [
+   -1297.5,
+   -255.3,
+   840,
+   840
+  ],
+  "hot_spot_hs1": [
+   300.1,
+   -1416.9,
+   491.7,
+   491.7
+  ],
+  "busiest_runway_crossings": [
+   -146.0,
+   -1212.6,
+   1000.0,
+   1000.0
+  ]
+ },
+ "sign_off": null,
+ "notice": "Display only. Not for navigation. No predictions. Chart-derived geometry is not the geometry of record (review.json)."
+}

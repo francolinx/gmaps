@@ -1,0 +1,39 @@
+{
+ "runs": 5,
+ "clip_to_alert_s_median": 13.69,
+ "clip_to_alert_s": [
+  13.67,
+  13.69,
+  16.16,
+  15.54,
+  12.96
+ ],
+ "whisper_s_median": 0.176,
+ "to_first_tool_call_s_median": 6.3,
+ "llm_request_mean_s": 3.82,
+ "prefill_s": 0.59,
+ "decode_s": 3.2,
+ "prompt_tokens": 14766,
+ "generated_tokens": 222,
+ "tools_s": 0.001,
+ "source": "docs/LATENCY_E1.md (venue/latency_e1.py over 5 venue/demo_e1.sh runs, Oct 9)",
+ "after_option1": {
+  "fast_path_eot_to_alert_s_median": 0.18,
+  "fast_path_runs": [
+   0.18,
+   0.2,
+   0.18,
+   0.18,
+   0.2
+  ],
+  "agent_only_composite_eot_to_alert_s_median": 5.57,
+  "agent_only_runs": [
+   6.15,
+   4.92,
+   5.45,
+   5.87,
+   5.57
+  ],
+  "note": "5 E1 runs per path, Oct 9 afternoon; segmentation not included (pre-cut clips)"
+ }
+}

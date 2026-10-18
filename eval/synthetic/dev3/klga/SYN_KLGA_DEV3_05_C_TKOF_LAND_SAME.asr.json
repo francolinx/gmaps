@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV3_05_C_TKOF_LAND_SAME_00": {
+  "text": "Delta 266, runway 13, wind 320 at 7, cleared for takeoff.",
+  "asr_s": 0.234
+ },
+ "SYN_KLGA_DEV3_05_C_TKOF_LAND_SAME_01": {
+  "text": "Cleared for takeoff 1-3, Delta 2-6-6.",
+  "asr_s": 0.208
+ },
+ "SYN_KLGA_DEV3_05_C_TKOF_LAND_SAME_02": {
+  "text": "November 2576 Mike, runway 13, wind 040 at 11, cleared to land.",
+  "asr_s": 0.221
+ },
+ "SYN_KLGA_DEV3_05_C_TKOF_LAND_SAME_03": {
+  "text": "Clear to land 1-3. November 2-5-7-6 Mike.",
+  "asr_s": 0.221
+ }
+}

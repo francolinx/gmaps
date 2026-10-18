@@ -1,0 +1,114 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31008_14_N_LUAW_CONTINUE",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KATL_TRAINFT_S31008_14_N_LUAW_CONTINUE_00",
+   "fields": {
+    "callsigns": [
+     "JBU400"
+    ],
+    "runway": "26R",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "JBU400",
+    "runway": "26R",
+    "instruction": "LUAW",
+    "taxiways": [
+     "B3"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31008_14_N_LUAW_CONTINUE_01",
+   "fields": {
+    "callsigns": [
+     "JBU400"
+    ],
+    "runway": "26R",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "JBU400",
+    "runway": "26R",
+    "instruction": "LUAW",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31008_14_N_LUAW_CONTINUE_02",
+   "fields": {
+    "callsigns": [
+     "N4006U"
+    ],
+    "runway": "26R",
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N4006U",
+    "runway": "26R",
+    "instruction": "OTHER",
+    "taxiways": [
+     "U"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31008_14_N_LUAW_CONTINUE_03",
+   "fields": {
+    "callsigns": [
+     "N4006U"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N4006U",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": [
+     "U"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31008_14_N_LUAW_CONTINUE_04",
+   "fields": {
+    "callsigns": [
+     "JBU400"
+    ],
+    "runway": "26R",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "JBU400",
+    "runway": "26R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31008_14_N_LUAW_CONTINUE_05",
+   "fields": {
+    "callsigns": [
+     "JBU400"
+    ],
+    "runway": "26R",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "JBU400",
+    "runway": "26R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   }
+  }
+ ]
+}

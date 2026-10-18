@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_EXIT_TAXI_THEN_CROSS",
+ "basis": "section 8: exit + ground taxi clearance release the landing (3-10-9, 3-7-2a)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31010,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "C",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest ten fifty three, runway four, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Southwest ten fifty three, roger, cleared to land runway four.",
+   "id": "SYN_KLGA_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 40,
+   "speaker": "ATC",
+   "text": "Southwest ten fifty three, if able, turn right next taxiway, contact ground one two one point niner.",
+   "id": "SYN_KLGA_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 48,
+   "speaker": "ATC",
+   "text": "Southwest ten fifty three, continue taxiing via Alpha Charlie to the ramp.",
+   "id": "SYN_KLGA_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Endeavor eight three two, at Charlie cross runway four without delay.",
+   "id": "SYN_KLGA_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Crossing runway four at Charlie, Endeavor eight three two.",
+   "id": "SYN_KLGA_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_05",
+   "speaker_ref": "b"
+  }
+ ]
+}

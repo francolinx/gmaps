@@ -1,0 +1,167 @@
+{
+ "icao": "KLGA",
+ "units": "metres; x = east, y = south (SVG), origin = NASR airport reference point",
+ "frame": {
+  "lat0": 40.77724222,
+  "lon0": -73.87260555,
+  "M": 6362673.661859735,
+  "N": 6387263.228830262,
+  "projection": "local equirectangular, WGS84"
+ },
+ "bounds_m": {
+  "x0": -1806.52348842128,
+  "y0": -1243.18471452916,
+  "x1": 1838.5445249158602,
+  "y1": 1295.44545633572
+ },
+ "chart_m_per_pt": 7.2267,
+ "layers": [
+  {
+   "id": "layer-chart",
+   "css_class": "L-chart",
+   "label": "Chart linework",
+   "default": true
+  },
+  {
+   "id": "layer-labels",
+   "css_class": "L-labels",
+   "label": "Chart labels",
+   "default": true
+  },
+  {
+   "id": "layer-osm",
+   "label": "OSM taxiways",
+   "default": false,
+   "requires_attribution": true,
+   "src": "osm/osm_taxiways.geojson"
+  }
+ ],
+ "footer": "Reconstructed from FAA airport diagram AL-289, d-TPP cycle 2610 (effective 2026-10-01 to 2026-10-29), sha256 99951faddb87…, https://aeronav.faa.gov/d-tpp/2610/00289AD.PDF. Display only. Not for navigation. No predictions.",
+ "chart": {
+  "cycle": "2610",
+  "effective_from": "2026-10-01",
+  "effective_to": "2026-10-29",
+  "sha256": "99951faddb8779db57ba617e6f136338a3df6df4a37dc300a749d7dd3af54b93",
+  "url": "https://aeronav.faa.gov/d-tpp/2610/00289AD.PDF",
+  "chart_code": "AL-289; printed revision mark 26134"
+ },
+ "osm_attribution": "© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+ "osm_data_timestamp": "2026-10-09T00:31:15Z",
+ "georef": {
+  "runway_end_residual_m": {
+   "04": 4.43,
+   "13": 10.4,
+   "22": 7.48,
+   "31": 13.68
+  },
+  "helipad_H1_m": 0.94
+ },
+ "review_views": {
+  "full": [
+   -1806.5,
+   -1243.2,
+   3645.1,
+   2538.6
+  ],
+  "runway_intersection": [
+   -444.0,
+   -610.2,
+   520,
+   520
+  ],
+  "runway_ends_04": [
+   -1225.9,
+   645.3,
+   500.0,
+   500.0
+  ],
+  "runway_ends_13": [
+   -755.5,
+   -802.9,
+   500.0,
+   500.0
+  ],
+  "runway_ends_22": [
+   -81.3,
+   -1155.0,
+   500.0,
+   500.0
+  ],
+  "runway_ends_31": [
+   1050.4,
+   335.6,
+   500.0,
+   500.0
+  ],
+  "terminal_b": [
+   -242.7,
+   272.4,
+   840,
+   840
+  ],
+  "terminal_a": [
+   -1552.9,
+   -117.2,
+   840,
+   840
+  ],
+  "terminal_c": [
+   198.2,
+   627.8,
+   840,
+   840
+  ],
+  "hot_spot_hs1": [
+   -523.4,
+   -649.2,
+   711.0,
+   711.0
+  ],
+  "hot_spot_hs2": [
+   -508.6,
+   -356.5,
+   440.0,
+   440.0
+  ],
+  "busiest_runway_crossings": [
+   -896.6,
+   -518.9,
+   1000.0,
+   1000.0
+  ],
+  "ils_hold_lines": [
+   -11.7,
+   -688.7,
+   220,
+   220
+  ],
+  "ils_hold_line_2": [
+   -1065.0,
+   494.3,
+   220,
+   220
+  ],
+  "ils_hold_line_3": [
+   -1040.8,
+   482.6,
+   220,
+   220
+  ],
+  "ils_hold_line_4": [
+   -911.5,
+   683.6,
+   220,
+   220
+  ]
+ },
+ "sign_off": {
+  "by": "Franco",
+  "date": "2026-10-08",
+  "scope": "display_only",
+  "predictions_enabled": false,
+  "applies_to_commit": "a53d2363aa9d5fa0c8b9ccadb089d3697ca71583",
+  "statement": "I, Franco, sign off KLGA for DISPLAY ONLY. Predictions stay off.",
+  "recheck_when": "the chart cycle expires (map view shows CHART CYCLE EXPIRED) or any checklist item changes status"
+ },
+ "notice": "Display only. Not for navigation. No predictions. Chart-derived geometry is not the geometry of record (review.json)."
+}

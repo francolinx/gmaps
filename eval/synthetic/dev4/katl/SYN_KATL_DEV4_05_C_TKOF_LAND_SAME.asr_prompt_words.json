@@ -1,0 +1,226 @@
+{
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_00": {
+  "text": "United four hundred five, runway two seven right, wind zero eight zero at nine august two three, cleared for takeoff.",
+  "asr_s": 0.57,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9789
+   },
+   {
+    "w": "four",
+    "p": 0.4817
+   },
+   {
+    "w": "hundred",
+    "p": 0.9897
+   },
+   {
+    "w": "five,",
+    "p": 0.9414
+   },
+   {
+    "w": "runway",
+    "p": 0.9989
+   },
+   {
+    "w": "two",
+    "p": 0.9956
+   },
+   {
+    "w": "seven",
+    "p": 0.9974
+   },
+   {
+    "w": "right,",
+    "p": 0.99
+   },
+   {
+    "w": "wind",
+    "p": 0.8507
+   },
+   {
+    "w": "zero",
+    "p": 0.9934
+   },
+   {
+    "w": "eight",
+    "p": 0.9965
+   },
+   {
+    "w": "zero",
+    "p": 0.998
+   },
+   {
+    "w": "at",
+    "p": 0.9887
+   },
+   {
+    "w": "nine",
+    "p": 0.7328
+   },
+   {
+    "w": "august",
+    "p": 0.4373
+   },
+   {
+    "w": "two",
+    "p": 0.9378
+   },
+   {
+    "w": "three,",
+    "p": 0.8744
+   },
+   {
+    "w": "cleared",
+    "p": 0.9992
+   },
+   {
+    "w": "for",
+    "p": 0.998
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.9558
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_01": {
+  "text": "United 405. Cleared for takeoff, runway two seven right.",
+  "asr_s": 0.427,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9721
+   },
+   {
+    "w": "405.",
+    "p": 0.4285
+   },
+   {
+    "w": "Cleared",
+    "p": 0.9898
+   },
+   {
+    "w": "for",
+    "p": 0.9493
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.5707
+   },
+   {
+    "w": "runway",
+    "p": 0.9951
+   },
+   {
+    "w": "two",
+    "p": 0.9803
+   },
+   {
+    "w": "seven",
+    "p": 0.9942
+   },
+   {
+    "w": "right.",
+    "p": 0.9869
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_02": {
+  "text": "Endeavor ten eighty four, runway two seven right, cleared to land.",
+  "asr_s": 0.423,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.9091
+   },
+   {
+    "w": "ten",
+    "p": 0.4813
+   },
+   {
+    "w": "eighty",
+    "p": 0.6826
+   },
+   {
+    "w": "four,",
+    "p": 0.8778
+   },
+   {
+    "w": "runway",
+    "p": 0.9955
+   },
+   {
+    "w": "two",
+    "p": 0.9949
+   },
+   {
+    "w": "seven",
+    "p": 0.9975
+   },
+   {
+    "w": "right,",
+    "p": 0.9645
+   },
+   {
+    "w": "cleared",
+    "p": 0.9985
+   },
+   {
+    "w": "to",
+    "p": 0.988
+   },
+   {
+    "w": "land.",
+    "p": 0.9597
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_03": {
+  "text": "Endeavor 1084, roger, cleared to land, runway two seven right.",
+  "asr_s": 0.491,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.9068
+   },
+   {
+    "w": "1084,",
+    "p": 0.5318
+   },
+   {
+    "w": "roger,",
+    "p": 0.8742
+   },
+   {
+    "w": "cleared",
+    "p": 0.9849
+   },
+   {
+    "w": "to",
+    "p": 0.9329
+   },
+   {
+    "w": "land,",
+    "p": 0.5728
+   },
+   {
+    "w": "runway",
+    "p": 0.9978
+   },
+   {
+    "w": "two",
+    "p": 0.9946
+   },
+   {
+    "w": "seven",
+    "p": 0.9968
+   },
+   {
+    "w": "right.",
+    "p": 0.9816
+   }
+  ]
+ }
+}

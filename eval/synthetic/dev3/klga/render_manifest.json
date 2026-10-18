@@ -1,0 +1,434 @@
+{
+ "icao": "KLGA",
+ "split": "dev3",
+ "SIMULATED": true,
+ "tts": "Kokoro-82M v1.0 via kokoro-onnx (local)",
+ "licences": {
+  "kokoro_weights": "Kokoro-82M v1.0, Apache-2.0",
+  "kokoro_onnx": "kokoro-onnx 0.6.1, MIT",
+  "onnxruntime": "MIT",
+  "phonemizer": "phonemizer 3.4.0, GPL-3.0",
+  "espeak_ng": "espeak-ng (bundled by espeakng-loader 0.2.4), GPL-3.0",
+  "use": "Accepted by Franco (Oct 9) for LOCAL test-audio generation only. Never shipped or distributed with GMAPS; the venv and models live outside the repo (~/gmaps_models/)."
+ },
+ "profile": {
+  "atc": [
+   "am_michael",
+   "af_sarah",
+   "bm_george"
+  ],
+  "pilots": [
+   "am_adam",
+   "am_eric",
+   "am_liam",
+   "am_onyx",
+   "af_bella",
+   "af_nicole",
+   "bm_lewis",
+   "bf_emma",
+   "am_fenrir",
+   "af_kore"
+  ],
+  "snr_db": [
+   10,
+   20
+  ],
+  "speed": [
+   1.05,
+   1.3
+  ]
+ },
+ "atc_voice": "bm_george",
+ "clips": {
+  "SYN_KLGA_DEV3_01_C_LAND_CROSS_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 14.2,
+   "seconds": 4.01
+  },
+  "SYN_KLGA_DEV3_01_C_LAND_CROSS_01": {
+   "voice": "af_nicole",
+   "lang": "en-us",
+   "snr_db": 15.8,
+   "seconds": 4.61
+  },
+  "SYN_KLGA_DEV3_01_C_LAND_CROSS_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 11.3,
+   "seconds": 4.69
+  },
+  "SYN_KLGA_DEV3_01_C_LAND_CROSS_03": {
+   "voice": "am_fenrir",
+   "lang": "en-us",
+   "snr_db": 16.2,
+   "seconds": 3.44
+  },
+  "SYN_KLGA_DEV3_02_C_LAND_CROSS_HOTSPOT_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 10.7,
+   "seconds": 4.01
+  },
+  "SYN_KLGA_DEV3_02_C_LAND_CROSS_HOTSPOT_01": {
+   "voice": "am_adam",
+   "lang": "en-us",
+   "snr_db": 17.5,
+   "seconds": 2.86
+  },
+  "SYN_KLGA_DEV3_02_C_LAND_CROSS_HOTSPOT_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 18.1,
+   "seconds": 6.7
+  },
+  "SYN_KLGA_DEV3_02_C_LAND_CROSS_HOTSPOT_03": {
+   "voice": "af_bella",
+   "lang": "en-us",
+   "snr_db": 11.5,
+   "seconds": 3.61
+  },
+  "SYN_KLGA_DEV3_03_C_TKOF_CROSS_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 19.8,
+   "seconds": 4.72
+  },
+  "SYN_KLGA_DEV3_03_C_TKOF_CROSS_01": {
+   "voice": "am_fenrir",
+   "lang": "en-us",
+   "snr_db": 11.4,
+   "seconds": 2.86
+  },
+  "SYN_KLGA_DEV3_03_C_TKOF_CROSS_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 18.9,
+   "seconds": 4.5
+  },
+  "SYN_KLGA_DEV3_03_C_TKOF_CROSS_03": {
+   "voice": "am_adam",
+   "lang": "en-us",
+   "snr_db": 19.5,
+   "seconds": 3.61
+  },
+  "SYN_KLGA_DEV3_04_C_LUAW_LAND_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 19.4,
+   "seconds": 5.55
+  },
+  "SYN_KLGA_DEV3_04_C_LUAW_LAND_01": {
+   "voice": "af_nicole",
+   "lang": "en-us",
+   "snr_db": 15.3,
+   "seconds": 4.63
+  },
+  "SYN_KLGA_DEV3_04_C_LUAW_LAND_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 17.6,
+   "seconds": 5.78
+  },
+  "SYN_KLGA_DEV3_04_C_LUAW_LAND_03": {
+   "voice": "am_onyx",
+   "lang": "en-us",
+   "snr_db": 18.5,
+   "seconds": 3.73
+  },
+  "SYN_KLGA_DEV3_05_C_TKOF_LAND_SAME_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 17.4,
+   "seconds": 6.04
+  },
+  "SYN_KLGA_DEV3_05_C_TKOF_LAND_SAME_01": {
+   "voice": "am_onyx",
+   "lang": "en-us",
+   "snr_db": 12.1,
+   "seconds": 3.37
+  },
+  "SYN_KLGA_DEV3_05_C_TKOF_LAND_SAME_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 13.7,
+   "seconds": 7.13
+  },
+  "SYN_KLGA_DEV3_05_C_TKOF_LAND_SAME_03": {
+   "voice": "am_adam",
+   "lang": "en-us",
+   "snr_db": 15.7,
+   "seconds": 3.39
+  },
+  "SYN_KLGA_DEV3_06_C_TKOF_LAND_INTERSECT_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 17.7,
+   "seconds": 6.64
+  },
+  "SYN_KLGA_DEV3_06_C_TKOF_LAND_INTERSECT_01": {
+   "voice": "bm_lewis",
+   "lang": "en-us",
+   "snr_db": 15.9,
+   "seconds": 3.35
+  },
+  "SYN_KLGA_DEV3_06_C_TKOF_LAND_INTERSECT_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 19.0,
+   "seconds": 6.4
+  },
+  "SYN_KLGA_DEV3_06_C_TKOF_LAND_INTERSECT_03": {
+   "voice": "am_onyx",
+   "lang": "en-us",
+   "snr_db": 19.6,
+   "seconds": 3.54
+  },
+  "SYN_KLGA_DEV3_07_C_HOLD_NO_READBACK_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 13.8,
+   "seconds": 3.69
+  },
+  "SYN_KLGA_DEV3_07_C_HOLD_NO_READBACK_01": {
+   "voice": "bm_lewis",
+   "lang": "en-us",
+   "snr_db": 19.8,
+   "seconds": 2.69
+  },
+  "SYN_KLGA_DEV3_07_C_HOLD_NO_READBACK_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 17.2,
+   "seconds": 3.52
+  },
+  "SYN_KLGA_DEV3_07_C_HOLD_NO_READBACK_03": {
+   "voice": "af_nicole",
+   "lang": "en-us",
+   "snr_db": 15.6,
+   "seconds": 2.9
+  },
+  "SYN_KLGA_DEV3_07_C_HOLD_NO_READBACK_04": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 16.4,
+   "seconds": 3.82
+  },
+  "SYN_KLGA_DEV3_07_C_HOLD_NO_READBACK_05": {
+   "voice": "af_nicole",
+   "lang": "en-us",
+   "snr_db": 14.0,
+   "seconds": 4.61
+  },
+  "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 13.6,
+   "seconds": 6.23
+  },
+  "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_01": {
+   "voice": "af_bella",
+   "lang": "en-us",
+   "snr_db": 13.4,
+   "seconds": 2.84
+  },
+  "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 11.4,
+   "seconds": 4.25
+  },
+  "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_03": {
+   "voice": "af_kore",
+   "lang": "en-us",
+   "snr_db": 14.5,
+   "seconds": 3.44
+  },
+  "SYN_KLGA_DEV3_09_N_HOLD_SHORT_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 10.9,
+   "seconds": 6.42
+  },
+  "SYN_KLGA_DEV3_09_N_HOLD_SHORT_01": {
+   "voice": "am_onyx",
+   "lang": "en-us",
+   "snr_db": 14.8,
+   "seconds": 3.39
+  },
+  "SYN_KLGA_DEV3_09_N_HOLD_SHORT_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 15.5,
+   "seconds": 5.59
+  },
+  "SYN_KLGA_DEV3_09_N_HOLD_SHORT_03": {
+   "voice": "am_liam",
+   "lang": "en-us",
+   "snr_db": 17.8,
+   "seconds": 3.16
+  },
+  "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 10.9,
+   "seconds": 5.46
+  },
+  "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_01": {
+   "voice": "af_kore",
+   "lang": "en-us",
+   "snr_db": 10.2,
+   "seconds": 3.05
+  },
+  "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 16.5,
+   "seconds": 5.36
+  },
+  "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_03": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 20.0,
+   "seconds": 3.82
+  },
+  "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_04": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 17.8,
+   "seconds": 6.23
+  },
+  "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_05": {
+   "voice": "am_liam",
+   "lang": "en-us",
+   "snr_db": 12.1,
+   "seconds": 3.59
+  },
+  "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 17.1,
+   "seconds": 3.39
+  },
+  "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+   "voice": "af_kore",
+   "lang": "en-us",
+   "snr_db": 12.9,
+   "seconds": 2.8
+  },
+  "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+   "voice": "af_kore",
+   "lang": "en-us",
+   "snr_db": 16.9,
+   "seconds": 2.52
+  },
+  "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 14.3,
+   "seconds": 3.91
+  },
+  "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+   "voice": "am_liam",
+   "lang": "en-us",
+   "snr_db": 12.4,
+   "seconds": 2.8
+  },
+  "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 10.1,
+   "seconds": 6.42
+  },
+  "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_01": {
+   "voice": "af_bella",
+   "lang": "en-us",
+   "snr_db": 12.1,
+   "seconds": 3.18
+  },
+  "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 12.3,
+   "seconds": 6.15
+  },
+  "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_03": {
+   "voice": "af_bella",
+   "lang": "en-us",
+   "snr_db": 17.6,
+   "seconds": 2.58
+  },
+  "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_04": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 14.2,
+   "seconds": 3.76
+  },
+  "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_05": {
+   "voice": "af_nicole",
+   "lang": "en-us",
+   "snr_db": 17.6,
+   "seconds": 4.2
+  },
+  "SYN_KLGA_DEV3_13_N_LUAW_THEN_TKOF_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 10.3,
+   "seconds": 4.31
+  },
+  "SYN_KLGA_DEV3_13_N_LUAW_THEN_TKOF_01": {
+   "voice": "am_fenrir",
+   "lang": "en-us",
+   "snr_db": 17.2,
+   "seconds": 2.65
+  },
+  "SYN_KLGA_DEV3_13_N_LUAW_THEN_TKOF_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 15.9,
+   "seconds": 6.19
+  },
+  "SYN_KLGA_DEV3_13_N_LUAW_THEN_TKOF_03": {
+   "voice": "am_fenrir",
+   "lang": "en-us",
+   "snr_db": 16.8,
+   "seconds": 2.54
+  },
+  "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_00": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 12.2,
+   "seconds": 4.46
+  },
+  "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_01": {
+   "voice": "af_nicole",
+   "lang": "en-us",
+   "snr_db": 11.0,
+   "seconds": 5.04
+  },
+  "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_02": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 10.4,
+   "seconds": 5.01
+  },
+  "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_03": {
+   "voice": "af_kore",
+   "lang": "en-us",
+   "snr_db": 13.7,
+   "seconds": 2.24
+  },
+  "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_04": {
+   "voice": "bm_george",
+   "lang": "en-us",
+   "snr_db": 12.0,
+   "seconds": 4.2
+  },
+  "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_05": {
+   "voice": "af_nicole",
+   "lang": "en-us",
+   "snr_db": 10.9,
+   "seconds": 4.55
+  }
+ }
+}

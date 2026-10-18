@@ -1,0 +1,1732 @@
+{
+ "SIMULATED": true,
+ "bench": "venue/tool_loop_bench.py",
+ "model": "gmaps-parser",
+ "base_url": "http://127.0.0.1:8001/v1",
+ "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+ "generated": "2026-10-17T06:15:14",
+ "summary": {
+  "no_feed": {
+   "runs": 3,
+   "pass_rate": 0.0,
+   "ingest_recall_mean": 0.0,
+   "alerts_exact_rate": 0.0,
+   "invalid_call_rate": 0.25,
+   "recoveries": 15,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 2.0,
+   "model_latency_median_s": 3.916,
+   "time_to_alert_median_s": null
+  },
+  "positive": {
+   "runs": 3,
+   "pass_rate": 0.0,
+   "ingest_recall_mean": 0.0,
+   "alerts_exact_rate": 0.0,
+   "invalid_call_rate": 0.25,
+   "recoveries": 15,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 2.0,
+   "model_latency_median_s": 3.902,
+   "time_to_alert_median_s": null
+  },
+  "stale": {
+   "runs": 3,
+   "pass_rate": 0.0,
+   "ingest_recall_mean": 0.0,
+   "alerts_exact_rate": 0.0,
+   "invalid_call_rate": 0.25,
+   "recoveries": 15,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 2.0,
+   "model_latency_median_s": 3.876,
+   "time_to_alert_median_s": null
+  },
+  "transient": {
+   "runs": 3,
+   "pass_rate": 0.0,
+   "ingest_recall_mean": 0.0,
+   "alerts_exact_rate": 0.0,
+   "invalid_call_rate": 0.2,
+   "recoveries": 15,
+   "faults_injected": 3,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 2.0,
+   "model_latency_median_s": 3.987,
+   "time_to_alert_median_s": null
+  }
+ },
+ "runs": [
+  {
+   "run_id": "20261017-060722_positive_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "positive",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 5,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 3.9535,
+    "p95": 6.441,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.845,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.043,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead: prediction unavailable due to no observations received. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.845,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead showed no conflict at t=3. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 7.951,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 requested to cross runway 36 at Kilo. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.774,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven, cross runway 36 at Kilo. Look-ahead: Prediction unavailable. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.824,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 (vehicle) crossing runway 36 at K. Look-ahead: no conflict detected. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_positive_0.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_positive_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "positive",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 5,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 3.9025,
+    "p95": 6.324,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.655,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.177,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead: prediction unavailable due to no observations received. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.655,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 7.695,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 requested to cross runway 36 at Kilo. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.516,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven, cross runway 36 at Kilo. Look-ahead: Prediction unavailable. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.596,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 (vehicle) crossing runway 36 at K. Look-ahead: no conflict detected. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_positive_1.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_positive_2",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "positive",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 5,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 3.883,
+    "p95": 6.514,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.83,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.345,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead showed no available observations for any actors. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.06,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead showed no conflict at t=3. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 7.83,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 requested to cross runway 36 at K. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.516,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven, cross runway 36 at Kilo. Look-ahead: Prediction unavailable. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.611,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 (vehicle) crossing runway 36 at K. Look-ahead: no conflict detected. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_positive_2.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_no_feed_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "no_feed",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 5,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 3.916,
+    "p95": 6.436,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.899,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.913,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.795,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 8.022,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven requested to cross runway 36 at Kilo. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.899,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven instructed to cross runway 36 at Kilo. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.474,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 crossing runway 36 at K. Look-ahead unavailable. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_no_feed_0.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_no_feed_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "no_feed",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 5,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 3.8665000000000003,
+    "p95": 6.4,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.784,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.136,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.78,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 7.784,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven requested to cross runway 36 at Kilo. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.858,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven instructed to cross runway 36 at Kilo. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.241,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 crossing runway 36 at K. Look-ahead unavailable. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_no_feed_1.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_no_feed_2",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "no_feed",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 5,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 3.9595000000000002,
+    "p95": 6.41,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.91,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.91,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.017,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 8.023,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven requested to cross runway 36 at Kilo. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.873,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven instructed to cross runway 36 at Kilo. Look-ahead unavailable due to no simulated observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.246,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 crossing runway 36 at K. Look-ahead unavailable. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_no_feed_2.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_transient_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "transient",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 4,
+   "injected_faults": 1,
+   "injected_transient": 1,
+   "model_latency_s": {
+    "median": 3.9459999999999997,
+    "p95": 6.328,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.749,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.963,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead showed no available observations for any actors. No warnings were posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.836,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead showed no conflict at t=3. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 7.741,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 requested to cross runway 36 at Kilo. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.664,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven, cross runway 36 at Kilo. Look-ahead: Prediction unavailable. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.749,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 (vehicle) crossing runway 36 at K. Look-ahead: no conflict detected. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_transient_0.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_transient_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "transient",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 4,
+   "injected_faults": 1,
+   "injected_transient": 1,
+   "model_latency_s": {
+    "median": 3.987,
+    "p95": 6.472,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.975,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.135,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead showed no available observations for any actors. No warnings were posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.975,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead showed no conflict at t=3. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 7.809,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 requested to cross runway 36 at Kilo. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.715,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven instructed to cross runway 36 at Kilo. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 8.077,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 (vehicle) crossing runway 36 at K. Look-ahead: no conflict detected. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_transient_1.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_transient_2",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "transient",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 4,
+   "injected_faults": 1,
+   "injected_transient": 1,
+   "model_latency_s": {
+    "median": 4.048,
+    "p95": 6.997,
+    "n": 10
+   },
+   "turn_wall_s_median": 8.253,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.99,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead showed no available observations for any actors. No warnings were posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.562,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead showed no conflict at t=3. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 8.253,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 requested to cross runway 36 at Kilo. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.59,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven, cross runway 36 at Kilo. Look-ahead: Prediction unavailable. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.863,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 (vehicle) crossing runway 36 at K. Look-ahead: no conflict detected. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_transient_2.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_stale_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "stale",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 5,
+   "injected_faults": 1,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 3.8505000000000003,
+    "p95": 6.333,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.664,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.138,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead unavailable due to stale observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.664,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 7.696,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 requested to cross runway 36 at Kilo. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.512,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven, cross runway 36 at Kilo. Look-ahead: Prediction unavailable. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.616,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 (vehicle) crossing runway 36 at K. Look-ahead: no conflict detected. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_stale_0.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_stale_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "stale",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 5,
+   "injected_faults": 1,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 3.8760000000000003,
+    "p95": 6.492,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.838,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.523,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead unavailable due to stale observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.838,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead showed no conflict at t=3. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 8.027,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 requested to cross runway 36 at Kilo. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.812,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven, cross runway 36 at Kilo. Look-ahead: Prediction unavailable. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.612,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 (vehicle) crossing runway 36 at K. Look-ahead: no conflict detected. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_stale_1.jsonl"
+  },
+  {
+   "run_id": "20261017-060722_stale_2",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "stale",
+   "model": "gmaps-parser",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 0.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 20,
+    "tool_errors": 5,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 5,
+    "rounds_exhausted": 0,
+    "model_calls": 10
+   },
+   "invalid_calls": 5,
+   "injected_faults": 1,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 3.9000000000000004,
+    "p95": 6.497,
+    "n": 10
+   },
+   "turn_wall_s_median": 7.838,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.853,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land on runway 36. Look-ahead unavailable due to stale observation feed. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.838,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: SimAir 212 cleared to land runway 36. Look-ahead showed no conflict at t=3. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 8.014,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 requested to cross runway 36 at Kilo. Look-ahead showed no conflict. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.818,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue seven, cross runway 36 at Kilo. Look-ahead: Prediction unavailable. No warning posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.802,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead",
+      "open_warnings"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "Recorded: Rescue7 (vehicle) crossing runway 36 at K. Look-ahead: no conflict detected. No warning posted."
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-060722_stale_2.jsonl"
+  }
+ ]
+}

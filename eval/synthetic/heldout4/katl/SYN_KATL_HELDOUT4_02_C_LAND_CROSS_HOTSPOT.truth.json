@@ -1,0 +1,53 @@
+{
+ "id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT",
+ "EVALUATION_ONLY": true,
+ "expected_alert": true,
+ "expected_rules": [
+  "R1"
+ ],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "UAL4872"
+    ],
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "UAL4872"
+    ],
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "FFT2411"
+    ],
+    "runway": "9L",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "FFT2411"
+    ],
+    "runway": "9L",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_03"
+  }
+ ]
+}

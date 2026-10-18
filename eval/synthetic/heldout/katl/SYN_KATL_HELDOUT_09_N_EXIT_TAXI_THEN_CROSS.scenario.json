@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "N_EXIT_TAXI_THEN_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7301,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "R3",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American one zero niner niner, cleared to land runway two seven left.",
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two seven left, American one zero niner niner.",
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_01"
+  },
+  {
+   "t": 40,
+   "speaker": "ATC",
+   "text": "American one zero niner niner, left next taxiway Bravo six, monitor ground point niner.",
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_02"
+  },
+  {
+   "t": 48,
+   "speaker": "ATC",
+   "text": "American one zero niner niner, taxi via Bravo six to the ramp.",
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_03"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "United six sixty eight, at Romeo three cross runway two seven left.",
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_04"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Crossing runway two seven left at Romeo three, United six sixty eight.",
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_05"
+  }
+ ]
+}

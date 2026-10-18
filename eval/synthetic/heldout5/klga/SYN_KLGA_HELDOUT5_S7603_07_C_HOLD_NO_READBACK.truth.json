@@ -1,0 +1,73 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7603_07_C_HOLD_NO_READBACK",
+ "EVALUATION_ONLY": true,
+ "expected_alert": true,
+ "expected_rules": [
+  "R7"
+ ],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "NKS2300"
+    ],
+    "runway": "13",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_07_C_HOLD_NO_READBACK_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "NKS2300"
+    ],
+    "runway": "13",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_07_C_HOLD_NO_READBACK_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "AAL1400"
+    ],
+    "runway": "13",
+    "instruction": "HOLD_SHORT"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_07_C_HOLD_NO_READBACK_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "AAL1400"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_07_C_HOLD_NO_READBACK_03"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "AAL1400"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_07_C_HOLD_NO_READBACK_04"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "AAL1400"
+    ],
+    "runway": "13",
+    "instruction": "HOLD_SHORT"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_07_C_HOLD_NO_READBACK_05"
+  }
+ ]
+}

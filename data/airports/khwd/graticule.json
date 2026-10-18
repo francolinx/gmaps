@@ -1,0 +1,67 @@
+{
+ "icao": "KHWD",
+ "source": "pdf_text_layer",
+ "about": "Graticule values read from the chart PDF's own text layer and tied to the extracted grid lines by position (tools/airport_map/graticule.py).",
+ "pdf_sha256": "a5006db945561b5d2638684ed4830be90179fe753da2c6891caf55990350c050",
+ "read_at": "2026-10-08T23:07:27-0400",
+ "confirmed_by": null,
+ "parallels": [
+  {
+   "value": "37°40.0'N",
+   "lat": 37.666666666666664,
+   "line_pt_y": 30.941,
+   "label_bbox": [
+    517.71,
+    29.58,
+    541.52,
+    34.27
+   ]
+  },
+  {
+   "value": "37°39.5'N",
+   "lat": 37.65833333333333,
+   "line_pt_y": 232.764,
+   "label_bbox": [
+    517.71,
+    231.41,
+    541.52,
+    236.09
+   ]
+  }
+ ],
+ "meridians": [
+  {
+   "value": "122°08.0'W",
+   "lon": -122.13333333333334,
+   "line_pt_x": 98.972,
+   "label_bbox": [
+    82.1,
+    361.64,
+    114.13,
+    366.33
+   ]
+  },
+  {
+   "value": "122°07.5'W",
+   "lon": -122.125,
+   "line_pt_x": 259.435,
+   "label_bbox": [
+    242.57,
+    361.64,
+    274.6,
+    366.33
+   ]
+  },
+  {
+   "value": "122°07.0'W",
+   "lon": -122.11666666666666,
+   "line_pt_x": 419.88,
+   "label_bbox": [
+    403.04,
+    361.64,
+    435.07,
+    366.33
+   ]
+  }
+ ]
+}

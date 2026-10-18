@@ -1,0 +1,22 @@
+{
+ "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Delta 7-4, cleared to land runway 4.",
+  "asr_s": 0.181
+ },
+ "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "Clear to land for Delta 7-4.",
+  "asr_s": 0.174
+ },
+ "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Delta 7-4 is clear of 4.",
+  "asr_s": 0.172
+ },
+ "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "United 775 at Quebec Cross Runway 4.",
+  "asr_s": 0.182
+ },
+ "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Crossing runway 4 at Quebec, United 775.",
+  "asr_s": 0.182
+ }
+}

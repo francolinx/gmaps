@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV3_13_N_LUAW_THEN_TKOF_00": {
+  "text": "JetBlue 228, runway 8 left at Bravo 3, line up and wait.",
+  "asr_s": 0.214
+ },
+ "SYN_KATL_DEV3_13_N_LUAW_THEN_TKOF_01": {
+  "text": "Line up and weight 8 left, jet blue 228.",
+  "asr_s": 0.195
+ },
+ "SYN_KATL_DEV3_13_N_LUAW_THEN_TKOF_02": {
+  "text": "JetBlue 228, runway 8L, wind 100 at 18, cleared for takeoff.",
+  "asr_s": 0.234
+ },
+ "SYN_KATL_DEV3_13_N_LUAW_THEN_TKOF_03": {
+  "text": "Cleared for takeoff 8 left, jet blue 228.",
+  "asr_s": 0.188
+ }
+}

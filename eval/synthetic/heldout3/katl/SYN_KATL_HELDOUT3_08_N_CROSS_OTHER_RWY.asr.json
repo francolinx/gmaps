@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT3_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Delta 700, wind 280 at 16 gusts 31. Runway 8 left, cleared to land.",
+  "asr_s": 0.23
+ },
+ "SYN_KATL_HELDOUT3_08_N_CROSS_OTHER_RWY_01": {
+  "text": "700 roger, clear to land, runway E left.",
+  "asr_s": 0.194
+ },
+ "SYN_KATL_HELDOUT3_08_N_CROSS_OTHER_RWY_02": {
+  "text": "United 1043, taxi via Papa, cross runway 90-wide.",
+  "asr_s": 0.195
+ },
+ "SYN_KATL_HELDOUT3_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Crossing runway Niner right at Pampa, United 1043.",
+  "asr_s": 0.187
+ }
+}

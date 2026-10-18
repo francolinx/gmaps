@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_00": {
+  "text": "Winchester, four zero six niner Zulu, number two, runway eight left, cleared to land.",
+  "asr_s": 0.231
+ },
+ "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_01": {
+  "text": "runway eight left, cleared to land, twin Cessna 406-902.",
+  "asr_s": 0.217
+ },
+ "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_02": {
+  "text": "Quincesta 4087 Romeo, proceed by a charge, hold short of runway eight left.",
+  "asr_s": 0.221
+ },
+ "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_03": {
+  "text": "Hold short of runway eight left, twin Cessna pole zero eight seven Romeo.",
+  "asr_s": 0.207
+ }
+}

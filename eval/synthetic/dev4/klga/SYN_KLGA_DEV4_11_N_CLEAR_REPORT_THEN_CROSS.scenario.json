@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "dev4",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "basis": "section 8: pilot's 'clear of the runway' releases the landing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9301,
+ "context": {
+  "runway": "13-31",
+  "taxiway": "W",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American niner fifty one, wind one one zero at seven, runway three one, cleared to land.",
+   "id": "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "American niner fifty one, roger, cleared to land runway three one.",
+   "id": "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "American niner fifty one, clear runway three one at Tango.",
+   "id": "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Spirit eight thirty nine, cross runway three one at Whiskey.",
+   "id": "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Crossing runway three one at Whiskey, Spirit eight thirty nine.",
+   "id": "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "speaker_ref": "b"
+  }
+ ]
+}

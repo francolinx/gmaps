@@ -1,0 +1,28 @@
+{
+ "source": "FAA NASR 28-day subscription, CSV extract",
+ "cycle_effective": "2026-10-01",
+ "url": "https://nfdc.faa.gov/webContent/28DaySub/extra/01_Oct_2026_APT_CSV.zip",
+ "index_page": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-10-01",
+ "zip_sha256": "aba48ea877f249d9b8cd63988b14b3432a6a09ad1fbe9561a5e6443c99c03dd0",
+ "zip_bytes": 8030968,
+ "retrieved_at": "2026-10-18T00:26:36-0400",
+ "filter": "ARPT_ID == 'RDU'",
+ "licence": "US Government work (public domain)",
+ "files": {
+  "APT_BASE.csv": {
+   "rows_kept": 1,
+   "source_member_sha256": "799c7bcc78cda2fd360324858ca268b8ce1bc570d669a68fe7cdddf0d4bd8d16",
+   "kept_sha256": "83e4e6f61290096e12684226ebfea45bbe8c965c904c70da89b2371c07a6a53b"
+  },
+  "APT_RWY.csv": {
+   "rows_kept": 3,
+   "source_member_sha256": "0057dd3bdca3641615c89c4e197367bf65c2488fdb47841399f6fff9aecd8e6d",
+   "kept_sha256": "7dfaf2656ba48296b34fea5e837b1964299ad3d1f94afcac30707bd0324079ca"
+  },
+  "APT_RWY_END.csv": {
+   "rows_kept": 6,
+   "source_member_sha256": "20b92a5857a036b8cd9a4068dcc8c8902109f1bdd6ec69cd428c74495911f29f",
+   "kept_sha256": "1aad34960c4d795ec95d15fbf754a04f93b54e876dfe1459272e2d73a2b86599"
+  }
+ }
+}

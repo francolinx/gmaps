@@ -1,0 +1,210 @@
+{
+ "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_00": {
+  "text": "Endeavor 2900, runway niner right at November two, line up and wait.",
+  "asr_s": 0.468,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.925
+   },
+   {
+    "w": "2900,",
+    "p": 0.4653
+   },
+   {
+    "w": "runway",
+    "p": 0.9957
+   },
+   {
+    "w": "niner",
+    "p": 0.6552
+   },
+   {
+    "w": "right",
+    "p": 0.9558
+   },
+   {
+    "w": "at",
+    "p": 0.6417
+   },
+   {
+    "w": "November",
+    "p": 0.8826
+   },
+   {
+    "w": "two,",
+    "p": 0.5013
+   },
+   {
+    "w": "line",
+    "p": 0.9976
+   },
+   {
+    "w": "up",
+    "p": 0.9991
+   },
+   {
+    "w": "and",
+    "p": 0.9658
+   },
+   {
+    "w": "wait.",
+    "p": 0.7784
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_01": {
+  "text": "Line up and wait, runway niner right, Endeavor 2900.",
+  "asr_s": 0.43,
+  "words": [
+   {
+    "w": "Line",
+    "p": 0.9739
+   },
+   {
+    "w": "up",
+    "p": 0.9406
+   },
+   {
+    "w": "and",
+    "p": 0.7816
+   },
+   {
+    "w": "wait,",
+    "p": 0.6199
+   },
+   {
+    "w": "runway",
+    "p": 0.9994
+   },
+   {
+    "w": "niner",
+    "p": 0.6321
+   },
+   {
+    "w": "right,",
+    "p": 0.9822
+   },
+   {
+    "w": "Endeavor",
+    "p": 0.5386
+   },
+   {
+    "w": "2900.",
+    "p": 0.8462
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_02": {
+  "text": "Endeavor 2900, runway nine a right, cleared for takeoff, turn left heading two seven zero.",
+  "asr_s": 0.531,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.9179
+   },
+   {
+    "w": "2900,",
+    "p": 0.7352
+   },
+   {
+    "w": "runway",
+    "p": 0.9882
+   },
+   {
+    "w": "nine",
+    "p": 0.915
+   },
+   {
+    "w": "a",
+    "p": 0.3917
+   },
+   {
+    "w": "right,",
+    "p": 0.9192
+   },
+   {
+    "w": "cleared",
+    "p": 0.9985
+   },
+   {
+    "w": "for",
+    "p": 0.9987
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.7726
+   },
+   {
+    "w": "turn",
+    "p": 0.9433
+   },
+   {
+    "w": "left",
+    "p": 0.9993
+   },
+   {
+    "w": "heading",
+    "p": 0.9204
+   },
+   {
+    "w": "two",
+    "p": 0.8824
+   },
+   {
+    "w": "seven",
+    "p": 0.9943
+   },
+   {
+    "w": "zero.",
+    "p": 0.9515
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_03": {
+  "text": "Roger, cleared for takeoff, line up and wait, Endeavor 2900.",
+  "asr_s": 0.434,
+  "words": [
+   {
+    "w": "Roger,",
+    "p": 0.1634
+   },
+   {
+    "w": "cleared",
+    "p": 0.9922
+   },
+   {
+    "w": "for",
+    "p": 0.9894
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.8228
+   },
+   {
+    "w": "line",
+    "p": 0.6565
+   },
+   {
+    "w": "up",
+    "p": 0.9821
+   },
+   {
+    "w": "and",
+    "p": 0.8581
+   },
+   {
+    "w": "wait,",
+    "p": 0.8234
+   },
+   {
+    "w": "Endeavor",
+    "p": 0.2726
+   },
+   {
+    "w": "2900.",
+    "p": 0.579
+   }
+  ]
+ }
+}

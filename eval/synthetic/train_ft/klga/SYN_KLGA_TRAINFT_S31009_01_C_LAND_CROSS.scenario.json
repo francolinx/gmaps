@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31009_01_C_LAND_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_LAND_CROSS",
+ "basis": "R1 crossing vs active landing (3-7-2g2)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31009,
+ "context": {
+  "runway": "13-31",
+  "taxiway": "Z",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "November five seven one one Juliett, runway one three, wind zero niner zero at two zero, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31009_01_C_LAND_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "November five seven one one Juliett, roger, cleared to land runway one three.",
+   "id": "SYN_KLGA_TRAINFT_S31009_01_C_LAND_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Spirit two eight two, at Zulu cross runway one three without delay.",
+   "id": "SYN_KLGA_TRAINFT_S31009_01_C_LAND_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway one three at Zulu, Spirit two eight two.",
+   "id": "SYN_KLGA_TRAINFT_S31009_01_C_LAND_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

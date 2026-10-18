@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV4_04_C_LUAW_LAND_00": {
+  "text": "November 7-6-0-1 Victor, runway 2-7 right, line up and wait, trafficker Airbus 320, 4 mile final.",
+  "asr_s": 0.32
+ },
+ "SYN_KATL_DEV4_04_C_LUAW_LAND_01": {
+  "text": "Line up and wait 27 right. November 7-6-0-1 victor.",
+  "asr_s": 0.219
+ },
+ "SYN_KATL_DEV4_04_C_LUAW_LAND_02": {
+  "text": "November 8728 Lima, runway 27R, cleared to land, traffic holding in position.",
+  "asr_s": 0.213
+ },
+ "SYN_KATL_DEV4_04_C_LUAW_LAND_03": {
+  "text": "Cleared to land 27 right. November 8728 Lima.",
+  "asr_s": 0.227
+ }
+}

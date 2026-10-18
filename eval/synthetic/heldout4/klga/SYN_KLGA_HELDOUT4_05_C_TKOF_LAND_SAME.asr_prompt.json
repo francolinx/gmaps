@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_00": {
+  "text": "Southwest 2600, runway four at Charlie, intersection departure, cleared for takeoff.",
+  "asr_s": 0.212
+ },
+ "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_01": {
+  "text": "Roger, cleared for takeoff, move southwest 2600.",
+  "asr_s": 0.173
+ },
+ "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_02": {
+  "text": "Twin Cessna seven seven one five Juliett. Runway four, cleared to land, wind zero eight zero at one eight.",
+  "asr_s": 0.279
+ },
+ "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_03": {
+  "text": "runway four, cleared to land, twin Cessna 7715 Juliet.",
+  "asr_s": 0.193
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31003_14_N_LUAW_CONTINUE",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_14_N_LUAW_CONTINUE_00",
+   "fields": {
+    "callsigns": [
+     "FFT611"
+    ],
+    "runway": "22",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "FFT611",
+    "runway": "22",
+    "instruction": "LUAW",
+    "taxiways": [
+     "U"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_14_N_LUAW_CONTINUE_01",
+   "fields": {
+    "callsigns": [
+     "FFT611"
+    ],
+    "runway": "22",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT611",
+    "runway": "22",
+    "instruction": "LUAW",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_14_N_LUAW_CONTINUE_02",
+   "fields": {
+    "callsigns": [
+     "FFT1242"
+    ],
+    "runway": "22",
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "FFT1242",
+    "runway": "22",
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_14_N_LUAW_CONTINUE_03",
+   "fields": {
+    "callsigns": [
+     "FFT1242"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT1242",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_14_N_LUAW_CONTINUE_04",
+   "fields": {
+    "callsigns": [
+     "FFT611"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "FFT611",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_14_N_LUAW_CONTINUE_05",
+   "fields": {
+    "callsigns": [
+     "FFT611"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT611",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   }
+  }
+ ]
+}

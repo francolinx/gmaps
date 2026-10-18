@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT_03_C_TKOF_CROSS_00": {
+  "text": "Jet Blue 1509, runway 22, wind 270 at 8, cleared for takeoff.",
+  "asr_s": 0.221
+ },
+ "SYN_KLGA_HELDOUT_03_C_TKOF_CROSS_01": {
+  "text": "Good for takeoff runway 22, jet blue one five zero niner.",
+  "asr_s": 0.23
+ },
+ "SYN_KLGA_HELDOUT_03_C_TKOF_CROSS_02": {
+  "text": "Southwest 1430 at Uniform Cross Runway 22.",
+  "asr_s": 0.183
+ },
+ "SYN_KLGA_HELDOUT_03_C_TKOF_CROSS_03": {
+  "text": "I'll see my mate you do at uniform, Southwest 1420.",
+  "asr_s": 0.202
+ }
+}

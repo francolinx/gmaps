@@ -1,0 +1,152 @@
+{
+ "SIMULATED": true,
+ "set": "eval/synthetic/heldout4 (KATL + KLGA), read only",
+ "generated": "2026-10-17 01:55 EDT",
+ "gold_taxiway_rule": "legacy",
+ "note": "Field match over all n; untyped (grammar) or dropped (LLM) transmissions score 0 on every field. Gold taxiways = chart names spoken in the scripted text (legacy rule).",
+ "script_text": {
+  "grammar_alone": {
+   "n": 138,
+   "field_exact_match": {
+    "speaker_role": 0.942,
+    "callsign": 0.942,
+    "runway": 0.87,
+    "instruction": 0.942,
+    "taxiways": 0.609
+   },
+   "all_fields_exact": 0.58,
+   "typed_rate": 0.942
+  },
+  "llm_fallback_35b": {
+   "n": 138,
+   "field_exact_match": {
+    "speaker_role": 0.63,
+    "callsign": 0.928,
+    "runway": 0.935,
+    "instruction": 0.928,
+    "taxiways": 0.681
+   },
+   "all_fields_exact": 0.442,
+   "endpoint": "venue/llm_fallback.py defaults (127.0.0.1:8000, nvidia/Qwen3.6-35B-A3B-NVFP4), unchanged; traffic list: none",
+   "drop_rate": 0.043,
+   "accepted_actionable_rate": 0.877,
+   "reasons": {
+    "valid": 121,
+    "no actionable content": 11,
+    "grounding: flight number not heard": 5,
+    "grounding: taxiway N not heard": 1
+   },
+   "raw_json_field_exact_match": {
+    "speaker_role": 0.667,
+    "callsign": 0.935,
+    "runway": 0.978,
+    "instruction": 0.971,
+    "taxiways": 0.703
+   },
+   "latency_s": {
+    "median": 0.872,
+    "p95": 0.967,
+    "max": 1.57
+   }
+  }
+ },
+ "whisper_text": {
+  "grammar_alone": {
+   "n": 138,
+   "field_exact_match": {
+    "speaker_role": 0.601,
+    "callsign": 0.543,
+    "runway": 0.529,
+    "instruction": 0.616,
+    "taxiways": 0.377
+   },
+   "all_fields_exact": 0.304,
+   "typed_rate": 0.63
+  },
+  "llm_fallback_35b": {
+   "n": 138,
+   "field_exact_match": {
+    "speaker_role": 0.536,
+    "callsign": 0.601,
+    "runway": 0.725,
+    "instruction": 0.717,
+    "taxiways": 0.493
+   },
+   "all_fields_exact": 0.268,
+   "endpoint": "venue/llm_fallback.py defaults (127.0.0.1:8000, nvidia/Qwen3.6-35B-A3B-NVFP4), unchanged; traffic list: none",
+   "drop_rate": 0.217,
+   "accepted_actionable_rate": 0.638,
+   "reasons": {
+    "valid": 88,
+    "no actionable content": 20,
+    "grounding: airline not heard and not resolved by the traffic list": 8,
+    "grounding: flight number not heard": 4,
+    "grounding: no 'CROSSING_COMPLETE' words in the text": 4,
+    "grounding: no 'CROSS' words in the text": 3,
+    "grounding: no 'LANDING_CLEARANCE' words in the text": 3,
+    "grounding: runway number not heard": 2,
+    "grounding: no 'TAXI' words in the text": 2,
+    "schema: taxiway not on the chart": 1,
+    "grounding: no 'HOLD_SHORT' words in the text": 1,
+    "grounding: taxiway N not heard": 1,
+    "grounding: no 'TAKEOFF_CLEARANCE' words in the text": 1
+   },
+   "raw_json_field_exact_match": {
+    "speaker_role": 0.696,
+    "callsign": 0.725,
+    "runway": 0.906,
+    "instruction": 0.877,
+    "taxiways": 0.638
+   },
+   "latency_s": {
+    "median": 0.865,
+    "p95": 0.959,
+    "max": 0.997
+   }
+  }
+ },
+ "grammar_alone": {
+  "n": 138,
+  "field_exact_match": {
+   "speaker_role": 0.942,
+   "callsign": 0.942,
+   "runway": 0.87,
+   "instruction": 0.942,
+   "taxiways": 0.609
+  },
+  "all_fields_exact": 0.58,
+  "typed_rate": 0.942
+ },
+ "llm_fallback_35b": {
+  "n": 138,
+  "field_exact_match": {
+   "speaker_role": 0.63,
+   "callsign": 0.928,
+   "runway": 0.935,
+   "instruction": 0.928,
+   "taxiways": 0.681
+  },
+  "all_fields_exact": 0.442,
+  "endpoint": "venue/llm_fallback.py defaults (127.0.0.1:8000, nvidia/Qwen3.6-35B-A3B-NVFP4), unchanged; traffic list: none",
+  "drop_rate": 0.043,
+  "accepted_actionable_rate": 0.877,
+  "reasons": {
+   "valid": 121,
+   "no actionable content": 11,
+   "grounding: flight number not heard": 5,
+   "grounding: taxiway N not heard": 1
+  },
+  "raw_json_field_exact_match": {
+   "speaker_role": 0.667,
+   "callsign": 0.935,
+   "runway": 0.978,
+   "instruction": 0.971,
+   "taxiways": 0.703
+  },
+  "latency_s": {
+   "median": 0.872,
+   "p95": 0.967,
+   "max": 1.57
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT3_09_N_HOLD_SHORT_00": {
+  "text": "United 906, wind 070 at 16 gust 27. Runway 22, clear to land.",
+  "asr_s": 0.225
+ },
+ "SYN_KLGA_HELDOUT3_09_N_HOLD_SHORT_01": {
+  "text": "United 906, Roger. Clear to land runway 22.",
+  "asr_s": 0.189
+ },
+ "SYN_KLGA_HELDOUT3_09_N_HOLD_SHORT_02": {
+  "text": "Never 626, hold short of Runway TT, traffic landing Runway TT.",
+  "asr_s": 0.209
+ },
+ "SYN_KLGA_HELDOUT3_09_N_HOLD_SHORT_03": {
+  "text": "Endeavour 626, holding short of runway 22.",
+  "asr_s": 0.176
+ }
+}

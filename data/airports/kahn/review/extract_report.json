@@ -1,0 +1,723 @@
+{
+ "meta": {
+  "icao": "KAHN",
+  "pdf": "data/airports/sources/ahn_faa_2610_00983AD.pdf",
+  "pdf_sha256": "de0a0c699100ae1075a0887abd908c912f7c78f66e83285fd57d506f0f11a1b3",
+  "page_size_pt": [
+   387.36,
+   594.0
+  ],
+  "content_rotation_deg": 90,
+  "frame_size_pt": [
+   594.0,
+   387.36
+  ],
+  "chart_frame_bbox": [
+   44.72,
+   18.04,
+   549.11,
+   369.32
+  ],
+  "extractor": "pdfminer.six 20260107",
+  "styles": "tools/airport_map/styles/faa_apd.json",
+  "debug_text_layer_in_preview": false
+ },
+ "objects_total": 1040,
+ "objects_by_class": {
+  "glyph": 779,
+  "linework": 102,
+  "pavement": 66,
+  "symbol": 23,
+  "graticule_line": 23,
+  "arrowhead": 21,
+  "building": 15,
+  "runway_centerline_extension": 3,
+  "runway": 2,
+  "runway_marking": 2,
+  "label_background": 2,
+  "frame": 1,
+  "runway_overdraw": 1
+ },
+ "labels_total": 117,
+ "labels_by_class": {
+  "note": 62,
+  "taxiway_candidate": 28,
+  "annotation": 7,
+  "graticule": 5,
+  "terminal_label": 4,
+  "heading": 4,
+  "runway_end": 4,
+  "dimension": 2,
+  "number": 1
+ },
+ "fill_rule": {
+  "evenodd": 910
+ },
+ "multi_subpath_objects": 287,
+ "bezier_objects": 13,
+ "dashed_objects": [],
+ "clipped_objects": [],
+ "runways": [
+  {
+   "index": 64,
+   "long_pt": 246.733,
+   "short_pt": 6.185,
+   "axis_deg": -69.2
+  },
+  {
+   "index": 821,
+   "long_pt": 378.249,
+   "short_pt": 7.303,
+   "axis_deg": -1.5
+  }
+ ],
+ "runway_end_points_pt": [
+  [
+   353.2,
+   316.76
+  ],
+  [
+   440.77,
+   86.09
+  ],
+  [
+   103.16,
+   175.47
+  ],
+  [
+   481.29,
+   165.69
+  ]
+ ],
+ "hold_line_groups": [],
+ "hot_spot_labels": [],
+ "runway_end_labels": [
+  "2",
+  "9",
+  "20",
+  "27"
+ ],
+ "gate_leadins": [],
+ "elevations": [],
+ "taxiway_candidates": [
+  "A",
+  "A1",
+  "A2",
+  "A3",
+  "A4",
+  "A5",
+  "B",
+  "B1",
+  "B2",
+  "B3",
+  "B4",
+  "B5",
+  "C",
+  "L",
+  "P",
+  "V"
+ ],
+ "terminal_labels": [
+  "A",
+  "B",
+  "C",
+  "F"
+ ],
+ "helipad_labels": [],
+ "unclassified_numbers": [
+  "4"
+ ],
+ "visible_text_labels": [
+  "SE-4, 01 OCT 2026 to 29 OCT 2026",
+  "SE-4, 01 OCT 2026 to 29 OCT 2026"
+ ],
+ "label_glyph_shortfall": [],
+ "label_glyphs": [
+  {
+   "text": "VAR 6° W",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "S-65, D-125",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "PCR 511 F/B/X/T",
+   "chars": 13,
+   "glyphs": 13
+  },
+  {
+   "text": "RWY 09-27",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "S-40, D-45",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "PCR 111 F/B/Y/T",
+   "chars": 13,
+   "glyphs": 13
+  },
+  {
+   "text": "RWY 02-20",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "803",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "775",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "3995 X 100",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "812",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "756",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "6122 X 100",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "0.7% UP",
+   "chars": 6,
+   "glyphs": 9
+  },
+  {
+   "text": "0.9% UP",
+   "chars": 6,
+   "glyphs": 8
+  },
+  {
+   "text": "HANGARS",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "MAINTENANCE",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "HANGAR",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "HANGAR",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "STATION",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "FIRE",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "TERMINAL",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "CARRIER",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "AIR",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "HANGAR",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "HANGAR",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "HIGHWAY PATROL",
+   "chars": 13,
+   "glyphs": 13
+  },
+  {
+   "text": "GEORGIA",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "HANGAR",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "AREA",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "ISOLATION",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "HAZARD",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "MIRL Rwy 2-20",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "HIRL Rwy 9-27",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "TWR/BCN",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "121.8",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "CLNC DEL",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "121.8",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "GND CON",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "126.3 (CTAF) 338.275",
+   "chars": 18,
+   "glyphs": 19
+  },
+  {
+   "text": "ATHENS TOWER",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "132.875",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "ASOS",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "33°57.0'N",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "33°56.5'N",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "83°20.0'W",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "83°19.5'W",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "83°19.0'W",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "207°",
+   "chars": 4,
+   "glyphs": 5
+  },
+  {
+   "text": "027°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "274°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "094°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "Equivalent: RWY 02-20.",
+   "chars": 20,
+   "glyphs": 22
+  },
+  {
+   "text": "Use or Foreign Air Carrier",
+   "chars": 22,
+   "glyphs": 25
+  },
+  {
+   "text": "Not for Part 121/Part 380 Air Carrier",
+   "chars": 31,
+   "glyphs": 33
+  },
+  {
+   "text": "0.1° W",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "ANNUAL RATE OF CHANGE",
+   "chars": 18,
+   "glyphs": 18
+  },
+  {
+   "text": "JANUARY 2020",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "FIELD",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "812",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "(AHN)",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "ATHENS, GEORGIA",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "ATHENS, GEORGIA",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "(AHN)",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "AL-983 (FAA)",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "AIRPORT DIAGRAM",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "AIRPORT DIAGRAM",
+   "chars": 14,
+   "glyphs": 17
+  },
+  {
+   "text": "ATHENS/BEN EPPS",
+   "chars": 14,
+   "glyphs": 15
+  },
+  {
+   "text": "ATHENS/BEN EPPS",
+   "chars": 14,
+   "glyphs": 15
+  },
+  {
+   "text": "26134",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "26134",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "READBACK OF ALL RUNWAY HOLDING INSTRUCTIONS IS REQUIRED.",
+   "chars": 49,
+   "glyphs": 49
+  },
+  {
+   "text": "CAUTION: BE ALERT TO RUNWAY CROSSING CLEARANCES.",
+   "chars": 42,
+   "glyphs": 43
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "V",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "4",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "20",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "2",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "27",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "9",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 6
+  },
+  {
+   "text": "B2",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "B4",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B4",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "B3",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A3",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A1",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "A5",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "B1",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A2",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "A4",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "B5",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "SE-4, 01 OCT 2026 to 29 OCT 2026",
+   "chars": 25,
+   "glyphs": 0
+  },
+  {
+   "text": "SE-4, 01 OCT 2026 to 29 OCT 2026",
+   "chars": 25,
+   "glyphs": 0
+  }
+ ],
+ "unclassified_objects": []
+}

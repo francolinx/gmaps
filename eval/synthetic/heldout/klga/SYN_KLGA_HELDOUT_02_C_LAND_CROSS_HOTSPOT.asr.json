@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "United 639, cleared to land runway 4.",
+  "asr_s": 0.176
+ },
+ "SYN_KLGA_HELDOUT_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "Clear to land four, United 6-3-Niner.",
+  "asr_s": 0.188
+ },
+ "SYN_KLGA_HELDOUT_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "From Tier 1060 at Golf Cross Runway 4.",
+  "asr_s": 0.187
+ },
+ "SYN_KLGA_HELDOUT_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Crossing runway four at golf, frontier 1060.",
+  "asr_s": 0.179
+ }
+}

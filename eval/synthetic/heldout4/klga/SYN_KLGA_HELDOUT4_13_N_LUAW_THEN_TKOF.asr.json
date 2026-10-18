@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_00": {
+  "text": "United 1736. Runway 4 and Papa line up and wait!",
+  "asr_s": 0.201
+ },
+ "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_01": {
+  "text": "Line up and wait runway 4, United 1736.",
+  "asr_s": 0.182
+ },
+ "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_02": {
+  "text": "United 1736, runway 4 at Papa, intersection departure, cleared for takeoff.",
+  "asr_s": 0.226
+ },
+ "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_03": {
+  "text": "Roger, cleared for take of 4, United 1736.",
+  "asr_s": 0.18
+ }
+}

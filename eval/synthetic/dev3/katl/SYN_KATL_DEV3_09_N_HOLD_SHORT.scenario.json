@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_DEV3_09_N_HOLD_SHORT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev3",
+ "phrasing_pool": "C",
+ "template": "N_HOLD_SHORT",
+ "basis": "hold short, read back",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9201,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "E3",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "JetBlue twenty six fourteen, runway eight right, wind two two zero at eight, cleared to land.",
+   "id": "SYN_KATL_DEV3_09_N_HOLD_SHORT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land eight right, JetBlue twenty six fourteen.",
+   "id": "SYN_KATL_DEV3_09_N_HOLD_SHORT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Spirit twenty one eighty four, runway niner left, taxi via Echo three, hold short of runway eight right.",
+   "id": "SYN_KATL_DEV3_09_N_HOLD_SHORT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Holding short runway eight right, Spirit twenty one eighty four.",
+   "id": "SYN_KATL_DEV3_09_N_HOLD_SHORT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

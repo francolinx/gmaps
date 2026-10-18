@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "United 609, runway 26L, cleared to land.",
+  "asr_s": 0.216
+ },
+ "SYN_KATL_DEV_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "Runway to six left. Clear to land. United six zero niner.",
+  "asr_s": 0.232
+ },
+ "SYN_KATL_DEV_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "Southwest 2380, cross runway 26 left at Delta.",
+  "asr_s": 0.207
+ },
+ "SYN_KATL_DEV_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Cross runway 26 left at Delta, Southwest 2380.",
+  "asr_s": 0.195
+ }
+}

@@ -1,0 +1,398 @@
+{
+ "icao": "KATL",
+ "generated_at": "2026-10-09T00:03:56-0400",
+ "pdf_sha256": "3c3182e793a411bbcfd2820844539a5a268e5b6bae81f2633bc07067b9198c23",
+ "nasr_cycle": "2026-10-01",
+ "local_frame": {
+  "origin": "NASR airport reference point",
+  "lat0": 33.63669961,
+  "lon0": -84.427864,
+  "datum": "WGS84",
+  "projection": "local equirectangular (east, north) metres"
+ },
+ "transform_page_pt_to_local_m": {
+  "coeffs_abcdef": [
+   13.394638513,
+   -0.0,
+   -4041.032423414,
+   0.0,
+   -13.393885971,
+   2777.190025415
+  ],
+  "form": "east = a*x + b*y + c; north = d*x + e*y + f (x right, y down, north-up page pt)",
+  "fitted_on": "graticule intersections only",
+  "graticule_source": "outline_glyph_decode",
+  "control_points_n": 6,
+  "fit_rms_m": 0.136,
+  "properties": {
+   "m_per_pt_x": 13.3946,
+   "m_per_pt_y": 13.3939,
+   "page_x_vs_east_deg": 0.0,
+   "page_axes_angle_deg": 90.0,
+   "chart_scale_1_to": 37969
+  }
+ },
+ "control_points": [
+  {
+   "page_pt": [
+    148.361,
+    97.206
+   ],
+   "lat": 33.65,
+   "lon": -84.45,
+   "label": "33\u00b039'N/84\u00b027'W",
+   "fit_residual_m": 0.096
+  },
+  {
+   "page_pt": [
+    263.822,
+    97.206
+   ],
+   "lat": 33.65,
+   "lon": -84.43333333333334,
+   "label": "33\u00b039'N/84\u00b026'W",
+   "fit_residual_m": 0.192
+  },
+  {
+   "page_pt": [
+    379.24,
+    97.206
+   ],
+   "lat": 33.65,
+   "lon": -84.41666666666667,
+   "label": "33\u00b039'N/84\u00b025'W",
+   "fit_residual_m": 0.096
+  },
+  {
+   "page_pt": [
+    148.361,
+    235.224
+   ],
+   "lat": 33.63333333333333,
+   "lon": -84.45,
+   "label": "33\u00b038'N/84\u00b027'W",
+   "fit_residual_m": 0.096
+  },
+  {
+   "page_pt": [
+    263.822,
+    235.224
+   ],
+   "lat": 33.63333333333333,
+   "lon": -84.43333333333334,
+   "label": "33\u00b038'N/84\u00b026'W",
+   "fit_residual_m": 0.192
+  },
+  {
+   "page_pt": [
+    379.24,
+    235.224
+   ],
+   "lat": 33.63333333333333,
+   "lon": -84.41666666666667,
+   "label": "33\u00b038'N/84\u00b025'W",
+   "fit_residual_m": 0.096
+  }
+ ],
+ "runway_ends": [
+  {
+   "id": "08L",
+   "nasr_lat": 33.64953438,
+   "nasr_lon": -84.43902563,
+   "diagram_lat": 33.64947344,
+   "diagram_lon": -84.43902458,
+   "diagram_page_pt": [
+    224.388,
+    101.566
+   ],
+   "d_east_m": 0.1,
+   "d_north_m": -6.76,
+   "residual_m": 6.76,
+   "along_m": 0.1,
+   "across_m": -6.76,
+   "nasr_true_alignment_deg": 90.0,
+   "nasr_end_to_end_bearing_deg": 89.982,
+   "nasr_position_source": "3RD PARTY SURVEY",
+   "nasr_position_date": "2010/12/23"
+  },
+  {
+   "id": "08R",
+   "nasr_lat": 33.64678666,
+   "nasr_lon": -84.43836208,
+   "diagram_lat": 33.64678786,
+   "diagram_lon": -84.43836227,
+   "diagram_page_pt": [
+    228.975,
+    123.806
+   ],
+   "d_east_m": -0.02,
+   "d_north_m": 0.13,
+   "residual_m": 0.13,
+   "along_m": -0.02,
+   "across_m": 0.13,
+   "nasr_true_alignment_deg": 90.0,
+   "nasr_end_to_end_bearing_deg": 89.983,
+   "nasr_position_source": "3RD PARTY SURVEY",
+   "nasr_position_date": "2010/12/23"
+  },
+  {
+   "id": "09L",
+   "nasr_lat": 33.63470444,
+   "nasr_lon": -84.44796686,
+   "diagram_lat": 33.6347343,
+   "diagram_lon": -84.44796738,
+   "diagram_page_pt": [
+    162.447,
+    223.622
+   ],
+   "d_east_m": -0.05,
+   "d_north_m": 3.31,
+   "residual_m": 3.31,
+   "along_m": -0.05,
+   "across_m": 3.31,
+   "nasr_true_alignment_deg": 90.0,
+   "nasr_end_to_end_bearing_deg": 90.003,
+   "nasr_position_source": "3RD PARTY SURVEY",
+   "nasr_position_date": "2012/04/17"
+  },
+  {
+   "id": "09R",
+   "nasr_lat": 33.63181338,
+   "nasr_lon": -84.44796577,
+   "diagram_lat": 33.63186009,
+   "diagram_lon": -84.44796727,
+   "diagram_page_pt": [
+    162.448,
+    247.424
+   ],
+   "d_east_m": -0.14,
+   "d_north_m": 5.18,
+   "residual_m": 5.18,
+   "along_m": -0.14,
+   "across_m": 5.18,
+   "nasr_true_alignment_deg": 90.0,
+   "nasr_end_to_end_bearing_deg": 89.976,
+   "nasr_position_source": "3RD PARTY SURVEY",
+   "nasr_position_date": "2010/12/23"
+  },
+  {
+   "id": "10",
+   "nasr_lat": 33.62027244,
+   "nasr_lon": -84.44787705,
+   "diagram_lat": 33.62043247,
+   "diagram_lon": -84.4478806,
+   "diagram_page_pt": [
+    163.048,
+    342.057
+   ],
+   "d_east_m": -0.33,
+   "d_north_m": 17.75,
+   "residual_m": 17.75,
+   "along_m": -0.32,
+   "across_m": 17.75,
+   "nasr_true_alignment_deg": 90.0,
+   "nasr_end_to_end_bearing_deg": 89.97,
+   "nasr_position_source": "3RD PARTY SURVEY",
+   "nasr_position_date": "2010/12/23"
+  },
+  {
+   "id": "26L",
+   "nasr_lat": 33.64679477,
+   "nasr_lon": -84.40550869,
+   "diagram_lat": 33.64671484,
+   "diagram_lon": -84.40551285,
+   "diagram_page_pt": [
+    456.503,
+    124.411
+   ],
+   "d_east_m": -0.39,
+   "d_north_m": -8.87,
+   "residual_m": 8.87,
+   "along_m": 0.39,
+   "across_m": 8.87,
+   "nasr_true_alignment_deg": 270.0,
+   "nasr_end_to_end_bearing_deg": 269.983,
+   "nasr_position_source": "3RD PARTY SURVEY",
+   "nasr_position_date": "2010/12/23"
+  },
+  {
+   "id": "26R",
+   "nasr_lat": 33.64954208,
+   "nasr_lon": -84.40945391,
+   "diagram_lat": 33.64951605,
+   "diagram_lon": -84.40945853,
+   "diagram_page_pt": [
+    429.173,
+    101.214
+   ],
+   "d_east_m": -0.43,
+   "d_north_m": -2.89,
+   "residual_m": 2.92,
+   "along_m": 0.43,
+   "across_m": 2.89,
+   "nasr_true_alignment_deg": 270.0,
+   "nasr_end_to_end_bearing_deg": 269.982,
+   "nasr_position_source": "3RD PARTY SURVEY",
+   "nasr_position_date": "2010/12/23"
+  },
+  {
+   "id": "27L",
+   "nasr_lat": 33.63182358,
+   "nasr_lon": -84.41840083,
+   "diagram_lat": 33.63181735,
+   "diagram_lon": -84.41840125,
+   "diagram_page_pt": [
+    367.233,
+    247.778
+   ],
+   "d_east_m": -0.04,
+   "d_north_m": -0.69,
+   "residual_m": 0.69,
+   "along_m": 0.04,
+   "across_m": 0.69,
+   "nasr_true_alignment_deg": 270.0,
+   "nasr_end_to_end_bearing_deg": 269.976,
+   "nasr_position_source": "3RD PARTY SURVEY",
+   "nasr_position_date": "2010/12/23"
+  },
+  {
+   "id": "27R",
+   "nasr_lat": 33.6347025,
+   "nasr_lon": -84.40726611,
+   "diagram_lat": 33.63479145,
+   "diagram_lon": -84.40726859,
+   "diagram_page_pt": [
+    444.342,
+    223.149
+   ],
+   "d_east_m": -0.23,
+   "d_north_m": 9.87,
+   "residual_m": 9.87,
+   "along_m": 0.23,
+   "across_m": -9.87,
+   "nasr_true_alignment_deg": 270.0,
+   "nasr_end_to_end_bearing_deg": 270.003,
+   "nasr_position_source": "3RD PARTY SURVEY",
+   "nasr_position_date": "2012/04/17"
+  },
+  {
+   "id": "28",
+   "nasr_lat": 33.62028541,
+   "nasr_lon": -84.4183155,
+   "diagram_lat": 33.62044981,
+   "diagram_lon": -84.41831499,
+   "diagram_page_pt": [
+    367.83,
+    341.914
+   ],
+   "d_east_m": 0.05,
+   "d_north_m": 18.23,
+   "residual_m": 18.23,
+   "along_m": -0.06,
+   "across_m": -18.23,
+   "nasr_true_alignment_deg": 270.0,
+   "nasr_end_to_end_bearing_deg": 269.97,
+   "nasr_position_source": "3RD PARTY SURVEY",
+   "nasr_position_date": "2010/12/23"
+  }
+ ],
+ "runways": [
+  {
+   "runway": "08L/26R",
+   "nasr_length_ft": 9000,
+   "diagram_length_ft": 8999,
+   "length_diff_m": -0.2,
+   "nasr_true_alignment_deg": 90.0,
+   "nasr_end_to_end_bearing_deg": 89.982,
+   "diagram_true_bearing_deg": 89.902,
+   "bearing_diff_deg": -0.08
+  },
+  {
+   "runway": "08R/26L",
+   "nasr_length_ft": 9999,
+   "diagram_length_ft": 9999,
+   "length_diff_m": -0.0,
+   "nasr_true_alignment_deg": 90.0,
+   "nasr_end_to_end_bearing_deg": 89.983,
+   "diagram_true_bearing_deg": 90.152,
+   "bearing_diff_deg": 0.169
+  },
+  {
+   "runway": "09L/27R",
+   "nasr_length_ft": 12390,
+   "diagram_length_ft": 12388,
+   "length_diff_m": -0.6,
+   "nasr_true_alignment_deg": 90.0,
+   "nasr_end_to_end_bearing_deg": 90.003,
+   "diagram_true_bearing_deg": 89.904,
+   "bearing_diff_deg": -0.099
+  },
+  {
+   "runway": "09R/27L",
+   "nasr_length_ft": 9000,
+   "diagram_length_ft": 8999,
+   "length_diff_m": -0.2,
+   "nasr_true_alignment_deg": 90.0,
+   "nasr_end_to_end_bearing_deg": 89.976,
+   "diagram_true_bearing_deg": 90.099,
+   "bearing_diff_deg": 0.123
+  },
+  {
+   "runway": "10/28",
+   "nasr_length_ft": 9000,
+   "diagram_length_ft": 8999,
+   "length_diff_m": -0.2,
+   "nasr_true_alignment_deg": 90.0,
+   "nasr_end_to_end_bearing_deg": 89.97,
+   "diagram_true_bearing_deg": 89.96,
+   "bearing_diff_deg": -0.01
+  }
+ ],
+ "helipad_H1": null,
+ "comparison_nasr_fitted": {
+  "fit_rms_m": 3.94,
+  "leave_one_out": [
+   {
+    "id": "08L",
+    "loo_residual_m": 0.95
+   },
+   {
+    "id": "08R",
+    "loo_residual_m": 5.82
+   },
+   {
+    "id": "09L",
+    "loo_residual_m": 2.19
+   },
+   {
+    "id": "09R",
+    "loo_residual_m": 2.6
+   },
+   {
+    "id": "10",
+    "loo_residual_m": 3.31
+   },
+   {
+    "id": "26L",
+    "loo_residual_m": 7.03
+   },
+   {
+    "id": "26R",
+    "loo_residual_m": 4.84
+   },
+   {
+    "id": "27L",
+    "loo_residual_m": 9.49
+   },
+   {
+    "id": "27R",
+    "loo_residual_m": 6.78
+   },
+   {
+    "id": "28",
+    "loo_residual_m": 4.32
+   }
+  ],
+  "note": "for comparison only; the reported residuals use the graticule fit"
+ }
+}

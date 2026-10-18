@@ -1,0 +1,35 @@
+{
+ "id": "SIM_E6_HOLD_OK",
+ "airport": "XSIM",
+ "is_fictional": true,
+ "title": "Hold-short read back and the vehicle slows normally (fictional)",
+ "purpose": "Negative case for intent: motion-only extrapolation would project a crossing; the hold-short intent plus observed deceleration does not.",
+ "map": "SIM-1",
+ "revoice_note": "Record each line as its own clip; file name = <id>_<t>.wav. Fictional callsigns.",
+ "events": [
+  {
+   "t": 0,
+   "freq": "tower",
+   "speaker": "ATC",
+   "text_clean": "SimAir two one two, runway three six, cleared to land."
+  },
+  {
+   "t": 3,
+   "freq": "tower",
+   "speaker": "SIM212",
+   "text_clean": "Cleared to land runway three six, SimAir two one two."
+  },
+  {
+   "t": 18,
+   "freq": "tower",
+   "speaker": "ATC",
+   "text_clean": "Rescue seven, hold short runway three six at Kilo, traffic landing."
+  },
+  {
+   "t": 21,
+   "freq": "tower",
+   "speaker": "RESCUE7",
+   "text_clean": "Hold short runway three six at Kilo, Rescue seven."
+  }
+ ]
+}

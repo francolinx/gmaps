@@ -1,0 +1,252 @@
+{
+ "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Twin Cessna two five two three Romeo, number two, runway two six left, cleared to land.",
+  "asr_s": 0.551,
+  "words": [
+   {
+    "w": "Twin",
+    "p": 0.2844
+   },
+   {
+    "w": "Cessna",
+    "p": 0.8996
+   },
+   {
+    "w": "two",
+    "p": 0.5382
+   },
+   {
+    "w": "five",
+    "p": 0.592
+   },
+   {
+    "w": "two",
+    "p": 0.9483
+   },
+   {
+    "w": "three",
+    "p": 0.9977
+   },
+   {
+    "w": "Romeo,",
+    "p": 0.5593
+   },
+   {
+    "w": "number",
+    "p": 0.9893
+   },
+   {
+    "w": "two,",
+    "p": 0.8173
+   },
+   {
+    "w": "runway",
+    "p": 0.9996
+   },
+   {
+    "w": "two",
+    "p": 0.9897
+   },
+   {
+    "w": "six",
+    "p": 0.9985
+   },
+   {
+    "w": "left,",
+    "p": 0.8813
+   },
+   {
+    "w": "cleared",
+    "p": 0.9953
+   },
+   {
+    "w": "to",
+    "p": 0.934
+   },
+   {
+    "w": "land.",
+    "p": 0.917
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "runway two six left, cleared to land, twin Cessna 2523, roger.",
+  "asr_s": 0.566,
+  "words": [
+   {
+    "w": "runway",
+    "p": 0.9284
+   },
+   {
+    "w": "two",
+    "p": 0.9867
+   },
+   {
+    "w": "six",
+    "p": 0.9932
+   },
+   {
+    "w": "left,",
+    "p": 0.9178
+   },
+   {
+    "w": "cleared",
+    "p": 0.9985
+   },
+   {
+    "w": "to",
+    "p": 0.9199
+   },
+   {
+    "w": "land,",
+    "p": 0.9473
+   },
+   {
+    "w": "twin",
+    "p": 0.5355
+   },
+   {
+    "w": "Cessna",
+    "p": 0.9121
+   },
+   {
+    "w": "2523,",
+    "p": 0.5002
+   },
+   {
+    "w": "roger.",
+    "p": 0.5002
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Wincessa 2523 Romeo, clear of the runway.",
+  "asr_s": 0.493,
+  "words": [
+   {
+    "w": "Wincessa",
+    "p": 0.2979
+   },
+   {
+    "w": "2523",
+    "p": 0.6438
+   },
+   {
+    "w": "Romeo,",
+    "p": 0.5371
+   },
+   {
+    "w": "clear",
+    "p": 0.515
+   },
+   {
+    "w": "of",
+    "p": 0.9806
+   },
+   {
+    "w": "the",
+    "p": 0.9971
+   },
+   {
+    "w": "runway.",
+    "p": 0.9385
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "United 1100, proceed via Echo One, cross runway two six left.",
+  "asr_s": 0.521,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9777
+   },
+   {
+    "w": "1100,",
+    "p": 0.6002
+   },
+   {
+    "w": "proceed",
+    "p": 0.986
+   },
+   {
+    "w": "via",
+    "p": 0.6895
+   },
+   {
+    "w": "Echo",
+    "p": 0.7661
+   },
+   {
+    "w": "One,",
+    "p": 0.8063
+   },
+   {
+    "w": "cross",
+    "p": 0.9938
+   },
+   {
+    "w": "runway",
+    "p": 0.9981
+   },
+   {
+    "w": "two",
+    "p": 0.9946
+   },
+   {
+    "w": "six",
+    "p": 0.9966
+   },
+   {
+    "w": "left.",
+    "p": 0.9217
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Cross runway two six left at Echo One, United 1100.",
+  "asr_s": 0.484,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.1635
+   },
+   {
+    "w": "runway",
+    "p": 0.9445
+   },
+   {
+    "w": "two",
+    "p": 0.9895
+   },
+   {
+    "w": "six",
+    "p": 0.993
+   },
+   {
+    "w": "left",
+    "p": 0.9962
+   },
+   {
+    "w": "at",
+    "p": 0.8596
+   },
+   {
+    "w": "Echo",
+    "p": 0.9046
+   },
+   {
+    "w": "One,",
+    "p": 0.6372
+   },
+   {
+    "w": "United",
+    "p": 0.9556
+   },
+   {
+    "w": "1100.",
+    "p": 0.7127
+   }
+  ]
+ }
+}

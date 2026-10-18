@@ -1,0 +1,22 @@
+{
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "United 500, runway 27R, wind 2-0-0 at 4, cleared to land.",
+  "asr_s": 0.224
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "United 500, Roger. Clear to land runway 27R.",
+  "asr_s": 0.188
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "United 500, clear runway 27R at Lima 5.",
+  "asr_s": 0.186
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "November 7704 Kilo, taxi via November 5, cross runway 27R.",
+  "asr_s": 0.24
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Crossing runway 27, right at November 5, November 7704 Kilo.",
+  "asr_s": 0.212
+ }
+}

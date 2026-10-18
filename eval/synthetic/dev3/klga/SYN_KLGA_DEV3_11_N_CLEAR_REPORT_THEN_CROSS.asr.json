@@ -1,0 +1,22 @@
+{
+ "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Endeavour 2004, runway 4, cleared to land.",
+  "asr_s": 0.181
+ },
+ "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "Clear to land for Endeavour 2004.",
+  "asr_s": 0.163
+ },
+ "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Endeavour 2004, clear of runway 4.",
+  "asr_s": 0.167
+ },
+ "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "Jet Blue Niner 5 Niner at Romeo Cross Runway 4.",
+  "asr_s": 0.2
+ },
+ "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Cross four at Romeo, jet blue niner five niner.",
+  "asr_s": 0.193
+ }
+}

@@ -1,0 +1,282 @@
+{
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_00": {
+  "text": "JetBlue Niner 73, runway four, line up and wait, trafficker Airbus 320, four mile final.",
+  "asr_s": 0.56,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9789
+   },
+   {
+    "w": "Niner",
+    "p": 0.8478
+   },
+   {
+    "w": "73,",
+    "p": 0.5774
+   },
+   {
+    "w": "runway",
+    "p": 0.9815
+   },
+   {
+    "w": "four,",
+    "p": 0.9567
+   },
+   {
+    "w": "line",
+    "p": 0.9966
+   },
+   {
+    "w": "up",
+    "p": 0.9991
+   },
+   {
+    "w": "and",
+    "p": 0.9972
+   },
+   {
+    "w": "wait,",
+    "p": 0.6339
+   },
+   {
+    "w": "trafficker",
+    "p": 0.4532
+   },
+   {
+    "w": "Airbus",
+    "p": 0.8925
+   },
+   {
+    "w": "320,",
+    "p": 0.9327
+   },
+   {
+    "w": "four",
+    "p": 0.9818
+   },
+   {
+    "w": "mile",
+    "p": 0.9496
+   },
+   {
+    "w": "final.",
+    "p": 0.9187
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_01": {
+  "text": "JetBlue Niner 73, line up and wait, runway four.",
+  "asr_s": 0.411,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9877
+   },
+   {
+    "w": "Niner",
+    "p": 0.9623
+   },
+   {
+    "w": "73,",
+    "p": 0.7352
+   },
+   {
+    "w": "line",
+    "p": 0.9932
+   },
+   {
+    "w": "up",
+    "p": 0.9999
+   },
+   {
+    "w": "and",
+    "p": 0.8988
+   },
+   {
+    "w": "wait,",
+    "p": 0.5705
+   },
+   {
+    "w": "runway",
+    "p": 0.9944
+   },
+   {
+    "w": "four.",
+    "p": 0.978
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_02": {
+  "text": "Delta three six three, runway four, continue traffic holding in position.",
+  "asr_s": 0.4,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9835
+   },
+   {
+    "w": "three",
+    "p": 0.6813
+   },
+   {
+    "w": "six",
+    "p": 0.9337
+   },
+   {
+    "w": "three,",
+    "p": 0.8097
+   },
+   {
+    "w": "runway",
+    "p": 0.9939
+   },
+   {
+    "w": "four,",
+    "p": 0.866
+   },
+   {
+    "w": "continue",
+    "p": 0.9924
+   },
+   {
+    "w": "traffic",
+    "p": 0.7025
+   },
+   {
+    "w": "holding",
+    "p": 0.9889
+   },
+   {
+    "w": "in",
+    "p": 0.9977
+   },
+   {
+    "w": "position.",
+    "p": 0.9655
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_03": {
+  "text": "Delta 363 continuing.",
+  "asr_s": 0.388,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9824
+   },
+   {
+    "w": "363",
+    "p": 0.3796
+   },
+   {
+    "w": "continuing.",
+    "p": 0.8412
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_04": {
+  "text": "JetBlue Niner 73, wind two two zero at five gust one four, runway four, cleared for takeoff.",
+  "asr_s": 0.561,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9751
+   },
+   {
+    "w": "Niner",
+    "p": 0.5595
+   },
+   {
+    "w": "73,",
+    "p": 0.668
+   },
+   {
+    "w": "wind",
+    "p": 0.7797
+   },
+   {
+    "w": "two",
+    "p": 0.9656
+   },
+   {
+    "w": "two",
+    "p": 0.9895
+   },
+   {
+    "w": "zero",
+    "p": 0.9964
+   },
+   {
+    "w": "at",
+    "p": 0.9794
+   },
+   {
+    "w": "five",
+    "p": 0.9551
+   },
+   {
+    "w": "gust",
+    "p": 0.4769
+   },
+   {
+    "w": "one",
+    "p": 0.7035
+   },
+   {
+    "w": "four,",
+    "p": 0.7517
+   },
+   {
+    "w": "runway",
+    "p": 0.9978
+   },
+   {
+    "w": "four,",
+    "p": 0.8402
+   },
+   {
+    "w": "cleared",
+    "p": 0.999
+   },
+   {
+    "w": "for",
+    "p": 0.9977
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.9523
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_14_N_LUAW_CONTINUE_05": {
+  "text": "JetBlueNiner73, cleared for takeoff, runway four.",
+  "asr_s": 0.43,
+  "words": [
+   {
+    "w": "JetBlueNiner73,",
+    "p": 0.3951
+   },
+   {
+    "w": "cleared",
+    "p": 0.9936
+   },
+   {
+    "w": "for",
+    "p": 0.9975
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.7811
+   },
+   {
+    "w": "runway",
+    "p": 0.9958
+   },
+   {
+    "w": "four.",
+    "p": 0.9894
+   }
+  ]
+ }
+}

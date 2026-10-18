@@ -1,0 +1,17 @@
+# demo/run_track.sh sim — captured on the Spark, server 127.0.0.1:8001 (run gmaps-parser-4b-20261017-034510). SIMULATED data.
+
+--- simulator (SIMULATED traffic, fictional map), best overnight configuration on one scenario
+SIMULATED self-run simulator: 06:50:14, mode audio (synthetic voices, real time), speed x1.0, traffic perfect, whisper prompt on, LLM fallback off
+scenarios: 1 (Q5_01_LAND_VS_CROSS)
+render: rendered 0, cached 4 in 0.7 s (Kokoro, local; cache /home/darkstar90/gmaps_venue/sim_cache/audio)
+whisper: worker ready in 15.0 s (large-v3-turbo, offline container, warm, round-3 initial prompt)
+--- Q5_01_LAND_VS_CROSS: Landing clearance, then a crossing of the same runway (alert expected)
+  Q5_01_LAND_VS_CROSS t1 t=  4.24  heard: 'SimAir two one two, runway three six cleared to land.'  -> grammar: LANDING_CLEARANCE
+  Q5_01_LAND_VS_CROSS t2 t=  9.39  heard: 'Cleared to land, runway three six, SimAir two one two.'  -> grammar: LANDING_CLEARANCE
+  Q5_01_LAND_VS_CROSS t3 t= 23.77  heard: 'Rescue seven, cross runway three six at Kilo.'  -> grammar: CROSS
+  Q5_01_LAND_VS_CROSS t4 t= 30.10  heard: 'Crossing runway three six at Kilo Rescue seven.'  -> grammar: CROSS
+  Q5_01_LAND_VS_CROSS ALERT R1 CONFLICT ['SIM212', 'RESCUE7'] t_fired=23.77 latency=0.455 s
+  => PASS: detected 1/1, missed 0, false alarms 0, latency [0.455]
+
+OVERALL: 1/1 scenarios pass; detected 1/1, missed 0, false alarms 0; latency median 0.455 s, max 0.455 s
+results: (written under ~/gmaps_venue/demo_runs/ since the script fix)

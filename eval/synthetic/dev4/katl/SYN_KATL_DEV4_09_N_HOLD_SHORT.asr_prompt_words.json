@@ -1,0 +1,246 @@
+{
+ "SYN_KATL_DEV4_09_N_HOLD_SHORT_00": {
+  "text": "American 2331, runway two seven right, wind one two zero at one seven gusts three zero, cleared to land.",
+  "asr_s": 0.562,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9795
+   },
+   {
+    "w": "2331,",
+    "p": 0.5981
+   },
+   {
+    "w": "runway",
+    "p": 0.9892
+   },
+   {
+    "w": "two",
+    "p": 0.9928
+   },
+   {
+    "w": "seven",
+    "p": 0.9976
+   },
+   {
+    "w": "right,",
+    "p": 0.9886
+   },
+   {
+    "w": "wind",
+    "p": 0.9913
+   },
+   {
+    "w": "one",
+    "p": 0.9733
+   },
+   {
+    "w": "two",
+    "p": 0.993
+   },
+   {
+    "w": "zero",
+    "p": 0.9994
+   },
+   {
+    "w": "at",
+    "p": 0.5258
+   },
+   {
+    "w": "one",
+    "p": 0.9909
+   },
+   {
+    "w": "seven",
+    "p": 0.9973
+   },
+   {
+    "w": "gusts",
+    "p": 0.6715
+   },
+   {
+    "w": "three",
+    "p": 0.9985
+   },
+   {
+    "w": "zero,",
+    "p": 0.7526
+   },
+   {
+    "w": "cleared",
+    "p": 0.9989
+   },
+   {
+    "w": "to",
+    "p": 0.9691
+   },
+   {
+    "w": "land.",
+    "p": 0.9684
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_09_N_HOLD_SHORT_01": {
+  "text": "American 2331, roger, cleared to land, runway two seven right.",
+  "asr_s": 0.472,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9877
+   },
+   {
+    "w": "2331,",
+    "p": 0.5782
+   },
+   {
+    "w": "roger,",
+    "p": 0.7317
+   },
+   {
+    "w": "cleared",
+    "p": 0.9919
+   },
+   {
+    "w": "to",
+    "p": 0.9016
+   },
+   {
+    "w": "land,",
+    "p": 0.4961
+   },
+   {
+    "w": "runway",
+    "p": 0.9981
+   },
+   {
+    "w": "two",
+    "p": 0.995
+   },
+   {
+    "w": "seven",
+    "p": 0.9972
+   },
+   {
+    "w": "right.",
+    "p": 0.9733
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_09_N_HOLD_SHORT_02": {
+  "text": "Southwest seven hundred, hold short of runway two seven right, traffic landing runway two seven right.",
+  "asr_s": 0.494,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9466
+   },
+   {
+    "w": "seven",
+    "p": 0.6478
+   },
+   {
+    "w": "hundred,",
+    "p": 0.9632
+   },
+   {
+    "w": "hold",
+    "p": 0.9931
+   },
+   {
+    "w": "short",
+    "p": 0.9997
+   },
+   {
+    "w": "of",
+    "p": 0.9895
+   },
+   {
+    "w": "runway",
+    "p": 0.9964
+   },
+   {
+    "w": "two",
+    "p": 0.995
+   },
+   {
+    "w": "seven",
+    "p": 0.9976
+   },
+   {
+    "w": "right,",
+    "p": 0.9461
+   },
+   {
+    "w": "traffic",
+    "p": 0.9985
+   },
+   {
+    "w": "landing",
+    "p": 0.9983
+   },
+   {
+    "w": "runway",
+    "p": 0.9798
+   },
+   {
+    "w": "two",
+    "p": 0.9961
+   },
+   {
+    "w": "seven",
+    "p": 0.999
+   },
+   {
+    "w": "right.",
+    "p": 0.9596
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_09_N_HOLD_SHORT_03": {
+  "text": "Southwest seven hundred, holding short of runway two seven right.",
+  "asr_s": 0.419,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9638
+   },
+   {
+    "w": "seven",
+    "p": 0.5918
+   },
+   {
+    "w": "hundred,",
+    "p": 0.8412
+   },
+   {
+    "w": "holding",
+    "p": 0.9933
+   },
+   {
+    "w": "short",
+    "p": 0.9992
+   },
+   {
+    "w": "of",
+    "p": 0.9925
+   },
+   {
+    "w": "runway",
+    "p": 0.9937
+   },
+   {
+    "w": "two",
+    "p": 0.9883
+   },
+   {
+    "w": "seven",
+    "p": 0.9964
+   },
+   {
+    "w": "right.",
+    "p": 0.9438
+   }
+  ]
+ }
+}

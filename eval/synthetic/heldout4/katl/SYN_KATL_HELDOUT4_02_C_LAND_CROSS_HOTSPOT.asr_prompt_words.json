@@ -1,0 +1,234 @@
+{
+ "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "United four eight seven two, number two, runway niner left, cleared to land.",
+  "asr_s": 0.491,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9657
+   },
+   {
+    "w": "four",
+    "p": 0.5193
+   },
+   {
+    "w": "eight",
+    "p": 0.9503
+   },
+   {
+    "w": "seven",
+    "p": 0.9817
+   },
+   {
+    "w": "two,",
+    "p": 0.6258
+   },
+   {
+    "w": "number",
+    "p": 0.9957
+   },
+   {
+    "w": "two,",
+    "p": 0.8494
+   },
+   {
+    "w": "runway",
+    "p": 0.9999
+   },
+   {
+    "w": "niner",
+    "p": 0.6025
+   },
+   {
+    "w": "left,",
+    "p": 0.9176
+   },
+   {
+    "w": "cleared",
+    "p": 0.9984
+   },
+   {
+    "w": "to",
+    "p": 0.9879
+   },
+   {
+    "w": "land.",
+    "p": 0.9593
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "runway nine are left, cleared to land, United four eight seven two.",
+  "asr_s": 0.435,
+  "words": [
+   {
+    "w": "runway",
+    "p": 0.9597
+   },
+   {
+    "w": "nine",
+    "p": 0.8678
+   },
+   {
+    "w": "are",
+    "p": 0.2332
+   },
+   {
+    "w": "left,",
+    "p": 0.9185
+   },
+   {
+    "w": "cleared",
+    "p": 0.9966
+   },
+   {
+    "w": "to",
+    "p": 0.9944
+   },
+   {
+    "w": "land,",
+    "p": 0.9467
+   },
+   {
+    "w": "United",
+    "p": 0.539
+   },
+   {
+    "w": "four",
+    "p": 0.4496
+   },
+   {
+    "w": "eight",
+    "p": 0.9866
+   },
+   {
+    "w": "seven",
+    "p": 0.9714
+   },
+   {
+    "w": "two.",
+    "p": 0.7528
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "On tier two, four one one, cross runway nine or left to delta without delay, traffic short final.",
+  "asr_s": 0.535,
+  "words": [
+   {
+    "w": "On",
+    "p": 0.2091
+   },
+   {
+    "w": "tier",
+    "p": 0.841
+   },
+   {
+    "w": "two,",
+    "p": 0.8255
+   },
+   {
+    "w": "four",
+    "p": 0.8079
+   },
+   {
+    "w": "one",
+    "p": 0.96
+   },
+   {
+    "w": "one,",
+    "p": 0.8481
+   },
+   {
+    "w": "cross",
+    "p": 0.9707
+   },
+   {
+    "w": "runway",
+    "p": 0.9987
+   },
+   {
+    "w": "nine",
+    "p": 0.6912
+   },
+   {
+    "w": "or",
+    "p": 0.3673
+   },
+   {
+    "w": "left",
+    "p": 0.996
+   },
+   {
+    "w": "to",
+    "p": 0.4717
+   },
+   {
+    "w": "delta",
+    "p": 0.5757
+   },
+   {
+    "w": "without",
+    "p": 0.9871
+   },
+   {
+    "w": "delay,",
+    "p": 0.8306
+   },
+   {
+    "w": "traffic",
+    "p": 0.9972
+   },
+   {
+    "w": "short",
+    "p": 0.9722
+   },
+   {
+    "w": "final.",
+    "p": 0.2818
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Cross runway nine or left at Delta, Frontier 2411.",
+  "asr_s": 0.443,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.817
+   },
+   {
+    "w": "runway",
+    "p": 0.9903
+   },
+   {
+    "w": "nine",
+    "p": 0.5243
+   },
+   {
+    "w": "or",
+    "p": 0.4818
+   },
+   {
+    "w": "left",
+    "p": 0.9799
+   },
+   {
+    "w": "at",
+    "p": 0.777
+   },
+   {
+    "w": "Delta,",
+    "p": 0.6739
+   },
+   {
+    "w": "Frontier",
+    "p": 0.8677
+   },
+   {
+    "w": "2411.",
+    "p": 0.5241
+   }
+  ]
+ }
+}

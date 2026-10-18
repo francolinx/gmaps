@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KATL_DEV_04_C_TKOF_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev",
+ "phrasing_pool": "A",
+ "template": "C_TKOF_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 9101,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "H",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor two seven six two, runway eight left, cleared for takeoff.",
+   "id": "SYN_KATL_DEV_04_C_TKOF_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway eight left, cleared for takeoff, Endeavor two seven six two.",
+   "id": "SYN_KATL_DEV_04_C_TKOF_CROSS_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Delta one four three two, cross runway eight left at Hotel.",
+   "id": "SYN_KATL_DEV_04_C_TKOF_CROSS_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway eight left at Hotel, Delta one four three two.",
+   "id": "SYN_KATL_DEV_04_C_TKOF_CROSS_03"
+  }
+ ]
+}

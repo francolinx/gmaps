@@ -1,0 +1,2084 @@
+{
+ "summary": {
+  "set": "synthetic_heldout_script",
+  "scenarios": 20,
+  "transmissions": 86,
+  "scored": 86,
+  "unscored": 0,
+  "callsign_acc": 0.698,
+  "runway_acc": 0.767,
+  "instruction_acc": 0.767,
+  "alerts": {
+   "scenarios_with_expectation": 20,
+   "tp": 1,
+   "fp": 0,
+   "fn": 9,
+   "precision": 1.0,
+   "recall": 0.1
+  },
+  "lead_time_s": {
+   "n": 0,
+   "median": null,
+   "min": null,
+   "values": []
+  },
+  "latency": {
+   "library_ms_median": 0.06,
+   "whisper_s_median": null,
+   "full_stack_clip_to_alert_s_median (E1, agent)": 13.69
+  },
+  "inputs": {
+   "script": 86
+  },
+  "kinds": [
+   "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)"
+  ]
+ },
+ "scenarios": [
+  {
+   "scenario": "SYN_KATL_HELDOUT_01_C_LAND_CROSS",
+   "kind": "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Frontier one zero three four, cleared to land runway eight right.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1034"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1034"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.53,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land eight right, Frontier one zero three four.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1034"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1034"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Spirit two five three seven, at Echo one cross runway eight right.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS2537"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2537"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 1.07,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway eight right at Echo one, Spirit two five three seven.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS2537"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2537"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT_02_C_LAND_CROSS_HOTSPOT",
+   "kind": "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Spirit niner three eight, cleared to land runway eight left.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS938"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS938"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.12,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land eight left, Spirit niner three eight.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS938"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS938"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Delta six niner, at Delta cross runway eight left.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL69"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL69"
+      ],
+      "runway": "8L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway eight left at Delta, Delta six niner.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "8L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL69"
+      ],
+      "runway": "8L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT_03_C_TKOF_CROSS",
+   "kind": "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Frontier two seventy eight, runway eight left, wind two seven zero at eight, cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT278"
+      ],
+      "runway": "8L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.13,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared for takeoff runway eight left, Frontier two seventy eight.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "8L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT278"
+      ],
+      "runway": "8L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Frontier one two eight two, at Bravo one cross runway eight left.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1282"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1282"
+      ],
+      "runway": "8L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway eight left at Bravo one, Frontier one two eight two.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1282"
+      ],
+      "runway": "8L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1282"
+      ],
+      "runway": "8L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS",
+   "kind": "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "American two thirty one, runway two seven right, wind two seven zero at eight, cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL231"
+      ],
+      "runway": "27R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.13,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared for takeoff runway two seven right, American two thirty one.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "27R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL231"
+      ],
+      "runway": "27R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "United seven forty eight, at Tango cross runway two seven right.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL748"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.08,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway two seven right at Tango, United seven forty eight.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL748"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT_05_C_LUAW_LAND",
+   "kind": "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R5"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Frontier one seven five, line up and wait runway niner right.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT175"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT175"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.12,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Line up and wait niner right, Frontier one seven five.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT175"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT175"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 14,
+     "input": "script",
+     "text": "Endeavor eight fifteen, cleared to land runway niner right.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV815"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Cleared to land niner right, Endeavor eight fifteen.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV815"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY",
+   "kind": "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Endeavor fourteen seventy five, cleared to land runway niner left.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV1475"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.1,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land niner left, Endeavor fourteen seventy five.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV1475"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Delta one three seven, at Bravo three cross runway two six right.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL137"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL137"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway two six right at Bravo three, Delta one three seven.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL137"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL137"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT_07_N_CROSS_OTHER_RWY",
+   "kind": "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "United twenty two forty four, cleared to land runway eight right.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2244"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.1,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land eight right, United twenty two forty four.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2244"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "JetBlue twenty eight fifty four, at Uniform cross runway niner left.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU2854"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.08,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway niner left at Uniform, JetBlue twenty eight fifty four.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU2854"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT_08_N_HOLD_SHORT",
+   "kind": "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Spirit six two five, cleared to land runway eight right.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS625"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS625"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land eight right, Spirit six two five.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS625"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS625"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "United one seven seven four, hold short runway eight right at Charlie.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1774"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1774"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.2,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Holding short runway eight right at Charlie, United one seven seven four.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1774"
+      ],
+      "runway": "8R",
+      "instruction": "REPORT_HOLDING_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1774"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS",
+   "kind": "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "American one zero niner niner, cleared to land runway two seven left.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1099"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1099"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.12,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land two seven left, American one zero niner niner.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1099"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1099"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 40,
+     "input": "script",
+     "text": "American one zero niner niner, left next taxiway Bravo six, monitor ground point niner.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1099"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1099"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 48,
+     "input": "script",
+     "text": "American one zero niner niner, taxi via Bravo six to the ramp.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1099"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1099"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.11,
+     "asr_s": null
+    },
+    {
+     "t": 55,
+     "input": "script",
+     "text": "United six sixty eight, at Romeo three cross runway two seven left.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL668"
+      ],
+      "runway": "27L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 59,
+     "input": "script",
+     "text": "Crossing runway two seven left at Romeo three, United six sixty eight.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "27L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL668"
+      ],
+      "runway": "27L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS",
+   "kind": "SIMULATED (synthetic heldout, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Delta one six six eight, cleared to land runway two seven left.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL1668"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1668"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.12,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land two seven left, Delta one six six eight.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL1668"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1668"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 45,
+     "input": "script",
+     "text": "Delta one six six eight is clear of two seven left.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL1668"
+      ],
+      "runway": "27L",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1668"
+      ],
+      "runway": "27L",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 55,
+     "input": "script",
+     "text": "American four niner six, at Romeo seven cross runway two seven left.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL496"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL496"
+      ],
+      "runway": "27L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 59,
+     "input": "script",
+     "text": "Crossing runway two seven left at Romeo seven, American four niner six.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL496"
+      ],
+      "runway": "27L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL496"
+      ],
+      "runway": "27L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT_01_C_LAND_CROSS",
+   "kind": "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "United twenty two fifty, cleared to land runway four.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2250"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land four, United twenty two fifty.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2250"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Southwest one two six five, at Uniform cross runway four.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1265"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1265"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway four at Uniform, Southwest one two six five.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1265"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1265"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT_02_C_LAND_CROSS_HOTSPOT",
+   "kind": "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "United six three niner, cleared to land runway four.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL639"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL639"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land four, United six three niner.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL639"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL639"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Frontier ten sixty, at Golf cross runway four.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1060"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway four at Golf, Frontier ten sixty.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1060"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT_03_C_TKOF_CROSS",
+   "kind": "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "JetBlue one five zero niner, runway two two, wind two seven zero at eight, cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [
+       "JBU1509"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU1509"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared for takeoff runway two two, JetBlue one five zero niner.",
+     "hypothesis": {
+      "callsigns": [
+       "JBU1509"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU1509"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Southwest one four three zero, at Uniform cross runway two two.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1430"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1430"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway two two at Uniform, Southwest one four three zero.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1430"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1430"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT_04_C_TKOF_CROSS",
+   "kind": "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Frontier two four eight eight, runway four, wind two seven zero at eight, cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2488"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2488"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared for takeoff runway four, Frontier two four eight eight.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2488"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2488"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "American fourteen sixty three, at Yankee cross runway four.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1463"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway four at Yankee, American fourteen sixty three.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1463"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT_05_C_LUAW_LAND",
+   "kind": "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R5"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Frontier two five three five, line up and wait runway two two.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2535"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2535"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Line up and wait two two, Frontier two five three five.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2535"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2535"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 14,
+     "input": "script",
+     "text": "Spirit two eight four eight, cleared to land runway two two.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS2848"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2848"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Cleared to land two two, Spirit two eight four eight.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS2848"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2848"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0001",
+     "rule_id": "R5",
+     "name": "line up and wait vs landing, same runway",
+     "severity": "CONFLICT",
+     "runway": "KLGA:RWY:04-22",
+     "t_fired": 14,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "FFT2535",
+      "type": "LUAW",
+      "runway_end": "22",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 0,
+      "event_id": "ev00060",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "NKS2848",
+      "type": "LANDING",
+      "runway_end": "22",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 14,
+      "event_id": "ev00062",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "FFT2535": {
+       "authorized": "luaw, rwy 22",
+       "acknowledged": "read back: luaw, rwy 22",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "NKS2848": {
+       "authorized": "landing clearance, rwy 22",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Line up and wait and a landing authorization recorded on the same runway.",
+     "what_would_clear_it": "takeoff issued and airborne, or landing authorization withdrawn",
+     "cite": "JO 7110.65BB 3-9-4; 3-10-5",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT_06_N_CROSS_OTHER_RWY",
+   "kind": "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Spirit twenty one fifty one, cleared to land runway four.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2151"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land four, Spirit twenty one fifty one.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2151"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Southwest one four four six, at Zulu cross runway three one.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1446"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1446"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway three one at Zulu, Southwest one four four six.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1446"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1446"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT_07_N_CROSS_OTHER_RWY",
+   "kind": "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "American one eight two one, cleared to land runway one three.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1821"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1821"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land one three, American one eight two one.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1821"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1821"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Spirit one five six niner, at Charlie cross runway four.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS1569"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1569"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Crossing runway four at Charlie, Spirit one five six niner.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS1569"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1569"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT_08_N_HOLD_SHORT",
+   "kind": "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Spirit one four four zero, cleared to land runway two two.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS1440"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1440"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land two two, Spirit one four four zero.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS1440"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1440"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Spirit one one three, hold short runway two two at Papa.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS113"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS113"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Holding short runway two two at Papa, Spirit one one three.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS113"
+      ],
+      "runway": "22",
+      "instruction": "REPORT_HOLDING_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS113"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS",
+   "kind": "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "JetBlue two six zero six, cleared to land runway two two.",
+     "hypothesis": {
+      "callsigns": [
+       "JBU2606"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU2606"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land two two, JetBlue two six zero six.",
+     "hypothesis": {
+      "callsigns": [
+       "JBU2606"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU2606"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 40,
+     "input": "script",
+     "text": "JetBlue two six zero six, left next taxiway Alpha Alpha, monitor ground point niner.",
+     "hypothesis": {
+      "callsigns": [
+       "JBU2606"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU2606"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 48,
+     "input": "script",
+     "text": "JetBlue two six zero six, taxi via Alpha Alpha to the ramp.",
+     "hypothesis": {
+      "callsigns": [
+       "JBU2606"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU2606"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 55,
+     "input": "script",
+     "text": "Endeavor one five two eight, at Uniform cross runway two two.",
+     "hypothesis": {
+      "callsigns": [
+       "EDV1528"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV1528"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 59,
+     "input": "script",
+     "text": "Crossing runway two two at Uniform, Endeavor one five two eight.",
+     "hypothesis": {
+      "callsigns": [
+       "EDV1528"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV1528"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS",
+   "kind": "SIMULATED (synthetic heldout, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "Delta seven four, cleared to land runway four.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL74"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL74"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 4,
+     "input": "script",
+     "text": "Cleared to land four, Delta seven four.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL74"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 45,
+     "input": "script",
+     "text": "Delta seven four is clear of four.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL74"
+      ],
+      "runway": "4",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL74"
+      ],
+      "runway": "4",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 55,
+     "input": "script",
+     "text": "United seven seven five, at Quebec cross runway four.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL775"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL775"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 59,
+     "input": "script",
+     "text": "Crossing runway four at Quebec, United seven seven five.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL775"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL775"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  }
+ ]
+}

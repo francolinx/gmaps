@@ -1,0 +1,1285 @@
+{
+  "schema_version": "1.0.0",
+  "normalization": [
+    "lowercase",
+    "trim",
+    "collapse_whitespace"
+  ],
+  "matching_policy": "exact_alias_with_airport_and_expected_kind; return candidates on ambiguity; never fuzzy-correct silently",
+  "entries": [
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:RWY:04L-22R",
+      "kind": "runway",
+      "canonical": "04L/22R",
+      "aliases": [
+        "04l/22r"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:RWY:04R-22L",
+      "kind": "runway",
+      "canonical": "04R/22L",
+      "aliases": [
+        "04r/22l"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:RWY:09-27",
+      "kind": "runway",
+      "canonical": "09/27",
+      "aliases": [
+        "09/27"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:RWY:14-32",
+      "kind": "runway",
+      "canonical": "14/32",
+      "aliases": [
+        "14/32"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:RWY:15L-33R",
+      "kind": "runway",
+      "canonical": "15L/33R",
+      "aliases": [
+        "15l/33r"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:RWY:15R-33L",
+      "kind": "runway",
+      "canonical": "15R/33L",
+      "aliases": [
+        "15r/33l"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:A",
+      "kind": "taxiway",
+      "canonical": "A",
+      "aliases": [
+        "a",
+        "alfa",
+        "alpha",
+        "taxiway a",
+        "taxiway alpha"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:A1",
+      "kind": "taxiway",
+      "canonical": "A1",
+      "aliases": [
+        "a 1",
+        "a1",
+        "alfa one",
+        "alpha 1",
+        "alpha one",
+        "taxiway a 1",
+        "taxiway a1",
+        "taxiway alpha 1",
+        "taxiway alpha one"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:A2",
+      "kind": "taxiway",
+      "canonical": "A2",
+      "aliases": [
+        "a 2",
+        "a2",
+        "alfa two",
+        "alpha 2",
+        "alpha two",
+        "taxiway a 2",
+        "taxiway a2",
+        "taxiway alpha 2",
+        "taxiway alpha two"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:B",
+      "kind": "taxiway",
+      "canonical": "B",
+      "aliases": [
+        "b",
+        "bravo",
+        "taxiway b",
+        "taxiway bravo"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:C",
+      "kind": "taxiway",
+      "canonical": "C",
+      "aliases": [
+        "c",
+        "charlie",
+        "taxiway c",
+        "taxiway charlie"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:C1",
+      "kind": "taxiway",
+      "canonical": "C1",
+      "aliases": [
+        "c 1",
+        "c1",
+        "charlie 1",
+        "charlie one",
+        "taxiway c 1",
+        "taxiway c1",
+        "taxiway charlie 1",
+        "taxiway charlie one"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:D",
+      "kind": "taxiway",
+      "canonical": "D",
+      "aliases": [
+        "d",
+        "delta",
+        "taxiway d",
+        "taxiway delta"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:D1",
+      "kind": "taxiway",
+      "canonical": "D1",
+      "aliases": [
+        "d 1",
+        "d1",
+        "delta 1",
+        "delta one",
+        "taxiway d 1",
+        "taxiway d1",
+        "taxiway delta 1",
+        "taxiway delta one"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:D2",
+      "kind": "taxiway",
+      "canonical": "D2",
+      "aliases": [
+        "d 2",
+        "d2",
+        "delta 2",
+        "delta two",
+        "taxiway d 2",
+        "taxiway d2",
+        "taxiway delta 2",
+        "taxiway delta two"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:E",
+      "kind": "taxiway",
+      "canonical": "E",
+      "aliases": [
+        "e",
+        "echo",
+        "taxiway e",
+        "taxiway echo"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:E1",
+      "kind": "taxiway",
+      "canonical": "E1",
+      "aliases": [
+        "e 1",
+        "e1",
+        "echo 1",
+        "echo one",
+        "taxiway e 1",
+        "taxiway e1",
+        "taxiway echo 1",
+        "taxiway echo one"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:E2",
+      "kind": "taxiway",
+      "canonical": "E2",
+      "aliases": [
+        "e 2",
+        "e2",
+        "echo 2",
+        "echo two",
+        "taxiway e 2",
+        "taxiway e2",
+        "taxiway echo 2",
+        "taxiway echo two"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:F",
+      "kind": "taxiway",
+      "canonical": "F",
+      "aliases": [
+        "f",
+        "foxtrot",
+        "taxiway f",
+        "taxiway foxtrot"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:G",
+      "kind": "taxiway",
+      "canonical": "G",
+      "aliases": [
+        "g",
+        "golf",
+        "taxiway g",
+        "taxiway golf"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:H",
+      "kind": "taxiway",
+      "canonical": "H",
+      "aliases": [
+        "h",
+        "hotel",
+        "taxiway h",
+        "taxiway hotel"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:J",
+      "kind": "taxiway",
+      "canonical": "J",
+      "aliases": [
+        "j",
+        "juliet",
+        "juliett",
+        "taxiway j",
+        "taxiway juliett"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:J1",
+      "kind": "taxiway",
+      "canonical": "J1",
+      "aliases": [
+        "j 1",
+        "j1",
+        "juliet 1",
+        "juliet one",
+        "juliett 1",
+        "juliett one",
+        "taxiway j 1",
+        "taxiway j1",
+        "taxiway juliett 1",
+        "taxiway juliett one"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:K",
+      "kind": "taxiway",
+      "canonical": "K",
+      "aliases": [
+        "k",
+        "kilo",
+        "taxiway k",
+        "taxiway kilo"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:L",
+      "kind": "taxiway",
+      "canonical": "L",
+      "aliases": [
+        "l",
+        "lima",
+        "taxiway l",
+        "taxiway lima"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:M",
+      "kind": "taxiway",
+      "canonical": "M",
+      "aliases": [
+        "m",
+        "mike",
+        "taxiway m",
+        "taxiway mike"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:M1",
+      "kind": "taxiway",
+      "canonical": "M1",
+      "aliases": [
+        "m 1",
+        "m1",
+        "mike 1",
+        "mike one",
+        "taxiway m 1",
+        "taxiway m1",
+        "taxiway mike 1",
+        "taxiway mike one"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:N",
+      "kind": "taxiway",
+      "canonical": "N",
+      "aliases": [
+        "n",
+        "november",
+        "taxiway n",
+        "taxiway november"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:N1",
+      "kind": "taxiway",
+      "canonical": "N1",
+      "aliases": [
+        "n 1",
+        "n1",
+        "november 1",
+        "november one",
+        "taxiway n 1",
+        "taxiway n1",
+        "taxiway november 1",
+        "taxiway november one"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:N2",
+      "kind": "taxiway",
+      "canonical": "N2",
+      "aliases": [
+        "n 2",
+        "n2",
+        "november 2",
+        "november two",
+        "taxiway n 2",
+        "taxiway n2",
+        "taxiway november 2",
+        "taxiway november two"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:N3",
+      "kind": "taxiway",
+      "canonical": "N3",
+      "aliases": [
+        "n 3",
+        "n3",
+        "november 3",
+        "november three",
+        "taxiway n 3",
+        "taxiway n3",
+        "taxiway november 3",
+        "taxiway november three"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:Q",
+      "kind": "taxiway",
+      "canonical": "Q",
+      "aliases": [
+        "q",
+        "quebec",
+        "taxiway q",
+        "taxiway quebec"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:R",
+      "kind": "taxiway",
+      "canonical": "R",
+      "aliases": [
+        "r",
+        "romeo",
+        "taxiway r",
+        "taxiway romeo"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:T",
+      "kind": "taxiway",
+      "canonical": "T",
+      "aliases": [
+        "t",
+        "tango",
+        "taxiway t",
+        "taxiway tango"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:Y",
+      "kind": "taxiway",
+      "canonical": "Y",
+      "aliases": [
+        "taxiway y",
+        "taxiway yankee",
+        "y",
+        "yankee"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:TWY:Z",
+      "kind": "taxiway",
+      "canonical": "Z",
+      "aliases": [
+        "taxiway z",
+        "taxiway zulu",
+        "z",
+        "zulu"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:AREA:Main_Fire_Station",
+      "kind": "named_area",
+      "canonical": "Main Fire Station",
+      "aliases": [
+        "main fire station"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:AREA:Satellite_Fire_Station",
+      "kind": "named_area",
+      "canonical": "Satellite Fire Station",
+      "aliases": [
+        "satellite fire station"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:AREA:General_Aviation_Ramp",
+      "kind": "named_area",
+      "canonical": "General Aviation Ramp",
+      "aliases": [
+        "general aviation ramp"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:AREA:J_Pad_Parking",
+      "kind": "named_area",
+      "canonical": "J Pad Parking",
+      "aliases": [
+        "j pad parking"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:04L",
+      "kind": "runway_end",
+      "canonical": "04L",
+      "aliases": [
+        "04 left",
+        "04l",
+        "4 left",
+        "4l",
+        "four left",
+        "runway 04 left",
+        "runway 04l",
+        "runway 4 left",
+        "runway 4l",
+        "runway four left"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:22R",
+      "kind": "runway_end",
+      "canonical": "22R",
+      "aliases": [
+        "22 right",
+        "22r",
+        "runway 22 right",
+        "runway 22r",
+        "runway two two right",
+        "two two right"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:04R",
+      "kind": "runway_end",
+      "canonical": "04R",
+      "aliases": [
+        "04 right",
+        "04r",
+        "4 right",
+        "4r",
+        "four right",
+        "runway 04 right",
+        "runway 04r",
+        "runway 4 right",
+        "runway 4r",
+        "runway four right"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:22L",
+      "kind": "runway_end",
+      "canonical": "22L",
+      "aliases": [
+        "22 left",
+        "22l",
+        "runway 22 left",
+        "runway 22l",
+        "runway two two left",
+        "two two left"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:09",
+      "kind": "runway_end",
+      "canonical": "09",
+      "aliases": [
+        "09",
+        "9",
+        "nine",
+        "runway 09",
+        "runway 9",
+        "runway nine"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:27",
+      "kind": "runway_end",
+      "canonical": "27",
+      "aliases": [
+        "27",
+        "runway 27",
+        "runway two seven",
+        "two seven"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:14",
+      "kind": "runway_end",
+      "canonical": "14",
+      "aliases": [
+        "14",
+        "one four",
+        "runway 14",
+        "runway one four"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:32",
+      "kind": "runway_end",
+      "canonical": "32",
+      "aliases": [
+        "32",
+        "runway 32",
+        "runway three two",
+        "three two"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:15L",
+      "kind": "runway_end",
+      "canonical": "15L",
+      "aliases": [
+        "15 left",
+        "15l",
+        "one five left",
+        "runway 15 left",
+        "runway 15l",
+        "runway one five left"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:33R",
+      "kind": "runway_end",
+      "canonical": "33R",
+      "aliases": [
+        "33 right",
+        "33r",
+        "runway 33 right",
+        "runway 33r",
+        "runway three three right",
+        "three three right"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:15R",
+      "kind": "runway_end",
+      "canonical": "15R",
+      "aliases": [
+        "15 right",
+        "15r",
+        "one five right",
+        "runway 15 right",
+        "runway 15r",
+        "runway one five right"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KBOS",
+      "entity_id": "KBOS:END:33L",
+      "kind": "runway_end",
+      "canonical": "33L",
+      "aliases": [
+        "33 left",
+        "33l",
+        "runway 33 left",
+        "runway 33l",
+        "runway three three left",
+        "three three left"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:RWY:04-22",
+      "kind": "runway",
+      "canonical": "04/22",
+      "aliases": [
+        "04/22"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:RWY:13-31",
+      "kind": "runway",
+      "canonical": "13/31",
+      "aliases": [
+        "13/31"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:A",
+      "kind": "taxiway",
+      "canonical": "A",
+      "aliases": [
+        "a",
+        "alfa",
+        "alpha",
+        "taxiway a",
+        "taxiway alpha"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:AA",
+      "kind": "taxiway",
+      "canonical": "AA",
+      "aliases": [
+        "aa",
+        "alfa alfa",
+        "alpha alpha",
+        "taxiway aa",
+        "taxiway alpha alpha"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:AC",
+      "kind": "taxiway",
+      "canonical": "AC",
+      "aliases": [
+        "ac",
+        "alfa charlie",
+        "alpha charlie",
+        "taxiway ac",
+        "taxiway alpha charlie"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:B",
+      "kind": "taxiway",
+      "canonical": "B",
+      "aliases": [
+        "b",
+        "bravo",
+        "taxiway b",
+        "taxiway bravo"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:BB",
+      "kind": "taxiway",
+      "canonical": "BB",
+      "aliases": [
+        "bb",
+        "bravo bravo",
+        "taxiway bb",
+        "taxiway bravo bravo"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:C",
+      "kind": "taxiway",
+      "canonical": "C",
+      "aliases": [
+        "c",
+        "charlie",
+        "taxiway c",
+        "taxiway charlie"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:CC",
+      "kind": "taxiway",
+      "canonical": "CC",
+      "aliases": [
+        "cc",
+        "charlie charlie",
+        "taxiway cc",
+        "taxiway charlie charlie"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:CY",
+      "kind": "taxiway",
+      "canonical": "CY",
+      "aliases": [
+        "charlie yankee",
+        "cy",
+        "taxiway charlie yankee",
+        "taxiway cy"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:D",
+      "kind": "taxiway",
+      "canonical": "D",
+      "aliases": [
+        "d",
+        "delta",
+        "taxiway d",
+        "taxiway delta"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:DD",
+      "kind": "taxiway",
+      "canonical": "DD",
+      "aliases": [
+        "dd",
+        "delta delta",
+        "taxiway dd",
+        "taxiway delta delta"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:E",
+      "kind": "taxiway",
+      "canonical": "E",
+      "aliases": [
+        "e",
+        "echo",
+        "taxiway e",
+        "taxiway echo"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:F",
+      "kind": "taxiway",
+      "canonical": "F",
+      "aliases": [
+        "f",
+        "foxtrot",
+        "taxiway f",
+        "taxiway foxtrot"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:G",
+      "kind": "taxiway",
+      "canonical": "G",
+      "aliases": [
+        "g",
+        "golf",
+        "taxiway g",
+        "taxiway golf"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:GG",
+      "kind": "taxiway",
+      "canonical": "GG",
+      "aliases": [
+        "gg",
+        "golf golf",
+        "taxiway gg",
+        "taxiway golf golf"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:J",
+      "kind": "taxiway",
+      "canonical": "J",
+      "aliases": [
+        "j",
+        "juliet",
+        "juliett",
+        "taxiway j",
+        "taxiway juliett"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:K",
+      "kind": "taxiway",
+      "canonical": "K",
+      "aliases": [
+        "k",
+        "kilo",
+        "taxiway k",
+        "taxiway kilo"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:L",
+      "kind": "taxiway",
+      "canonical": "L",
+      "aliases": [
+        "l",
+        "lima",
+        "taxiway l",
+        "taxiway lima"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:M",
+      "kind": "taxiway",
+      "canonical": "M",
+      "aliases": [
+        "m",
+        "mike",
+        "taxiway m",
+        "taxiway mike"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:N",
+      "kind": "taxiway",
+      "canonical": "N",
+      "aliases": [
+        "n",
+        "november",
+        "taxiway n",
+        "taxiway november"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:P",
+      "kind": "taxiway",
+      "canonical": "P",
+      "aliases": [
+        "p",
+        "papa",
+        "taxiway p",
+        "taxiway papa"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:Q",
+      "kind": "taxiway",
+      "canonical": "Q",
+      "aliases": [
+        "q",
+        "quebec",
+        "taxiway q",
+        "taxiway quebec"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:R",
+      "kind": "taxiway",
+      "canonical": "R",
+      "aliases": [
+        "r",
+        "romeo",
+        "taxiway r",
+        "taxiway romeo"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:S",
+      "kind": "taxiway",
+      "canonical": "S",
+      "aliases": [
+        "s",
+        "sierra",
+        "taxiway s",
+        "taxiway sierra"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:T",
+      "kind": "taxiway",
+      "canonical": "T",
+      "aliases": [
+        "t",
+        "tango",
+        "taxiway t",
+        "taxiway tango"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:U",
+      "kind": "taxiway",
+      "canonical": "U",
+      "aliases": [
+        "taxiway u",
+        "taxiway uniform",
+        "u",
+        "uniform"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:V",
+      "kind": "taxiway",
+      "canonical": "V",
+      "aliases": [
+        "taxiway v",
+        "taxiway victor",
+        "v",
+        "victor"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:W",
+      "kind": "taxiway",
+      "canonical": "W",
+      "aliases": [
+        "taxiway w",
+        "taxiway whiskey",
+        "w",
+        "whiskey"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:Y",
+      "kind": "taxiway",
+      "canonical": "Y",
+      "aliases": [
+        "taxiway y",
+        "taxiway yankee",
+        "y",
+        "yankee"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:YY",
+      "kind": "taxiway",
+      "canonical": "YY",
+      "aliases": [
+        "taxiway yankee yankee",
+        "taxiway yy",
+        "yankee yankee",
+        "yy"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:TWY:Z",
+      "kind": "taxiway",
+      "canonical": "Z",
+      "aliases": [
+        "taxiway z",
+        "taxiway zulu",
+        "z",
+        "zulu"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:AREA:Fire_Station",
+      "kind": "named_area",
+      "canonical": "Fire Station",
+      "aliases": [
+        "fire station"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:AREA:General_Aviation_Parking",
+      "kind": "named_area",
+      "canonical": "General Aviation Parking",
+      "aliases": [
+        "general aviation parking"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:AREA:Transient_Parking",
+      "kind": "named_area",
+      "canonical": "Transient Parking",
+      "aliases": [
+        "transient parking"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:AREA:Terminal_A",
+      "kind": "named_area",
+      "canonical": "Terminal A",
+      "aliases": [
+        "terminal a"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:AREA:Terminal_B",
+      "kind": "named_area",
+      "canonical": "Terminal B",
+      "aliases": [
+        "terminal b"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:AREA:Terminal_C",
+      "kind": "named_area",
+      "canonical": "Terminal C",
+      "aliases": [
+        "terminal c"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:AREA:Air_Carrier_Maintenance_and_Base_Facilities",
+      "kind": "named_area",
+      "canonical": "Air Carrier Maintenance and Base Facilities",
+      "aliases": [
+        "air carrier maintenance and base facilities"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:AREA:Alley_15",
+      "kind": "named_area",
+      "canonical": "Alley 15",
+      "aliases": [
+        "alley 15"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:END:04",
+      "kind": "runway_end",
+      "canonical": "04",
+      "aliases": [
+        "04",
+        "4",
+        "four",
+        "runway 04",
+        "runway 4",
+        "runway four"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:END:22",
+      "kind": "runway_end",
+      "canonical": "22",
+      "aliases": [
+        "22",
+        "runway 22",
+        "runway two two",
+        "two two"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:END:13",
+      "kind": "runway_end",
+      "canonical": "13",
+      "aliases": [
+        "13",
+        "one three",
+        "runway 13",
+        "runway one three"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    },
+    {
+      "airport": "KLGA",
+      "entity_id": "KLGA:END:31",
+      "kind": "runway_end",
+      "canonical": "31",
+      "aliases": [
+        "31",
+        "runway 31",
+        "runway three one",
+        "three one"
+      ],
+      "origin": "Generated parser aliases for source-supported labels; these are not additional chart facts."
+    }
+  ]
+}

@@ -1,0 +1,1599 @@
+{
+ "summary": {
+  "set": "sim",
+  "scenarios": 12,
+  "transmissions": 53,
+  "scored": 53,
+  "unscored": 0,
+  "callsign_acc": 0.943,
+  "runway_acc": 1.0,
+  "instruction_acc": 1.0,
+  "alerts": {
+   "scenarios_with_expectation": 12,
+   "tp": 6,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "lead_time_s": {
+   "n": 6,
+   "median": 24.35,
+   "min": 24.35,
+   "values": [
+    24.35,
+    24.35,
+    24.35,
+    24.35,
+    24.45,
+    40.97
+   ]
+  },
+  "latency": {
+   "library_ms_median": 0.04,
+   "whisper_s_median": 0.188,
+   "full_stack_clip_to_alert_s_median (E1, agent)": 13.69
+  },
+  "inputs": {
+   "script": 48,
+   "whisper": 5
+  },
+  "kinds": [
+   "SIMULATED (fictional SIM-1)"
+  ]
+ },
+ "scenarios": [
+  {
+   "scenario": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": 52.35,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper",
+     "text": "Simair 212, Runway 36, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.192
+    },
+    {
+     "t": 3,
+     "input": "whisper",
+     "text": "cleared to land runway 367R212",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.169
+    },
+    {
+     "t": 24,
+     "input": "whisper",
+     "text": "Tour, Resco 7, request to cross runway 36 at Kilo.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "36",
+      "instruction": "CROSS_REQUEST"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS_REQUEST"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.201
+    },
+    {
+     "t": 28,
+     "input": "whisper",
+     "text": "Rescue 7, Cross Runway 36 at Kilo.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.177
+    },
+    {
+     "t": 31,
+     "input": "whisper",
+     "text": "Crossing Runway 36 at Kilo, RISCO 7.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.188
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0001",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "runway": "XSIM:RWY:18-36",
+     "t_fired": 28,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SIM212",
+      "type": "LANDING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 0,
+      "event_id": "ev00006",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "RESCUE7",
+      "type": "CROSSING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 28,
+      "event_id": "ev00009",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "SIM212": {
+       "authorized": "landing clearance, rwy 36",
+       "acknowledged": "read back: landing clearance, rwy 36",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "RESCUE7": {
+       "authorized": "cross, rwy 36, at K",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 36 has a recorded landing authorization for SIM212 (t=0) and a crossing authorization for RESCUE7 at K (t=28). Both need the 18-36 protected area.",
+     "what_would_clear_it": "RESCUE7 reports clear of runway, or SIM212 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SIM_E2_SAME_PATHS_LATER",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": 98.35,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 70,
+     "input": "script",
+     "text": "Tower, Rescue seven, request to cross runway three six at Kilo.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS_REQUEST"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS_REQUEST"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 74,
+     "input": "script",
+     "text": "Rescue seven, cross runway three six at Kilo.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 77,
+     "input": "script",
+     "text": "Crossing runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0002",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "runway": "XSIM:RWY:18-36",
+     "t_fired": 74,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SIM212",
+      "type": "LANDING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 0,
+      "event_id": "ev00016",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "RESCUE7",
+      "type": "CROSSING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 74,
+      "event_id": "ev00019",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "SIM212": {
+       "authorized": "landing clearance, rwy 36",
+       "acknowledged": "read back: landing clearance, rwy 36",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "RESCUE7": {
+       "authorized": "cross, rwy 36, at K",
+       "acknowledged": null,
+       "reported": "requests cross_request runway 36 at K",
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 36 has a recorded landing authorization for SIM212 (t=0) and a crossing authorization for RESCUE7 at K (t=74). Both need the 18-36 protected area.",
+     "what_would_clear_it": "RESCUE7 reports clear of runway, or SIM212 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SIM_E3_STOP_NOT_OBSERVED",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1",
+    "R13"
+   ],
+   "reference_t": 52.35,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 24,
+     "input": "script",
+     "text": "Tower, Rescue seven, request to cross runway three six at Kilo.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS_REQUEST"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS_REQUEST"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 28,
+     "input": "script",
+     "text": "Rescue seven, cross runway three six at Kilo.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 31,
+     "input": "script",
+     "text": "Crossing runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 38,
+     "input": "script",
+     "text": "Rescue seven, stop, stop, stop.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": null,
+      "instruction": "CANCEL"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": null,
+      "instruction": "CANCEL"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0003",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "runway": "XSIM:RWY:18-36",
+     "t_fired": 28,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SIM212",
+      "type": "LANDING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 0,
+      "event_id": "ev00027",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "RESCUE7",
+      "type": "CROSSING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 28,
+      "event_id": "ev00030",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "SIM212": {
+       "authorized": "landing clearance, rwy 36",
+       "acknowledged": "read back: landing clearance, rwy 36",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "RESCUE7": {
+       "authorized": "cross, rwy 36, at K",
+       "acknowledged": null,
+       "reported": "requests cross_request runway 36 at K",
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 36 has a recorded landing authorization for SIM212 (t=0) and a crossing authorization for RESCUE7 at K (t=28). Both need the 18-36 protected area.",
+     "what_would_clear_it": "RESCUE7 reports clear of runway, or SIM212 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SIM_E4_FEED_LOSS",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": 52.35,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 24,
+     "input": "script",
+     "text": "Tower, Rescue seven, request to cross runway three six at Kilo.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS_REQUEST"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS_REQUEST"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    },
+    {
+     "t": 28,
+     "input": "script",
+     "text": "Rescue seven, cross runway three six at Kilo.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 31,
+     "input": "script",
+     "text": "Crossing runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0004",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "runway": "XSIM:RWY:18-36",
+     "t_fired": 28,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SIM212",
+      "type": "LANDING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 0,
+      "event_id": "ev00038",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "RESCUE7",
+      "type": "CROSSING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 28,
+      "event_id": "ev00041",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "SIM212": {
+       "authorized": "landing clearance, rwy 36",
+       "acknowledged": "read back: landing clearance, rwy 36",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "RESCUE7": {
+       "authorized": "cross, rwy 36, at K",
+       "acknowledged": null,
+       "reported": "requests cross_request runway 36 at K",
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 36 has a recorded landing authorization for SIM212 (t=0) and a crossing authorization for RESCUE7 at K (t=28). Both need the 18-36 protected area.",
+     "what_would_clear_it": "RESCUE7 reports clear of runway, or SIM212 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SIM_E5_HOLD_NOT_SLOWING",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": 45.8,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Rescue seven, hold short runway three six at Kilo, traffic landing.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.08,
+     "asr_s": null
+    },
+    {
+     "t": 21,
+     "input": "script",
+     "text": "Hold short runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SIM_E6_HOLD_OK",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Rescue seven, hold short runway three six at Kilo, traffic landing.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.07,
+     "asr_s": null
+    },
+    {
+     "t": 21,
+     "input": "script",
+     "text": "Hold short runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SIM_H56774_0",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Rescue seven, hold short runway three six at Kilo, traffic landing.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.09,
+     "asr_s": null
+    },
+    {
+     "t": 21,
+     "input": "script",
+     "text": "Hold short runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SIM_H56774_1",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Rescue seven, hold short runway three six at Kilo, traffic landing.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 21,
+     "input": "script",
+     "text": "Hold short runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SIM_H56774_2",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Rescue seven, hold short runway three six at Kilo, traffic landing.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 21,
+     "input": "script",
+     "text": "Hold short runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SIM_H56774_3",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": 99.45,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 75,
+     "input": "script",
+     "text": "Rescue seven, cross runway three six at Kilo.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 78,
+     "input": "script",
+     "text": "Crossing runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0005",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "runway": "XSIM:RWY:18-36",
+     "t_fired": 75,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SIM212",
+      "type": "LANDING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 0,
+      "event_id": "ev00087",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "RESCUE7",
+      "type": "CROSSING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 75,
+      "event_id": "ev00089",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "SIM212": {
+       "authorized": "landing clearance, rwy 36",
+       "acknowledged": "read back: landing clearance, rwy 36",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "RESCUE7": {
+       "authorized": "cross, rwy 36, at K",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 36 has a recorded landing authorization for SIM212 (t=0) and a crossing authorization for RESCUE7 at K (t=75). Both need the 18-36 protected area.",
+     "what_would_clear_it": "RESCUE7 reports clear of runway, or SIM212 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SIM_H56774_4",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 18,
+     "input": "script",
+     "text": "Rescue seven, hold short runway three six at Kilo, traffic landing.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.06,
+     "asr_s": null
+    },
+    {
+     "t": 21,
+     "input": "script",
+     "text": "Hold short runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.05,
+     "asr_s": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SIM_H56774_5",
+   "kind": "SIMULATED (fictional SIM-1)",
+   "reference_kind": "script_parse",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": 62.965,
+   "rows": [
+    {
+     "t": 0,
+     "input": "script",
+     "text": "SimAir two one two, runway three six, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 3,
+     "input": "script",
+     "text": "Cleared to land runway three six, SimAir two one two.",
+     "hypothesis": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SIM212"
+      ],
+      "runway": "36",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 22,
+     "input": "script",
+     "text": "Rescue seven, cross runway three six at Kilo.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    },
+    {
+     "t": 25,
+     "input": "script",
+     "text": "Crossing runway three six at Kilo, Rescue seven.",
+     "hypothesis": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "RESCUE7"
+      ],
+      "runway": "36",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0006",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "runway": "XSIM:RWY:18-36",
+     "t_fired": 22,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SIM212",
+      "type": "LANDING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 0,
+      "event_id": "ev00103",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "RESCUE7",
+      "type": "CROSSING",
+      "runway_end": "36",
+      "physical_runway": "XSIM:RWY:18-36",
+      "t_issued": 22,
+      "event_id": "ev00105",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "SIM212": {
+       "authorized": "landing clearance, rwy 36",
+       "acknowledged": "read back: landing clearance, rwy 36",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "RESCUE7": {
+       "authorized": "cross, rwy 36, at K",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 36 has a recorded landing authorization for SIM212 (t=0) and a crossing authorization for RESCUE7 at K (t=22). Both need the 18-36 protected area.",
+     "what_would_clear_it": "RESCUE7 reports clear of runway, or SIM212 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  }
+ ]
+}

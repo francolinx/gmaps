@@ -1,0 +1,1675 @@
+{
+ "SIMULATED": true,
+ "bench": "venue/tool_loop_bench.py",
+ "model": "base",
+ "base_url": "http://127.0.0.1:8001/v1",
+ "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+ "generated": "2026-10-17T06:07:22",
+ "summary": {
+  "no_feed": {
+   "runs": 3,
+   "pass_rate": 0.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 0.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 0,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.0,
+   "model_latency_median_s": 1.587,
+   "time_to_alert_median_s": null
+  },
+  "positive": {
+   "runs": 3,
+   "pass_rate": 0.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 0.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 0,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.0,
+   "model_latency_median_s": 1.862,
+   "time_to_alert_median_s": null
+  },
+  "stale": {
+   "runs": 3,
+   "pass_rate": 0.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 0.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 0,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.0,
+   "model_latency_median_s": 1.733,
+   "time_to_alert_median_s": null
+  },
+  "transient": {
+   "runs": 3,
+   "pass_rate": 0.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 0.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 3,
+   "faults_injected": 3,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.2,
+   "model_latency_median_s": 1.217,
+   "time_to_alert_median_s": null
+  }
+ },
+ "runs": [
+  {
+   "run_id": "20261017-055855_positive_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "positive",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.8245,
+    "p95": 4.015,
+    "n": 20
+   },
+   "turn_wall_s_median": 8.157,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.533,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36. The look-ahead indicated prediction unavailable due to lack of surface observations and unmodelled airborne phase for the aircraft, with no conflict detected. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.157,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36 at t=3 s. The look-ahead indicated that SimAir 212's surface movement is not yet modelled, making prediction unavailable due to lack of surface observation. No conflict was detected, and thus no warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 7.841,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a request from \"Rescue seven\" to cross runway 36 at Kilo. The look-ahead analysis showed that the vehicle (Rescue7) is currently outside the runway zone and not entering it, with no conflict detected. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 10.002,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at \"K.\" Look-ahead analysis showed a predicted occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing at K) in zone Z1, with a time window of [47.3, 72.8] seconds, indicating a potential conflict. A warn"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 9.4,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"RESCUE7\" is crossing runway 36 at \"K.\" The look-ahead analysis detected an occupancy overlap between aircraft SIM212 and vehicle RESCUE7 in zone XSIM:ZONE:Z1, with a conflict window from 50.2 to 75.7 seconds. A conflict warning was posted: warni"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_positive_0.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_positive_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "positive",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 2.049,
+    "p95": 3.829,
+    "n": 20
+   },
+   "turn_wall_s_median": 8.901,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.271,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36. The look-ahead indicated prediction unavailable due to lack of surface observations and unmodelled airborne phase for the aircraft, with no conflict detected. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 9.1,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36 at t=3 s. The look-ahead indicated that SimAir 212's surface movement is not yet modelled, making prediction unavailable due to lack of surface observation. No conflict was detected, and thus no warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 8.429,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a request from \"Rescue seven\" to cross runway 36 at Kilo. The look-ahead analysis showed that the vehicle (Rescue7) is currently outside the runway zone and not entering it, with no conflict detected. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 10.385,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at \"K.\" Look-ahead analysis showed a predicted occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing at K) in zone Z1, with a time window of [47.3, 72.8] seconds, indicating a potential conflict. A warn"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 8.901,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"RESCUE7\" is crossing runway 36 at \"K.\" The look-ahead analysis detected an occupancy overlap between aircraft SIM212 and vehicle RESCUE7 in zone XSIM:ZONE:Z1, with a conflict window from 50.2 to 75.7 seconds. A warning was posted for conflict ID"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_positive_1.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_positive_2",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "positive",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.8624999999999998,
+    "p95": 3.831,
+    "n": 20
+   },
+   "turn_wall_s_median": 8.23,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.566,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36. The look-ahead indicated prediction unavailable due to lack of surface observations and unmodelled airborne phase for the aircraft, with no conflict detected. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.23,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36 at t=3 s. The look-ahead indicated that SimAir 212's surface movement is not yet modelled, making prediction unavailable due to lack of surface observation. No conflict was detected, and thus no warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 7.707,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a request from \"Rescue seven\" to cross runway 36 at Kilo. The look-ahead analysis showed that the vehicle (Rescue7) is currently outside the runway zone and not entering it, with no conflict detected. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 9.778,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at \"K.\" Look-ahead analysis showed a predicted occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing at K) within zone Z1, with a time window of [47.3, 72.8] seconds. A conflict warning (w0006) was post"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 8.895,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"RESCUE7\" is crossing runway 36 at \"K.\" The look-ahead analysis detected an occupancy overlap between aircraft SIM212 and vehicle RESCUE7 in zone XSIM:ZONE:Z1, with a conflict window from 50.2 to 75.7 seconds. A warning was posted for conflict ID"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_positive_2.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_no_feed_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "no_feed",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": false,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.5985,
+    "p95": 3.114,
+    "n": 20
+   },
+   "turn_wall_s_median": 7.299,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.061,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 on Runway 36. Look-ahead was unavailable due to no simulated observation feed at that time. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.299,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to land on runway 36 at t=3 s. Look-ahead was unavailable due to no simulated observation feed at that time. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 6.988,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a request from \"Rescue seven\" to cross runway 36 at Kilo. Look-ahead was unavailable due to no simulated observation feed at that time. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 8.98,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at Kilo at t=28 s. Look-ahead was unavailable due to no simulated observation feed at that time, which does not imply the absence of a conflict. A conflict warning (w0008) was posted, arising from a crossing authorization over"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.922,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": false,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"Crossing runway 36 at Kilo, Rescue seven.\" The lookahead could not provide a prediction due to the absence of simulated observation data at that time. No new conflict warning was posted, as the system detected no active conflict requiring alerti"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_no_feed_0.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_no_feed_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "no_feed",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": false,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.5285,
+    "p95": 3.05,
+    "n": 20
+   },
+   "turn_wall_s_median": 7.076,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 6.809,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 on Runway 36. Look-ahead was unavailable due to no simulated observation feed at that time. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.076,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to land on runway 36 at t=3 s. Look-ahead was unavailable due to no simulated observation feed at that time. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 6.983,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a request from \"Rescue seven\" to cross runway 36 at Kilo. Look-ahead was unavailable due to no simulated observation feed at that time. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 9.002,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at Kilo at t=28 s. Look-ahead was unavailable due to no simulated observation feed at that time, which does not imply the absence of a conflict. A conflict warning (w0010) was posted, arising from a crossing authorization over"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.964,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": false,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"Crossing runway 36 at Kilo, Rescue seven.\" The look-ahead could not provide a prediction due to the absence of simulated observation data at that time. No new conflict warning was posted, as no CONFLICT warning was introduced in the ledger updat"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_no_feed_1.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_no_feed_2",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "no_feed",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": false,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.5865,
+    "p95": 2.967,
+    "n": 20
+   },
+   "turn_wall_s_median": 7.262,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.009,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 on Runway 36. Look-ahead was unavailable due to no simulated observation feed at that time. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 7.262,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to land on runway 36 at t=3 s. Look-ahead was unavailable due to no simulated observation feed at that time. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 6.978,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a request from \"Rescue seven\" to cross runway 36 at Kilo. Look-ahead was unavailable due to no simulated observation feed at that time. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 8.525,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at Kilo at t=28 s. Look-ahead was unavailable due to no simulated observation feed at that time, which does not imply the absence of a conflict. A CONFLICT warning (w0012) was posted regarding the crossing versus active landin"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.659,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": false,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"Crossing runway 36 at Kilo, Rescue seven.\" The lookahead could not provide a prediction due to the absence of simulated observation feed at that time. No new conflict warning was posted, as the system detected no active conflict requiring alerti"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_no_feed_2.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_transient_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "transient",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 16,
+    "tool_errors": 1,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 1,
+    "rounds_exhausted": 0,
+    "model_calls": 21
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 1,
+   "model_latency_s": {
+    "median": 1.217,
+    "p95": 3.82,
+    "n": 21
+   },
+   "turn_wall_s_median": 8.671,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.565,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 on Runway 36. The look-ahead indicated prediction unavailable due to lack of surface observations and unmodelled airborne phase for the aircraft, with no conflict detected. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.654,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36 at t=3 s. The look-ahead indicated that SimAir 212 (T-AC1) is not yet modelled on the surface due to lack of observation, and no conflict was detected in the shared zone. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 8.671,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The system recorded a cross-request from Rescue seven to cross runway 36 at Kilo. Look-ahead analysis showed that the vehicle (RESCUE7) is not entering the runway zone, with no entry within the horizon, and the aircraft (SIM212) is approaching the runway end but not yet occupying it. No conflict was"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 10.001,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at Kilo at t=28 s. Look-ahead analysis detected a potential occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing at K) within zone Z1, with a predicted overlap window from 47.3 to 72.8 seconds. A confl"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 8.866,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"RESCUE7\" is crossing runway 36 at \"K.\" The look-ahead analysis detected an occupancy overlap between aircraft SIM212 and vehicle RESCUE7 in zone XSIM:ZONE:Z1, with a conflict window from 50.2 to 75.7 seconds. A warning was posted for conflict ID"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_transient_0.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_transient_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "transient",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 16,
+    "tool_errors": 1,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 1,
+    "rounds_exhausted": 0,
+    "model_calls": 21
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 1,
+   "model_latency_s": {
+    "median": 1.416,
+    "p95": 3.868,
+    "n": 21
+   },
+   "turn_wall_s_median": 8.89,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 8.785,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 on Runway 36. The look-ahead indicated prediction unavailable due to lack of surface observations and unmodelled airborne phase for the aircraft, with no conflict detected. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.301,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to land on runway 36 at t=3 s. The look-ahead indicated that SimAir 212's surface movement is not yet modelled, making prediction unavailable due to lack of surface observation. No conflict was detected, and thus no warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 8.89,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The system recorded a cross-request from Rescue seven to cross runway 36 at Kilo. Look-ahead analysis showed that the vehicle (RESCUE7) is not entering the runway zone, with no entry within the horizon, and the aircraft (SIM212) is approaching the runway end but not currently occupying it. No confli"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 9.735,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at \"K.\" Look-ahead analysis showed a predicted occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing at K) within zone Z1, with a time window of [47.3, 72.8] seconds. A conflict warning (w0016) was post"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 8.918,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"RESCUE7\" is crossing runway 36 at \"K.\" The look-ahead analysis detected an occupancy overlap between aircraft SIM212 and vehicle RESCUE7 in zone XSIM:ZONE:Z1, with a conflict window from 50.2 to 75.7 seconds. A conflict warning was posted: warni"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_transient_1.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_transient_2",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "transient",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 16,
+    "tool_errors": 1,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 1,
+    "rounds_exhausted": 0,
+    "model_calls": 21
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 1,
+   "model_latency_s": {
+    "median": 1.215,
+    "p95": 3.828,
+    "n": 21
+   },
+   "turn_wall_s_median": 8.888,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 9.045,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 on Runway 36. The look-ahead indicated prediction unavailable due to lack of surface observations and unmodelled airborne phase for the aircraft, with no conflict detected. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.023,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36 at t=3 s. The look-ahead indicated that SimAir 212's surface movement is not yet modelled, making prediction unavailable due to lack of surface observation. No conflict was detected, and thus no warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 8.888,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The system recorded a cross-request from Rescue seven to cross runway 36 at Kilo. Look-ahead analysis showed that the vehicle (RESCUE7) is not entering the runway zone, with no entry within the horizon, and the aircraft (SIM212) is approaching the runway end but not yet occupying it. No conflict was"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 10.016,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at Kilo at t=28 s. Look-ahead analysis detected a potential occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing at K) within zone Z1, with a predicted overlap window from 47.3 to 72.8 seconds. A confl"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 8.879,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"RESCUE7\" is crossing runway 36 at \"K.\" The look-ahead analysis detected an occupancy overlap between aircraft SIM212 and vehicle RESCUE7 in zone XSIM:ZONE:Z1, with a conflict window from 50.2 to 75.7 seconds. A warning was posted for conflict ID"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_transient_2.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_stale_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "stale",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.6525,
+    "p95": 3.868,
+    "n": 20
+   },
+   "turn_wall_s_median": 8.674,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.296,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 on Runway 36. Look-ahead was unavailable due to a stale observation feed, which does not imply the absence of a conflict. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.019,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36 at t=3 s. The look-ahead indicated that SimAir 212's surface movement is not yet modelled, making prediction unavailable due to lack of surface observation. No conflict was detected, and thus no warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 8.674,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The system recorded a cross-request from Rescue seven to cross runway 36 at Kilo. Look-ahead analysis showed that the vehicle (RESCUE7) is not entering the runway zone, with no entry within the horizon, and the aircraft (SIM212) is approaching the runway end but not currently occupying it. No confli"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 10.209,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at \"K.\" Look-ahead analysis showed a predicted occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing at K) within zone Z1, with a time window of [47.3, 72.8] seconds. A conflict warning (w0020) was post"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 8.917,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"RESCUE7\" is crossing runway 36 at \"K.\" The look-ahead analysis detected an occupancy overlap between aircraft SIM212 and vehicle RESCUE7 in zone XSIM:ZONE:Z1, with a conflict window from 50.2 to 75.7 seconds. A conflict warning was posted: warni"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_stale_0.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_stale_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "stale",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.7455,
+    "p95": 3.866,
+    "n": 20
+   },
+   "turn_wall_s_median": 8.433,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.315,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 on Runway 36. Look-ahead was unavailable due to a stale observation feed, which does not imply the absence of a conflict. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.433,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36 at t=3 s. The look-ahead indicated that SimAir 212 (T-AC1) is not yet modelled on the surface due to lack of observation, and no conflict was detected in the shared zone. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 7.674,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a request from \"Rescue seven\" to cross runway 36 at Kilo. The look-ahead analysis showed that the vehicle (Rescue7) is currently outside the runway zone and not entering it, with no conflict detected. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 9.752,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at \"K.\" Look-ahead analysis showed a predicted occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing at K) within zone Z1, with a time window of [47.3, 72.8] seconds. A conflict warning (w0022) was post"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 8.916,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"RESCUE7\" is crossing runway 36 at \"K.\" The look-ahead analysis detected an occupancy overlap between aircraft SIM212 and vehicle RESCUE7 in zone XSIM:ZONE:Z1, with a conflict window from 50.2 to 75.7 seconds. A conflict warning was posted: warni"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_stale_1.jsonl"
+  },
+  {
+   "run_id": "20261017-055855_stale_2",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "stale",
+   "model": "base",
+   "passed": false,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": false,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.733,
+    "p95": 4.294,
+    "n": 20
+   },
+   "turn_wall_s_median": 8.918,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 7.496,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 on Runway 36. Look-ahead was unavailable due to a stale observation feed, which does not imply the absence of a conflict. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 8.191,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a landing clearance for SimAir 212 to runway 36 at t=3 s. The look-ahead indicated that SimAir 212 (T-AC1) is not yet modelled on the surface due to lack of observation, and no conflict was detected in the current state. No warning was posted."
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 9.716,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a request from \"Rescue seven\" to cross runway 36 at Kilo. The look-ahead analysis showed that the vehicle (Rescue7) is currently outside the runway zone and not entering it, while the aircraft (SIM212) is approaching runway 36 with a window of occupancy from 40.4 to 43.4 se"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 9.748,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded an instruction for \"RESCUE7\" to cross runway 36 at \"K.\" Look-ahead analysis showed a predicted occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing at K) within zone Z1, with a time window of [47.3, 72.8] seconds. A conflict warning (w0024) was post"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 8.918,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "The transmission recorded a pilot readback indicating \"RESCUE7\" is crossing runway 36 at \"K.\" The look-ahead analysis detected an occupancy overlap between aircraft SIM212 and vehicle RESCUE7 in zone XSIM:ZONE:Z1, with a conflict window from 50.2 to 75.7 seconds. A conflict warning was posted: warni"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-055855_stale_2.jsonl"
+  }
+ ]
+}

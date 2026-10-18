@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV_01_C_LAND_CROSS_00": {
+  "text": "Southwest seven three niner, runway niner right, cleared to land.",
+  "asr_s": 0.227
+ },
+ "SYN_KATL_DEV_01_C_LAND_CROSS_01": {
+  "text": "Runway Niner right. Cleared to land. Southwest 739er.",
+  "asr_s": 0.222
+ },
+ "SYN_KATL_DEV_01_C_LAND_CROSS_02": {
+  "text": "Southwest 2284, cross runway Niner, right at Romeo 7.",
+  "asr_s": 0.224
+ },
+ "SYN_KATL_DEV_01_C_LAND_CROSS_03": {
+  "text": "Cross runway Niner, right at Romeo 7, southwest to 284.",
+  "asr_s": 0.226
+ }
+}

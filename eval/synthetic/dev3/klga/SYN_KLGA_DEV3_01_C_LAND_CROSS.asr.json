@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV3_01_C_LAND_CROSS_00": {
+  "text": "American 1231, runway 31, cleared to land.",
+  "asr_s": 0.182
+ },
+ "SYN_KLGA_DEV3_01_C_LAND_CROSS_01": {
+  "text": "Clear to land 3-1. American 1231.",
+  "asr_s": 0.185
+ },
+ "SYN_KLGA_DEV3_01_C_LAND_CROSS_02": {
+  "text": "American 1736, at Whiskey, cross runway 31.",
+  "asr_s": 0.191
+ },
+ "SYN_KLGA_DEV3_01_C_LAND_CROSS_03": {
+  "text": "Cross 3-1 at Whiskey, American 1736.",
+  "asr_s": 0.19
+ }
+}

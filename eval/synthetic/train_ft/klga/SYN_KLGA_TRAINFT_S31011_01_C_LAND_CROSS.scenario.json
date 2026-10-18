@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31011_01_C_LAND_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_LAND_CROSS",
+ "basis": "R1 crossing vs active landing (3-7-2g2)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31011,
+ "context": {
+  "runway": "13-31",
+  "taxiway": "R",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest twenty five seventy three, runway three one, wind one niner zero at one seven gusts two five, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31011_01_C_LAND_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Southwest twenty five seventy three, roger, cleared to land runway three one.",
+   "id": "SYN_KLGA_TRAINFT_S31011_01_C_LAND_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Frontier five fifty three, cross runway three one at Romeo.",
+   "id": "SYN_KLGA_TRAINFT_S31011_01_C_LAND_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway three one at Romeo, Frontier five fifty three.",
+   "id": "SYN_KLGA_TRAINFT_S31011_01_C_LAND_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

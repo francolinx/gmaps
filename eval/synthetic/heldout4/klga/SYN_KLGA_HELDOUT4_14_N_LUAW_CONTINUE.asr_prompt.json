@@ -1,0 +1,26 @@
+{
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_00": {
+  "text": "American 1195, runway four, line up and wait, traffic landing runway one three.",
+  "asr_s": 0.205
+ },
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_01": {
+  "text": "Line up and wait runway four, American 1195.",
+  "asr_s": 0.179
+ },
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_02": {
+  "text": "Frontier two eight one six, runway four, extend downward, traffic holding in position.",
+  "asr_s": 0.21
+ },
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_03": {
+  "text": "We'll go Frontier 2816.",
+  "asr_s": 0.16
+ },
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_04": {
+  "text": "American 1195, runway four at Foxtrot, intersection departure, cleared for takeoff.",
+  "asr_s": 0.211
+ },
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_05": {
+  "text": "Roger, cleared for takeoff four, American, 1195.",
+  "asr_s": 0.181
+ }
+}

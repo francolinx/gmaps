@@ -1,0 +1,892 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:gmaps:airport-graph:1.0.0",
+  "title": "GMAPS source-grounded airport topology draft 1.0.0",
+  "description": "A deliberately non-geometric draft interchange. Numeric geometry requires a reviewed schema revision and an authoritative or explicitly simulated coordinate frame; v1 does not accept coordinates.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset_version",
+    "airport",
+    "created_at",
+    "intended_use",
+    "coverage",
+    "usability",
+    "sources",
+    "surfaces",
+    "runway_ends",
+    "nodes",
+    "segments",
+    "hold_points",
+    "zones",
+    "route_templates",
+    "issues"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "dataset_version": {
+      "type": "string"
+    },
+    "airport": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "icao": {
+          "type": "string",
+          "pattern": "^K[A-Z]{3}$"
+        },
+        "faa": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "icao",
+        "faa",
+        "name"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "intended_use": {
+      "const": "prototype_source_review"
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "inventory": {
+          "type": "string"
+        },
+        "topology": {
+          "type": "string"
+        },
+        "excluded": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "inventory",
+        "topology",
+        "excluded"
+      ]
+    },
+    "usability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "identifier_lookup": {
+          "const": true
+        },
+        "topology_review": {
+          "const": true
+        },
+        "automatic_routing": {
+          "const": false
+        },
+        "physical_position_inference": {
+          "const": false
+        },
+        "metric_prediction": {
+          "const": false
+        },
+        "operational_navigation": {
+          "const": false
+        }
+      },
+      "required": [
+        "identifier_lookup",
+        "topology_review",
+        "automatic_routing",
+        "physical_position_inference",
+        "metric_prediction",
+        "operational_navigation"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "surfaces": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/surface"
+      }
+    },
+    "runway_ends": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/runway_end"
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "segments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/segment"
+      }
+    },
+    "hold_points": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/hold_point"
+      }
+    },
+    "zones": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/zone"
+      }
+    },
+    "route_templates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/route"
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/issue"
+      }
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "type": "string"
+        },
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "locator": {
+          "type": "string"
+        },
+        "claim": {
+          "type": "string"
+        },
+        "method": {
+          "enum": [
+            "visual_transcription",
+            "text_transcription",
+            "secondary_reference",
+            "design_convention"
+          ]
+        }
+      },
+      "required": [
+        "source_id",
+        "page",
+        "locator",
+        "claim",
+        "method"
+      ]
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "accepted",
+            "rejected"
+          ]
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "reviewer",
+        "reviewed_at",
+        "notes"
+      ]
+    },
+    "uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "enum": [
+            "source_supported",
+            "ambiguous",
+            "unknown",
+            "design_only"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "label",
+        "reason",
+        "alternatives",
+        "confidence"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "faa_diagram",
+            "project_notes",
+            "project_master",
+            "faa_reference",
+            "conversation"
+          ]
+        },
+        "uri": {
+          "type": "string"
+        },
+        "local_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrieved_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "effective_from": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "effective_to": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "printed_cycle": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chart_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date_status": {
+          "enum": [
+            "within_printed_range",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "authority_scope": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "kind",
+        "uri",
+        "local_path",
+        "sha256",
+        "retrieved_on",
+        "effective_from",
+        "effective_to",
+        "printed_cycle",
+        "chart_code",
+        "date_status",
+        "authority_scope"
+      ]
+    },
+    "surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        },
+        "kind": {
+          "enum": [
+            "runway",
+            "taxiway",
+            "named_area"
+          ]
+        },
+        "identifier": {
+          "type": "string"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "geometry": {
+          "type": "null"
+        },
+        "published_dimensions_ft": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "length": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "width": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              },
+              "required": [
+                "length",
+                "width"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "review",
+        "uncertainty",
+        "kind",
+        "identifier",
+        "aliases",
+        "geometry",
+        "published_dimensions_ft"
+      ]
+    },
+    "runway_end": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        },
+        "identifier": {
+          "type": "string",
+          "pattern": "^(0[1-9]|[12][0-9]|3[0-6])[LRC]?$"
+        },
+        "runway_id": {
+          "type": "string"
+        },
+        "reciprocal_end_id": {
+          "type": "string"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "geometry": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "review",
+        "uncertainty",
+        "identifier",
+        "runway_id",
+        "reciprocal_end_id",
+        "aliases",
+        "geometry"
+      ]
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        },
+        "kind": {
+          "enum": [
+            "runway_intersection",
+            "runway_taxiway_junction",
+            "taxiway_junction"
+          ]
+        },
+        "surface_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "minItems": 2
+        },
+        "geometry": {
+          "type": "null"
+        },
+        "is_hold_point": {
+          "const": false
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "review",
+        "uncertainty",
+        "kind",
+        "surface_ids",
+        "geometry",
+        "is_hold_point"
+      ]
+    },
+    "segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        },
+        "surface_id": {
+          "type": "string"
+        },
+        "from_node_id": {
+          "type": "string"
+        },
+        "to_node_id": {
+          "type": "string"
+        },
+        "topology": {
+          "const": "visible_pavement_connection"
+        },
+        "direction_permission": {
+          "const": "unknown"
+        },
+        "geometry": {
+          "type": "null"
+        },
+        "length_m": {
+          "type": "null"
+        },
+        "width_m": {
+          "type": "null"
+        },
+        "atomicity": {
+          "const": "junctions_only_hold_boundaries_unresolved"
+        },
+        "routing_enabled": {
+          "const": false
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "review",
+        "uncertainty",
+        "surface_id",
+        "from_node_id",
+        "to_node_id",
+        "topology",
+        "direction_permission",
+        "geometry",
+        "length_m",
+        "width_m",
+        "atomicity",
+        "routing_enabled"
+      ]
+    },
+    "hold_point": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        },
+        "kind": {
+          "enum": [
+            "runway_hold_constraint",
+            "ils_hold",
+            "lahso_hold"
+          ]
+        },
+        "protected_surface_id": {
+          "type": "string"
+        },
+        "approach_surface_id": {
+          "type": "string"
+        },
+        "approach_segment_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approach_from_node_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "node_id": {
+          "type": "null"
+        },
+        "physical_marking_status": {
+          "enum": [
+            "chart_depicted_location_unmeasured",
+            "not_located"
+          ]
+        },
+        "geometry": {
+          "type": "null"
+        },
+        "offset_m": {
+          "type": "null"
+        },
+        "crossing_authority": {
+          "const": "not_granted_by_graph"
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "review",
+        "uncertainty",
+        "kind",
+        "protected_surface_id",
+        "approach_surface_id",
+        "approach_segment_id",
+        "approach_from_node_id",
+        "node_id",
+        "physical_marking_status",
+        "geometry",
+        "offset_m",
+        "crossing_authority"
+      ]
+    },
+    "zone": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        },
+        "kind": {
+          "enum": [
+            "conflict_area_reference",
+            "hotspot_annotation"
+          ]
+        },
+        "surface_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "node_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "geometry": {
+          "type": "null"
+        },
+        "boundary_status": {
+          "const": "unknown"
+        },
+        "usable_for_occupancy": {
+          "const": false
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "review",
+        "uncertainty",
+        "kind",
+        "surface_ids",
+        "node_ids",
+        "geometry",
+        "boundary_status",
+        "usable_for_occupancy"
+      ]
+    },
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        },
+        "label": {
+          "type": "string"
+        },
+        "surface_sequence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "node_sequence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "segment_sequence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "hold_point_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "route_status": {
+          "enum": [
+            "draft_connected_fragment",
+            "unresolved"
+          ]
+        },
+        "grants_authority": {
+          "const": false
+        },
+        "missing_inputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "review",
+        "uncertainty",
+        "label",
+        "surface_sequence",
+        "node_sequence",
+        "segment_sequence",
+        "hold_point_ids",
+        "route_status",
+        "grants_authority",
+        "missing_inputs"
+      ]
+    },
+    "issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "entity_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "severity": {
+          "enum": [
+            "blocking",
+            "review"
+          ]
+        },
+        "question": {
+          "type": "string"
+        },
+        "required_evidence": {
+          "type": "string"
+        },
+        "status": {
+          "const": "open"
+        }
+      },
+      "required": [
+        "id",
+        "entity_ids",
+        "severity",
+        "question",
+        "required_evidence",
+        "status"
+      ]
+    }
+  }
+}

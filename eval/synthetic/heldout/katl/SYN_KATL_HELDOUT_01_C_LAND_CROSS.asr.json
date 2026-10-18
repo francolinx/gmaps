@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT_01_C_LAND_CROSS_00": {
+  "text": "Frontier 1034, cleared to land runway 8 right.",
+  "asr_s": 0.187
+ },
+ "SYN_KATL_HELDOUT_01_C_LAND_CROSS_01": {
+  "text": "Clear to land 8 right, Frontier 1034.",
+  "asr_s": 0.172
+ },
+ "SYN_KATL_HELDOUT_01_C_LAND_CROSS_02": {
+  "text": "We're at 2-5-3-7, at Echo One Cross Runway, 8-Ride.",
+  "asr_s": 0.245
+ },
+ "SYN_KATL_HELDOUT_01_C_LAND_CROSS_03": {
+  "text": "Crossing runway 8 right at Echo 1, Spirit 2537.",
+  "asr_s": 0.182
+ }
+}

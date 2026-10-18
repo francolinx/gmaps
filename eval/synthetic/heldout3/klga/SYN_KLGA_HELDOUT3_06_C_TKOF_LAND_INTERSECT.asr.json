@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT3_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Delta 5-16, runway 4, wind 2-8-0 at niner gusts 1-9, cleared for takeoff.",
+  "asr_s": 0.267
+ },
+ "SYN_KLGA_HELDOUT3_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Delta 516, cleared for takeoff runway 4.",
+  "asr_s": 0.18
+ },
+ "SYN_KLGA_HELDOUT3_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Appear 100, runway 1-3 cleared to land.",
+  "asr_s": 0.18
+ },
+ "SYN_KLGA_HELDOUT3_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Compere 100 roger. Clear to land runway 13.",
+  "asr_s": 0.181
+ }
+}

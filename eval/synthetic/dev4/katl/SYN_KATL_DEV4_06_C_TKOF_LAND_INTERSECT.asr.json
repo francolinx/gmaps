@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Bonanza 2602 Bravo, runway 26 left at hotel, cleared for takeoff.",
+  "asr_s": 0.216
+ },
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Bonanza 2602 Bravo, cleared for takeoff runway 26L.",
+  "asr_s": 0.2
+ },
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Delta 300, wind 1-7-0 at 7 gusts 1-8, runway 2-6 left, cleared to land.",
+  "asr_s": 0.262
+ },
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Delta 300, roger, cleared to land runway 26L.",
+  "asr_s": 0.198
+ }
+}

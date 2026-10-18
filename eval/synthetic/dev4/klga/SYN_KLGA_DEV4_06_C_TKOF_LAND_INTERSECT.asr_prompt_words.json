@@ -1,0 +1,202 @@
+{
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Frontier 1077, runway four, wind 360 at one eight gust three one, cleared for takeoff.",
+  "asr_s": 0.52,
+  "words": [
+   {
+    "w": "Frontier",
+    "p": 0.9819
+   },
+   {
+    "w": "1077,",
+    "p": 0.718
+   },
+   {
+    "w": "runway",
+    "p": 0.9792
+   },
+   {
+    "w": "four,",
+    "p": 0.9885
+   },
+   {
+    "w": "wind",
+    "p": 0.9845
+   },
+   {
+    "w": "360",
+    "p": 0.6466
+   },
+   {
+    "w": "at",
+    "p": 0.9837
+   },
+   {
+    "w": "one",
+    "p": 0.5815
+   },
+   {
+    "w": "eight",
+    "p": 0.963
+   },
+   {
+    "w": "gust",
+    "p": 0.6349
+   },
+   {
+    "w": "three",
+    "p": 0.8069
+   },
+   {
+    "w": "one,",
+    "p": 0.7137
+   },
+   {
+    "w": "cleared",
+    "p": 0.9985
+   },
+   {
+    "w": "for",
+    "p": 0.9991
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.9512
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Cleared for takeoff four, Frontier 1077.",
+  "asr_s": 0.468,
+  "words": [
+   {
+    "w": "Cleared",
+    "p": 0.873
+   },
+   {
+    "w": "for",
+    "p": 0.9691
+   },
+   {
+    "w": "takeoff",
+    "p": 0.9874
+   },
+   {
+    "w": "four,",
+    "p": 0.4212
+   },
+   {
+    "w": "Frontier",
+    "p": 0.7551
+   },
+   {
+    "w": "1077.",
+    "p": 0.9431
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Bonanza four, four, five, four Yankee, runway one three, cleared to land.",
+  "asr_s": 0.502,
+  "words": [
+   {
+    "w": "Bonanza",
+    "p": 0.8996
+   },
+   {
+    "w": "four,",
+    "p": 0.4958
+   },
+   {
+    "w": "four,",
+    "p": 0.7564
+   },
+   {
+    "w": "five,",
+    "p": 0.4946
+   },
+   {
+    "w": "four",
+    "p": 0.9887
+   },
+   {
+    "w": "Yankee,",
+    "p": 0.3049
+   },
+   {
+    "w": "runway",
+    "p": 0.9844
+   },
+   {
+    "w": "one",
+    "p": 0.9858
+   },
+   {
+    "w": "three,",
+    "p": 0.8145
+   },
+   {
+    "w": "cleared",
+    "p": 0.9907
+   },
+   {
+    "w": "to",
+    "p": 0.9931
+   },
+   {
+    "w": "land.",
+    "p": 0.952
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Cleared to land, one three. Bonanza four, four, five, four Yankee.",
+  "asr_s": 0.483,
+  "words": [
+   {
+    "w": "Cleared",
+    "p": 0.7921
+   },
+   {
+    "w": "to",
+    "p": 0.9996
+   },
+   {
+    "w": "land,",
+    "p": 0.6374
+   },
+   {
+    "w": "one",
+    "p": 0.9902
+   },
+   {
+    "w": "three.",
+    "p": 0.687
+   },
+   {
+    "w": "Bonanza",
+    "p": 0.9494
+   },
+   {
+    "w": "four,",
+    "p": 0.7176
+   },
+   {
+    "w": "four,",
+    "p": 0.9799
+   },
+   {
+    "w": "five,",
+    "p": 0.7619
+   },
+   {
+    "w": "four",
+    "p": 0.9171
+   },
+   {
+    "w": "Yankee.",
+    "p": 0.9215
+   }
+  ]
+ }
+}

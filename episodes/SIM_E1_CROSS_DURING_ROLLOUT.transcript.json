@@ -1,0 +1,41 @@
+{
+ "id": "SIM_E1_CROSS_DURING_ROLLOUT",
+ "airport": "XSIM",
+ "is_fictional": true,
+ "title": "Crossing clearance issued while a landing aircraft is rolling out (fictional)",
+ "purpose": "Positive case: look-ahead shows overlapping occupancy windows at Z1 before the simulated encounter.",
+ "map": "SIM-1",
+ "revoice_note": "Record each line as its own clip; file name = <id>_<t>.wav. Fictional callsigns.",
+ "events": [
+  {
+   "t": 0,
+   "freq": "tower",
+   "speaker": "ATC",
+   "text_clean": "SimAir two one two, runway three six, cleared to land."
+  },
+  {
+   "t": 3,
+   "freq": "tower",
+   "speaker": "SIM212",
+   "text_clean": "Cleared to land runway three six, SimAir two one two."
+  },
+  {
+   "t": 24,
+   "freq": "tower",
+   "speaker": "RESCUE7",
+   "text_clean": "Tower, Rescue seven, request to cross runway three six at Kilo."
+  },
+  {
+   "t": 28,
+   "freq": "tower",
+   "speaker": "ATC",
+   "text_clean": "Rescue seven, cross runway three six at Kilo."
+  },
+  {
+   "t": 31,
+   "freq": "tower",
+   "speaker": "RESCUE7",
+   "text_clean": "Crossing runway three six at Kilo, Rescue seven."
+  }
+ ]
+}

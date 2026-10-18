@@ -1,0 +1,52 @@
+{
+ "id": "SYN_KLGA_DEV_01_C_LAND_CROSS",
+ "EVALUATION_ONLY": true,
+ "expected_alert": true,
+ "expected_rules": [
+  "R1"
+ ],
+ "conflict_t": null,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "SWA739"
+    ],
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_DEV_01_C_LAND_CROSS_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA739"
+    ],
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_DEV_01_C_LAND_CROSS_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA2284"
+    ],
+    "runway": "4",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_DEV_01_C_LAND_CROSS_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA2284"
+    ],
+    "runway": "4",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_DEV_01_C_LAND_CROSS_03"
+  }
+ ]
+}

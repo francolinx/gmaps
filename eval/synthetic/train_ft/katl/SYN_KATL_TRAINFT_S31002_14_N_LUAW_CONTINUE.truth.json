@@ -1,0 +1,110 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31002_14_N_LUAW_CONTINUE",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_14_N_LUAW_CONTINUE_00",
+   "fields": {
+    "callsigns": [
+     "JBU357"
+    ],
+    "runway": "27R",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "JBU357",
+    "runway": "27R",
+    "instruction": "LUAW",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_14_N_LUAW_CONTINUE_01",
+   "fields": {
+    "callsigns": [
+     "JBU357"
+    ],
+    "runway": "27R",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "JBU357",
+    "runway": "27R",
+    "instruction": "LUAW",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_14_N_LUAW_CONTINUE_02",
+   "fields": {
+    "callsigns": [
+     "EDV768"
+    ],
+    "runway": "27R",
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "EDV768",
+    "runway": "27R",
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_14_N_LUAW_CONTINUE_03",
+   "fields": {
+    "callsigns": [
+     "EDV768"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "EDV768",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_14_N_LUAW_CONTINUE_04",
+   "fields": {
+    "callsigns": [
+     "JBU357"
+    ],
+    "runway": "27R",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "JBU357",
+    "runway": "27R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "L"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_14_N_LUAW_CONTINUE_05",
+   "fields": {
+    "callsigns": [
+     "JBU357"
+    ],
+    "runway": "27R",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "JBU357",
+    "runway": "27R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   }
+  }
+ ]
+}

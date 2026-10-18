@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7602_10_N_EXIT_TAXI_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "N_EXIT_TAXI_THEN_CROSS",
+ "basis": "section 8: exit + ground taxi clearance release the landing (3-10-9, 3-7-2a)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7602,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "N2",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor eleven forty eight, number two, runway two seven left, cleared to land.",
+   "id": "SYN_KATL_HELDOUT5_S7602_10_N_EXIT_TAXI_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two seven left, cleared to land, Endeavor eleven forty eight.",
+   "id": "SYN_KATL_HELDOUT5_S7602_10_N_EXIT_TAXI_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 40,
+   "speaker": "ATC",
+   "text": "Endeavor eleven forty eight, exit right at Mike, contact ground point niner.",
+   "id": "SYN_KATL_HELDOUT5_S7602_10_N_EXIT_TAXI_THEN_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 48,
+   "speaker": "ATC",
+   "text": "Endeavor eleven forty eight, taxi via Mike to the gate.",
+   "id": "SYN_KATL_HELDOUT5_S7602_10_N_EXIT_TAXI_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "American twelve fifty seven, cross runway two seven left at November two without delay, traffic short final.",
+   "id": "SYN_KATL_HELDOUT5_S7602_10_N_EXIT_TAXI_THEN_CROSS_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Cross runway two seven left at November two, American twelve fifty seven.",
+   "id": "SYN_KATL_HELDOUT5_S7602_10_N_EXIT_TAXI_THEN_CROSS_05",
+   "speaker_ref": "b"
+  }
+ ]
+}

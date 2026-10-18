@@ -1,0 +1,4631 @@
+{
+ "icao": "KATL",
+ "generated_at": "2026-10-09T13:15:44-0400",
+ "osm": {
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "requested_at": "2026-10-09T04:04:08Z",
+  "osm_data_timestamp": "2026-10-09T04:02:51Z",
+  "raw_sha256": "b64eafa51f0049df0394f41b360b47993141006be10c9a7a3155951066cdca7d",
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)"
+ },
+ "method": "chart label centre -> ground via georef.json (graticule fit); match if an OSM taxiway/taxilane with the same ref is within 115 m of it",
+ "match_radius_rule": "Franco R2: ~3 mm on paper at the chart scale -> 115 m",
+ "duplicate_labels_dropped": 0,
+ "osm_only_classified": {
+  "1NW": "ramp_or_non_movement",
+  "6E": "ramp_or_non_movement",
+  "6N": "ramp_or_non_movement (printed on the chart as a ramp/area label)",
+  "8S": "ramp_or_non_movement",
+  "8W": "ramp_or_non_movement",
+  "9S": "ramp_or_non_movement",
+  "EAST": "ramp_or_non_movement",
+  "WEST": "ramp_or_non_movement"
+ },
+ "osm_taxiway_ways": 437,
+ "osm_ways_without_ref": 272,
+ "chart_label_instances": 151,
+ "chart_symbol_callouts_excluded": [
+  [
+   "A",
+   5
+  ],
+  [
+   "A4",
+   1
+  ],
+  [
+   "A5",
+   2
+  ],
+  [
+   "D",
+   1
+  ],
+  [
+   "P",
+   10
+  ]
+ ],
+ "summary": {
+  "matched": [
+   "A",
+   "A13",
+   "A3",
+   "A4",
+   "A5",
+   "A6",
+   "B",
+   "B1",
+   "B10",
+   "B11",
+   "B13",
+   "B15",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6",
+   "B7",
+   "C",
+   "D",
+   "E",
+   "E1",
+   "E10",
+   "E11",
+   "E13",
+   "E3",
+   "E5",
+   "E7",
+   "F",
+   "F1",
+   "F2",
+   "F3",
+   "F4",
+   "F5",
+   "G",
+   "H",
+   "J",
+   "K",
+   "L",
+   "L1",
+   "L10",
+   "L12",
+   "L14",
+   "L16",
+   "L3",
+   "L4",
+   "L5",
+   "L6",
+   "L7",
+   "LA",
+   "LB",
+   "M",
+   "M12",
+   "M14",
+   "M16",
+   "M18",
+   "M2",
+   "M20",
+   "M4",
+   "M6",
+   "N",
+   "N10",
+   "N12",
+   "N13",
+   "N2",
+   "N4",
+   "N5",
+   "N6",
+   "P",
+   "R",
+   "R10",
+   "R11",
+   "R12",
+   "R3",
+   "R6",
+   "R7",
+   "S",
+   "SC",
+   "SG",
+   "SG12",
+   "SG14",
+   "SG16",
+   "SG2",
+   "SG4",
+   "SG6",
+   "SJ",
+   "SJ1",
+   "SJ2",
+   "T",
+   "U",
+   "V",
+   "W"
+  ],
+  "matched_with_exceptions": [],
+  "conflicting": [
+   "A11",
+   "LC"
+  ],
+  "chart_only": [
+   "A15",
+   "A7"
+  ],
+  "osm_only": [
+   "1NW",
+   "6E",
+   "6N",
+   "8S",
+   "8W",
+   "9S",
+   "EAST",
+   "WEST"
+  ]
+ },
+ "gate_leadins": {
+  "status": "none_on_chart",
+  "decided_by": "Franco",
+  "decided_at": "2026-10-08",
+  "chart_class": "gate_leadin (keyed by gate number)",
+  "chart_gates": [],
+  "osm_ways_by_gate": {},
+  "osm_aeroway": {},
+  "chart_only": [],
+  "osm_only": [],
+  "chart_only_note": {},
+  "use": "Destination only in clearance parsing (\"to gate 14\"), never a route element. Future graph: matching OSM ways -> gate-access edges labelled by gate number."
+ },
+ "review_list": [
+  {
+   "label": "LC",
+   "chart_page_pt": [
+    433.26,
+    200.32
+   ],
+   "lat": 33.6375482,
+   "lon": -84.4088678,
+   "nearest_osm": [
+    {
+     "ref": "L",
+     "osm_id": 42422263,
+     "dist_m": 110.6
+    },
+    {
+     "ref": "LB",
+     "osm_id": 449510306,
+     "dist_m": 110.9
+    },
+    {
+     "ref": "LC",
+     "osm_id": 1271303383,
+     "dist_m": 122.2
+    }
+   ],
+   "status": "conflict",
+   "nearby_refs": [
+    "L",
+    "LB"
+   ],
+   "decision": "chart right (OSM's nearest ref here is L)",
+   "rule": "R5"
+  },
+  {
+   "label": "A11",
+   "chart_page_pt": [
+    364.78,
+    87.47
+   ],
+   "lat": 33.6511751,
+   "lon": -84.4187547,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 24445363,
+     "dist_m": 8.1
+    },
+    {
+     "ref": null,
+     "osm_id": 1282726679,
+     "dist_m": 8.6
+    },
+    {
+     "ref": null,
+     "osm_id": 449490599,
+     "dist_m": 8.7
+    }
+   ],
+   "status": "conflict",
+   "nearby_refs": [
+    "<no ref>",
+    "A"
+   ],
+   "decision": "chart right; OSM way unnamed",
+   "rule": "R4",
+   "osm_unnamed_way": 24445363
+  },
+  {
+   "label": "A15",
+   "chart_page_pt": [
+    401.94,
+    80.76
+   ],
+   "lat": 33.651986,
+   "lon": -84.4133911,
+   "nearest_osm": [
+    {
+     "ref": "A13",
+     "osm_id": 42422284,
+     "dist_m": 15.9
+    },
+    {
+     "ref": null,
+     "osm_id": 384077694,
+     "dist_m": 17.4
+    },
+    {
+     "ref": null,
+     "osm_id": 384077695,
+     "dist_m": 17.4
+    }
+   ],
+   "status": "conflict",
+   "nearby_refs": [
+    "<no ref>",
+    "A",
+    "A11",
+    "A13"
+   ],
+   "decision": "chart right (OSM's nearest ref here is A13)",
+   "rule": "R5"
+  },
+  {
+   "label": "A7",
+   "chart_page_pt": [
+    345.32,
+    87.49
+   ],
+   "lat": 33.6511733,
+   "lon": -84.4215649,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 1475157167,
+     "dist_m": 14.2
+    },
+    {
+     "ref": null,
+     "osm_id": 1282723210,
+     "dist_m": 14.8
+    },
+    {
+     "ref": null,
+     "osm_id": 384077698,
+     "dist_m": 26.0
+    }
+   ],
+   "status": "conflict",
+   "nearby_refs": [
+    "<no ref>",
+    "A"
+   ],
+   "decision": "chart right; OSM way unnamed",
+   "rule": "R4",
+   "osm_unnamed_way": 1475157167
+  }
+ ],
+ "instances": [
+  {
+   "label": "SC",
+   "chart_page_pt": [
+    256.59,
+    253.62
+   ],
+   "lat": 33.6311125,
+   "lon": -84.4343761,
+   "nearest_osm": [
+    {
+     "ref": "SC",
+     "osm_id": 449341442,
+     "dist_m": 11.6
+    },
+    {
+     "ref": "SC",
+     "osm_id": 449341440,
+     "dist_m": 11.9
+    },
+    {
+     "ref": null,
+     "osm_id": 1428164710,
+     "dist_m": 11.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.6
+  },
+  {
+   "label": "J",
+   "chart_page_pt": [
+    349.84,
+    220.41
+   ],
+   "lat": 33.6351228,
+   "lon": -84.4209131,
+   "nearest_osm": [
+    {
+     "ref": "J",
+     "osm_id": 42422259,
+     "dist_m": 11.9
+    },
+    {
+     "ref": null,
+     "osm_id": 449494056,
+     "dist_m": 64.6
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 76.7
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.9
+  },
+  {
+   "label": "J",
+   "chart_page_pt": [
+    355.5,
+    230.45
+   ],
+   "lat": 33.6339092,
+   "lon": -84.4200959,
+   "nearest_osm": [
+    {
+     "ref": "J",
+     "osm_id": 42422259,
+     "dist_m": 13.0
+    },
+    {
+     "ref": "N",
+     "osm_id": 24445305,
+     "dist_m": 32.9
+    },
+    {
+     "ref": "K",
+     "osm_id": 24445314,
+     "dist_m": 93.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 13.0
+  },
+  {
+   "label": "J",
+   "chart_page_pt": [
+    361.05,
+    240.64
+   ],
+   "lat": 33.6326793,
+   "lon": -84.4192932,
+   "nearest_osm": [
+    {
+     "ref": "J",
+     "osm_id": 42422259,
+     "dist_m": 17.2
+    },
+    {
+     "ref": "J",
+     "osm_id": 310453831,
+     "dist_m": 24.0
+    },
+    {
+     "ref": "N12",
+     "osm_id": 24445315,
+     "dist_m": 83.3
+    }
+   ],
+   "status": "match",
+   "dist_m": 17.2
+  },
+  {
+   "label": "W",
+   "chart_page_pt": [
+    128.6,
+    224.0
+   ],
+   "lat": 33.6346887,
+   "lon": -84.452854,
+   "nearest_osm": [
+    {
+     "ref": "W",
+     "osm_id": 1116687033,
+     "dist_m": 4.6
+    },
+    {
+     "ref": null,
+     "osm_id": 1245743502,
+     "dist_m": 454.8
+    },
+    {
+     "ref": null,
+     "osm_id": 1245743503,
+     "dist_m": 454.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 4.6
+  },
+  {
+   "label": "W",
+   "chart_page_pt": [
+    153.91,
+    233.07
+   ],
+   "lat": 33.6335928,
+   "lon": -84.4492006,
+   "nearest_osm": [
+    {
+     "ref": "W",
+     "osm_id": 1116687033,
+     "dist_m": 0.1
+    },
+    {
+     "ref": null,
+     "osm_id": 1245743502,
+     "dist_m": 99.7
+    },
+    {
+     "ref": null,
+     "osm_id": 1245743503,
+     "dist_m": 99.7
+    }
+   ],
+   "status": "match",
+   "dist_m": 0.1
+  },
+  {
+   "label": "D",
+   "chart_page_pt": [
+    339.18,
+    150.46
+   ],
+   "lat": 33.6435692,
+   "lon": -84.4224507,
+   "nearest_osm": [
+    {
+     "ref": "D",
+     "osm_id": 24445332,
+     "dist_m": 10.8
+    },
+    {
+     "ref": null,
+     "osm_id": 166824903,
+     "dist_m": 58.1
+    },
+    {
+     "ref": null,
+     "osm_id": 166824902,
+     "dist_m": 82.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 10.8
+  },
+  {
+   "label": "C",
+   "chart_page_pt": [
+    333.77,
+    108.19
+   ],
+   "lat": 33.6486742,
+   "lon": -84.4232325,
+   "nearest_osm": [
+    {
+     "ref": "C",
+     "osm_id": 1245943361,
+     "dist_m": 12.0
+    },
+    {
+     "ref": null,
+     "osm_id": 384056917,
+     "dist_m": 33.4
+    },
+    {
+     "ref": null,
+     "osm_id": 384056919,
+     "dist_m": 33.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.0
+  },
+  {
+   "label": "D",
+   "chart_page_pt": [
+    340.51,
+    108.6
+   ],
+   "lat": 33.6486241,
+   "lon": -84.4222587,
+   "nearest_osm": [
+    {
+     "ref": "D",
+     "osm_id": 24445332,
+     "dist_m": 11.1
+    },
+    {
+     "ref": null,
+     "osm_id": 640106462,
+     "dist_m": 28.0
+    },
+    {
+     "ref": null,
+     "osm_id": 640106463,
+     "dist_m": 28.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.1
+  },
+  {
+   "label": "B",
+   "chart_page_pt": [
+    316.16,
+    115.66
+   ],
+   "lat": 33.6477722,
+   "lon": -84.4257742,
+   "nearest_osm": [
+    {
+     "ref": "B",
+     "osm_id": 24445359,
+     "dist_m": 13.9
+    },
+    {
+     "ref": "E7",
+     "osm_id": 24445321,
+     "dist_m": 154.0
+    },
+    {
+     "ref": null,
+     "osm_id": 166824507,
+     "dist_m": 158.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 13.9
+  },
+  {
+   "label": "V",
+   "chart_page_pt": [
+    209.87,
+    135.18
+   ],
+   "lat": 33.6454144,
+   "lon": -84.4411206,
+   "nearest_osm": [
+    {
+     "ref": "V",
+     "osm_id": 211772865,
+     "dist_m": 9.0
+    },
+    {
+     "ref": "F1",
+     "osm_id": 1189071981,
+     "dist_m": 52.0
+    },
+    {
+     "ref": null,
+     "osm_id": 1245943356,
+     "dist_m": 52.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 9.0
+  },
+  {
+   "label": "SG2",
+   "chart_page_pt": [
+    171.34,
+    336.19
+   ],
+   "lat": 33.6211416,
+   "lon": -84.4466827,
+   "nearest_osm": [
+    {
+     "ref": "SG2",
+     "osm_id": 24445679,
+     "dist_m": 10.4
+    },
+    {
+     "ref": "SG",
+     "osm_id": 24445678,
+     "dist_m": 26.2
+    },
+    {
+     "ref": "SG4",
+     "osm_id": 42422255,
+     "dist_m": 238.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 10.4
+  },
+  {
+   "label": "SG12",
+   "chart_page_pt": [
+    270.63,
+    339.37
+   ],
+   "lat": 33.620757,
+   "lon": -84.4323484,
+   "nearest_osm": [
+    {
+     "ref": "SG12",
+     "osm_id": 24445684,
+     "dist_m": 16.4
+    },
+    {
+     "ref": "SG",
+     "osm_id": 24445680,
+     "dist_m": 151.0
+    },
+    {
+     "ref": null,
+     "osm_id": 449492972,
+     "dist_m": 151.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 16.4
+  },
+  {
+   "label": "K",
+   "chart_page_pt": [
+    352.6,
+    241.13
+   ],
+   "lat": 33.6326195,
+   "lon": -84.4205146,
+   "nearest_osm": [
+    {
+     "ref": "K",
+     "osm_id": 24445314,
+     "dist_m": 12.1
+    },
+    {
+     "ref": null,
+     "osm_id": 449494220,
+     "dist_m": 14.2
+    },
+    {
+     "ref": "N",
+     "osm_id": 24445305,
+     "dist_m": 110.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.1
+  },
+  {
+   "label": "A",
+   "chart_page_pt": [
+    249.94,
+    88.1
+   ],
+   "lat": 33.6510996,
+   "lon": -84.4353348,
+   "nearest_osm": [
+    {
+     "ref": "A",
+     "osm_id": 42422280,
+     "dist_m": 10.3
+    },
+    {
+     "ref": "B1",
+     "osm_id": 166824141,
+     "dist_m": 218.2
+    },
+    {
+     "ref": null,
+     "osm_id": 1246174091,
+     "dist_m": 259.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 10.3
+  },
+  {
+   "label": "R10",
+   "chart_page_pt": [
+    324.41,
+    264.11
+   ],
+   "lat": 33.6298457,
+   "lon": -84.4245831,
+   "nearest_osm": [
+    {
+     "ref": "R10",
+     "osm_id": 1283057017,
+     "dist_m": 11.0
+    },
+    {
+     "ref": "R10",
+     "osm_id": 1283057019,
+     "dist_m": 56.1
+    },
+    {
+     "ref": "R10",
+     "osm_id": 1283057018,
+     "dist_m": 65.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.0
+  },
+  {
+   "label": "B10",
+   "chart_page_pt": [
+    383.0,
+    117.53
+   ],
+   "lat": 33.6475451,
+   "lon": -84.4161248,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 1246174083,
+     "dist_m": 14.2
+    },
+    {
+     "ref": "B10",
+     "osm_id": 1246174084,
+     "dist_m": 16.6
+    },
+    {
+     "ref": null,
+     "osm_id": 1246174082,
+     "dist_m": 18.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 16.6
+  },
+  {
+   "label": "B4",
+   "chart_page_pt": [
+    280.55,
+    118.16
+   ],
+   "lat": 33.6474697,
+   "lon": -84.4309154,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 166824508,
+     "dist_m": 35.5
+    },
+    {
+     "ref": null,
+     "osm_id": 1246174089,
+     "dist_m": 40.1
+    },
+    {
+     "ref": "B4",
+     "osm_id": 24445353,
+     "dist_m": 40.3
+    }
+   ],
+   "status": "match",
+   "dist_m": 40.3
+  },
+  {
+   "label": "T",
+   "chart_page_pt": [
+    205.42,
+    210.24
+   ],
+   "lat": 33.6363509,
+   "lon": -84.4417631,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 449341052,
+     "dist_m": 7.1
+    },
+    {
+     "ref": "T",
+     "osm_id": 1356468389,
+     "dist_m": 24.9
+    },
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 31.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 24.9
+  },
+  {
+   "label": "T",
+   "chart_page_pt": [
+    204.36,
+    227.87
+   ],
+   "lat": 33.634222,
+   "lon": -84.4419161,
+   "nearest_osm": [
+    {
+     "ref": "T",
+     "osm_id": 24445317,
+     "dist_m": 1.1
+    },
+    {
+     "ref": "T",
+     "osm_id": 1428164679,
+     "dist_m": 8.8
+    },
+    {
+     "ref": null,
+     "osm_id": 310453827,
+     "dist_m": 54.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 1.1
+  },
+  {
+   "label": "D",
+   "chart_page_pt": [
+    341.0,
+    228.65
+   ],
+   "lat": 33.6341278,
+   "lon": -84.4221894,
+   "nearest_osm": [
+    {
+     "ref": "D",
+     "osm_id": 24445332,
+     "dist_m": 16.8
+    },
+    {
+     "ref": "N10",
+     "osm_id": 24445310,
+     "dist_m": 17.3
+    },
+    {
+     "ref": "N",
+     "osm_id": 24445305,
+     "dist_m": 56.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 16.8
+  },
+  {
+   "label": "E",
+   "chart_page_pt": [
+    250.63,
+    136.29
+   ],
+   "lat": 33.6452803,
+   "lon": -84.4352359,
+   "nearest_osm": [
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 15.6
+    },
+    {
+     "ref": null,
+     "osm_id": 1246174097,
+     "dist_m": 61.8
+    },
+    {
+     "ref": "F",
+     "osm_id": 166824894,
+     "dist_m": 75.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 15.6
+  },
+  {
+   "label": "D",
+   "chart_page_pt": [
+    340.84,
+    96.16
+   ],
+   "lat": 33.6501257,
+   "lon": -84.4222125,
+   "nearest_osm": [
+    {
+     "ref": "D",
+     "osm_id": 24445332,
+     "dist_m": 15.4
+    },
+    {
+     "ref": null,
+     "osm_id": 384077699,
+     "dist_m": 15.5
+    },
+    {
+     "ref": null,
+     "osm_id": 384077700,
+     "dist_m": 15.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 15.4
+  },
+  {
+   "label": "A5",
+   "chart_page_pt": [
+    316.02,
+    86.68
+   ],
+   "lat": 33.6512711,
+   "lon": -84.4257944,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 384056899,
+     "dist_m": 9.4
+    },
+    {
+     "ref": "A5",
+     "osm_id": 1282723211,
+     "dist_m": 11.6
+    },
+    {
+     "ref": null,
+     "osm_id": 384056902,
+     "dist_m": 21.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.6
+  },
+  {
+   "label": "A",
+   "chart_page_pt": [
+    352.75,
+    92.52
+   ],
+   "lat": 33.6505659,
+   "lon": -84.4204929,
+   "nearest_osm": [
+    {
+     "ref": "A",
+     "osm_id": 42422280,
+     "dist_m": 9.0
+    },
+    {
+     "ref": null,
+     "osm_id": 384077698,
+     "dist_m": 73.8
+    },
+    {
+     "ref": null,
+     "osm_id": 1245943360,
+     "dist_m": 95.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 9.0
+  },
+  {
+   "label": "C",
+   "chart_page_pt": [
+    333.63,
+    95.19
+   ],
+   "lat": 33.6502428,
+   "lon": -84.4232527,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 384056909,
+     "dist_m": 7.9
+    },
+    {
+     "ref": null,
+     "osm_id": 1245943362,
+     "dist_m": 11.9
+    },
+    {
+     "ref": "C",
+     "osm_id": 1245943361,
+     "dist_m": 14.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 14.9
+  },
+  {
+   "label": "A6",
+   "chart_page_pt": [
+    376.66,
+    94.97
+   ],
+   "lat": 33.6502706,
+   "lon": -84.4170395,
+   "nearest_osm": [
+    {
+     "ref": "A6",
+     "osm_id": 24445352,
+     "dist_m": 0.4
+    },
+    {
+     "ref": null,
+     "osm_id": 449490601,
+     "dist_m": 21.1
+    },
+    {
+     "ref": "A",
+     "osm_id": 42422280,
+     "dist_m": 41.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 0.4
+  },
+  {
+   "label": "A",
+   "chart_page_pt": [
+    413.59,
+    88.07
+   ],
+   "lat": 33.6511032,
+   "lon": -84.4117084,
+   "nearest_osm": [
+    {
+     "ref": "A",
+     "osm_id": 42422280,
+     "dist_m": 10.3
+    },
+    {
+     "ref": null,
+     "osm_id": 1245943359,
+     "dist_m": 116.2
+    },
+    {
+     "ref": null,
+     "osm_id": 639716571,
+     "dist_m": 122.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 10.3
+  },
+  {
+   "label": "V",
+   "chart_page_pt": [
+    212.14,
+    116.09
+   ],
+   "lat": 33.6477196,
+   "lon": -84.4407929,
+   "nearest_osm": [
+    {
+     "ref": "V",
+     "osm_id": 211772865,
+     "dist_m": 14.2
+    },
+    {
+     "ref": null,
+     "osm_id": 211772870,
+     "dist_m": 165.8
+    },
+    {
+     "ref": null,
+     "osm_id": 211772862,
+     "dist_m": 184.7
+    }
+   ],
+   "status": "match",
+   "dist_m": 14.2
+  },
+  {
+   "label": "F1",
+   "chart_page_pt": [
+    214.71,
+    140.59
+   ],
+   "lat": 33.6447611,
+   "lon": -84.4404218,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 1189071982,
+     "dist_m": 0.3
+    },
+    {
+     "ref": "F1",
+     "osm_id": 1189071981,
+     "dist_m": 0.9
+    },
+    {
+     "ref": null,
+     "osm_id": 1245943342,
+     "dist_m": 4.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 0.9
+  },
+  {
+   "label": "F2",
+   "chart_page_pt": [
+    237.49,
+    142.14
+   ],
+   "lat": 33.6445739,
+   "lon": -84.437133,
+   "nearest_osm": [
+    {
+     "ref": "F",
+     "osm_id": 166824894,
+     "dist_m": 0.8
+    },
+    {
+     "ref": null,
+     "osm_id": 42422270,
+     "dist_m": 5.5
+    },
+    {
+     "ref": "F2",
+     "osm_id": 1245943336,
+     "dist_m": 5.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 5.5
+  },
+  {
+   "label": "H",
+   "chart_page_pt": [
+    228.63,
+    104.38
+   ],
+   "lat": 33.6491337,
+   "lon": -84.4384114,
+   "nearest_osm": [
+    {
+     "ref": "H",
+     "osm_id": 42422271,
+     "dist_m": 42.1
+    },
+    {
+     "ref": null,
+     "osm_id": 166824143,
+     "dist_m": 49.0
+    },
+    {
+     "ref": "A",
+     "osm_id": 42422280,
+     "dist_m": 61.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 42.1
+  },
+  {
+   "label": "B1",
+   "chart_page_pt": [
+    239.99,
+    103.66
+   ],
+   "lat": 33.6492206,
+   "lon": -84.4367727,
+   "nearest_osm": [
+    {
+     "ref": "B1",
+     "osm_id": 166824141,
+     "dist_m": 35.2
+    },
+    {
+     "ref": null,
+     "osm_id": 166824144,
+     "dist_m": 64.8
+    },
+    {
+     "ref": null,
+     "osm_id": 1246174090,
+     "dist_m": 64.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 35.2
+  },
+  {
+   "label": "B2",
+   "chart_page_pt": [
+    251.14,
+    111.99
+   ],
+   "lat": 33.6482147,
+   "lon": -84.4351622,
+   "nearest_osm": [
+    {
+     "ref": "B2",
+     "osm_id": 24445318,
+     "dist_m": 10.3
+    },
+    {
+     "ref": "B",
+     "osm_id": 24445359,
+     "dist_m": 25.4
+    },
+    {
+     "ref": null,
+     "osm_id": 166824505,
+     "dist_m": 45.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 10.3
+  },
+  {
+   "label": "B3",
+   "chart_page_pt": [
+    270.65,
+    106.81
+   ],
+   "lat": 33.6488409,
+   "lon": -84.4323447,
+   "nearest_osm": [
+    {
+     "ref": "B3",
+     "osm_id": 24445335,
+     "dist_m": 22.2
+    },
+    {
+     "ref": null,
+     "osm_id": 166824509,
+     "dist_m": 44.7
+    },
+    {
+     "ref": "B",
+     "osm_id": 24445359,
+     "dist_m": 104.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 22.2
+  },
+  {
+   "label": "B6",
+   "chart_page_pt": [
+    296.38,
+    116.69
+   ],
+   "lat": 33.6476466,
+   "lon": -84.4286314,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 1245943354,
+     "dist_m": 2.3
+    },
+    {
+     "ref": "B6",
+     "osm_id": 1245943355,
+     "dist_m": 12.7
+    },
+    {
+     "ref": null,
+     "osm_id": 166824506,
+     "dist_m": 19.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.7
+  },
+  {
+   "label": "B",
+   "chart_page_pt": [
+    367.43,
+    115.5
+   ],
+   "lat": 33.6477903,
+   "lon": -84.4183728,
+   "nearest_osm": [
+    {
+     "ref": "B",
+     "osm_id": 24445359,
+     "dist_m": 12.1
+    },
+    {
+     "ref": "B7",
+     "osm_id": 24445338,
+     "dist_m": 19.1
+    },
+    {
+     "ref": null,
+     "osm_id": 384050707,
+     "dist_m": 111.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.1
+  },
+  {
+   "label": "B5",
+   "chart_page_pt": [
+    303.68,
+    107.49
+   ],
+   "lat": 33.6487581,
+   "lon": -84.4275775,
+   "nearest_osm": [
+    {
+     "ref": "B5",
+     "osm_id": 24445336,
+     "dist_m": 17.8
+    },
+    {
+     "ref": null,
+     "osm_id": 166824507,
+     "dist_m": 22.3
+    },
+    {
+     "ref": null,
+     "osm_id": 1246174088,
+     "dist_m": 91.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 17.8
+  },
+  {
+   "label": "C",
+   "chart_page_pt": [
+    333.73,
+    119.08
+   ],
+   "lat": 33.6473592,
+   "lon": -84.4232382,
+   "nearest_osm": [
+    {
+     "ref": "C",
+     "osm_id": 1245943361,
+     "dist_m": 11.6
+    },
+    {
+     "ref": null,
+     "osm_id": 384056921,
+     "dist_m": 13.1
+    },
+    {
+     "ref": null,
+     "osm_id": 384056923,
+     "dist_m": 13.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.6
+  },
+  {
+   "label": "D",
+   "chart_page_pt": [
+    341.01,
+    118.17
+   ],
+   "lat": 33.6474684,
+   "lon": -84.4221872,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 640106461,
+     "dist_m": 16.0
+    },
+    {
+     "ref": "D",
+     "osm_id": 24445332,
+     "dist_m": 17.7
+    },
+    {
+     "ref": null,
+     "osm_id": 640106460,
+     "dist_m": 18.7
+    }
+   ],
+   "status": "match",
+   "dist_m": 17.7
+  },
+  {
+   "label": "B7",
+   "chart_page_pt": [
+    347.24,
+    108.2
+   ],
+   "lat": 33.6486718,
+   "lon": -84.4212877,
+   "nearest_osm": [
+    {
+     "ref": "B7",
+     "osm_id": 24445338,
+     "dist_m": 26.1
+    },
+    {
+     "ref": null,
+     "osm_id": 640106464,
+     "dist_m": 26.6
+    },
+    {
+     "ref": "B",
+     "osm_id": 24445359,
+     "dist_m": 85.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 26.1
+  },
+  {
+   "label": "B11",
+   "chart_page_pt": [
+    389.5,
+    112.73
+   ],
+   "lat": 33.6481248,
+   "lon": -84.4151864,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 1246174086,
+     "dist_m": 18.2
+    },
+    {
+     "ref": "B",
+     "osm_id": 24445359,
+     "dist_m": 25.0
+    },
+    {
+     "ref": "B11",
+     "osm_id": 1246174087,
+     "dist_m": 41.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 41.5
+  },
+  {
+   "label": "N4",
+   "chart_page_pt": [
+    236.1,
+    240.59
+   ],
+   "lat": 33.6326854,
+   "lon": -84.4373329,
+   "nearest_osm": [
+    {
+     "ref": "N4",
+     "osm_id": 24445308,
+     "dist_m": 6.7
+    },
+    {
+     "ref": "N4",
+     "osm_id": 310453835,
+     "dist_m": 12.4
+    },
+    {
+     "ref": "N",
+     "osm_id": 24445305,
+     "dist_m": 102.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 6.7
+  },
+  {
+   "label": "N",
+   "chart_page_pt": [
+    215.57,
+    235.28
+   ],
+   "lat": 33.633326,
+   "lon": -84.440297,
+   "nearest_osm": [
+    {
+     "ref": "N",
+     "osm_id": 24445305,
+     "dist_m": 31.2
+    },
+    {
+     "ref": "N4",
+     "osm_id": 24445308,
+     "dist_m": 61.5
+    },
+    {
+     "ref": "T",
+     "osm_id": 24445317,
+     "dist_m": 99.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 31.2
+  },
+  {
+   "label": "SC",
+   "chart_page_pt": [
+    256.49,
+    241.34
+   ],
+   "lat": 33.6325942,
+   "lon": -84.4343905,
+   "nearest_osm": [
+    {
+     "ref": "SC",
+     "osm_id": 449341440,
+     "dist_m": 13.1
+    },
+    {
+     "ref": "SC",
+     "osm_id": 449341441,
+     "dist_m": 71.2
+    },
+    {
+     "ref": "N4",
+     "osm_id": 24445308,
+     "dist_m": 82.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 13.1
+  },
+  {
+   "label": "B13",
+   "chart_page_pt": [
+    421.92,
+    106.75
+   ],
+   "lat": 33.6488481,
+   "lon": -84.4105057,
+   "nearest_osm": [
+    {
+     "ref": "B13",
+     "osm_id": 24445361,
+     "dist_m": 11.0
+    },
+    {
+     "ref": "B",
+     "osm_id": 24445359,
+     "dist_m": 44.2
+    },
+    {
+     "ref": null,
+     "osm_id": 1246174079,
+     "dist_m": 50.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.0
+  },
+  {
+   "label": "B15",
+   "chart_page_pt": [
+    428.02,
+    107.38
+   ],
+   "lat": 33.6487708,
+   "lon": -84.4096243,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 1246174079,
+     "dist_m": 4.5
+    },
+    {
+     "ref": null,
+     "osm_id": 449489581,
+     "dist_m": 5.6
+    },
+    {
+     "ref": "B15",
+     "osm_id": 24445340,
+     "dist_m": 22.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 22.0
+  },
+  {
+   "label": "B",
+   "chart_page_pt": [
+    444.47,
+    110.47
+   ],
+   "lat": 33.6483983,
+   "lon": -84.4072501,
+   "nearest_osm": [
+    {
+     "ref": "B",
+     "osm_id": 24445359,
+     "dist_m": 5.7
+    },
+    {
+     "ref": null,
+     "osm_id": 449489581,
+     "dist_m": 161.2
+    },
+    {
+     "ref": null,
+     "osm_id": 1428337522,
+     "dist_m": 189.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 5.7
+  },
+  {
+   "label": "F",
+   "chart_page_pt": [
+    223.13,
+    145.28
+   ],
+   "lat": 33.6441941,
+   "lon": -84.4392055,
+   "nearest_osm": [
+    {
+     "ref": "F",
+     "osm_id": 166824894,
+     "dist_m": 18.1
+    },
+    {
+     "ref": null,
+     "osm_id": 166824139,
+     "dist_m": 63.8
+    },
+    {
+     "ref": null,
+     "osm_id": 1189071983,
+     "dist_m": 63.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 18.1
+  },
+  {
+   "label": "N5",
+   "chart_page_pt": [
+    246.43,
+    228.86
+   ],
+   "lat": 33.6341024,
+   "lon": -84.4358422,
+   "nearest_osm": [
+    {
+     "ref": "N5",
+     "osm_id": 24445324,
+     "dist_m": 20.3
+    },
+    {
+     "ref": null,
+     "osm_id": 449345029,
+     "dist_m": 25.2
+    },
+    {
+     "ref": "N",
+     "osm_id": 24445305,
+     "dist_m": 54.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 20.3
+  },
+  {
+   "label": "U",
+   "chart_page_pt": [
+    266.51,
+    227.42
+   ],
+   "lat": 33.6342757,
+   "lon": -84.4329425,
+   "nearest_osm": [
+    {
+     "ref": "U",
+     "osm_id": 24445325,
+     "dist_m": 15.1
+    },
+    {
+     "ref": null,
+     "osm_id": 449341077,
+     "dist_m": 33.8
+    },
+    {
+     "ref": null,
+     "osm_id": 449341446,
+     "dist_m": 33.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 15.1
+  },
+  {
+   "label": "N6",
+   "chart_page_pt": [
+    281.72,
+    240.7
+   ],
+   "lat": 33.6326715,
+   "lon": -84.4307472,
+   "nearest_osm": [
+    {
+     "ref": "N6",
+     "osm_id": 24445309,
+     "dist_m": 6.9
+    },
+    {
+     "ref": "N6",
+     "osm_id": 310453836,
+     "dist_m": 11.6
+    },
+    {
+     "ref": "R7",
+     "osm_id": 24445313,
+     "dist_m": 65.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 6.9
+  },
+  {
+   "label": "F3",
+   "chart_page_pt": [
+    258.44,
+    142.33
+   ],
+   "lat": 33.644551,
+   "lon": -84.4341076,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 288905903,
+     "dist_m": 3.0
+    },
+    {
+     "ref": "F",
+     "osm_id": 166824894,
+     "dist_m": 5.3
+    },
+    {
+     "ref": null,
+     "osm_id": 42422273,
+     "dist_m": 10.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 14.6
+  },
+  {
+   "label": "E",
+   "chart_page_pt": [
+    224.29,
+    138.74
+   ],
+   "lat": 33.6449845,
+   "lon": -84.4390387,
+   "nearest_osm": [
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 17.9
+    },
+    {
+     "ref": null,
+     "osm_id": 166824142,
+     "dist_m": 39.2
+    },
+    {
+     "ref": null,
+     "osm_id": 1245943338,
+     "dist_m": 42.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 17.9
+  },
+  {
+   "label": "E3",
+   "chart_page_pt": [
+    273.6,
+    129.97
+   ],
+   "lat": 33.6460435,
+   "lon": -84.4319203,
+   "nearest_osm": [
+    {
+     "ref": "E3",
+     "osm_id": 42422277,
+     "dist_m": 32.2
+    },
+    {
+     "ref": null,
+     "osm_id": 449487465,
+     "dist_m": 42.0
+    },
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 68.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 32.2
+  },
+  {
+   "label": "F4",
+   "chart_page_pt": [
+    281.1,
+    142.31
+   ],
+   "lat": 33.6445528,
+   "lon": -84.4308367,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 288905904,
+     "dist_m": 2.1
+    },
+    {
+     "ref": "F",
+     "osm_id": 166824894,
+     "dist_m": 5.3
+    },
+    {
+     "ref": null,
+     "osm_id": 42422274,
+     "dist_m": 9.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 13.4
+  },
+  {
+   "label": "F",
+   "chart_page_pt": [
+    269.29,
+    143.04
+   ],
+   "lat": 33.6444652,
+   "lon": -84.4325418,
+   "nearest_osm": [
+    {
+     "ref": "F",
+     "osm_id": 166824894,
+     "dist_m": 14.8
+    },
+    {
+     "ref": null,
+     "osm_id": 449488618,
+     "dist_m": 60.4
+    },
+    {
+     "ref": null,
+     "osm_id": 449487508,
+     "dist_m": 72.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 14.8
+  },
+  {
+   "label": "E7",
+   "chart_page_pt": [
+    314.89,
+    130.44
+   ],
+   "lat": 33.6459868,
+   "lon": -84.4259583,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 384056932,
+     "dist_m": 0.8
+    },
+    {
+     "ref": "E7",
+     "osm_id": 24445321,
+     "dist_m": 9.2
+    },
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 62.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 9.2
+  },
+  {
+   "label": "E5",
+   "chart_page_pt": [
+    297.5,
+    131.45
+   ],
+   "lat": 33.6458642,
+   "lon": -84.4284683,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 384048981,
+     "dist_m": 20.7
+    },
+    {
+     "ref": "E5",
+     "osm_id": 384048980,
+     "dist_m": 22.1
+    },
+    {
+     "ref": null,
+     "osm_id": 384056892,
+     "dist_m": 45.7
+    }
+   ],
+   "status": "match",
+   "dist_m": 22.1
+  },
+  {
+   "label": "R",
+   "chart_page_pt": [
+    280.24,
+    257.91
+   ],
+   "lat": 33.6305938,
+   "lon": -84.4309616,
+   "nearest_osm": [
+    {
+     "ref": "R",
+     "osm_id": 24445304,
+     "dist_m": 15.0
+    },
+    {
+     "ref": "R7",
+     "osm_id": 24445313,
+     "dist_m": 41.7
+    },
+    {
+     "ref": "R7",
+     "osm_id": 310453838,
+     "dist_m": 96.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 15.0
+  },
+  {
+   "label": "SJ",
+   "chart_page_pt": [
+    264.32,
+    271.6
+   ],
+   "lat": 33.6289413,
+   "lon": -84.4332586,
+   "nearest_osm": [
+    {
+     "ref": "SJ",
+     "osm_id": 24445677,
+     "dist_m": 14.4
+    },
+    {
+     "ref": "SC",
+     "osm_id": 24445676,
+     "dist_m": 67.2
+    },
+    {
+     "ref": "SJ2",
+     "osm_id": 449492970,
+     "dist_m": 90.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 14.4
+  },
+  {
+   "label": "R3",
+   "chart_page_pt": [
+    205.73,
+    254.59
+   ],
+   "lat": 33.6309947,
+   "lon": -84.4417191,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 449492411,
+     "dist_m": 11.0
+    },
+    {
+     "ref": "R3",
+     "osm_id": 24445311,
+     "dist_m": 18.9
+    },
+    {
+     "ref": "R",
+     "osm_id": 24445304,
+     "dist_m": 30.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 18.9
+  },
+  {
+   "label": "SJ2",
+   "chart_page_pt": [
+    260.62,
+    282.04
+   ],
+   "lat": 33.6276794,
+   "lon": -84.4337943,
+   "nearest_osm": [
+    {
+     "ref": "SJ2",
+     "osm_id": 449492970,
+     "dist_m": 3.0
+    },
+    {
+     "ref": "SJ2",
+     "osm_id": 24445682,
+     "dist_m": 16.3
+    },
+    {
+     "ref": "SC",
+     "osm_id": 24445676,
+     "dist_m": 17.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 3.0
+  },
+  {
+   "label": "R",
+   "chart_page_pt": [
+    355.64,
+    258.31
+   ],
+   "lat": 33.6305455,
+   "lon": -84.4200742,
+   "nearest_osm": [
+    {
+     "ref": "R",
+     "osm_id": 24445304,
+     "dist_m": 20.6
+    },
+    {
+     "ref": "K",
+     "osm_id": 24445314,
+     "dist_m": 146.7
+    },
+    {
+     "ref": "J",
+     "osm_id": 310453831,
+     "dist_m": 147.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 20.6
+  },
+  {
+   "label": "F",
+   "chart_page_pt": [
+    323.93,
+    142.26
+   ],
+   "lat": 33.6445588,
+   "lon": -84.4246524,
+   "nearest_osm": [
+    {
+     "ref": "F",
+     "osm_id": 166824894,
+     "dist_m": 14.7
+    },
+    {
+     "ref": null,
+     "osm_id": 288905906,
+     "dist_m": 84.2
+    },
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 96.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 14.7
+  },
+  {
+   "label": "F5",
+   "chart_page_pt": [
+    304.1,
+    141.94
+   ],
+   "lat": 33.6445987,
+   "lon": -84.4275161,
+   "nearest_osm": [
+    {
+     "ref": "F",
+     "osm_id": 166824894,
+     "dist_m": 3.8
+    },
+    {
+     "ref": null,
+     "osm_id": 42422276,
+     "dist_m": 7.5
+    },
+    {
+     "ref": null,
+     "osm_id": 384048983,
+     "dist_m": 14.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 15.5
+  },
+  {
+   "label": "C",
+   "chart_page_pt": [
+    333.82,
+    129.62
+   ],
+   "lat": 33.6460852,
+   "lon": -84.4232252,
+   "nearest_osm": [
+    {
+     "ref": "C",
+     "osm_id": 1245943361,
+     "dist_m": 12.6
+    },
+    {
+     "ref": null,
+     "osm_id": 384056927,
+     "dist_m": 49.6
+    },
+    {
+     "ref": null,
+     "osm_id": 384056928,
+     "dist_m": 49.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.6
+  },
+  {
+   "label": "G",
+   "chart_page_pt": [
+    346.87,
+    150.09
+   ],
+   "lat": 33.6436133,
+   "lon": -84.4213411,
+   "nearest_osm": [
+    {
+     "ref": "G",
+     "osm_id": 166824899,
+     "dist_m": 10.7
+    },
+    {
+     "ref": "D",
+     "osm_id": 24445332,
+     "dist_m": 92.1
+    },
+    {
+     "ref": "G",
+     "osm_id": 662651321,
+     "dist_m": 104.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 10.7
+  },
+  {
+   "label": "E",
+   "chart_page_pt": [
+    346.88,
+    136.4
+   ],
+   "lat": 33.6452676,
+   "lon": -84.421339,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 1246174094,
+     "dist_m": 0.8
+    },
+    {
+     "ref": "F",
+     "osm_id": 166824894,
+     "dist_m": 3.7
+    },
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 17.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 17.5
+  },
+  {
+   "label": "D",
+   "chart_page_pt": [
+    340.85,
+    203.62
+   ],
+   "lat": 33.6371497,
+   "lon": -84.422211,
+   "nearest_osm": [
+    {
+     "ref": "D",
+     "osm_id": 24445332,
+     "dist_m": 11.4
+    },
+    {
+     "ref": null,
+     "osm_id": 449494180,
+     "dist_m": 26.8
+    },
+    {
+     "ref": "8W",
+     "osm_id": 450316111,
+     "dist_m": 53.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.4
+  },
+  {
+   "label": "SG",
+   "chart_page_pt": [
+    210.82,
+    329.01
+   ],
+   "lat": 33.6220074,
+   "lon": -84.4409835,
+   "nearest_osm": [
+    {
+     "ref": "SG",
+     "osm_id": 24445680,
+     "dist_m": 11.9
+    },
+    {
+     "ref": null,
+     "osm_id": 449493374,
+     "dist_m": 97.4
+    },
+    {
+     "ref": "SG4",
+     "osm_id": 42422255,
+     "dist_m": 147.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.9
+  },
+  {
+   "label": "SG",
+   "chart_page_pt": [
+    241.25,
+    329.27
+   ],
+   "lat": 33.621976,
+   "lon": -84.4365894,
+   "nearest_osm": [
+    {
+     "ref": "SG",
+     "osm_id": 24445680,
+     "dist_m": 15.6
+    },
+    {
+     "ref": "SG6",
+     "osm_id": 449493373,
+     "dist_m": 105.5
+    },
+    {
+     "ref": "SG6",
+     "osm_id": 24445683,
+     "dist_m": 148.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 15.6
+  },
+  {
+   "label": "SG6",
+   "chart_page_pt": [
+    231.42,
+    337.23
+   ],
+   "lat": 33.621016,
+   "lon": -84.43801,
+   "nearest_osm": [
+    {
+     "ref": "SG6",
+     "osm_id": 24445683,
+     "dist_m": 8.5
+    },
+    {
+     "ref": "SG6",
+     "osm_id": 449493373,
+     "dist_m": 70.9
+    },
+    {
+     "ref": "SG",
+     "osm_id": 24445680,
+     "dist_m": 121.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 8.5
+  },
+  {
+   "label": "SG14",
+   "chart_page_pt": [
+    325.5,
+    335.62
+   ],
+   "lat": 33.6212092,
+   "lon": -84.4244265,
+   "nearest_osm": [
+    {
+     "ref": "SG14",
+     "osm_id": 24445685,
+     "dist_m": 33.1
+    },
+    {
+     "ref": "SG14",
+     "osm_id": 449493657,
+     "dist_m": 85.8
+    },
+    {
+     "ref": "SG",
+     "osm_id": 24445680,
+     "dist_m": 89.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 33.1
+  },
+  {
+   "label": "SG",
+   "chart_page_pt": [
+    338.73,
+    329.0
+   ],
+   "lat": 33.6220086,
+   "lon": -84.4225171,
+   "nearest_osm": [
+    {
+     "ref": "SG",
+     "osm_id": 24445680,
+     "dist_m": 12.5
+    },
+    {
+     "ref": "SG14",
+     "osm_id": 24445685,
+     "dist_m": 46.4
+    },
+    {
+     "ref": "SG14",
+     "osm_id": 449493657,
+     "dist_m": 109.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.5
+  },
+  {
+   "label": "E1",
+   "chart_page_pt": [
+    240.32,
+    129.75
+   ],
+   "lat": 33.6460701,
+   "lon": -84.4367244,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 42422272,
+     "dist_m": 0.5
+    },
+    {
+     "ref": "E1",
+     "osm_id": 1245943347,
+     "dist_m": 3.8
+    },
+    {
+     "ref": null,
+     "osm_id": 166824137,
+     "dist_m": 72.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 3.8
+  },
+  {
+   "label": "H",
+   "chart_page_pt": [
+    231.14,
+    128.86
+   ],
+   "lat": 33.6461776,
+   "lon": -84.4380498,
+   "nearest_osm": [
+    {
+     "ref": "H",
+     "osm_id": 42422271,
+     "dist_m": 14.6
+    },
+    {
+     "ref": null,
+     "osm_id": 640152371,
+     "dist_m": 15.6
+    },
+    {
+     "ref": null,
+     "osm_id": 166824137,
+     "dist_m": 34.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 14.6
+  },
+  {
+   "label": "E",
+   "chart_page_pt": [
+    455.95,
+    127.85
+   ],
+   "lat": 33.6462989,
+   "lon": -84.4055934,
+   "nearest_osm": [
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 7.7
+    },
+    {
+     "ref": null,
+     "osm_id": 1428337521,
+     "dist_m": 9.4
+    },
+    {
+     "ref": "E",
+     "osm_id": 449491006,
+     "dist_m": 27.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 7.7
+  },
+  {
+   "label": "E13",
+   "chart_page_pt": [
+    440.12,
+    129.34
+   ],
+   "lat": 33.6461202,
+   "lon": -84.4078788,
+   "nearest_osm": [
+    {
+     "ref": "E13",
+     "osm_id": 24445360,
+     "dist_m": 12.2
+    },
+    {
+     "ref": null,
+     "osm_id": 449491005,
+     "dist_m": 14.5
+    },
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 52.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.2
+  },
+  {
+   "label": "E11",
+   "chart_page_pt": [
+    385.58,
+    132.94
+   ],
+   "lat": 33.6456843,
+   "lon": -84.4157524,
+   "nearest_osm": [
+    {
+     "ref": "E11",
+     "osm_id": 24445356,
+     "dist_m": 22.7
+    },
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 28.5
+    },
+    {
+     "ref": null,
+     "osm_id": 1189840952,
+     "dist_m": 61.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 22.7
+  },
+  {
+   "label": "E",
+   "chart_page_pt": [
+    318.61,
+    135.72
+   ],
+   "lat": 33.6453498,
+   "lon": -84.4254219,
+   "nearest_osm": [
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 8.2
+    },
+    {
+     "ref": null,
+     "osm_id": 384056932,
+     "dist_m": 12.4
+    },
+    {
+     "ref": "F",
+     "osm_id": 166824894,
+     "dist_m": 73.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 8.2
+  },
+  {
+   "label": "SJ",
+   "chart_page_pt": [
+    264.38,
+    316.85
+   ],
+   "lat": 33.6234764,
+   "lon": -84.4332507,
+   "nearest_osm": [
+    {
+     "ref": "SJ",
+     "osm_id": 24445677,
+     "dist_m": 13.9
+    },
+    {
+     "ref": "SC",
+     "osm_id": 24445676,
+     "dist_m": 67.6
+    },
+    {
+     "ref": null,
+     "osm_id": 449492972,
+     "dist_m": 91.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 13.9
+  },
+  {
+   "label": "SG",
+   "chart_page_pt": [
+    313.86,
+    332.81
+   ],
+   "lat": 33.6215491,
+   "lon": -84.426107,
+   "nearest_osm": [
+    {
+     "ref": "SG",
+     "osm_id": 24445680,
+     "dist_m": 12.8
+    },
+    {
+     "ref": "SG14",
+     "osm_id": 24445685,
+     "dist_m": 126.6
+    },
+    {
+     "ref": "SG14",
+     "osm_id": 449493657,
+     "dist_m": 184.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.8
+  },
+  {
+   "label": "L",
+   "chart_page_pt": [
+    194.09,
+    208.97
+   ],
+   "lat": 33.6365037,
+   "lon": -84.4433989,
+   "nearest_osm": [
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 14.7
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 76.7
+    },
+    {
+     "ref": "L1",
+     "osm_id": 24445316,
+     "dist_m": 95.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 14.7
+  },
+  {
+   "label": "L",
+   "chart_page_pt": [
+    165.51,
+    209.53
+   ],
+   "lat": 33.6364355,
+   "lon": -84.4475244,
+   "nearest_osm": [
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 3.6
+    },
+    {
+     "ref": null,
+     "osm_id": 1245743505,
+     "dist_m": 21.7
+    },
+    {
+     "ref": null,
+     "osm_id": 449341045,
+     "dist_m": 22.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 3.6
+  },
+  {
+   "label": "W",
+   "chart_page_pt": [
+    154.46,
+    210.43
+   ],
+   "lat": 33.6363274,
+   "lon": -84.4491205,
+   "nearest_osm": [
+    {
+     "ref": "W",
+     "osm_id": 1116687033,
+     "dist_m": 1.0
+    },
+    {
+     "ref": null,
+     "osm_id": 1245743501,
+     "dist_m": 82.9
+    },
+    {
+     "ref": null,
+     "osm_id": 1245743505,
+     "dist_m": 82.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 1.0
+  },
+  {
+   "label": "L1",
+   "chart_page_pt": [
+    184.75,
+    208.79
+   ],
+   "lat": 33.6365254,
+   "lon": -84.4447466,
+   "nearest_osm": [
+    {
+     "ref": "L1",
+     "osm_id": 24445316,
+     "dist_m": 1.5
+    },
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 12.4
+    },
+    {
+     "ref": null,
+     "osm_id": 1428164680,
+     "dist_m": 21.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 1.5
+  },
+  {
+   "label": "M2",
+   "chart_page_pt": [
+    184.53,
+    216.61
+   ],
+   "lat": 33.6355817,
+   "lon": -84.4447784,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 449491908,
+     "dist_m": 1.5
+    },
+    {
+     "ref": "M2",
+     "osm_id": 42422257,
+     "dist_m": 9.4
+    },
+    {
+     "ref": null,
+     "osm_id": 449491907,
+     "dist_m": 18.3
+    }
+   ],
+   "status": "match",
+   "dist_m": 9.4
+  },
+  {
+   "label": "M4",
+   "chart_page_pt": [
+    216.66,
+    216.59
+   ],
+   "lat": 33.6355835,
+   "lon": -84.440141,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 639665646,
+     "dist_m": 6.4
+    },
+    {
+     "ref": "M4",
+     "osm_id": 42422262,
+     "dist_m": 14.6
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 25.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 14.6
+  },
+  {
+   "label": "T",
+   "chart_page_pt": [
+    205.47,
+    217.05
+   ],
+   "lat": 33.6355286,
+   "lon": -84.4417559,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 639665646,
+     "dist_m": 7.2
+    },
+    {
+     "ref": "T",
+     "osm_id": 24445317,
+     "dist_m": 16.0
+    },
+    {
+     "ref": null,
+     "osm_id": 449491943,
+     "dist_m": 20.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 16.0
+  },
+  {
+   "label": "M6",
+   "chart_page_pt": [
+    245.59,
+    216.47
+   ],
+   "lat": 33.6355986,
+   "lon": -84.4359642,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 449341061,
+     "dist_m": 4.8
+    },
+    {
+     "ref": "M6",
+     "osm_id": 42422258,
+     "dist_m": 13.4
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 23.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 13.4
+  },
+  {
+   "label": "U",
+   "chart_page_pt": [
+    266.41,
+    218.31
+   ],
+   "lat": 33.6353752,
+   "lon": -84.4329569,
+   "nearest_osm": [
+    {
+     "ref": "U",
+     "osm_id": 24445325,
+     "dist_m": 13.8
+    },
+    {
+     "ref": null,
+     "osm_id": 449341068,
+     "dist_m": 14.9
+    },
+    {
+     "ref": null,
+     "osm_id": 449341070,
+     "dist_m": 14.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 13.8
+  },
+  {
+   "label": "SG16",
+   "chart_page_pt": [
+    357.37,
+    334.22
+   ],
+   "lat": 33.6213789,
+   "lon": -84.4198252,
+   "nearest_osm": [
+    {
+     "ref": "SG16",
+     "osm_id": 24445686,
+     "dist_m": 21.5
+    },
+    {
+     "ref": "SG",
+     "osm_id": 24445680,
+     "dist_m": 82.4
+    },
+    {
+     "ref": "SG",
+     "osm_id": 1356463176,
+     "dist_m": 118.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 21.5
+  },
+  {
+   "label": "SG",
+   "chart_page_pt": [
+    365.32,
+    332.14
+   ],
+   "lat": 33.6216294,
+   "lon": -84.4186774,
+   "nearest_osm": [
+    {
+     "ref": "SG",
+     "osm_id": 1356463176,
+     "dist_m": 21.5
+    },
+    {
+     "ref": "SG",
+     "osm_id": 24445680,
+     "dist_m": 58.5
+    },
+    {
+     "ref": "SG16",
+     "osm_id": 24445686,
+     "dist_m": 85.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 21.5
+  },
+  {
+   "label": "M12",
+   "chart_page_pt": [
+    277.04,
+    218.14
+   ],
+   "lat": 33.6353957,
+   "lon": -84.4314229,
+   "nearest_osm": [
+    {
+     "ref": "M12",
+     "osm_id": 24445326,
+     "dist_m": 8.8
+    },
+    {
+     "ref": null,
+     "osm_id": 449345317,
+     "dist_m": 15.2
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 46.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 8.8
+  },
+  {
+   "label": "M",
+   "chart_page_pt": [
+    175.1,
+    214.86
+   ],
+   "lat": 33.6357924,
+   "lon": -84.4461398,
+   "nearest_osm": [
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 1.3
+    },
+    {
+     "ref": null,
+     "osm_id": 449491907,
+     "dist_m": 65.7
+    },
+    {
+     "ref": null,
+     "osm_id": 449341045,
+     "dist_m": 71.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 1.3
+  },
+  {
+   "label": "L",
+   "chart_page_pt": [
+    245.9,
+    208.67
+   ],
+   "lat": 33.6365399,
+   "lon": -84.4359195,
+   "nearest_osm": [
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 10.8
+    },
+    {
+     "ref": null,
+     "osm_id": 449487323,
+     "dist_m": 62.4
+    },
+    {
+     "ref": null,
+     "osm_id": 449341074,
+     "dist_m": 68.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 10.8
+  },
+  {
+   "label": "M",
+   "chart_page_pt": [
+    225.38,
+    215.1
+   ],
+   "lat": 33.6357628,
+   "lon": -84.4388814,
+   "nearest_osm": [
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 5.2
+    },
+    {
+     "ref": "L4",
+     "osm_id": 449341059,
+     "dist_m": 74.0
+    },
+    {
+     "ref": null,
+     "osm_id": 639665646,
+     "dist_m": 92.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 5.2
+  },
+  {
+   "label": "L3",
+   "chart_page_pt": [
+    213.28,
+    211.94
+   ],
+   "lat": 33.6361444,
+   "lon": -84.440629,
+   "nearest_osm": [
+    {
+     "ref": "L3",
+     "osm_id": 42423591,
+     "dist_m": 11.7
+    },
+    {
+     "ref": "L3",
+     "osm_id": 1356468390,
+     "dist_m": 23.8
+    },
+    {
+     "ref": null,
+     "osm_id": 449341052,
+     "dist_m": 30.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.7
+  },
+  {
+   "label": "L4",
+   "chart_page_pt": [
+    235.44,
+    209.51
+   ],
+   "lat": 33.6364385,
+   "lon": -84.4374282,
+   "nearest_osm": [
+    {
+     "ref": "L4",
+     "osm_id": 42423592,
+     "dist_m": 10.0
+    },
+    {
+     "ref": "L4",
+     "osm_id": 449341059,
+     "dist_m": 19.3
+    },
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 21.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 10.0
+  },
+  {
+   "label": "S",
+   "chart_page_pt": [
+    298.27,
+    227.44
+   ],
+   "lat": 33.6342727,
+   "lon": -84.4283578,
+   "nearest_osm": [
+    {
+     "ref": "S",
+     "osm_id": 24445327,
+     "dist_m": 10.7
+    },
+    {
+     "ref": "S",
+     "osm_id": 310453839,
+     "dist_m": 24.3
+    },
+    {
+     "ref": "M14",
+     "osm_id": 310453832,
+     "dist_m": 55.7
+    }
+   ],
+   "status": "match",
+   "dist_m": 10.7
+  },
+  {
+   "label": "N10",
+   "chart_page_pt": [
+    324.45,
+    240.94
+   ],
+   "lat": 33.6326437,
+   "lon": -84.4245788,
+   "nearest_osm": [
+    {
+     "ref": "N10",
+     "osm_id": 24445310,
+     "dist_m": 13.2
+    },
+    {
+     "ref": "N10",
+     "osm_id": 310453834,
+     "dist_m": 18.8
+    },
+    {
+     "ref": "R11",
+     "osm_id": 24445312,
+     "dist_m": 82.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 13.2
+  },
+  {
+   "label": "K",
+   "chart_page_pt": [
+    346.37,
+    230.22
+   ],
+   "lat": 33.6339376,
+   "lon": -84.4214133,
+   "nearest_osm": [
+    {
+     "ref": "K",
+     "osm_id": 24445314,
+     "dist_m": 11.3
+    },
+    {
+     "ref": null,
+     "osm_id": 1192793920,
+     "dist_m": 19.6
+    },
+    {
+     "ref": "N",
+     "osm_id": 24445305,
+     "dist_m": 36.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 11.3
+  },
+  {
+   "label": "N13",
+   "chart_page_pt": [
+    368.58,
+    230.05
+   ],
+   "lat": 33.6339581,
+   "lon": -84.4182075,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 310453828,
+     "dist_m": 23.1
+    },
+    {
+     "ref": "N13",
+     "osm_id": 42422260,
+     "dist_m": 25.8
+    },
+    {
+     "ref": "N12",
+     "osm_id": 24445315,
+     "dist_m": 43.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 25.8
+  },
+  {
+   "label": "U",
+   "chart_page_pt": [
+    266.38,
+    210.01
+   ],
+   "lat": 33.6363781,
+   "lon": -84.4329612,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 449341072,
+     "dist_m": 9.3
+    },
+    {
+     "ref": null,
+     "osm_id": 449341064,
+     "dist_m": 16.0
+    },
+    {
+     "ref": "U",
+     "osm_id": 24445325,
+     "dist_m": 21.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 21.9
+  },
+  {
+   "label": "L5",
+   "chart_page_pt": [
+    258.11,
+    209.83
+   ],
+   "lat": 33.6363992,
+   "lon": -84.4341559,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 449341064,
+     "dist_m": 4.0
+    },
+    {
+     "ref": "L5",
+     "osm_id": 42423593,
+     "dist_m": 8.7
+    },
+    {
+     "ref": null,
+     "osm_id": 449341063,
+     "dist_m": 12.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 8.7
+  },
+  {
+   "label": "SJ1",
+   "chart_page_pt": [
+    263.45,
+    305.66
+   ],
+   "lat": 33.6248277,
+   "lon": -84.433385,
+   "nearest_osm": [
+    {
+     "ref": "SJ1",
+     "osm_id": 24445681,
+     "dist_m": 9.8
+    },
+    {
+     "ref": "SJ1",
+     "osm_id": 449492969,
+     "dist_m": 15.4
+    },
+    {
+     "ref": "SJ",
+     "osm_id": 24445677,
+     "dist_m": 26.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 9.8
+  },
+  {
+   "label": "SC",
+   "chart_page_pt": [
+    258.06,
+    313.81
+   ],
+   "lat": 33.6238429,
+   "lon": -84.4341624,
+   "nearest_osm": [
+    {
+     "ref": "SC",
+     "osm_id": 24445676,
+     "dist_m": 16.9
+    },
+    {
+     "ref": "SJ1",
+     "osm_id": 449492969,
+     "dist_m": 85.0
+    },
+    {
+     "ref": "SJ",
+     "osm_id": 24445677,
+     "dist_m": 98.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 16.9
+  },
+  {
+   "label": "M",
+   "chart_page_pt": [
+    310.0,
+    215.04
+   ],
+   "lat": 33.6357707,
+   "lon": -84.426665,
+   "nearest_osm": [
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 4.7
+    },
+    {
+     "ref": null,
+     "osm_id": 449342874,
+     "dist_m": 43.2
+    },
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 86.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 4.7
+  },
+  {
+   "label": "L6",
+   "chart_page_pt": [
+    280.93,
+    209.16
+   ],
+   "lat": 33.6364814,
+   "lon": -84.430862,
+   "nearest_osm": [
+    {
+     "ref": "L6",
+     "osm_id": 42423594,
+     "dist_m": 9.8
+    },
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 17.0
+    },
+    {
+     "ref": null,
+     "osm_id": 288866552,
+     "dist_m": 19.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 9.8
+  },
+  {
+   "label": "S",
+   "chart_page_pt": [
+    298.42,
+    217.35
+   ],
+   "lat": 33.6354917,
+   "lon": -84.4283362,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 449342873,
+     "dist_m": 5.6
+    },
+    {
+     "ref": "S",
+     "osm_id": 24445327,
+     "dist_m": 12.2
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 35.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.2
+  },
+  {
+   "label": "L7",
+   "chart_page_pt": [
+    304.0,
+    209.38
+   ],
+   "lat": 33.6364536,
+   "lon": -84.4275305,
+   "nearest_osm": [
+    {
+     "ref": "L7",
+     "osm_id": 1192793925,
+     "dist_m": 13.7
+    },
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 16.0
+    },
+    {
+     "ref": null,
+     "osm_id": 449342874,
+     "dist_m": 22.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 13.7
+  },
+  {
+   "label": "M14",
+   "chart_page_pt": [
+    321.53,
+    218.06
+   ],
+   "lat": 33.6354054,
+   "lon": -84.4249996,
+   "nearest_osm": [
+    {
+     "ref": "M14",
+     "osm_id": 310453832,
+     "dist_m": 2.2
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 45.2
+    },
+    {
+     "ref": null,
+     "osm_id": 449493742,
+     "dist_m": 60.2
+    }
+   ],
+   "status": "match",
+   "dist_m": 2.2
+  },
+  {
+   "label": "L10",
+   "chart_page_pt": [
+    328.06,
+    207.11
+   ],
+   "lat": 33.6367289,
+   "lon": -84.4240561,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 450318635,
+     "dist_m": 1.8
+    },
+    {
+     "ref": "L10",
+     "osm_id": 24445322,
+     "dist_m": 10.0
+    },
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 20.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 10.0
+  },
+  {
+   "label": "L",
+   "chart_page_pt": [
+    315.27,
+    209.34
+   ],
+   "lat": 33.6364596,
+   "lon": -84.4259027,
+   "nearest_osm": [
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 9.8
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 71.7
+    },
+    {
+     "ref": null,
+     "osm_id": 449342872,
+     "dist_m": 89.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 9.8
+  },
+  {
+   "label": "D",
+   "chart_page_pt": [
+    341.67,
+    217.77
+   ],
+   "lat": 33.635441,
+   "lon": -84.4220919,
+   "nearest_osm": [
+    {
+     "ref": "K",
+     "osm_id": 24445314,
+     "dist_m": 25.7
+    },
+    {
+     "ref": "D",
+     "osm_id": 24445332,
+     "dist_m": 26.4
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 41.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 26.4
+  },
+  {
+   "label": "L",
+   "chart_page_pt": [
+    358.92,
+    208.94
+   ],
+   "lat": 33.6365073,
+   "lon": -84.4196014,
+   "nearest_osm": [
+    {
+     "ref": "L",
+     "osm_id": 42422263,
+     "dist_m": 4.7
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 76.9
+    },
+    {
+     "ref": null,
+     "osm_id": 449494576,
+     "dist_m": 81.3
+    }
+   ],
+   "status": "match",
+   "dist_m": 4.7
+  },
+  {
+   "label": "D",
+   "chart_page_pt": [
+    340.92,
+    210.51
+   ],
+   "lat": 33.6363177,
+   "lon": -84.4222009,
+   "nearest_osm": [
+    {
+     "ref": "D",
+     "osm_id": 24445332,
+     "dist_m": 12.2
+    },
+    {
+     "ref": null,
+     "osm_id": 449494055,
+     "dist_m": 14.3
+    },
+    {
+     "ref": null,
+     "osm_id": 449494056,
+     "dist_m": 21.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.2
+  },
+  {
+   "label": "J",
+   "chart_page_pt": [
+    347.53,
+    213.44
+   ],
+   "lat": 33.6359633,
+   "lon": -84.4212459,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 449494054,
+     "dist_m": 7.7
+    },
+    {
+     "ref": "J",
+     "osm_id": 42422259,
+     "dist_m": 7.9
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 16.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 7.9
+  },
+  {
+   "label": "N",
+   "chart_page_pt": [
+    304.14,
+    235.38
+   ],
+   "lat": 33.6333139,
+   "lon": -84.4275103,
+   "nearest_osm": [
+    {
+     "ref": "N",
+     "osm_id": 24445305,
+     "dist_m": 33.1
+    },
+    {
+     "ref": "S",
+     "osm_id": 24445327,
+     "dist_m": 47.3
+    },
+    {
+     "ref": "N6",
+     "osm_id": 24445309,
+     "dist_m": 84.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 33.1
+  },
+  {
+   "label": "N12",
+   "chart_page_pt": [
+    370.18,
+    239.28
+   ],
+   "lat": 33.6328441,
+   "lon": -84.4179765,
+   "nearest_osm": [
+    {
+     "ref": "N12",
+     "osm_id": 24445315,
+     "dist_m": 29.2
+    },
+    {
+     "ref": null,
+     "osm_id": 310453829,
+     "dist_m": 29.5
+    },
+    {
+     "ref": "N13",
+     "osm_id": 42422260,
+     "dist_m": 83.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 29.2
+  },
+  {
+   "label": "R6",
+   "chart_page_pt": [
+    293.55,
+    262.22
+   ],
+   "lat": 33.6300734,
+   "lon": -84.4290393,
+   "nearest_osm": [
+    {
+     "ref": "R6",
+     "osm_id": 30671959,
+     "dist_m": 17.8
+    },
+    {
+     "ref": "R6",
+     "osm_id": 449676251,
+     "dist_m": 34.0
+    },
+    {
+     "ref": "R",
+     "osm_id": 24445304,
+     "dist_m": 72.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 17.8
+  },
+  {
+   "label": "R12",
+   "chart_page_pt": [
+    338.93,
+    264.27
+   ],
+   "lat": 33.6298258,
+   "lon": -84.4224882,
+   "nearest_osm": [
+    {
+     "ref": "R12",
+     "osm_id": 1283057016,
+     "dist_m": 2.8
+    },
+    {
+     "ref": "R12",
+     "osm_id": 1428164681,
+     "dist_m": 67.2
+    },
+    {
+     "ref": "R",
+     "osm_id": 24445304,
+     "dist_m": 100.3
+    }
+   ],
+   "status": "match",
+   "dist_m": 2.8
+  },
+  {
+   "label": "R11",
+   "chart_page_pt": [
+    316.43,
+    256.04
+   ],
+   "lat": 33.630819,
+   "lon": -84.4257352,
+   "nearest_osm": [
+    {
+     "ref": "R11",
+     "osm_id": 24445312,
+     "dist_m": 3.5
+    },
+    {
+     "ref": null,
+     "osm_id": 449675402,
+     "dist_m": 9.5
+    },
+    {
+     "ref": "R",
+     "osm_id": 24445304,
+     "dist_m": 10.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 3.5
+  },
+  {
+   "label": "L12",
+   "chart_page_pt": [
+    371.74,
+    207.85
+   ],
+   "lat": 33.6366389,
+   "lon": -84.4177505,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 449494578,
+     "dist_m": 5.5
+    },
+    {
+     "ref": "L",
+     "osm_id": 42422263,
+     "dist_m": 10.0
+    },
+    {
+     "ref": null,
+     "osm_id": 449494577,
+     "dist_m": 10.7
+    }
+   ],
+   "status": "match",
+   "dist_m": 19.2
+  },
+  {
+   "label": "M18",
+   "chart_page_pt": [
+    383.97,
+    214.25
+   ],
+   "lat": 33.6358667,
+   "lon": -84.4159848,
+   "nearest_osm": [
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 6.1
+    },
+    {
+     "ref": "M18",
+     "osm_id": 449494743,
+     "dist_m": 29.5
+    },
+    {
+     "ref": "M18",
+     "osm_id": 449494744,
+     "dist_m": 29.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 29.5
+  },
+  {
+   "label": "L14",
+   "chart_page_pt": [
+    404.63,
+    209.61
+   ],
+   "lat": 33.6364264,
+   "lon": -84.413002,
+   "nearest_osm": [
+    {
+     "ref": "L14",
+     "osm_id": 449495013,
+     "dist_m": 0.9
+    },
+    {
+     "ref": "L",
+     "osm_id": 42422263,
+     "dist_m": 13.8
+    },
+    {
+     "ref": "L14",
+     "osm_id": 42422265,
+     "dist_m": 16.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 0.9
+  },
+  {
+   "label": "M",
+   "chart_page_pt": [
+    357.84,
+    215.26
+   ],
+   "lat": 33.6357441,
+   "lon": -84.4197581,
+   "nearest_osm": [
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 7.7
+    },
+    {
+     "ref": null,
+     "osm_id": 449494053,
+     "dist_m": 59.3
+    },
+    {
+     "ref": "L",
+     "osm_id": 42422263,
+     "dist_m": 89.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 7.7
+  },
+  {
+   "label": "SG",
+   "chart_page_pt": [
+    164.33,
+    337.7
+   ],
+   "lat": 33.620958,
+   "lon": -84.4476955,
+   "nearest_osm": [
+    {
+     "ref": "SG",
+     "osm_id": 24445678,
+     "dist_m": 6.0
+    },
+    {
+     "ref": "SG2",
+     "osm_id": 24445679,
+     "dist_m": 100.8
+    },
+    {
+     "ref": "SG4",
+     "osm_id": 42422255,
+     "dist_m": 334.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 6.0
+  },
+  {
+   "label": "SG4",
+   "chart_page_pt": [
+    204.51,
+    337.77
+   ],
+   "lat": 33.6209502,
+   "lon": -84.4418938,
+   "nearest_osm": [
+    {
+     "ref": "SG4",
+     "osm_id": 42422255,
+     "dist_m": 3.9
+    },
+    {
+     "ref": null,
+     "osm_id": 449493374,
+     "dist_m": 35.4
+    },
+    {
+     "ref": "SG",
+     "osm_id": 24445680,
+     "dist_m": 129.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 3.9
+  },
+  {
+   "label": "L16",
+   "chart_page_pt": [
+    423.55,
+    209.54
+   ],
+   "lat": 33.6364349,
+   "lon": -84.4102704,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 449495226,
+     "dist_m": 0.2
+    },
+    {
+     "ref": "L",
+     "osm_id": 42422263,
+     "dist_m": 12.9
+    },
+    {
+     "ref": "L16",
+     "osm_id": 42422266,
+     "dist_m": 18.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 18.6
+  },
+  {
+   "label": "LA",
+   "chart_page_pt": [
+    444.36,
+    216.22
+   ],
+   "lat": 33.6356276,
+   "lon": -84.407266,
+   "nearest_osm": [
+    {
+     "ref": "LA",
+     "osm_id": 449510305,
+     "dist_m": 15.3
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 22.4
+    },
+    {
+     "ref": "LB",
+     "osm_id": 449510306,
+     "dist_m": 94.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 15.3
+  },
+  {
+   "label": "LB",
+   "chart_page_pt": [
+    438.72,
+    217.18
+   ],
+   "lat": 33.6355123,
+   "lon": -84.4080802,
+   "nearest_osm": [
+    {
+     "ref": "LB",
+     "osm_id": 449510306,
+     "dist_m": 19.3
+    },
+    {
+     "ref": null,
+     "osm_id": 449510307,
+     "dist_m": 20.8
+    },
+    {
+     "ref": "M",
+     "osm_id": 24445306,
+     "dist_m": 33.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 19.3
+  },
+  {
+   "label": "LC",
+   "chart_page_pt": [
+    433.26,
+    200.32
+   ],
+   "lat": 33.6375482,
+   "lon": -84.4088678,
+   "nearest_osm": [
+    {
+     "ref": "L",
+     "osm_id": 42422263,
+     "dist_m": 110.6
+    },
+    {
+     "ref": "LB",
+     "osm_id": 449510306,
+     "dist_m": 110.9
+    },
+    {
+     "ref": "LC",
+     "osm_id": 1271303383,
+     "dist_m": 122.2
+    }
+   ],
+   "status": "conflict",
+   "nearby_refs": [
+    "L",
+    "LB"
+   ],
+   "decision": "chart right (OSM's nearest ref here is L)",
+   "rule": "R5"
+  },
+  {
+   "label": "E",
+   "chart_page_pt": [
+    418.95,
+    136.02
+   ],
+   "lat": 33.6453129,
+   "lon": -84.4109345,
+   "nearest_osm": [
+    {
+     "ref": "E",
+     "osm_id": 24445334,
+     "dist_m": 12.8
+    },
+    {
+     "ref": null,
+     "osm_id": 1246174093,
+     "dist_m": 140.2
+    },
+    {
+     "ref": "E",
+     "osm_id": 449491006,
+     "dist_m": 217.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.8
+  },
+  {
+   "label": "M20",
+   "chart_page_pt": [
+    420.28,
+    220.34
+   ],
+   "lat": 33.6351301,
+   "lon": -84.4107425,
+   "nearest_osm": [
+    {
+     "ref": "M20",
+     "osm_id": 449495229,
+     "dist_m": 28.6
+    },
+    {
+     "ref": "M20",
+     "osm_id": 24445330,
+     "dist_m": 32.9
+    },
+    {
+     "ref": null,
+     "osm_id": 449495230,
+     "dist_m": 36.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 28.6
+  },
+  {
+   "label": "A3",
+   "chart_page_pt": [
+    274.21,
+    86.0
+   ],
+   "lat": 33.6513526,
+   "lon": -84.4318315,
+   "nearest_osm": [
+    {
+     "ref": "A3",
+     "osm_id": 1245943363,
+     "dist_m": 12.3
+    },
+    {
+     "ref": "A3",
+     "osm_id": 30672077,
+     "dist_m": 12.4
+    },
+    {
+     "ref": "A3",
+     "osm_id": 42422281,
+     "dist_m": 12.4
+    }
+   ],
+   "status": "match",
+   "dist_m": 12.3
+  },
+  {
+   "label": "A",
+   "chart_page_pt": [
+    304.24,
+    92.56
+   ],
+   "lat": 33.6505604,
+   "lon": -84.4274966,
+   "nearest_osm": [
+    {
+     "ref": "A",
+     "osm_id": 42422280,
+     "dist_m": 9.4
+    },
+    {
+     "ref": null,
+     "osm_id": 1246174092,
+     "dist_m": 99.5
+    },
+    {
+     "ref": null,
+     "osm_id": 384056897,
+     "dist_m": 105.7
+    }
+   ],
+   "status": "match",
+   "dist_m": 9.4
+  },
+  {
+   "label": "A4",
+   "chart_page_pt": [
+    292.98,
+    95.62
+   ],
+   "lat": 33.6501915,
+   "lon": -84.4291216,
+   "nearest_osm": [
+    {
+     "ref": "A4",
+     "osm_id": 384056895,
+     "dist_m": 5.1
+    },
+    {
+     "ref": null,
+     "osm_id": 384056897,
+     "dist_m": 7.1
+    },
+    {
+     "ref": "A",
+     "osm_id": 42422280,
+     "dist_m": 50.3
+    }
+   ],
+   "status": "match",
+   "dist_m": 5.1
+  },
+  {
+   "label": "E10",
+   "chart_page_pt": [
+    380.15,
+    141.24
+   ],
+   "lat": 33.6446826,
+   "lon": -84.4165356,
+   "nearest_osm": [
+    {
+     "ref": "E10",
+     "osm_id": 24445362,
+     "dist_m": 20.0
+    },
+    {
+     "ref": null,
+     "osm_id": 1246174093,
+     "dist_m": 25.6
+    },
+    {
+     "ref": null,
+     "osm_id": 1189840952,
+     "dist_m": 26.1
+    }
+   ],
+   "status": "match",
+   "dist_m": 20.0
+  },
+  {
+   "label": "SC",
+   "chart_page_pt": [
+    257.95,
+    268.44
+   ],
+   "lat": 33.6293217,
+   "lon": -84.434179,
+   "nearest_osm": [
+    {
+     "ref": "SC",
+     "osm_id": 24445676,
+     "dist_m": 18.2
+    },
+    {
+     "ref": "SJ",
+     "osm_id": 24445677,
+     "dist_m": 99.8
+    },
+    {
+     "ref": "SC",
+     "osm_id": 449341442,
+     "dist_m": 101.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 18.2
+  },
+  {
+   "label": "R7",
+   "chart_page_pt": [
+    272.0,
+    254.38
+   ],
+   "lat": 33.6310195,
+   "lon": -84.4321498,
+   "nearest_osm": [
+    {
+     "ref": "R7",
+     "osm_id": 310453838,
+     "dist_m": 22.8
+    },
+    {
+     "ref": "R7",
+     "osm_id": 24445313,
+     "dist_m": 28.6
+    },
+    {
+     "ref": "R",
+     "osm_id": 24445304,
+     "dist_m": 32.3
+    }
+   ],
+   "status": "match",
+   "dist_m": 22.8
+  },
+  {
+   "label": "R",
+   "chart_page_pt": [
+    175.56,
+    257.96
+   ],
+   "lat": 33.6305884,
+   "lon": -84.4460749,
+   "nearest_osm": [
+    {
+     "ref": "R",
+     "osm_id": 24445304,
+     "dist_m": 14.9
+    },
+    {
+     "ref": null,
+     "osm_id": 624049062,
+     "dist_m": 171.7
+    },
+    {
+     "ref": null,
+     "osm_id": 624049063,
+     "dist_m": 171.7
+    }
+   ],
+   "status": "match",
+   "dist_m": 14.9
+  },
+  {
+   "label": "P",
+   "chart_page_pt": [
+    164.3,
+    237.16
+   ],
+   "lat": 33.6330989,
+   "lon": -84.4476998,
+   "nearest_osm": [
+    {
+     "ref": "P",
+     "osm_id": 42422256,
+     "dist_m": 9.8
+    },
+    {
+     "ref": "L",
+     "osm_id": 450318636,
+     "dist_m": 26.9
+    },
+    {
+     "ref": null,
+     "osm_id": 1245743502,
+     "dist_m": 26.9
+    }
+   ],
+   "status": "match",
+   "dist_m": 9.8
+  },
+  {
+   "label": "N2",
+   "chart_page_pt": [
+    201.7,
+    241.42
+   ],
+   "lat": 33.6325851,
+   "lon": -84.4423002,
+   "nearest_osm": [
+    {
+     "ref": "N2",
+     "osm_id": 24445307,
+     "dist_m": 0.9
+    },
+    {
+     "ref": "N2",
+     "osm_id": 310453830,
+     "dist_m": 1.3
+    },
+    {
+     "ref": "R3",
+     "osm_id": 24445311,
+     "dist_m": 38.6
+    }
+   ],
+   "status": "match",
+   "dist_m": 0.9
+  },
+  {
+   "label": "D",
+   "chart_page_pt": [
+    340.89,
+    128.44
+   ],
+   "lat": 33.6462289,
+   "lon": -84.4222038,
+   "nearest_osm": [
+    {
+     "ref": "D",
+     "osm_id": 24445332,
+     "dist_m": 16.1
+    },
+    {
+     "ref": null,
+     "osm_id": 166824897,
+     "dist_m": 17.5
+    },
+    {
+     "ref": null,
+     "osm_id": 449488681,
+     "dist_m": 67.0
+    }
+   ],
+   "status": "match",
+   "dist_m": 16.1
+  },
+  {
+   "label": "M16",
+   "chart_page_pt": [
+    369.95,
+    219.19
+   ],
+   "lat": 33.6352702,
+   "lon": -84.418009,
+   "nearest_osm": [
+    {
+     "ref": "M16",
+     "osm_id": 42422261,
+     "dist_m": 32.2
+    },
+    {
+     "ref": null,
+     "osm_id": 449494429,
+     "dist_m": 32.3
+    },
+    {
+     "ref": null,
+     "osm_id": 1271303686,
+     "dist_m": 50.8
+    }
+   ],
+   "status": "match",
+   "dist_m": 32.2
+  },
+  {
+   "label": "A11",
+   "chart_page_pt": [
+    364.78,
+    87.47
+   ],
+   "lat": 33.6511751,
+   "lon": -84.4187547,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 24445363,
+     "dist_m": 8.1
+    },
+    {
+     "ref": null,
+     "osm_id": 1282726679,
+     "dist_m": 8.6
+    },
+    {
+     "ref": null,
+     "osm_id": 449490599,
+     "dist_m": 8.7
+    }
+   ],
+   "status": "conflict",
+   "nearby_refs": [
+    "<no ref>",
+    "A"
+   ],
+   "decision": "chart right; OSM way unnamed",
+   "rule": "R4",
+   "osm_unnamed_way": 24445363
+  },
+  {
+   "label": "A13",
+   "chart_page_pt": [
+    394.8,
+    80.23
+   ],
+   "lat": 33.6520494,
+   "lon": -84.4144212,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 384077693,
+     "dist_m": 9.8
+    },
+    {
+     "ref": null,
+     "osm_id": 384077692,
+     "dist_m": 11.8
+    },
+    {
+     "ref": "A11",
+     "osm_id": 1245943357,
+     "dist_m": 15.5
+    }
+   ],
+   "status": "match",
+   "dist_m": 79.7
+  },
+  {
+   "label": "A15",
+   "chart_page_pt": [
+    401.94,
+    80.76
+   ],
+   "lat": 33.651986,
+   "lon": -84.4133911,
+   "nearest_osm": [
+    {
+     "ref": "A13",
+     "osm_id": 42422284,
+     "dist_m": 15.9
+    },
+    {
+     "ref": null,
+     "osm_id": 384077694,
+     "dist_m": 17.4
+    },
+    {
+     "ref": null,
+     "osm_id": 384077695,
+     "dist_m": 17.4
+    }
+   ],
+   "status": "conflict",
+   "nearby_refs": [
+    "<no ref>",
+    "A",
+    "A11",
+    "A13"
+   ],
+   "decision": "chart right (OSM's nearest ref here is A13)",
+   "rule": "R5"
+  },
+  {
+   "label": "A7",
+   "chart_page_pt": [
+    345.32,
+    87.49
+   ],
+   "lat": 33.6511733,
+   "lon": -84.4215649,
+   "nearest_osm": [
+    {
+     "ref": null,
+     "osm_id": 1475157167,
+     "dist_m": 14.2
+    },
+    {
+     "ref": null,
+     "osm_id": 1282723210,
+     "dist_m": 14.8
+    },
+    {
+     "ref": null,
+     "osm_id": 384077698,
+     "dist_m": 26.0
+    }
+   ],
+   "status": "conflict",
+   "nearby_refs": [
+    "<no ref>",
+    "A"
+   ],
+   "decision": "chart right; OSM way unnamed",
+   "rule": "R4",
+   "osm_unnamed_way": 1475157167
+  }
+ ],
+ "osm_runway_ends_vs_nasr": [
+  {
+   "end": "9R",
+   "osm_way": 24445135,
+   "osm_endpoint_to_nasr_end_m": 0.19
+  },
+  {
+   "end": "27L",
+   "osm_way": 24445135,
+   "osm_endpoint_to_nasr_end_m": 0.45
+  },
+  {
+   "end": "9L",
+   "osm_way": 24445136,
+   "osm_endpoint_to_nasr_end_m": 1.38
+  },
+  {
+   "end": "27R",
+   "osm_way": 24445136,
+   "osm_endpoint_to_nasr_end_m": 154.34
+  },
+  {
+   "end": "8L",
+   "osm_way": 24445137,
+   "osm_endpoint_to_nasr_end_m": 0.93
+  },
+  {
+   "end": "26R",
+   "osm_way": 24445137,
+   "osm_endpoint_to_nasr_end_m": 0.94
+  },
+  {
+   "end": "8R",
+   "osm_way": 24445138,
+   "osm_endpoint_to_nasr_end_m": 0.96
+  },
+  {
+   "end": "26L",
+   "osm_way": 24445138,
+   "osm_endpoint_to_nasr_end_m": 0.97
+  },
+  {
+   "end": "10",
+   "osm_way": 24445139,
+   "osm_endpoint_to_nasr_end_m": 5.16
+  },
+  {
+   "end": "28",
+   "osm_way": 24445139,
+   "osm_endpoint_to_nasr_end_m": 0.64
+  },
+  {
+   "end": "9L",
+   "osm_way": 510400302,
+   "osm_endpoint_to_nasr_end_m": 3621.72
+  },
+  {
+   "end": "27R",
+   "osm_way": 510400302,
+   "osm_endpoint_to_nasr_end_m": 1.2
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31012_06_C_TKOF_LAND_INTERSECT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_TKOF_LAND_INTERSECT",
+ "basis": "R4 takeoff vs landing on intersecting runways (3-9-8, 3-10-4); airports with no intersecting runways use R3",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31012,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "C",
+  "hot_spot": "HS 1"
+ },
+ "note": "KATL has no intersecting runways: R3 (same runway) used instead of R4. Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit three seventy five, runway eight right, full length, cleared for takeoff.",
+   "id": "SYN_KATL_TRAINFT_S31012_06_C_TKOF_LAND_INTERSECT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Spirit three seventy five, cleared for takeoff runway eight right.",
+   "id": "SYN_KATL_TRAINFT_S31012_06_C_TKOF_LAND_INTERSECT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Frontier one five three, runway eight right, wind zero three zero at six, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31012_06_C_TKOF_LAND_INTERSECT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Frontier one five three, roger, cleared to land runway eight right.",
+   "id": "SYN_KATL_TRAINFT_S31012_06_C_TKOF_LAND_INTERSECT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

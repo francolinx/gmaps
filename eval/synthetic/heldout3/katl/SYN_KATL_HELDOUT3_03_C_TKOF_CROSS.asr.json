@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_00": {
+  "text": "JetBlue 1075, runway niner right, wind 050 at one niner gusts 28, cleared for takeoff.",
+  "asr_s": 0.268
+ },
+ "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_01": {
+  "text": "JetBlue 1075 cleared for takeoff runway 9 to right.",
+  "asr_s": 0.191
+ },
+ "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_02": {
+  "text": "Debra 10 sent to me, and Sierra Charlie Cross Runway 9 is right without direction.",
+  "asr_s": 0.225
+ },
+ "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_03": {
+  "text": "Crossing runway 9 and right is C.R. Charlie, 5-10-7-8.",
+  "asr_s": 0.227
+ }
+}

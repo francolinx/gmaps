@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_00": {
+  "text": "United 5-6-7-8, Runway Niner right, cleared for takeoff, turn left heading 2-7-0.",
+  "asr_s": 0.272
+ },
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_01": {
+  "text": "Bar crew cleared for takeoff, Niner right, United 5678.",
+  "asr_s": 0.199
+ },
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_02": {
+  "text": "Twin Cessna Niner 623 Delta, runway Niner right, clear to left, wind 330 at 1-2.",
+  "asr_s": 0.262
+ },
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_03": {
+  "text": "Onway Niner White clears the land to in Cessna Niner 62310",
+  "asr_s": 0.217
+ }
+}

@@ -1,0 +1,15 @@
+# Held-out (claude/sim-upgrades, Oct 16): written before any run; the parser and ledger were not changed for it.
+id: Q6_05_HOLD_SHORT_READBACK
+title: Hold short instruction during a landing, read back correctly (no alert)
+airport: XSIM
+simulated: true
+end_t: 70
+transmissions:
+  - {id: t1, t: 0, speaker: ATC, text: "SimAir two one two, runway three six, cleared to land.", cite: "7110.65 3-10-5a"}
+  - {id: t2, t: 5, speaker: PILOT, callsign: SIM212, text: "Cleared to land runway three six, SimAir two one two.", cite: "AIM via 7110.65 2-4-3 NOTE 1c"}
+  - {id: t3, t: 15, speaker: ATC, text: "Rescue seven, hold short of runway three six at Kilo.", cite: "7110.65 3-7-2 (hold short instruction)"}
+  - {id: t4, t: 20, speaker: PILOT, callsign: RESCUE7, text: "Holding short of runway three six at Kilo, Rescue seven.", cite: "7110.65 2-4-3 / 3-7-2 (hold short read back)"}
+  - {id: t5, t: 45, speaker: PILOT, callsign: SIM212, text: "SimAir two one two, clear of runway three six.", cite: "7110.65 3-10-9"}
+expected_alerts: []
+expected_no_alert:
+  - {window: [0, 70], why: "the vehicle was told to hold short and read it back; nothing crossed"}

@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Southwest 900, wind 280 at 19 August 31. Runway 27 left, cleared for takeoff.",
+  "asr_s": 0.232
+ },
+ "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "NW 900 is clear for takeoff runway 27L.",
+  "asr_s": 0.18
+ },
+ "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Citation 5506, runway 27 left clear to land.",
+  "asr_s": 0.198
+ },
+ "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Citation 5506 Zulu, Roger. Clear to land runway 27L.",
+  "asr_s": 0.205
+ }
+}

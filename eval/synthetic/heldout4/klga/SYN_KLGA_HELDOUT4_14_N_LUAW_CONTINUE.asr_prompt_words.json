@@ -1,0 +1,262 @@
+{
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_00": {
+  "text": "American 1195 runway four, line up and wait, traffic landing runway one three.",
+  "asr_s": 0.445,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9814
+   },
+   {
+    "w": "1195",
+    "p": 0.8132
+   },
+   {
+    "w": "runway",
+    "p": 0.3851
+   },
+   {
+    "w": "four,",
+    "p": 0.6165
+   },
+   {
+    "w": "line",
+    "p": 0.9976
+   },
+   {
+    "w": "up",
+    "p": 0.9983
+   },
+   {
+    "w": "and",
+    "p": 0.9911
+   },
+   {
+    "w": "wait,",
+    "p": 0.7978
+   },
+   {
+    "w": "traffic",
+    "p": 0.9955
+   },
+   {
+    "w": "landing",
+    "p": 0.9957
+   },
+   {
+    "w": "runway",
+    "p": 0.9581
+   },
+   {
+    "w": "one",
+    "p": 0.9796
+   },
+   {
+    "w": "three.",
+    "p": 0.918
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_01": {
+  "text": "Line up and wait runway four, American 1195.",
+  "asr_s": 0.459,
+  "words": [
+   {
+    "w": "Line",
+    "p": 0.9708
+   },
+   {
+    "w": "up",
+    "p": 0.944
+   },
+   {
+    "w": "and",
+    "p": 0.996
+   },
+   {
+    "w": "wait",
+    "p": 0.9962
+   },
+   {
+    "w": "runway",
+    "p": 0.7435
+   },
+   {
+    "w": "four,",
+    "p": 0.9441
+   },
+   {
+    "w": "American",
+    "p": 0.9948
+   },
+   {
+    "w": "1195.",
+    "p": 0.538
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_02": {
+  "text": "Frontier two eight one six, runway four, extend downward, traffic holding in position.",
+  "asr_s": 0.437,
+  "words": [
+   {
+    "w": "Frontier",
+    "p": 0.9852
+   },
+   {
+    "w": "two",
+    "p": 0.4785
+   },
+   {
+    "w": "eight",
+    "p": 0.9271
+   },
+   {
+    "w": "one",
+    "p": 0.9601
+   },
+   {
+    "w": "six,",
+    "p": 0.8821
+   },
+   {
+    "w": "runway",
+    "p": 0.9971
+   },
+   {
+    "w": "four,",
+    "p": 0.8418
+   },
+   {
+    "w": "extend",
+    "p": 0.9796
+   },
+   {
+    "w": "downward,",
+    "p": 0.7383
+   },
+   {
+    "w": "traffic",
+    "p": 0.9977
+   },
+   {
+    "w": "holding",
+    "p": 0.9991
+   },
+   {
+    "w": "in",
+    "p": 0.9902
+   },
+   {
+    "w": "position.",
+    "p": 0.8601
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_03": {
+  "text": "We'll go Frontier 2816.",
+  "asr_s": 0.417,
+  "words": [
+   {
+    "w": "We'll",
+    "p": 0.2517
+   },
+   {
+    "w": "go",
+    "p": 0.9785
+   },
+   {
+    "w": "Frontier",
+    "p": 0.655
+   },
+   {
+    "w": "2816.",
+    "p": 0.7888
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_04": {
+  "text": "American 1195, runway four at Foxtrot intersection departure, cleared for takeoff.",
+  "asr_s": 0.443,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9725
+   },
+   {
+    "w": "1195,",
+    "p": 0.3681
+   },
+   {
+    "w": "runway",
+    "p": 0.9609
+   },
+   {
+    "w": "four",
+    "p": 0.9964
+   },
+   {
+    "w": "at",
+    "p": 0.9288
+   },
+   {
+    "w": "Foxtrot",
+    "p": 0.9191
+   },
+   {
+    "w": "intersection",
+    "p": 0.4363
+   },
+   {
+    "w": "departure,",
+    "p": 0.5378
+   },
+   {
+    "w": "cleared",
+    "p": 0.9972
+   },
+   {
+    "w": "for",
+    "p": 0.9987
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.7803
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_05": {
+  "text": "Roger, cleared for takeoff four, American, 1195.",
+  "asr_s": 0.397,
+  "words": [
+   {
+    "w": "Roger,",
+    "p": 0.4113
+   },
+   {
+    "w": "cleared",
+    "p": 0.9865
+   },
+   {
+    "w": "for",
+    "p": 0.8968
+   },
+   {
+    "w": "takeoff",
+    "p": 0.9823
+   },
+   {
+    "w": "four,",
+    "p": 0.4245
+   },
+   {
+    "w": "American,",
+    "p": 0.5141
+   },
+   {
+    "w": "1195.",
+    "p": 0.8497
+   }
+  ]
+ }
+}

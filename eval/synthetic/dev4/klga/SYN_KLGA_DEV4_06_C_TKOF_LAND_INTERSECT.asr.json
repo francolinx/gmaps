@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Frontier 1077, runway 4, wind 360 at 1-8 gusts 3-1, cleared for takeoff.",
+  "asr_s": 0.258
+ },
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Cleared for takeoff for Frontier 1077.",
+  "asr_s": 0.184
+ },
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Bonanza 4454 Yankee, runway 13 cleared to land.",
+  "asr_s": 0.221
+ },
+ "SYN_KLGA_DEV4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Cleared to land 1-3, Bonanza 4-4-5 for Yankee.",
+  "asr_s": 0.226
+ }
+}

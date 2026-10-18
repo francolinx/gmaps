@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Frontier 2100, runway 26L, cleared to land wind calm.",
+  "asr_s": 0.201
+ },
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Runway 26L, clear the line, frontier 2100",
+  "asr_s": 0.178
+ },
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_02": {
+  "text": "Twin Cessna 2665 Zulu, cross runway niner left at November 5, hold short of runway 8 left.",
+  "asr_s": 0.263
+ },
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Fox runway Niner Leca Nongata 5 with Tesla 26652",
+  "asr_s": 0.199
+ }
+}

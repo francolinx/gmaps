@@ -1,0 +1,128 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31002_12_N_GO_AROUND_THEN_CROSS",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_12_N_GO_AROUND_THEN_CROSS_00",
+   "fields": {
+    "callsigns": [
+     "N6768L"
+    ],
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N6768L",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": [
+     "N6",
+     "L"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_12_N_GO_AROUND_THEN_CROSS_01",
+   "fields": {
+    "callsigns": [
+     "N6768L"
+    ],
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N6768L",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": [
+     "N6",
+     "L"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_12_N_GO_AROUND_THEN_CROSS_02",
+   "fields": {
+    "callsigns": [
+     "N6768L"
+    ],
+    "runway": null,
+    "instruction": "GO_AROUND"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N6768L",
+    "runway": null,
+    "instruction": "GO_AROUND",
+    "taxiways": [
+     "N6",
+     "L"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_12_N_GO_AROUND_THEN_CROSS_03",
+   "fields": {
+    "callsigns": [
+     "N6768L"
+    ],
+    "runway": null,
+    "instruction": "GO_AROUND"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N6768L",
+    "runway": null,
+    "instruction": "GO_AROUND",
+    "taxiways": [
+     "N6",
+     "L"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_12_N_GO_AROUND_THEN_CROSS_04",
+   "fields": {
+    "callsigns": [
+     "N4041T"
+    ],
+    "runway": "27R",
+    "instruction": "CROSS"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N4041T",
+    "runway": "27R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "N4",
+     "T",
+     "L"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_12_N_GO_AROUND_THEN_CROSS_05",
+   "fields": {
+    "callsigns": [
+     "N4041T"
+    ],
+    "runway": "27R",
+    "instruction": "CROSS"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N4041T",
+    "runway": "27R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "L",
+     "N4",
+     "T"
+    ]
+   }
+  }
+ ]
+}

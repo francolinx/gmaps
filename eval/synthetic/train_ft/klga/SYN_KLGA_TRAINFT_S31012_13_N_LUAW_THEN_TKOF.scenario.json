@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31012_13_N_LUAW_THEN_TKOF",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_LUAW_THEN_TKOF",
+ "basis": "line up and wait, then the same aircraft's takeoff clearance (3-9-4, 3-9-10)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31012,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "E",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Delta twenty seven thirty eight, runway four, line up and wait. Traffic a Embraer one seventy five, six mile final.",
+   "id": "SYN_KLGA_TRAINFT_S31012_13_N_LUAW_THEN_TKOF_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Delta twenty seven thirty eight, line up and wait runway four.",
+   "id": "SYN_KLGA_TRAINFT_S31012_13_N_LUAW_THEN_TKOF_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 40,
+   "speaker": "ATC",
+   "text": "Delta twenty seven thirty eight, runway four, cleared for takeoff.",
+   "id": "SYN_KLGA_TRAINFT_S31012_13_N_LUAW_THEN_TKOF_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 44,
+   "speaker": "PILOT",
+   "text": "Delta twenty seven thirty eight, cleared for takeoff runway four.",
+   "id": "SYN_KLGA_TRAINFT_S31012_13_N_LUAW_THEN_TKOF_03",
+   "speaker_ref": "a"
+  }
+ ]
+}

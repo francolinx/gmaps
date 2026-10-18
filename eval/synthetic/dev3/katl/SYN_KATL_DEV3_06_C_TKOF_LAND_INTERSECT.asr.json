@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV3_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Frontier 647, runway 8 right, wind 090 at one niner, cleared for takeoff.",
+  "asr_s": 0.233
+ },
+ "SYN_KATL_DEV3_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Appeared for takeoff 8 right. Frontier 647.",
+  "asr_s": 0.194
+ },
+ "SYN_KATL_DEV3_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "JetBlue 1995, runway 8 right, cleared to land.",
+  "asr_s": 0.19
+ },
+ "SYN_KATL_DEV3_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Cleared to land 8 right, jet blue 1995.",
+  "asr_s": 0.174
+ }
+}

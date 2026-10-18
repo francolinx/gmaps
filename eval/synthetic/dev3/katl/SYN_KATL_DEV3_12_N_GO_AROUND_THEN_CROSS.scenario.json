@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev3",
+ "phrasing_pool": "C",
+ "template": "N_GO_AROUND_THEN_CROSS",
+ "basis": "go-around releases the landing (3-8-1), then a crossing",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9201,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "SC",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American five zero five, runway niner right, wind one seven zero at one niner, cleared to land.",
+   "id": "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land niner right, American five zero five.",
+   "id": "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 30,
+   "speaker": "ATC",
+   "text": "American five zero five, go around, fly runway heading, climb and maintain two thousand.",
+   "id": "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 33,
+   "speaker": "PILOT",
+   "text": "Going around, American five zero five.",
+   "id": "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_03",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "ATC",
+   "text": "Endeavor fifteen thirty, at Sierra Charlie, cross runway niner right.",
+   "id": "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 49,
+   "speaker": "PILOT",
+   "text": "Cross niner right at Sierra Charlie, Endeavor fifteen thirty.",
+   "id": "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_05",
+   "speaker_ref": "b"
+  }
+ ]
+}

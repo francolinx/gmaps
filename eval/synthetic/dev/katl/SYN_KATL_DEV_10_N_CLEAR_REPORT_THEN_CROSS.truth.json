@@ -1,0 +1,60 @@
+{
+ "id": "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "section8_case": true,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "SWA771"
+    ],
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA771"
+    ],
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA771"
+    ],
+    "runway": "9L",
+    "instruction": "CROSSING_COMPLETE"
+   },
+   "id": "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA962"
+    ],
+    "runway": "9L",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS_03"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA962"
+    ],
+    "runway": "9L",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS_04"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL1300",
+  "AAL8201",
+  "DAL2152",
+  "DAL2393",
+  "DAL2626",
+  "EDV1558",
+  "N3309H",
+  "N6110B",
+  "NKS2615",
+  "UAL1152"
+ ],
+ "realistic": [
+  "AAL8201",
+  "DAL2393",
+  "DAL2626",
+  "EDV1558",
+  "EDV2165",
+  "JBU2100",
+  "N3309H",
+  "NKS2615",
+  "SWA2400",
+  "UAL1152"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_DEV3_02_C_LAND_CROSS_HOTSPOT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev3",
+ "phrasing_pool": "C",
+ "template": "C_LAND_CROSS_HOTSPOT",
+ "basis": "R1, crossing at a hot-spot taxiway",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9201,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "D",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest fourteen oh nine, runway two six left, cleared to land.",
+   "id": "SYN_KATL_DEV3_02_C_LAND_CROSS_HOTSPOT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two six left, Southwest fourteen oh nine.",
+   "id": "SYN_KATL_DEV3_02_C_LAND_CROSS_HOTSPOT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "November seven two six three Uniform, cross runway two six left at taxiway Delta, without delay.",
+   "id": "SYN_KATL_DEV3_02_C_LAND_CROSS_HOTSPOT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross two six left at Delta, November seven two six three Uniform.",
+   "id": "SYN_KATL_DEV3_02_C_LAND_CROSS_HOTSPOT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

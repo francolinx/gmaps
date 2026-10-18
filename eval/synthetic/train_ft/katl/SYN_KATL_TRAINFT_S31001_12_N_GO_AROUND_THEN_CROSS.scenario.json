@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31001_12_N_GO_AROUND_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_GO_AROUND_THEN_CROSS",
+ "basis": "go-around releases the landing (3-8-1), then a crossing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31001,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "C",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "November one five five four Lima, runway eight left, wind zero three zero at niner gusts one eight, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31001_12_N_GO_AROUND_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land eight left, November one five five four Lima.",
+   "id": "SYN_KATL_TRAINFT_S31001_12_N_GO_AROUND_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 30,
+   "speaker": "ATC",
+   "text": "November one five five four Lima, go around, fly runway heading, climb and maintain two thousand.",
+   "id": "SYN_KATL_TRAINFT_S31001_12_N_GO_AROUND_THEN_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 33,
+   "speaker": "PILOT",
+   "text": "Going around, November one five five four Lima.",
+   "id": "SYN_KATL_TRAINFT_S31001_12_N_GO_AROUND_THEN_CROSS_03",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "ATC",
+   "text": "Frontier eight twenty nine, at Charlie cross runway eight left without delay.",
+   "id": "SYN_KATL_TRAINFT_S31001_12_N_GO_AROUND_THEN_CROSS_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 49,
+   "speaker": "PILOT",
+   "text": "Cross eight left at Charlie, Frontier eight twenty nine.",
+   "id": "SYN_KATL_TRAINFT_S31001_12_N_GO_AROUND_THEN_CROSS_05",
+   "speaker_ref": "b"
+  }
+ ]
+}

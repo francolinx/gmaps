@@ -1,0 +1,71 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7601_14_N_LUAW_CONTINUE",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "FFT1735"
+    ],
+    "runway": "26R",
+    "instruction": "LUAW"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_14_N_LUAW_CONTINUE_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "FFT1735"
+    ],
+    "runway": "26R",
+    "instruction": "LUAW"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_14_N_LUAW_CONTINUE_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "JBU8947"
+    ],
+    "runway": "26R",
+    "instruction": "OTHER"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_14_N_LUAW_CONTINUE_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "JBU8947"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_14_N_LUAW_CONTINUE_03"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "FFT1735"
+    ],
+    "runway": "26R",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_14_N_LUAW_CONTINUE_04"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "FFT1735"
+    ],
+    "runway": "26R",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_14_N_LUAW_CONTINUE_05"
+  }
+ ]
+}

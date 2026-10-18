@@ -1,0 +1,15 @@
+# Held-out (claude/sim-upgrades, Oct 16): written before any run; the parser and ledger were not changed for it.
+id: Q6_03_NREG_LAND_VS_CROSS
+title: A civil registration cleared to land, then a vehicle cleared across the same runway (alert expected)
+airport: XSIM
+simulated: true
+end_t: 60
+transmissions:
+  - {id: t1, t: 0, speaker: ATC, text: "November six six four eight Juliet, runway three six, cleared to land.", cite: "7110.65 3-10-5a; 2-4-20a1 (registration)"}
+  - {id: t2, t: 6, speaker: PILOT, callsign: N6648J, text: "Cleared to land runway three six, November six six four eight Juliet.", cite: "AIM via 7110.65 2-4-3 NOTE 1c"}
+  - {id: t3, t: 20, speaker: ATC, text: "Truck three, cross runway three six at Kilo.", cite: "7110.65 3-7-2a/c"}
+  - {id: t4, t: 25, speaker: PILOT, callsign: TRUCK3, text: "Crossing runway three six at Kilo, Truck three.", cite: "7110.65 2-4-3 (read back)"}
+expected_alerts:
+  - {id: A1, rule: [R1], runway: "36", aircraft: [N6648J, TRUCK3], window: [20, 40], why: "a crossing cleared while a landing clearance on the same runway is open"}
+expected_no_alert:
+  - {window: [0, 19], why: "only the landing clearance and its read back"}

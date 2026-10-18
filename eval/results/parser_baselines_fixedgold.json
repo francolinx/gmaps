@@ -1,0 +1,150 @@
+{
+ "SIMULATED": true,
+ "set": "eval/synthetic/heldout4 (KATL + KLGA), read only",
+ "generated": "2026-10-17 01:59 EDT",
+ "gold_taxiway_rule": "fixed",
+ "note": "Field match over all n; untyped (grammar) or dropped (LLM) transmissions score 0 on every field. Gold taxiways = chart names spoken in the scripted text (callsign letters excluded, N19).",
+ "script_text": {
+  "grammar_alone": {
+   "n": 138,
+   "field_exact_match": {
+    "speaker_role": 0.942,
+    "callsign": 0.942,
+    "runway": 0.87,
+    "instruction": 0.942,
+    "taxiways": 0.819
+   },
+   "all_fields_exact": 0.746,
+   "typed_rate": 0.942
+  },
+  "llm_fallback_35b": {
+   "n": 138,
+   "field_exact_match": {
+    "speaker_role": 0.638,
+    "callsign": 0.92,
+    "runway": 0.942,
+    "instruction": 0.935,
+    "taxiways": 0.891
+   },
+   "all_fields_exact": 0.536,
+   "endpoint": "venue/llm_fallback.py defaults (127.0.0.1:8000, nvidia/Qwen3.6-35B-A3B-NVFP4), unchanged; traffic list: none",
+   "drop_rate": 0.036,
+   "accepted_actionable_rate": 0.891,
+   "reasons": {
+    "valid": 123,
+    "no actionable content": 10,
+    "grounding: flight number not heard": 5
+   },
+   "raw_json_field_exact_match": {
+    "speaker_role": 0.659,
+    "callsign": 0.92,
+    "runway": 0.978,
+    "instruction": 0.971,
+    "taxiways": 0.92
+   },
+   "latency_s": {
+    "median": 0.877,
+    "p95": 0.971,
+    "max": 0.995
+   }
+  }
+ },
+ "whisper_text": {
+  "grammar_alone": {
+   "n": 138,
+   "field_exact_match": {
+    "speaker_role": 0.601,
+    "callsign": 0.543,
+    "runway": 0.529,
+    "instruction": 0.616,
+    "taxiways": 0.514
+   },
+   "all_fields_exact": 0.377,
+   "typed_rate": 0.63
+  },
+  "llm_fallback_35b": {
+   "n": 138,
+   "field_exact_match": {
+    "speaker_role": 0.543,
+    "callsign": 0.594,
+    "runway": 0.732,
+    "instruction": 0.71,
+    "taxiways": 0.667
+   },
+   "all_fields_exact": 0.319,
+   "endpoint": "venue/llm_fallback.py defaults (127.0.0.1:8000, nvidia/Qwen3.6-35B-A3B-NVFP4), unchanged; traffic list: none",
+   "drop_rate": 0.217,
+   "accepted_actionable_rate": 0.63,
+   "reasons": {
+    "valid": 87,
+    "no actionable content": 21,
+    "grounding: airline not heard and not resolved by the traffic list": 9,
+    "grounding: no 'TAXI' words in the text": 4,
+    "grounding: flight number not heard": 3,
+    "grounding: no 'CROSSING_COMPLETE' words in the text": 3,
+    "grounding: no 'LANDING_CLEARANCE' words in the text": 3,
+    "grounding: no 'CROSS' words in the text": 2,
+    "grounding: runway number not heard": 2,
+    "schema: taxiway not on the chart": 1,
+    "grounding: no 'HOLD_SHORT' words in the text": 1,
+    "grounding: taxiway N not heard": 1,
+    "grounding: no 'TAKEOFF_CLEARANCE' words in the text": 1
+   },
+   "raw_json_field_exact_match": {
+    "speaker_role": 0.681,
+    "callsign": 0.717,
+    "runway": 0.906,
+    "instruction": 0.862,
+    "taxiways": 0.855
+   },
+   "latency_s": {
+    "median": 0.869,
+    "p95": 0.961,
+    "max": 1.0
+   }
+  }
+ },
+ "grammar_alone": {
+  "n": 138,
+  "field_exact_match": {
+   "speaker_role": 0.942,
+   "callsign": 0.942,
+   "runway": 0.87,
+   "instruction": 0.942,
+   "taxiways": 0.819
+  },
+  "all_fields_exact": 0.746,
+  "typed_rate": 0.942
+ },
+ "llm_fallback_35b": {
+  "n": 138,
+  "field_exact_match": {
+   "speaker_role": 0.638,
+   "callsign": 0.92,
+   "runway": 0.942,
+   "instruction": 0.935,
+   "taxiways": 0.891
+  },
+  "all_fields_exact": 0.536,
+  "endpoint": "venue/llm_fallback.py defaults (127.0.0.1:8000, nvidia/Qwen3.6-35B-A3B-NVFP4), unchanged; traffic list: none",
+  "drop_rate": 0.036,
+  "accepted_actionable_rate": 0.891,
+  "reasons": {
+   "valid": 123,
+   "no actionable content": 10,
+   "grounding: flight number not heard": 5
+  },
+  "raw_json_field_exact_match": {
+   "speaker_role": 0.659,
+   "callsign": 0.92,
+   "runway": 0.978,
+   "instruction": 0.971,
+   "taxiways": 0.92
+  },
+  "latency_s": {
+   "median": 0.877,
+   "p95": 0.971,
+   "max": 0.995
+  }
+ }
+}

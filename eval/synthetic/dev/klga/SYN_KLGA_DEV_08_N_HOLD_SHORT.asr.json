@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV_08_N_HOLD_SHORT_00": {
+  "text": "Spirit 463, runway 22 cleared to land.",
+  "asr_s": 0.199
+ },
+ "SYN_KLGA_DEV_08_N_HOLD_SHORT_01": {
+  "text": "Runway 22, cleared to land, Spirit 463.",
+  "asr_s": 0.221
+ },
+ "SYN_KLGA_DEV_08_N_HOLD_SHORT_02": {
+  "text": "Jet Blue 2138, hold short of runway 22 at Romeo.",
+  "asr_s": 0.231
+ },
+ "SYN_KLGA_DEV_08_N_HOLD_SHORT_03": {
+  "text": "Hold short of runway 22 at Romeo, jet blue 2138.",
+  "asr_s": 0.242
+ }
+}

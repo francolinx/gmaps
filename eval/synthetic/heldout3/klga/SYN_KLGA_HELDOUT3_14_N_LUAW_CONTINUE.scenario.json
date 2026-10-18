@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout3",
+ "phrasing_pool": "D",
+ "template": "N_LUAW_CONTINUE",
+ "basis": "line up and wait; the arrival is told 'continue, traffic holding in position' (3-9-4c1), not cleared to land",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7402,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "G",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest seven fifty eight, runway two two, line up and wait. Traffic a Boeing seven thirty seven, four mile final.",
+   "id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Southwest seven fifty eight, line up and wait runway two two.",
+   "id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Cessna one two four seven Sierra, runway two two continue, traffic holding in position.",
+   "id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Cessna one two four seven Sierra, continuing.",
+   "id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_03",
+   "speaker_ref": "b"
+  },
+  {
+   "t": 30,
+   "speaker": "ATC",
+   "text": "Southwest seven fifty eight, runway two two, wind three two zero at two zero gusts three one. Cleared for takeoff.",
+   "id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 34,
+   "speaker": "PILOT",
+   "text": "Southwest seven fifty eight, cleared for takeoff runway two two.",
+   "id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_05",
+   "speaker_ref": "a"
+  }
+ ]
+}

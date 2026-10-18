@@ -1,0 +1,210 @@
+{
+ "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Southwest 2394, runway niner left, wind two three zero at one three gusts two four, cleared to land.",
+  "asr_s": 0.536,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9435
+   },
+   {
+    "w": "2394,",
+    "p": 0.6498
+   },
+   {
+    "w": "runway",
+    "p": 0.9967
+   },
+   {
+    "w": "niner",
+    "p": 0.8481
+   },
+   {
+    "w": "left,",
+    "p": 0.9748
+   },
+   {
+    "w": "wind",
+    "p": 0.9836
+   },
+   {
+    "w": "two",
+    "p": 0.8634
+   },
+   {
+    "w": "three",
+    "p": 0.9963
+   },
+   {
+    "w": "zero",
+    "p": 0.9994
+   },
+   {
+    "w": "at",
+    "p": 0.9375
+   },
+   {
+    "w": "one",
+    "p": 0.9545
+   },
+   {
+    "w": "three",
+    "p": 0.9963
+   },
+   {
+    "w": "gusts",
+    "p": 0.8926
+   },
+   {
+    "w": "two",
+    "p": 0.9892
+   },
+   {
+    "w": "four,",
+    "p": 0.9046
+   },
+   {
+    "w": "cleared",
+    "p": 0.9989
+   },
+   {
+    "w": "to",
+    "p": 0.9762
+   },
+   {
+    "w": "land.",
+    "p": 0.9697
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Southwest 2394, roger. Cleared to land, runway nine or left.",
+  "asr_s": 0.48,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9769
+   },
+   {
+    "w": "2394,",
+    "p": 0.4183
+   },
+   {
+    "w": "roger.",
+    "p": 0.5054
+   },
+   {
+    "w": "Cleared",
+    "p": 0.9527
+   },
+   {
+    "w": "to",
+    "p": 0.9993
+   },
+   {
+    "w": "land,",
+    "p": 0.9768
+   },
+   {
+    "w": "runway",
+    "p": 0.9992
+   },
+   {
+    "w": "nine",
+    "p": 0.5559
+   },
+   {
+    "w": "or",
+    "p": 0.623
+   },
+   {
+    "w": "left.",
+    "p": 0.9764
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_02": {
+  "text": "United 1054, cross runway eight right at Echo three.",
+  "asr_s": 0.455,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9747
+   },
+   {
+    "w": "1054,",
+    "p": 0.6015
+   },
+   {
+    "w": "cross",
+    "p": 0.9769
+   },
+   {
+    "w": "runway",
+    "p": 0.9975
+   },
+   {
+    "w": "eight",
+    "p": 0.9896
+   },
+   {
+    "w": "right",
+    "p": 0.8072
+   },
+   {
+    "w": "at",
+    "p": 0.9314
+   },
+   {
+    "w": "Echo",
+    "p": 0.8008
+   },
+   {
+    "w": "three.",
+    "p": 0.647
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Crossing runway eight right at Echo three, United 1054.",
+  "asr_s": 0.433,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.8273
+   },
+   {
+    "w": "runway",
+    "p": 0.9699
+   },
+   {
+    "w": "eight",
+    "p": 0.9927
+   },
+   {
+    "w": "right",
+    "p": 0.9744
+   },
+   {
+    "w": "at",
+    "p": 0.9742
+   },
+   {
+    "w": "Echo",
+    "p": 0.8519
+   },
+   {
+    "w": "three,",
+    "p": 0.6334
+   },
+   {
+    "w": "United",
+    "p": 0.9332
+   },
+   {
+    "w": "1054.",
+    "p": 0.5709
+   }
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_00": {
+  "text": "Twin Cessna six six four eight, Juliet. Runway two six right, cleared to land, wind comp.",
+  "asr_s": 0.248
+ },
+ "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_01": {
+  "text": "Runway two six right, cleared to land, twin Cessna 6648 GPS.",
+  "asr_s": 0.221
+ },
+ "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_02": {
+  "text": "Spirit niner six two four, proceed via Delta, cross runway two six right.",
+  "asr_s": 0.205
+ },
+ "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_03": {
+  "text": "Cross runway two six right at Delta Spirit nine and six to four.",
+  "asr_s": 0.194
+ }
+}

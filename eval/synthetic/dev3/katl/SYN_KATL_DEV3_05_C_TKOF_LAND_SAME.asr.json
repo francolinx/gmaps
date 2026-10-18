@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV3_05_C_TKOF_LAND_SAME_00": {
+  "text": "Delta 266, runway niner right, wind 320 at 7, cleared for takeoff.",
+  "asr_s": 0.223
+ },
+ "SYN_KATL_DEV3_05_C_TKOF_LAND_SAME_01": {
+  "text": "Cleared for takeoff, Niner right, Delta 266.",
+  "asr_s": 0.197
+ },
+ "SYN_KATL_DEV3_05_C_TKOF_LAND_SAME_02": {
+  "text": "November 2576 Mike, runway Niner right, wind 040 at 11, cleared to land.",
+  "asr_s": 0.239
+ },
+ "SYN_KATL_DEV3_05_C_TKOF_LAND_SAME_03": {
+  "text": "Clear to land Niner right. November 2, 5, 7, 6, Mike.",
+  "asr_s": 0.221
+ }
+}

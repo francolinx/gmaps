@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31013_11_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "basis": "section 8: pilot's 'clear of the runway' releases the landing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31013,
+ "context": {
+  "runway": "13-31",
+  "taxiway": "Z",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Delta three hundred, wind zero six zero at four gusts one five, runway three one, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31013_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Delta three hundred, roger, cleared to land runway three one.",
+   "id": "SYN_KLGA_TRAINFT_S31013_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "Delta three hundred, clear runway three one at Tango.",
+   "id": "SYN_KLGA_TRAINFT_S31013_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Delta four seventeen, follow the Airbus three twenty, cross runway three one at Zulu.",
+   "id": "SYN_KLGA_TRAINFT_S31013_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Crossing runway three one at Zulu, Delta four seventeen.",
+   "id": "SYN_KLGA_TRAINFT_S31013_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "speaker_ref": "b"
+  }
+ ]
+}

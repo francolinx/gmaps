@@ -1,0 +1,4989 @@
+{
+ "summary": {
+  "input": "gym/environments/gmaps_parser/data/heldout4_asr_prompt.jsonl",
+  "policy": "endpoint",
+  "model": "base",
+  "n": 138,
+  "record_exact": 0.304,
+  "field_exact": {
+   "speaker_role": 0.536,
+   "callsign": 0.71,
+   "runway": 0.913,
+   "instruction": 0.978,
+   "taxiways": 0.783
+  },
+  "json_valid": 1.0,
+  "groundable": 0.696,
+  "record_exact_and_groundable": 0.304,
+  "errors": 0,
+  "latency_s": {
+   "median": 1.542,
+   "p95": 1.631
+  },
+  "wall_s": 212.5,
+  "SIMULATED": true,
+  "note": "same verifier as the NeMo Gym resources server; gold taxiway rule per the task file (gold_rule)"
+ },
+ "rows": [
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "WN9303",
+    "runway": "04",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N9303H",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"WN9303\",\"runway\":\"04\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.508,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TC90303",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N9303H",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TC90303\",\"runway\":\"4\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.522,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "JBU1400",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "JBU1400",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": [
+     "C"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"JBU1400\",\"runway\":\"4\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.451,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "JBU1400",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": [
+     "C"
+    ]
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "JBU1400",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": [
+     "C"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"JBU1400\",\"runway\":\"4\",\"instruction\":\"CROSS\",\"taxiways\":[\"C\"]}",
+   "latency_s": 1.492,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "N1558",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "EDV1558",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"N1558\",\"runway\":\"22\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.535,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "EDV1558",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "EDV1558",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"EDV1558\",\"runway\":\"22\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.574,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: taxiway not on the chart",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL2152",
+    "runway": "22",
+    "instruction": "CROSS",
+    "taxiways": [
+     "QUEBEC"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "DAL2152",
+    "runway": "22",
+    "instruction": "CROSS",
+    "taxiways": [
+     "Q"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL2152\",\"runway\":\"22\",\"instruction\":\"CROSS\",\"taxiways\":[\"QUEBEC\"]}",
+   "latency_s": 1.576,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL2152",
+    "runway": "22",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "DAL2152",
+    "runway": "22",
+    "instruction": "CROSS",
+    "taxiways": [
+     "Q"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL2152\",\"runway\":\"22\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.491,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS7508",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "NKS7508",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS7508\",\"runway\":\"4\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.578,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "7508",
+    "runway": null,
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS7508",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"7508\",\"runway\":null,\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.488,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL1800",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "DAL1800",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": [
+     "U"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL1800\",\"runway\":\"4\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.409,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL1800",
+    "runway": "04",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "DAL1800",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": [
+     "U"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL1800\",\"runway\":\"04\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.448,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TIR2700",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2700",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TIR2700\",\"runway\":\"4\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.449,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2700",
+    "runway": "04",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT2700",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT2700\",\"runway\":\"04\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.447,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT4399",
+    "runway": "04",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "FFT4399",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT4399\",\"runway\":\"04\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.54,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT43909",
+    "runway": "04",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT4399",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT43909\",\"runway\":\"04\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.576,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "SWA2600",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "C"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "SWA2600",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "C"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"SWA2600\",\"runway\":\"4\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[\"C\"]}",
+   "latency_s": 1.62,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: taxiway not on the chart",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "null",
+    "runway": null,
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "2600"
+    ]
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA2600",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"null\",\"runway\":null,\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[\"2600\"]}",
+   "latency_s": 1.533,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TWN7715",
+    "runway": "04",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N7715J",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TWN7715\",\"runway\":\"04\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.579,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TC7715",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N7715J",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TC7715\",\"runway\":\"4\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.496,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS4995",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "NKS4995",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS4995\",\"runway\":\"22\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.626,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS4",
+    "runway": null,
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS4995",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS4\",\"runway\":null,\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.45,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2302",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2302",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"EDV2302\",\"runway\":\"31\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.58,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2302",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "EDV2302",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"EDV2302\",\"runway\":\"31\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.578,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2355",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2355",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2355\",\"runway\":\"22\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.533,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2355",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL2355",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2355\",\"runway\":\"22\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.536,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS1400",
+    "runway": "22",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "NKS1400",
+    "runway": "22",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS1400\",\"runway\":\"22\",\"instruction\":\"HOLD_SHORT\",\"taxiways\":[]}",
+   "latency_s": 1.534,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "no actionable content",
+   "predicted": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS1400",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS1400",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"PILOT\",\"callsign\":\"NKS1400\",\"runway\":null,\"instruction\":\"OTHER\",\"taxiways\":[]}",
+   "latency_s": 1.407,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_04",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 0.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: no 'HOLD_SHORT' words in the text",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS1400",
+    "runway": null,
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "NKS1400",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS1400\",\"runway\":null,\"instruction\":\"HOLD_SHORT\",\"taxiways\":[]}",
+   "latency_s": 1.489,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_05",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS1400",
+    "runway": "22",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS1400",
+    "runway": "22",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS1400\",\"runway\":\"22\",\"instruction\":\"HOLD_SHORT\",\"taxiways\":[]}",
+   "latency_s": 1.536,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT1700",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "FFT1700",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT1700\",\"runway\":\"31\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.534,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT1700",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT1700",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT1700\",\"runway\":\"31\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.536,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS1169",
+    "runway": "22",
+    "instruction": "CROSS",
+    "taxiways": [
+     "F"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "NKS1169",
+    "runway": "22",
+    "instruction": "CROSS",
+    "taxiways": [
+     "F"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS1169\",\"runway\":\"22\",\"instruction\":\"CROSS\",\"taxiways\":[\"F\"]}",
+   "latency_s": 1.531,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: no 'CROSS' words in the text",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FOT1169",
+    "runway": "22",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS1169",
+    "runway": "22",
+    "instruction": "CROSS",
+    "taxiways": [
+     "F"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FOT1169\",\"runway\":\"22\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.494,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "AAL2233",
+    "runway": "04",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "AAL2233",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"AAL2233\",\"runway\":\"04\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.578,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "ONW4",
+    "runway": null,
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "AAL2233",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"ONW4\",\"runway\":null,\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.409,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL6217",
+    "runway": "4",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "DAL6217",
+    "runway": "4",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL6217\",\"runway\":\"4\",\"instruction\":\"HOLD_SHORT\",\"taxiways\":[]}",
+   "latency_s": 1.449,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL6217",
+    "runway": "4",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "DAL6217",
+    "runway": "4",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL6217\",\"runway\":\"4\",\"instruction\":\"HOLD_SHORT\",\"taxiways\":[]}",
+   "latency_s": 1.452,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2200",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2200",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2200\",\"runway\":\"31\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.531,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2200",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL2200",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2200\",\"runway\":\"31\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.541,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2200",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": [
+     "C",
+     "C"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2200",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": [
+     "CC"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2200\",\"runway\":null,\"instruction\":\"TAXI\",\"taxiways\":[\"C\",\"C\"]}",
+   "latency_s": 1.582,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2200",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": [
+     "C",
+     "C"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2200",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": [
+     "CC"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2200\",\"runway\":null,\"instruction\":\"TAXI\",\"taxiways\":[\"C\",\"C\"]}",
+   "latency_s": 1.582,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_04",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TWN4321",
+    "runway": "31",
+    "instruction": "CROSS",
+    "taxiways": [
+     "Z"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N4321S",
+    "runway": "31",
+    "instruction": "CROSS",
+    "taxiways": [
+     "Z"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TWN4321\",\"runway\":\"31\",\"instruction\":\"CROSS\",\"taxiways\":[\"Z\"]}",
+   "latency_s": 1.541,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_05",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "Cessna4321Sierra",
+    "runway": "31",
+    "instruction": "CROSS",
+    "taxiways": [
+     "Z"
+    ]
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N4321S",
+    "runway": "31",
+    "instruction": "CROSS",
+    "taxiways": [
+     "Z"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"Cessna4321Sierra\",\"runway\":\"31\",\"instruction\":\"CROSS\",\"taxiways\":[\"Z\"]}",
+   "latency_s": 1.663,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TWC1128",
+    "runway": "04",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N1128N",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TWC1128\",\"runway\":\"04\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.583,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TCN1128",
+    "runway": "04",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N1128N",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TCN1128\",\"runway\":\"04\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.579,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "WIN1128",
+    "runway": null,
+    "instruction": "CROSSING_COMPLETE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N1128N",
+    "runway": "4",
+    "instruction": "CROSSING_COMPLETE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"WIN1128\",\"runway\":null,\"instruction\":\"CROSSING_COMPLETE\",\"taxiways\":[]}",
+   "latency_s": 1.493,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: taxiway not on the chart",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "Twin Cessna 2656",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": [
+     "Papa"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N2656U",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": [
+     "P"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"Twin Cessna 2656\",\"runway\":\"4\",\"instruction\":\"CROSS\",\"taxiways\":[\"Papa\"]}",
+   "latency_s": 1.71,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "Cessna2656",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N2656U",
+    "runway": "4",
+    "instruction": "CROSS",
+    "taxiways": [
+     "P"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"Cessna2656\",\"runway\":\"4\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.495,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "SWA1262",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "SWA1262",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"SWA1262\",\"runway\":\"31\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.58,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "SWA1262",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA1262",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"SWA1262\",\"runway\":\"31\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.58,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "SWA1262",
+    "runway": null,
+    "instruction": "GO_AROUND",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "SWA1262",
+    "runway": null,
+    "instruction": "GO_AROUND",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"SWA1262\",\"runway\":null,\"instruction\":\"GO_AROUND\",\"taxiways\":[]}",
+   "latency_s": 1.496,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "SWA1262",
+    "runway": null,
+    "instruction": "GO_AROUND",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA1262",
+    "runway": null,
+    "instruction": "GO_AROUND",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"SWA1262\",\"runway\":null,\"instruction\":\"GO_AROUND\",\"taxiways\":[]}",
+   "latency_s": 1.492,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_04",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "N9049",
+    "runway": "31",
+    "instruction": "CROSS",
+    "taxiways": [
+     "W"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "AAL9049",
+    "runway": "31",
+    "instruction": "CROSS",
+    "taxiways": [
+     "W"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"N9049\",\"runway\":\"31\",\"instruction\":\"CROSS\",\"taxiways\":[\"W\"]}",
+   "latency_s": 1.499,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_05",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "AAL9049",
+    "runway": "31",
+    "instruction": "CROSS",
+    "taxiways": [
+     "W"
+    ]
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "AAL9049",
+    "runway": "31",
+    "instruction": "CROSS",
+    "taxiways": [
+     "W"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"AAL9049\",\"runway\":\"31\",\"instruction\":\"CROSS\",\"taxiways\":[\"W\"]}",
+   "latency_s": 1.537,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: taxiway not on the chart",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1736",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": [
+     "Papa"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1736",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": [
+     "P"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL1736\",\"runway\":\"4\",\"instruction\":\"LUAW\",\"taxiways\":[\"Papa\"]}",
+   "latency_s": 1.497,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1736",
+    "runway": "04",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL1736",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL1736\",\"runway\":\"04\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.45,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1736",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1736",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "P"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL1736\",\"runway\":\"4\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.538,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1736",
+    "runway": "04",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL1736",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL1736\",\"runway\":\"04\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.577,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "AAL1195",
+    "runway": "04",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "AAL1195",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"AAL1195\",\"runway\":\"04\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.502,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "AAL1195",
+    "runway": "04",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "AAL1195",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"AAL1195\",\"runway\":\"04\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.492,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_02",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "no actionable content",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2816",
+    "runway": "04",
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2816",
+    "runway": "4",
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT2816\",\"runway\":\"04\",\"instruction\":\"OTHER\",\"taxiways\":[]}",
+   "latency_s": 1.411,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_03",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "no actionable content",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2816",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT2816",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT2816\",\"runway\":null,\"instruction\":\"OTHER\",\"taxiways\":[]}",
+   "latency_s": 1.366,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_04",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "AAL1195",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "AAL1195",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "F"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"AAL1195\",\"runway\":\"4\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.581,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_05",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "AAL1195",
+    "runway": "04",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "AAL1195",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"AAL1195\",\"runway\":\"04\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.62,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_15_RB_WRONG_RUNWAY_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "SWA1200",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "SWA1200",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"SWA1200\",\"runway\":\"22\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.584,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_15_RB_WRONG_RUNWAY_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "SWA1200",
+    "runway": "13",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA1200",
+    "runway": "13",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"SWA1200\",\"runway\":\"13\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.579,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY_00",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2800",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2800",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"EDV2800\",\"runway\":\"22\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.585,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY_01",
+   "airport": "KLGA",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2800",
+    "runway": null,
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "EDV2800",
+    "runway": null,
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"EDV2800\",\"runway\":null,\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.539,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TWN6648",
+    "runway": "26R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N6648J",
+    "runway": "26R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TWN6648\",\"runway\":\"26R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.627,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TC6648",
+    "runway": "26R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N6648J",
+    "runway": "26R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TC6648\",\"runway\":\"26R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.557,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: taxiway not on the chart",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS9624",
+    "runway": null,
+    "instruction": "CROSS",
+    "taxiways": [
+     "Delta"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "NKS9624",
+    "runway": "26R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "D"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS9624\",\"runway\":null,\"instruction\":\"CROSS\",\"taxiways\":[\"Delta\"]}",
+   "latency_s": 1.501,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAS96",
+    "runway": "26R",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS9624",
+    "runway": "26R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "D"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAS96\",\"runway\":\"26R\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.457,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL4872",
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL4872",
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL4872\",\"runway\":\"9L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.542,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL4872",
+    "runway": "09L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL4872",
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL4872\",\"runway\":\"09L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.591,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL",
+    "runway": "9L",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2411",
+    "runway": "9L",
+    "instruction": "CROSS",
+    "taxiways": [
+     "D"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL\",\"runway\":\"9L\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.33,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL2411",
+    "runway": "09L",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT2411",
+    "runway": "9L",
+    "instruction": "CROSS",
+    "taxiways": [
+     "D"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL2411\",\"runway\":\"09L\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.545,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1321",
+    "runway": "26R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1321",
+    "runway": "26R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL1321\",\"runway\":\"26R\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.629,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1321",
+    "runway": "26R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL1321",
+    "runway": "26R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL1321\",\"runway\":\"26R\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.632,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2312",
+    "runway": "26R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "B1"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2312",
+    "runway": "26R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "B1"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2312\",\"runway\":\"26R\",\"instruction\":\"CROSS\",\"taxiways\":[\"B1\"]}",
+   "latency_s": 1.586,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2312",
+    "runway": "26R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "B1"
+    ]
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL2312",
+    "runway": "26R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "B1"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2312\",\"runway\":\"26R\",\"instruction\":\"CROSS\",\"taxiways\":[\"B1\"]}",
+   "latency_s": 1.584,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS2400",
+    "runway": "27R",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "NKS2400",
+    "runway": "27R",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS2400\",\"runway\":\"27R\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.545,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS2400",
+    "runway": "27R",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS2400",
+    "runway": "27R",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS2400\",\"runway\":\"27R\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.54,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "SWA2163",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "SWA2163",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"SWA2163\",\"runway\":\"27R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.633,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "SWA2163",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA2163",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"SWA2163\",\"runway\":\"27R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.632,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL5678",
+    "runway": "9R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL5678",
+    "runway": "9R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL5678\",\"runway\":\"9R\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.586,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL5678",
+    "runway": "09R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL5678",
+    "runway": "9R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL5678\",\"runway\":\"09R\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.629,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "N9623",
+    "runway": "9R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N9623D",
+    "runway": "9R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"N9623\",\"runway\":\"9R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.546,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TC9623",
+    "runway": "9R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N9623D",
+    "runway": "9R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TC9623\",\"runway\":\"9R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.547,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL1976",
+    "runway": "26L",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "DAL1976",
+    "runway": "26L",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "D"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL1976\",\"runway\":\"26L\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.63,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: taxiway not on the chart",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL1976",
+    "runway": null,
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "6L"
+    ]
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "DAL1976",
+    "runway": "26L",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL1976\",\"runway\":null,\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[\"6L\"]}",
+   "latency_s": 1.628,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL6414",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL6414",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL6414\",\"runway\":\"26L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.587,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL6414",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL6414",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL6414\",\"runway\":\"26L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.587,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL6731",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "DAL6731",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL6731\",\"runway\":\"8R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.545,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL6731",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "DAL6731",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL6731\",\"runway\":\"8R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.542,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2400",
+    "runway": "8R",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2400",
+    "runway": "8R",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2400\",\"runway\":\"8R\",\"instruction\":\"HOLD_SHORT\",\"taxiways\":[]}",
+   "latency_s": 1.503,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "no actionable content",
+   "predicted": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL2400",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL2400",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"PILOT\",\"callsign\":\"UAL2400\",\"runway\":null,\"instruction\":\"OTHER\",\"taxiways\":[]}",
+   "latency_s": 1.367,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_04",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "no actionable content",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2400",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2400",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2400\",\"runway\":null,\"instruction\":\"OTHER\",\"taxiways\":[]}",
+   "latency_s": 1.373,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_05",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2400",
+    "runway": "8R",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL2400",
+    "runway": "8R",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2400\",\"runway\":\"8R\",\"instruction\":\"HOLD_SHORT\",\"taxiways\":[]}",
+   "latency_s": 1.502,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2100",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2100",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT2100\",\"runway\":\"26L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.589,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2100",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT2100",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT2100\",\"runway\":\"26L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.584,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TWC2665Z",
+    "runway": "9L",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N2665Z",
+    "runway": "9L",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TWC2665Z\",\"runway\":\"9L\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.593,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 0.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: no 'TAXI' words in the text",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TSL26652",
+    "runway": "9L",
+    "instruction": "TAXI",
+    "taxiways": [
+     "A5"
+    ]
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N2665Z",
+    "runway": "9L",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TSL26652\",\"runway\":\"9L\",\"instruction\":\"TAXI\",\"taxiways\":[\"A5\"]}",
+   "latency_s": 1.671,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "WIN4069",
+    "runway": "8L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N4069Z",
+    "runway": "8L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"WIN4069\",\"runway\":\"8L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.584,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TC406902",
+    "runway": "8L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N4069Z",
+    "runway": "8L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TC406902\",\"runway\":\"8L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.631,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 0.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "QST4087",
+    "runway": "8L",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N4087R",
+    "runway": "8L",
+    "instruction": "TAXI",
+    "taxiways": [
+     "C"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"QST4087\",\"runway\":\"8L\",\"instruction\":\"HOLD_SHORT\",\"taxiways\":[]}",
+   "latency_s": 1.543,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TCZ087R",
+    "runway": "8L",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N4087R",
+    "runway": "8L",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TCZ087R\",\"runway\":\"8L\",\"instruction\":\"HOLD_SHORT\",\"taxiways\":[]}",
+   "latency_s": 1.541,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2444",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2444",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT2444\",\"runway\":\"8R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.541,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TIR2444",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT2444",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TIR2444\",\"runway\":\"8R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.585,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2444",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": [
+     "A5"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2444",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": [
+     "A5"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT2444\",\"runway\":null,\"instruction\":\"TAXI\",\"taxiways\":[\"A5\"]}",
+   "latency_s": 1.542,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2444",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": [
+     "A5"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "FFT2444",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": [
+     "A5"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT2444\",\"runway\":null,\"instruction\":\"TAXI\",\"taxiways\":[\"A5\"]}",
+   "latency_s": 1.54,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_04",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: taxiway not on the chart",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "EXP1135",
+    "runway": "8R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "ECHO3"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "NKS1135",
+    "runway": "8R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "E3"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"EXP1135\",\"runway\":\"8R\",\"instruction\":\"CROSS\",\"taxiways\":[\"ECHO3\"]}",
+   "latency_s": 1.588,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_05",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "NKS1135",
+    "runway": "8R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "E"
+    ]
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS1135",
+    "runway": "8R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "E3"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"NKS1135\",\"runway\":\"8R\",\"instruction\":\"CROSS\",\"taxiways\":[\"E\"]}",
+   "latency_s": 1.545,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TWN2523",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "N2523R",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TWN2523\",\"runway\":\"26L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.628,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "TC2523",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N2523R",
+    "runway": "26L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"TC2523\",\"runway\":\"26L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.585,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: callsign",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "Cessna2523",
+    "runway": null,
+    "instruction": "CROSSING_COMPLETE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "N2523R",
+    "runway": "26L",
+    "instruction": "CROSSING_COMPLETE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"Cessna2523\",\"runway\":null,\"instruction\":\"CROSSING_COMPLETE\",\"taxiways\":[]}",
+   "latency_s": 1.588,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: taxiway not on the chart",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1100",
+    "runway": null,
+    "instruction": "CROSS",
+    "taxiways": [
+     "ECHO ONE"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1100",
+    "runway": "26L",
+    "instruction": "CROSS",
+    "taxiways": [
+     "E1"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL1100\",\"runway\":null,\"instruction\":\"CROSS\",\"taxiways\":[\"ECHO ONE\"]}",
+   "latency_s": 1.546,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL1100",
+    "runway": "26L",
+    "instruction": "CROSS",
+    "taxiways": [
+     "E1"
+    ]
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL1100",
+    "runway": "26L",
+    "instruction": "CROSS",
+    "taxiways": [
+     "E1"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL1100\",\"runway\":\"26L\",\"instruction\":\"CROSS\",\"taxiways\":[\"E1\"]}",
+   "latency_s": 1.588,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL8805",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL8805",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL8805\",\"runway\":\"27R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.583,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL8805",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL8805",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL8805\",\"runway\":\"27R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.585,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL8805",
+    "runway": null,
+    "instruction": "GO_AROUND",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL8805",
+    "runway": null,
+    "instruction": "GO_AROUND",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL8805\",\"runway\":null,\"instruction\":\"GO_AROUND\",\"taxiways\":[]}",
+   "latency_s": 1.457,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL8805",
+    "runway": null,
+    "instruction": "GO_AROUND",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL8805",
+    "runway": null,
+    "instruction": "GO_AROUND",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"PILOT\",\"callsign\":\"UAL8805\",\"runway\":null,\"instruction\":\"GO_AROUND\",\"taxiways\":[]}",
+   "latency_s": 1.459,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_04",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: taxiway not on the chart",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL3303",
+    "runway": null,
+    "instruction": "CROSS",
+    "taxiways": [
+     "Delta"
+    ]
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "DAL3303",
+    "runway": "27R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "D"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL3303\",\"runway\":null,\"instruction\":\"CROSS\",\"taxiways\":[\"Delta\"]}",
+   "latency_s": 1.46,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_05",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "schema: runway not on the chart",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL3303",
+    "runway": "27",
+    "instruction": "CROSS",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "DAL3303",
+    "runway": "27R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "D"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL3303\",\"runway\":\"27\",\"instruction\":\"CROSS\",\"taxiways\":[]}",
+   "latency_s": 1.458,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2900",
+    "runway": "9R",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2900",
+    "runway": "9R",
+    "instruction": "LUAW",
+    "taxiways": [
+     "N2"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"EDV2900\",\"runway\":\"9R\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.507,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2900",
+    "runway": "9R",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "EDV2900",
+    "runway": "9R",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"EDV2900\",\"runway\":\"9R\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.502,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2900",
+    "runway": "9R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2900",
+    "runway": "9R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"EDV2900\",\"runway\":\"9R\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.634,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 0.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 0.0
+   },
+   "json_valid": 1.0,
+   "groundable": 0.0,
+   "grounding_reason": "grounding: airline not heard and not resolved by the traffic list",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "EDV2900",
+    "runway": null,
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "EDV2900",
+    "runway": "9R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"EDV2900\",\"runway\":null,\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.589,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "AAL2000",
+    "runway": "8R",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "AAL2000",
+    "runway": "8R",
+    "instruction": "LUAW",
+    "taxiways": [
+     "H"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"AAL2000\",\"runway\":\"8R\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.504,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "AAL200",
+    "runway": "8R",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "AAL2000",
+    "runway": "8R",
+    "instruction": "LUAW",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"AAL200\",\"runway\":\"8R\",\"instruction\":\"LUAW\",\"taxiways\":[]}",
+   "latency_s": 1.459,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_02",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "no actionable content",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "FFT1600",
+    "runway": "8R",
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "FFT1600",
+    "runway": "8R",
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"FFT1600\",\"runway\":\"8R\",\"instruction\":\"OTHER\",\"taxiways\":[]}",
+   "latency_s": 1.419,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_03",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "no actionable content",
+   "predicted": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT1600",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT1600",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"PILOT\",\"callsign\":\"FFT1600\",\"runway\":null,\"instruction\":\"OTHER\",\"taxiways\":[]}",
+   "latency_s": 1.373,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_04",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 0.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "AAL2000",
+    "runway": "8R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "AAL2000",
+    "runway": "8R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "H"
+    ]
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"AAL2000\",\"runway\":\"8R\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.631,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_05",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "AAL2000",
+    "runway": "8R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "AAL2000",
+    "runway": "8R",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"AAL2000\",\"runway\":\"8R\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.631,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_15_RB_WRONG_RUNWAY_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL2523",
+    "runway": "27L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "DAL2523",
+    "runway": "27L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL2523\",\"runway\":\"27L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.587,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_15_RB_WRONG_RUNWAY_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 0.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "DAL2522",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "DAL2523",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"DAL2522\",\"runway\":\"8R\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.55,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY_00",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 1.0,
+   "components": {
+    "speaker_role": 1.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2163",
+    "runway": "27L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2163",
+    "runway": "27L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2163\",\"runway\":\"27L\",\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.589,
+   "error": null
+  },
+  {
+   "src_id": "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY_01",
+   "airport": "KATL",
+   "text_source": "asr_prompt",
+   "reward": 0.0,
+   "components": {
+    "speaker_role": 0.0,
+    "callsign": 1.0,
+    "runway": 1.0,
+    "instruction": 1.0,
+    "taxiways": 1.0,
+    "json_valid": 1.0,
+    "groundable": 1.0
+   },
+   "json_valid": 1.0,
+   "groundable": 1.0,
+   "grounding_reason": "valid",
+   "predicted": {
+    "speaker_role": "ATC",
+    "callsign": "UAL2163",
+    "runway": null,
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "gold": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL2163",
+    "runway": null,
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   },
+   "output_text": "{\"speaker_role\":\"ATC\",\"callsign\":\"UAL2163\",\"runway\":null,\"instruction\":\"LANDING_CLEARANCE\",\"taxiways\":[]}",
+   "latency_s": 1.506,
+   "error": null
+  }
+ ]
+}

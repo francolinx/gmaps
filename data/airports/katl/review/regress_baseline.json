@@ -1,0 +1,62 @@
+{
+ "icao": "KATL",
+ "recorded_at": "2026-10-09T13:20:11-0400",
+ "commit": "85b8b2e",
+ "metrics": {
+  "objects": {
+   "arrowhead": 49,
+   "building": 26,
+   "frame": 1,
+   "glyph": 2261,
+   "graticule_label": 29,
+   "graticule_line": 27,
+   "hold_line_candidate": 17,
+   "hot_spot": 12,
+   "label_background": 2,
+   "lahso_point": 4,
+   "linework": 396,
+   "pavement": 463,
+   "runway": 5,
+   "runway_centerline_extension": 74,
+   "runway_marking": 7,
+   "symbol": 64
+  },
+  "labels": {
+   "annotation": 25,
+   "dimension": 5,
+   "heading": 10,
+   "hot_spot_label": 2,
+   "note": 142,
+   "runway_end": 10,
+   "taxiway_candidate": 170
+  },
+  "overlay": {
+   "covered_pct": 99.818,
+   "extra_pct": 0.238
+  },
+  "georef_m": {
+   "08L": 6.76,
+   "08R": 0.13,
+   "09L": 3.31,
+   "09R": 5.18,
+   "10": 17.75,
+   "26L": 8.87,
+   "26R": 2.92,
+   "27L": 0.69,
+   "27R": 9.87,
+   "28": 18.23
+  },
+  "hold_lines": 9,
+  "statuses": {
+   "overlay_ink": "pass",
+   "runway_ends": "pass",
+   "runway_identifiers": "pass",
+   "taxiway_names": "pass",
+   "hot_spots": "pass",
+   "ils_hold_lines": "pass",
+   "unclassified": "pass",
+   "cycle_current": "pass",
+   "lahso_points": "pass"
+  }
+ }
+}

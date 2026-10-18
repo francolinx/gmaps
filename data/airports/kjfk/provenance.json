@@ -1,0 +1,67 @@
+{
+ "icao": "KJFK",
+ "generated_at": "2026-10-09T12:04:53-0400",
+ "chart": {
+  "publisher": "FAA Aeronautical Information Services, d-TPP airport diagram",
+  "title": "FAA John F Kennedy Intl airport diagram, cycle 2610, 00610AD.PDF",
+  "chart_code": "AL-610 (FAA)",
+  "cycle": "2610",
+  "effective_from": "2026-10-01",
+  "effective_to": "2026-10-29",
+  "printed_cycle_banner": "NE-2, 01 OCT 2026 to 29 OCT 2026",
+  "banner_checked_against_pdf": true,
+  "url": "https://aeronav.faa.gov/d-tpp/2610/00610AD.PDF",
+  "local_path": "data/airports/sources/jfk_faa_2610_00610AD.pdf",
+  "sha256": "332ea819838b60066ad7308aab9c1bdf93fc8550617c535ac2644e184583793d",
+  "retrieved_on": "2026-10-09",
+  "licence": "US Government work (public domain)",
+  "note": "Not for navigation."
+ },
+ "nasr": {
+  "source": "FAA NASR 28-day subscription, CSV extract",
+  "cycle_effective": "2026-10-01",
+  "url": "https://nfdc.faa.gov/webContent/28DaySub/extra/01_Oct_2026_APT_CSV.zip",
+  "zip_sha256": "aba48ea877f249d9b8cd63988b14b3432a6a09ad1fbe9561a5e6443c99c03dd0",
+  "retrieved_at": "2026-10-08T23:42:24-0400",
+  "licence": "US Government work (public domain)"
+ },
+ "graticule": {
+  "values": [
+   "40°39'N",
+   "40°38'N",
+   "73°49'W",
+   "73°48'W",
+   "73°47'W",
+   "73°46'W",
+   "73°45'W"
+  ],
+  "source": "outline_glyph_decode",
+  "confirmed_by": null,
+  "confirmed_at": null,
+  "read_at": "2026-10-09T12:04:51-0400"
+ },
+ "osm": {
+  "source": "OpenStreetMap via Overpass API",
+  "licence": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "requested_at": "2026-10-09T03:42:42Z",
+  "osm_data_timestamp": "2026-10-09T03:41:18Z",
+  "raw_sha256": "04fac4c7e2b18d564770f1b4ce833ec0c0c1b14c3c2308f191f701e57aa63f55",
+  "folder": "osm/"
+ },
+ "tools": {
+  "extract": "pdfminer.six 20260107",
+  "styles": "tools/airport_map/styles/faa_apd.json"
+ },
+ "display": {
+  "footer": "Reconstructed from FAA airport diagram AL-610 (FAA), d-TPP cycle 2610 (effective 2026-10-01 to 2026-10-29), sha256 332ea819838b…, https://aeronav.faa.gov/d-tpp/2610/00610AD.PDF. Graticule: decoded from outlines (checked against NASR runway ends). Display only. Not for navigation. No predictions.",
+  "must_show": [
+   "chart.cycle",
+   "chart.effective_from",
+   "chart.effective_to",
+   "chart.sha256",
+   "chart.url"
+  ]
+ }
+}

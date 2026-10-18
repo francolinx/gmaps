@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31008_01_C_LAND_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_LAND_CROSS",
+ "basis": "R1 crossing vs active landing (3-7-2g2)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31008,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "S",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor sixteen seventy four, runway niner left, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31008_01_C_LAND_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Endeavor sixteen seventy four, roger, cleared to land runway niner left.",
+   "id": "SYN_KATL_TRAINFT_S31008_01_C_LAND_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "November five two four eight November, taxi via Sierra, cross runway niner left.",
+   "id": "SYN_KATL_TRAINFT_S31008_01_C_LAND_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway niner left at Sierra, November five two four eight November.",
+   "id": "SYN_KATL_TRAINFT_S31008_01_C_LAND_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

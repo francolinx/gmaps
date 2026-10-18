@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_DEV4_12_N_GO_AROUND_THEN_CROSS_00": {
+  "text": "Delta 393, runway two seven left, wind zero three zero at one two gusts two one, cleared to land.",
+  "asr_s": 0.256
+ },
+ "SYN_KATL_DEV4_12_N_GO_AROUND_THEN_CROSS_01": {
+  "text": "Cleared to land two seven left, Delta 393.",
+  "asr_s": 0.184
+ },
+ "SYN_KATL_DEV4_12_N_GO_AROUND_THEN_CROSS_02": {
+  "text": "Delta 393, go around, climb and maintain 3,000.",
+  "asr_s": 0.189
+ },
+ "SYN_KATL_DEV4_12_N_GO_AROUND_THEN_CROSS_03": {
+  "text": "Going around Delta 393.",
+  "asr_s": 0.151
+ },
+ "SYN_KATL_DEV4_12_N_GO_AROUND_THEN_CROSS_04": {
+  "text": "Frontier 1549, at Papa Cross runway two seven left, without delay.",
+  "asr_s": 0.204
+ },
+ "SYN_KATL_DEV4_12_N_GO_AROUND_THEN_CROSS_05": {
+  "text": "Cross two seven left at Papa, Frontier 1549.",
+  "asr_s": 0.179
+ }
+}

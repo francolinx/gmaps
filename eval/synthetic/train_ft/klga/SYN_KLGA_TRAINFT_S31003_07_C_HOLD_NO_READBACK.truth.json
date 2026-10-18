@@ -1,0 +1,116 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31003_07_C_HOLD_NO_READBACK",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_07_C_HOLD_NO_READBACK_00",
+   "fields": {
+    "callsigns": [
+     "AAL980"
+    ],
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "AAL980",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_07_C_HOLD_NO_READBACK_01",
+   "fields": {
+    "callsigns": [
+     "AAL980"
+    ],
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "AAL980",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_07_C_HOLD_NO_READBACK_02",
+   "fields": {
+    "callsigns": [
+     "DAL619"
+    ],
+    "runway": "4",
+    "instruction": "HOLD_SHORT"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "DAL619",
+    "runway": "4",
+    "instruction": "HOLD_SHORT",
+    "taxiways": [
+     "D"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_07_C_HOLD_NO_READBACK_03",
+   "fields": {
+    "callsigns": [
+     "DAL619"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "DAL619",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": [
+     "D"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_07_C_HOLD_NO_READBACK_04",
+   "fields": {
+    "callsigns": [
+     "DAL619"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "DAL619",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": [
+     "D"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31003_07_C_HOLD_NO_READBACK_05",
+   "fields": {
+    "callsigns": [
+     "DAL619"
+    ],
+    "runway": "4",
+    "instruction": "HOLD_SHORT"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "DAL619",
+    "runway": "4",
+    "instruction": "HOLD_SHORT",
+    "taxiways": [
+     "D"
+    ]
+   }
+  }
+ ]
+}

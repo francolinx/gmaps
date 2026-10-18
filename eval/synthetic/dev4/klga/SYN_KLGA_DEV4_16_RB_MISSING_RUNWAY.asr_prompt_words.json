@@ -1,0 +1,90 @@
+{
+ "SYN_KLGA_DEV4_16_RB_MISSING_RUNWAY_00": {
+  "text": "Southwest 1038, wind 230 at 17 gusts 30, runway one three, cleared to land.",
+  "asr_s": 0.529,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9173
+   },
+   {
+    "w": "1038,",
+    "p": 0.7199
+   },
+   {
+    "w": "wind",
+    "p": 0.8132
+   },
+   {
+    "w": "230",
+    "p": 0.5999
+   },
+   {
+    "w": "at",
+    "p": 0.9604
+   },
+   {
+    "w": "17",
+    "p": 0.6724
+   },
+   {
+    "w": "gusts",
+    "p": 0.8403
+   },
+   {
+    "w": "30,",
+    "p": 0.8714
+   },
+   {
+    "w": "runway",
+    "p": 0.992
+   },
+   {
+    "w": "one",
+    "p": 0.7562
+   },
+   {
+    "w": "three,",
+    "p": 0.8977
+   },
+   {
+    "w": "cleared",
+    "p": 0.9959
+   },
+   {
+    "w": "to",
+    "p": 0.9915
+   },
+   {
+    "w": "land.",
+    "p": 0.9524
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_16_RB_MISSING_RUNWAY_01": {
+  "text": "Southwest 1038 cleared to land.",
+  "asr_s": 0.428,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9317
+   },
+   {
+    "w": "1038",
+    "p": 0.6725
+   },
+   {
+    "w": "cleared",
+    "p": 0.6154
+   },
+   {
+    "w": "to",
+    "p": 0.9466
+   },
+   {
+    "w": "land.",
+    "p": 0.8553
+   }
+  ]
+ }
+}

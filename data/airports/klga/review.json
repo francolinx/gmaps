@@ -1,0 +1,201 @@
+{
+ "icao": "KLGA",
+ "about": "Review checklist for reconstructed DISPLAY geometry (CLAUDE.md: reconstructed display geometry). Script-checked items are updated by tools/airport_map/*; sign-off is Franco's only. Predictions, routing or position inference on this airport stay OFF until every item passes AND signed_off_by is set, and even then they are a separate change.",
+ "faa_cycle": "2610",
+ "effective_from": "2026-10-01",
+ "effective_to": "2026-10-29",
+ "items": [
+  {
+   "id": "overlay_ink",
+   "check": "Reconstruction (original FAA styling) rendered at the same scale as the FAA PDF: FAA ink covered and extra ink, 1 px tolerance at 300 dpi.",
+   "by": "tools/airport_map/overlay_check.py",
+   "thresholds": {
+    "min_covered_pct": 99.0,
+    "max_extra_pct": 2.0
+   },
+   "thresholds_note": "fixed before the first measurement (Oct 8)",
+   "status": "pass",
+   "result": {
+    "covered_pct": 99.771,
+    "extra_pct": 0.296,
+    "checked_at": "2026-10-08T22:45:57-0400",
+    "dpi": 300
+   }
+  },
+  {
+   "id": "runway_ends",
+   "check": "Every NASR runway end within 30 m of the diagram-derived end (display sign-off threshold, Franco D3). Predictions will need a stricter threshold (~10 m), to be set later.",
+   "by": "tools/airport_map/georef.py",
+   "thresholds": {
+    "max_residual_m": 30.0
+   },
+   "status": "pass",
+   "result": {
+    "max_residual_m": 13.68,
+    "per_end_m": {
+     "04": 4.43,
+     "13": 10.4,
+     "22": 7.48,
+     "31": 13.68
+    },
+    "checked_at": "2026-10-08T22:45:55-0400"
+   },
+   "prediction_threshold_note": "13 (10.40 m) and 31 (13.68 m) would FAIL a ~10 m prediction threshold. Display only; see geometry_of_record."
+  },
+  {
+   "id": "runway_identifiers",
+   "check": "Runway count and end identifiers match NASR and the diagram labels exactly.",
+   "by": "tools/airport_map/georef.py",
+   "status": "pass",
+   "result": {
+    "diagram_end_labels": [
+     "04",
+     "13",
+     "22",
+     "31"
+    ],
+    "nasr_ends": [
+     "04",
+     "13",
+     "22",
+     "31"
+    ],
+    "nasr_runways": [
+     "04/22",
+     "13/31",
+     "H1"
+    ],
+    "note": "NASR also lists helipad H1; the diagram labels it H1 (checked separately as a held-out point)",
+    "checked_at": "2026-10-08T22:45:55-0400"
+   }
+  },
+  {
+   "id": "taxiway_names",
+   "check": "Every diagram taxiway label is matched to an OSM ref, or listed and explained.",
+   "by": "tools/airport_map/osm.py",
+   "status": "pass",
+   "result": {
+    "matched": [
+     "A",
+     "AA",
+     "AC",
+     "B",
+     "BB",
+     "C",
+     "CC",
+     "CY",
+     "D",
+     "DD",
+     "E",
+     "F",
+     "G",
+     "GG",
+     "H",
+     "J",
+     "K",
+     "L",
+     "M",
+     "N",
+     "P",
+     "Q",
+     "R",
+     "S",
+     "T",
+     "U",
+     "V",
+     "W",
+     "Y",
+     "YY",
+     "Z"
+    ],
+    "matched_with_exceptions": [],
+    "conflicting": [],
+    "chart_only": [],
+    "osm_only": [],
+    "review_items": 0,
+    "letter_names_ok": true,
+    "gate_leadins": {
+     "chart_only": [
+      14
+     ],
+     "osm_only": [],
+     "status": "resolved_gate_leadin"
+    },
+    "checked_at": "2026-10-08T22:45:57-0400"
+   },
+   "note": "Letter-named taxiways: all matched. Numbers 1-19 are gate lead-ins (Franco, Oct 8), not taxiway names: destination only, never a route element; #14 chart-only. Nothing auto-resolved."
+  },
+  {
+   "id": "hot_spots",
+   "check": "Hot-spot count and IDs match the diagram's HS labels.",
+   "by": "tools/airport_map/extract.py",
+   "status": "pass",
+   "result": {
+    "labels": [
+     "HS 1",
+     "HS 2"
+    ],
+    "label_callouts": 2,
+    "shapes": 2,
+    "checked_at": "2026-10-08T22:45:55-0400"
+   }
+  },
+  {
+   "id": "ils_hold_lines",
+   "check": "Each ILS HOLD annotation has its dashed hold line found (FAA APDs do not draw every hold position).",
+   "by": "tools/airport_map/extract.py",
+   "status": "pass",
+   "result": {
+    "annotations": 3,
+    "hold_lines": 4,
+    "annotations_with_hold_line": 3,
+    "checked_at": "2026-10-08T22:45:55-0400"
+   }
+  },
+  {
+   "id": "unclassified",
+   "check": "No unclassified objects, or each listed one reviewed.",
+   "by": "tools/airport_map/extract.py",
+   "status": "pass",
+   "result": {
+    "unclassified_objects": 0,
+    "unclassified_numbers": [],
+    "checked_at": "2026-10-08T22:45:55-0400"
+   }
+  },
+  {
+   "id": "cycle_current",
+   "check": "Today is on or before the diagram's effective-to date.",
+   "by": "tools/airport_map/cycle_check.py",
+   "status": "pass",
+   "result": {
+    "cycle": "2610",
+    "in_effective_window": true,
+    "days_left": 20.26,
+    "faa_lists_same_pdf": true,
+    "served_pdf_matches_local_sha256": true,
+    "next_cycle": "2611",
+    "next_cycle_apd_changed": false,
+    "warnings": [],
+    "checked_at": "2026-10-08T22:45:57-0400"
+   }
+  }
+ ],
+ "signed_off_by": "Franco",
+ "signed_off_at": "2026-10-08",
+ "geometry_of_record": {
+  "decision": "Chart-derived (reconstructed) geometry is for DISPLAY only. Any future prediction logic must use NASR runway-end coordinates (and the OSM taxiway network after A3, once reviewed) as the geometry of record, never chart-traced positions. Predictions on KLGA stay OFF regardless until this checklist passes and Franco signs off.",
+  "decided_by": "Franco",
+  "decided_at": "2026-10-08",
+  "reason": "Runway ends 13 (10.40 m) and 31 (13.68 m) pass the 30 m display threshold but would fail a ~10 m prediction threshold; the chart offsets/rotates drawn runways by up to ~12 m / 0.32 deg."
+ },
+ "sign_off": {
+  "by": "Franco",
+  "date": "2026-10-08",
+  "scope": "display_only",
+  "predictions_enabled": false,
+  "applies_to_commit": "a53d2363aa9d5fa0c8b9ccadb089d3697ca71583",
+  "statement": "I, Franco, sign off KLGA for DISPLAY ONLY. Predictions stay off.",
+  "recheck_when": "the chart cycle expires (map view shows CHART CYCLE EXPIRED) or any checklist item changes status"
+ }
+}

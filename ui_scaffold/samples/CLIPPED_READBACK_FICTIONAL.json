@@ -1,0 +1,572 @@
+{
+ "scenario": {
+  "id": "CLIPPED_READBACK_FICTIONAL",
+  "title": "The common case (Schneider): pilot's readback is clipped; the hold-short is in the clipped part",
+  "airport": "KLGA",
+  "source_note": "Fictional. Callsigns invented.",
+  "expected_engine_behaviour": [
+   "Instruction parsed with hold_short={runway: 04, at: D}.",
+   "Readback audio is clipped before 'hold short'; parser emits READBACK with confidence 0.41 and hold_short=null.",
+   "Engine: acknowledged state for the hold boundary = UNKNOWN (never 'acknowledged'). Warning: 'hold short runway 4 at Delta not heard in readback (clipped)'.",
+   "Controller re-issues; full readback heard; acknowledged=true. No runway conflict is ever claimed."
+  ]
+ },
+ "timeline": [
+  {
+   "t": 0,
+   "freq": "ground",
+   "text": "Cobalt 41, runway 13, taxi via Alpha, Delta, hold short runway 4.",
+   "event": {
+    "event_id": "ev00001",
+    "airport_icao": "KLGA",
+    "actor_candidates": [
+     "CBT41"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "TAXI",
+    "raw_text": "Cobalt 41, runway 13, taxi via Alpha, Delta, hold short runway 4.",
+    "normalized_text": "RUNWAY 13 , TAXI VIA A , D , HOLD SHORT RUNWAY 4 .",
+    "asr_repairs_applied": [],
+    "source_id": "CLIPPED_READBACK_FICTIONAL#0",
+    "source_start_s": 0,
+    "source_end_s": null,
+    "event_time": 0,
+    "received_time": 0,
+    "runway": "13",
+    "runway_end_candidates": [
+     "KLGA:END:13"
+    ],
+    "route": [
+     "A",
+     "D"
+    ],
+    "route_surface_candidates": [
+     {
+      "word": "A",
+      "candidates": [
+       "KLGA:TWY:A"
+      ]
+     },
+     {
+      "word": "D",
+      "candidates": [
+       "KLGA:TWY:D"
+      ]
+     }
+    ],
+    "hold_constraints": [
+     {
+      "runway": "04"
+     }
+    ],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.9,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null,
+    "route_check": [
+     {
+      "word": "A",
+      "taxiway_id": "KLGA:TWY:A",
+      "status": "no_crossing_data_in_draft_graph",
+      "crossings": []
+     },
+     {
+      "word": "D",
+      "taxiway_id": "KLGA:TWY:D",
+      "status": "crossing_recorded",
+      "crossings": [
+       {
+        "node_id": "KLGA:N:D_RWY04-22",
+        "runway_id": "KLGA:RWY:04-22"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "t": 6,
+   "freq": "ground",
+   "text": "Runway 13, Alpha, Delta, ho\u2014 [clipped]",
+   "event": {
+    "event_id": "ev00002",
+    "airport_icao": "KLGA",
+    "actor_candidates": [],
+    "speaker_role": "PILOT",
+    "speech_act": "readback",
+    "kind": "TAXI",
+    "raw_text": "Runway 13, Alpha, Delta, ho\u2014 [clipped]",
+    "normalized_text": "RUNWAY 13 , A , D , HO",
+    "asr_repairs_applied": [],
+    "source_id": "CLIPPED_READBACK_FICTIONAL#6",
+    "source_start_s": 6,
+    "source_end_s": null,
+    "event_time": 6,
+    "received_time": 6,
+    "runway": "13",
+    "runway_end_candidates": [
+     "KLGA:END:13"
+    ],
+    "route": [
+     "A",
+     "D"
+    ],
+    "route_surface_candidates": [
+     {
+      "word": "A",
+      "candidates": [
+       "KLGA:TWY:A"
+      ]
+     },
+     {
+      "word": "D",
+      "candidates": [
+       "KLGA:TWY:D"
+      ]
+     }
+    ],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": true,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.41,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 9,
+   "freq": "ground",
+   "text": "Cobalt 41, you were clipped, say again, and read back hold short runway 4.",
+   "event": {
+    "event_id": "ev00003",
+    "airport_icao": "KLGA",
+    "actor_candidates": [
+     "CBT41"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "HOLD_SHORT",
+    "raw_text": "Cobalt 41, you were clipped, say again, and read back hold short runway 4.",
+    "normalized_text": "YOU WERE , SAY AGAIN , AND READ BACK HOLD SHORT RUNWAY 4 .",
+    "asr_repairs_applied": [],
+    "source_id": "CLIPPED_READBACK_FICTIONAL#9",
+    "source_start_s": 9,
+    "source_end_s": null,
+    "event_time": 9,
+    "received_time": 9,
+    "runway": null,
+    "runway_end_candidates": [],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [
+     {
+      "runway": "04"
+     }
+    ],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.85,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 13,
+   "freq": "ground",
+   "text": "Alpha, Delta, hold short runway 4, Cobalt 41.",
+   "event": {
+    "event_id": "ev00004",
+    "airport_icao": "KLGA",
+    "actor_candidates": [
+     "CBT41"
+    ],
+    "speaker_role": "PILOT",
+    "speech_act": "readback",
+    "kind": "TAXI",
+    "raw_text": "Alpha, Delta, hold short runway 4, Cobalt 41.",
+    "normalized_text": "A , D , HOLD SHORT RUNWAY 4 , .",
+    "asr_repairs_applied": [],
+    "source_id": "CLIPPED_READBACK_FICTIONAL#13",
+    "source_start_s": 13,
+    "source_end_s": null,
+    "event_time": 13,
+    "received_time": 13,
+    "runway": null,
+    "runway_end_candidates": [],
+    "route": [
+     "A",
+     "D"
+    ],
+    "route_surface_candidates": [
+     {
+      "word": "A",
+      "candidates": [
+       "KLGA:TWY:A"
+      ]
+     },
+     {
+      "word": "D",
+      "candidates": [
+       "KLGA:TWY:D"
+      ]
+     }
+    ],
+    "hold_constraints": [
+     {
+      "runway": "04"
+     }
+    ],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.93,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  }
+ ],
+ "airport": {
+  "icao": "KLGA",
+  "dataset_version": "2026-10-03.draft2",
+  "status": "draft, expert review pending; topology review only"
+ },
+ "events": [
+  {
+   "event_id": "ev00001",
+   "airport_icao": "KLGA",
+   "actor_candidates": [
+    "CBT41"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "TAXI",
+   "raw_text": "Cobalt 41, runway 13, taxi via Alpha, Delta, hold short runway 4.",
+   "normalized_text": "RUNWAY 13 , TAXI VIA A , D , HOLD SHORT RUNWAY 4 .",
+   "asr_repairs_applied": [],
+   "source_id": "CLIPPED_READBACK_FICTIONAL#0",
+   "source_start_s": 0,
+   "source_end_s": null,
+   "event_time": 0,
+   "received_time": 0,
+   "runway": "13",
+   "runway_end_candidates": [
+    "KLGA:END:13"
+   ],
+   "route": [
+    "A",
+    "D"
+   ],
+   "route_surface_candidates": [
+    {
+     "word": "A",
+     "candidates": [
+      "KLGA:TWY:A"
+     ]
+    },
+    {
+     "word": "D",
+     "candidates": [
+      "KLGA:TWY:D"
+     ]
+    }
+   ],
+   "hold_constraints": [
+    {
+     "runway": "04"
+    }
+   ],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.9,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null,
+   "route_check": [
+    {
+     "word": "A",
+     "taxiway_id": "KLGA:TWY:A",
+     "status": "no_crossing_data_in_draft_graph",
+     "crossings": []
+    },
+    {
+     "word": "D",
+     "taxiway_id": "KLGA:TWY:D",
+     "status": "crossing_recorded",
+     "crossings": [
+      {
+       "node_id": "KLGA:N:D_RWY04-22",
+       "runway_id": "KLGA:RWY:04-22"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "event_id": "ev00002",
+   "airport_icao": "KLGA",
+   "actor_candidates": [],
+   "speaker_role": "PILOT",
+   "speech_act": "readback",
+   "kind": "TAXI",
+   "raw_text": "Runway 13, Alpha, Delta, ho\u2014 [clipped]",
+   "normalized_text": "RUNWAY 13 , A , D , HO",
+   "asr_repairs_applied": [],
+   "source_id": "CLIPPED_READBACK_FICTIONAL#6",
+   "source_start_s": 6,
+   "source_end_s": null,
+   "event_time": 6,
+   "received_time": 6,
+   "runway": "13",
+   "runway_end_candidates": [
+    "KLGA:END:13"
+   ],
+   "route": [
+    "A",
+    "D"
+   ],
+   "route_surface_candidates": [
+    {
+     "word": "A",
+     "candidates": [
+      "KLGA:TWY:A"
+     ]
+    },
+    {
+     "word": "D",
+     "candidates": [
+      "KLGA:TWY:D"
+     ]
+    }
+   ],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": true,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.41,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00003",
+   "airport_icao": "KLGA",
+   "actor_candidates": [
+    "CBT41"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "HOLD_SHORT",
+   "raw_text": "Cobalt 41, you were clipped, say again, and read back hold short runway 4.",
+   "normalized_text": "YOU WERE , SAY AGAIN , AND READ BACK HOLD SHORT RUNWAY 4 .",
+   "asr_repairs_applied": [],
+   "source_id": "CLIPPED_READBACK_FICTIONAL#9",
+   "source_start_s": 9,
+   "source_end_s": null,
+   "event_time": 9,
+   "received_time": 9,
+   "runway": null,
+   "runway_end_candidates": [],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [
+    {
+     "runway": "04"
+    }
+   ],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.85,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00004",
+   "airport_icao": "KLGA",
+   "actor_candidates": [
+    "CBT41"
+   ],
+   "speaker_role": "PILOT",
+   "speech_act": "readback",
+   "kind": "TAXI",
+   "raw_text": "Alpha, Delta, hold short runway 4, Cobalt 41.",
+   "normalized_text": "A , D , HOLD SHORT RUNWAY 4 , .",
+   "asr_repairs_applied": [],
+   "source_id": "CLIPPED_READBACK_FICTIONAL#13",
+   "source_start_s": 13,
+   "source_end_s": null,
+   "event_time": 13,
+   "received_time": 13,
+   "runway": null,
+   "runway_end_candidates": [],
+   "route": [
+    "A",
+    "D"
+   ],
+   "route_surface_candidates": [
+    {
+     "word": "A",
+     "candidates": [
+      "KLGA:TWY:A"
+     ]
+    },
+    {
+     "word": "D",
+     "candidates": [
+      "KLGA:TWY:D"
+     ]
+    }
+   ],
+   "hold_constraints": [
+    {
+     "runway": "04"
+    }
+   ],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.93,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  }
+ ],
+ "reservations": [],
+ "warnings": [
+  {
+   "warning_id": "w0001",
+   "rule_id": "R7",
+   "name": "runway hold-short not read back",
+   "severity": "CAUTION",
+   "runway": "KLGA:RWY:04-22",
+   "t_fired": 6,
+   "status": "cleared",
+   "cleared_at": 13,
+   "cleared_by": "readback ev00004 named the hold",
+   "authorization_a": {
+    "callsign": "CBT41",
+    "type": "TAXI",
+    "t_issued": 0,
+    "event_id": "ev00001",
+    "hold": {
+     "runway": "04"
+    }
+   },
+   "authorization_b": {
+    "callsign": "CBT41",
+    "type": "READBACK",
+    "t_issued": 6,
+    "event_id": "ev00002"
+   },
+   "state_snapshot": {
+    "CBT41": {
+     "authorized": "taxi, rwy 13, via A-D, hold short of runway 04",
+     "acknowledged": "hold_not_heard: readback clipped before the hold",
+     "reported": null,
+     "inferred": null,
+     "observed": null
+    }
+   },
+   "explain": "hold short runway 04 not heard in the readback (readback clipped before the hold). Acknowledged state for the hold = UNKNOWN, not 'acknowledged'.",
+   "what_would_clear_it": "a readback that names the hold",
+   "cite": "JO 7110.65BB 3-7-2 (read back hold instructions)",
+   "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+   "parse_confidence_heuristic": 0.41
+  }
+ ],
+ "notes": [
+  {
+   "t": 0,
+   "event_id": "ev00001",
+   "note": "route words A: no reviewed runway-crossing data in the draft graph; hold coverage not checkable (unresolved, not 'clear')"
+  },
+  {
+   "t": 6,
+   "event_id": "ev00002",
+   "note": "no callsign heard; readback attributed to last addressed CBT41 (heuristic)"
+  }
+ ],
+ "actors": {
+  "CBT41": {
+   "authorized": [
+    {
+     "value": "taxi, rwy 13, via A-D, hold short of runway 04",
+     "t": 0,
+     "event_id": "ev00001"
+    },
+    {
+     "value": "hold short, hold short of runway 04",
+     "t": 9,
+     "event_id": "ev00003"
+    }
+   ],
+   "acknowledged": [
+    {
+     "value": "hold_not_heard: readback clipped before the hold",
+     "t": 6,
+     "event_id": "ev00002"
+    },
+    {
+     "value": "read back: taxi, via A-D, hold short of runway 04",
+     "t": 13,
+     "event_id": "ev00004"
+    }
+   ],
+   "reported": [],
+   "inferred": [],
+   "observed": []
+  }
+ },
+ "claim_limit": "Recorded authorizations and open obligations only; no prevention claims."
+}

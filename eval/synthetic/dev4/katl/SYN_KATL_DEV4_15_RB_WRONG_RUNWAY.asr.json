@@ -1,0 +1,10 @@
+{
+ "SYN_KATL_DEV4_15_RB_WRONG_RUNWAY_00": {
+  "text": "American 126, runway 27L cleared to land.",
+  "asr_s": 0.179
+ },
+ "SYN_KATL_DEV4_15_RB_WRONG_RUNWAY_01": {
+  "text": "American 126, Roger. Clear to land runway 26R.",
+  "asr_s": 0.231
+ }
+}

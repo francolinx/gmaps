@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_00": {
+  "text": "Delta 845, runway 27R cleared to land.",
+  "asr_s": 0.209
+ },
+ "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_01": {
+  "text": "Runway 27R, cleared to land, Delta 845.",
+  "asr_s": 0.221
+ },
+ "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_02": {
+  "text": "Delta 845, turn right at Bravo 4, contact ground point 82.",
+  "asr_s": 0.234
+ },
+ "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_03": {
+  "text": "Delta 845, taxi to the ramp via Bravo 4.",
+  "asr_s": 0.209
+ },
+ "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_04": {
+  "text": "Endeavour 721, cross runway 27 right at Delta.",
+  "asr_s": 0.239
+ },
+ "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_05": {
+  "text": "Cross runway 27 right at Delta, Endeavour 721.",
+  "asr_s": 0.22
+ }
+}

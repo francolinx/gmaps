@@ -1,0 +1,10 @@
+{
+ "SYN_KATL_DEV4_15_RB_WRONG_RUNWAY_00": {
+  "text": "American one two six, runway two seven left, cleared to land.",
+  "asr_s": 0.189
+ },
+ "SYN_KATL_DEV4_15_RB_WRONG_RUNWAY_01": {
+  "text": "American one two six, roger, cleared to land, runway two six right.",
+  "asr_s": 0.205
+ }
+}

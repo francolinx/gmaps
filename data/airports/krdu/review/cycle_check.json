@@ -1,0 +1,74 @@
+{
+ "icao": "KRDU",
+ "checked_at": "2026-10-18T07:17:02-0400",
+ "now_utc": "2026-10-18T11:17:02.233337+00:00",
+ "chart": {
+  "cycle": "2610",
+  "effective_from": "2026-10-01",
+  "effective_to": "2026-10-29",
+  "url": "https://aeronav.faa.gov/d-tpp/2610/00516AD.PDF",
+  "sha256": "438961f017677e0036276a72aa27f72bc0d1a508b7609b047d7b1ab9cab26623"
+ },
+ "in_effective_window": true,
+ "days_left": 10.91,
+ "faa_cycle": {
+  "metafile": "https://aeronav.faa.gov/d-tpp/2610/xml_data/d-TPP_Metafile.xml",
+  "cycle": "2610",
+  "from_edate": "0901Z  10/01/26",
+  "to_edate": "0901Z  10/29/26",
+  "apd_record": {
+   "chartseq": "70000",
+   "chart_code": "APD",
+   "chart_name": "AIRPORT DIAGRAM",
+   "useraction": "",
+   "pdf_name": "00516AD.PDF",
+   "cn_flg": "N",
+   "cnsection": "",
+   "cnpage": "",
+   "bvsection": "",
+   "bvpage": "543",
+   "procuid": "2503",
+   "two_colored": "Y",
+   "civil": "C",
+   "faanfd18": "",
+   "copter": "",
+   "amdtnum": "",
+   "amdtdate": ""
+  }
+ },
+ "served_pdf": {
+  "url": "https://aeronav.faa.gov/d-tpp/2610/00516AD.PDF",
+  "sha256": "438961f017677e0036276a72aa27f72bc0d1a508b7609b047d7b1ab9cab26623",
+  "bytes": 188825,
+  "matches_local": true
+ },
+ "next_cycle": {
+  "cycle": "2611",
+  "from_edate": "0901Z  10/29/26",
+  "to_edate": "0901Z  11/26/26",
+  "published": true,
+  "apd_record": {
+   "chartseq": "70000",
+   "chart_code": "APD",
+   "chart_name": "AIRPORT DIAGRAM",
+   "useraction": "",
+   "pdf_name": "00516AD.PDF",
+   "cn_flg": "N",
+   "cnsection": "",
+   "cnpage": "",
+   "bvsection": "",
+   "bvpage": "542",
+   "procuid": "2503",
+   "two_colored": "Y",
+   "civil": "C",
+   "faanfd18": "",
+   "copter": "",
+   "amdtnum": "",
+   "amdtdate": ""
+  },
+  "useraction": "",
+  "apd_changed": false
+ },
+ "pass": true,
+ "warnings": []
+}

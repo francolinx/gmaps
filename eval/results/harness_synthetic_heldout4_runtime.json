@@ -1,0 +1,4993 @@
+{
+ "summary": {
+  "set": "synthetic_heldout4_runtime",
+  "scenarios": 32,
+  "transmissions": 138,
+  "scored": 138,
+  "unscored": 0,
+  "callsign_acc": 0.732,
+  "runway_acc": 0.696,
+  "instruction_acc": 0.754,
+  "by_category": {
+   "conflict_alerts (as in rounds 1-2: conflict + missed_readback)": {
+    "tp": 7,
+    "fp": 2,
+    "fn": 7,
+    "precision": 0.778,
+    "recall": 0.5
+   },
+   "conflict_alerts without llm_parse alerts": {
+    "tp": 7,
+    "fp": 2,
+    "fn": 7,
+    "precision": 0.778,
+    "recall": 0.5
+   },
+   "llm_parse_tagged_alerts": {
+    "scenarios_with_one": 0,
+    "of_which_expected": 0
+   },
+   "missed_readback (R7) false alarms": 0,
+   "missed_readback (R7) scenarios expected / hit": [
+    2,
+    2
+   ],
+   "readback_mismatch (R14, its own category)": {
+    "tp": 2,
+    "fp": 2,
+    "fn": 2,
+    "precision": 0.5,
+    "recall": 0.5
+   }
+  },
+  "llm_fallback": null,
+  "speaker": {
+   "labelled": 138,
+   "hint_matches_label": 115,
+   "hint_ambiguous_or_none": 22,
+   "hint_wrong": 1,
+   "resolved_matches_label": 92
+  },
+  "alerts": {
+   "scenarios_with_expectation": 32,
+   "tp": 7,
+   "fp": 2,
+   "fn": 7,
+   "precision": 0.778,
+   "recall": 0.5
+  },
+  "lead_time_s": {
+   "n": 0,
+   "median": null,
+   "min": null,
+   "values": []
+  },
+  "latency": {
+   "library_ms_median": 0.11,
+   "whisper_s_median": 0.199,
+   "full_stack_clip_to_alert_s_median (E1, agent)": 13.69
+  },
+  "inputs": {
+   "whisper (synthetic TTS + radio noise)": 138
+  },
+  "kinds": [
+   "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)"
+  ]
+ },
+ "scenarios": [
+  {
+   "scenario": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Twin Cessna 6-6-4-8 Juliet, runway 2-6 right, cleared to land wind comp.",
+     "hypothesis": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.89,
+     "asr_s": 0.265,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 26 right, clear to land, twin Cessna 6648 GPS.",
+     "hypothesis": {
+      "callsigns": [
+       "N6648"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.211,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Spirit Niner 624, proceed via Delta, cross runway 26 right.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS9624"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS9624"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.58,
+     "asr_s": 0.204,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway T6, right at Delta, Spirit 906 to 4.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS906"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS9624"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.8,
+     "asr_s": 0.203,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0001",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "category": "conflict",
+     "runway": "KATL:RWY:08L-26R",
+     "t_fired": 18,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "N6648J",
+      "type": "LANDING",
+      "runway_end": "26R",
+      "physical_runway": "KATL:RWY:08L-26R",
+      "t_issued": 0,
+      "event_id": "ev00001",
+      "acknowledged": "pending"
+     },
+     "authorization_b": {
+      "callsign": "NKS9624",
+      "type": "CROSSING",
+      "runway_end": "26R",
+      "physical_runway": "KATL:RWY:08L-26R",
+      "t_issued": 18,
+      "event_id": "ev00003",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "N6648J": {
+       "authorized": "landing clearance, rwy 26R",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "NKS9624": {
+       "authorized": "cross, rwy 26R",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 26R has a recorded landing authorization for N6648J (t=0) and a crossing authorization for NKS9624 at ? (t=18). Both need the 08L-26R protected area.",
+     "what_would_clear_it": "NKS9624 reports clear of runway, or N6648J go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    },
+    {
+     "warning_id": "w0002",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "category": "conflict",
+     "runway": "KATL:RWY:08L-26R",
+     "t_fired": 18,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "N6648",
+      "type": "LANDING",
+      "runway_end": "26R",
+      "physical_runway": "KATL:RWY:08L-26R",
+      "t_issued": 4,
+      "event_id": "ev00002",
+      "acknowledged": "pending"
+     },
+     "authorization_b": {
+      "callsign": "NKS9624",
+      "type": "CROSSING",
+      "runway_end": "26R",
+      "physical_runway": "KATL:RWY:08L-26R",
+      "t_issued": 18,
+      "event_id": "ev00003",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "N6648": {
+       "authorized": "landing clearance, rwy 26R",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "NKS9624": {
+       "authorized": "cross, rwy 26R",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 26R has a recorded landing authorization for N6648 (t=4) and a crossing authorization for NKS9624 at ? (t=18). Both need the 08L-26R protected area.",
+     "what_would_clear_it": "NKS9624 reports clear of runway, or N6648 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    },
+    {
+     "warning_id": "w0003",
+     "rule_id": "R6",
+     "name": "route word crosses a runway with no hold-short or crossing clearance",
+     "severity": "CAUTION",
+     "category": "conflict",
+     "runway": "KATL:RWY:08R-26L",
+     "t_fired": 22,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "NKS906",
+      "type": "TAXI",
+      "t_issued": 22,
+      "event_id": "ev00004",
+      "route": [
+       "D"
+      ]
+     },
+     "authorization_b": null,
+     "state_snapshot": {
+      "NKS906": {
+       "authorized": "taxi, via D",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Route word D meets runway 08R-26L at KATL:N:D_08R-26L on the review-pending draft graph, and no hold-short or crossing clearance for that runway was recorded. Direction of travel on D is not established in v1, so this is a possible crossing, not a traced one.",
+     "what_would_clear_it": "hold-short for that runway issued and read back, or crossing clearance",
+     "cite": "JO 7110.65BB 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "graph_basis": "KATL:N:D_08R-26L",
+     "graph_status": "draft, expert review pending",
+     "llm_parse": false
+    },
+    {
+     "warning_id": "w0004",
+     "rule_id": "R6",
+     "name": "route word crosses a runway with no hold-short or crossing clearance",
+     "severity": "CAUTION",
+     "category": "conflict",
+     "runway": "KATL:RWY:08L-26R",
+     "t_fired": 22,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "NKS906",
+      "type": "TAXI",
+      "t_issued": 22,
+      "event_id": "ev00004",
+      "route": [
+       "D"
+      ]
+     },
+     "authorization_b": null,
+     "state_snapshot": {
+      "NKS906": {
+       "authorized": "taxi, via D",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Route word D meets runway 08L-26R at KATL:N:D_08L-26R on the review-pending draft graph, and no hold-short or crossing clearance for that runway was recorded. Direction of travel on D is not established in v1, so this is a possible crossing, not a traced one.",
+     "what_would_clear_it": "hold-short for that runway issued and read back, or crossing clearance",
+     "cite": "JO 7110.65BB 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "graph_basis": "KATL:N:D_08L-26R",
+     "graph_status": "draft, expert review pending",
+     "llm_parse": false
+    },
+    {
+     "warning_id": "w0005",
+     "rule_id": "R6",
+     "name": "route word crosses a runway with no hold-short or crossing clearance",
+     "severity": "CAUTION",
+     "category": "conflict",
+     "runway": "KATL:RWY:09L-27R",
+     "t_fired": 22,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "NKS906",
+      "type": "TAXI",
+      "t_issued": 22,
+      "event_id": "ev00004",
+      "route": [
+       "D"
+      ]
+     },
+     "authorization_b": null,
+     "state_snapshot": {
+      "NKS906": {
+       "authorized": "taxi, via D",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Route word D meets runway 09L-27R at KATL:N:D_09L-27R on the review-pending draft graph, and no hold-short or crossing clearance for that runway was recorded. Direction of travel on D is not established in v1, so this is a possible crossing, not a traced one.",
+     "what_would_clear_it": "hold-short for that runway issued and read back, or crossing clearance",
+     "cite": "JO 7110.65BB 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "graph_basis": "KATL:N:D_09L-27R",
+     "graph_status": "draft, expert review pending",
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "9 and 4, 8, 7, 2. Number 2, runway 9 or left, cleared to left.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.65,
+     "asr_s": 0.236,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway Niner left, cleared to land, United 4872.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.192,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "On tier 2, 4-1-1, cross runway Niner left to Delta without delay, traffic short final.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2411"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.19,
+     "asr_s": 0.25,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway Niner left at Delta, Frontier 2411.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2411"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2411"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.186,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 1321, runway 26 right, cleared for takeoff, turn left heading 270.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.23,
+     "asr_s": 0.219,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Roger, cleared for takeoff 26R, United 1321.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.16,
+     "asr_s": 0.205,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Tonight is 2312, proceed via Bravo 1, cross runway 26R.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.208,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 26, right at Bravo 1, United 2312",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.189,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R5"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Spirit 2400, runway 27 right, line up and wait, traffic landing runway 26 right.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.23,
+     "asr_s": 0.23,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Line up and wait runway 27R, Spirit 2400",
+     "hypothesis": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.184,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 14,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 2163, runway 27R, cleared to land. Traffic holding in position, runway 27R.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.15,
+     "asr_s": 0.243,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "runway 27R clears the land, southwest 2163",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.178,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0006",
+     "rule_id": "R5",
+     "name": "line up and wait vs landing, same runway",
+     "severity": "CAUTION",
+     "category": "conflict",
+     "runway": "KATL:RWY:09L-27R",
+     "t_fired": 14,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "NKS2400",
+      "type": "LUAW",
+      "runway_end": "27R",
+      "physical_runway": "KATL:RWY:09L-27R",
+      "t_issued": 0,
+      "event_id": "ev00013",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "SWA2163",
+      "type": "LANDING",
+      "runway_end": "27R",
+      "physical_runway": "KATL:RWY:09L-27R",
+      "t_issued": 14,
+      "event_id": "ev00015",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "NKS2400": {
+       "authorized": "luaw, rwy 27R",
+       "acknowledged": "read back: luaw, rwy 27R",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "SWA2163": {
+       "authorized": "landing clearance, rwy 27R",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Line up and wait and a landing authorization recorded on the same runway.",
+     "what_would_clear_it": "takeoff issued and airborne, or landing authorization withdrawn",
+     "cite": "JO 7110.65BB 3-9-4; 3-10-5",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R3"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 5-6-7-8, Runway Niner right, cleared for takeoff, turn left heading 2-7-0.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.26,
+     "asr_s": 0.272,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Bar crew cleared for takeoff, Niner right, United 5678.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.1,
+     "asr_s": 0.199,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 14,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Twin Cessna Niner 623 Delta, runway Niner right, clear to left, wind 330 at 1-2.",
+     "hypothesis": {
+      "callsigns": [
+       "N9623D"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "N9623D"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.16,
+     "asr_s": 0.262,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Onway Niner White clears the land to in Cessna Niner 62310",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "N9623D"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.1,
+     "asr_s": 0.217,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": null,
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R3"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta-1976, runway 26L at Delta, intersection departure cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL1976"
+      ],
+      "runway": "26L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1976"
+      ],
+      "runway": "26L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.22,
+     "asr_s": 0.237,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Roger, cleared for takeoff, 6 left, delta 197.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL197"
+      ],
+      "runway": "6L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1976"
+      ],
+      "runway": "26L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.188,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 14,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 6414, runway 26L, cleared to land, wind 100 at 13.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.216,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 26L cleared the land United 6414",
+     "hypothesis": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.18,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0007",
+     "rule_id": "R3",
+     "name": "takeoff vs landing, same runway",
+     "severity": "CONFLICT",
+     "category": "conflict",
+     "runway": "KATL:RWY:08R-26L",
+     "t_fired": 14,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "DAL1976",
+      "type": "TAKEOFF",
+      "runway_end": "26L",
+      "physical_runway": "KATL:RWY:08R-26L",
+      "t_issued": 0,
+      "event_id": "ev00021",
+      "acknowledged": "pending"
+     },
+     "authorization_b": {
+      "callsign": "UAL6414",
+      "type": "LANDING",
+      "runway_end": "26L",
+      "physical_runway": "KATL:RWY:08R-26L",
+      "t_issued": 14,
+      "event_id": "ev00023",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "DAL1976": {
+       "authorized": "takeoff clearance, rwy 26L",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "UAL6414": {
+       "authorized": "landing clearance, rwy 26L",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Takeoff and landing authorizations recorded on the same physical runway.",
+     "what_would_clear_it": "one authorization released (go-around, takeoff cancelled, or operation complete)",
+     "cite": "JO 7110.65BB 3-9-6; 3-10-3",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R7"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 6731, runway 8 right, cleared to land wind calm.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.21,
+     "asr_s": 0.201,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 8 right, cleared to land, Delta 6731.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.189,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 2400. Hold short runway 8, right? Traffic on final.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.14,
+     "asr_s": 0.206,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "WITCO UNITED 2400",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.158,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 40,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 2400, read back hold instructions.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.163,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 44,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Both short of runway 8 ride, United 2400.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.175,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0008",
+     "rule_id": "R7",
+     "name": "runway hold-short not read back",
+     "severity": "CAUTION",
+     "category": "missed_readback",
+     "runway": "KATL:RWY:08R-26L",
+     "t_fired": 33,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "UAL2400",
+      "type": "HOLD_SHORT",
+      "t_issued": 18,
+      "event_id": "ev00027",
+      "hold": {
+       "runway": "08R"
+      }
+     },
+     "authorization_b": null,
+     "state_snapshot": {
+      "UAL2400": {
+       "authorized": "hold short, hold short of runway 08R",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "No readback naming the runway hold (hold short runway 08R) was heard from UAL2400 within 15 s.",
+     "what_would_clear_it": "a readback that names the hold",
+     "cite": "JO 7110.65BB 3-7-2 (read back hold instructions)",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    },
+    {
+     "warning_id": "w0009",
+     "rule_id": "R14",
+     "name": "readback mismatch",
+     "severity": "CAUTION",
+     "category": "readback_mismatch",
+     "runway": "KATL:RWY:08R-26L",
+     "t_fired": 44,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "UAL2400",
+      "type": "HOLD_SHORT",
+      "t_issued": 18,
+      "event_id": "ev00027"
+     },
+     "authorization_b": {
+      "callsign": "UAL2400",
+      "type": "READBACK",
+      "t_issued": 44,
+      "event_id": "ev00030"
+     },
+     "state_snapshot": {
+      "UAL2400": {
+       "authorized": "hold short, hold short of runway 08R",
+       "acknowledged": "discrepant_hold: hold short runway 08R instructed, readback says runway 08",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Readback differs from the recorded instruction: hold short runway 08R instructed, readback says runway 08.",
+     "what_would_clear_it": "controller corrects; correct readback heard",
+     "cite": "JO 7110.65BB 2-4-3a,b (read back items correct; hold short read back)",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "mismatch": "discrepant_hold",
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 2100, runway 26L, cleared to land wind calm.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.19,
+     "asr_s": 0.201,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 26L, clear the line, frontier 2100",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.178,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Twin Cessna 2665 Zulu, cross runway niner left at November 5, hold short of runway 8 left.",
+     "hypothesis": {
+      "callsigns": [
+       "N2665Z"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "N2665Z"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.17,
+     "asr_s": 0.263,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Fox runway Niner Leca Nongata 5 with Tesla 26652",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "N2665Z"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.199,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": null,
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Winchester, 4-0-6-9-0, number 2, runway 8 left, cleared to left.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "N4069Z"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.25,
+     "asr_s": 0.252,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "runway 8 left, cleared to land, twin Cessna 406902",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "N4069Z"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.203,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Twin Cessna 4087 Romeo, proceed by a charge. Hold short of runway 8L.",
+     "hypothesis": {
+      "callsigns": [
+       "N4087R"
+      ],
+      "runway": "8L",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "N4087R"
+      ],
+      "runway": "8L",
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.228,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Hold short of runway 8L, twin Cessna 4087 Romeo",
+     "hypothesis": {
+      "callsigns": [
+       "N4087R"
+      ],
+      "runway": "8L",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "N4087R"
+      ],
+      "runway": "8L",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.192,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 2444, number 2, runway 8 right, cleared to left.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.21,
+     "asr_s": 0.203,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "runway 8 right clear to land for tier 2444",
+     "hypothesis": {
+      "callsigns": [
+       "?2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.179,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 40,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 2444, turn right at Alpha 5. Contact ground 121.7.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.14,
+     "asr_s": 0.22,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 48,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 2444, taxi via Alpha 5 to the gate!",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.195,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 55,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Experience 1135, proceed via Echo 3, cross runway 8 right.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.204,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 59,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 8, right at Echo Street, Spirit 1135.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.187,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Twin Cessna 2523 Romeo, number two, runway 26L, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.2,
+     "asr_s": 0.223,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 26L, cleared to land. Twin Cessna 2523, roll.",
+     "hypothesis": {
+      "callsigns": [
+       "N2523"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.216,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 45,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Win Cessna 2523 Romeo, clear of the runway.",
+     "hypothesis": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.185,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 55,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 1100, proceed via Echo 1, cross runway 26L.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.12,
+     "asr_s": 0.19,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 59,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Porsche runway 26 left at Echo 1, United 1100",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.22,
+     "asr_s": 0.186,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0010",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "category": "conflict",
+     "runway": "KATL:RWY:08R-26L",
+     "t_fired": 55,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "N2523R",
+      "type": "LANDING",
+      "runway_end": "26L",
+      "physical_runway": "KATL:RWY:08R-26L",
+      "t_issued": 0,
+      "event_id": "ev00045",
+      "acknowledged": "pending"
+     },
+     "authorization_b": {
+      "callsign": "UAL1100",
+      "type": "CROSSING",
+      "runway_end": "26L",
+      "physical_runway": "KATL:RWY:08R-26L",
+      "t_issued": 55,
+      "event_id": "ev00048",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "N2523R": {
+       "authorized": "landing clearance, rwy 26L",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "UAL1100": {
+       "authorized": "cross, rwy 26L",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 26L has a recorded landing authorization for N2523R (t=0) and a crossing authorization for UAL1100 at ? (t=55). Both need the 08R-26L protected area.",
+     "what_would_clear_it": "UAL1100 reports clear of runway, or N2523R go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    },
+    {
+     "warning_id": "w0011",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "category": "conflict",
+     "runway": "KATL:RWY:08R-26L",
+     "t_fired": 55,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "N2523",
+      "type": "LANDING",
+      "runway_end": "26L",
+      "physical_runway": "KATL:RWY:08R-26L",
+      "t_issued": 4,
+      "event_id": "ev00046",
+      "acknowledged": "pending"
+     },
+     "authorization_b": {
+      "callsign": "UAL1100",
+      "type": "CROSSING",
+      "runway_end": "26L",
+      "physical_runway": "KATL:RWY:08R-26L",
+      "t_issued": 55,
+      "event_id": "ev00048",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "N2523": {
+       "authorized": "landing clearance, rwy 26L",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "UAL1100": {
+       "authorized": "cross, rwy 26L",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 26L has a recorded landing authorization for N2523 (t=4) and a crossing authorization for UAL1100 at ? (t=55). Both need the 08R-26L protected area.",
+     "what_would_clear_it": "UAL1100 reports clear of runway, or N2523 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 8805, number 2, runway 27R cleared to left.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.2,
+     "asr_s": 0.206,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 27R cleared to land United 8805",
+     "hypothesis": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.185,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 30,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 8805, go around traffic on the runway.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.183,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 33,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 8805 is going around.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.158,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "report",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 45,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 3303, proceed via Delta, cross runway 27R.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.1,
+     "asr_s": 0.184,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 49,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 27, ride at Delta, Delta 3303",
+     "hypothesis": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.178,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Endeavor 2900, Runway Niner right at November 2 line up and wait!",
+     "hypothesis": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.21,
+     "asr_s": 0.226,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Line up on Great Runway Niner Ride, Endeavour 2900.",
+     "hypothesis": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.196,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 40,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Endeavor 2900, runway 9 to right, cleared for takeoff. Turn left heading 270.",
+     "hypothesis": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.224,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 44,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Vajra clears the take-off Niner White, Endeavour 2900",
+     "hypothesis": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.203,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "American 20-hundred, runway eight, right at hotel line up and wait!",
+     "hypothesis": {
+      "callsigns": [
+       "AAL20"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.22,
+     "asr_s": 0.215,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Line up and wait runway 8R, American 200.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL200"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.175,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 14,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 1600, runway 8 right, extend downward, traffic holding in position.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1600"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1600"
+      ],
+      "runway": "8R",
+      "instruction": "OTHER"
+     },
+     "library_ms": 0.14,
+     "asr_s": 0.204,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "We'll go frontier 1600.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1600"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1600"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.15,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 30,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "American 20-hundred, Runway 8 right at hotel, intersection departure, clears for takeoff.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL20"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.15,
+     "asr_s": 0.229,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 34,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Roger, cleared for takeoff 8 rides. American, 20 hundred.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "8",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.1,
+     "asr_s": 0.198,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_15_RB_WRONG_RUNWAY",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": true,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 2523, runway to 7 left, cleared to land wind cost.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.2,
+     "asr_s": 0.197,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 8 right is clear to land Delta 2522.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL2522"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.184,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY",
+   "kind": "SIMULATED (synthetic heldout4, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": true,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 2163, Runway 27 left, cleared to land Windcock.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.19,
+     "asr_s": 0.207,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Roger, clear to land, United 2163.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.17,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0012",
+     "rule_id": "R14",
+     "name": "readback mismatch",
+     "severity": "CAUTION",
+     "category": "readback_mismatch",
+     "runway": null,
+     "t_fired": 4,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "UAL2163",
+      "type": "LANDING_CLEARANCE",
+      "t_issued": 0,
+      "event_id": "ev00068",
+      "hold": null
+     },
+     "authorization_b": {
+      "callsign": "UAL2163",
+      "type": "READBACK",
+      "t_issued": 4,
+      "event_id": "ev00069"
+     },
+     "state_snapshot": {
+      "UAL2163": {
+       "authorized": "landing clearance, rwy 27L",
+       "acknowledged": "missing_runway: instruction runway 27L, no runway in the readback",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "The readback did not name the runway (instruction runway 27L, no runway in the readback).",
+     "what_would_clear_it": "a readback that names the runway",
+     "cite": "JO 7110.65BB 2-4-3a,b (read back items correct; hold short read back)",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "mismatch": "missing_runway",
+     "parse_confidence_heuristic": 0.6,
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Winchester Niner 303 Hotel, number 2, runway 4, cleared to left.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "N9303H"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.21,
+     "asr_s": 0.233,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 4 cleared to land, Twin Cessna 90303 Hotel.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "N9303H"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.211,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Jet Blue 1400, proceed by Charlie Cross Runway 4.",
+     "hypothesis": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.1,
+     "asr_s": 0.185,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 4 at Charlie, jet blue 1400.",
+     "hypothesis": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.173,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Never 1558. Number 2, runway 22. Cleared to left.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.17,
+     "asr_s": 0.198,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 2-2, cleared to land and never 1558.",
+     "hypothesis": {
+      "callsigns": [
+       "?1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.202,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 2152, proceed via Quebec, cross runway 22.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.189,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 22 at Quebec, Delta 2152.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.18,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Spirit 7508, runway 4, cleared for takeoff. Turn left heading 270.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.17,
+     "asr_s": 0.207,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Roger, clear for takeoff, 4-speed 7508.",
+     "hypothesis": {
+      "callsigns": [
+       "?7508"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.182,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 1800, cross runway 4 at uniform without delay, traffic short finally.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.205,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 4 at uniform, Delta 1800",
+     "hypothesis": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.163,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0013",
+     "rule_id": "R2",
+     "name": "crossing vs active takeoff",
+     "severity": "CONFLICT",
+     "category": "conflict",
+     "runway": "KLGA:RWY:04-22",
+     "t_fired": 18,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "NKS7508",
+      "type": "TAKEOFF",
+      "runway_end": "04",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 0,
+      "event_id": "ev00078",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "DAL1800",
+      "type": "CROSSING",
+      "runway_end": "04",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 18,
+      "event_id": "ev00080",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "NKS7508": {
+       "authorized": "takeoff clearance, rwy 04",
+       "acknowledged": "read back: takeoff clearance, rwy 04",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "DAL1800": {
+       "authorized": "cross, rwy 04, at U",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Takeoff authorization and crossing authorization recorded on the same runway (04-22).",
+     "what_would_clear_it": "crossing complete, or takeoff cancelled and acknowledged",
+     "cite": "JO 7110.65BB 3-1-3; 3-9-10",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R5"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Tier 2700, runway 4, line up and wait. Traffic landing runway 1-3.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.19,
+     "asr_s": 0.229,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Line up and wait runway 4, Frontier 2700.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.18,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 14,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 4, 3-Niner-Niner. Runway 4, cleared to land. Traffic holding in position, Runway 4.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT4399"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.17,
+     "asr_s": 0.276,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "runway 4 cleared to land from tier 4 3909",
+     "hypothesis": {
+      "callsigns": [
+       "?3909"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT4399"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.175,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R3"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 2600, runway 4 at Charlie, intersection departure, cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.18,
+     "asr_s": 0.225,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Roger, cleared for takeoff for Southwest 2600.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.186,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 14,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Twin Cessna 7715 Juliet, runway 4, cleared to land, wind 080 at 1A.",
+     "hypothesis": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.12,
+     "asr_s": 0.24,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "runway 4 cleared the land, twin Cessna 7715 Julian",
+     "hypothesis": {
+      "callsigns": [
+       "N7715"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.194,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0014",
+     "rule_id": "R3",
+     "name": "takeoff vs landing, same runway",
+     "severity": "CONFLICT",
+     "category": "conflict",
+     "runway": "KLGA:RWY:04-22",
+     "t_fired": 14,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SWA2600",
+      "type": "TAKEOFF",
+      "runway_end": "04",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 0,
+      "event_id": "ev00086",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "N7715J",
+      "type": "LANDING",
+      "runway_end": "04",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 14,
+      "event_id": "ev00088",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "SWA2600": {
+       "authorized": "takeoff clearance, rwy 04",
+       "acknowledged": "read back: takeoff clearance, rwy 04",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "N7715J": {
+       "authorized": "landing clearance, rwy 04",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Takeoff and landing authorizations recorded on the same physical runway.",
+     "what_would_clear_it": "one authorization released (go-around, takeoff cancelled, or operation complete)",
+     "cite": "JO 7110.65BB 3-9-6; 3-10-3",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R4"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Spirit 4-9-9-5, runway 2-2, cleared for takeoff. Turn left heading 2-7-0.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS4995"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS4995"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.21,
+     "asr_s": 0.272,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Roger, cleared for takeoff, PC Spirit 490905",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS4995"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.19,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 14,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Denver 2302, number 2, runway 31, cleared to left.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.12,
+     "asr_s": 0.196,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 31 clears the land, Endeavour 2302",
+     "hypothesis": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.191,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0015",
+     "rule_id": "R14",
+     "name": "readback mismatch",
+     "severity": "CAUTION",
+     "category": "readback_mismatch",
+     "runway": null,
+     "t_fired": 4,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "NKS4995",
+      "type": "TAKEOFF_CLEARANCE",
+      "t_issued": 0,
+      "event_id": "ev00090",
+      "hold": null
+     },
+     "authorization_b": {
+      "callsign": "NKS4995",
+      "type": "READBACK",
+      "t_issued": 4,
+      "event_id": "ev00091"
+     },
+     "state_snapshot": {
+      "NKS4995": {
+       "authorized": "takeoff clearance, rwy 22",
+       "acknowledged": "missing_runway: instruction runway 22, no runway in the readback",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "The readback did not name the runway (instruction runway 22, no runway in the readback).",
+     "what_would_clear_it": "a readback that names the runway",
+     "cite": "JO 7110.65BB 2-4-3a,b (read back items correct; hold short read back)",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "mismatch": "missing_runway",
+     "parse_confidence_heuristic": 0.6,
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R7"
+   ],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 2355, runway 22, cleared to land, wind calm.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.15,
+     "asr_s": 0.203,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 22, cleared to land, United 2355.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.182,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "We're at 1400. Hold short runway 22. Traffic on final.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.188,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Wilco Spirit 1400",
+     "hypothesis": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.14,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 40,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Spirit 1400, read back hold instruction.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.168,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 44,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Hold the shot of runway 2-2, spirit 1400.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.178,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0016",
+     "rule_id": "R7",
+     "name": "runway hold-short not read back",
+     "severity": "CAUTION",
+     "category": "missed_readback",
+     "runway": "KLGA:RWY:04-22",
+     "t_fired": 33,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "UAL2355",
+      "type": "HOLD_SHORT",
+      "t_issued": 18,
+      "event_id": "ev00096",
+      "hold": {
+       "runway": "22"
+      }
+     },
+     "authorization_b": null,
+     "state_snapshot": {
+      "UAL2355": {
+       "authorized": "hold short, hold short of runway 22",
+       "acknowledged": "read back: landing clearance, rwy 22",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "No readback naming the runway hold (hold short runway 22) was heard from UAL2355 within 15 s.",
+     "what_would_clear_it": "a readback that names the hold",
+     "cite": "JO 7110.65BB 3-7-2 (read back hold instructions)",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 1700, Runway 31, cleared to land, Wing 060 at 1-5.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.18,
+     "asr_s": 0.229,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 31, cleared the land, frontier 1700.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.175,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Spirit 1169, cross runway 22 at Foxtrot without delay, traffic short final.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS1169"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1169"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.12,
+     "asr_s": 0.212,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Bought runway 22 at Parkstraat, period 1169",
+     "hypothesis": {
+      "callsigns": [
+       "?1169"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS1169"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.181,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "American 2233, number 2, runway 4, cleared to last.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.17,
+     "asr_s": 0.189,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Onway 4 cleared to land, American 2233.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.178,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 6217, hold short runway 4, traffic on final...",
+     "hypothesis": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.12,
+     "asr_s": 0.216,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Hold short of runway 4, delta 6217",
+     "hypothesis": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.17,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 2200, runway 31, cleared to land wind calm.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.14,
+     "asr_s": 0.194,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 31, clear to land United 2200.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.177,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 40,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 2200, exit right at Charlie Charlie, contact ground point Niner.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.212,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 48,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 2200, taxi via Charlie Charlie to the gate!",
+     "hypothesis": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.2,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 55,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Twin Tessna 4321 Sierra, cross runway 31 at Zulu without delay, traffic short final.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.234,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 59,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 31 at Zulu, twin Cessna 4321 Sierra",
+     "hypothesis": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.228,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Twin Cessna, 1128 November. Runway 4, cleared to land. Wind 060 at 1-5.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.19,
+     "asr_s": 0.25,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 4 cleared to land, twin Cessna 1-1-2-8-N.",
+     "hypothesis": {
+      "callsigns": [
+       "N1128"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.233,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": null,
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 45,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Winchester 1128 November, clear of the runway.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.201,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 55,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Twin Cessna 2656 uniform, cross runway 4 at Papa without delay, traffic short final.",
+     "hypothesis": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.228,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 59,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Goshman with bullet bumper, twin Cessna 2656 uniform.",
+     "hypothesis": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.192,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0017",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CAUTION",
+     "category": "conflict",
+     "runway": "KLGA:RWY:04-22",
+     "t_fired": 55,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "N1128",
+      "type": "LANDING",
+      "runway_end": "04",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 4,
+      "event_id": "ev00115",
+      "acknowledged": "pending"
+     },
+     "authorization_b": {
+      "callsign": "N2656U",
+      "type": "CROSSING",
+      "runway_end": "04",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 55,
+      "event_id": "ev00117",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "N1128": {
+       "authorized": "landing clearance, rwy 04",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "N2656U": {
+       "authorized": "cross, rwy 04, at P",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 04 has a recorded landing authorization for N1128 (t=4) and a crossing authorization for N2656U at P (t=55). Both need the 04-22 protected area.",
+     "what_would_clear_it": "N2656U reports clear of runway, or N1128 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 1262, Runway 31, cleared to land Wind Cobb.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.15,
+     "asr_s": 0.21,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 31 cleared the land, SW 1262",
+     "hypothesis": {
+      "callsigns": [
+       "?1262"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.174,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 30,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 1262, go around. Traffic on the runway.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.18,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 33,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 1262 is going around",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.158,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "report",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 45,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "American Niner 049, cross runway 31 at Whiskey, hold short of runway 4.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.13,
+     "asr_s": 0.225,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 49,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 31 at whiskey, American Niner 049",
+     "hypothesis": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.18,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 1736. Runway 4 and Papa line up and wait!",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": null,
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.14,
+     "asr_s": 0.201,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Line up and wait runway 4, United 1736.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.182,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 40,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 1736, runway 4 at Papa, intersection departure, cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.226,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 44,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Roger, cleared for take of 4, United 1736.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.18,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": false,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "American 1195, runway 4, line up and wait. Traffic landing runway 13.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.18,
+     "asr_s": 0.217,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Line up and wave runway 4, American 1195",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.182,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 14,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 2816, runway 4, extend downward, traffic holding in position.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2816"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2816"
+      ],
+      "runway": "4",
+      "instruction": "OTHER"
+     },
+     "library_ms": 0.12,
+     "asr_s": 0.209,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "We'll go Frontier 2816.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2816"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2816"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.158,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 30,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "American 1195, Runway 4 at Foxtrot, intersection departure, cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.12,
+     "asr_s": 0.224,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 34,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Roger, cleared for takeoff 4, American 1195",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.173,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_15_RB_WRONG_RUNWAY",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": true,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 1200, runway 22, cleared to land, wind 260 at 7.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.16,
+     "asr_s": 0.206,
+     "speaker_label": "ATC",
+     "speaker_hint_used": "ATC",
+     "speaker_resolved": "instruction",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 13, clear to land southwest 1200.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.164,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0018",
+     "rule_id": "R14",
+     "name": "readback mismatch",
+     "severity": "CAUTION",
+     "category": "readback_mismatch",
+     "runway": null,
+     "t_fired": 4,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SWA1200",
+      "type": "LANDING_CLEARANCE",
+      "t_issued": 0,
+      "event_id": "ev00135"
+     },
+     "authorization_b": {
+      "callsign": "SWA1200",
+      "type": "READBACK",
+      "t_issued": 4,
+      "event_id": "ev00136"
+     },
+     "state_snapshot": {
+      "SWA1200": {
+       "authorized": "landing clearance, rwy 22",
+       "acknowledged": "discrepant_runway: instruction runway 22, readback runway 13",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Readback differs from the recorded instruction: instruction runway 22, readback runway 13.",
+     "what_would_clear_it": "controller corrects; correct readback heard",
+     "cite": "JO 7110.65BB 2-4-3a,b (read back items correct; hold short read back)",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "mismatch": "discrepant_runway",
+     "llm_parse": false
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY",
+   "kind": "SIMULATED (synthetic heldout4, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "expected_readback_mismatch": true,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "They have a 2800, number 2, runway 22, cleared to left.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.18,
+     "asr_s": 0.204,
+     "speaker_label": "ATC",
+     "speaker_hint_used": null,
+     "speaker_resolved": "unknown",
+     "parse_path": "residue",
+     "llm": null,
+     "callsign_match": null
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Roger, cleared to land. Endeavour 2800.",
+     "hypothesis": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.175,
+     "speaker_label": "PILOT",
+     "speaker_hint_used": "PILOT",
+     "speaker_resolved": "readback",
+     "parse_path": "grammar",
+     "llm": null,
+     "callsign_match": null
+    }
+   ],
+   "warnings": []
+  }
+ ]
+}

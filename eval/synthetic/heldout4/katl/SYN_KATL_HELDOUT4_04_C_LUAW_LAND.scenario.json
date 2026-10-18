@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout4",
+ "phrasing_pool": "E",
+ "template": "C_LUAW_LAND",
+ "basis": "R5 line up and wait vs landing, same runway (3-9-4; landing clearance carries 'traffic holding in position': CAUTION)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7501,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "T",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit twenty four hundred, runway two seven right, line up and wait, traffic landing runway two six right.",
+   "id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Line up and wait runway two seven right, Spirit twenty four hundred.",
+   "id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Southwest twenty one sixty three, runway two seven right, cleared to land, traffic holding in position runway two seven right.",
+   "id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Runway two seven right, cleared to land, Southwest twenty one sixty three.",
+   "id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

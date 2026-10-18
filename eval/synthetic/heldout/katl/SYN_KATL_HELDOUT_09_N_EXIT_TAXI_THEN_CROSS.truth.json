@@ -1,0 +1,70 @@
+{
+ "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "section8_case": true,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "AAL1099"
+    ],
+    "runway": "27L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "AAL1099"
+    ],
+    "runway": "27L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "AAL1099"
+    ],
+    "runway": null,
+    "instruction": "TAXI"
+   },
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "AAL1099"
+    ],
+    "runway": null,
+    "instruction": "TAXI"
+   },
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_03"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "UAL668"
+    ],
+    "runway": "27L",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_04"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "UAL668"
+    ],
+    "runway": "27L",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_HELDOUT_09_N_EXIT_TAXI_THEN_CROSS_05"
+  }
+ ]
+}

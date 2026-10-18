@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "Delta 10-54, runway 22, cleared to land.",
+  "asr_s": 0.187
+ },
+ "SYN_KLGA_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "Delta 1054, roger. Clear to land runway P2.",
+  "asr_s": 0.193
+ },
+ "SYN_KLGA_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "T-1041, activate pop-up, crossroad release.",
+  "asr_s": 0.204
+ },
+ "SYN_KLGA_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Crafting runway 22 at Papa, Frontier 1041.",
+  "asr_s": 0.191
+ }
+}

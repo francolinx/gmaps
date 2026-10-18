@@ -1,0 +1,234 @@
+{
+ "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_00": {
+  "text": "Spirit 2400, runway two seven right, line up and wait, traffic landing runway two six right.",
+  "asr_s": 0.516,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9895
+   },
+   {
+    "w": "2400,",
+    "p": 0.8348
+   },
+   {
+    "w": "runway",
+    "p": 0.9887
+   },
+   {
+    "w": "two",
+    "p": 0.9852
+   },
+   {
+    "w": "seven",
+    "p": 0.9929
+   },
+   {
+    "w": "right,",
+    "p": 0.9976
+   },
+   {
+    "w": "line",
+    "p": 0.9983
+   },
+   {
+    "w": "up",
+    "p": 0.9999
+   },
+   {
+    "w": "and",
+    "p": 0.9993
+   },
+   {
+    "w": "wait,",
+    "p": 0.9463
+   },
+   {
+    "w": "traffic",
+    "p": 0.9991
+   },
+   {
+    "w": "landing",
+    "p": 0.9997
+   },
+   {
+    "w": "runway",
+    "p": 0.9263
+   },
+   {
+    "w": "two",
+    "p": 0.9863
+   },
+   {
+    "w": "six",
+    "p": 0.9982
+   },
+   {
+    "w": "right.",
+    "p": 0.972
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_01": {
+  "text": "Line up and wait, runway two seven right, Spirit 2400.",
+  "asr_s": 0.447,
+  "words": [
+   {
+    "w": "Line",
+    "p": 0.9096
+   },
+   {
+    "w": "up",
+    "p": 0.9934
+   },
+   {
+    "w": "and",
+    "p": 0.9821
+   },
+   {
+    "w": "wait,",
+    "p": 0.8644
+   },
+   {
+    "w": "runway",
+    "p": 0.9993
+   },
+   {
+    "w": "two",
+    "p": 0.986
+   },
+   {
+    "w": "seven",
+    "p": 0.9979
+   },
+   {
+    "w": "right,",
+    "p": 0.963
+   },
+   {
+    "w": "Spirit",
+    "p": 0.7234
+   },
+   {
+    "w": "2400.",
+    "p": 0.7725
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_02": {
+  "text": "Southwest 2163, runway two seven right, cleared to land, traffic holding in position runway two seven right.",
+  "asr_s": 0.517,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9606
+   },
+   {
+    "w": "2163,",
+    "p": 0.6971
+   },
+   {
+    "w": "runway",
+    "p": 0.9844
+   },
+   {
+    "w": "two",
+    "p": 0.9939
+   },
+   {
+    "w": "seven",
+    "p": 0.9971
+   },
+   {
+    "w": "right,",
+    "p": 0.8005
+   },
+   {
+    "w": "cleared",
+    "p": 0.9961
+   },
+   {
+    "w": "to",
+    "p": 0.8531
+   },
+   {
+    "w": "land,",
+    "p": 0.7596
+   },
+   {
+    "w": "traffic",
+    "p": 0.9923
+   },
+   {
+    "w": "holding",
+    "p": 0.9988
+   },
+   {
+    "w": "in",
+    "p": 0.9962
+   },
+   {
+    "w": "position",
+    "p": 0.9986
+   },
+   {
+    "w": "runway",
+    "p": 0.5247
+   },
+   {
+    "w": "two",
+    "p": 0.9933
+   },
+   {
+    "w": "seven",
+    "p": 0.9982
+   },
+   {
+    "w": "right.",
+    "p": 0.8736
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_03": {
+  "text": "runway two seven right, cleared to land, Southwest 2163.",
+  "asr_s": 0.463,
+  "words": [
+   {
+    "w": "runway",
+    "p": 0.4898
+   },
+   {
+    "w": "two",
+    "p": 0.9597
+   },
+   {
+    "w": "seven",
+    "p": 0.9929
+   },
+   {
+    "w": "right,",
+    "p": 0.8856
+   },
+   {
+    "w": "cleared",
+    "p": 0.9963
+   },
+   {
+    "w": "to",
+    "p": 0.9175
+   },
+   {
+    "w": "land,",
+    "p": 0.9361
+   },
+   {
+    "w": "Southwest",
+    "p": 0.8385
+   },
+   {
+    "w": "2163.",
+    "p": 0.796
+   }
+  ]
+ }
+}

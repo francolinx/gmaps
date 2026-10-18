@@ -1,0 +1,93 @@
+{
+ "icao": "KSFO",
+ "graticule_source": "outline_glyph_decode",
+ "fit": {
+  "fitted_on": "graticule intersections only",
+  "graticule_source": "outline_glyph_decode",
+  "control_points_n": 6,
+  "fit_rms_m": 0.018
+ },
+ "along_flag_m": 5.0,
+ "flagged_fit_problems": [],
+ "diagnosis": {},
+ "ends": [
+  {
+   "id": "01L",
+   "residual_m": 2.63,
+   "along_m": -1.75,
+   "across_m": 1.96
+  },
+  {
+   "id": "01R",
+   "residual_m": 5.66,
+   "along_m": -1.42,
+   "across_m": 5.47
+  },
+  {
+   "id": "10L",
+   "residual_m": 11.02,
+   "along_m": -2.08,
+   "across_m": -10.82
+  },
+  {
+   "id": "10R",
+   "residual_m": 1.91,
+   "along_m": -1.85,
+   "across_m": 0.48
+  },
+  {
+   "id": "19L",
+   "residual_m": 1.62,
+   "along_m": 1.21,
+   "across_m": 1.08
+  },
+  {
+   "id": "19R",
+   "residual_m": 2.27,
+   "along_m": 1.11,
+   "across_m": -1.99
+  },
+  {
+   "id": "28L",
+   "residual_m": 3.89,
+   "along_m": 0.17,
+   "across_m": 3.88
+  },
+  {
+   "id": "28R",
+   "residual_m": 6.57,
+   "along_m": 0.73,
+   "across_m": -6.53
+  }
+ ],
+ "runways": [
+  {
+   "runway": "01L/19R",
+   "nasr_length_ft": 7650,
+   "diagram_length_ft": 7652,
+   "length_diff_m": 0.7,
+   "bearing_diff_deg": -0.001
+  },
+  {
+   "runway": "01R/19L",
+   "nasr_length_ft": 8650,
+   "diagram_length_ft": 8651,
+   "length_diff_m": 0.2,
+   "bearing_diff_deg": 0.142
+  },
+  {
+   "runway": "10L/28R",
+   "nasr_length_ft": 11870,
+   "diagram_length_ft": 11875,
+   "length_diff_m": 1.5,
+   "bearing_diff_deg": -0.275
+  },
+  {
+   "runway": "10R/28L",
+   "nasr_length_ft": 11381,
+   "diagram_length_ft": 11387,
+   "length_diff_m": 1.7,
+   "bearing_diff_deg": 0.071
+  }
+ ]
+}

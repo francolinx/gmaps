@@ -1,0 +1,27 @@
+{
+ "_readme": "GMAPS runtime settings (Franco, Oct 9, round 3). Read by venue/gmaps_mcp.py (copied into ~/gmaps_venue/runtime by build_runtime.py) and by eval/harness.py. readback_mismatch_min_word_conf: Whisper word confidence a different read-back runway needs to be a readback-mismatch candidate (shadow mode). 0.9 = highest threshold keeping the best dev4 F1 (dev4: 2 wrong-runway readbacks, no false candidates at any threshold), Oct 9. N6/N7 (Franco, Oct 10): reservation_expiry_s = seconds after the authorization with no release heard (exit/clear report/taxi clearance/crossing complete/go-around) before a reservation SOFT-expires to expired_unverified (logged; it stays in every conflict check and a conflict with it raises an R17 ADVISORY, category unverified_conflict). A crossing never read back/acknowledged, or any reservation with an unacknowledged stop, never soft-expires. reservation_hard_limit_s = seconds after the authorization when an unreleased reservation is dropped (logged hard_drop_without_release; closes only the warnings that stand solely on it). max_open_warnings = cap (N8): the oldest advisory-level item is evicted first, then shadow/info items; a conflict-level (CONFLICT/CAUTION) warning is never evicted; with only those open nothing is evicted and a SYSTEM DEGRADED health alarm is raised (logged and shown). Oct 11 (N7 aggregate, N12, N13): R17 is ONE advisory per runway (\"N unverified earlier clearances on runway X\"), updated in place, per-reservation detail inside. conflict_auto_close_s: a CONFLICT/CAUTION warning is never evicted; it auto-closes (logged, reason 'both clearances expired_unverified') once every clearance it stands on is expired_unverified and it has been open this long. history_keep: only the last N closed warnings/notes (and events, closed reservations, expiry/cap records, pending readbacks) stay in memory; pruned items go to the call log (tool ledger_history). call_log_rotation = size-based rotation of ~/gmaps_venue/log/mcp_calls_<run>.jsonl (max_mb x backups).",
+ "readback_timeout_s": 15,
+ "clock_period_s": 1.0,
+ "llm_fallback": true,
+ "llm": {
+  "base_url": "http://127.0.0.1:8000/v1",
+  "model": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+  "max_tokens": 96,
+  "timeout_s": 15
+ },
+ "readback_mismatch_min_word_conf": 0.9,
+ "reservation_expiry_s": {
+  "LANDING": 360,
+  "TAKEOFF": 300,
+  "LUAW": 300,
+  "CROSSING": 180
+ },
+ "reservation_hard_limit_s": 1200,
+ "max_open_warnings": 200,
+ "conflict_auto_close_s": 120,
+ "history_keep": 1000,
+ "call_log_rotation": {
+  "max_mb": 20,
+  "backups": 5
+ }
+}

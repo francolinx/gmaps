@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31012_08_N_CROSS_OTHER_RWY",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CROSS_OTHER_RWY",
+ "basis": "crossing a runway with no active operation",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31012,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "B5",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier three forty seven, runway eight left, wind one four zero at one eight, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31012_08_N_CROSS_OTHER_RWY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land eight left, Frontier three forty seven.",
+   "id": "SYN_KATL_TRAINFT_S31012_08_N_CROSS_OTHER_RWY_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "November eight two zero Lima Juliett, cross runway two six left at Hotel.",
+   "id": "SYN_KATL_TRAINFT_S31012_08_N_CROSS_OTHER_RWY_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross two six left at Hotel, November eight two zero Lima Juliett.",
+   "id": "SYN_KATL_TRAINFT_S31012_08_N_CROSS_OTHER_RWY_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

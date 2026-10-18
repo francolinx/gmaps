@@ -1,0 +1,2444 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "2026-10-03.draft2",
+  "airport": {
+    "icao": "KLGA",
+    "faa": "LGA",
+    "name": "LaGuardia"
+  },
+  "created_at": "2026-10-03T06:26:51.037526+00:00",
+  "intended_use": "prototype_source_review",
+  "coverage": {
+    "inventory": "Selected visually read identifiers; not an exhaustive airport database.",
+    "topology": "Small source-supported fragments only; no inferred links outside the listed nodes and segments. Draft2 adds one ambiguous Delta extension west of Alpha Alpha, two ILS hold annotations, hotspot label membership and recovered route-word provenance.",
+    "excluded": [
+      "Unmodeled taxiway connections",
+      "Exact hold-line locations",
+      "Surveyed coordinates, pavement polygons and distances",
+      "Live closures, NOTAMs, direction restrictions and vehicle access",
+      "Historical incident geometry and timing"
+    ]
+  },
+  "usability": {
+    "identifier_lookup": true,
+    "topology_review": true,
+    "automatic_routing": false,
+    "physical_position_inference": false,
+    "metric_prediction": false,
+    "operational_navigation": false
+  },
+  "sources": [
+    {
+      "id": "LGA-FAA-2610",
+      "title": "FAA LaGuardia diagram, cycle 2610, 00289AD",
+      "kind": "faa_diagram",
+      "uri": "https://aeronav.faa.gov/d-tpp/2610/00289AD.PDF",
+      "local_path": "sources/lga_faa_2610_00289AD.pdf",
+      "sha256": "99951faddb8779db57ba617e6f136338a3df6df4a37dc300a749d7dd3af54b93",
+      "retrieved_on": "2026-10-03",
+      "effective_from": "2026-10-01",
+      "effective_to": "2026-10-29",
+      "printed_cycle": "NE-2, 01 OCT 2026 to 29 OCT 2026",
+      "chart_code": "AL-289; printed revision mark 26134",
+      "date_status": "within_printed_range",
+      "authority_scope": "Printed diagram labels and visible pavement only; operational status, exact metrics and historical applicability unverified."
+    },
+    {
+      "id": "JOE-NOTES-DERIVED",
+      "title": "Addendum 14: resources from Joe notes (Claude synthesis)",
+      "kind": "project_notes",
+      "uri": "https://docs.google.com/document/d/19kFmgREr4ycLPEqDrG5l4vE3MK5_A-eGYhChIqXZ52E/edit",
+      "local_path": "sources/lga_resources_addendum14.txt",
+      "sha256": "18d8ae1eb44674119842281a82547be3933a853e5df1b3ee68383bfa6c27b314",
+      "retrieved_on": "2026-10-03",
+      "effective_from": null,
+      "effective_to": null,
+      "printed_cycle": null,
+      "chart_code": null,
+      "date_status": "not_applicable",
+      "authority_scope": "Project design context; not authoritative airport geometry or authenticated incident evidence."
+    },
+    {
+      "id": "JOE-DESIGN-DERIVED",
+      "title": "Addendum 11: Eichelberger meeting (Claude synthesis)",
+      "kind": "project_notes",
+      "uri": "https://docs.google.com/document/d/1ojw7iaw_9RiXLgznxKMGdUykYk9zTjEuE1yO_L7LtmU/edit",
+      "local_path": "sources/joe_design_addendum11.txt",
+      "sha256": "ef9dd15cf6e33405d9b3e006c08dd0655de86f8cb652068e2775c798adcb1e15",
+      "retrieved_on": "2026-10-03",
+      "effective_from": null,
+      "effective_to": null,
+      "printed_cycle": null,
+      "chart_code": null,
+      "date_status": "not_applicable",
+      "authority_scope": "Project design context; not authoritative airport geometry or authenticated incident evidence."
+    },
+    {
+      "id": "GMAPS-MASTER",
+      "title": "GMAPS master source of truth",
+      "kind": "project_master",
+      "uri": "https://docs.google.com/document/d/1_sam1PEukE0KoAoO1Ty1HOf4WnUTwbuBnS8213NmqRw/edit",
+      "local_path": "sources/gmaps_master_reference.txt",
+      "sha256": "de54b83d61bd501899c30e2d012e902babf52cbc6e12d70318e3baa7fd3a4323",
+      "retrieved_on": "2026-10-03",
+      "effective_from": null,
+      "effective_to": null,
+      "printed_cycle": null,
+      "chart_code": null,
+      "date_status": "not_applicable",
+      "authority_scope": "Project design context; not authoritative airport geometry or authenticated incident evidence."
+    },
+    {
+      "id": "JOE-NOTES-RAW",
+      "title": "Franco's notes from the Eichelberger meeting, incl. pasted VASAviation auto-captions (uploaded to the Claude conversation twice on 2026-10-02; byte-identical)",
+      "kind": "conversation",
+      "uri": "claude-conversation://upload/notes_from_joe.txt",
+      "local_path": "sources/notes_from_joe.txt",
+      "sha256": "727d253c1b5957cceca5e6c0320b5106de9e8753d6976fdcf755a0a8ea2f2c07",
+      "retrieved_on": "2026-10-02",
+      "effective_from": null,
+      "effective_to": null,
+      "printed_cycle": null,
+      "chart_code": null,
+      "date_status": "not_applicable",
+      "authority_scope": "User notes plus third-party YouTube auto-captions of edited LiveATC audio for the 2026-03-22 event; speech-recognition errors present; not authenticated ATC audio; describes March 2026, not the October chart cycle."
+    },
+    {
+      "id": "PRIOR-LGA-GRAPH",
+      "title": "Earlier lga_graph.json (Claude, 2026-10-02 15:10 ET) — the 'prior graph' referenced by Addenda 13/14",
+      "kind": "conversation",
+      "uri": "claude-conversation://artifact/lga_graph.json",
+      "local_path": null,
+      "sha256": "efd5d2e2ee3827903b9160f7f0f036abc964e30e2325c74099b427b4111cdece",
+      "retrieved_on": "2026-10-03",
+      "effective_from": null,
+      "effective_to": null,
+      "printed_cycle": null,
+      "chart_code": null,
+      "date_status": "not_applicable",
+      "authority_scope": "Assistant's own earlier first-pass reading of the same FAA chart; retained for comparison only; several connector orders were marked 'best reading' and are not adopted."
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "KLGA:RWY:04-22",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Runway end labels, pavement dimension text and runway data block",
+          "claim": "Identifier 04/22 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway",
+      "identifier": "04/22",
+      "aliases": [
+        "04/22"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": {
+        "length": 7002,
+        "width": 150
+      }
+    },
+    {
+      "id": "KLGA:RWY:13-31",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Runway end labels, pavement dimension text and runway data block",
+          "claim": "Identifier 13/31 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway",
+      "identifier": "13/31",
+      "aliases": [
+        "13/31"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": {
+        "length": 7002,
+        "width": 150
+      }
+    },
+    {
+      "id": "KLGA:TWY:A",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label A on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier A appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "A",
+      "aliases": [
+        "a",
+        "alfa",
+        "alpha",
+        "taxiway a",
+        "taxiway alpha"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:AA",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label AA on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier AA appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "AA",
+      "aliases": [
+        "aa",
+        "alfa alfa",
+        "alpha alpha",
+        "taxiway aa",
+        "taxiway alpha alpha"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:AC",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label AC on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier AC appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "AC",
+      "aliases": [
+        "ac",
+        "alfa charlie",
+        "alpha charlie",
+        "taxiway ac",
+        "taxiway alpha charlie"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:B",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label B on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier B appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "B",
+      "aliases": [
+        "b",
+        "bravo",
+        "taxiway b",
+        "taxiway bravo"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:BB",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label BB on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier BB appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "BB",
+      "aliases": [
+        "bb",
+        "bravo bravo",
+        "taxiway bb",
+        "taxiway bravo bravo"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:C",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label C on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier C appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "C",
+      "aliases": [
+        "c",
+        "charlie",
+        "taxiway c",
+        "taxiway charlie"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:CC",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label CC on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier CC appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "CC",
+      "aliases": [
+        "cc",
+        "charlie charlie",
+        "taxiway cc",
+        "taxiway charlie charlie"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:CY",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label CY on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier CY appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "CY",
+      "aliases": [
+        "charlie yankee",
+        "cy",
+        "taxiway charlie yankee",
+        "taxiway cy"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:D",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label D on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier D appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "D",
+      "aliases": [
+        "d",
+        "delta",
+        "taxiway d",
+        "taxiway delta"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:DD",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label DD on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier DD appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "DD",
+      "aliases": [
+        "dd",
+        "delta delta",
+        "taxiway dd",
+        "taxiway delta delta"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:E",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label E on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier E appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "E",
+      "aliases": [
+        "e",
+        "echo",
+        "taxiway e",
+        "taxiway echo"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:F",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label F on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier F appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "F",
+      "aliases": [
+        "f",
+        "foxtrot",
+        "taxiway f",
+        "taxiway foxtrot"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:G",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label G on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier G appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "G",
+      "aliases": [
+        "g",
+        "golf",
+        "taxiway g",
+        "taxiway golf"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:GG",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label GG on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier GG appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "GG",
+      "aliases": [
+        "gg",
+        "golf golf",
+        "taxiway gg",
+        "taxiway golf golf"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:J",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label J on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier J appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "J",
+      "aliases": [
+        "j",
+        "juliet",
+        "juliett",
+        "taxiway j",
+        "taxiway juliett"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:K",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label K on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier K appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "K",
+      "aliases": [
+        "k",
+        "kilo",
+        "taxiway k",
+        "taxiway kilo"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:L",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label L on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier L appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "L",
+      "aliases": [
+        "l",
+        "lima",
+        "taxiway l",
+        "taxiway lima"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:M",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label M on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier M appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "M",
+      "aliases": [
+        "m",
+        "mike",
+        "taxiway m",
+        "taxiway mike"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:N",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label N on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier N appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "N",
+      "aliases": [
+        "n",
+        "november",
+        "taxiway n",
+        "taxiway november"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:P",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label P on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier P appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "P",
+      "aliases": [
+        "p",
+        "papa",
+        "taxiway p",
+        "taxiway papa"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:Q",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label Q on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier Q appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "Q",
+      "aliases": [
+        "q",
+        "quebec",
+        "taxiway q",
+        "taxiway quebec"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:R",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label R on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier R appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "R",
+      "aliases": [
+        "r",
+        "romeo",
+        "taxiway r",
+        "taxiway romeo"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:S",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label S on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier S appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "S",
+      "aliases": [
+        "s",
+        "sierra",
+        "taxiway s",
+        "taxiway sierra"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:T",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label T on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier T appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "T",
+      "aliases": [
+        "t",
+        "tango",
+        "taxiway t",
+        "taxiway tango"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:U",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label U on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier U appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "U",
+      "aliases": [
+        "taxiway u",
+        "taxiway uniform",
+        "u",
+        "uniform"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:V",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label V on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier V appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "V",
+      "aliases": [
+        "taxiway v",
+        "taxiway victor",
+        "v",
+        "victor"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:W",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label W on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier W appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "W",
+      "aliases": [
+        "taxiway w",
+        "taxiway whiskey",
+        "w",
+        "whiskey"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:Y",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label Y on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier Y appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "Y",
+      "aliases": [
+        "taxiway y",
+        "taxiway yankee",
+        "y",
+        "yankee"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:YY",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label YY on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier YY appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "YY",
+      "aliases": [
+        "taxiway yankee yankee",
+        "taxiway yy",
+        "yankee yankee",
+        "yy"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:TWY:Z",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Taxiway pavement label Z on main map; lighting and helipad symbols excluded",
+          "claim": "Identifier Z appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "Z",
+      "aliases": [
+        "taxiway z",
+        "taxiway zulu",
+        "z",
+        "zulu"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:AREA:Fire_Station",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Named area label or printed alley number; area is not a precise start node",
+          "claim": "Identifier Fire Station appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "Fire Station",
+      "aliases": [
+        "fire station"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:AREA:General_Aviation_Parking",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Named area label or printed alley number; area is not a precise start node",
+          "claim": "Identifier General Aviation Parking appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "General Aviation Parking",
+      "aliases": [
+        "general aviation parking"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:AREA:Transient_Parking",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Named area label or printed alley number; area is not a precise start node",
+          "claim": "Identifier Transient Parking appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "Transient Parking",
+      "aliases": [
+        "transient parking"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:AREA:Terminal_A",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Named area label or printed alley number; area is not a precise start node",
+          "claim": "Identifier Terminal A appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "Terminal A",
+      "aliases": [
+        "terminal a"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:AREA:Terminal_B",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Named area label or printed alley number; area is not a precise start node",
+          "claim": "Identifier Terminal B appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "Terminal B",
+      "aliases": [
+        "terminal b"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:AREA:Terminal_C",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Named area label or printed alley number; area is not a precise start node",
+          "claim": "Identifier Terminal C appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "Terminal C",
+      "aliases": [
+        "terminal c"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:AREA:Air_Carrier_Maintenance_and_Base_Facilities",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Named area label or printed alley number; area is not a precise start node",
+          "claim": "Identifier Air Carrier Maintenance and Base Facilities appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "Air Carrier Maintenance and Base Facilities",
+      "aliases": [
+        "air carrier maintenance and base facilities"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KLGA:AREA:Alley_15",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Named area label or printed alley number; area is not a precise start node",
+          "claim": "Identifier Alley 15 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "Alley 15",
+      "aliases": [
+        "alley 15"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    }
+  ],
+  "runway_ends": [
+    {
+      "id": "KLGA:END:04",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Printed runway end 4",
+          "claim": "Direction identifier 04 belongs to physical runway 04/22.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "04",
+      "runway_id": "KLGA:RWY:04-22",
+      "reciprocal_end_id": "KLGA:END:22",
+      "aliases": [
+        "04",
+        "4",
+        "four",
+        "runway 04",
+        "runway 4",
+        "runway four"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KLGA:END:22",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Printed runway end 22",
+          "claim": "Direction identifier 22 belongs to physical runway 04/22.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "22",
+      "runway_id": "KLGA:RWY:04-22",
+      "reciprocal_end_id": "KLGA:END:04",
+      "aliases": [
+        "22",
+        "runway 22",
+        "runway two two",
+        "two two"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KLGA:END:13",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Printed runway end 13",
+          "claim": "Direction identifier 13 belongs to physical runway 13/31.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "13",
+      "runway_id": "KLGA:RWY:13-31",
+      "reciprocal_end_id": "KLGA:END:31",
+      "aliases": [
+        "13",
+        "one three",
+        "runway 13",
+        "runway one three"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KLGA:END:31",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Printed runway end 31",
+          "claim": "Direction identifier 31 belongs to physical runway 13/31.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "31",
+      "runway_id": "KLGA:RWY:13-31",
+      "reciprocal_end_id": "KLGA:END:13",
+      "aliases": [
+        "31",
+        "runway 31",
+        "runway three one",
+        "three one"
+      ],
+      "geometry": null
+    }
+  ],
+  "nodes": [
+    {
+      "id": "KLGA:N:D_AA",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Delta west of runway 4/22, at Alpha Alpha",
+          "claim": "Visible pavement junction between KLGA:TWY:D, KLGA:TWY:AA.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Same junction, re-read on a 1200-dpi north-up render",
+          "claim": "Independent 1200-dpi check 2026-10-03: D label printed between AA and the runway edge on the west side.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Junction existence visually supported; turn permissions, surveyed position and protected boundaries unverified.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway_junction",
+      "surface_ids": [
+        "KLGA:TWY:D",
+        "KLGA:TWY:AA"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    },
+    {
+      "id": "KLGA:N:D_RWY04-22",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Delta crosses runway 4/22, north of Charlie / Charlie Yankee and south of Foxtrot",
+          "claim": "Visible pavement junction between KLGA:TWY:D, KLGA:RWY:04-22.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Same junction, re-read on a 1200-dpi north-up render",
+          "claim": "Independent 1200-dpi check 2026-10-03: D labels printed immediately west and east of the runway pavement.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Junction existence visually supported; turn permissions, surveyed position and protected boundaries unverified.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_taxiway_junction",
+      "surface_ids": [
+        "KLGA:TWY:D",
+        "KLGA:RWY:04-22"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    },
+    {
+      "id": "KLGA:N:D_B",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Delta east of runway 4/22, at Bravo",
+          "claim": "Visible pavement junction between KLGA:TWY:D, KLGA:TWY:B.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Same junction, re-read on a 1200-dpi north-up render",
+          "claim": "Independent 1200-dpi check 2026-10-03: D label printed on pavement between the runway and the B parallel; B labels printed SW and NE of it on the same parallel.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Junction existence visually supported; turn permissions, surveyed position and protected boundaries unverified.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway_junction",
+      "surface_ids": [
+        "KLGA:TWY:D",
+        "KLGA:TWY:B"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    },
+    {
+      "id": "KLGA:N:RWY04-22_RWY13-31",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Visible runway crossing inside HS 1; no taxiway connection order inferred",
+          "claim": "Visible pavement junction between KLGA:RWY:04-22, KLGA:RWY:13-31.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Junction existence visually supported; turn permissions, surveyed position and protected boundaries unverified.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_intersection",
+      "surface_ids": [
+        "KLGA:RWY:04-22",
+        "KLGA:RWY:13-31"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    },
+    {
+      "id": "KLGA:N:D_BB",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Delta west of runway 4/22 and west of Alpha Alpha, between the two printed BB labels, adjacent to the H1 helipad callout (1200-dpi render)",
+          "claim": "Delta label appears on pavement west of AA where the BB parallel passes; suggests a D/BB junction.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "ambiguous",
+        "reason": "Delta label and BB labels are adjacent on continuous pavement, but label placement cannot exclude that the visible pavement is the H1/fire-station apron rather than a D/BB taxiway junction.",
+        "alternatives": [
+          "Delta continues west across BB toward the Fire Station area",
+          "Delta terminates on an apron between AA and BB; the BB connection is apron, not taxiway"
+        ],
+        "confidence": null
+      },
+      "kind": "taxiway_junction",
+      "surface_ids": [
+        "KLGA:TWY:D",
+        "KLGA:TWY:BB"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    }
+  ],
+  "segments": [
+    {
+      "id": "KLGA:S:D_AA_TO_RWY",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Delta between Alpha Alpha and runway 4/22",
+          "claim": "Visible connection along KLGA:TWY:D between the two cited junctions.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Same link, re-read on a 1200-dpi north-up render",
+          "claim": "Continuous pavement with a single Delta label; no intervening named junction seen between the cited nodes.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Visual topology only. Hold/control boundaries and operational direction must be reviewed before routing.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "surface_id": "KLGA:TWY:D",
+      "from_node_id": "KLGA:N:D_AA",
+      "to_node_id": "KLGA:N:D_RWY04-22",
+      "topology": "visible_pavement_connection",
+      "direction_permission": "unknown",
+      "geometry": null,
+      "length_m": null,
+      "width_m": null,
+      "atomicity": "junctions_only_hold_boundaries_unresolved",
+      "routing_enabled": false
+    },
+    {
+      "id": "KLGA:S:D_RWY_TO_B",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Delta between runway 4/22 and Bravo",
+          "claim": "Visible connection along KLGA:TWY:D between the two cited junctions.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Same link, re-read on a 1200-dpi north-up render",
+          "claim": "Continuous pavement with a single Delta label; no intervening named junction seen between the cited nodes.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Visual topology only. Hold/control boundaries and operational direction must be reviewed before routing.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "surface_id": "KLGA:TWY:D",
+      "from_node_id": "KLGA:N:D_RWY04-22",
+      "to_node_id": "KLGA:N:D_B",
+      "topology": "visible_pavement_connection",
+      "direction_permission": "unknown",
+      "geometry": null,
+      "length_m": null,
+      "width_m": null,
+      "atomicity": "junctions_only_hold_boundaries_unresolved",
+      "routing_enabled": false
+    },
+    {
+      "id": "KLGA:S:D_BB_TO_AA",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Delta between the BB labels and Alpha Alpha, west of runway 4/22",
+          "claim": "Visible pavement along Delta between the cited junctions.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "ambiguous",
+        "reason": "Depends on KLGA:N:D_BB being a taxiway junction; hold/control boundaries and direction unknown.",
+        "alternatives": [
+          "Apron link rather than a named-taxiway segment"
+        ],
+        "confidence": null
+      },
+      "surface_id": "KLGA:TWY:D",
+      "from_node_id": "KLGA:N:D_BB",
+      "to_node_id": "KLGA:N:D_AA",
+      "topology": "visible_pavement_connection",
+      "direction_permission": "unknown",
+      "geometry": null,
+      "length_m": null,
+      "width_m": null,
+      "atomicity": "junctions_only_hold_boundaries_unresolved",
+      "routing_enabled": false
+    }
+  ],
+  "hold_points": [
+    {
+      "id": "KLGA:HOLD:D_APPROACH_FROM_AA",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Conceptual constraint associated with crossing; physical hold marking not located",
+          "claim": "A hold constraint must stop before the protected area; this record does not assert an exact physical hold-line position.",
+          "method": "design_convention"
+        },
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Chart caution text, upper/top margin",
+          "claim": "'CAUTION: BE ALERT TO RUNWAY CROSSING CLEARANCES. READBACK OF ALL RUNWAY HOLDING INSTRUCTIONS IS REQUIRED.' Supports a readback requirement; does not locate the hold line.",
+          "method": "text_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "design_only",
+        "reason": "Location, approach applicability and protected boundary need expert evidence.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_hold_constraint",
+      "protected_surface_id": "KLGA:RWY:04-22",
+      "approach_surface_id": "KLGA:TWY:D",
+      "approach_segment_id": "KLGA:S:D_AA_TO_RWY",
+      "approach_from_node_id": "KLGA:N:D_AA",
+      "node_id": null,
+      "physical_marking_status": "not_located",
+      "geometry": null,
+      "offset_m": null,
+      "crossing_authority": "not_granted_by_graph"
+    },
+    {
+      "id": "KLGA:HOLD:D_APPROACH_FROM_B",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Conceptual constraint associated with crossing; physical hold marking not located",
+          "claim": "A hold constraint must stop before the protected area; this record does not assert an exact physical hold-line position.",
+          "method": "design_convention"
+        },
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Chart caution text, upper/top margin",
+          "claim": "'CAUTION: BE ALERT TO RUNWAY CROSSING CLEARANCES. READBACK OF ALL RUNWAY HOLDING INSTRUCTIONS IS REQUIRED.' Supports a readback requirement; does not locate the hold line.",
+          "method": "text_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "design_only",
+        "reason": "Location, approach applicability and protected boundary need expert evidence.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_hold_constraint",
+      "protected_surface_id": "KLGA:RWY:04-22",
+      "approach_surface_id": "KLGA:TWY:D",
+      "approach_segment_id": "KLGA:S:D_RWY_TO_B",
+      "approach_from_node_id": "KLGA:N:D_B",
+      "node_id": null,
+      "physical_marking_status": "not_located",
+      "geometry": null,
+      "offset_m": null,
+      "crossing_authority": "not_granted_by_graph"
+    },
+    {
+      "id": "KLGA:HOLD:B_ILS_RWY04",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "ILS HOLD callout on Bravo near runway 4 approach end and corresponding chart caution",
+          "claim": "A hold constraint must stop before the protected area; this record does not assert an exact physical hold-line position.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Chart caution text, lower left",
+          "claim": "'CAUTION: AIRCRAFT TAXIING ON TWY B FOR RWY 4 DEPARTURE MAY BE INSTRUCTED TO HOLD AT THE ILS HOLD LINE.'",
+          "method": "text_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Location, approach applicability and protected boundary need expert evidence.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "ils_hold",
+      "protected_surface_id": "KLGA:RWY:04-22",
+      "approach_surface_id": "KLGA:TWY:B",
+      "approach_segment_id": null,
+      "approach_from_node_id": null,
+      "node_id": null,
+      "physical_marking_status": "chart_depicted_location_unmeasured",
+      "geometry": null,
+      "offset_m": null,
+      "crossing_authority": "not_granted_by_graph"
+    },
+    {
+      "id": "KLGA:HOLD:AC_ILS",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "'ILS HOLD' callout with dashed line across AC, near Terminal A / NWS, west of the runway 4 approach end",
+          "claim": "An ILS hold annotation is charted on AC.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "ambiguous",
+        "reason": "Charted annotation; which ILS critical area it protects and the exact line position are not stated on the diagram.",
+        "alternatives": [
+          "Protects the runway 4 glideslope critical area",
+          "Protects another ILS critical area; check Chart Supplement/facility directive"
+        ],
+        "confidence": null
+      },
+      "kind": "ils_hold",
+      "protected_surface_id": "KLGA:RWY:04-22",
+      "approach_surface_id": "KLGA:TWY:AC",
+      "approach_segment_id": null,
+      "approach_from_node_id": null,
+      "node_id": null,
+      "physical_marking_status": "chart_depicted_location_unmeasured",
+      "geometry": null,
+      "offset_m": null,
+      "crossing_authority": "not_granted_by_graph"
+    },
+    {
+      "id": "KLGA:HOLD:R_ILS",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "'ILS HOLD' callout with dashed line near R/U, beside the ILS antenna symbol and the 224° runway-heading arrow, north of runway 13/31",
+          "claim": "An ILS hold annotation is charted on the R/U side.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "ambiguous",
+        "reason": "Dashed line lies near both R and U; which taxiway carries it and which runway's ILS it protects are not printed.",
+        "alternatives": [
+          "Line crosses U rather than R",
+          "Protects an ILS serving runway 13/31 rather than 04/22"
+        ],
+        "confidence": null
+      },
+      "kind": "ils_hold",
+      "protected_surface_id": "KLGA:RWY:04-22",
+      "approach_surface_id": "KLGA:TWY:R",
+      "approach_segment_id": null,
+      "approach_from_node_id": null,
+      "node_id": null,
+      "physical_marking_status": "chart_depicted_location_unmeasured",
+      "geometry": null,
+      "offset_m": null,
+      "crossing_authority": "not_granted_by_graph"
+    }
+  ],
+  "zones": [
+    {
+      "id": "KLGA:ZONE:DELTA_CROSSING",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Delta/runway 4/22 junction; protected extent not digitized",
+          "claim": "Review reference only; extent and occupancy boundary are unknown.",
+          "method": "design_convention"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "design_only",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "conflict_area_reference",
+      "surface_ids": [
+        "KLGA:RWY:04-22",
+        "KLGA:TWY:D"
+      ],
+      "node_ids": [
+        "KLGA:N:D_RWY04-22"
+      ],
+      "geometry": null,
+      "boundary_status": "unknown",
+      "usable_for_occupancy": false
+    },
+    {
+      "id": "KLGA:ZONE:HS1",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Brown HS 1 ellipse; visual attention annotation, not an occupancy polygon",
+          "claim": "Review reference only; extent and occupancy boundary are unknown.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Labels printed inside the HS 1 ellipse (600-dpi render)",
+          "claim": "AA, P (twice), R (twice) and S labels are printed inside HS 1. Membership of labels only; no connection order, junction count or boundary is asserted.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "hotspot_annotation",
+      "surface_ids": [
+        "KLGA:RWY:04-22",
+        "KLGA:RWY:13-31",
+        "KLGA:TWY:AA",
+        "KLGA:TWY:P",
+        "KLGA:TWY:R",
+        "KLGA:TWY:S"
+      ],
+      "node_ids": [
+        "KLGA:N:RWY04-22_RWY13-31"
+      ],
+      "geometry": null,
+      "boundary_status": "unknown",
+      "usable_for_occupancy": false
+    },
+    {
+      "id": "KLGA:ZONE:HS2",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Brown HS 2 ellipse around central Golf/Quebec area; exact connections deferred",
+          "claim": "Review reference only; extent and occupancy boundary are unknown.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Labels printed inside or on the HS 2 ellipse (600-dpi render)",
+          "claim": "Runway 4/22 passes through HS 2; G, Q and B labels are printed inside or on its edge. Membership of labels only; no connectivity asserted.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Ellipse and enclosed labels are printed; connectivity among G, Q, B, AA and the runway inside HS 2 is not modeled.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "hotspot_annotation",
+      "surface_ids": [
+        "KLGA:RWY:04-22",
+        "KLGA:TWY:G",
+        "KLGA:TWY:Q",
+        "KLGA:TWY:B"
+      ],
+      "node_ids": [],
+      "geometry": null,
+      "boundary_status": "unknown",
+      "usable_for_occupancy": false
+    }
+  ],
+  "route_templates": [
+    {
+      "id": "KLGA:ROUTE:DELTA_FRAGMENT",
+      "evidence": [
+        {
+          "source_id": "LGA-FAA-2610",
+          "page": 1,
+          "locator": "Delta fragment west to east",
+          "claim": "Draft graph walk over the visible Delta crossing; direction is a template order, not permission.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "label": "Delta: Alpha Alpha side to Bravo side",
+      "surface_sequence": [
+        "KLGA:TWY:D"
+      ],
+      "node_sequence": [
+        "KLGA:N:D_AA",
+        "KLGA:N:D_RWY04-22",
+        "KLGA:N:D_B"
+      ],
+      "segment_sequence": [
+        "KLGA:S:D_AA_TO_RWY",
+        "KLGA:S:D_RWY_TO_B"
+      ],
+      "hold_point_ids": [
+        "KLGA:HOLD:D_APPROACH_FROM_AA"
+      ],
+      "route_status": "draft_connected_fragment",
+      "grants_authority": false,
+      "missing_inputs": [
+        "Exact hold line and protected runway boundary",
+        "Crossing authorization for the actor",
+        "Operational direction and vehicle access",
+        "Known origin, destination and time applicability"
+      ]
+    },
+    {
+      "id": "KLGA:ROUTE:N_A_E_HOLD04",
+      "evidence": [
+        {
+          "source_id": "JOE-NOTES-DERIVED",
+          "page": null,
+          "locator": "Addendum 14 item 10",
+          "claim": "Reported route words: November, Alpha, Echo; hold short runway 4.",
+          "method": "secondary_reference"
+        },
+        {
+          "source_id": "JOE-NOTES-RAW",
+          "page": null,
+          "locator": "Pasted VASAviation auto-captions, 'Chapter 5: Second takeoff attempt', media times 4:10–4:16 (instruction) and 4:21 (readback)",
+          "claim": "Captions read 'runway 13 November alpha and echo host runway uh 4' and readback 'Runway 13 November alpha echo short runway 4. United at 2384'. Standard-phraseology reading: 'Runway 13, taxi via November, Alpha, Echo, hold short runway 4'. Auto-caption text, not authenticated audio.",
+          "method": "secondary_reference"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "ambiguous",
+        "reason": "Route words recovered from third-party auto-captions of a March 2026 recording. The October chart may differ from March. Start point (gate/alley) not stated. N→A junction and A's continuity westward through intermediate junctions are not modeled; the A–E connection and where E meets runway 4/22 are unresolved (see KLGA:ISSUE:E_F_LABELS).",
+        "alternatives": [
+          "E reaches the runway 4/22 hold directly",
+          "The hold short of runway 4 is reached via a differently named connector adjacent to E"
+        ],
+        "confidence": null
+      },
+      "label": "Notes-derived November / Alpha / Echo / hold short runway 4",
+      "surface_sequence": [
+        "KLGA:TWY:N",
+        "KLGA:TWY:A",
+        "KLGA:TWY:E"
+      ],
+      "node_sequence": [],
+      "segment_sequence": [],
+      "hold_point_ids": [],
+      "route_status": "unresolved",
+      "grants_authority": false,
+      "missing_inputs": [
+        "Authenticated instruction or an explicitly fictional re-voiced script",
+        "Start location (alley/gate) and N–A junction",
+        "Every intermediate A junction between N and E",
+        "A–E connection and E's crossing point on 4/22, checked against the chart by an expert",
+        "Applicability of the October chart to March 2026"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "KLGA:ISSUE:GEOMETRY",
+      "entity_ids": [],
+      "severity": "blocking",
+      "question": "Which surveyed or explicitly fictional geometry will support motion prediction?",
+      "required_evidence": "Document coordinate frame, units, origin/CRS, accuracy, source and review. No coordinates may be added to v1 drafts.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:HOLDS",
+      "entity_ids": [
+        "KLGA:HOLD:D_APPROACH_FROM_AA",
+        "KLGA:HOLD:D_APPROACH_FROM_B",
+        "KLGA:HOLD:B_ILS_RWY04"
+      ],
+      "severity": "blocking",
+      "question": "Where exactly are each approach-side hold line and protected boundary?",
+      "required_evidence": "Expert review, source-marked location, approach direction and independent coordinates; split segments at verified boundaries.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:CURRENCY",
+      "entity_ids": [],
+      "severity": "blocking",
+      "question": "Which closures, access restrictions and direction permissions apply at the exercise time?",
+      "required_evidence": "Applicable chart cycle, NOTAMs, airport restrictions, review timestamp; expiry-time semantics not inferred from printed dates.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:HISTORICAL",
+      "entity_ids": [],
+      "severity": "blocking",
+      "question": "Does the October diagram match any historical incident used in the story?",
+      "required_evidence": "Incident-date chart and change comparison; current diagram alone is insufficient.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:TOPOLOGY",
+      "entity_ids": [
+        "KLGA:S:D_AA_TO_RWY",
+        "KLGA:S:D_RWY_TO_B"
+      ],
+      "severity": "blocking",
+      "question": "Are the visible links and intervening junctions correct and sufficient for the chosen route?",
+      "required_evidence": "Expert-marked diagram; accepted node order and hold boundaries; retain alternatives until resolved.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:TRACKS",
+      "entity_ids": [],
+      "severity": "blocking",
+      "question": "Which independent observations establish actor position, speed and uncertainty?",
+      "required_evidence": "Timestamped observed or explicitly simulated tracks, actor association, uncertainty, footprint, stale-input rules and time basis.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:CENTRAL",
+      "entity_ids": [],
+      "severity": "blocking",
+      "question": "What is the exact connectivity among P, R, S, G, Q, AA and B in HS 1/HS 2?",
+      "required_evidence": "Primary chart close-up plus expert review; earlier Addendum 14 calls this a best reading. Do not turn the list into an ordered route.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:PRIOR_GRAPH",
+      "entity_ids": [],
+      "severity": "review",
+      "question": "The prior graph (source PRIOR-LGA-GRAPH; its file is not in this copy) was recovered and compared. It asserted ordered connector lists along A and B, an E crossing of 4/22, C/D/F/G/P/R crossings and Fire-Station→D access as 'best reading'. Which of those, if any, should be promoted?",
+      "required_evidence": "Expert-marked chart for each claimed crossing and ordering; do not import prior claims without that review. Draft2 imports none except the Delta crossing, which it independently re-checked.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:LABELS",
+      "entity_ids": [],
+      "severity": "review",
+      "question": "Complete the remaining identifier inventory and distinguish taxiway H from H1 helipad / lighting symbols.",
+      "required_evidence": "Visual expert pass on the full diagram; this selected inventory makes no completeness claim.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:E_F_LABELS",
+      "entity_ids": [
+        "KLGA:TWY:E",
+        "KLGA:TWY:F",
+        "KLGA:ROUTE:N_A_E_HOLD04"
+      ],
+      "severity": "blocking",
+      "question": "East of runway 4/22, the label nearest the runway on the connector NE of Delta reads F, while an E label sits east of the B parallel. Does E itself cross 4/22, or does E end at B with F (or another connector) carrying the crossing?",
+      "required_evidence": "Expert reading of the chart (or the Chart Supplement / airport layout) naming each connector between AA, the runway, B and A; needed before any E or F crossing node, and before resolving the N–A–E route.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:LAHSO",
+      "entity_ids": [],
+      "severity": "review",
+      "question": "No LAHSO hold markings or LAHSO notes were seen on this airport diagram. Are LAHSO operations published for LGA in the current cycle?",
+      "required_evidence": "Chart Supplement LAHSO table for the effective cycle. Absence on the diagram is not proof of absence.",
+      "status": "open"
+    },
+    {
+      "id": "KLGA:ISSUE:FIRE_STATION_ACCESS",
+      "entity_ids": [
+        "KLGA:AREA:Fire_Station",
+        "KLGA:N:D_BB",
+        "KLGA:S:D_BB_TO_AA"
+      ],
+      "severity": "review",
+      "question": "Which pavement connects the Fire Station area to Delta (or another taxiway)? Draft2 adds no area-to-graph connector.",
+      "required_evidence": "Expert-marked access route; vehicle service roads may not be charted.",
+      "status": "open"
+    }
+  ]
+}

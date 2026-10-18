@@ -1,0 +1,135 @@
+{
+ "icao": "KJFK",
+ "source": "outline_glyph_decode",
+ "about": "Graticule values drawn as outlines only, decoded by exact glyph shape against glyphs the same chart draws over its own text layer, and tied to the extracted grid lines by position (tools/airport_map/graticule.py). Not human-confirmed.",
+ "pdf_sha256": "332ea819838b60066ad7308aab9c1bdf93fc8550617c535ac2644e184583793d",
+ "read_at": "2026-10-09T12:26:08-0400",
+ "confirmed_by": null,
+ "parallels": [
+  {
+   "value": "40°39'N",
+   "lat": 40.65,
+   "line_pt_y": 136.804,
+   "label_bbox": [
+    49.4,
+    134.4,
+    72.29,
+    139.42
+   ]
+  },
+  {
+   "value": "40°38'N",
+   "lat": 40.63333333333333,
+   "line_pt_y": 268.055,
+   "label_bbox": [
+    520.63,
+    265.56,
+    543.52,
+    270.58
+   ]
+  }
+ ],
+ "meridians": [
+  {
+   "value": "73°49'W",
+   "lon": -73.81666666666666,
+   "line_pt_x": 113.972,
+   "label_bbox": [
+    101.78,
+    22.12,
+    126.4,
+    27.12
+   ]
+  },
+  {
+   "value": "73°48'W",
+   "lon": -73.8,
+   "line_pt_x": 213.962,
+   "label_bbox": [
+    201.77,
+    22.12,
+    226.38,
+    27.12
+   ]
+  },
+  {
+   "value": "73°47'W",
+   "lon": -73.78333333333333,
+   "line_pt_x": 313.96,
+   "label_bbox": [
+    301.75,
+    22.12,
+    326.36,
+    27.12
+   ]
+  },
+  {
+   "value": "73°46'W",
+   "lon": -73.76666666666667,
+   "line_pt_x": 413.936,
+   "label_bbox": [
+    401.73,
+    22.12,
+    426.35,
+    27.12
+   ]
+  },
+  {
+   "value": "73°45'W",
+   "lon": -73.75,
+   "line_pt_x": 513.921,
+   "label_bbox": [
+    501.75,
+    232.57,
+    526.36,
+    237.58
+   ]
+  }
+ ],
+ "decode": {
+  "method": "exact glyph-shape match against glyphs the same chart draws over its own text layer",
+  "training": "this chart",
+  "training_glyphs": 769,
+  "rule": "every glyph within 0.03 of a learned shape of one character, and at least 0.1 from any other character (Franco, Oct 9: unambiguous only)",
+  "per_value": [
+   {
+    "text": "40°39'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": 1.27
+   },
+   {
+    "text": "40°38'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "73°49'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": 1.27
+   },
+   {
+    "text": "73°48'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "73°47'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "73°46'W",
+    "max_deviation": 0.02,
+    "min_margin_to_other_char": 1.28
+   },
+   {
+    "text": "73°45'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   }
+  ],
+  "distinct_shapes": 336,
+  "decoded_labels": 7,
+  "undecoded_groups": 0
+ }
+}

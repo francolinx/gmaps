@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31006_12_N_GO_AROUND_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_GO_AROUND_THEN_CROSS",
+ "basis": "go-around releases the landing (3-8-1), then a crossing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31006,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "K",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United ten eighty one, runway two seven right, wind three four zero at five gusts one seven, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31006_12_N_GO_AROUND_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two seven right, United ten eighty one.",
+   "id": "SYN_KATL_TRAINFT_S31006_12_N_GO_AROUND_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 30,
+   "speaker": "ATC",
+   "text": "United ten eighty one, go around, fly runway heading, climb and maintain two thousand.",
+   "id": "SYN_KATL_TRAINFT_S31006_12_N_GO_AROUND_THEN_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 33,
+   "speaker": "PILOT",
+   "text": "Going around, United ten eighty one.",
+   "id": "SYN_KATL_TRAINFT_S31006_12_N_GO_AROUND_THEN_CROSS_03",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "ATC",
+   "text": "Frontier ten fifty seven, at Kilo, cross runway two seven right.",
+   "id": "SYN_KATL_TRAINFT_S31006_12_N_GO_AROUND_THEN_CROSS_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 49,
+   "speaker": "PILOT",
+   "text": "Cross two seven right at Kilo, Frontier ten fifty seven.",
+   "id": "SYN_KATL_TRAINFT_S31006_12_N_GO_AROUND_THEN_CROSS_05",
+   "speaker_ref": "b"
+  }
+ ]
+}

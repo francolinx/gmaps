@@ -1,0 +1,31 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL2233",
+  "AAL2700",
+  "DAL2015",
+  "DAL6217",
+  "DAL9983",
+  "EDV1945",
+  "FFT6897",
+  "NKS2000",
+  "UAL2949",
+  "UAL3731"
+ ],
+ "realistic": [
+  "AAL2233",
+  "DAL2015",
+  "DAL6217",
+  "DAL9983",
+  "EDV1945",
+  "FFT1400",
+  "FFT6897",
+  "JBU1800",
+  "NKS2000",
+  "UAL2949",
+  "UAL3506",
+  "UAL3731"
+ ]
+}

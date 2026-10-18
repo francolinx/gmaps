@@ -1,0 +1,292 @@
+{
+ "_readme": [
+  "Synthetic phrasing catalogue v3 (Franco, Oct 9): every template element is taken from FAA Order JO 7110.65BB (basic, dated 2/20/25;",
+  "local copy ~/ssd/GB10_ARSENAL/gmaps/7110.65BB_Basic_dtd_2-20-25.pdf, sha256 fb34ade8e9d1ed3bb5c3d3051411b05ddb67cd4871aadf25865aa8ef9e1407b5),",
+  "with the paragraph and the PHRASEOLOGY/EXAMPLE line it comes from. Written from the order, not from the GMAPS grammar.",
+  "Pools: C = dev (used for fixing), D = held-out (only measured). Each element has DISJOINT realizations in C and D wherever the",
+  "order gives more than one form; where it gives one form only, both pools share it ('shared'). Later changes to 7110.65BB were not checked.",
+  "Truth-labelling rules (independent of the parser): instruction = the clearance verb of the transmission (CROSS for any runway",
+  "crossing clearance, also inside a taxi route; TAXI for taxi/exit instructions, with a hold-short runway as its runway; HOLD_SHORT",
+  "for a stand-alone hold short); a pilot read back carries the kind of what it reads back; runway = the runway the instruction is",
+  "about (crossed runway, hold-short runway, landing/takeoff runway); callsigns = the aircraft addressed.",
+  "Two forms Franco listed are field forms, not 7110.65 forms, and are marked so: 'at T cross runway X' (3-7-2a elements, reordered).",
+  "Round 3 (Franco, Oct 9; the last synthetic tuning round): dev4 draws from pools C and D (both seen by now); held-out4 uses pool E, new realizations of the same 7110.65 elements that no dev set contains. Pool E was written before any round-3 fix."
+ ],
+ "source": {
+  "order": "FAA JO 7110.65BB",
+  "date": "2025-02-20",
+  "sha256": "fb34ade8e9d1ed3bb5c3d3051411b05ddb67cd4871aadf25865aa8ef9e1407b5"
+ },
+ "callsign": {
+  "cite": "2-4-20a2: 'State the call sign followed by the flight number in group form.' Examples: 'American Fifty-Two.', 'Delta One Hundred.', 'General Motors Thirty Fifteen.', 'United One Zero One.', 'TWA Ten Zero Four.'; 3-7-2h 'American Four Ninety Two'; 3-10-9 'U.S. Air Ten Forty Two'. 2-4-20a1: 'November One Two Three Four Golf.', 'Jet Commander One Two Three Four Papa.'",
+  "C": {
+   "styles": [
+    "digits",
+    "pairs",
+    "pairs"
+   ],
+   "civil": "november",
+   "note": "digits ('one zero one'), pairs ('thirty fifteen', 'twelve oh four')"
+  },
+  "D": {
+   "styles": [
+    "group3",
+    "hundred",
+    "pairs_ten"
+   ],
+   "civil": "type",
+   "note": "three-digit groups ('four ninety two'), hundreds ('one hundred', 'two hundred five'), 'ten forty two'"
+  },
+  "civil_rate": 0.1,
+  "E": {
+   "styles": [
+    "hundreds4",
+    "digits4",
+    "pairs"
+   ],
+   "civil": "twin",
+   "note": "'twelve hundred' (1200), four digits spoken singly, pairs"
+  }
+ },
+ "wind": {
+  "cite": "2-4-17g: 'The word \"wind\" followed by the separate digits of the indicated wind direction to the nearest 10-degree multiple, the word \"at\" and the separate digits of the indicated velocity in knots, to include any gusts.' EXAMPLE 'Wind zero three zero at two five.' 'Wind two seven zero at one five gusts three five.'",
+  "C": "wind {dir} at {spd}",
+  "D": "wind {dir} at {spd} gusts {gust}",
+  "E": "wind calm",
+  "E_alt": "wind {dir} at {spd}"
+ },
+ "atc": {
+  "land": {
+   "cite": "3-10-5a 'RUNWAY (number) CLEARED TO LAND.'; 3-10-5e 'RUNWAY (number), WIND (surface wind direction and velocity), CLEARED TO LAND.'; 3-10-1b,c runway in use and surface wind are landing information; 3-8-1 'NUMBER (landing sequence number)'; 3-10-4b7 'The wind may be described as \"calm\"'",
+   "C": [
+    "{cs}, runway {rw}, cleared to land.",
+    "{cs}, runway {rw}, {wind}, cleared to land."
+   ],
+   "D": [
+    "{cs}, {wind}, runway {rw}, cleared to land.",
+    "{cs}, runway {rw} cleared to land."
+   ],
+   "E": [
+    "{cs}, runway {rw}, cleared to land, {wind}.",
+    "{cs}, number two, runway {rw}, cleared to land."
+   ]
+  },
+  "land_traffic_luaw": {
+   "cite": "3-10-5d EXAMPLE 'Delta One, Runway One-Eight, cleared to land. Traffic holding in position.'; 3-9-4j 'United Five, Runway Three-One, cleared to land. Traffic holding in position Runway Four.'",
+   "C": [
+    "{cs}, runway {rw}, cleared to land, traffic holding in position."
+   ],
+   "D": [
+    "{cs}, runway {rw}, {wind}, cleared to land. Traffic holding in position."
+   ],
+   "E": [
+    "{cs}, runway {rw}, cleared to land, traffic holding in position runway {rw}."
+   ]
+  },
+  "continue_traffic_luaw": {
+   "cite": "3-9-4c1 'RUNWAY (number), CONTINUE, TRAFFIC HOLDING IN POSITION'; EXAMPLE 'American 528, Runway Two-Three continue, traffic holding in position.' (not a landing clearance); 3-9-4c1 'RUNWAY (number) (pattern instructions as appropriate) TRAFFIC HOLDING IN POSITION' (not a landing clearance)",
+   "C": [
+    "{cs}, runway {rw}, continue, traffic holding in position."
+   ],
+   "D": [
+    "{cs}, runway {rw} continue, traffic holding in position."
+   ],
+   "E": [
+    "{cs}, runway {rw}, extend downwind, traffic holding in position."
+   ]
+  },
+  "tkof": {
+   "cite": "3-9-10a 'RUNWAY (number), CLEARED FOR TAKEOFF.'; 3-9-10b 'RUNWAY (number) AT (taxiway designator) CLEARED FOR TAKEOFF.'; 3-9-10c 'RUNWAY (number), FULL LENGTH, CLEARED FOR TAKEOFF.'; 3-9-10i 'RUNWAY (number), WIND (surface wind in direction and velocity). CLEARED FOR TAKEOFF.'; 3-9-1b2 surface wind is departure information; 3-9-10g 'INTERSECTION DEPARTURE'; 3-9-3 departure instructions",
+   "C": [
+    "{cs}, runway {rw}, cleared for takeoff.",
+    "{cs}, runway {rw}, {wind}, cleared for takeoff.",
+    "{cs}, runway {rw} at {tw2}, cleared for takeoff."
+   ],
+   "D": [
+    "{cs}, {wind}, runway {rw}, cleared for takeoff.",
+    "{cs}, runway {rw}, full length, cleared for takeoff.",
+    "{cs}, runway {rw}, {wind}. Cleared for takeoff."
+   ],
+   "E": [
+    "{cs}, runway {rw} at {tw2}, intersection departure, cleared for takeoff.",
+    "{cs}, runway {rw}, cleared for takeoff, turn left heading two seven zero."
+   ]
+  },
+  "luaw": {
+   "cite": "3-9-4b 'RUNWAY (number), LINE UP AND WAIT.'; 3-9-4m 'RUNWAY (number) AT (taxiway designator), LINE UP AND WAIT.'; 3-9-4d EXAMPLE 'United Five, Runway One Eight, line up and wait. Traffic a Boeing Seven Thirty Seven, six mile final.'",
+   "C": [
+    "{cs}, runway {rw}, line up and wait.",
+    "{cs}, runway {rw} at {tw2}, line up and wait."
+   ],
+   "D": [
+    "{cs}, runway {rw}, line up and wait. Traffic a {type}, {miles} mile final."
+   ],
+   "E": [
+    "{cs}, runway {rw}, line up and wait, traffic landing runway {rw2}.",
+    "{cs}, runway {rw} at {tw2} line up and wait."
+   ]
+  },
+  "cross": {
+   "cite": "3-7-2a 'CROSS (runway), at (runway/taxiway)'; 3-7-2c 'Cross (runway) at (runway/taxiway), hold short of (runway)'; 3-7-2b EXAMPLE 'taxi via Alpha, Charlie, cross Runway One-Zero.'; 3-7-2d EXAMPLE 'Follow (traffic), cross Runway Two-Seven Right, at Taxiway Whiskey'; 3-7-2j 'EXIT/PROCEED/CROSS (runway/taxiway) at (runway/taxiway) WITHOUT DELAY.'",
+   "C": [
+    "{cs}, cross runway {rw} at {tw}.",
+    "{cs}, cross runway {rw} at taxiway {tw}, without delay.",
+    "{cs}, at {tw}, cross runway {rw}."
+   ],
+   "D": [
+    "{cs}, taxi via {tw}, cross runway {rw}.",
+    "{cs}, follow the {type}, cross runway {rw} at {tw}.",
+    "{cs}, at {tw} cross runway {rw} without delay."
+   ],
+   "field_forms": {
+    "{cs}, at {tw}, cross runway {rw}.": "field form (3-7-2a elements reordered), listed by Franco",
+    "{cs}, at {tw} cross runway {rw} without delay.": "field form (3-7-2a, j elements reordered), listed by Franco"
+   },
+   "E": [
+    "{cs}, cross runway {rw} at {tw}, hold short of runway {rw2}.",
+    "{cs}, proceed via {tw}, cross runway {rw}.",
+    "{cs}, cross runway {rw} at {tw} without delay, traffic short final."
+   ]
+  },
+  "hold": {
+   "cite": "3-7-4 'HOLD SHORT OF/AT (runway number or specific point), (traffic or other information).'; 3-7-2a 'VIA (route), HOLD SHORT OF (location)'; 3-7-2b 'RUNWAY (number), TAXI VIA (route as necessary)(hold short instructions as necessary).' EXAMPLE 'Runway Three-Six Left, taxi via taxiway Alpha, hold short of Runway Two-Seven Right.'",
+   "C": [
+    [
+     "HOLD_SHORT",
+     "{cs}, hold short of runway {rw}."
+    ],
+    [
+     "TAXI",
+     "{cs}, runway {rw_dep}, taxi via {tw}, hold short of runway {rw}."
+    ]
+   ],
+   "D": [
+    [
+     "HOLD_SHORT",
+     "{cs}, hold short of runway {rw}, traffic landing runway {rw}."
+    ],
+    [
+     "TAXI",
+     "{cs}, taxi via taxiway {tw}, hold short of runway {rw}."
+    ]
+   ],
+   "E": [
+    [
+     "HOLD_SHORT",
+     "{cs}, hold short runway {rw}, traffic on final."
+    ],
+    [
+     "TAXI",
+     "{cs}, proceed via {tw}, hold short of runway {rw}."
+    ]
+   ]
+  },
+  "read_back_hold": {
+   "cite": "3-7-2h 'READ BACK HOLD INSTRUCTIONS.' EXAMPLE 'American Four Ninety Two, read back hold instructions.'",
+   "shared": "{cs}, read back hold instructions."
+  },
+  "exit": {
+   "cite": "3-10-9a 'TURN LEFT/RIGHT (taxiway/runway), or IF ABLE, TURN LEFT/RIGHT (taxiway/runway)'; EXAMPLE 'U.S. Air Ten Forty Two, turn right next taxiway, cross runway two one, contact ground point seven.'; 2-1-17 EXAMPLE 'Contact Ground Point Seven.', 'Contact Ground, One Two Zero Point Eight.'",
+   "C": [
+    "{cs}, turn {dir} next taxiway, contact ground point seven.",
+    "{cs}, turn {dir} at {tw}, contact ground."
+   ],
+   "D": [
+    "{cs}, if able, turn {dir} next taxiway, contact ground one two one point niner.",
+    "{cs}, if able, turn {dir} {tw}, contact ground point eight."
+   ],
+   "E": [
+    "{cs}, exit {dir} at {tw}, contact ground point niner.",
+    "{cs}, turn {dir} at {tw}, contact ground one two one point seven."
+   ]
+  },
+  "taxi": {
+   "cite": "3-7-2a 'TAXI/CONTINUE TAXIING/PROCEED VIA (route), ... TO (location)'; EXAMPLE 'Taxi/continue taxiing/proceed straight ahead then via ramp to the hangar.'",
+   "C": [
+    "{cs}, taxi to the ramp via {tw}."
+   ],
+   "D": [
+    "{cs}, continue taxiing via {tw} to the ramp.",
+    "{cs}, proceed via {tw} to the ramp."
+   ],
+   "E": [
+    "{cs}, taxi via {tw} to the gate."
+   ]
+  },
+  "go_around": {
+   "cite": "3-8-1 'GO AROUND (additional instructions as necessary).'; 3-10-5b EXAMPLE 'United four twenty three, go-around, you appear to be aligned with the wrong runway.'",
+   "C": [
+    "{cs}, go around, fly runway heading, climb and maintain two thousand."
+   ],
+   "D": [
+    "{cs}, go-around, climb and maintain three thousand."
+   ],
+   "E": [
+    "{cs}, go around, traffic on the runway."
+   ]
+  }
+ },
+ "pilot": {
+  "cite": "2-4-3 NOTE 1c (AIM): 'Initial read back of a taxi, departure or landing clearance should include the runway assignment, including left, right, center'; 2-4-3b 'Ensure the read back of hold short instructions'; 2-4-3c call sign in any read back; EXAMPLE 'November Five Charlie Tango, roger, cleared to land runway four left.'; 3-7-2h EXAMPLE 'American Four Ninety Two, Roger.'; 'holding short' read backs in both pools (Franco, Oct 9: cover 'holding short' readbacks)",
+  "C": {
+   "land": "Cleared to land {rw}, {cs}.",
+   "tkof": "Cleared for takeoff {rw}, {cs}.",
+   "luaw": "Line up and wait {rw}, {cs}.",
+   "cross": "Cross {rw} at {tw}, {cs}.",
+   "hold": "Holding short runway {rw}, {cs}.",
+   "continue": "Continue, {cs}.",
+   "go_around": "Going around, {cs}.",
+   "roger": "Roger, {cs}."
+  },
+  "D": {
+   "land": "{cs}, roger, cleared to land runway {rw}.",
+   "tkof": "{cs}, cleared for takeoff runway {rw}.",
+   "luaw": "{cs}, line up and wait runway {rw}.",
+   "cross": "Crossing runway {rw} at {tw}, {cs}.",
+   "hold": "{cs}, holding short of runway {rw}.",
+   "continue": "{cs}, continuing.",
+   "go_around": "{cs}, going around.",
+   "roger": "{cs}, roger."
+  },
+  "E": {
+   "land": "Runway {rw}, cleared to land, {cs}.",
+   "tkof": "Roger, cleared for takeoff {rw}, {cs}.",
+   "luaw": "Line up and wait runway {rw}, {cs}.",
+   "cross": "Cross runway {rw} at {tw}, {cs}.",
+   "hold": "Hold short of runway {rw}, {cs}.",
+   "continue": "Wilco, {cs}.",
+   "go_around": "{cs} is going around.",
+   "roger": "Wilco, {cs}."
+  }
+ },
+ "pilot_report_clear": {
+  "cite": "P/CG term 'Clear of the runway' (referenced from 3-7-2g2(a)): a pilot report, no 7110.65 phraseology",
+  "C": "{cs}, clear of runway {rw}.",
+  "D": "{cs}, clear runway {rw} at {tw}.",
+  "E": "{cs}, clear of the runway."
+ },
+ "scenarios": {
+  "C_LAND_CROSS": "R1 crossing vs active landing (3-7-2g2)",
+  "C_LAND_CROSS_HOTSPOT": "R1, crossing at a hot-spot taxiway",
+  "C_TKOF_CROSS": "R2 crossing vs active takeoff (3-7-2g1)",
+  "C_LUAW_LAND": "R5 line up and wait vs landing, same runway (3-9-4; landing clearance carries 'traffic holding in position': CAUTION)",
+  "C_TKOF_LAND_SAME": "R3 takeoff vs landing, same runway (3-9-6, 3-10-3)",
+  "C_TKOF_LAND_INTERSECT": "R4 takeoff vs landing on intersecting runways (3-9-8, 3-10-4); airports with no intersecting runways use R3",
+  "C_HOLD_NO_READBACK": "R7 hold short acknowledged with 'roger' only, read back requested later (3-7-2h, 2-4-3b)",
+  "N_CROSS_OTHER_RWY": "crossing a runway with no active operation",
+  "N_HOLD_SHORT": "hold short, read back",
+  "N_EXIT_TAXI_THEN_CROSS": "section 8: exit + ground taxi clearance release the landing (3-10-9, 3-7-2a)",
+  "N_CLEAR_REPORT_THEN_CROSS": "section 8: pilot's 'clear of the runway' releases the landing",
+  "N_GO_AROUND_THEN_CROSS": "go-around releases the landing (3-8-1), then a crossing",
+  "N_LUAW_THEN_TKOF": "line up and wait, then the same aircraft's takeoff clearance (3-9-4, 3-9-10)",
+  "N_LUAW_CONTINUE": "line up and wait; the arrival is told 'continue, traffic holding in position' (3-9-4c1), not cleared to land",
+  "RB_WRONG_RUNWAY": "readback mismatch: the landing clearance read back with another runway (R14, scored separately)",
+  "RB_MISSING_RUNWAY": "readback mismatch: the landing clearance read back without the runway (R14, scored separately)"
+ },
+ "pilot_missing_runway": {
+  "cite": "2-4-3 NOTE 1c: the runway is read back; a read back without it is a readback mismatch (Franco, Oct 9)",
+  "C": "Cleared to land, {cs}.",
+  "D": "{cs}, cleared to land.",
+  "E": "Roger, cleared to land, {cs}."
+ }
+}

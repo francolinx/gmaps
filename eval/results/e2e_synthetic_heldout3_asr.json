@@ -1,0 +1,5042 @@
+{
+ "summary": {
+  "split": "heldout3",
+  "text": "asr",
+  "SIMULATED": true,
+  "scenarios": 28,
+  "fast_path_only": {
+   "transmissions": 130,
+   "callsign_acc": 0.623,
+   "runway_acc": 0.685,
+   "instruction_acc": 0.662,
+   "alerts": {
+    "tp": 8,
+    "fp": 4,
+    "fn": 6,
+    "precision": 0.667,
+    "recall": 0.571
+   },
+   "eot_to_result_s": {
+    "n": 89,
+    "median": 0.2,
+    "min": 0.1551,
+    "max": 0.2918
+   },
+   "eot_to_alert_s": {
+    "n": 20,
+    "median": 0.2,
+    "min": 0.18,
+    "max": 0.24
+   }
+  },
+  "end_to_end": {
+   "transmissions": 130,
+   "callsign_acc": 0.677,
+   "runway_acc": 0.785,
+   "instruction_acc": 0.9,
+   "alerts": {
+    "tp": 10,
+    "fp": 4,
+    "fn": 4,
+    "precision": 0.714,
+    "recall": 0.714
+   },
+   "eot_to_alert_s_agent_path": {
+    "n": 2,
+    "median": 3.4,
+    "min": 2.66,
+    "max": 4.13
+   },
+   "eot_to_agent_ingest_s": {
+    "n": 41,
+    "median": 3.19,
+    "min": 2.568,
+    "max": 7.194
+   }
+  },
+  "agent": {
+   "transmissions_left_by_fast_path": 41,
+   "ingested_by_agent": 41,
+   "agent_ingest_fields_all_correct": 2,
+   "not_ingested_by_anyone": 0,
+   "turns_rc_nonzero": 0,
+   "turns_without_process_transmission": 0,
+   "text_not_verbatim": 0,
+   "other_tool_calls": [
+    "lookahead",
+    "open_warnings"
+   ],
+   "turn_wall_s": {
+    "n": 130,
+    "median": 7.46,
+    "min": 4.88,
+    "max": 15.44
+   }
+  },
+  "alerts_by_path": {
+   "host fast path": 20,
+   "agent process_transmission": 2
+  }
+ },
+ "scenarios": [
+  {
+   "scenario": "SYN_KATL_HELDOUT3_01_C_LAND_CROSS",
+   "run_id": "e2e-syn_katl_heldout3_01_c_land_cross-20261009-155333",
+   "expected_alert": true,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R1",
+     "via": "host fast path",
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_01_C_LAND_CROSS_02",
+     "eot_to_alert_s": 0.22
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_01_C_LAND_CROSS_00",
+     "input": "whisper",
+     "text": "Interior 1076, runway 26L cleared to land.",
+     "reference": {
+      "callsigns": [
+       "FFT1076"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.189,
+     "fast_path_s": 0.0007,
+     "agent_ingest_s": 3.57,
+     "agent_turn_s": 5.86
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_01_C_LAND_CROSS_01",
+     "input": "whisper",
+     "text": "Frontier 1076, Roger. Clear to land runway 26L.",
+     "reference": {
+      "callsigns": [
+       "FFT1076"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT1076"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT1076"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.199,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.19
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_01_C_LAND_CROSS_02",
+     "input": "whisper",
+     "text": "Delta 1037, follow the Airbus 320, cross runway 26L at Echo.",
+     "reference": {
+      "callsigns": [
+       "DAL1037"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL1037"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1037"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.22,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.14
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT3_01_C_LAND_CROSS_03",
+     "input": "whisper",
+     "text": "Crossing runway 2-6 left at Echo, Delta 10-37.",
+     "reference": {
+      "callsigns": [
+       "DAL1037"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL1037"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1037"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.192,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.48
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT",
+   "run_id": "e2e-syn_katl_heldout3_02_c_land_cross_hotspot-20261009-155407",
+   "expected_alert": true,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_00",
+     "input": "whisper",
+     "text": "Delta 278, wind 260 at 1-0 gusts 2-2. Runway niner left, clear to land.",
+     "reference": {
+      "callsigns": [
+       "DAL278"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL278"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL278"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.258,
+     "fast_path_s": 0.0017,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.69
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_01",
+     "input": "whisper",
+     "text": "Delta 278, roger. Clear to land runway 9 or left.",
+     "reference": {
+      "callsigns": [
+       "DAL278"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL278"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL278"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.208,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.47
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_02",
+     "input": "whisper",
+     "text": "Air 379, follow the regional jet, cross runway 9 or left to go.",
+     "reference": {
+      "callsigns": [
+       "AAL379"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.219,
+     "fast_path_s": 0.0012,
+     "agent_ingest_s": 3.12,
+     "agent_turn_s": 11.38
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_03",
+     "input": "whisper",
+     "text": "Crossing runway niner left at Delta, American 379.",
+     "reference": {
+      "callsigns": [
+       "AAL379"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL379"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL379"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.19,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.45
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS",
+   "run_id": "e2e-syn_katl_heldout3_03_c_tkof_cross-20261009-155455",
+   "expected_alert": true,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_00",
+     "input": "whisper",
+     "text": "JetBlue 1075, runway niner right, wind 050 at one niner gusts 28, cleared for takeoff.",
+     "reference": {
+      "callsigns": [
+       "JBU1075"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU1075"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU1075"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.268,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.4
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_01",
+     "input": "whisper",
+     "text": "JetBlue 1075 cleared for takeoff runway 9 to right.",
+     "reference": {
+      "callsigns": [
+       "JBU1075"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU1075"
+      ],
+      "runway": "9",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU1075"
+      ],
+      "runway": "9",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.191,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.35
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_02",
+     "input": "whisper",
+     "text": "Debra 10 sent to me, and Sierra Charlie Cross Runway 9 is right without direction.",
+     "reference": {
+      "callsigns": [
+       "EDV1078"
+      ],
+      "runway": "9R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "9",
+      "instruction": "CROSS"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.225,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": 3.01,
+     "agent_turn_s": 8.04
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_03",
+     "input": "whisper",
+     "text": "Crossing runway 9 and right is C.R. Charlie, 5-10-7-8.",
+     "reference": {
+      "callsigns": [
+       "EDV1078"
+      ],
+      "runway": "9R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "9",
+      "instruction": "CROSS"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.227,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": 2.57,
+     "agent_turn_s": 7.08
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_04_C_LUAW_LAND",
+   "run_id": "e2e-syn_katl_heldout3_04_c_luaw_land-20261009-155533",
+   "expected_alert": true,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R5",
+     "via": "host fast path",
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_04_C_LUAW_LAND_03",
+     "eot_to_alert_s": 0.19
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_04_C_LUAW_LAND_00",
+     "input": "whisper",
+     "text": "Air to 1035, runway 27 right, line up the fleet, track of Boeing 726, 4 mile final.",
+     "reference": {
+      "callsigns": [
+       "AAL1035"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.245,
+     "fast_path_s": 0.0038,
+     "agent_ingest_s": 6.2,
+     "agent_turn_s": 8.83
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_04_C_LUAW_LAND_01",
+     "input": "whisper",
+     "text": "American 1035, line up and wait runway 27R.",
+     "reference": {
+      "callsigns": [
+       "AAL1035"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL1035"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL1035"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.184,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.07
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KATL_HELDOUT3_04_C_LUAW_LAND_02",
+     "input": "whisper",
+     "text": "Output 507, runway 27R, wind 150 at 6 gust 20, cleared to land, traffic holding in position.",
+     "reference": {
+      "callsigns": [
+       "SWA507"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.258,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": 2.75,
+     "agent_turn_s": 7.55
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_04_C_LUAW_LAND_03",
+     "input": "whisper",
+     "text": "Southwest 507, Roger. Clear to land runway 27R.",
+     "reference": {
+      "callsigns": [
+       "SWA507"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA507"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA507"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.194,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.19
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME",
+   "run_id": "e2e-syn_katl_heldout3_05_c_tkof_land_same-20261009-155610",
+   "expected_alert": true,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R3",
+     "via": "host fast path",
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME_03",
+     "eot_to_alert_s": 0.2
+    },
+    {
+     "warning_id": "w0002",
+     "rule": "R3",
+     "via": "host fast path",
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME_03",
+     "eot_to_alert_s": 0.2
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME_00",
+     "input": "whisper",
+     "text": "JetBlue 600, runway 26R, full length cleared for takeoff.",
+     "reference": {
+      "callsigns": [
+       "JBU600"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU600"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU600"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.208,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.27
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME_01",
+     "input": "whisper",
+     "text": "Jet Blue 600 cleared for takeoff runway 26R.",
+     "reference": {
+      "callsigns": [
+       "JBU600"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU600"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU600"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.175,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.14
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME_02",
+     "input": "whisper",
+     "text": "On tier 10-36, wind 2-1-0 at 6-Gust-1-4. Runway 2-6 right, clear to land.",
+     "reference": {
+      "callsigns": [
+       "FFT1036"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.3,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": 2.8,
+     "agent_turn_s": 5.62
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME_03",
+     "input": "whisper",
+     "text": "Frontier 1036, roger. Clear to land runway 26R.",
+     "reference": {
+      "callsigns": [
+       "FFT1036"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT1036"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT1036"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.195,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 13.02
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT",
+   "run_id": "e2e-syn_katl_heldout3_06_c_tkof_land_intersect-20261009-155651",
+   "expected_alert": true,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R3",
+     "via": "host fast path",
+     "t": 14,
+     "source_id": "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT_02",
+     "eot_to_alert_s": 0.2
+    },
+    {
+     "warning_id": "w0002",
+     "rule": "R3",
+     "via": "host fast path",
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT_03",
+     "eot_to_alert_s": 0.21
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT_00",
+     "input": "whisper",
+     "text": "Southwest 900, wind 280 at 19 August 31. Runway 27 left, cleared for takeoff.",
+     "reference": {
+      "callsigns": [
+       "SWA900"
+      ],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA900"
+      ],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA900"
+      ],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.232,
+     "fast_path_s": 0.0017,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.09
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT_01",
+     "input": "whisper",
+     "text": "NW 900 is clear for takeoff runway 27L.",
+     "reference": {
+      "callsigns": [
+       "SWA900"
+      ],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.18,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": 2.66,
+     "agent_turn_s": 5.83
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT_02",
+     "input": "whisper",
+     "text": "Citation 5506, runway 27 left clear to land.",
+     "reference": {
+      "callsigns": [
+       "N5506Z"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N5506"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N5506"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.198,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.66
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_06_C_TKOF_LAND_INTERSECT_03",
+     "input": "whisper",
+     "text": "Citation 5506 Zulu, Roger. Clear to land runway 27L.",
+     "reference": {
+      "callsigns": [
+       "N5506Z"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N5506Z"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N5506Z"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.205,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.16
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_07_C_HOLD_NO_READBACK",
+   "run_id": "e2e-syn_katl_heldout3_07_c_hold_no_readback-20261009-155732",
+   "expected_alert": true,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R7",
+     "via": "agent process_transmission",
+     "t": 40,
+     "source_id": "SYN_KATL_HELDOUT3_07_C_HOLD_NO_READBACK_04",
+     "eot_to_alert_s": 4.13
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_07_C_HOLD_NO_READBACK_00",
+     "input": "whisper",
+     "text": "Endeavor 490, runway 27R, it is the land.",
+     "reference": {
+      "callsigns": [
+       "EDV419"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV490"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.191,
+     "fast_path_s": 0.0018,
+     "agent_ingest_s": 6.12,
+     "agent_turn_s": 8.24
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_07_C_HOLD_NO_READBACK_01",
+     "input": "whisper",
+     "text": "Level 419, roger. Clear to land runway system right.",
+     "reference": {
+      "callsigns": [
+       "EDV419"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.197,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": 2.57,
+     "agent_turn_s": 7.5
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_07_C_HOLD_NO_READBACK_02",
+     "input": "whisper",
+     "text": "Endeavour 1025, hold short of runway 27R. Traffic landing runway 27R.",
+     "reference": {
+      "callsigns": [
+       "EDV1025"
+      ],
+      "runway": "27R",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV1025"
+      ],
+      "runway": "27R",
+      "instruction": "HOLD_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV1025"
+      ],
+      "runway": "27R",
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.213,
+     "fast_path_s": 0.0006,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.03
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT3_07_C_HOLD_NO_READBACK_03",
+     "input": "whisper",
+     "text": "I give it 10.5, Roger.",
+     "reference": {
+      "callsigns": [
+       "EDV1025"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.167,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": 3.44,
+     "agent_turn_s": 6.79
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KATL_HELDOUT3_07_C_HOLD_NO_READBACK_04",
+     "input": "whisper",
+     "text": "Never 10-25, back hold instructions.",
+     "reference": {
+      "callsigns": [
+       "EDV1025"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.172,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": 3.96,
+     "agent_turn_s": 8.16
+    },
+    {
+     "t": 44,
+     "source_id": "SYN_KATL_HELDOUT3_07_C_HOLD_NO_READBACK_05",
+     "input": "whisper",
+     "text": "Endeavour 1025, holding short of runway 27R.",
+     "reference": {
+      "callsigns": [
+       "EDV1025"
+      ],
+      "runway": "27R",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV1025"
+      ],
+      "runway": "27R",
+      "instruction": "REPORT_HOLDING_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV1025"
+      ],
+      "runway": "27R",
+      "instruction": "REPORT_HOLDING_SHORT"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.183,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.69
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_08_N_CROSS_OTHER_RWY",
+   "run_id": "e2e-syn_katl_heldout3_08_n_cross_other_rwy-20261009-155823",
+   "expected_alert": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_08_N_CROSS_OTHER_RWY_00",
+     "input": "whisper",
+     "text": "Delta 700, wind 280 at 16 gusts 31. Runway 8 left, cleared to land.",
+     "reference": {
+      "callsigns": [
+       "DAL700"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL700"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL700"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.23,
+     "fast_path_s": 0.0014,
+     "agent_ingest_s": null,
+     "agent_turn_s": 12.46
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_08_N_CROSS_OTHER_RWY_01",
+     "input": "whisper",
+     "text": "700 roger, clear to land, runway E left.",
+     "reference": {
+      "callsigns": [
+       "DAL700"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "?700"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "?700"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.194,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.86
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_08_N_CROSS_OTHER_RWY_02",
+     "input": "whisper",
+     "text": "United 1043, taxi via Papa, cross runway 90-wide.",
+     "reference": {
+      "callsigns": [
+       "UAL1043"
+      ],
+      "runway": "9R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1043"
+      ],
+      "runway": null,
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1043"
+      ],
+      "runway": null,
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.195,
+     "fast_path_s": 0.0007,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.31
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT3_08_N_CROSS_OTHER_RWY_03",
+     "input": "whisper",
+     "text": "Crossing runway Niner right at Pampa, United 1043.",
+     "reference": {
+      "callsigns": [
+       "UAL1043"
+      ],
+      "runway": "9R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1043"
+      ],
+      "runway": "9R",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1043"
+      ],
+      "runway": "9R",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.187,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.49
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_09_N_HOLD_SHORT",
+   "run_id": "e2e-syn_katl_heldout3_09_n_hold_short-20261009-155906",
+   "expected_alert": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_09_N_HOLD_SHORT_00",
+     "input": "whisper",
+     "text": "American Niner 72, wind 220 at Niner gusts 21. Runway Niner right, cleared to land.",
+     "reference": {
+      "callsigns": [
+       "AAL972"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL972"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL972"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.257,
+     "fast_path_s": 0.0015,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.91
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_09_N_HOLD_SHORT_01",
+     "input": "whisper",
+     "text": "American Niner 72, Roger. Clear to land runway Niner right.",
+     "reference": {
+      "callsigns": [
+       "AAL972"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL972"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL972"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.208,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.3
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_09_N_HOLD_SHORT_02",
+     "input": "whisper",
+     "text": "Blue 1048, hold short of runway 9 and right, traffic landing runway 9 and right.",
+     "reference": {
+      "callsigns": [
+       "JBU1048"
+      ],
+      "runway": "9R",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "9",
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.225,
+     "fast_path_s": 0.0022,
+     "agent_ingest_s": 3.81,
+     "agent_turn_s": 7.0
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT3_09_N_HOLD_SHORT_03",
+     "input": "whisper",
+     "text": "Jetman 1048, holding short of runway 9 arriving.",
+     "reference": {
+      "callsigns": [
+       "JBU1048"
+      ],
+      "runway": "9R",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "9",
+      "instruction": "REPORT_HOLDING_SHORT"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.187,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": 2.75,
+     "agent_turn_s": 7.93
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS",
+   "run_id": "e2e-syn_katl_heldout3_10_n_exit_taxi_then_cross-20261009-155943",
+   "expected_alert": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R1",
+     "via": "host fast path",
+     "t": 55,
+     "source_id": "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_04",
+     "eot_to_alert_s": 0.19
+    },
+    {
+     "warning_id": "w0002",
+     "rule": "R1",
+     "via": "host fast path",
+     "t": 55,
+     "source_id": "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_04",
+     "eot_to_alert_s": 0.19
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_00",
+     "input": "whisper",
+     "text": "JetBlue 100, Wing 280 at 17G28, runway 26L, cleared to land.",
+     "reference": {
+      "callsigns": [
+       "JBU100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.222,
+     "fast_path_s": 0.0014,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.95
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_01",
+     "input": "whisper",
+     "text": "Jet Blue 100, Roger. Clear to land runway 26L.",
+     "reference": {
+      "callsigns": [
+       "JBU100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [
+      "lookahead"
+     ],
+     "agent_rc": 0,
+     "asr_s": 0.187,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 12.14
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_02",
+     "input": "whisper",
+     "text": "JetBlue 100 enabled. Turn left next taxiway. Contact ground 121.9.",
+     "reference": {
+      "callsigns": [
+       "JBU100"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU100"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU100"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.223,
+     "fast_path_s": 0.0012,
+     "agent_ingest_s": null,
+     "agent_turn_s": 9.03
+    },
+    {
+     "t": 48,
+     "source_id": "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_03",
+     "input": "whisper",
+     "text": "Get through the 100 and continue taxiing by a mic towards the ramp.",
+     "reference": {
+      "callsigns": [
+       "JBU100"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.197,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": 3.43,
+     "agent_turn_s": 8.46
+    },
+    {
+     "t": 55,
+     "source_id": "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_04",
+     "input": "whisper",
+     "text": "Southwest 390 and Echo 5 cross runway 26L without delay.",
+     "reference": {
+      "callsigns": [
+       "SWA319"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA390"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA390"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.186,
+     "fast_path_s": 0.0007,
+     "agent_ingest_s": null,
+     "agent_turn_s": 12.74
+    },
+    {
+     "t": 59,
+     "source_id": "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_05",
+     "input": "whisper",
+     "text": "Crossing runway 26 left at Echo 5, Southwest 319.",
+     "reference": {
+      "callsigns": [
+       "SWA319"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA319"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA319"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.181,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.08
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS",
+   "run_id": "e2e-syn_katl_heldout3_11_n_clear_report_then_cross-20261009-160052",
+   "expected_alert": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R1",
+     "via": "host fast path",
+     "t": 55,
+     "source_id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_03",
+     "eot_to_alert_s": 0.2
+    },
+    {
+     "warning_id": "w0002",
+     "rule": "R1",
+     "via": "host fast path",
+     "t": 55,
+     "source_id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_03",
+     "eot_to_alert_s": 0.2
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_00",
+     "input": "whisper",
+     "text": "Spirit 801, wind 010 at 10 gusts 21. Runway 8 right, cleared to land.",
+     "reference": {
+      "callsigns": [
+       "NKS801"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS801"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS801"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.242,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.43
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_01",
+     "input": "whisper",
+     "text": "Spirit 800-1 roger, cleared to land runway 8 right.",
+     "reference": {
+      "callsigns": [
+       "NKS801"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS8001"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS8001"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.199,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.81
+    },
+    {
+     "t": 45,
+     "source_id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_02",
+     "input": "whisper",
+     "text": "Spirit 801, clear runway 8, right at Alpha 3.",
+     "reference": {
+      "callsigns": [
+       "NKS801"
+      ],
+      "runway": "8R",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS801"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.195,
+     "fast_path_s": 0.0028,
+     "agent_ingest_s": 3.0,
+     "agent_turn_s": 7.44
+    },
+    {
+     "t": 55,
+     "source_id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_03",
+     "input": "whisper",
+     "text": "Spirit 1074 at Echo Cross Runway 8, right without delay.",
+     "reference": {
+      "callsigns": [
+       "NKS1074"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS1074"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS1074"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.198,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.22
+    },
+    {
+     "t": 59,
+     "source_id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_04",
+     "input": "whisper",
+     "text": "Crossing runway 8, RIDED ECHO, SPIRIT 1074.",
+     "reference": {
+      "callsigns": [
+       "NKS1074"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS1074"
+      ],
+      "runway": "8",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS1074"
+      ],
+      "runway": "8",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.208,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.88
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS",
+   "run_id": "e2e-syn_katl_heldout3_12_n_go_around_then_cross-20261009-160138",
+   "expected_alert": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_00",
+     "input": "whisper",
+     "text": "Frontier 10-9, runway 26, flight cleared to land.",
+     "reference": {
+      "callsigns": [
+       "FFT1019"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT109"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT109"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.196,
+     "fast_path_s": 0.0007,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.01
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_01",
+     "input": "whisper",
+     "text": "Frontier 10-19, roger, clear to land, runway 2, 6, right.",
+     "reference": {
+      "callsigns": [
+       "FFT1019"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT1019"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT1019"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.226,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.65
+    },
+    {
+     "t": 30,
+     "source_id": "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_02",
+     "input": "whisper",
+     "text": "Major 10-19, go around, climb and maintain 3-thousand.",
+     "reference": {
+      "callsigns": [
+       "FFT1019"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.208,
+     "fast_path_s": 0.0007,
+     "agent_ingest_s": 2.9,
+     "agent_turn_s": 8.68
+    },
+    {
+     "t": 33,
+     "source_id": "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_03",
+     "input": "whisper",
+     "text": "Frontier 10-19 going around.",
+     "reference": {
+      "callsigns": [
+       "FFT1019"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT1019"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT1019"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.163,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.9
+    },
+    {
+     "t": 45,
+     "source_id": "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_04",
+     "input": "whisper",
+     "text": "Now west 606, follow the Boeing 737, cross runway 26 right at Bravo 3.",
+     "reference": {
+      "callsigns": [
+       "SWA606"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.228,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": 5.64,
+     "agent_turn_s": 15.44
+    },
+    {
+     "t": 49,
+     "source_id": "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_05",
+     "input": "whisper",
+     "text": "Crossing runway 26 right at Bravo 3, Southwest 606.",
+     "reference": {
+      "callsigns": [
+       "SWA606"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA606"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA606"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.192,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 12.23
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_13_N_LUAW_THEN_TKOF",
+   "run_id": "e2e-syn_katl_heldout3_13_n_luaw_then_tkof-20261009-160243",
+   "expected_alert": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_13_N_LUAW_THEN_TKOF_00",
+     "input": "whisper",
+     "text": "Southwest 55, runway 27 left, line up the police. Traffic of Boeing 732, 5 mile mile.",
+     "reference": {
+      "callsigns": [
+       "SWA1055"
+      ],
+      "runway": "27L",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA55"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.248,
+     "fast_path_s": 0.0019,
+     "agent_ingest_s": 6.29,
+     "agent_turn_s": 10.2
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_13_N_LUAW_THEN_TKOF_01",
+     "input": "whisper",
+     "text": "Southwest 1055, line up and wait runway 27L.",
+     "reference": {
+      "callsigns": [
+       "SWA1055"
+      ],
+      "runway": "27L",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA1055"
+      ],
+      "runway": "27L",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA1055"
+      ],
+      "runway": "27L",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.179,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.36
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KATL_HELDOUT3_13_N_LUAW_THEN_TKOF_02",
+     "input": "whisper",
+     "text": "Southwest 1055, wind 120 at 12 gusts 25, runway 27L cleared for takeoff.",
+     "reference": {
+      "callsigns": [
+       "SWA1055"
+      ],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA1055"
+      ],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA1055"
+      ],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.232,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.16
+    },
+    {
+     "t": 44,
+     "source_id": "SYN_KATL_HELDOUT3_13_N_LUAW_THEN_TKOF_03",
+     "input": "whisper",
+     "text": "Southwest 1055 cleared for takeoff runway 27L.",
+     "reference": {
+      "callsigns": [
+       "SWA1055"
+      ],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA1055"
+      ],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA1055"
+      ],
+      "runway": "27L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.178,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.89
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE",
+   "run_id": "e2e-syn_katl_heldout3_14_n_luaw_continue-20261009-160318",
+   "expected_alert": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_00",
+     "input": "whisper",
+     "text": "This is 3-3-0-0 Luma, runway 9 or left, line up and wait. Traffic in RAR 175, 5 mile final.",
+     "reference": {
+      "callsigns": [
+       "N3300L"
+      ],
+      "runway": "9L",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "9L",
+      "instruction": "LUAW"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.304,
+     "fast_path_s": 0.0011,
+     "agent_ingest_s": 6.89,
+     "agent_turn_s": 10.41
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_01",
+     "input": "whisper",
+     "text": "This is 3300 Lima, line up and wait runway 911.",
+     "reference": {
+      "callsigns": [
+       "N3300L"
+      ],
+      "runway": "9L",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "LUAW"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.237,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": 2.96,
+     "agent_turn_s": 5.89
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_02",
+     "input": "whisper",
+     "text": "Jet Blue 297, runway 9 or left continues, traffic holding in position.",
+     "reference": {
+      "callsigns": [
+       "JBU297"
+      ],
+      "runway": "9L",
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU297"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.203,
+     "fast_path_s": 0.0022,
+     "agent_ingest_s": 2.7,
+     "agent_turn_s": 8.07
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_03",
+     "input": "whisper",
+     "text": "JetBlue 297, continuing.",
+     "reference": {
+      "callsigns": [
+       "JBU297"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU297"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.158,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": 2.41,
+     "agent_turn_s": 5.95
+    },
+    {
+     "t": 30,
+     "source_id": "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_04",
+     "input": "whisper",
+     "text": "SESA 3300 Lima, runway 9 or left, full length, cleared for takeoff.",
+     "reference": {
+      "callsigns": [
+       "N3300L"
+      ],
+      "runway": "9L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "9L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.228,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": 2.95,
+     "agent_turn_s": 11.58
+    },
+    {
+     "t": 34,
+     "source_id": "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_05",
+     "input": "whisper",
+     "text": "DEFINIT 3-3-0-0 Lima, cleared for takeoff runway 9 or less.",
+     "reference": {
+      "callsigns": [
+       "N3300L"
+      ],
+      "runway": "9L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "9",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.239,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": 4.03,
+     "agent_turn_s": 6.94
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS",
+   "run_id": "e2e-syn_klga_heldout3_01_c_land_cross-20261009-160416",
+   "expected_alert": true,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R1",
+     "via": "host fast path",
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_02",
+     "eot_to_alert_s": 0.2
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_00",
+     "input": "whisper",
+     "text": "Bonanza 4760 Hotel, runway 4 cleared to land.",
+     "reference": {
+      "callsigns": [
+       "N4768H"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N4760H"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N4760H"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.194,
+     "fast_path_s": 0.0007,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.78
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_01",
+     "input": "whisper",
+     "text": "Lanza 4768 hotel, roger. Clear to land runway 4.",
+     "reference": {
+      "callsigns": [
+       "N4768H"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.199,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": 3.09,
+     "agent_turn_s": 9.05
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_02",
+     "input": "whisper",
+     "text": "Frontier 600 at Charlie Yankee Cross Runway 4 without delay.",
+     "reference": {
+      "callsigns": [
+       "FFT600"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT600"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT600"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.198,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.87
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_03",
+     "input": "whisper",
+     "text": "Crossing runway 4 at Charlie Yankee, Frontier 600.",
+     "reference": {
+      "callsigns": [
+       "FFT600"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT600"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT600"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.186,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.73
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_02_C_LAND_CROSS_HOTSPOT",
+   "run_id": "e2e-syn_klga_heldout3_02_c_land_cross_hotspot-20261009-160459",
+   "expected_alert": true,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_00",
+     "input": "whisper",
+     "text": "Delta 10-54, runway 22, cleared to land.",
+     "reference": {
+      "callsigns": [
+       "DAL1054"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL1054"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1054"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.187,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.84
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_01",
+     "input": "whisper",
+     "text": "Delta 1054, roger. Clear to land runway P2.",
+     "reference": {
+      "callsigns": [
+       "DAL1054"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL1054"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1054"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.193,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.05
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_02",
+     "input": "whisper",
+     "text": "T-1041, activate pop-up, crossroad release.",
+     "reference": {
+      "callsigns": [
+       "FFT1041"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.204,
+     "fast_path_s": 0.0027,
+     "agent_ingest_s": 2.42,
+     "agent_turn_s": 7.12
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_03",
+     "input": "whisper",
+     "text": "Crafting runway 22 at Papa, Frontier 1041.",
+     "reference": {
+      "callsigns": [
+       "FFT1041"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT1041"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.191,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": 2.59,
+     "agent_turn_s": 8.4
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS",
+   "run_id": "e2e-syn_klga_heldout3_03_c_tkof_cross-20261009-160535",
+   "expected_alert": true,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R2",
+     "via": "host fast path",
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS_02",
+     "eot_to_alert_s": 0.24
+    },
+    {
+     "warning_id": "w0002",
+     "rule": "R2",
+     "via": "host fast path",
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS_02",
+     "eot_to_alert_s": 0.24
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS_00",
+     "input": "whisper",
+     "text": "American 201, wind 250 at 19 August 27, Runway 31, cleared for takeoff.",
+     "reference": {
+      "callsigns": [
+       "AAL201"
+      ],
+      "runway": "31",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL201"
+      ],
+      "runway": "31",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL201"
+      ],
+      "runway": "31",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.221,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.91
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS_01",
+     "input": "whisper",
+     "text": "American 201, cleared for takeoff runway 31.",
+     "reference": {
+      "callsigns": [
+       "AAL201"
+      ],
+      "runway": "31",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL201"
+      ],
+      "runway": "31",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL201"
+      ],
+      "runway": "31",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.181,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.7
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS_02",
+     "input": "whisper",
+     "text": "American 10-12, follow the Embraer 155, cross runway 31.",
+     "reference": {
+      "callsigns": [
+       "AAL1012"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL1012"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL1012"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.235,
+     "fast_path_s": 0.0012,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.11
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS_03",
+     "input": "whisper",
+     "text": "Crossing runway 31 at Zulu, American 1012.",
+     "reference": {
+      "callsigns": [
+       "AAL1012"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL1012"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL1012"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.192,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.41
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND",
+   "run_id": "e2e-syn_klga_heldout3_04_c_luaw_land-20261009-160612",
+   "expected_alert": true,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R5",
+     "via": "host fast path",
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_03",
+     "eot_to_alert_s": 0.18
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_00",
+     "input": "whisper",
+     "text": "Your 700 runway 22, line up and wait. Traffic in bar 155, mile line.",
+     "reference": {
+      "callsigns": [
+       "NKS700"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.23,
+     "fast_path_s": 0.001,
+     "agent_ingest_s": 5.35,
+     "agent_turn_s": 7.53
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_01",
+     "input": "whisper",
+     "text": "Spirit 700, line up and wait runway 22.",
+     "reference": {
+      "callsigns": [
+       "NKS700"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS700"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS700"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.175,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.13
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_02",
+     "input": "whisper",
+     "text": "American 700, runway 22, wind 080 and 6 gusts 18, clear to land. Traffic holding in position.",
+     "reference": {
+      "callsigns": [
+       "AAL700"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL700"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL700"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.247,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.52
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_03",
+     "input": "whisper",
+     "text": "American 700, Roger. Clear to land runway 22.",
+     "reference": {
+      "callsigns": [
+       "AAL700"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL700"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL700"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.184,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": 11.11
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME",
+   "run_id": "e2e-syn_klga_heldout3_05_c_tkof_land_same-20261009-160653",
+   "expected_alert": true,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R3",
+     "via": "host fast path",
+     "t": 14,
+     "source_id": "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME_02",
+     "eot_to_alert_s": 0.22
+    },
+    {
+     "warning_id": "w0002",
+     "rule": "R3",
+     "via": "host fast path",
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME_03",
+     "eot_to_alert_s": 0.19
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME_00",
+     "input": "whisper",
+     "text": "JetBlue 317, runway 22, wind 130 at 4G13, cleared for takeoff.",
+     "reference": {
+      "callsigns": [
+       "JBU317"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU317"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU317"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.291,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.21
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME_01",
+     "input": "whisper",
+     "text": "JetBlue 317 cleared for takeoff runway 22.",
+     "reference": {
+      "callsigns": [
+       "JBU317"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU317"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU317"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [
+      "lookahead"
+     ],
+     "agent_rc": 0,
+     "asr_s": 0.179,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.32
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME_02",
+     "input": "whisper",
+     "text": "United 561, wind 350 at 11 gust 190. Runway 22, cleared to land.",
+     "reference": {
+      "callsigns": [
+       "UAL561"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL561"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL561"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [
+      "lookahead",
+      "open_warnings"
+     ],
+     "agent_rc": 0,
+     "asr_s": 0.221,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.24
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME_03",
+     "input": "whisper",
+     "text": "United 561, Roger. Clear to land runway 22.",
+     "reference": {
+      "callsigns": [
+       "UAL561"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL561"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL561"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.187,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.07
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_06_C_TKOF_LAND_INTERSECT",
+   "run_id": "e2e-syn_klga_heldout3_06_c_tkof_land_intersect-20261009-160737",
+   "expected_alert": true,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_06_C_TKOF_LAND_INTERSECT_00",
+     "input": "whisper",
+     "text": "Delta 5-16, runway 4, wind 2-8-0 at niner gusts 1-9, cleared for takeoff.",
+     "reference": {
+      "callsigns": [
+       "DAL516"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL516"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL516"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.267,
+     "fast_path_s": 0.0017,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.26
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_06_C_TKOF_LAND_INTERSECT_01",
+     "input": "whisper",
+     "text": "Delta 516, cleared for takeoff runway 4.",
+     "reference": {
+      "callsigns": [
+       "DAL516"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL516"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL516"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.18,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.24
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KLGA_HELDOUT3_06_C_TKOF_LAND_INTERSECT_02",
+     "input": "whisper",
+     "text": "Appear 100, runway 1-3 cleared to land.",
+     "reference": {
+      "callsigns": [
+       "FFT100"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.18,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": 2.47,
+     "agent_turn_s": 6.56
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_06_C_TKOF_LAND_INTERSECT_03",
+     "input": "whisper",
+     "text": "Compere 100 roger. Clear to land runway 13.",
+     "reference": {
+      "callsigns": [
+       "FFT100"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.181,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": 2.64,
+     "agent_turn_s": 7.41
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK",
+   "run_id": "e2e-syn_klga_heldout3_07_c_hold_no_readback-20261009-160812",
+   "expected_alert": true,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R7",
+     "via": "agent process_transmission",
+     "t": 40,
+     "source_id": "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_04",
+     "eot_to_alert_s": 2.66
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_00",
+     "input": "whisper",
+     "text": "Southwest 808, runway 22 cleared to land.",
+     "reference": {
+      "callsigns": [
+       "SWA808"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA808"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA808"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.181,
+     "fast_path_s": 0.0014,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.25
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_01",
+     "input": "whisper",
+     "text": "Southwest 808, Roger. Clear to land runway 22.",
+     "reference": {
+      "callsigns": [
+       "SWA808"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA808"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA808"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.18,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.54
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_02",
+     "input": "whisper",
+     "text": "United 1094, hold short of runway 22, traffic landing runway 22.",
+     "reference": {
+      "callsigns": [
+       "UAL1094"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1094"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1094"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.203,
+     "fast_path_s": 0.0023,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.65
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_03",
+     "input": "whisper",
+     "text": "Can I count my score, Roger?",
+     "reference": {
+      "callsigns": [
+       "UAL1094"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.155,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": 3.39,
+     "agent_turn_s": 7.62
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_04",
+     "input": "whisper",
+     "text": "910-94, backhole construction.",
+     "reference": {
+      "callsigns": [
+       "UAL1094"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [
+       "?910"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.172,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": 2.49,
+     "agent_turn_s": 10.47
+    },
+    {
+     "t": 44,
+     "source_id": "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_05",
+     "input": "whisper",
+     "text": "United 1094, holding short of runway 22.",
+     "reference": {
+      "callsigns": [
+       "UAL1094"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1094"
+      ],
+      "runway": "22",
+      "instruction": "REPORT_HOLDING_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1094"
+      ],
+      "runway": "22",
+      "instruction": "REPORT_HOLDING_SHORT"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.178,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.41
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_08_N_CROSS_OTHER_RWY",
+   "run_id": "e2e-syn_klga_heldout3_08_n_cross_other_rwy-20261009-160912",
+   "expected_alert": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_08_N_CROSS_OTHER_RWY_00",
+     "input": "whisper",
+     "text": "Endeavor 1060, winds 1-7-0 at 1-9 Augusta 28. Runway 4, cleared to land.",
+     "reference": {
+      "callsigns": [
+       "EDV1060"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV1060"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV1060"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.27,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.91
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_08_N_CROSS_OTHER_RWY_01",
+     "input": "whisper",
+     "text": "Defense 60, Roger. Glazer land, running 4.",
+     "reference": {
+      "callsigns": [
+       "EDV1060"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.188,
+     "fast_path_s": 0.0014,
+     "agent_ingest_s": 2.54,
+     "agent_turn_s": 5.17
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_08_N_CROSS_OTHER_RWY_02",
+     "input": "whisper",
+     "text": "Southwest 412, follow the regional jet, cross runway 31 and Romeo.",
+     "reference": {
+      "callsigns": [
+       "SWA412"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA412"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA412"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.198,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.24
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT3_08_N_CROSS_OTHER_RWY_03",
+     "input": "whisper",
+     "text": "Crossing runway 31 at Romeo, Southwest 412.",
+     "reference": {
+      "callsigns": [
+       "SWA412"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA412"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA412"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.177,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.73
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_09_N_HOLD_SHORT",
+   "run_id": "e2e-syn_klga_heldout3_09_n_hold_short-20261009-160943",
+   "expected_alert": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_09_N_HOLD_SHORT_00",
+     "input": "whisper",
+     "text": "United 906, wind 070 at 16 gust 27. Runway 22, clear to land.",
+     "reference": {
+      "callsigns": [
+       "UAL906"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL906"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL906"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.225,
+     "fast_path_s": 0.0014,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.12
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_09_N_HOLD_SHORT_01",
+     "input": "whisper",
+     "text": "United 906, Roger. Clear to land runway 22.",
+     "reference": {
+      "callsigns": [
+       "UAL906"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL906"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL906"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.189,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 4.88
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_09_N_HOLD_SHORT_02",
+     "input": "whisper",
+     "text": "Never 626, hold short of Runway TT, traffic landing Runway TT.",
+     "reference": {
+      "callsigns": [
+       "EDV626"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.209,
+     "fast_path_s": 0.0022,
+     "agent_ingest_s": 2.68,
+     "agent_turn_s": 8.23
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT3_09_N_HOLD_SHORT_03",
+     "input": "whisper",
+     "text": "Endeavour 626, holding short of runway 22.",
+     "reference": {
+      "callsigns": [
+       "EDV626"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV626"
+      ],
+      "runway": "22",
+      "instruction": "REPORT_HOLDING_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV626"
+      ],
+      "runway": "22",
+      "instruction": "REPORT_HOLDING_SHORT"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.176,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.2
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS",
+   "run_id": "e2e-syn_klga_heldout3_10_n_exit_taxi_then_cross-20261009-161018",
+   "expected_alert": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R1",
+     "via": "host fast path",
+     "t": 55,
+     "source_id": "SYN_KLGA_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_04",
+     "eot_to_alert_s": 0.22
+    },
+    {
+     "warning_id": "w0002",
+     "rule": "R1",
+     "via": "host fast path",
+     "t": 55,
+     "source_id": "SYN_KLGA_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_04",
+     "eot_to_alert_s": 0.22
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_00",
+     "input": "whisper",
+     "text": "Delta 1063, wing 260 at 6 gust 20. Runway 22, clear to land.",
+     "reference": {
+      "callsigns": [
+       "DAL1063"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL1063"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1063"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.223,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.43
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_01",
+     "input": "whisper",
+     "text": "Delta 1063, roger. Clear to land runway 22.",
+     "reference": {
+      "callsigns": [
+       "DAL1063"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL1063"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1063"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.186,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.27
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KLGA_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_02",
+     "input": "whisper",
+     "text": "Delta 10-63, enable turn right alpha, contact ground point 8.",
+     "reference": {
+      "callsigns": [
+       "DAL1063"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL1063"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1063"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.2,
+     "fast_path_s": 0.0023,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.47
+    },
+    {
+     "t": 48,
+     "source_id": "SYN_KLGA_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_03",
+     "input": "whisper",
+     "text": "Don't pretend to be free to continue hacking via Alpha to end.",
+     "reference": {
+      "callsigns": [
+       "DAL1063"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.195,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": 3.52,
+     "agent_turn_s": 5.23
+    },
+    {
+     "t": 55,
+     "source_id": "SYN_KLGA_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_04",
+     "input": "whisper",
+     "text": "Endeavor 568, follow the Airbus 320, cross runway 22 at Fox Valley.",
+     "reference": {
+      "callsigns": [
+       "EDV568"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV568"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV568"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.218,
+     "fast_path_s": 0.0006,
+     "agent_ingest_s": null,
+     "agent_turn_s": 9.09
+    },
+    {
+     "t": 59,
+     "source_id": "SYN_KLGA_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_05",
+     "input": "whisper",
+     "text": "Crossing runway 22 at Foxtrot, Endeavour 568.",
+     "reference": {
+      "callsigns": [
+       "EDV568"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV568"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV568"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.2,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.7
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS",
+   "run_id": "e2e-syn_klga_heldout3_11_n_clear_report_then_cross-20261009-161115",
+   "expected_alert": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R1",
+     "via": "host fast path",
+     "t": 55,
+     "source_id": "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_03",
+     "eot_to_alert_s": 0.21
+    },
+    {
+     "warning_id": "w0002",
+     "rule": "R1",
+     "via": "host fast path",
+     "t": 55,
+     "source_id": "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_03",
+     "eot_to_alert_s": 0.21
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_00",
+     "input": "whisper",
+     "text": "American 795, Wing 280 at 11G25, runway 22, cleared to land.",
+     "reference": {
+      "callsigns": [
+       "AAL795"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL795"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL795"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.222,
+     "fast_path_s": 0.0014,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.35
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_01",
+     "input": "whisper",
+     "text": "American 795, Roger. Clear to land runway 22.",
+     "reference": {
+      "callsigns": [
+       "AAL795"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL795"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL795"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.185,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.11
+    },
+    {
+     "t": 45,
+     "source_id": "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_02",
+     "input": "whisper",
+     "text": "American 795, clear runway 22 at Mike.",
+     "reference": {
+      "callsigns": [
+       "AAL795"
+      ],
+      "runway": "22",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL795"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.166,
+     "fast_path_s": 0.0015,
+     "agent_ingest_s": 2.45,
+     "agent_turn_s": 6.1
+    },
+    {
+     "t": 55,
+     "source_id": "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_03",
+     "input": "whisper",
+     "text": "JetBlue 700, taxi buyer Echo, cross runway 22.",
+     "reference": {
+      "callsigns": [
+       "JBU700"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU700"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU700"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.21,
+     "fast_path_s": 0.0007,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.83
+    },
+    {
+     "t": 59,
+     "source_id": "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_04",
+     "input": "whisper",
+     "text": "Crossing runway 22 and Echo, jet please 700.",
+     "reference": {
+      "callsigns": [
+       "JBU700"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "?700"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "?700"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.169,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.36
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS",
+   "run_id": "e2e-syn_klga_heldout3_12_n_go_around_then_cross-20261009-161200",
+   "expected_alert": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_00",
+     "input": "whisper",
+     "text": "Delta 500, wind 1-8-0 at 1-8 gusts 2-8. Runway 4, cleared to land.",
+     "reference": {
+      "callsigns": [
+       "DAL500"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL500"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL500"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.264,
+     "fast_path_s": 0.0014,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.33
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_01",
+     "input": "whisper",
+     "text": "Delta 500 roger, clear to land runway 4.",
+     "reference": {
+      "callsigns": [
+       "DAL500"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL500"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL500"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.177,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.31
+    },
+    {
+     "t": 30,
+     "source_id": "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_02",
+     "input": "whisper",
+     "text": "The 500 go around, climb, and maintain 3,000.",
+     "reference": {
+      "callsigns": [
+       "DAL500"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path": {
+      "callsigns": [
+       "?000",
+       "?500"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "?000",
+       "?500"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.191,
+     "fast_path_s": 0.0007,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.28
+    },
+    {
+     "t": 33,
+     "source_id": "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_03",
+     "input": "whisper",
+     "text": "Delta 500 going around.",
+     "reference": {
+      "callsigns": [
+       "DAL500"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL500"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL500"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.155,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.47
+    },
+    {
+     "t": 45,
+     "source_id": "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_04",
+     "input": "whisper",
+     "text": "Spirit 627 and Charlie cross runway 4 without delay.",
+     "reference": {
+      "callsigns": [
+       "NKS627"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS627"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS627"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.178,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.57
+    },
+    {
+     "t": 49,
+     "source_id": "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_05",
+     "input": "whisper",
+     "text": "Crossing runway 4 at Charlie, Spirit 627.",
+     "reference": {
+      "callsigns": [
+       "NKS627"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS627"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS627"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.176,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 7.55
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_13_N_LUAW_THEN_TKOF",
+   "run_id": "e2e-syn_klga_heldout3_13_n_luaw_then_tkof-20261009-161250",
+   "expected_alert": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_13_N_LUAW_THEN_TKOF_00",
+     "input": "whisper",
+     "text": "Nation C312 Numa, runway 4, line up and wait. Traffic of Boeing 737, 2 mile final.",
+     "reference": {
+      "callsigns": [
+       "N2312L"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.261,
+     "fast_path_s": 0.0019,
+     "agent_ingest_s": 4.13,
+     "agent_turn_s": 6.77
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_13_N_LUAW_THEN_TKOF_01",
+     "input": "whisper",
+     "text": "Citation 2312 Lima, line up and wait runway four.",
+     "reference": {
+      "callsigns": [
+       "N2312L"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N2312L"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N2312L"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.186,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.99
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KLGA_HELDOUT3_13_N_LUAW_THEN_TKOF_02",
+     "input": "whisper",
+     "text": "Citation 2312 Lima, runway 4, full length, cleared for takeoff.",
+     "reference": {
+      "callsigns": [
+       "N2312L"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N2312L"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N2312L"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.222,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.52
+    },
+    {
+     "t": 44,
+     "source_id": "SYN_KLGA_HELDOUT3_13_N_LUAW_THEN_TKOF_03",
+     "input": "whisper",
+     "text": "Citation 2312 Lima cleared for takeoff runway 4.",
+     "reference": {
+      "callsigns": [
+       "N2312L"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N2312L"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N2312L"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.187,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 8.49
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE",
+   "run_id": "e2e-syn_klga_heldout3_14_n_luaw_continue-20261009-161327",
+   "expected_alert": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_00",
+     "input": "whisper",
+     "text": "Southwest 758, runway 22, line up and wait. Traffic of Boeing 737, four mile final.",
+     "reference": {
+      "callsigns": [
+       "SWA758"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA758"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA758"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.243,
+     "fast_path_s": 0.002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 10.24
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_01",
+     "input": "whisper",
+     "text": "Southwest 758, line up and wait runway 22.",
+     "reference": {
+      "callsigns": [
+       "SWA758"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA758"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA758"
+      ],
+      "runway": "22",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.181,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": 5.19
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_02",
+     "input": "whisper",
+     "text": "Cessna 1247 Sierra, runway 22 continues, traffic holding in position.",
+     "reference": {
+      "callsigns": [
+       "N1247S"
+      ],
+      "runway": "22",
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N1247S"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.21,
+     "fast_path_s": 0.0024,
+     "agent_ingest_s": 2.4,
+     "agent_turn_s": 5.7
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_03",
+     "input": "whisper",
+     "text": "Cessna 1247 Sierra, continue.",
+     "reference": {
+      "callsigns": [
+       "N1247S"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N1247S"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.177,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": 2.66,
+     "agent_turn_s": 5.94
+    },
+    {
+     "t": 30,
+     "source_id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_04",
+     "input": "whisper",
+     "text": "Southwest 758, runway 22, wind 320 at 20, gust 31, cleared for takeoff.",
+     "reference": {
+      "callsigns": [
+       "SWA758"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA758"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA758"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.232,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": 6.76
+    },
+    {
+     "t": 34,
+     "source_id": "SYN_KLGA_HELDOUT3_14_N_LUAW_CONTINUE_05",
+     "input": "whisper",
+     "text": "I'll bless 758, cleared for takeoff runway 22.",
+     "reference": {
+      "callsigns": [
+       "SWA758"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "agent",
+     "agent_called_process_transmission": 1,
+     "agent_text_verbatim": true,
+     "agent_other_tools": [],
+     "agent_rc": 0,
+     "asr_s": 0.187,
+     "fast_path_s": 0.0001,
+     "agent_ingest_s": 3.91,
+     "agent_turn_s": 8.92
+    }
+   ]
+  }
+ ]
+}

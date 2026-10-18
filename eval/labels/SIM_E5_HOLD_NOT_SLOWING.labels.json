@@ -1,0 +1,22 @@
+{
+ "episode_id": "SIM_E5_HOLD_NOT_SLOWING",
+ "generated_from": "simulation truth (evaluation only)",
+ "truth_zone_intervals": {
+  "T-AC1": [
+   45.8,
+   54.9
+  ],
+  "T-VH7": [
+   41.5,
+   59.25
+  ]
+ },
+ "truth_encounter_interval": [
+  45.8,
+  54.9
+ ],
+ "vehicle_passes_hold_line_at": 41.5,
+ "should_raise_candidate": true,
+ "expected_ledger_rules": [],
+ "note": "Labels are computed from truth that the runtime never sees. Prediction quality is scored against these, not tuned to them."
+}

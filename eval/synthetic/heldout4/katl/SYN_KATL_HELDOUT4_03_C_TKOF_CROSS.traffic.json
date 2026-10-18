@@ -1,0 +1,32 @@
+{
+ "id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL2100",
+  "DAL2869",
+  "EDV8064",
+  "N126P",
+  "NKS2000",
+  "NKS2144",
+  "NKS2780",
+  "NKS6932",
+  "UAL1321",
+  "UAL2312"
+ ],
+ "realistic": [
+  "AAL2100",
+  "AAL6417",
+  "DAL2869",
+  "EDV8064",
+  "N126P",
+  "NKS2000",
+  "NKS2144",
+  "NKS2236",
+  "NKS2780",
+  "NKS6932",
+  "UAL1321",
+  "UAL1814",
+  "UAL2312"
+ ]
+}

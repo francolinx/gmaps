@@ -1,0 +1,22 @@
+{
+ "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Southwest 771, runway niner left, cleared to land.",
+  "asr_s": 0.217
+ },
+ "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "Runway Niner left cleared to land Southwest 771.",
+  "asr_s": 0.213
+ },
+ "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Southwest 771, clear of runway 9 or left.",
+  "asr_s": 0.191
+ },
+ "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "Southwest Niner 62, cross runway Niner left at Lima.",
+  "asr_s": 0.221
+ },
+ "SYN_KATL_DEV_10_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Cross runway 9 or left at Lima. Southwest 9 or 6-2.",
+  "asr_s": 0.227
+ }
+}

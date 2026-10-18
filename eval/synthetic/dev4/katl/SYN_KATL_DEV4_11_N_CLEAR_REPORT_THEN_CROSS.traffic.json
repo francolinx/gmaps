@@ -1,0 +1,31 @@
+{
+ "id": "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL456",
+  "EDV2540",
+  "EDV897",
+  "N5175R",
+  "N5773L",
+  "N7704K",
+  "SWA135",
+  "SWA742",
+  "UAL202",
+  "UAL500"
+ ],
+ "realistic": [
+  "AAL456",
+  "EDV2540",
+  "EDV897",
+  "N5773L",
+  "N6739P",
+  "N7704K",
+  "SWA135",
+  "SWA742",
+  "UAL202",
+  "UAL2613",
+  "UAL500",
+  "UAL770"
+ ]
+}

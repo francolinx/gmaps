@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31003_05_C_TKOF_LAND_SAME",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_TKOF_LAND_SAME",
+ "basis": "R3 takeoff vs landing, same runway (3-9-6, 3-10-3)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31003,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "E1",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit five hundred, runway two six left at Echo five, cleared for takeoff.",
+   "id": "SYN_KATL_TRAINFT_S31003_05_C_TKOF_LAND_SAME_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Spirit five hundred, cleared for takeoff runway two six left.",
+   "id": "SYN_KATL_TRAINFT_S31003_05_C_TKOF_LAND_SAME_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Endeavor two six four, runway two six left, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31003_05_C_TKOF_LAND_SAME_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Endeavor two six four, roger, cleared to land runway two six left.",
+   "id": "SYN_KATL_TRAINFT_S31003_05_C_TKOF_LAND_SAME_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

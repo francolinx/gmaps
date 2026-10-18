@@ -1,0 +1,95 @@
+GMAPS airport-graph schema 1.0.0
+
+SCOPE
+This is a source-grounded topology-draft interchange. Its purpose is to preserve
+what the diagram shows without creating surveyed geometry or authorizations.
+The v1 schema intentionally requires geometry and segment dimensions to be null,
+and automatic routing / metric prediction to remain false. Preserve the draft
+when adding a future reviewed geometry model under a new schema version.
+
+IDENTIFIERS
+All entity IDs are namespaced by airport, entity type, and stable name:
+KLGA:TWY:D, KLGA:RWY:04-22, KLGA:END:04,
+KLGA:N:D_RWY04-22, KLGA:S:D_AA_TO_RWY.
+A runway surface has two reciprocal direction records. Taxiway names, named
+areas, runway ends and graph nodes are different namespaces. IDs are stable keys,
+not coordinates. Do not merge airports or rename existing keys without a mapping.
+
+COLLECTIONS
+sources: original provenance, effective period, retrieval date, source scope,
+local path and SHA-256. Date eligibility is only the printed period as retrieved.
+surfaces: physical runway pairs, taxiways and selected named areas. Whole-runway
+published dimensions are in feet and do not define a centerline or segment length.
+runway_ends: directional identifiers, reciprocal links, aliases and parent runway.
+nodes: evidenced pavement junctions. No node currently asserts a hold position.
+segments: visible links along a named surface, bounded by the listed junctions.
+The from/to order is storage order. Operational direction remains unknown.
+Atomicity is junctions_only_hold_boundaries_unresolved: a reviewed implementation
+must split links at verified hold/control boundaries before they become routable.
+hold_points: separate approach-specific constraints or charted hold annotations.
+node_id, offset and geometry remain null. Physical_marking_status distinguishes
+not_located conceptual records from chart_depicted_location_unmeasured records.
+zones: symbolic conflict references and hotspot annotations. Brown hotspot
+ellipses are not runway-occupancy polygons; none is usable for occupancy math.
+route_templates: ordered draft walks, or unresolved surface words without a walk.
+These are illustrative graph paths, not historical or current ATC permissions.
+issues: per-airport review queue with affected IDs and required evidence.
+
+EVIDENCE AND UNCERTAINTY
+Every entity carries evidence[], review and uncertainty. Evidence identifies a
+source, one-based PDF page (or null for a text reference), human-readable locator,
+claim and method. A page locator is not metric geometry. Design_convention marks
+an engineering constraint rather than a fact printed on the chart.
+Uncertainty.label is source_supported, ambiguous, unknown or design_only;
+reason and alternatives preserve the unresolved question. Confidence is null
+because no calibrated extraction probabilities were measured. Source_supported
+means the cited claim is visible in the source, not expert-approved or current.
+Review defaults to pending; acceptance requires reviewer and reviewed_at.
+
+VALIDATION RULES
+1. Parse strict JSON; validate against the supplied Draft 2020-12 schema. Unknown
+   keys are rejected. Empty arrays mean unmodeled data, not a complete empty field.
+2. IDs must be unique and airport-scoped. Every graph/source/route reference must
+   exist. Never link a KBOS entity to KLGA data.
+3. Runway end numbers and suffixes must be reciprocal, with exactly two ends per
+   physical runway. Preserve 04 vs 04L/04R and 33L vs 33R.
+4. Every segment endpoint must contain the segment's surface. A route's node and
+   segment sequences must make a continuous walk in the stated surface order.
+   Storage-order reversal in a draft does not imply permission in either direction.
+5. No fuzzy identifier correction without preserving candidates and uncertainty.
+   Duplicate letters and numeric suffixes are meaningful. Unknown-in-inventory
+   is not proof that an identifier does not exist at the airport.
+6. Hold approaches must attach to the correct segment/side. Do not place a hold
+   at the runway-intersection node or reuse the same point for both approaches.
+   Requests/readbacks, blank hold fields and chart connectivity grant no authority.
+7. Never synthesize coordinates, speeds, lengths, turn radii, protected widths,
+   holding offsets or polygon boundaries. PDF pixels and printed label positions
+   are evidence locators only. A chart grid is not a validated georeference.
+8. Require date order, local source integrity and preserved provenance. Keep chart
+   edition, revision mark, retrieval time, historical applicability and live
+   status separate. Do not silently merge graphs from different chart cycles.
+9. Accepted reviews need a named reviewer and timestamp. A schema pass alone
+   does not accept topology; version and reviewer evidence must survive promotion.
+10. Missing motion/geometry cannot yield a precise position or a negative conflict
+    result. Predictions need fresh tracks, identity association, shared clocks,
+    uncertainty, footprints, modeled route hypotheses and declared dynamics.
+
+AUTOMATED VS HUMAN CHECKS
+validate.py enforces the file schema, ID/reference integrity, reciprocal runways,
+route walks, hold linkage, recorded review identity, date order and source hashes.
+Its resolver demonstrates exact identifier lookup and missing-suffix candidates.
+The four speech/state examples in resolution_examples.json are integration
+acceptance fixtures; no full ASR/parser/state machine is implemented or tested.
+Visual correctness, labels confused with symbols, missed branches, current
+restrictions and physical accuracy require independent review. Programmatic
+connectivity cannot prove that a line was read correctly from a PDF.
+
+PROMOTION CONTRACT
+After expert review, create a new geometry-capable schema and derived dataset;
+keep v1 files immutable as the reviewed input. Record CRS (or SIM-local frame),
+units, measurement method, source control points and residual/accuracy bounds;
+separate chart depiction from measured physical truth. Split at hold/zone entry
+and exit boundaries, add movement restrictions and explicit authorized turns.
+Validate path continuity and source versions again. Add metric occupancy tests
+using independent tracks and hidden expected answers; do not derive timing from
+historical media captions or use a whole-runway length as an approach distance.

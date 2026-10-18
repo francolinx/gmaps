@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Delta one niner seven six, runway two six left at Delta, intersection departure, cleared for takeoff.",
+  "asr_s": 0.233
+ },
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Roger, cleared for takeoff, six left, Delta, one nine and seven six.",
+  "asr_s": 0.218
+ },
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "United six four one four, runway two six left, cleared to land, wind one zero zero at one three.",
+  "asr_s": 0.241
+ },
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Runway two six left, cleared to land, United six four one four.",
+  "asr_s": 0.197
+ }
+}

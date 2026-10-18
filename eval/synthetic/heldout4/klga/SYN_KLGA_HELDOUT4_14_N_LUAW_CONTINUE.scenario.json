@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout4",
+ "phrasing_pool": "E",
+ "template": "N_LUAW_CONTINUE",
+ "basis": "line up and wait; the arrival is told 'continue, traffic holding in position' (3-9-4c1), not cleared to land",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7502,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "R",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American eleven ninety five, runway four, line up and wait, traffic landing runway one three.",
+   "id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Line up and wait runway four, American eleven ninety five.",
+   "id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Frontier two eight one six, runway four, extend downwind, traffic holding in position.",
+   "id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Wilco, Frontier two eight one six.",
+   "id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_03",
+   "speaker_ref": "b"
+  },
+  {
+   "t": 30,
+   "speaker": "ATC",
+   "text": "American eleven ninety five, runway four at Foxtrot, intersection departure, cleared for takeoff.",
+   "id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 34,
+   "speaker": "PILOT",
+   "text": "Roger, cleared for takeoff four, American eleven ninety five.",
+   "id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_05",
+   "speaker_ref": "a"
+  }
+ ]
+}

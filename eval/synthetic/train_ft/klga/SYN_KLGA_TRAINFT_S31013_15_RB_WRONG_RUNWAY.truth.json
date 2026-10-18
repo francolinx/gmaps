@@ -1,0 +1,48 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31013_15_RB_WRONG_RUNWAY",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31013_15_RB_WRONG_RUNWAY_00",
+   "fields": {
+    "callsigns": [
+     "N725BK"
+    ],
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N725BK",
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": [
+     "N",
+     "B",
+     "K"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31013_15_RB_WRONG_RUNWAY_01",
+   "fields": {
+    "callsigns": [
+     "N725BK"
+    ],
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N725BK",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": [
+     "N",
+     "B",
+     "K"
+    ]
+   }
+  }
+ ]
+}

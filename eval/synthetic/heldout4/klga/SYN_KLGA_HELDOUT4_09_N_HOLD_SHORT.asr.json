@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_00": {
+  "text": "American 2233, number 2, runway 4, cleared to last.",
+  "asr_s": 0.189
+ },
+ "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_01": {
+  "text": "Onway 4 cleared to land, American 2233.",
+  "asr_s": 0.178
+ },
+ "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_02": {
+  "text": "Delta 6217, hold short runway 4, traffic on final...",
+  "asr_s": 0.216
+ },
+ "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_03": {
+  "text": "Hold short of runway 4, delta 6217",
+  "asr_s": 0.17
+ }
+}

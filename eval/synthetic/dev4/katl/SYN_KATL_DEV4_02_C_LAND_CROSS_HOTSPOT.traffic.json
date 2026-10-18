@@ -1,0 +1,30 @@
+{
+ "id": "SYN_KATL_DEV4_02_C_LAND_CROSS_HOTSPOT",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "DAL500",
+  "EDV560",
+  "EDV921",
+  "JBU1027",
+  "JBU217",
+  "N6745Y",
+  "NKS1669",
+  "NKS844",
+  "SWA337",
+  "SWA982"
+ ],
+ "realistic": [
+  "DAL2870",
+  "EDV560",
+  "EDV921",
+  "JBU1027",
+  "JBU1923",
+  "JBU217",
+  "N6745Y",
+  "NKS1669",
+  "NKS844",
+  "NKS900",
+  "SWA337"
+ ]
+}

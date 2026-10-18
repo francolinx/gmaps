@@ -1,0 +1,28 @@
+{
+ "source": "FAA NASR 28-day subscription, CSV extract",
+ "cycle_effective": "2026-10-01",
+ "url": "https://nfdc.faa.gov/webContent/28DaySub/extra/01_Oct_2026_APT_CSV.zip",
+ "index_page": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-10-01",
+ "zip_sha256": "aba48ea877f249d9b8cd63988b14b3432a6a09ad1fbe9561a5e6443c99c03dd0",
+ "zip_bytes": 8030968,
+ "retrieved_at": "2026-10-09T00:03:54-0400",
+ "filter": "ARPT_ID == 'ATL'",
+ "licence": "US Government work (public domain)",
+ "files": {
+  "APT_BASE.csv": {
+   "rows_kept": 1,
+   "source_member_sha256": "799c7bcc78cda2fd360324858ca268b8ce1bc570d669a68fe7cdddf0d4bd8d16",
+   "kept_sha256": "0a795b4d9bb0230967740413c9b9dba802f59e14e5eee71a58487e8fb5dda6b5"
+  },
+  "APT_RWY.csv": {
+   "rows_kept": 5,
+   "source_member_sha256": "0057dd3bdca3641615c89c4e197367bf65c2488fdb47841399f6fff9aecd8e6d",
+   "kept_sha256": "53951ec63360e32cebf13bc58aec684e012020c4a923e20f71a92fc65fc17679"
+  },
+  "APT_RWY_END.csv": {
+   "rows_kept": 10,
+   "source_member_sha256": "20b92a5857a036b8cd9a4068dcc8c8902109f1bdd6ec69cd428c74495911f29f",
+   "kept_sha256": "0b4a8d279678c6615acf2039678f9744a87dff2fce96205d47f7930734d080c7"
+  }
+ }
+}

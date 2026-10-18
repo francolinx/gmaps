@@ -1,0 +1,296 @@
+{
+ "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Twin Cessna one one two eight November, runway four, cleared to land, wind zero six zero at one five.",
+  "asr_s": 0.493,
+  "words": [
+   {
+    "w": "Twin",
+    "p": 0.7433
+   },
+   {
+    "w": "Cessna",
+    "p": 0.9377
+   },
+   {
+    "w": "one",
+    "p": 0.5081
+   },
+   {
+    "w": "one",
+    "p": 0.849
+   },
+   {
+    "w": "two",
+    "p": 0.9842
+   },
+   {
+    "w": "eight",
+    "p": 0.9939
+   },
+   {
+    "w": "November,",
+    "p": 0.4802
+   },
+   {
+    "w": "runway",
+    "p": 0.992
+   },
+   {
+    "w": "four,",
+    "p": 0.7835
+   },
+   {
+    "w": "cleared",
+    "p": 0.9927
+   },
+   {
+    "w": "to",
+    "p": 0.9787
+   },
+   {
+    "w": "land,",
+    "p": 0.9188
+   },
+   {
+    "w": "wind",
+    "p": 0.9198
+   },
+   {
+    "w": "zero",
+    "p": 0.9727
+   },
+   {
+    "w": "six",
+    "p": 0.9954
+   },
+   {
+    "w": "zero",
+    "p": 0.9986
+   },
+   {
+    "w": "at",
+    "p": 0.979
+   },
+   {
+    "w": "one",
+    "p": 0.9916
+   },
+   {
+    "w": "five.",
+    "p": 0.946
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "runway four cleared to land, twin Cessna one one two eight November.",
+  "asr_s": 0.438,
+  "words": [
+   {
+    "w": "runway",
+    "p": 0.499
+   },
+   {
+    "w": "four",
+    "p": 0.9887
+   },
+   {
+    "w": "cleared",
+    "p": 0.5928
+   },
+   {
+    "w": "to",
+    "p": 0.9878
+   },
+   {
+    "w": "land,",
+    "p": 0.786
+   },
+   {
+    "w": "twin",
+    "p": 0.6898
+   },
+   {
+    "w": "Cessna",
+    "p": 0.6394
+   },
+   {
+    "w": "one",
+    "p": 0.727
+   },
+   {
+    "w": "one",
+    "p": 0.8608
+   },
+   {
+    "w": "two",
+    "p": 0.9581
+   },
+   {
+    "w": "eight",
+    "p": 0.9579
+   },
+   {
+    "w": "November.",
+    "p": 0.6486
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Winchester one one two eight November, clear of the runway.",
+  "asr_s": 0.438,
+  "words": [
+   {
+    "w": "Winchester",
+    "p": 0.5224
+   },
+   {
+    "w": "one",
+    "p": 0.335
+   },
+   {
+    "w": "one",
+    "p": 0.8244
+   },
+   {
+    "w": "two",
+    "p": 0.969
+   },
+   {
+    "w": "eight",
+    "p": 0.991
+   },
+   {
+    "w": "November,",
+    "p": 0.6895
+   },
+   {
+    "w": "clear",
+    "p": 0.9559
+   },
+   {
+    "w": "of",
+    "p": 0.9927
+   },
+   {
+    "w": "the",
+    "p": 0.9918
+   },
+   {
+    "w": "runway.",
+    "p": 0.9249
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "Twin Cessna 2656 Uniform Cross runway four at Papa without delay, traffic short final.",
+  "asr_s": 0.507,
+  "words": [
+   {
+    "w": "Twin",
+    "p": 0.8169
+   },
+   {
+    "w": "Cessna",
+    "p": 0.9833
+   },
+   {
+    "w": "2656",
+    "p": 0.7417
+   },
+   {
+    "w": "Uniform",
+    "p": 0.7266
+   },
+   {
+    "w": "Cross",
+    "p": 0.4374
+   },
+   {
+    "w": "runway",
+    "p": 0.9275
+   },
+   {
+    "w": "four",
+    "p": 0.9896
+   },
+   {
+    "w": "at",
+    "p": 0.9675
+   },
+   {
+    "w": "Papa",
+    "p": 0.9605
+   },
+   {
+    "w": "without",
+    "p": 0.9141
+   },
+   {
+    "w": "delay,",
+    "p": 0.44
+   },
+   {
+    "w": "traffic",
+    "p": 0.9669
+   },
+   {
+    "w": "short",
+    "p": 0.9925
+   },
+   {
+    "w": "final.",
+    "p": 0.4581
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Cross runway four, bumper, twin Cessna two six five six uniform.",
+  "asr_s": 0.433,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.426
+   },
+   {
+    "w": "runway",
+    "p": 0.8353
+   },
+   {
+    "w": "four,",
+    "p": 0.7214
+   },
+   {
+    "w": "bumper,",
+    "p": 0.0201
+   },
+   {
+    "w": "twin",
+    "p": 0.4
+   },
+   {
+    "w": "Cessna",
+    "p": 0.1903
+   },
+   {
+    "w": "two",
+    "p": 0.4897
+   },
+   {
+    "w": "six",
+    "p": 0.6694
+   },
+   {
+    "w": "five",
+    "p": 0.8595
+   },
+   {
+    "w": "six",
+    "p": 0.9884
+   },
+   {
+    "w": "uniform.",
+    "p": 0.4858
+   }
+  ]
+ }
+}

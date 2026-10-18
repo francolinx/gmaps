@@ -1,0 +1,65 @@
+{
+ "icao": "KATL",
+ "generated_at": "2026-10-09T12:04:05-0400",
+ "chart": {
+  "publisher": "FAA Aeronautical Information Services, d-TPP airport diagram",
+  "title": "FAA Hartsfield/Jackson Atlanta Intl airport diagram, cycle 2610, 00026AD.PDF",
+  "chart_code": "AL-26 (FAA)",
+  "cycle": "2610",
+  "effective_from": "2026-10-01",
+  "effective_to": "2026-10-29",
+  "printed_cycle_banner": "SE-4, 01 OCT 2026 to 29 OCT 2026",
+  "banner_checked_against_pdf": true,
+  "url": "https://aeronav.faa.gov/d-tpp/2610/00026AD.PDF",
+  "local_path": "data/airports/sources/atl_faa_2610_00026AD.pdf",
+  "sha256": "3c3182e793a411bbcfd2820844539a5a268e5b6bae81f2633bc07067b9198c23",
+  "retrieved_on": "2026-10-09",
+  "licence": "US Government work (public domain)",
+  "note": "Not for navigation."
+ },
+ "nasr": {
+  "source": "FAA NASR 28-day subscription, CSV extract",
+  "cycle_effective": "2026-10-01",
+  "url": "https://nfdc.faa.gov/webContent/28DaySub/extra/01_Oct_2026_APT_CSV.zip",
+  "zip_sha256": "aba48ea877f249d9b8cd63988b14b3432a6a09ad1fbe9561a5e6443c99c03dd0",
+  "retrieved_at": "2026-10-09T00:03:54-0400",
+  "licence": "US Government work (public domain)"
+ },
+ "graticule": {
+  "values": [
+   "33°39'N",
+   "33°38'N",
+   "84°27'W",
+   "84°26'W",
+   "84°25'W"
+  ],
+  "source": "outline_glyph_decode",
+  "confirmed_by": null,
+  "confirmed_at": null,
+  "read_at": "2026-10-09T12:04:02-0400"
+ },
+ "osm": {
+  "source": "OpenStreetMap via Overpass API",
+  "licence": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "requested_at": "2026-10-09T04:04:08Z",
+  "osm_data_timestamp": "2026-10-09T04:02:51Z",
+  "raw_sha256": "b64eafa51f0049df0394f41b360b47993141006be10c9a7a3155951066cdca7d",
+  "folder": "osm/"
+ },
+ "tools": {
+  "extract": "pdfminer.six 20260107",
+  "styles": "tools/airport_map/styles/faa_apd.json"
+ },
+ "display": {
+  "footer": "Reconstructed from FAA airport diagram AL-26 (FAA), d-TPP cycle 2610 (effective 2026-10-01 to 2026-10-29), sha256 3c3182e793a4…, https://aeronav.faa.gov/d-tpp/2610/00026AD.PDF. Graticule: decoded from outlines (checked against NASR runway ends). Display only. Not for navigation. No predictions.",
+  "must_show": [
+   "chart.cycle",
+   "chart.effective_from",
+   "chart.effective_to",
+   "chart.sha256",
+   "chart.url"
+  ]
+ }
+}

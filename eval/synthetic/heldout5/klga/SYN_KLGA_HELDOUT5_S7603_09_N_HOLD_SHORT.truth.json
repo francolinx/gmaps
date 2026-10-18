@@ -1,0 +1,51 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7603_09_N_HOLD_SHORT",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "SWA8848"
+    ],
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_09_N_HOLD_SHORT_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA8848"
+    ],
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_09_N_HOLD_SHORT_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "NKS2700"
+    ],
+    "runway": "22",
+    "instruction": "HOLD_SHORT"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_09_N_HOLD_SHORT_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "NKS2700"
+    ],
+    "runway": "22",
+    "instruction": "HOLD_SHORT"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_09_N_HOLD_SHORT_03"
+  }
+ ]
+}

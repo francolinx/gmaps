@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31008_08_N_CROSS_OTHER_RWY",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CROSS_OTHER_RWY",
+ "basis": "crossing a runway with no active operation",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31008,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "D",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United ten seventy nine, wind zero three zero at four gusts one five, runway two six right, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31008_08_N_CROSS_OTHER_RWY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two six right, United ten seventy nine.",
+   "id": "SYN_KATL_TRAINFT_S31008_08_N_CROSS_OTHER_RWY_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "JetBlue twenty two thirty eight, taxi via Romeo three, cross runway niner right.",
+   "id": "SYN_KATL_TRAINFT_S31008_08_N_CROSS_OTHER_RWY_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross niner right at Romeo three, JetBlue twenty two thirty eight.",
+   "id": "SYN_KATL_TRAINFT_S31008_08_N_CROSS_OTHER_RWY_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

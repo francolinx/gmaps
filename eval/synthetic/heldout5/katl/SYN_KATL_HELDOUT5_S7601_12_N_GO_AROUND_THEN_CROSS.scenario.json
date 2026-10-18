@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "N_GO_AROUND_THEN_CROSS",
+ "basis": "go-around releases the landing (3-8-1), then a crossing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7601,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "E",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "JetBlue five niner six two, number two, runway eight right, cleared to land.",
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway eight right, cleared to land, JetBlue five niner six two.",
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 30,
+   "speaker": "ATC",
+   "text": "JetBlue five niner six two, go around, traffic on the runway.",
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 33,
+   "speaker": "PILOT",
+   "text": "JetBlue five niner six two is going around.",
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_03",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "ATC",
+   "text": "Endeavor eleven twenty, cross runway eight right at Echo, hold short of runway two seven left.",
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 49,
+   "speaker": "PILOT",
+   "text": "Cross runway eight right at Echo, Endeavor eleven twenty.",
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_05",
+   "speaker_ref": "b"
+  }
+ ]
+}

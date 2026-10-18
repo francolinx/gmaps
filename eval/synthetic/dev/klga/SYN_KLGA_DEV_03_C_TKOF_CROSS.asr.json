@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV_03_C_TKOF_CROSS_00": {
+  "text": "Frontier Niner 6-6, Runway 4 cleared for takeoff.",
+  "asr_s": 0.224
+ },
+ "SYN_KLGA_DEV_03_C_TKOF_CROSS_01": {
+  "text": "Runway 4 cleared for takeoff. Frontier Niner 6-6.",
+  "asr_s": 0.227
+ },
+ "SYN_KLGA_DEV_03_C_TKOF_CROSS_02": {
+  "text": "Southwest 295-6, cross runway 4 at Yankee.",
+  "asr_s": 0.213
+ },
+ "SYN_KLGA_DEV_03_C_TKOF_CROSS_03": {
+  "text": "Cross runway four at Yankee, southwest 295-6.",
+  "asr_s": 0.212
+ }
+}

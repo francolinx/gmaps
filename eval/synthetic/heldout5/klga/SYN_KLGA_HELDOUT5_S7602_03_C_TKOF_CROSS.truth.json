@@ -1,0 +1,53 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7602_03_C_TKOF_CROSS",
+ "EVALUATION_ONLY": true,
+ "expected_alert": true,
+ "expected_rules": [
+  "R2"
+ ],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "UAL2800"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7602_03_C_TKOF_CROSS_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "UAL2800"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7602_03_C_TKOF_CROSS_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "AAL9257"
+    ],
+    "runway": "22",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7602_03_C_TKOF_CROSS_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "AAL9257"
+    ],
+    "runway": "22",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7602_03_C_TKOF_CROSS_03"
+  }
+ ]
+}

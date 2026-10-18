@@ -1,0 +1,67 @@
+<title>GMAPS GB10 telemetry</title>
+<style>
+:root{--bg:#0d1117;--panel:#151b23;--line:#263040;--ink:#e6edf5;--dim:#8b98a9;--ok:#3fb950;--bad:#f85149;--warn:#d29922;--acc:#4aa3ff;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px system-ui,sans-serif;padding:16px}
+h1{font-size:18px;margin:0 0 4px}.sub{color:var(--dim);font-size:12px;margin-bottom:14px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin-bottom:12px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.tile b{display:block;font-size:13px}.tile span{font:12px var(--mono);color:var(--dim)}
+.ok{color:var(--ok)!important}.bad{color:var(--bad)!important}.warn{color:var(--warn)!important}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:10px}
+.chart{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.chart h3{margin:0;font-size:12px;font-weight:600;display:flex;justify-content:space-between}.chart h3 em{font:12px var(--mono);font-style:normal;color:var(--acc)}
+canvas{width:100%;height:120px;display:block}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-top:12px;font-size:13px}
+.box li{margin:3px 0}table{border-collapse:collapse;font:12px var(--mono)}td,th{padding:2px 8px;border-bottom:1px solid var(--line);text-align:right}th{color:var(--dim);font-weight:500}
+</style>
+<h1>GMAPS · Dell Pro Max GB10 · live local telemetry</h1>
+<div class="sub">Sampled every 1 s on this machine (last 10 min). Real readings only; GB10 GPU memory fields report N/A and are not shown. Unified memory = system RAM shared by CPU and GPU.</div>
+<div class="tiles">
+  <div class="tile"><b>Qwen3.6-35B-A3B NVFP4 · vLLM · local :8000</b><span id="t-vllm">…</span></div>
+  <div class="tile"><b>Whisper large-v3-turbo · local container</b><span id="t-whisper">…</span></div>
+  <div class="tile"><b>Telegram alert path</b><span id="t-tg">…</span></div>
+  <div class="tile"><b>Cloud model routes</b><span class="ok">removed (policy): nvidia excluded, huggingface removed</span></div>
+  <div class="tile"><b>GMAPS tool server · 172.18.0.1:11435</b><span id="t-tools">…</span></div>
+  <div class="tile"><b>OpenShell gateway · :8080</b><span id="t-gw">…</span></div>
+</div>
+<div class="charts" id="charts"></div>
+<div class="box"><b>Latest demo run</b> <span id="runid" style="font:12px var(--mono);color:var(--dim)"></span><div id="run" style="margin-top:6px"></div></div>
+<div class="box"><b>Fallback paths (real)</b><ul>
+  <li>ASR failure → transcript-text mode (shown on screen as the input mode).</li>
+  <li>Qwen3-4B on disk: NOT loaded, not tested today.</li></ul></div>
+<script>
+const CH = [
+  ['gpu_util','GPU utilization','%',100], ['power_w','GPU power','W',null], ['mem_used_gib','Unified memory used','GiB','mem_total_gib'],
+  ['cpu_pct','CPU','%',100], ['gen_tok_s','vLLM generation tokens/s','tok/s',null], ['req_running','vLLM requests running','',null]];
+const $ = id => document.getElementById(id);
+$('charts').innerHTML = CH.map(([k,n]) => `<div class="chart"><h3>${n}<em id="v-${k}">–</em></h3><canvas id="c-${k}"></canvas></div>`).join('');
+function draw(k, hist, unit, maxv){
+  const cv = $('c-'+k), r = cv.getBoundingClientRect(), d = devicePixelRatio || 1; cv.width = r.width*d; cv.height = r.height*d;
+  const c = cv.getContext('2d'); c.scale(d,d); const W = r.width, H = r.height;
+  const pts = hist.map(s => [s.ts, s[k]]).filter(p => p[1] != null);
+  const last = pts.length ? pts[pts.length-1][1] : null; $('v-'+k).textContent = last == null ? 'n/a' : `${last} ${unit}`;
+  if (pts.length < 2) return;
+  const t1 = hist[hist.length-1].ts, t0 = t1 - 600;
+  let top = typeof maxv === 'number' ? maxv : (typeof maxv === 'string' ? (hist[hist.length-1][maxv] || 1) : Math.max(1, ...pts.map(p=>p[1]))*1.15);
+  c.strokeStyle = '#263040'; c.lineWidth = 1; for (let i=1;i<4;i++){ c.beginPath(); c.moveTo(0,H*i/4); c.lineTo(W,H*i/4); c.stroke(); }
+  c.fillStyle = '#8b98a9'; c.font = '10px ui-monospace,monospace'; c.fillText(`${Math.round(top)}`, 2, 10); c.fillText('−10 min', 2, H-3); c.fillText('now', W-24, H-3);
+  c.strokeStyle = '#4aa3ff'; c.lineWidth = 1.5; c.beginPath();
+  pts.forEach(([t,v],i) => { const x = (t-t0)/600*W, y = H - Math.min(1, v/top)*(H-12); i ? c.lineTo(x,y) : c.moveTo(x,y); }); c.stroke();
+}
+const cls = (el, ok, txt) => { el.textContent = txt; el.className = ok === true ? 'ok' : ok === false ? 'bad' : 'warn'; };
+async function tick(){
+  let d; try { d = await (await fetch('/data', {cache:'no-store'})).json(); } catch(e){ return; }
+  const h = d.history, s = d.status || {}, last = h[h.length-1] || {};
+  CH.forEach(([k,,u,m]) => draw(k, h, u, m));
+  cls($('t-vllm'), last.vllm_health === 200, `${last.vllm_health === 200 ? 'healthy' : 'NOT healthy'} · container ${s.vllm_container || '?'} · running ${last.req_running ?? '–'} · waiting ${last.req_waiting ?? '–'} · KV cache ${last.kv_cache_pct ?? '–'}% · ${last.temp_c ?? '–'}°C ${last.sm_mhz ?? '–'} MHz`);
+  const r = d.run || {}, asr = r.asr;
+  cls($('t-whisper'), (s.whisper_containers||[]).length ? true : null, (s.whisper_containers||[]).length ? `RUNNING now (${s.whisper_containers.join(', ')})`
+      : (asr ? `idle · last run ${r.run_id}: n=${asr.n}, median ${asr.warm_asr_s_median ?? asr.median_asr_s} s/clip` : 'idle'));
+  const a = s.last_alert; cls($('t-tg'), a ? true : null, a ? `last sent msg #${a.message_id} · ${a.tier || ''} · ${a.at.slice(11,19)} · ${a.run_id}` : 'no alert in recent logs');
+  cls($('t-tools'), s.gmaps_tools_up, s.gmaps_tools_up ? 'up' : 'down');
+  cls($('t-gw'), s.openshell_8080_up, s.openshell_8080_up ? 'up' : 'down');
+  $('runid').textContent = r.run_id ? `${r.run_id} (updated ${r.updated})` : 'none';
+  $('run').innerHTML = (r.turns||[]).length ? `<table><tr><th>t (sim s)</th><th>input</th><th>Whisper s</th><th>agent turn s</th></tr>${r.turns.map(x => `<tr><td>${x.t}</td><td>${x.input||'–'}</td><td>${x.asr_s ?? '–'}</td><td>${x.wall_s}</td></tr>`).join('')}</table>` : '';
+}
+tick(); setInterval(tick, 1000); addEventListener('resize', tick);
+</script>

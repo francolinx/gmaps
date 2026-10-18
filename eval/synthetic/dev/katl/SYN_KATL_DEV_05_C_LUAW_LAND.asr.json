@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV_05_C_LUAW_LAND_00": {
+  "text": "American 1088, runway 9 are right, line up and wait.",
+  "asr_s": 0.217
+ },
+ "SYN_KATL_DEV_05_C_LUAW_LAND_01": {
+  "text": "Line up and wait runway niner right. American 1088.",
+  "asr_s": 0.219
+ },
+ "SYN_KATL_DEV_05_C_LUAW_LAND_02": {
+  "text": "Frontier 1654, Runway Niner right, cleared to land.",
+  "asr_s": 0.233
+ },
+ "SYN_KATL_DEV_05_C_LUAW_LAND_03": {
+  "text": "Runway Niner right, cleared to land, Frontier 1654.",
+  "asr_s": 0.212
+ }
+}

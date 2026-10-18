@@ -1,0 +1,31 @@
+{
+ "id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "EDV1600",
+  "N4488S",
+  "N6648J",
+  "N8992R",
+  "NKS2800",
+  "NKS9624",
+  "SWA1500",
+  "SWA1800",
+  "SWA4947",
+  "UAL8350"
+ ],
+ "realistic": [
+  "AAL9660",
+  "EDV1600",
+  "JBU3345",
+  "N4488S",
+  "N6648J",
+  "N8992R",
+  "NKS2800",
+  "NKS9624",
+  "SWA1500",
+  "SWA1800",
+  "UAL5014",
+  "UAL8350"
+ ]
+}

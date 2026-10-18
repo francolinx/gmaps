@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_DEV3_04_C_LUAW_LAND",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev3",
+ "phrasing_pool": "C",
+ "template": "C_LUAW_LAND",
+ "basis": "R5 line up and wait vs landing, same runway (3-9-4; landing clearance carries 'traffic holding in position': CAUTION)",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9201,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "C",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American twenty nine fifty nine, runway two six left at Echo five, line up and wait.",
+   "id": "SYN_KATL_DEV3_04_C_LUAW_LAND_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Line up and wait two six left, American twenty nine fifty nine.",
+   "id": "SYN_KATL_DEV3_04_C_LUAW_LAND_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Delta seventeen twenty six, runway two six left, cleared to land, traffic holding in position.",
+   "id": "SYN_KATL_DEV3_04_C_LUAW_LAND_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Cleared to land two six left, Delta seventeen twenty six.",
+   "id": "SYN_KATL_DEV3_04_C_LUAW_LAND_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

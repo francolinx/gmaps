@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_00": {
+  "text": "November seven six zero one Victor, runway two two, line up and wait. Trafficker Airbus three twenty, four mile final.",
+  "asr_s": 0.274
+ },
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_01": {
+  "text": "Line up and wait two two, November seven six zero one Victor.",
+  "asr_s": 0.213
+ },
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_02": {
+  "text": "November eight seven two eight Lima, runway two two, cleared to land, traffic holding in position.",
+  "asr_s": 0.241
+ },
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_03": {
+  "text": "Cleared to land two two, November eight seven two, eight Lima.",
+  "asr_s": 0.207
+ }
+}

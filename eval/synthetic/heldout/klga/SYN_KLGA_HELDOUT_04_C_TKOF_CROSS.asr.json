@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT_04_C_TKOF_CROSS_00": {
+  "text": "Interior 2488, runway 4, wind 270 at 8, cleared for takeoff.",
+  "asr_s": 0.214
+ },
+ "SYN_KLGA_HELDOUT_04_C_TKOF_CROSS_01": {
+  "text": "Cleared for takeoff runway 4, Frontier 2488.",
+  "asr_s": 0.196
+ },
+ "SYN_KLGA_HELDOUT_04_C_TKOF_CROSS_02": {
+  "text": "American 1463 at Yankee Cross Runway 4.",
+  "asr_s": 0.178
+ },
+ "SYN_KLGA_HELDOUT_04_C_TKOF_CROSS_03": {
+  "text": "Crossing runway 4 at Yankees, American, 1463.",
+  "asr_s": 0.189
+ }
+}

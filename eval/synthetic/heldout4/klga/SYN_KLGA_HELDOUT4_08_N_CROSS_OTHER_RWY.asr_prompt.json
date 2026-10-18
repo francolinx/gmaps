@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Frontier 1700, runway three one, cleared to land, wind zero six zero at one five.",
+  "asr_s": 0.222
+ },
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Runway three one, cleared the land, Frontier 1700.",
+  "asr_s": 0.187
+ },
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_02": {
+  "text": "Spirit 1169, cross runway two two at Foxtrot without delay, traffic short final.",
+  "asr_s": 0.216
+ },
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Board runway two two at Foxtrot, period 1169.",
+  "asr_s": 0.186
+ }
+}

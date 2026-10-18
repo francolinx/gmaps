@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_00": {
+  "text": "Frontier 2444, number two, runway eight right, cleared to land.",
+  "asr_s": 0.201
+ },
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_01": {
+  "text": "runway eight right, cleared to land for tier 2444.",
+  "asr_s": 0.179
+ },
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_02": {
+  "text": "Frontier 2444, turn right at Alpha 5, contact ground 121.7.",
+  "asr_s": 0.212
+ },
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_03": {
+  "text": "Frontier 2444, taxi via Alpha 5 to the gate.",
+  "asr_s": 0.19
+ },
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_04": {
+  "text": "Experience 1135, proceed by our Echo three, cross runway eight right.",
+  "asr_s": 0.201
+ },
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_05": {
+  "text": "Cross runway eight right at Echo Street, Spirit 1135.",
+  "asr_s": 0.176
+ }
+}

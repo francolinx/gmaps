@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout4",
+ "phrasing_pool": "E",
+ "template": "C_TKOF_LAND_INTERSECT",
+ "basis": "R4 takeoff vs landing on intersecting runways (3-9-8, 3-10-4); airports with no intersecting runways use R3",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7502,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "CY",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit four niner niner five, runway two two, cleared for takeoff, turn left heading two seven zero.",
+   "id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Roger, cleared for takeoff two two, Spirit four niner niner five.",
+   "id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Endeavor twenty three oh two, number two, runway three one, cleared to land.",
+   "id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Runway three one, cleared to land, Endeavor twenty three oh two.",
+   "id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

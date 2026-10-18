@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_00": {
+  "text": "United four hundred five, runway two seven right, wind zero eight zero at nine august two three, cleared for takeoff.",
+  "asr_s": 0.259
+ },
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_01": {
+  "text": "United, four hundred five. Cleared for takeoff, runway two seven right.",
+  "asr_s": 0.202
+ },
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_02": {
+  "text": "Endeavor ten eighty four, runway two seven right, cleared to land.",
+  "asr_s": 0.198
+ },
+ "SYN_KATL_DEV4_05_C_TKOF_LAND_SAME_03": {
+  "text": "Endeavor ten eighty four, roger, cleared to land, runway two seven right.",
+  "asr_s": 0.207
+ }
+}

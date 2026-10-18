@@ -1,0 +1,232 @@
+{
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "American Niner 51, wind one one zero at seven, runway three one, cleared to land.",
+  "asr_s": 0.495,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.976
+   },
+   {
+    "w": "Niner",
+    "p": 0.8745
+   },
+   {
+    "w": "51,",
+    "p": 0.6033
+   },
+   {
+    "w": "wind",
+    "p": 0.8418
+   },
+   {
+    "w": "one",
+    "p": 0.8108
+   },
+   {
+    "w": "one",
+    "p": 0.9736
+   },
+   {
+    "w": "zero",
+    "p": 0.9939
+   },
+   {
+    "w": "at",
+    "p": 0.9801
+   },
+   {
+    "w": "seven,",
+    "p": 0.7555
+   },
+   {
+    "w": "runway",
+    "p": 0.9938
+   },
+   {
+    "w": "three",
+    "p": 0.997
+   },
+   {
+    "w": "one,",
+    "p": 0.8525
+   },
+   {
+    "w": "cleared",
+    "p": 0.9895
+   },
+   {
+    "w": "to",
+    "p": 0.9845
+   },
+   {
+    "w": "land.",
+    "p": 0.9653
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "American Niner 51 Roger cleared to land runway three one.",
+  "asr_s": 0.494,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9916
+   },
+   {
+    "w": "Niner",
+    "p": 0.7957
+   },
+   {
+    "w": "51",
+    "p": 0.8842
+   },
+   {
+    "w": "Roger",
+    "p": 0.4999
+   },
+   {
+    "w": "cleared",
+    "p": 0.3745
+   },
+   {
+    "w": "to",
+    "p": 0.9948
+   },
+   {
+    "w": "land",
+    "p": 0.9985
+   },
+   {
+    "w": "runway",
+    "p": 0.7215
+   },
+   {
+    "w": "three",
+    "p": 0.9909
+   },
+   {
+    "w": "one.",
+    "p": 0.7849
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "American Niner 51, clear runway three one at Tango.",
+  "asr_s": 0.392,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9858
+   },
+   {
+    "w": "Niner",
+    "p": 0.8744
+   },
+   {
+    "w": "51,",
+    "p": 0.6691
+   },
+   {
+    "w": "clear",
+    "p": 0.608
+   },
+   {
+    "w": "runway",
+    "p": 0.991
+   },
+   {
+    "w": "three",
+    "p": 0.9956
+   },
+   {
+    "w": "one",
+    "p": 0.923
+   },
+   {
+    "w": "at",
+    "p": 0.9497
+   },
+   {
+    "w": "Tango.",
+    "p": 0.8833
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "Spirit 839, cross runway three one at Whiskey.",
+  "asr_s": 0.456,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9873
+   },
+   {
+    "w": "839,",
+    "p": 0.4667
+   },
+   {
+    "w": "cross",
+    "p": 0.9733
+   },
+   {
+    "w": "runway",
+    "p": 0.9975
+   },
+   {
+    "w": "three",
+    "p": 0.9955
+   },
+   {
+    "w": "one",
+    "p": 0.9393
+   },
+   {
+    "w": "at",
+    "p": 0.7446
+   },
+   {
+    "w": "Whiskey.",
+    "p": 0.7639
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Crossing runway three one at Whiskey Spirit 839.",
+  "asr_s": 0.467,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.8739
+   },
+   {
+    "w": "runway",
+    "p": 0.9256
+   },
+   {
+    "w": "three",
+    "p": 0.995
+   },
+   {
+    "w": "one",
+    "p": 0.9507
+   },
+   {
+    "w": "at",
+    "p": 0.6249
+   },
+   {
+    "w": "Whiskey",
+    "p": 0.9674
+   },
+   {
+    "w": "Spirit",
+    "p": 0.5287
+   },
+   {
+    "w": "839.",
+    "p": 0.6458
+   }
+  ]
+ }
+}

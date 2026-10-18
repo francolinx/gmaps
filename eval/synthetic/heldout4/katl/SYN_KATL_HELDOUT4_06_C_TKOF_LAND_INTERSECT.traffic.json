@@ -1,0 +1,31 @@
+{
+ "id": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL1411",
+  "AAL1508",
+  "DAL1976",
+  "DAL4922",
+  "EDV2100",
+  "EDV4464",
+  "FFT2115",
+  "N9357L",
+  "SWA2100",
+  "UAL6414"
+ ],
+ "realistic": [
+  "AAL1508",
+  "DAL1976",
+  "DAL4922",
+  "DAL6818",
+  "EDV2100",
+  "EDV4464",
+  "FFT2115",
+  "N8958X",
+  "N9357L",
+  "SWA2100",
+  "UAL2600",
+  "UAL6414"
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_01_C_LAND_CROSS_00": {
+  "text": "American 669, runway 22, cleared to land.",
+  "asr_s": 0.19
+ },
+ "SYN_KLGA_DEV4_01_C_LAND_CROSS_01": {
+  "text": "American 669, Roger. Clear to land runway 22.",
+  "asr_s": 0.192
+ },
+ "SYN_KLGA_DEV4_01_C_LAND_CROSS_02": {
+  "text": "Frontier 900, taxi via Foxtrot, cross runway 22.",
+  "asr_s": 0.21
+ },
+ "SYN_KLGA_DEV4_01_C_LAND_CROSS_03": {
+  "text": "Crossing runway 22 at Foxtrot, Frontier 900.",
+  "asr_s": 0.182
+ }
+}

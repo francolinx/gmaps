@@ -1,0 +1,10 @@
+{
+ "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY_00": {
+  "text": "They have a 2800, number 2, runway 22, cleared to left.",
+  "asr_s": 0.204
+ },
+ "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY_01": {
+  "text": "Roger, cleared to land. Endeavour 2800.",
+  "asr_s": 0.175
+ }
+}

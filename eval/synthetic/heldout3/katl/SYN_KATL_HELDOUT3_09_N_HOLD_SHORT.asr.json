@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT3_09_N_HOLD_SHORT_00": {
+  "text": "American Niner 72, wind 220 at Niner gusts 21. Runway Niner right, cleared to land.",
+  "asr_s": 0.257
+ },
+ "SYN_KATL_HELDOUT3_09_N_HOLD_SHORT_01": {
+  "text": "American Niner 72, Roger. Clear to land runway Niner right.",
+  "asr_s": 0.208
+ },
+ "SYN_KATL_HELDOUT3_09_N_HOLD_SHORT_02": {
+  "text": "Blue 1048, hold short of runway 9 and right, traffic landing runway 9 and right.",
+  "asr_s": 0.225
+ },
+ "SYN_KATL_HELDOUT3_09_N_HOLD_SHORT_03": {
+  "text": "Jetman 1048, holding short of runway 9 arriving.",
+  "asr_s": 0.187
+ }
+}

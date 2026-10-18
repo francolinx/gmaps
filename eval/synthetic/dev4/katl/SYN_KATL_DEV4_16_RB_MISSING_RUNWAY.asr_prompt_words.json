@@ -1,0 +1,98 @@
+{
+ "SYN_KATL_DEV4_16_RB_MISSING_RUNWAY_00": {
+  "text": "Delta 2593, runway two six left, wind zero five zero at one two, cleared to land.",
+  "asr_s": 0.569,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9777
+   },
+   {
+    "w": "2593,",
+    "p": 0.6003
+   },
+   {
+    "w": "runway",
+    "p": 0.9924
+   },
+   {
+    "w": "two",
+    "p": 0.9934
+   },
+   {
+    "w": "six",
+    "p": 0.9976
+   },
+   {
+    "w": "left,",
+    "p": 0.9739
+   },
+   {
+    "w": "wind",
+    "p": 0.8478
+   },
+   {
+    "w": "zero",
+    "p": 0.8807
+   },
+   {
+    "w": "five",
+    "p": 0.9975
+   },
+   {
+    "w": "zero",
+    "p": 0.9993
+   },
+   {
+    "w": "at",
+    "p": 0.9953
+   },
+   {
+    "w": "one",
+    "p": 0.9882
+   },
+   {
+    "w": "two,",
+    "p": 0.9211
+   },
+   {
+    "w": "cleared",
+    "p": 0.9991
+   },
+   {
+    "w": "to",
+    "p": 0.9879
+   },
+   {
+    "w": "land.",
+    "p": 0.975
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_16_RB_MISSING_RUNWAY_01": {
+  "text": "Delta 2593 cleared to land.",
+  "asr_s": 0.449,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9534
+   },
+   {
+    "w": "2593",
+    "p": 0.7083
+   },
+   {
+    "w": "cleared",
+    "p": 0.6843
+   },
+   {
+    "w": "to",
+    "p": 0.9023
+   },
+   {
+    "w": "land.",
+    "p": 0.8406
+   }
+  ]
+ }
+}

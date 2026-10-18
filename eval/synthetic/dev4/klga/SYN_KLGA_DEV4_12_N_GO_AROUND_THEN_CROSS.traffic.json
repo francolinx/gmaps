@@ -1,0 +1,30 @@
+{
+ "id": "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL462",
+  "DAL1525",
+  "EDV2586",
+  "FFT100",
+  "JBU1023",
+  "JBU659",
+  "NKS101",
+  "NKS2444",
+  "NKS534",
+  "SWA2425"
+ ],
+ "realistic": [
+  "AAL462",
+  "DAL100",
+  "DAL1525",
+  "FFT100",
+  "JBU659",
+  "NKS101",
+  "NKS2444",
+  "NKS534",
+  "SWA2425",
+  "UAL280",
+  "UAL695"
+ ]
+}

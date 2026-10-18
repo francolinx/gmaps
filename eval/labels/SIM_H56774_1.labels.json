@@ -1,0 +1,16 @@
+{
+ "episode_id": "SIM_H56774_1",
+ "generated_from": "simulation truth (evaluation only)",
+ "truth_zone_intervals": {
+  "T-AC1": [
+   50.318,
+   60.168
+  ],
+  "T-VH7": null
+ },
+ "truth_encounter_interval": null,
+ "vehicle_passes_hold_line_at": null,
+ "should_raise_candidate": false,
+ "expected_ledger_rules": [],
+ "note": "Labels are computed from truth that the runtime never sees. Prediction quality is scored against these, not tuned to them."
+}

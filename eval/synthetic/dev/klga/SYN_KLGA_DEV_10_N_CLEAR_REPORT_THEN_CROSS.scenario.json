@@ -1,0 +1,48 @@
+{
+ "id": "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "dev",
+ "phrasing_pool": "A",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 9101,
+ "context": {
+  "runway": "13-31",
+  "taxiway": "Z",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest seven seven one, runway one three, cleared to land.",
+   "id": "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway one three, cleared to land, Southwest seven seven one.",
+   "id": "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS_01"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "Southwest seven seven one, clear of runway one three.",
+   "id": "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS_02"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Southwest niner six two, cross runway one three at Zulu.",
+   "id": "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS_03"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Cross runway one three at Zulu, Southwest niner six two.",
+   "id": "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS_04"
+  }
+ ]
+}

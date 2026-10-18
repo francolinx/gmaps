@@ -1,0 +1,194 @@
+{
+ "SYN_KATL_DEV4_13_N_LUAW_THEN_TKOF_00": {
+  "text": "JetBlue 2866, runway niner right at Romeo three, line up and wait.",
+  "asr_s": 0.499,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9728
+   },
+   {
+    "w": "2866,",
+    "p": 0.5733
+   },
+   {
+    "w": "runway",
+    "p": 0.9943
+   },
+   {
+    "w": "niner",
+    "p": 0.7971
+   },
+   {
+    "w": "right",
+    "p": 0.9944
+   },
+   {
+    "w": "at",
+    "p": 0.9737
+   },
+   {
+    "w": "Romeo",
+    "p": 0.9868
+   },
+   {
+    "w": "three,",
+    "p": 0.4844
+   },
+   {
+    "w": "line",
+    "p": 0.9968
+   },
+   {
+    "w": "up",
+    "p": 0.9993
+   },
+   {
+    "w": "and",
+    "p": 0.97
+   },
+   {
+    "w": "wait.",
+    "p": 0.9463
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_13_N_LUAW_THEN_TKOF_01": {
+  "text": "Line up and wait, niner right, JetBlue 2866.",
+  "asr_s": 0.487,
+  "words": [
+   {
+    "w": "Line",
+    "p": 0.9587
+   },
+   {
+    "w": "up",
+    "p": 0.986
+   },
+   {
+    "w": "and",
+    "p": 0.9939
+   },
+   {
+    "w": "wait,",
+    "p": 0.713
+   },
+   {
+    "w": "niner",
+    "p": 0.9578
+   },
+   {
+    "w": "right,",
+    "p": 0.9131
+   },
+   {
+    "w": "JetBlue",
+    "p": 0.8428
+   },
+   {
+    "w": "2866.",
+    "p": 0.8886
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_13_N_LUAW_THEN_TKOF_02": {
+  "text": "JetBlue 2866, runway niner right, wind one eight zero at five, cleared for takeoff.",
+  "asr_s": 0.571,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9663
+   },
+   {
+    "w": "2866,",
+    "p": 0.6839
+   },
+   {
+    "w": "runway",
+    "p": 0.9967
+   },
+   {
+    "w": "niner",
+    "p": 0.8454
+   },
+   {
+    "w": "right,",
+    "p": 0.997
+   },
+   {
+    "w": "wind",
+    "p": 0.9894
+   },
+   {
+    "w": "one",
+    "p": 0.9825
+   },
+   {
+    "w": "eight",
+    "p": 0.9973
+   },
+   {
+    "w": "zero",
+    "p": 0.9993
+   },
+   {
+    "w": "at",
+    "p": 0.9905
+   },
+   {
+    "w": "five,",
+    "p": 0.661
+   },
+   {
+    "w": "cleared",
+    "p": 0.9994
+   },
+   {
+    "w": "for",
+    "p": 0.9991
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.9439
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_13_N_LUAW_THEN_TKOF_03": {
+  "text": "Cleared for takeoff, niner right, jet blue 2866.",
+  "asr_s": 0.473,
+  "words": [
+   {
+    "w": "Cleared",
+    "p": 0.8667
+   },
+   {
+    "w": "for",
+    "p": 0.93
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.9636
+   },
+   {
+    "w": "niner",
+    "p": 0.4687
+   },
+   {
+    "w": "right,",
+    "p": 0.9409
+   },
+   {
+    "w": "jet",
+    "p": 0.5838
+   },
+   {
+    "w": "blue",
+    "p": 0.9699
+   },
+   {
+    "w": "2866.",
+    "p": 0.5628
+   }
+  ]
+ }
+}

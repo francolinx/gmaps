@@ -1,0 +1,30 @@
+{
+ "id": "SYN_KLGA_DEV4_16_RB_MISSING_RUNWAY",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL931",
+  "DAL1257",
+  "DAL462",
+  "EDV1775",
+  "EDV282",
+  "EDV356",
+  "FFT1054",
+  "SWA1038",
+  "UAL1755"
+ ],
+ "realistic": [
+  "AAL500",
+  "AAL931",
+  "AAL937",
+  "DAL1257",
+  "DAL462",
+  "EDV1775",
+  "EDV282",
+  "EDV356",
+  "FFT1054",
+  "FFT2848",
+  "SWA1038",
+  "UAL1755"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7602_08_N_CROSS_OTHER_RWY",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "N_CROSS_OTHER_RWY",
+ "basis": "crossing a runway with no active operation",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7602,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "U",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Twin Cessna one seven seven five Kilo, number two, runway two seven right, cleared to land.",
+   "id": "SYN_KATL_HELDOUT5_S7602_08_N_CROSS_OTHER_RWY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two seven right, cleared to land, Twin Cessna one seven seven five Kilo.",
+   "id": "SYN_KATL_HELDOUT5_S7602_08_N_CROSS_OTHER_RWY_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "JetBlue twenty seven twenty six, cross runway two six left at Echo one, hold short of runway two six right.",
+   "id": "SYN_KATL_HELDOUT5_S7602_08_N_CROSS_OTHER_RWY_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway two six left at Echo one, JetBlue twenty seven twenty six.",
+   "id": "SYN_KATL_HELDOUT5_S7602_08_N_CROSS_OTHER_RWY_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

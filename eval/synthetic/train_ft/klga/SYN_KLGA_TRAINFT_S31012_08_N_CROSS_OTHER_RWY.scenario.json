@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31012_08_N_CROSS_OTHER_RWY",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CROSS_OTHER_RWY",
+ "basis": "crossing a runway with no active operation",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31012,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "CY",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest seven hundred eight, runway four, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31012_08_N_CROSS_OTHER_RWY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Southwest seven hundred eight, roger, cleared to land runway four.",
+   "id": "SYN_KLGA_TRAINFT_S31012_08_N_CROSS_OTHER_RWY_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "American twenty eight oh four, taxi via Zulu, cross runway three one.",
+   "id": "SYN_KLGA_TRAINFT_S31012_08_N_CROSS_OTHER_RWY_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway three one at Zulu, American twenty eight oh four.",
+   "id": "SYN_KLGA_TRAINFT_S31012_08_N_CROSS_OTHER_RWY_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

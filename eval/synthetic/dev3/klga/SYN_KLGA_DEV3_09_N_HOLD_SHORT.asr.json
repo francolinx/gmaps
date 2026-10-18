@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV3_09_N_HOLD_SHORT_00": {
+  "text": "Endeavour 1988, runway 4, wind 100 at 16, cleared to land.",
+  "asr_s": 0.233
+ },
+ "SYN_KLGA_DEV3_09_N_HOLD_SHORT_01": {
+  "text": "Cleared to land for Endeavor 1988.",
+  "asr_s": 0.169
+ },
+ "SYN_KLGA_DEV3_09_N_HOLD_SHORT_02": {
+  "text": "Delta 2189, runway 31, taxi via Papa, hold short of runway 4.",
+  "asr_s": 0.228
+ },
+ "SYN_KLGA_DEV3_09_N_HOLD_SHORT_03": {
+  "text": "Holding short runway 4, Delta 2189.",
+  "asr_s": 0.17
+ }
+}

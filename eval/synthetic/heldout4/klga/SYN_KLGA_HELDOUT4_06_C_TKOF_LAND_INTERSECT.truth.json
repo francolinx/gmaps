@@ -1,0 +1,53 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT",
+ "EVALUATION_ONLY": true,
+ "expected_alert": true,
+ "expected_rules": [
+  "R4"
+ ],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "NKS4995"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "NKS4995"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "EDV2302"
+    ],
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "EDV2302"
+    ],
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03"
+  }
+ ]
+}

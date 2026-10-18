@@ -1,0 +1,39 @@
+{
+ "id": "AHN-FAA-2610",
+ "kind": "faa_diagram",
+ "title": "FAA Athens/Ben Epps airport diagram, cycle 2610, 00983AD.PDF",
+ "uri": "https://aeronav.faa.gov/d-tpp/2610/00983AD.PDF",
+ "local_path": "sources/ahn_faa_2610_00983AD.pdf",
+ "sha256": "de0a0c699100ae1075a0887abd908c912f7c78f66e83285fd57d506f0f11a1b3",
+ "retrieved_on": "2026-10-08",
+ "effective_from": "2026-10-01",
+ "effective_to": "2026-10-29",
+ "dtpp_cycle": "2610",
+ "dtpp_metafile": "https://aeronav.faa.gov/d-tpp/2610/xml_data/d-TPP_Metafile.xml",
+ "apd_record": {
+  "chartseq": "70000",
+  "chart_code": "APD",
+  "chart_name": "AIRPORT DIAGRAM",
+  "useraction": "",
+  "pdf_name": "00983AD.PDF",
+  "cn_flg": "N",
+  "cnsection": "",
+  "cnpage": "",
+  "bvsection": "",
+  "bvpage": "37",
+  "procuid": "15223",
+  "two_colored": "N",
+  "civil": "C",
+  "faanfd18": "",
+  "copter": "",
+  "amdtnum": "",
+  "amdtdate": ""
+ },
+ "airport": {
+  "ID": "ATHENS/BEN EPPS",
+  "apt_ident": "AHN",
+  "icao_ident": "KAHN",
+  "alnum": "983"
+ },
+ "chart_code": null
+}

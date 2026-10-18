@@ -1,0 +1,467 @@
+{
+ "icao": "KATL",
+ "split": "heldout4",
+ "SIMULATED": true,
+ "tts": "Kokoro-82M v1.0 via kokoro-onnx (local)",
+ "licences": {
+  "kokoro_weights": "Kokoro-82M v1.0, Apache-2.0",
+  "kokoro_onnx": "kokoro-onnx 0.6.1, MIT",
+  "onnxruntime": "MIT",
+  "phonemizer": "phonemizer 3.4.0, GPL-3.0",
+  "espeak_ng": "espeak-ng (bundled by espeakng-loader 0.2.4), GPL-3.0",
+  "use": "Accepted by Franco (Oct 9) for LOCAL test-audio generation only. Never shipped or distributed with GMAPS; the venv and models live outside the repo (~/gmaps_models/)."
+ },
+ "profile": {
+  "atc": [
+   "bf_isabella",
+   "am_santa",
+   "af_heart"
+  ],
+  "pilots": [
+   "ef_dora",
+   "em_alex",
+   "em_santa",
+   "ff_siwis",
+   "hf_alpha",
+   "hf_beta",
+   "hm_omega",
+   "hm_psi",
+   "if_sara",
+   "im_nicola",
+   "pf_dora",
+   "pm_alex",
+   "pm_santa"
+  ],
+  "snr_db": [
+   5,
+   15
+  ],
+  "speed": [
+   1.05,
+   1.35
+  ],
+  "band_hz": [
+   350,
+   3000
+  ],
+  "whistle_p": 0.15,
+  "dropout_p": 0.2
+ },
+ "atc_voice": "am_santa",
+ "clips": {
+  "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 12.0,
+   "seconds": 5.63
+  },
+  "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_01": {
+   "voice": "em_alex",
+   "lang": "en-us",
+   "snr_db": 5.2,
+   "seconds": 4.29
+  },
+  "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 6.1,
+   "seconds": 4.18
+  },
+  "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_03": {
+   "voice": "pm_alex",
+   "lang": "en-us",
+   "snr_db": 8.9,
+   "seconds": 3.37
+  },
+  "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 5.0,
+   "seconds": 4.76
+  },
+  "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_01": {
+   "voice": "em_santa",
+   "lang": "en-us",
+   "snr_db": 9.1,
+   "seconds": 3.8
+  },
+  "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 7.1,
+   "seconds": 5.65
+  },
+  "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_03": {
+   "voice": "pf_dora",
+   "lang": "en-us",
+   "snr_db": 13.0,
+   "seconds": 3.52
+  },
+  "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 7.8,
+   "seconds": 6.32
+  },
+  "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_01": {
+   "voice": "im_nicola",
+   "lang": "en-us",
+   "snr_db": 14.0,
+   "seconds": 3.09
+  },
+  "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 5.5,
+   "seconds": 5.78
+  },
+  "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_03": {
+   "voice": "hm_psi",
+   "lang": "en-us",
+   "snr_db": 12.9,
+   "seconds": 4.76
+  },
+  "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 13.1,
+   "seconds": 5.74
+  },
+  "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_01": {
+   "voice": "hm_psi",
+   "lang": "en-us",
+   "snr_db": 10.0,
+   "seconds": 4.44
+  },
+  "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 12.9,
+   "seconds": 8.11
+  },
+  "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_03": {
+   "voice": "im_nicola",
+   "lang": "en-us",
+   "snr_db": 5.4,
+   "seconds": 3.99
+  },
+  "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 7.6,
+   "seconds": 7.0
+  },
+  "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_01": {
+   "voice": "pm_santa",
+   "lang": "en-us",
+   "snr_db": 14.2,
+   "seconds": 4.05
+  },
+  "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 12.1,
+   "seconds": 7.08
+  },
+  "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_03": {
+   "voice": "hf_beta",
+   "lang": "en-us",
+   "snr_db": 8.6,
+   "seconds": 3.99
+  },
+  "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 11.4,
+   "seconds": 6.55
+  },
+  "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01": {
+   "voice": "em_alex",
+   "lang": "en-us",
+   "snr_db": 5.1,
+   "seconds": 3.69
+  },
+  "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 10.0,
+   "seconds": 6.44
+  },
+  "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03": {
+   "voice": "hf_alpha",
+   "lang": "en-us",
+   "snr_db": 12.8,
+   "seconds": 4.4
+  },
+  "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 8.3,
+   "seconds": 5.16
+  },
+  "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_01": {
+   "voice": "pf_dora",
+   "lang": "en-us",
+   "snr_db": 8.4,
+   "seconds": 3.61
+  },
+  "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 12.3,
+   "seconds": 4.72
+  },
+  "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_03": {
+   "voice": "hm_omega",
+   "lang": "en-us",
+   "snr_db": 13.0,
+   "seconds": 2.73
+  },
+  "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_04": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 15.0,
+   "seconds": 3.93
+  },
+  "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_05": {
+   "voice": "hm_omega",
+   "lang": "en-us",
+   "snr_db": 7.2,
+   "seconds": 4.03
+  },
+  "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 8.5,
+   "seconds": 5.25
+  },
+  "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_01": {
+   "voice": "hm_psi",
+   "lang": "en-us",
+   "snr_db": 8.3,
+   "seconds": 4.14
+  },
+  "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 13.6,
+   "seconds": 7.62
+  },
+  "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_03": {
+   "voice": "hf_beta",
+   "lang": "en-us",
+   "snr_db": 6.7,
+   "seconds": 4.84
+  },
+  "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 6.4,
+   "seconds": 5.87
+  },
+  "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_01": {
+   "voice": "pf_dora",
+   "lang": "en-us",
+   "snr_db": 8.7,
+   "seconds": 3.88
+  },
+  "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 5.1,
+   "seconds": 6.57
+  },
+  "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_03": {
+   "voice": "hf_alpha",
+   "lang": "en-us",
+   "snr_db": 14.8,
+   "seconds": 4.37
+  },
+  "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 7.5,
+   "seconds": 5.04
+  },
+  "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_01": {
+   "voice": "ef_dora",
+   "lang": "en-us",
+   "snr_db": 10.9,
+   "seconds": 3.44
+  },
+  "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 12.5,
+   "seconds": 6.42
+  },
+  "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_03": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 11.9,
+   "seconds": 4.25
+  },
+  "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_04": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 8.1,
+   "seconds": 5.29
+  },
+  "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_05": {
+   "voice": "pf_dora",
+   "lang": "en-us",
+   "snr_db": 7.3,
+   "seconds": 3.8
+  },
+  "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 14.3,
+   "seconds": 6.19
+  },
+  "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+   "voice": "em_santa",
+   "lang": "en-us",
+   "snr_db": 8.4,
+   "seconds": 4.37
+  },
+  "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+   "voice": "em_santa",
+   "lang": "en-us",
+   "snr_db": 13.4,
+   "seconds": 3.05
+  },
+  "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 12.6,
+   "seconds": 5.61
+  },
+  "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+   "voice": "ff_siwis",
+   "lang": "en-us",
+   "snr_db": 7.7,
+   "seconds": 4.14
+  },
+  "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 9.7,
+   "seconds": 5.38
+  },
+  "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_01": {
+   "voice": "hf_alpha",
+   "lang": "en-us",
+   "snr_db": 11.8,
+   "seconds": 4.61
+  },
+  "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 11.3,
+   "seconds": 4.55
+  },
+  "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_03": {
+   "voice": "hf_alpha",
+   "lang": "en-us",
+   "snr_db": 9.5,
+   "seconds": 3.03
+  },
+  "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_04": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 10.3,
+   "seconds": 5.06
+  },
+  "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_05": {
+   "voice": "hm_omega",
+   "lang": "en-us",
+   "snr_db": 9.2,
+   "seconds": 4.65
+  },
+  "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 11.0,
+   "seconds": 4.99
+  },
+  "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_01": {
+   "voice": "hf_alpha",
+   "lang": "en-us",
+   "snr_db": 13.5,
+   "seconds": 3.69
+  },
+  "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 9.6,
+   "seconds": 6.21
+  },
+  "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_03": {
+   "voice": "hf_alpha",
+   "lang": "en-us",
+   "snr_db": 11.7,
+   "seconds": 4.08
+  },
+  "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 7.9,
+   "seconds": 4.42
+  },
+  "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_01": {
+   "voice": "hf_beta",
+   "lang": "en-us",
+   "snr_db": 8.4,
+   "seconds": 3.35
+  },
+  "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_02": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 11.9,
+   "seconds": 5.44
+  },
+  "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_03": {
+   "voice": "pm_santa",
+   "lang": "en-us",
+   "snr_db": 7.4,
+   "seconds": 2.05
+  },
+  "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_04": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 10.5,
+   "seconds": 6.21
+  },
+  "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_05": {
+   "voice": "hf_beta",
+   "lang": "en-us",
+   "snr_db": 14.5,
+   "seconds": 3.8
+  },
+  "SYN_KATL_HELDOUT4_15_RB_WRONG_RUNWAY_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 5.2,
+   "seconds": 5.57
+  },
+  "SYN_KATL_HELDOUT4_15_RB_WRONG_RUNWAY_01": {
+   "voice": "pm_alex",
+   "lang": "en-us",
+   "snr_db": 6.7,
+   "seconds": 3.69
+  },
+  "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY_00": {
+   "voice": "am_santa",
+   "lang": "en-us",
+   "snr_db": 9.8,
+   "seconds": 4.74
+  },
+  "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY_01": {
+   "voice": "im_nicola",
+   "lang": "en-us",
+   "snr_db": 7.0,
+   "seconds": 3.33
+  }
+ }
+}

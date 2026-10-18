@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31006_08_N_CROSS_OTHER_RWY",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CROSS_OTHER_RWY",
+ "basis": "crossing a runway with no active operation",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31006,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "B1",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest ten eighty seven, wind zero three zero at six gusts one five, runway two six right, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31006_08_N_CROSS_OTHER_RWY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two six right, Southwest ten eighty seven.",
+   "id": "SYN_KATL_TRAINFT_S31006_08_N_CROSS_OTHER_RWY_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Southwest eight twelve, at Echo, cross runway two six left.",
+   "id": "SYN_KATL_TRAINFT_S31006_08_N_CROSS_OTHER_RWY_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross two six left at Echo, Southwest eight twelve.",
+   "id": "SYN_KATL_TRAINFT_S31006_08_N_CROSS_OTHER_RWY_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

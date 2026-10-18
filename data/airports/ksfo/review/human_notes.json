@@ -1,0 +1,16 @@
+{
+ "about": "Human review notes for KSFO, read by tools/airport_map/osm.py (data, not code).",
+ "taxiway_names_decisions": {
+  "decided_by": "Franco",
+  "decided_at": "2026-10-09",
+  "rows": [
+   {
+    "label": "US",
+    "lat": 37.6174206,
+    "lon": -122.3862843,
+    "decision": "area label (\"US CUSTOMS\"), as R8 does",
+    "rule": "R8"
+   }
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Bonanza two six zero two Bravo, runway two six left at hotel, cleared for takeoff.",
+  "asr_s": 0.225
+ },
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Bonanza two six zero two Bravo, cleared for takeoff, runway two six left.",
+  "asr_s": 0.214
+ },
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Delta three hundred, wind one seven zero at seven gusts one eight, runway two six left, cleared to land.",
+  "asr_s": 0.242
+ },
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Delta three hundred, roger. Cleared to land, runway two six left.",
+  "asr_s": 0.205
+ }
+}

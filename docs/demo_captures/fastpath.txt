@@ -1,0 +1,15 @@
+# demo/run_track.sh fastpath — captured on the Spark, server 127.0.0.1:8001 (run gmaps-parser-4b-20261017-034510). SIMULATED data.
+
+--- fast path (grammar first, LLM fallback only on residue), TEXT mode, one scenario
+SIMULATED self-run simulator: 06:50:14, mode text (script, no audio), speed x1.0, traffic off, whisper prompt off, LLM fallback off
+scenarios: 1 (Q5_01_LAND_VS_CROSS)
+--- Q5_01_LAND_VS_CROSS: Landing clearance, then a crossing of the same runway (alert expected)
+  Q5_01_LAND_VS_CROSS t1 t=  4.02  script: 'SimAir two one two, runway three six, cleared to land.' -> grammar: LANDING_CLEARANCE ['SIM212']
+  Q5_01_LAND_VS_CROSS t2 t=  9.02  script: 'Cleared to land runway three six, SimAir two one two.' -> grammar: LANDING_CLEARANCE ['SIM212']
+  Q5_01_LAND_VS_CROSS t3 t= 23.31  script: 'Rescue seven, cross runway three six at Kilo.' -> grammar: CROSS ['RESCUE7']
+  Q5_01_LAND_VS_CROSS t4 t= 29.31  script: 'Crossing runway three six at Kilo, Rescue seven.' -> grammar: CROSS ['RESCUE7']
+  Q5_01_LAND_VS_CROSS ALERT R1 CONFLICT ['SIM212', 'RESCUE7'] t_fired=23.31
+  => PASS: detected 1/1, missed 0, false alarms 0, latency []
+
+OVERALL: 1/1 scenarios pass; detected 1/1, missed 0, false alarms 0; latency median None s, max None s
+results: (written under ~/gmaps_venue/demo_runs/ since the script fix)

@@ -1,0 +1,28 @@
+{
+ "id": "SYN_KLGA_DEV4_15_RB_WRONG_RUNWAY",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL705",
+  "FFT800",
+  "NKS1356",
+  "NKS607",
+  "SWA1019",
+  "SWA1982",
+  "SWA400",
+  "UAL228",
+  "UAL500"
+ ],
+ "realistic": [
+  "AAL1072",
+  "AAL705",
+  "EDV1504",
+  "EDV400",
+  "NKS1356",
+  "NKS607",
+  "SWA1019",
+  "SWA400",
+  "UAL228",
+  "UAL500"
+ ]
+}

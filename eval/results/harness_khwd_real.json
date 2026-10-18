@@ -1,0 +1,555 @@
+{
+ "summary": {
+  "set": "khwd_real",
+  "scenarios": 1,
+  "transmissions": 19,
+  "scored": 0,
+  "unscored": 19,
+  "callsign_acc": null,
+  "runway_acc": null,
+  "instruction_acc": null,
+  "by_category": {
+   "conflict_alerts (as in rounds 1-2: conflict + missed_readback)": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null
+   },
+   "conflict_alerts without llm_parse alerts": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null
+   },
+   "conflict_alerts without callsign_repaired alerts": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null
+   },
+   "callsign_repaired_alerts": {
+    "scenarios_with_one": 0,
+    "of_which_expected": 0
+   },
+   "llm_parse_tagged_alerts": {
+    "scenarios_with_one": 0,
+    "of_which_expected": 0
+   },
+   "missed_readback (R7) false alarms": 0,
+   "missed_readback (R7) scenarios expected / hit": [
+    0,
+    0
+   ],
+   "readback_mismatch (R14, its own category)": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null
+   },
+   "readback_mismatch_candidates (R14, shadow; vs wrong-runway readbacks)": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null
+   },
+   "incomplete_readback (R15, info; vs missing-runway readbacks)": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null
+   },
+   "low_confidence_mismatch (R16, info) scenarios": 0
+  },
+  "llm_fallback": null,
+  "speaker": null,
+  "alerts": {
+   "scenarios_with_expectation": 0,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "precision": null,
+   "recall": null
+  },
+  "lead_time_s": {
+   "n": 0,
+   "median": null,
+   "min": null,
+   "values": []
+  },
+  "latency": {
+   "library_ms_median": null,
+   "whisper_s_median": 0.244,
+   "full_stack_clip_to_alert_s_median (E1, agent)": 13.69
+  },
+  "inputs": {
+   "whisper (text only, committed)": 19
+  },
+  "kinds": [
+   "REAL ATC audio (KHWD), local text only (labels by Franco)"
+  ],
+  "labels_needed": {
+   "set": "khwd_real",
+   "clips_in_set": 19,
+   "metrics": {
+    "callsigns_accuracy": {
+     "labelled": 0,
+     "value": null,
+     "ci95": null,
+     "needed_for_+-0.10": 97,
+     "more_needed": 97
+    },
+    "runway_accuracy": {
+     "labelled": 0,
+     "value": null,
+     "ci95": null,
+     "needed_for_+-0.10": 97,
+     "more_needed": 97
+    },
+    "instruction_accuracy": {
+     "labelled": 0,
+     "value": null,
+     "ci95": null,
+     "needed_for_+-0.10": 97,
+     "more_needed": 97
+    },
+    "speaker_classifier_accuracy": {
+     "labelled": 0,
+     "value": null,
+     "ci95": null,
+     "needed_for_+-0.10": 97,
+     "more_needed": 97
+    },
+    "readback_mismatch_precision (shadow gate >= 0.8)": {
+     "labelled_candidates": 0,
+     "value": null,
+     "ci95": null,
+     "candidates_now": 0,
+     "needed_labelled_candidates": 16,
+     "more_needed": 16
+    }
+   }
+  }
+ },
+ "scenarios": [
+  {
+   "scenario": "KHWD_real_clips",
+   "kind": "REAL ATC audio (KHWD), local text only (labels by Franco)",
+   "reference_kind": "franco_labels",
+   "expected_alert": null,
+   "rows": [
+    {
+     "t": 0,
+     "clip": "01_REAL_ATC_002.2-009.3.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Tower Hall is the force of a nice hair tail, requesting left pattern for Meridian.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "REQUEST_OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.244,
+     "speaker_label": null,
+     "speaker_hint_used": "PILOT",
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "request"
+    },
+    {
+     "t": 10,
+     "clip": "02_REAL_ATC_010.4-017.7.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Helicopter 4790L, Avery Tower makes left closed traffic runway 28R cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "28R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.263,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "readback"
+    },
+    {
+     "t": 20,
+     "clip": "03_REAL_ATC_018.0-023.5.wav",
+     "input": "whisper (text only, committed)",
+     "text": "To each right, clear for day close, left close start to case you stop.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "CANCEL"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.244,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "instruction"
+    },
+    {
+     "t": 30,
+     "clip": "04_REAL_ATC_031.9-038.2.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Helicopter, Ninersfield, I'll tell you, Gluckwave, traffic, taxi, VVB, Meridian, clear to land, wind barrier platform.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.358,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "instruction"
+    },
+    {
+     "t": 40,
+     "clip": "05_REAL_ATC_038.8-045.7.wav",
+     "input": "whisper (text only, committed)",
+     "text": "And left closed traffic, taxiway Zulu, cleared on land 4700 Seraphim.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.25,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 50,
+     "clip": "06_REAL_ATC_046.4-051.5.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Hey, Wood Tower, Scott, ATL Hotel. We're at three crosses departure.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.242,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 60,
+     "clip": "07_REAL_ATC_053.0-060.8.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Skyhawk, 1280 cell, Hayward Tower, in the future, I can't have you pulling onto the runway before I'm ready for takeoff.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.339,
+     "speaker_label": null,
+     "speaker_hint_used": "PILOT",
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 70,
+     "clip": "08_REAL_ATC_060.5-067.8.wav",
+     "input": "whisper (text only, committed)",
+     "text": "What are you doing, continue, ACRT stop, we didn't clear you for takeoff.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "CANCEL"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.258,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "instruction"
+    },
+    {
+     "t": 80,
+     "clip": "09_REAL_ATC_069.3-072.6.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Good morning, take 5 at the hotel.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.188,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 90,
+     "clip": "10_REAL_ATC_074.8-084.0.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Hey Saratel, we didn't put you in line up in wait or clear for takeoff, exit at Delta and contact ground point four. Thank you, Delta, ground point four, 8 Saratel.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.432,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "instruction"
+    },
+    {
+     "t": 100,
+     "clip": "11_REAL_ATC_087.2-093.4.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Hill Ground, 0128 Hotel, Alpha Delta, 2A right.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.236,
+     "speaker_label": null,
+     "speaker_hint_used": "PILOT",
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 110,
+     "clip": "12_REAL_ATC_094.6-101.9.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Personal 1280 Hotel, Hayward Ground. Possible pilot, Dave, you shouldn't have a number of feet of coffee if I've been here. Ready.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.335,
+     "speaker_label": null,
+     "speaker_hint_used": "PILOT",
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 120,
+     "clip": "13_REAL_ATC_102.4-104.8.wav",
+     "input": "whisper (text only, committed)",
+     "text": "I really can't be able to go.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.19,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 130,
+     "clip": "14_REAL_ATC_105.0-109.9.wav",
+     "input": "whisper (text only, committed)",
+     "text": "780TL, that number is 510-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-785-7",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 3.078,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 140,
+     "clip": "15_REAL_ATC_111.8-114.2.wav",
+     "input": "whisper (text only, committed)",
+     "text": "510-785",
+     "hypothesis": {
+      "callsigns": [
+       "?510",
+       "?785"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.165,
+     "speaker_label": null,
+     "speaker_hint_used": "ATC",
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 150,
+     "clip": "16_REAL_ATC_115.1-116.7.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Thank you, thank you.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.181,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 160,
+     "clip": "17_REAL_ATC_117.2-120.3.wav",
+     "input": "whisper (text only, committed)",
+     "text": "And it says 802, what's your intentions now?",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.227,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 170,
+     "clip": "18_REAL_ATC_120.0-123.7.wav",
+     "input": "whisper (text only, committed)",
+     "text": "We'll taxi back to the green ramp and give you a call.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.224,
+     "speaker_label": null,
+     "speaker_hint_used": null,
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    },
+    {
+     "t": 180,
+     "clip": "19_REAL_ATC_123.5-125.9.wav",
+     "input": "whisper (text only, committed)",
+     "text": "Roger, taxi straight ahead.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "reference": null,
+     "reference_fields": [],
+     "label": "UNLABELLED",
+     "library_ms": null,
+     "asr_s": 0.181,
+     "speaker_label": null,
+     "speaker_hint_used": "PILOT",
+     "ref_readback": null,
+     "readback_mismatch_candidate": false,
+     "speaker_resolved": "unknown"
+    }
+   ],
+   "warnings": [],
+   "airport_set": "khwd_real",
+   "set_size": 19,
+   "note": "Field accuracy where labelled; unknown_airport clips are never scored. No conflict alerts are scored on real audio."
+  }
+ ]
+}

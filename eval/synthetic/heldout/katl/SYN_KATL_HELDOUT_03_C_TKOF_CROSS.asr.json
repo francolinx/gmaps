@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT_03_C_TKOF_CROSS_00": {
+  "text": "On tier 278, runway 8L, wind 270 at 8, cleared for takeoff.",
+  "asr_s": 0.222
+ },
+ "SYN_KATL_HELDOUT_03_C_TKOF_CROSS_01": {
+  "text": "Move for takeoff, only eight left, frontier 278.",
+  "asr_s": 0.19
+ },
+ "SYN_KATL_HELDOUT_03_C_TKOF_CROSS_02": {
+  "text": "Frontier 1282 at Bravo 1 cross runway 8 left.",
+  "asr_s": 0.191
+ },
+ "SYN_KATL_HELDOUT_03_C_TKOF_CROSS_03": {
+  "text": "Offing runway 8 left at Bravo 1, 1-2-1-2-8-2.",
+  "asr_s": 0.229
+ }
+}

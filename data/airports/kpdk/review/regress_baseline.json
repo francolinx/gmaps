@@ -1,0 +1,58 @@
+{
+ "icao": "KPDK",
+ "recorded_at": "2026-10-09T14:14:29-0400",
+ "commit": "a72c5a2",
+ "metrics": {
+  "objects": {
+   "arrowhead": 12,
+   "building": 76,
+   "frame": 1,
+   "glyph": 622,
+   "graticule_label": 6,
+   "graticule_line": 17,
+   "hot_spot": 19,
+   "label_background": 2,
+   "linework": 67,
+   "pavement": 10,
+   "runway": 3,
+   "runway_marking": 2,
+   "symbol": 112
+  },
+  "labels": {
+   "annotation": 11,
+   "dimension": 3,
+   "elevation": 1,
+   "helipad_label": 1,
+   "hot_spot_label": 3,
+   "note": 150,
+   "number": 1,
+   "runway_end": 6,
+   "taxiway_candidate": 24
+  },
+  "overlay": {
+   "covered_pct": 99.798,
+   "extra_pct": 0.26
+  },
+  "georef_m": {
+   "03L": 16.64,
+   "03R": 0.99,
+   "16": 5.87,
+   "21L": 0.67,
+   "21R": 1.79,
+   "34": 0.53,
+   "H1": 2.77
+  },
+  "hold_lines": 0,
+  "statuses": {
+   "overlay_ink": "pass",
+   "runway_ends": "pass",
+   "runway_identifiers": "pass",
+   "taxiway_names": "pass",
+   "hot_spots": "pass",
+   "ils_hold_lines": "not_applicable",
+   "unclassified": "pass",
+   "cycle_current": "pass",
+   "lahso_points": "not_applicable"
+  }
+ }
+}

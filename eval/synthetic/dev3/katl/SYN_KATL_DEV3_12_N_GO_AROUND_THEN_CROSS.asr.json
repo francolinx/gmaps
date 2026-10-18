@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_00": {
+  "text": "American 505, runway niner right, wind 170 at 19, cleared to land.",
+  "asr_s": 0.229
+ },
+ "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_01": {
+  "text": "Clear to land, Niner right. American 5-0-5.",
+  "asr_s": 0.195
+ },
+ "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_02": {
+  "text": "American 505, go around, fly runway heading, climb and maintain 2000.",
+  "asr_s": 0.231
+ },
+ "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_03": {
+  "text": "Going around. American 505.",
+  "asr_s": 0.17
+ },
+ "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_04": {
+  "text": "Endeavour 1530 at Sierra Charlie, cross runway 90 right.",
+  "asr_s": 0.195
+ },
+ "SYN_KATL_DEV3_12_N_GO_AROUND_THEN_CROSS_05": {
+  "text": "Cross Niner right at Sierra Charlie, Endeavor 1530.",
+  "asr_s": 0.2
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "icao": "KBOS",
+ "graticule_source": "outline_glyph_decode",
+ "fit": {
+  "fitted_on": "graticule intersections only",
+  "graticule_source": "outline_glyph_decode",
+  "control_points_n": 6,
+  "fit_rms_m": 0.008
+ },
+ "along_flag_m": 5.0,
+ "flagged_fit_problems": [],
+ "diagnosis": {},
+ "ends": [
+  {
+   "id": "04L",
+   "residual_m": 2.13,
+   "along_m": -0.41,
+   "across_m": 2.09
+  },
+  {
+   "id": "04R",
+   "residual_m": 5.4,
+   "along_m": -1.77,
+   "across_m": 5.1
+  },
+  {
+   "id": "09",
+   "residual_m": 7.18,
+   "along_m": -0.55,
+   "across_m": 7.16
+  },
+  {
+   "id": "14",
+   "residual_m": 13.22,
+   "along_m": -0.48,
+   "across_m": 13.22
+  },
+  {
+   "id": "15L",
+   "residual_m": 2.5,
+   "along_m": -0.91,
+   "across_m": -2.32
+  },
+  {
+   "id": "15R",
+   "residual_m": 8.07,
+   "along_m": -1.47,
+   "across_m": -7.94
+  },
+  {
+   "id": "22L",
+   "residual_m": 13.8,
+   "along_m": -0.17,
+   "across_m": -13.8
+  },
+  {
+   "id": "22R",
+   "residual_m": 7.68,
+   "along_m": -1.27,
+   "across_m": -7.58
+  },
+  {
+   "id": "27",
+   "residual_m": 13.33,
+   "along_m": -0.67,
+   "across_m": -13.32
+  },
+  {
+   "id": "32",
+   "residual_m": 4.41,
+   "along_m": 0.08,
+   "across_m": 4.4
+  },
+  {
+   "id": "33L",
+   "residual_m": 3.74,
+   "along_m": -0.02,
+   "across_m": 3.74
+  },
+  {
+   "id": "33R",
+   "residual_m": 1.79,
+   "along_m": -0.27,
+   "across_m": -1.77
+  }
+ ],
+ "runways": [
+  {
+   "runway": "04L/22R",
+   "nasr_length_ft": 7864,
+   "diagram_length_ft": 7869,
+   "length_diff_m": 1.6,
+   "bearing_diff_deg": -0.132
+  },
+  {
+   "runway": "04R/22L",
+   "nasr_length_ft": 10006,
+   "diagram_length_ft": 10012,
+   "length_diff_m": 1.8,
+   "bearing_diff_deg": -0.164
+  },
+  {
+   "runway": "09/27",
+   "nasr_length_ft": 7001,
+   "diagram_length_ft": 7004,
+   "length_diff_m": 1.0,
+   "bearing_diff_deg": -0.165
+  },
+  {
+   "runway": "14/32",
+   "nasr_length_ft": 5000,
+   "diagram_length_ft": 5001,
+   "length_diff_m": 0.4,
+   "bearing_diff_deg": 0.663
+  },
+  {
+   "runway": "15L/33R",
+   "nasr_length_ft": 2557,
+   "diagram_length_ft": 2561,
+   "length_diff_m": 1.2,
+   "bearing_diff_deg": -0.301
+  },
+  {
+   "runway": "15R/33L",
+   "nasr_length_ft": 10083,
+   "diagram_length_ft": 10088,
+   "length_diff_m": 1.6,
+   "bearing_diff_deg": -0.079
+  }
+ ]
+}

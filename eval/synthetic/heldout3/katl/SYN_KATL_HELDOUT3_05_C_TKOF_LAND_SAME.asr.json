@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME_00": {
+  "text": "JetBlue 600, runway 26R, full length cleared for takeoff.",
+  "asr_s": 0.208
+ },
+ "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME_01": {
+  "text": "Jet Blue 600 cleared for takeoff runway 26R.",
+  "asr_s": 0.175
+ },
+ "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME_02": {
+  "text": "On tier 10-36, wind 2-1-0 at 6-Gust-1-4. Runway 2-6 right, clear to land.",
+  "asr_s": 0.3
+ },
+ "SYN_KATL_HELDOUT3_05_C_TKOF_LAND_SAME_03": {
+  "text": "Frontier 1036, roger. Clear to land runway 26R.",
+  "asr_s": 0.195
+ }
+}

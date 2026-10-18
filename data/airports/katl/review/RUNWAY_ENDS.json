@@ -1,0 +1,112 @@
+{
+ "icao": "KATL",
+ "graticule_source": "outline_glyph_decode",
+ "fit": {
+  "fitted_on": "graticule intersections only",
+  "graticule_source": "outline_glyph_decode",
+  "control_points_n": 6,
+  "fit_rms_m": 0.136
+ },
+ "along_flag_m": 5.0,
+ "flagged_fit_problems": [],
+ "diagnosis": {},
+ "ends": [
+  {
+   "id": "08L",
+   "residual_m": 6.76,
+   "along_m": 0.1,
+   "across_m": -6.76
+  },
+  {
+   "id": "08R",
+   "residual_m": 0.13,
+   "along_m": -0.02,
+   "across_m": 0.13
+  },
+  {
+   "id": "09L",
+   "residual_m": 3.31,
+   "along_m": -0.05,
+   "across_m": 3.31
+  },
+  {
+   "id": "09R",
+   "residual_m": 5.18,
+   "along_m": -0.14,
+   "across_m": 5.18
+  },
+  {
+   "id": "10",
+   "residual_m": 17.75,
+   "along_m": -0.32,
+   "across_m": 17.75
+  },
+  {
+   "id": "26L",
+   "residual_m": 8.87,
+   "along_m": 0.39,
+   "across_m": 8.87
+  },
+  {
+   "id": "26R",
+   "residual_m": 2.92,
+   "along_m": 0.43,
+   "across_m": 2.89
+  },
+  {
+   "id": "27L",
+   "residual_m": 0.69,
+   "along_m": 0.04,
+   "across_m": 0.69
+  },
+  {
+   "id": "27R",
+   "residual_m": 9.87,
+   "along_m": 0.23,
+   "across_m": -9.87
+  },
+  {
+   "id": "28",
+   "residual_m": 18.23,
+   "along_m": -0.06,
+   "across_m": -18.23
+  }
+ ],
+ "runways": [
+  {
+   "runway": "08L/26R",
+   "nasr_length_ft": 9000,
+   "diagram_length_ft": 8999,
+   "length_diff_m": -0.2,
+   "bearing_diff_deg": -0.08
+  },
+  {
+   "runway": "08R/26L",
+   "nasr_length_ft": 9999,
+   "diagram_length_ft": 9999,
+   "length_diff_m": -0.0,
+   "bearing_diff_deg": 0.169
+  },
+  {
+   "runway": "09L/27R",
+   "nasr_length_ft": 12390,
+   "diagram_length_ft": 12388,
+   "length_diff_m": -0.6,
+   "bearing_diff_deg": -0.099
+  },
+  {
+   "runway": "09R/27L",
+   "nasr_length_ft": 9000,
+   "diagram_length_ft": 8999,
+   "length_diff_m": -0.2,
+   "bearing_diff_deg": 0.123
+  },
+  {
+   "runway": "10/28",
+   "nasr_length_ft": 9000,
+   "diagram_length_ft": 8999,
+   "length_diff_m": -0.2,
+   "bearing_diff_deg": -0.01
+  }
+ ]
+}

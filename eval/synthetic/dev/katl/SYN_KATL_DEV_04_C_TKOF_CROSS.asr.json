@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV_04_C_TKOF_CROSS_00": {
+  "text": "Endeavour 2762, runway 8 left, cleared for takeoff.",
+  "asr_s": 0.215
+ },
+ "SYN_KATL_DEV_04_C_TKOF_CROSS_01": {
+  "text": "Runway 8 left cleared for takeoff, Endeavour 2762.",
+  "asr_s": 0.218
+ },
+ "SYN_KATL_DEV_04_C_TKOF_CROSS_02": {
+  "text": "Delta 1432, cross runway 8 left at hotel.",
+  "asr_s": 0.195
+ },
+ "SYN_KATL_DEV_04_C_TKOF_CROSS_03": {
+  "text": "Cross runway 8 left at Hotel, Delta 1432.",
+  "asr_s": 0.193
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "id": "JFK-FAA-2610",
+ "kind": "faa_diagram",
+ "title": "FAA John F Kennedy Intl airport diagram, cycle 2610, 00610AD.PDF",
+ "uri": "https://aeronav.faa.gov/d-tpp/2610/00610AD.PDF",
+ "local_path": "sources/jfk_faa_2610_00610AD.pdf",
+ "sha256": "332ea819838b60066ad7308aab9c1bdf93fc8550617c535ac2644e184583793d",
+ "retrieved_on": "2026-10-09",
+ "effective_from": "2026-10-01",
+ "effective_to": "2026-10-29",
+ "dtpp_cycle": "2610",
+ "dtpp_metafile": "https://aeronav.faa.gov/d-tpp/2610/xml_data/d-TPP_Metafile.xml",
+ "apd_record": {
+  "chartseq": "70000",
+  "chart_code": "APD",
+  "chart_name": "AIRPORT DIAGRAM",
+  "useraction": "",
+  "pdf_name": "00610AD.PDF",
+  "cn_flg": "N",
+  "cnsection": "",
+  "cnpage": "",
+  "bvsection": "",
+  "bvpage": "253",
+  "procuid": "2844",
+  "two_colored": "Y",
+  "civil": "C",
+  "faanfd18": "",
+  "copter": "",
+  "amdtnum": "",
+  "amdtdate": ""
+ },
+ "airport": {
+  "ID": "JOHN F KENNEDY INTL",
+  "apt_ident": "JFK",
+  "icao_ident": "KJFK",
+  "alnum": "610"
+ },
+ "chart_code": null
+}

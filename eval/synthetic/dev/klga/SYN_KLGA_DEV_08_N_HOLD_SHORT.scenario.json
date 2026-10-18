@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KLGA_DEV_08_N_HOLD_SHORT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "dev",
+ "phrasing_pool": "A",
+ "template": "N_HOLD_SHORT",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 9101,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "R",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit four six three, runway two two, cleared to land.",
+   "id": "SYN_KLGA_DEV_08_N_HOLD_SHORT_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two two, cleared to land, Spirit four six three.",
+   "id": "SYN_KLGA_DEV_08_N_HOLD_SHORT_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "JetBlue two one three eight, hold short of runway two two at Romeo.",
+   "id": "SYN_KLGA_DEV_08_N_HOLD_SHORT_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Hold short of runway two two at Romeo, JetBlue two one three eight.",
+   "id": "SYN_KLGA_DEV_08_N_HOLD_SHORT_03"
+  }
+ ]
+}

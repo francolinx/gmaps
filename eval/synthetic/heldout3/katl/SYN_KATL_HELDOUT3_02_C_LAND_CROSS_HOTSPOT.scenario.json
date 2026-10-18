@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout3",
+ "phrasing_pool": "D",
+ "template": "C_LAND_CROSS_HOTSPOT",
+ "basis": "R1, crossing at a hot-spot taxiway",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7401,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "D",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Delta two seventy eight, wind two six zero at one zero gusts two two, runway niner left, cleared to land.",
+   "id": "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Delta two seventy eight, roger, cleared to land runway niner left.",
+   "id": "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "American three seventy nine, follow the regional jet, cross runway niner left at Delta.",
+   "id": "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway niner left at Delta, American three seventy nine.",
+   "id": "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

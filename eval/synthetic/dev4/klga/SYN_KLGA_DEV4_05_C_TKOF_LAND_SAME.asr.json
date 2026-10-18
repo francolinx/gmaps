@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_05_C_TKOF_LAND_SAME_00": {
+  "text": "United 405, runway 31, wind 120 at 16, cleared for takeoff.",
+  "asr_s": 0.214
+ },
+ "SYN_KLGA_DEV4_05_C_TKOF_LAND_SAME_01": {
+  "text": "United 405, cleared for takeoff runway 31.",
+  "asr_s": 0.183
+ },
+ "SYN_KLGA_DEV4_05_C_TKOF_LAND_SAME_02": {
+  "text": "Endeavour 10-84, runway 3-1, cleared to land.",
+  "asr_s": 0.2
+ },
+ "SYN_KLGA_DEV4_05_C_TKOF_LAND_SAME_03": {
+  "text": "Endeavour 10-84, Roger. Clear to land runway 3-1.",
+  "asr_s": 0.206
+ }
+}

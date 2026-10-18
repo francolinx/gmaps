@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV_08_N_HOLD_SHORT_00": {
+  "text": "Spirit 463, runway 27L cleared to land.",
+  "asr_s": 0.205
+ },
+ "SYN_KATL_DEV_08_N_HOLD_SHORT_01": {
+  "text": "Runway 27 left, cleared to land Spirit 463.",
+  "asr_s": 0.211
+ },
+ "SYN_KATL_DEV_08_N_HOLD_SHORT_02": {
+  "text": "Jet Blue 2138, hold short of runway 27L at November 2.",
+  "asr_s": 0.232
+ },
+ "SYN_KATL_DEV_08_N_HOLD_SHORT_03": {
+  "text": "Hold short of runway 2, 7 left at November 2, jet blue 2138.",
+  "asr_s": 0.258
+ }
+}

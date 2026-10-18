@@ -1,0 +1,230 @@
+{
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Frontier 2100, runway two six left, cleared to land, wind calm.",
+  "asr_s": 0.509,
+  "words": [
+   {
+    "w": "Frontier",
+    "p": 0.9912
+   },
+   {
+    "w": "2100,",
+    "p": 0.6336
+   },
+   {
+    "w": "runway",
+    "p": 0.9895
+   },
+   {
+    "w": "two",
+    "p": 0.9808
+   },
+   {
+    "w": "six",
+    "p": 0.9963
+   },
+   {
+    "w": "left,",
+    "p": 0.7825
+   },
+   {
+    "w": "cleared",
+    "p": 0.9801
+   },
+   {
+    "w": "to",
+    "p": 0.8843
+   },
+   {
+    "w": "land,",
+    "p": 0.8993
+   },
+   {
+    "w": "wind",
+    "p": 0.875
+   },
+   {
+    "w": "calm.",
+    "p": 0.1711
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Runway two six left, cleared to land, Frontier 2100.",
+  "asr_s": 0.527,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.6319
+   },
+   {
+    "w": "two",
+    "p": 0.9841
+   },
+   {
+    "w": "six",
+    "p": 0.9862
+   },
+   {
+    "w": "left,",
+    "p": 0.8732
+   },
+   {
+    "w": "cleared",
+    "p": 0.97
+   },
+   {
+    "w": "to",
+    "p": 0.4415
+   },
+   {
+    "w": "land,",
+    "p": 0.8672
+   },
+   {
+    "w": "Frontier",
+    "p": 0.8985
+   },
+   {
+    "w": "2100.",
+    "p": 0.7972
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_02": {
+  "text": "Twin Cessna two six six five Zulu. Cross runway niner left at November five, hold short of runway eight left.",
+  "asr_s": 0.618,
+  "words": [
+   {
+    "w": "Twin",
+    "p": 0.6205
+   },
+   {
+    "w": "Cessna",
+    "p": 0.867
+   },
+   {
+    "w": "two",
+    "p": 0.7354
+   },
+   {
+    "w": "six",
+    "p": 0.9612
+   },
+   {
+    "w": "six",
+    "p": 0.9111
+   },
+   {
+    "w": "five",
+    "p": 0.9923
+   },
+   {
+    "w": "Zulu.",
+    "p": 0.4646
+   },
+   {
+    "w": "Cross",
+    "p": 0.9899
+   },
+   {
+    "w": "runway",
+    "p": 0.9951
+   },
+   {
+    "w": "niner",
+    "p": 0.7514
+   },
+   {
+    "w": "left",
+    "p": 0.9949
+   },
+   {
+    "w": "at",
+    "p": 0.979
+   },
+   {
+    "w": "November",
+    "p": 0.933
+   },
+   {
+    "w": "five,",
+    "p": 0.7882
+   },
+   {
+    "w": "hold",
+    "p": 0.9951
+   },
+   {
+    "w": "short",
+    "p": 0.9992
+   },
+   {
+    "w": "of",
+    "p": 0.9934
+   },
+   {
+    "w": "runway",
+    "p": 0.9995
+   },
+   {
+    "w": "eight",
+    "p": 0.9971
+   },
+   {
+    "w": "left.",
+    "p": 0.9128
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Fox runway niner left an over the five, with Tesla 26652.",
+  "asr_s": 0.457,
+  "words": [
+   {
+    "w": "Fox",
+    "p": 0.1097
+   },
+   {
+    "w": "runway",
+    "p": 0.9037
+   },
+   {
+    "w": "niner",
+    "p": 0.7951
+   },
+   {
+    "w": "left",
+    "p": 0.9131
+   },
+   {
+    "w": "an",
+    "p": 0.3295
+   },
+   {
+    "w": "over",
+    "p": 0.2827
+   },
+   {
+    "w": "the",
+    "p": 0.6098
+   },
+   {
+    "w": "five,",
+    "p": 0.7754
+   },
+   {
+    "w": "with",
+    "p": 0.4238
+   },
+   {
+    "w": "Tesla",
+    "p": 0.2131
+   },
+   {
+    "w": "26652.",
+    "p": 0.7642
+   }
+  ]
+ }
+}

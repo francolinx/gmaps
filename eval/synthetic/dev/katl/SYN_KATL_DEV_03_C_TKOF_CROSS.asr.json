@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV_03_C_TKOF_CROSS_00": {
+  "text": "Southwest 2469, runway 26R cleared for takeoff.",
+  "asr_s": 0.206
+ },
+ "SYN_KATL_DEV_03_C_TKOF_CROSS_01": {
+  "text": "Runway 2-6 right, cleared for takeoff, Southwest 2-4-6-9-er.",
+  "asr_s": 0.266
+ },
+ "SYN_KATL_DEV_03_C_TKOF_CROSS_02": {
+  "text": "Southwest 2956, cross runway 26, right at Bravo 1.",
+  "asr_s": 0.223
+ },
+ "SYN_KATL_DEV_03_C_TKOF_CROSS_03": {
+  "text": "Cross runway 26, right at Bravo 1, Southwest 295-6.",
+  "asr_s": 0.236
+ }
+}

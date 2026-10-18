@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT_07_N_CROSS_OTHER_RWY_00": {
+  "text": "American 1821, cleared to land runway 13.",
+  "asr_s": 0.167
+ },
+ "SYN_KLGA_HELDOUT_07_N_CROSS_OTHER_RWY_01": {
+  "text": "Clear to land 1-3, American 1-8-2-1.",
+  "asr_s": 0.213
+ },
+ "SYN_KLGA_HELDOUT_07_N_CROSS_OTHER_RWY_02": {
+  "text": "We're at 1-5-6-9, at Charlie Cross runway 4.",
+  "asr_s": 0.218
+ },
+ "SYN_KLGA_HELDOUT_07_N_CROSS_OTHER_RWY_03": {
+  "text": "Crossing runway 4 at Charlie, Spirit 1569.",
+  "asr_s": 0.175
+ }
+}

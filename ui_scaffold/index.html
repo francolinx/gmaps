@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GMAPS Display</title>
+<style>
+:root{
+  --bg:#0b0f14; --panel:#121821; --panel2:#18202b; --line:#263142; --ink:#e6edf5; --dim:#8b98a9; --faint:#5a6676;
+  --conflict:#ff5a52; --caution:#f2b134; --advised:#5ab0ff; --reminder:#b48cff; --ok:#3ccf91;
+  --rwy:#3a4352; --twy:#2c5e8a; --zone:rgba(255,90,82,.10); --zoneline:rgba(255,90,82,.55); --hold:#f2b134;
+  --ac:#5ab0ff; --vh:#ff8a3d; --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+*{box-sizing:border-box} html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:14px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{display:flex;gap:14px;align-items:center;padding:10px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+header h1{font-size:16px;margin:0;letter-spacing:.08em}
+.badge{font:600 11px/1 var(--mono);padding:4px 7px;border-radius:4px;border:1px solid var(--line);color:var(--dim);text-transform:uppercase}
+.badge.fict{color:#ffd27a;border-color:#6b5a2a;background:#2a2412}
+.badge.hist{color:#9fd3ff;border-color:#2a4a6b;background:#122130}
+header .title{color:var(--dim);flex:1;min-width:200px}
+select,button,input[type=file]{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:6px 9px;font:inherit}
+button{cursor:pointer} button:hover{border-color:#3d4d63}
+main{display:grid;grid-template-columns:minmax(260px,1fr) minmax(380px,1.6fr) minmax(300px,1.1fr);gap:10px;padding:10px;height:calc(100% - 112px)}
+@media (max-width:1100px){main{grid-template-columns:1fr;height:auto}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+.panel h2{font:600 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin:0;padding:10px 12px;border-bottom:1px solid var(--line)}
+.scroll{overflow:auto;padding:8px 10px;flex:1}
+.tx{padding:6px 8px;border-left:3px solid transparent;border-radius:4px;margin-bottom:4px;opacity:.38}
+.tx.past{opacity:1} .tx.now{background:var(--panel2);border-left-color:var(--advised)}
+.tx .meta{font:11px var(--mono);color:var(--faint);display:flex;gap:8px;flex-wrap:wrap}
+.chip{font:600 10px/1 var(--mono);padding:3px 5px;border-radius:3px;background:#1d2633;color:var(--dim)}
+.chip.instruction{color:#9fd3ff}.chip.readback{color:#3ccf91}.chip.request{color:#ffd27a}.chip.report{color:#c9b3ff}.chip.unknown{color:var(--faint)}
+.chip.OBSERVATION,.chip.PHONE{color:#ff8a3d}
+canvas{width:100%;display:block;background:#0e141c}
+.mapwrap{position:relative;flex:1;min-height:260px}
+.legend{position:absolute;left:10px;bottom:8px;font:11px var(--mono);color:var(--dim);background:rgba(11,15,20,.8);padding:6px 8px;border-radius:6px}
+.gantt{padding:8px 12px;border-top:1px solid var(--line)}
+.grow{display:flex;align-items:center;gap:8px;margin:5px 0;font:12px var(--mono)} .grow .lab{width:92px;color:var(--dim)}
+.gbar{position:relative;height:16px;flex:1;background:#0e141c;border:1px solid var(--line);border-radius:3px}
+.gbar .w{position:absolute;top:2px;bottom:2px;border-radius:2px}
+.gbar .now{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+.card{border:1px solid var(--line);border-left:4px solid var(--dim);border-radius:8px;padding:9px 10px;margin-bottom:8px;background:var(--panel2)}
+.card.CONFLICT{border-left-color:var(--conflict)}.card.CAUTION{border-left-color:var(--caution)}.card.ADVISED{border-left-color:var(--advised)}.card.REMINDER{border-left-color:var(--reminder)}
+.card.ADVISORY{border-left-color:#8fa3b8;border-left-style:dashed}.sev.ADVISORY{background:#8fa3b8}
+.degraded{background:var(--conflict);color:#fff;font-weight:700;padding:6px 10px;border-radius:4px;margin-bottom:8px}
+.card.cleared{opacity:.5}
+.card .hd{display:flex;gap:8px;align-items:center;font:600 12px var(--mono)}
+.sev{padding:2px 6px;border-radius:3px;color:#0b0f14}
+.sev.CONFLICT{background:var(--conflict)}.sev.CAUTION{background:var(--caution)}.sev.ADVISED{background:var(--advised)}.sev.REMINDER{background:var(--reminder)}.sev.LOOK{background:#ff8a3d}.sev.UNAV{background:#5a6676;color:#e6edf5}
+.card p{margin:6px 0 0} .card .small{font:11px var(--mono);color:var(--dim);margin-top:6px}
+table{border-collapse:collapse;width:100%;font:11px var(--mono)} td,th{border-bottom:1px solid var(--line);padding:4px 5px;text-align:left;vertical-align:top} th{color:var(--dim);font-weight:600}
+footer{display:flex;gap:10px;align-items:center;padding:8px 16px;border-top:1px solid var(--line);height:56px}
+input[type=range]{flex:1;accent-color:var(--advised)}
+.clock{font:600 18px var(--mono);min-width:92px}
+.empty{color:var(--faint);font-style:italic;padding:8px}
+</style>
+</head>
+<body>
+<header>
+  <h1>GMAPS</h1>
+  <span id="kind" class="badge">no data</span>
+  <span class="title" id="title">Load a timeline JSON (samples/ or produced by the venue agent).</span>
+  <select id="pick"></select>
+  <input type="file" id="file" accept=".json">
+</header>
+<main>
+  <section class="panel">
+    <h2>Frequency transcript · speech act</h2>
+    <div class="scroll" id="tx"></div>
+  </section>
+  <section class="panel">
+    <h2 id="midTitle">Look-ahead · fictional SIM-1 map</h2>
+    <div class="mapwrap"><canvas id="map"></canvas><div class="legend" id="legend"></div></div>
+    <div class="gantt" id="gantt"></div>
+  </section>
+  <section class="panel">
+    <h2>Warnings · explainable</h2>
+    <div class="scroll" id="warn"></div>
+    <h2>State ledger (five kinds kept separate)</h2>
+    <div class="scroll" id="state" style="max-height:38%"></div>
+  </section>
+</main>
+<footer>
+  <button id="play">▶ Play</button>
+  <span class="clock" id="clock">t = –</span>
+  <input type="range" id="slider" min="0" max="100" value="0" step="1">
+  <select id="speed"><option value="1">1×</option><option value="2" selected>2×</option><option value="5">5×</option></select>
+  <button id="audioBtn" disabled title="Rachel's re-voiced clips, served locally by venue/audio_server.py">Audio: n/a</button>
+</footer>
+<script>
+// GMAPS display scaffold. Renders a timeline JSON; it does not compute anything itself.
+// Two input shapes: SIM episode (tools/run_sim_episode.py --out) and fixture ledger replay (tools/replay_fixture.py --out).
+const SAMPLES = ['SIM_E1_CROSS_DURING_ROLLOUT','SIM_E2_SAME_PATHS_LATER','SIM_E3_STOP_NOT_OBSERVED','SIM_E4_FEED_LOSS','SIM_E5_HOLD_NOT_SLOWING','SIM_E6_HOLD_OK','BOS_2026-06-20','CLIPPED_READBACK_FICTIONAL'];
+const $ = id => document.getElementById(id);
+let D = null, T = 0, tMin = 0, tMax = 100, timer = null;
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+SAMPLES.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; $('pick').appendChild(o); });
+$('pick').onchange = () => loadUrl('samples/' + $('pick').value + '.json');
+$('file').onchange = e => { const f = e.target.files[0]; if (!f) return; f.text().then(t => setData(JSON.parse(t))); };
+async function loadUrl(u){ const m = u.match(/samples\/(.+)\.json/); if (m) $('pick').value = m[1]; try { const r = await fetch(u); setData(await r.json()); } catch(e){ $('title').textContent = 'Could not fetch ' + u + ' — serve this folder (python3 -m http.server) or use the file picker.'; } }
+
+function setData(d){
+  D = d; const isSim = !!d.frames;
+  D.isSim = isSim;
+  if (isSim){ tMin = d.frames[0].t; tMax = d.frames[d.frames.length-1].t; }
+  else { const ts = d.timeline.map(x => x.t); tMin = Math.min(...ts) - 2; tMax = Math.max(...ts, ...d.warnings.map(w=>w.t_fired)) + 5; }
+  const fict = isSim ? d.episode.is_fictional : /FICTIONAL/.test(d.scenario.id);
+  $('kind').textContent = fict ? 'fictional exercise' : 'historical replay · re-voice · secondary sources';
+  $('kind').className = 'badge ' + (fict ? 'fict' : 'hist');
+  $('title').textContent = isSim ? d.episode.title : d.scenario.title;
+  if (d.agent_run){ const r = d.agent_run, al = (r.alerts||[]).filter(x => x.status === 'sent').map(x => x.warning_id + '→msg ' + x.message_id).join(', ');
+    $('kind').textContent += ' · AGENT RUN ' + r.run_id + ' · INPUT: ' + r.input_mode + (al ? ' · alert sent: ' + al : ''); }
+  $('midTitle').textContent = isSim ? 'Look-ahead · fictional SIM-1 map (not a real airport)' : 'Runway reservations (recorded authorizations, not positions)';
+  $('slider').min = tMin; $('slider').max = tMax; T = tMin; $('slider').value = T; render();
+}
+$('slider').oninput = () => { T = +$('slider').value; render(); };
+$('play').onclick = () => {
+  if (timer){ clearInterval(timer); timer = null; $('play').textContent = '▶ Play'; return; }
+  $('play').textContent = '❚❚ Pause';
+  const sp = audioActive() ? 1 : +$('speed').value;   // with clip audio on, the clock runs at 1x so clips line up
+  timer = setInterval(() => { T = Math.min(tMax, T + 1); $('slider').value = T; render(); if (T >= tMax){ clearInterval(timer); timer = null; $('play').textContent = '▶ Play'; } }, 1000 / sp);
+};
+
+function render(){
+  if (!D) return;
+  $('clock').textContent = 't = ' + (T >= 0 ? '+' : '') + T + ' s';
+  renderTx(); renderWarn(); renderState();
+  D.isSim ? renderMap() : renderRes();
+  syncAudio();
+}
+
+function renderTx(){
+  const items = D.isSim ? D.transcript.map(x => ({t:x.t, freq:x.freq, text:x.text, act:x.speech_act, kind:x.kind, cs:(x.callsigns||[]).join(' ') + (x.input_source ? ' · input: ' + x.input_source : ''), summ:x.agent_summary_unverified, clip:clipFor(x)}))
+    : D.timeline.map(x => ({t:x.t, freq:x.freq, text:x.text, act:x.event ? (x.event.speech_act_resolved || x.event.speech_act) : x.kind, kind:x.event ? x.event.kind : x.kind, cs:x.event ? x.event.actor_candidates.join(' ') : ''}));
+  let lastPast = -1; items.forEach((x,i) => { if (x.t <= T) lastPast = i; });
+  $('tx').innerHTML = items.map((x,i) => `<div class="tx ${x.t<=T?'past':''} ${i===lastPast?'now':''}" id="tx${i}">
+    <div class="meta"><span>${x.t>=0?'+':''}${x.t}s</span><span>${esc(x.freq)}</span><span class="chip ${esc(x.act)}">${esc(x.act)}</span><span class="chip">${esc(x.kind)}</span><span>${esc(x.cs)}</span>${x.clip && OWNED.has(x.clip) ? '<span class="chip">♪ re-voiced (owned)</span>' : ''}</div>
+    <div>${esc(x.text)}</div>${x.summ && x.t<=T ? `<details class="small"><summary>agent summary (unverified)</summary>${esc(x.summ)}</details>` : ''}</div>`).join('');
+  const el = $('tx' + lastPast); if (el) el.scrollIntoView({block:'nearest'});
+}
+
+function warnings(){ return (D.isSim ? D.ledger.warnings : D.warnings).filter(w => w.t_fired <= T); }
+function renderWarn(){
+  let html = '';
+  const H = D.isSim ? (D.ledger.health || {}) : (D.health || {});   // N8: SYSTEM DEGRADED health alarm is always shown
+  if (H.degraded) html += `<div class="degraded">SYSTEM DEGRADED: ${esc(H.reason || 'open-warning cap reached')}</div>`;
+  if (D.isSim){
+    const f = frameAt(T), c = f.combined;
+    c.candidates.filter(x => x.raised).forEach(x => {
+      html += `<div class="card"><div class="hd"><span class="sev LOOK">LOOK-AHEAD</span>${x.type==='hold_exceedance'?'hold-short not consistent with motion':'occupancy overlap at '+esc(x.zone)}</div>
+      <p>${esc(x.callsigns.join(' · '))}${x.overlap?` — projected overlap <b>t+${(x.overlap[0]-T).toFixed(1)}…${(x.overlap[1]-T).toFixed(1)} s</b>`:''}</p>
+      ${(x.basis||[]).map(b=>`<div class="small">${esc(b)}</div>`).join('')}
+      <div class="small">Model ${esc(c.model)} · simulated observations · ${esc(c.assumptions[0])}</div></div>`;
+    });
+    c.candidates.filter(x => !x.raised).forEach(x => {
+      html += `<div class="card cleared"><div class="hd"><span class="sev ADVISED">CONDITIONAL</span>overlap only if the vehicle does not hold short</div><div class="small">${esc((x.basis||[]).join(' · '))}</div></div>`;
+    });
+    c.unavailable.forEach(u => { if (T > 0) html += `<div class="card"><div class="hd"><span class="sev UNAV">UNAVAILABLE</span>${esc(u.track)}</div><p>${esc(u.reason)}</p><div class="small">metric_prediction_unavailable ≠ no conflict</div></div>`; });
+  }
+  warnings().slice().reverse().forEach(w => {
+    const cleared = w.status === 'cleared' && w.cleared_at <= T;
+    const a = w.authorization_a || {}, b = w.authorization_b || {};
+    const tier = w.tier_header ? `<div class="hd"><span class="sev ${w.tier==='POSSIBLE_CONFLICT'?'CONFLICT':'ADVISED'}">${esc(w.tier_header)}</span>${w.alert&&w.alert.message_id?'alert msg '+esc(w.alert.message_id):''}</div>` : '';
+    html += `<div class="card ${w.severity} ${cleared?'cleared':''}">${tier}<div class="hd"><span class="sev ${w.severity}">${w.severity}</span>${esc(w.rule_id)} · ${esc(w.name)} · t=${w.t_fired}</div>
+      <p>${esc(w.explain)}</p>
+      <div class="small">A: ${esc(a.callsign)} ${esc(a.type)} @${esc(a.t_issued)} ${a.acknowledged?'('+esc(a.acknowledged)+')':''}${b.callsign?` · B: ${esc(b.callsign)} ${esc(b.type)} @${esc(b.t_issued)}`:''}</div>
+      <div class="small">Clears on: ${esc(w.what_would_clear_it)}${cleared?` — <b>cleared t=${w.cleared_at}</b> (${esc(w.cleared_by)})`:''}</div>
+      <div class="small">${esc(w.cite)} · ${esc(w.claim_limit)}</div></div>`;
+  });
+  $('warn').innerHTML = html || '<div class="empty">No open warnings at this time.</div>';
+}
+
+function renderState(){
+  const evs = D.isSim ? null : D.actors;
+  let actors = {};
+  if (D.isSim){ // rebuild from transcript speech acts up to T (display only)
+    D.transcript.filter(x => x.t <= T).forEach(x => (x.callsigns||[]).forEach(cs => {
+      actors[cs] = actors[cs] || {authorized:'',acknowledged:'',reported:'',inferred:'',observed:''};
+      const k = {instruction:'authorized', readback:'acknowledged', report:'reported', request:'reported'}[x.speech_act];
+      if (k) actors[cs][k] = x.kind + ' @' + x.t;
+    }));
+    const f = frameAt(T);
+    Object.values(f.positions).forEach(p => { actors[p.callsign] = actors[p.callsign] || {authorized:'',acknowledged:'',reported:'',inferred:'',observed:''};
+      actors[p.callsign].observed = `(${p.x.toFixed(0)}, ${p.y.toFixed(0)}) m, age ${p.age_s}s [simulated]`; });
+  } else {
+    for (const [cs, st] of Object.entries(evs)) { actors[cs] = {};
+      for (const k of ['authorized','acknowledged','reported','inferred','observed']) { const v = st[k].filter(r => r.t <= T).slice(-1)[0]; actors[cs][k] = v ? v.value + ' @' + v.t : ''; } }
+  }
+  const rows = Object.entries(actors).map(([cs, s]) => `<tr><td><b>${esc(cs)}</b></td>${['authorized','acknowledged','reported','inferred','observed'].map(k=>`<td>${esc(s[k]) || '<span style="color:#5a6676">—</span>'}</td>`).join('')}</tr>`).join('');
+  $('state').innerHTML = rows ? `<table><tr><th>actor</th><th>authorized</th><th>acknowledged</th><th>reported</th><th>inferred</th><th>observed</th></tr>${rows}</table>` : '<div class="empty">No actors yet.</div>';
+}
+
+function frameAt(t){ let f = D.frames[0]; for (const x of D.frames) if (x.t <= t) f = x; return f; }
+
+function canvasCtx(){
+  const cv = $('map'), r = cv.parentElement.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+  cv.width = r.width * dpr; cv.height = Math.max(260, r.height) * dpr; cv.style.height = Math.max(260, r.height) + 'px';
+  const c = cv.getContext('2d'); c.setTransform(dpr,0,0,dpr,0,0); return [c, r.width, Math.max(260, r.height)];
+}
+function renderMap(){
+  const [c, W, H] = canvasCtx(); const m = D.map;
+  const x0 = 900, x1 = 2100, y0 = -420, y1 = 260; // view window (metres)
+  const sx = W / (x1 - x0), sy = H / (y1 - y0), s = Math.min(sx, sy);
+  const ox = (W - (x1-x0)*s)/2, oy = (H - (y1-y0)*s)/2;
+  const P = (x,y) => [ox + (x - x0)*s, oy + (y1 - y)*s];
+  c.clearRect(0,0,W,H);
+  // runway
+  const rw = m.runways['XSIM:RWY:18-36']; let [a1,b1] = P(rw.centerline[0][0], 22.5), [a2,b2] = P(rw.centerline[1][0], -22.5);
+  c.fillStyle = getCss('--rwy'); c.fillRect(a1, b1, a2-a1, b2-b1);
+  c.setLineDash([10,10]); c.strokeStyle = '#cfd6df'; c.lineWidth = 1; c.beginPath(); c.moveTo(...P(x0,0)); c.lineTo(...P(x1,0)); c.stroke(); c.setLineDash([]);
+  // taxiway K
+  const k = m.taxiways['XSIM:TWY:K']; [a1,b1] = P(1500-11.5, k.centerline[1][1]); [a2,b2] = P(1500+11.5, k.centerline[0][1]);
+  c.fillStyle = getCss('--twy'); c.fillRect(a1, b1, a2-a1, b2-b1);
+  // zone
+  const z = m.zones['XSIM:ZONE:Z1']; [a1,b1] = P(z.xmin, z.ymax); [a2,b2] = P(z.xmax, z.ymin);
+  c.fillStyle = getCss('--zone'); c.fillRect(a1,b1,a2-a1,b2-b1); c.strokeStyle = getCss('--zoneline'); c.strokeRect(a1,b1,a2-a1,b2-b1);
+  // hold lines
+  c.strokeStyle = getCss('--hold'); c.lineWidth = 3;
+  Object.values(m.hold_lines).forEach(h => { const [hx,hy] = P(h.point[0]-16, h.point[1]); const [hx2] = P(h.point[0]+16, h.point[1]); c.beginPath(); c.moveTo(hx,hy); c.lineTo(hx2,hy); c.stroke(); });
+  c.lineWidth = 1;
+  c.fillStyle = '#8b98a9'; c.font = '11px ui-monospace,monospace';
+  c.fillText('RWY 36 →  (fictional)', ...P(950, 34)); c.fillText('TWY K', ...P(1512, -380)); c.fillText('Z1', ...P(1545, 60)); c.fillText('hold', ...P(1520, -88));
+  // trails + markers
+  const f = frameAt(T);
+  ['T-AC1','T-VH7'].forEach(id => {
+    const pts = D.frames.filter(x => x.t <= T && x.positions[id]).map(x => x.positions[id]);
+    const col = id === 'T-AC1' ? getCss('--ac') : getCss('--vh');
+    c.strokeStyle = col; c.globalAlpha = .18; c.lineWidth = 1; c.beginPath(); pts.forEach((p,i) => { const [px,py] = P(p.x,p.y); i ? c.lineTo(px,py) : c.moveTo(px,py); }); c.stroke(); c.globalAlpha = 1;
+    const p = f.positions[id]; if (!p) return;
+    const [px,py] = P(p.x,p.y); const stale = p.age_s > 3;
+    c.fillStyle = stale ? '#5a6676' : col; c.beginPath(); c.arc(px,py, id==='T-AC1'?7:5, 0, Math.PI*2); c.fill();
+    c.fillStyle = '#e6edf5'; c.fillText(`${p.callsign}${stale?'  (stale '+p.age_s+'s)':''}`, px+9, py-8);
+  });
+  drawProjection(c, P, m, f);
+  $('legend').innerHTML = `<span style="color:${getCss('--ac')}">●</span> aircraft obs · <span style="color:${getCss('--vh')}">●</span> vehicle obs · <span style="color:${getCss('--hold')}">━</span> hold line · red box = zone Z1<br>solid trail = observed history; dashed = model projection (simulated, not truth). Positions are simulated observations. Frame: SIM-LOCAL-1 (fictional metres).`;
+  // gantt of occupancy windows (combined vs motion-only)
+  const span = 60, lo = T, hi = T + span; const X = v => Math.max(0, Math.min(100, (v - lo) / span * 100));
+  const row = (lab, w, col, cond) => { if (!w) return `<div class="grow"><span class="lab">${lab}</span><div class="gbar"><span style="position:absolute;left:6px;top:0;font:10px var(--mono);color:#5a6676">no window</span></div></div>`;
+    const a = X(w[0]), b = X(w[1] ?? hi); return `<div class="grow"><span class="lab">${lab}</span><div class="gbar"><div class="w" style="left:${a}%;width:${Math.max(.8,b-a)}%;background:${col};opacity:${cond?.35:.85}"></div></div></div>`; };
+  const occ = (pred, id) => { const a = pred && pred.actors ? pred.actors[id] : null; return a && a.occupancy && a.occupancy.status === 'window' ? a.occupancy.window : null; };
+  const vhCond = (f.combined.actors['T-VH7']||{}).hold_hypothesis?.plausible;
+  $('gantt').innerHTML = `<div class="grow"><span class="lab"></span><span style="font:10px var(--mono);color:#5a6676">zone Z1 occupancy windows, now → +${span}s (combined = intent + motion)</span></div>`
+    + row('AC combined', occ(f.combined,'T-AC1'), getCss('--ac')) + row('VH combined', occ(f.combined,'T-VH7'), getCss('--vh'), vhCond)
+    + (f.motion_only ? row('VH motion-only', occ(f.motion_only,'T-VH7'), '#8b98a9') : '');
+}
+
+// Look-ahead projection: drawn ONLY from the combined look-ahead output already in the frame (no computation of motion here).
+// Path = the map centreline nearest the observed dot (display geometry), drawn forward to the far edge of zone Z1.
+function drawProjection(c, P, m, f){
+  const la = f.combined || {}; if (la.as_of == null) return;
+  const Tn = T, z = m.zones['XSIM:ZONE:Z1'];
+  const unav = new Set((la.unavailable || []).map(u => u.track));
+  const asof = la.as_of < Tn - 0.5 ? ` [look-ahead as_of ${la.as_of}s]` : '';
+  c.font = '11px ui-monospace,monospace';
+  // zone tint + predicted window
+  const raised = (la.candidates || []).filter(x => x.raised && x.overlap), cond = (la.candidates || []).filter(x => !x.raised && x.overlap);
+  if (raised.length || cond.length){
+    const [a1,b1] = P(z.xmin, z.ymax), [a2,b2] = P(z.xmax, z.ymin);
+    c.fillStyle = raised.length ? 'rgba(255,70,70,.38)' : 'rgba(255,190,60,.25)'; c.fillRect(a1, b1, a2-a1, b2-b1);
+    const o = (raised[0] || cond[0]).overlap;
+    c.fillStyle = raised.length ? '#ff8080' : '#ffc860';
+    c.fillText(`${raised.length ? 'predicted overlap' : 'conditional overlap'} ${Math.round(o[0])}–${Math.round(o[1])} s (model)${asof}`, a1 - 60, b1 - 8);
+  }
+  const lines = [...Object.values(m.runways), ...Object.values(m.taxiways)].map(r => r.centerline);
+  ['T-AC1','T-VH7'].forEach((id, k) => {
+    const p = f.positions[id]; if (!p) return;
+    const [px,py] = P(p.x,p.y), col = id === 'T-AC1' ? getCss('--ac') : getCss('--vh'), ly = py + 18 + 12*k;
+    const a = (la.actors || {})[id];
+    if (!a || a.status !== 'ok' || unav.has(id) || unav.has('all')){
+      c.fillStyle = '#c8a0ff'; c.fillText(`prediction unavailable${asof}`, px + 9, ly); return;   // never "clear"
+    }
+    // nearest centreline, direction = start -> end (the predictor's along-path direction)
+    let best = null;
+    lines.forEach(l => { const [x0,y0] = l[0], [x1,y1] = l[1], L = Math.hypot(x1-x0, y1-y0), dx = (x1-x0)/L, dy = (y1-y0)/L;
+      const d = Math.abs((p.x-x0)*dy - (p.y-y0)*dx); if (!best || d < best.d) best = {d, dx, dy}; });
+    const far = Math.max(...[[z.xmin,z.ymin],[z.xmin,z.ymax],[z.xmax,z.ymin],[z.xmax,z.ymax]].map(([cx,cy]) => (cx-p.x)*best.dx + (cy-p.y)*best.dy));
+    const occ = a.occupancy || {};
+    let label;
+    if (occ.status === 'window'){
+      const [w0, w1] = occ.window;
+      label = w0 > Tn ? `projected: enters Z1 in ~${Math.round(w0 - Tn)}s (model)` : (w1 == null || w1 > Tn ? 'projected: in Z1 window now (model)' : 'projected: Z1 window passed (model)');
+      if (occ.hypothesis) label += ' · start time assumed';
+    } else if (occ.status === 'no_entry_within_horizon') label = 'projected: no Z1 entry within horizon (model)';
+    else if (occ.status === 'past_zone') label = 'projected: past Z1 (model)';
+    else label = 'projection: ' + (occ.status || 'n/a');
+    if (far > 0 && occ.status !== 'past_zone'){
+      const [qx,qy] = P(p.x + best.dx*far, p.y + best.dy*far);
+      c.save(); c.strokeStyle = col; c.globalAlpha = 1; c.lineWidth = 2.5; c.setLineDash([7,5]);
+      c.beginPath(); c.moveTo(px,py); c.lineTo(qx,qy); c.stroke(); c.restore();
+    }
+    c.fillStyle = col; c.fillText(label + asof, px + 9, ly);
+  });
+}
+
+function renderRes(){
+  const [c, W, H] = canvasCtx(); c.clearRect(0,0,W,H);
+  const res = D.reservations; const rws = [...new Set(res.map(r => r.physical))];
+  const lo = Math.max(tMin, T - 150), hi = Math.max(lo + 60, T + 30); const X = t => 90 + (Math.max(lo, Math.min(hi, t)) - lo) / (hi - lo) * (W - 110);
+  c.font = '11px ui-monospace,monospace';
+  rws.forEach((rw, i) => {
+    const y = 30 + i * 70; c.fillStyle = '#8b98a9'; c.fillText(rw.split(':').pop(), 10, y + 22);
+    c.strokeStyle = '#263142'; c.strokeRect(90, y, W - 110, 50);
+    res.filter(r => r.physical === rw && r.t <= T && !(r.released_at != null && r.released_at < lo)).forEach((r, j) => {
+      const end = r.released_at != null && r.released_at <= T ? r.released_at : T;
+      const col = {LANDING:'#5ab0ff', TAKEOFF:'#3ccf91', CROSSING:'#ff8a3d', LUAW:'#b48cff', OCCUPYING:'#f2b134'}[r.type] || '#8b98a9';
+      const yy = y + 4 + (j % 4) * 11; c.fillStyle = col; c.globalAlpha = r.status === 'released' && r.released_at <= T ? .4 : .9;
+      c.fillRect(X(r.t), yy, Math.max(2, X(end) - X(r.t)), 9); c.globalAlpha = 1; c.fillStyle = '#e6edf5'; c.fillText(`${r.callsign} ${r.type}${r.cancel_status==='unacknowledged' && r.cancel_t<=T?' · STOP unack':''}`, X(r.t) + 3, yy + 8);
+    });
+  });
+  c.strokeStyle = '#e6edf5'; c.beginPath(); c.moveTo(X(T), 10); c.lineTo(X(T), H - 10); c.stroke();
+  c.fillStyle = '#5a6676'; c.fillText(`window t=${Math.round(lo)}…${Math.round(hi)} s`, 90, H - 14);
+  $('legend').innerHTML = 'Bars = recorded authorizations (reservations) per physical runway. Not aircraft positions.';
+  $('gantt').innerHTML = '<div class="empty">Look-ahead needs reviewed metric geometry + independent tracks; this historical replay has neither. See the SIM episodes.</div>';
+}
+// ---------------- owned clip audio (Rachel's re-voiced clips; SIM episodes only) ----------------
+// Served by venue/audio_server.py on 127.0.0.1 from ~/gmaps_venue/audio. Never copied into ui_scaffold/.
+const AUDIO = 'http://127.0.0.1:8767';
+let OWNED = new Set(), AUDIO_ON = false, prevT = null, queue = [];
+const player = new Audio();
+player.onended = () => { const n = queue.shift(); if (n) playClip(n); };
+function playClip(n){ player.src = AUDIO + '/owned/' + encodeURIComponent(n); player.play().catch(() => {}); }
+function stopAudio(){ queue = []; player.pause(); }
+function clipFor(x){ return x.source_id || (D && D.episode ? `${D.episode.id}_${Math.round(x.t)}.wav` : null); }
+function audioActive(){ return AUDIO_ON && D && D.isSim && D.transcript.some(x => OWNED.has(clipFor(x))); }
+function syncAudio(){
+  if (!audioActive()){ prevT = T; return; }
+  if (prevT !== null && T > prevT && T - prevT <= 3){
+    D.transcript.forEach(x => { const c = clipFor(x); if (x.t > prevT && x.t <= T && OWNED.has(c)){ if (player.paused && !queue.length) playClip(c); else queue.push(c); } });
+  } else if (prevT !== null && T !== prevT) stopAudio();
+  prevT = T;
+}
+fetch(AUDIO + '/owned/index.json').then(r => r.json()).then(d => {
+  OWNED = new Set(d.clips.map(c => c.name)); AUDIO_ON = true;
+  $('audioBtn').disabled = false; $('audioBtn').textContent = 'Audio: on'; render();
+}).catch(() => {});   // no audio server: the page works exactly as before
+$('audioBtn').onclick = () => { AUDIO_ON = !AUDIO_ON; if (!AUDIO_ON) stopAudio(); $('audioBtn').textContent = 'Audio: ' + (AUDIO_ON ? 'on' : 'off'); render(); };
+function getCss(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+window.onresize = render;
+const q = new URLSearchParams(location.search).get('f'); loadUrl(q || 'samples/SIM_E1_CROSS_DURING_ROLLOUT.json');
+</script>
+</body>
+</html>

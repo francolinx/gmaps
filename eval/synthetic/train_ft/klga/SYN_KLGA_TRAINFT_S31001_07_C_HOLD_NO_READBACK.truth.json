@@ -1,0 +1,120 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31001_07_C_HOLD_NO_READBACK",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31001_07_C_HOLD_NO_READBACK_00",
+   "fields": {
+    "callsigns": [
+     "SWA1832"
+    ],
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "SWA1832",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31001_07_C_HOLD_NO_READBACK_01",
+   "fields": {
+    "callsigns": [
+     "SWA1832"
+    ],
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA1832",
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31001_07_C_HOLD_NO_READBACK_02",
+   "fields": {
+    "callsigns": [
+     "N2656P"
+    ],
+    "runway": "4",
+    "instruction": "HOLD_SHORT"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N2656P",
+    "runway": "4",
+    "instruction": "HOLD_SHORT",
+    "taxiways": [
+     "N",
+     "P"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31001_07_C_HOLD_NO_READBACK_03",
+   "fields": {
+    "callsigns": [
+     "N2656P"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N2656P",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": [
+     "N",
+     "P"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31001_07_C_HOLD_NO_READBACK_04",
+   "fields": {
+    "callsigns": [
+     "N2656P"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N2656P",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": [
+     "N",
+     "P"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31001_07_C_HOLD_NO_READBACK_05",
+   "fields": {
+    "callsigns": [
+     "N2656P"
+    ],
+    "runway": "4",
+    "instruction": "HOLD_SHORT"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N2656P",
+    "runway": "4",
+    "instruction": "HOLD_SHORT",
+    "taxiways": [
+     "N",
+     "P"
+    ]
+   }
+  }
+ ]
+}

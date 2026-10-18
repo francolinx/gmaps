@@ -1,0 +1,18 @@
+{
+ "icao": "KLGA",
+ "checked_at": "2026-10-08T22:45:57-0400",
+ "dpi": 300,
+ "ink_level": 250,
+ "tolerance_px": 1,
+ "pdf_sha256": "99951faddb8779db57ba617e6f136338a3df6df4a37dc300a749d7dd3af54b93",
+ "faa_ink_px": 671739,
+ "reconstruction_ink_px": 673316,
+ "covered_pct": 99.771,
+ "extra_pct": 0.296,
+ "thresholds": {
+  "min_covered_pct": 99.0,
+  "max_extra_pct": 2.0
+ },
+ "pass": true,
+ "note": "faithful.svg uses original FAA styling; visible-text labels use a substitute font."
+}

@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7602_03_C_TKOF_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "C_TKOF_CROSS",
+ "basis": "R2 crossing vs active takeoff (3-7-2g1)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7602,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "U",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United twenty eight hundred, runway two two, cleared for takeoff, turn left heading two seven zero.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_03_C_TKOF_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Roger, cleared for takeoff two two, United twenty eight hundred.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_03_C_TKOF_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "American niner two five seven, cross runway two two at Uniform without delay, traffic short final.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_03_C_TKOF_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway two two at Uniform, American niner two five seven.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_03_C_TKOF_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

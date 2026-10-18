@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KLGA_HELDOUT_05_C_LUAW_LAND",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "C_LUAW_LAND",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7302,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "E",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier two five three five, line up and wait runway two two.",
+   "id": "SYN_KLGA_HELDOUT_05_C_LUAW_LAND_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Line up and wait two two, Frontier two five three five.",
+   "id": "SYN_KLGA_HELDOUT_05_C_LUAW_LAND_01"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Spirit two eight four eight, cleared to land runway two two.",
+   "id": "SYN_KLGA_HELDOUT_05_C_LUAW_LAND_02"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Cleared to land two two, Spirit two eight four eight.",
+   "id": "SYN_KLGA_HELDOUT_05_C_LUAW_LAND_03"
+  }
+ ]
+}

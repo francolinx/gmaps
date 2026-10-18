@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_00": {
+  "text": "Frontier 10-9, runway 26, flight cleared to land.",
+  "asr_s": 0.196
+ },
+ "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_01": {
+  "text": "Frontier 10-19, roger, clear to land, runway 2, 6, right.",
+  "asr_s": 0.226
+ },
+ "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_02": {
+  "text": "Major 10-19, go around, climb and maintain 3-thousand.",
+  "asr_s": 0.208
+ },
+ "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_03": {
+  "text": "Frontier 10-19 going around.",
+  "asr_s": 0.163
+ },
+ "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_04": {
+  "text": "Now west 606, follow the Boeing 737, cross runway 26 right at Bravo 3.",
+  "asr_s": 0.228
+ },
+ "SYN_KATL_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_05": {
+  "text": "Crossing runway 26 right at Bravo 3, Southwest 606.",
+  "asr_s": 0.192
+ }
+}

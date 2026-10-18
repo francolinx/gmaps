@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT_08_N_HOLD_SHORT_00": {
+  "text": "We're at 625, cleared to land runway 8 right.",
+  "asr_s": 0.19
+ },
+ "SYN_KATL_HELDOUT_08_N_HOLD_SHORT_01": {
+  "text": "Clear to land 8 right. Spirit 65.",
+  "asr_s": 0.165
+ },
+ "SYN_KATL_HELDOUT_08_N_HOLD_SHORT_02": {
+  "text": "United 1774, hold short runway 8 right at Charlie.",
+  "asr_s": 0.186
+ },
+ "SYN_KATL_HELDOUT_08_N_HOLD_SHORT_03": {
+  "text": "Holding short runway 8 right at Charlie, United 1774.",
+  "asr_s": 0.182
+ }
+}

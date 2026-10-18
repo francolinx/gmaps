@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_00": {
+  "text": "United five six seven eight, runway niner right, cleared for takeoff, turn left heading two seven zero.",
+  "asr_s": 0.239
+ },
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_01": {
+  "text": "Roger, cleared for takeoff, niner right, united five six seven eight.",
+  "asr_s": 0.207
+ },
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_02": {
+  "text": "Twin Cessna Niner six two three Delta, runway niner right, cleared to land, wind three three zero at one two.",
+  "asr_s": 0.261
+ },
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_03": {
+  "text": "runway nine right, cleared the land, twin Cessna nine six two three left.",
+  "asr_s": 0.216
+ }
+}

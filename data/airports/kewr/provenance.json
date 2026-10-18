@@ -1,0 +1,64 @@
+{
+ "icao": "KEWR",
+ "generated_at": "2026-10-09T12:04:27-0400",
+ "chart": {
+  "publisher": "FAA Aeronautical Information Services, d-TPP airport diagram",
+  "title": "FAA Newark Liberty Intl airport diagram, cycle 2610, 00285AD.PDF",
+  "chart_code": "AL-285 (FAA)",
+  "cycle": "2610",
+  "effective_from": "2026-10-01",
+  "effective_to": "2026-10-29",
+  "printed_cycle_banner": "NE-2, 01 OCT 2026 to 29 OCT 2026",
+  "banner_checked_against_pdf": true,
+  "url": "https://aeronav.faa.gov/d-tpp/2610/00285AD.PDF",
+  "local_path": "data/airports/sources/ewr_faa_2610_00285AD.pdf",
+  "sha256": "89f34baa16739a4d9df47a9fcf04fbb9fed12c05a47d3eb9e6109796cda894b2",
+  "retrieved_on": "2026-10-09",
+  "licence": "US Government work (public domain)",
+  "note": "Not for navigation."
+ },
+ "nasr": {
+  "source": "FAA NASR 28-day subscription, CSV extract",
+  "cycle_effective": "2026-10-01",
+  "url": "https://nfdc.faa.gov/webContent/28DaySub/extra/01_Oct_2026_APT_CSV.zip",
+  "zip_sha256": "aba48ea877f249d9b8cd63988b14b3432a6a09ad1fbe9561a5e6443c99c03dd0",
+  "retrieved_at": "2026-10-08T23:50:44-0400",
+  "licence": "US Government work (public domain)"
+ },
+ "graticule": {
+  "values": [
+   "40°42'N",
+   "40°41'N",
+   "74°11'W",
+   "74°10'W"
+  ],
+  "source": "outline_glyph_decode",
+  "confirmed_by": null,
+  "confirmed_at": null,
+  "read_at": "2026-10-09T12:04:26-0400"
+ },
+ "osm": {
+  "source": "OpenStreetMap via Overpass API",
+  "licence": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "requested_at": "2026-10-09T03:52:11Z",
+  "osm_data_timestamp": "2026-07-28T02:16:18Z",
+  "raw_sha256": "1f6f10794696d210d201581cde066ff795179ac76095952c1c985c6cbc4cb228",
+  "folder": "osm/"
+ },
+ "tools": {
+  "extract": "pdfminer.six 20260107",
+  "styles": "tools/airport_map/styles/faa_apd.json"
+ },
+ "display": {
+  "footer": "Reconstructed from FAA airport diagram AL-285 (FAA), d-TPP cycle 2610 (effective 2026-10-01 to 2026-10-29), sha256 89f34baa1673…, https://aeronav.faa.gov/d-tpp/2610/00285AD.PDF. Graticule: decoded from outlines (checked against NASR runway ends). Display only. Not for navigation. No predictions.",
+  "must_show": [
+   "chart.cycle",
+   "chart.effective_from",
+   "chart.effective_to",
+   "chart.sha256",
+   "chart.url"
+  ]
+ }
+}

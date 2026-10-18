@@ -1,0 +1,85 @@
+{
+ "SIMULATED": true,
+ "TRAINING_ONLY": true,
+ "text_only": true,
+ "generator": "eval/synthetic/generate_v4.py build() via eval/synthetic/train_ft.py",
+ "generator_commit": "302e0a4",
+ "phrasing_pools": [
+  "C",
+  "D"
+ ],
+ "heldout_pool_E_used": false,
+ "seeds": {
+  "KLGA": [
+   31001,
+   31002,
+   31003,
+   31004,
+   31005,
+   31006,
+   31007,
+   31008,
+   31009,
+   31010,
+   31011,
+   31012,
+   31013
+  ],
+  "KATL": [
+   31001,
+   31002,
+   31003,
+   31004,
+   31005,
+   31006,
+   31007,
+   31008,
+   31009,
+   31010,
+   31011,
+   31012,
+   31013
+  ]
+ },
+ "counts": {
+  "KLGA": {
+   "scenarios": 208,
+   "transmissions": 897
+  },
+  "KATL": {
+   "scenarios": 208,
+   "transmissions": 897
+  }
+ },
+ "transmissions_total": 1794,
+ "instruction_counts": {
+  "CROSS": 364,
+  "CROSSING_COMPLETE": 26,
+  "GO_AROUND": 52,
+  "HOLD_SHORT": 95,
+  "LANDING_CLEARANCE": 676,
+  "LUAW": 156,
+  "OTHER": 104,
+  "TAKEOFF_CLEARANCE": 260,
+  "TAXI": 61
+ },
+ "unique_texts": 1777,
+ "excluded_for_heldout_overlap": {
+  "exact_overlap": 0,
+  "normalized_overlap": 0
+ },
+ "overlap_with_heldout3_heldout4_after_exclusion": {
+  "exact": 0,
+  "normalized": 0
+ },
+ "target_schema": "venue/llm_fallback.py {speaker_role, callsign, runway, instruction, taxiways}",
+ "pairs_format": "chat: system = llm_fallback SYSTEM + airport JSON schema + \"Output JSON only.\"; user = Transmission: \"\"\"text\"\"\" (as llm_fallback sends); assistant = gold JSON",
+ "pairs_jsonl": {
+  "sha256": "049b4f3fdd19f0359164debd8081ad6aad737d7e41e660d4440c89a3de57bb89",
+  "bytes": 6354024,
+  "tracked_in_git": false,
+  "why": "over the 5 MB pre-commit limit (the system prompt repeats per row); regenerate with this script (deterministic)"
+ },
+ "generator_script_sha256": "59de2c8e1a9eac473b4044e3a8934a23bd4a36fac47f5091457f47dee6555936",
+ "generator_commit_note": "generator_commit = HEAD when generated; train_ft.py itself lands in the next commit (see generator_script_sha256)"
+}

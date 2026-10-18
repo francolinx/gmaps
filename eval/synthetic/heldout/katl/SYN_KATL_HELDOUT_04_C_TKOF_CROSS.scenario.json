@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "C_TKOF_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7301,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "T",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American two thirty one, runway two seven right, wind two seven zero at eight, cleared for takeoff.",
+   "id": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared for takeoff runway two seven right, American two thirty one.",
+   "id": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "United seven forty eight, at Tango cross runway two seven right.",
+   "id": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway two seven right at Tango, United seven forty eight.",
+   "id": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_03"
+  }
+ ]
+}

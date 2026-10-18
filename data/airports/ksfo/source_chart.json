@@ -1,0 +1,39 @@
+{
+ "id": "SFO-FAA-2610",
+ "kind": "faa_diagram",
+ "title": "FAA San Francisco Intl airport diagram, cycle 2610, 00375AD.PDF",
+ "uri": "https://aeronav.faa.gov/d-tpp/2610/00375AD.PDF",
+ "local_path": "sources/sfo_faa_2610_00375AD.pdf",
+ "sha256": "40018bd03c5fb1f6b54faacd6a05503f97c7ceb7d79eff2ae317325a250938fb",
+ "retrieved_on": "2026-10-08",
+ "effective_from": "2026-10-01",
+ "effective_to": "2026-10-29",
+ "dtpp_cycle": "2610",
+ "dtpp_metafile": "https://aeronav.faa.gov/d-tpp/2610/xml_data/d-TPP_Metafile.xml",
+ "apd_record": {
+  "chartseq": "70000",
+  "chart_code": "APD",
+  "chart_name": "AIRPORT DIAGRAM",
+  "useraction": "",
+  "pdf_name": "00375AD.PDF",
+  "cn_flg": "N",
+  "cnsection": "",
+  "cnpage": "",
+  "bvsection": "",
+  "bvpage": "322",
+  "procuid": "1913",
+  "two_colored": "Y",
+  "civil": "C",
+  "faanfd18": "",
+  "copter": "",
+  "amdtnum": "",
+  "amdtdate": ""
+ },
+ "airport": {
+  "ID": "SAN FRANCISCO INTL",
+  "apt_ident": "SFO",
+  "icao_ident": "KSFO",
+  "alnum": "375"
+ },
+ "chart_code": null
+}

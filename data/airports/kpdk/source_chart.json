@@ -1,0 +1,39 @@
+{
+ "id": "PDK-FAA-2610",
+ "kind": "faa_diagram",
+ "title": "FAA Dekalb-Peachtree airport diagram, cycle 2610, 00469AD.PDF",
+ "uri": "https://aeronav.faa.gov/d-tpp/2610/00469AD.PDF",
+ "local_path": "sources/pdk_faa_2610_00469AD.pdf",
+ "sha256": "424430bf990a787cad5a37faf58c288b515b656b29a2a54d474e3ed8aa75bacf",
+ "retrieved_on": "2026-10-09",
+ "effective_from": "2026-10-01",
+ "effective_to": "2026-10-29",
+ "dtpp_cycle": "2610",
+ "dtpp_metafile": "https://aeronav.faa.gov/d-tpp/2610/xml_data/d-TPP_Metafile.xml",
+ "apd_record": {
+  "chartseq": "70000",
+  "chart_code": "APD",
+  "chart_name": "AIRPORT DIAGRAM",
+  "useraction": "",
+  "pdf_name": "00469AD.PDF",
+  "cn_flg": "N",
+  "cnsection": "",
+  "cnpage": "",
+  "bvsection": "",
+  "bvpage": "55",
+  "procuid": "2349",
+  "two_colored": "Y",
+  "civil": "C",
+  "faanfd18": "",
+  "copter": "",
+  "amdtnum": "",
+  "amdtdate": ""
+ },
+ "airport": {
+  "ID": "DEKALB-PEACHTREE",
+  "apt_ident": "PDK",
+  "icao_ident": "KPDK",
+  "alnum": "469"
+ },
+ "chart_code": null
+}

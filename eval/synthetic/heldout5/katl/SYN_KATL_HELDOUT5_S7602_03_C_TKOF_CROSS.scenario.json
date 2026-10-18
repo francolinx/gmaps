@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7602_03_C_TKOF_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "C_TKOF_CROSS",
+ "basis": "R2 crossing vs active takeoff (3-7-2g1)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7602,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "R3",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United twenty eight hundred, runway two seven left, cleared for takeoff, turn left heading two seven zero.",
+   "id": "SYN_KATL_HELDOUT5_S7602_03_C_TKOF_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Roger, cleared for takeoff two seven left, United twenty eight hundred.",
+   "id": "SYN_KATL_HELDOUT5_S7602_03_C_TKOF_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "American niner two five seven, cross runway two seven left at Romeo three, hold short of runway two seven right.",
+   "id": "SYN_KATL_HELDOUT5_S7602_03_C_TKOF_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway two seven left at Romeo three, American niner two five seven.",
+   "id": "SYN_KATL_HELDOUT5_S7602_03_C_TKOF_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

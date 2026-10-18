@@ -1,0 +1,11 @@
+# CPU-only cloud box (tools/cloud/setup.sh). Versions = the Spark's .venv (Python 3.12).
+# Airport pipeline (tools/build_airport.py, tools/airport_map/*):
+numpy==2.5.3
+pillow==12.3.0
+pdfminer.six==20260107
+# Graph validation (data/airports/validate.py) and the sandbox-runbook checks (venue/systemd/proposed/*.py):
+jsonschema==4.26.0
+pyyaml==6.0.1
+# Test runner (tests/test_suite.py):
+pytest==8.3.4
+# Not here on purpose: torch, transformers, librosa, soundfile, kokoro_onnx (ASR / synthetic audio; Spark only).

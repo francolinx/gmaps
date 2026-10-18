@@ -1,0 +1,246 @@
+{
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Delta one niner seven six, runway two six left at Delta, intersection departure, cleared for takeoff.",
+  "asr_s": 0.53,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9822
+   },
+   {
+    "w": "one",
+    "p": 0.8872
+   },
+   {
+    "w": "niner",
+    "p": 0.9307
+   },
+   {
+    "w": "seven",
+    "p": 0.9797
+   },
+   {
+    "w": "six,",
+    "p": 0.9066
+   },
+   {
+    "w": "runway",
+    "p": 0.9987
+   },
+   {
+    "w": "two",
+    "p": 0.9966
+   },
+   {
+    "w": "six",
+    "p": 0.9983
+   },
+   {
+    "w": "left",
+    "p": 0.9979
+   },
+   {
+    "w": "at",
+    "p": 0.9667
+   },
+   {
+    "w": "Delta,",
+    "p": 0.6395
+   },
+   {
+    "w": "intersection",
+    "p": 0.9944
+   },
+   {
+    "w": "departure,",
+    "p": 0.8567
+   },
+   {
+    "w": "cleared",
+    "p": 0.9989
+   },
+   {
+    "w": "for",
+    "p": 0.9994
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.9231
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Roger, cleared for takeoff, six left, delta 197.",
+  "asr_s": 0.48,
+  "words": [
+   {
+    "w": "Roger,",
+    "p": 0.7067
+   },
+   {
+    "w": "cleared",
+    "p": 0.9967
+   },
+   {
+    "w": "for",
+    "p": 0.9871
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.6625
+   },
+   {
+    "w": "six",
+    "p": 0.9621
+   },
+   {
+    "w": "left,",
+    "p": 0.9338
+   },
+   {
+    "w": "delta",
+    "p": 0.451
+   },
+   {
+    "w": "197.",
+    "p": 0.2821
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "United six four one four, runway two six left, cleared to land, wind one zero zero at one three.",
+  "asr_s": 0.637,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9867
+   },
+   {
+    "w": "six",
+    "p": 0.4564
+   },
+   {
+    "w": "four",
+    "p": 0.9739
+   },
+   {
+    "w": "one",
+    "p": 0.9551
+   },
+   {
+    "w": "four,",
+    "p": 0.9062
+   },
+   {
+    "w": "runway",
+    "p": 0.9986
+   },
+   {
+    "w": "two",
+    "p": 0.9928
+   },
+   {
+    "w": "six",
+    "p": 0.995
+   },
+   {
+    "w": "left,",
+    "p": 0.7744
+   },
+   {
+    "w": "cleared",
+    "p": 0.9965
+   },
+   {
+    "w": "to",
+    "p": 0.9494
+   },
+   {
+    "w": "land,",
+    "p": 0.92
+   },
+   {
+    "w": "wind",
+    "p": 0.9802
+   },
+   {
+    "w": "one",
+    "p": 0.9943
+   },
+   {
+    "w": "zero",
+    "p": 0.9986
+   },
+   {
+    "w": "zero",
+    "p": 0.987
+   },
+   {
+    "w": "at",
+    "p": 0.9652
+   },
+   {
+    "w": "one",
+    "p": 0.9923
+   },
+   {
+    "w": "three.",
+    "p": 0.9648
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Runway two six left, cleared to land, United six four one four.",
+  "asr_s": 0.551,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.6864
+   },
+   {
+    "w": "two",
+    "p": 0.9799
+   },
+   {
+    "w": "six",
+    "p": 0.9927
+   },
+   {
+    "w": "left,",
+    "p": 0.9055
+   },
+   {
+    "w": "cleared",
+    "p": 0.9966
+   },
+   {
+    "w": "to",
+    "p": 0.508
+   },
+   {
+    "w": "land,",
+    "p": 0.9455
+   },
+   {
+    "w": "United",
+    "p": 0.7826
+   },
+   {
+    "w": "six",
+    "p": 0.8176
+   },
+   {
+    "w": "four",
+    "p": 0.9621
+   },
+   {
+    "w": "one",
+    "p": 0.9875
+   },
+   {
+    "w": "four.",
+    "p": 0.9045
+   }
+  ]
+ }
+}

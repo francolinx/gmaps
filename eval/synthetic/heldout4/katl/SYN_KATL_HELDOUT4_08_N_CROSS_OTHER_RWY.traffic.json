@@ -1,0 +1,32 @@
+{
+ "id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "DAL1200",
+  "DAL1246",
+  "DAL4532",
+  "FFT1987",
+  "FFT2100",
+  "FFT2400",
+  "JBU8274",
+  "N2665Z",
+  "SWA9457",
+  "UAL2406"
+ ],
+ "realistic": [
+  "DAL1200",
+  "DAL1246",
+  "DAL4532",
+  "FFT1987",
+  "FFT2100",
+  "FFT2223",
+  "FFT2400",
+  "JBU8274",
+  "N2665Z",
+  "NKS6373",
+  "SWA9002",
+  "SWA9457",
+  "UAL2406"
+ ]
+}

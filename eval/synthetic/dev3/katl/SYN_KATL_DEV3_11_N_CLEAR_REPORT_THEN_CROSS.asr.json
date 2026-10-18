@@ -1,0 +1,22 @@
+{
+ "SYN_KATL_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Endeavour 2004, runway 9 a right, cleared to land.",
+  "asr_s": 0.191
+ },
+ "SYN_KATL_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "Clear to land Niner right, Endeavour 2004.",
+  "asr_s": 0.175
+ },
+ "SYN_KATL_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Endeavour 2004, clear of runway Niner right.",
+  "asr_s": 0.173
+ },
+ "SYN_KATL_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "Jet Blue Niner 5 Niner, cross runway Niner right at November 2.",
+  "asr_s": 0.216
+ },
+ "SYN_KATL_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Cross Niner right at November 2, JetBlue Niner 5 Niner.",
+  "asr_s": 0.215
+ }
+}

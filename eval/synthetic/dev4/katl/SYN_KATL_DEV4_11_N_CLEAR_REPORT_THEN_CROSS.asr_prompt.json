@@ -1,0 +1,22 @@
+{
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "United five hundred, runway two seven right, wind two zero zero at four, cleared to land.",
+  "asr_s": 0.223
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "United five hundred, roger, cleared to land runway two seven right.",
+  "asr_s": 0.202
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "United 500, cleared runway two seven right at Lima five.",
+  "asr_s": 0.178
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "November seven seven zero four kilo, taxi via November five, cross runway two seven right.",
+  "asr_s": 0.218
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Crossing runway two seven right at November five, November seven seven zero four kilo.",
+  "asr_s": 0.202
+ }
+}

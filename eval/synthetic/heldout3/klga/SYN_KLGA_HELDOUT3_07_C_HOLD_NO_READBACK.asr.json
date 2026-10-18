@@ -1,0 +1,26 @@
+{
+ "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_00": {
+  "text": "Southwest 808, runway 22 cleared to land.",
+  "asr_s": 0.181
+ },
+ "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_01": {
+  "text": "Southwest 808, Roger. Clear to land runway 22.",
+  "asr_s": 0.18
+ },
+ "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_02": {
+  "text": "United 1094, hold short of runway 22, traffic landing runway 22.",
+  "asr_s": 0.203
+ },
+ "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_03": {
+  "text": "Can I count my score, Roger?",
+  "asr_s": 0.155
+ },
+ "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_04": {
+  "text": "910-94, backhole construction.",
+  "asr_s": 0.172
+ },
+ "SYN_KLGA_HELDOUT3_07_C_HOLD_NO_READBACK_05": {
+  "text": "United 1094, holding short of runway 22.",
+  "asr_s": 0.178
+ }
+}

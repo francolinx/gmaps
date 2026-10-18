@@ -1,0 +1,31 @@
+{
+ "SIMULATED": true,
+ "EVALUATION_ONLY": true,
+ "text_only": true,
+ "generated_after_frozen_commit": "51aee83",
+ "generator": "eval/synthetic/generate_v4.py build() via eval/synthetic/make_heldout5.py",
+ "phrasing_pool": "E",
+ "seeds": [
+  7601,
+  7602,
+  7603
+ ],
+ "counts": {
+  "KATL": {
+   "scenarios": 48,
+   "transmissions": 207
+  },
+  "KLGA": {
+   "scenarios": 48,
+   "transmissions": 207
+  }
+ },
+ "unique_normalized_texts": 413,
+ "text_overlap_normalized": {
+  "train_ft": 0,
+  "heldout4": 0,
+  "heldout3": 0,
+  "dev4": 0
+ },
+ "note": "Same pool E templates as heldout4 (no new 7110.65 realizations exist); new seeds give new aircraft, runways, taxiways and draws."
+}

@@ -1,0 +1,31 @@
+{
+ "id": "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "expected_readback_mismatch": true,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "UAL2163"
+    ],
+    "runway": "27L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "UAL2163"
+    ],
+    "runway": null,
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY_01"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Frontier 2100, runway two six left, cleared to land, wind calm.",
+  "asr_s": 0.208
+ },
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Runway two six left, cleared to land, Frontier 2100.",
+  "asr_s": 0.197
+ },
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_02": {
+  "text": "Twin Cessna two six six five Zulu, cross runway niner left at November five, hold short of runway eight left.",
+  "asr_s": 0.262
+ },
+ "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Fox runway niner left a number five, with Tesla 26652.",
+  "asr_s": 0.197
+ }
+}

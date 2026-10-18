@@ -1,0 +1,294 @@
+{
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_00": {
+  "text": "United eight eight zero five, number two, runway two seven right, cleared to land.",
+  "asr_s": 0.561,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9888
+   },
+   {
+    "w": "eight",
+    "p": 0.6657
+   },
+   {
+    "w": "eight",
+    "p": 0.9588
+   },
+   {
+    "w": "zero",
+    "p": 0.9964
+   },
+   {
+    "w": "five,",
+    "p": 0.5918
+   },
+   {
+    "w": "number",
+    "p": 0.9914
+   },
+   {
+    "w": "two,",
+    "p": 0.9104
+   },
+   {
+    "w": "runway",
+    "p": 0.9997
+   },
+   {
+    "w": "two",
+    "p": 0.997
+   },
+   {
+    "w": "seven",
+    "p": 0.9981
+   },
+   {
+    "w": "right,",
+    "p": 0.9532
+   },
+   {
+    "w": "cleared",
+    "p": 0.998
+   },
+   {
+    "w": "to",
+    "p": 0.953
+   },
+   {
+    "w": "land.",
+    "p": 0.9524
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_01": {
+  "text": "Runway two seven right, cleared to land, United eight eight zero five.",
+  "asr_s": 0.457,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.6268
+   },
+   {
+    "w": "two",
+    "p": 0.9746
+   },
+   {
+    "w": "seven",
+    "p": 0.9958
+   },
+   {
+    "w": "right,",
+    "p": 0.9299
+   },
+   {
+    "w": "cleared",
+    "p": 0.9936
+   },
+   {
+    "w": "to",
+    "p": 0.8393
+   },
+   {
+    "w": "land,",
+    "p": 0.9355
+   },
+   {
+    "w": "United",
+    "p": 0.8273
+   },
+   {
+    "w": "eight",
+    "p": 0.7153
+   },
+   {
+    "w": "eight",
+    "p": 0.9848
+   },
+   {
+    "w": "zero",
+    "p": 0.9796
+   },
+   {
+    "w": "five.",
+    "p": 0.9413
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_02": {
+  "text": "United 8805, go around traffic on the runway.",
+  "asr_s": 0.395,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9824
+   },
+   {
+    "w": "8805,",
+    "p": 0.3645
+   },
+   {
+    "w": "go",
+    "p": 0.9765
+   },
+   {
+    "w": "around",
+    "p": 0.9932
+   },
+   {
+    "w": "traffic",
+    "p": 0.8312
+   },
+   {
+    "w": "on",
+    "p": 0.9902
+   },
+   {
+    "w": "the",
+    "p": 0.9985
+   },
+   {
+    "w": "runway.",
+    "p": 0.8661
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_03": {
+  "text": "United 8805 is going around.",
+  "asr_s": 0.411,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9634
+   },
+   {
+    "w": "8805",
+    "p": 0.5165
+   },
+   {
+    "w": "is",
+    "p": 0.9674
+   },
+   {
+    "w": "going",
+    "p": 0.7713
+   },
+   {
+    "w": "around.",
+    "p": 0.913
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_04": {
+  "text": "Delta three three zero three, proceed via Delta, cross runway two seven right.",
+  "asr_s": 0.44,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9861
+   },
+   {
+    "w": "three",
+    "p": 0.5685
+   },
+   {
+    "w": "three",
+    "p": 0.9796
+   },
+   {
+    "w": "zero",
+    "p": 0.9916
+   },
+   {
+    "w": "three,",
+    "p": 0.856
+   },
+   {
+    "w": "proceed",
+    "p": 0.5444
+   },
+   {
+    "w": "via",
+    "p": 0.7801
+   },
+   {
+    "w": "Delta,",
+    "p": 0.8947
+   },
+   {
+    "w": "cross",
+    "p": 0.9862
+   },
+   {
+    "w": "runway",
+    "p": 0.9976
+   },
+   {
+    "w": "two",
+    "p": 0.9943
+   },
+   {
+    "w": "seven",
+    "p": 0.9965
+   },
+   {
+    "w": "right.",
+    "p": 0.7805
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_05": {
+  "text": "Cross runway two seven right at Delta, Delta three three zero three.",
+  "asr_s": 0.451,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.8135
+   },
+   {
+    "w": "runway",
+    "p": 0.997
+   },
+   {
+    "w": "two",
+    "p": 0.9771
+   },
+   {
+    "w": "seven",
+    "p": 0.9965
+   },
+   {
+    "w": "right",
+    "p": 0.5183
+   },
+   {
+    "w": "at",
+    "p": 0.8018
+   },
+   {
+    "w": "Delta,",
+    "p": 0.5248
+   },
+   {
+    "w": "Delta",
+    "p": 0.9766
+   },
+   {
+    "w": "three",
+    "p": 0.6524
+   },
+   {
+    "w": "three",
+    "p": 0.9931
+   },
+   {
+    "w": "zero",
+    "p": 0.9904
+   },
+   {
+    "w": "three.",
+    "p": 0.861
+   }
+  ]
+ }
+}

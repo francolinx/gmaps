@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT3_13_N_LUAW_THEN_TKOF_00": {
+  "text": "Southwest 55, runway 27 left, line up the police. Traffic of Boeing 732, 5 mile mile.",
+  "asr_s": 0.248
+ },
+ "SYN_KATL_HELDOUT3_13_N_LUAW_THEN_TKOF_01": {
+  "text": "Southwest 1055, line up and wait runway 27L.",
+  "asr_s": 0.179
+ },
+ "SYN_KATL_HELDOUT3_13_N_LUAW_THEN_TKOF_02": {
+  "text": "Southwest 1055, wind 120 at 12 gusts 25, runway 27L cleared for takeoff.",
+  "asr_s": 0.232
+ },
+ "SYN_KATL_HELDOUT3_13_N_LUAW_THEN_TKOF_03": {
+  "text": "Southwest 1055 cleared for takeoff runway 27L.",
+  "asr_s": 0.178
+ }
+}

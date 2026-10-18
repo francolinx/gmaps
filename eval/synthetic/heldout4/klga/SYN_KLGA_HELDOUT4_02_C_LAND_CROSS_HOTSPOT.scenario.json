@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout4",
+ "phrasing_pool": "E",
+ "template": "C_LAND_CROSS_HOTSPOT",
+ "basis": "R1, crossing at a hot-spot taxiway",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7502,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "Q",
+  "hot_spot": "HS 2"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor fifteen fifty eight, number two, runway two two, cleared to land.",
+   "id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two two, cleared to land, Endeavor fifteen fifty eight.",
+   "id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Delta twenty one fifty two, proceed via Quebec, cross runway two two.",
+   "id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway two two at Quebec, Delta twenty one fifty two.",
+   "id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

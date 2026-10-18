@@ -1,0 +1,53 @@
+{
+ "SIMULATED": true,
+ "via": "gym eval run",
+ "rollouts": "gym/rollouts/validation_base.jsonl",
+ "model": "base",
+ "sets": {
+  "heldout4_asr": {
+   "n": 138,
+   "record_exact": 0.254,
+   "field_exact": {
+    "speaker_role": 0.529,
+    "callsign": 0.63,
+    "runway": 0.87,
+    "instruction": 0.899,
+    "taxiways": 0.775
+   },
+   "json_valid": 1.0,
+   "groundable": 0.536,
+   "record_exact_and_groundable": 0.239,
+   "failures": 0
+  },
+  "heldout4_asr_prompt": {
+   "n": 138,
+   "record_exact": 0.304,
+   "field_exact": {
+    "speaker_role": 0.536,
+    "callsign": 0.71,
+    "runway": 0.913,
+    "instruction": 0.978,
+    "taxiways": 0.783
+   },
+   "json_valid": 1.0,
+   "groundable": 0.696,
+   "record_exact_and_groundable": 0.304,
+   "failures": 0
+  },
+  "heldout5_script": {
+   "n": 414,
+   "record_exact": 0.365,
+   "field_exact": {
+    "speaker_role": 0.543,
+    "callsign": 0.894,
+    "runway": 0.957,
+    "instruction": 0.961,
+    "taxiways": 0.85
+   },
+   "json_valid": 1.0,
+   "groundable": 0.802,
+   "record_exact_and_groundable": 0.365,
+   "failures": 0
+  }
+ }
+}

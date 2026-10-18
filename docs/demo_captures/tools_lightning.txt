@@ -1,0 +1,44 @@
+# PORT=8002 MODEL=lightning PROCEDURE=v3 demo/run_track.sh tools — captured on the Spark, server 127.0.0.1:8002 (Nemotron 3.5 Lightning 30B-A3B NVFP4, vLLM v0.27.1, no drafter; parser = grammar only). SIMULATED data.
+
+--- tool loop: SIM_E1_CROSS_DURING_ROLLOUT (fictional SIM-1 map), model lightning, procedure v3, bounded tools only
+SIM_E1_CROSS_DURING_ROLLOUT: 5 transmissions -> lightning at http://127.0.0.1:8002/v1; trace /home/darkstar90/gmaps_venue/demo_runs/traces/tool_loop_toolloop-20261017-180640.jsonl
+t=    0  parse_transmission -> ledger_ingest -> lookahead
+        summary (unverified): **Transmission recorded:** ATC cleared SimAir 212 to land on runway 36 at t=0 s (event ev00001). The ledger entry added a landing‑clearance reservation for that aircraft on runway 36.
+
+**Warning posted:** None. The landing‑clearance produced no CONFLICT‑severity warnings in the ledger.
+
+**Look‑ahead
+t=    3  parse_transmission -> ledger_ingest -> lookahead
+        summary (unverified): **Transmission recorded:** At t=3 s, tower cleared SimAir 212 to land runway 36. The parser identified a LANDING_CLEARANCE event (event_id ev00002) and the ledger added it with no new warnings.
+
+**Warning posted:** None – the ledger returned empty new_warnings, and no CONFLICT severity was generated
+t=   24  parse_transmission -> ledger_ingest -> lookahead
+        summary (unverified): At t=24 s the pilot of Rescue 7 (source SIM_E1_CROSS_DURING_ROLLOUT_024) requested crossing runway 36 at Kilo. The request was ingested into the ledger (event ev00003) with no immediate warnings. The look‑ahead at t=24 s shows that aircraft SIM212 is occupying zone Z1 (window [40.4, null]) and that 
+t=   28  parse_transmission -> ledger_ingest -> post_alert
+        summary (unverified): **Transmission t=28 s**  
+The ATC instruction “Rescue seven, cross runway three six at Kilo.” was parsed as a CROSS event for RESCUE7 on runway 36 at K. Ingesting the event into the ledger created a CONFLICT warning **w0001** (crossing vs. active landing) because runway 36 already has a landing auth
+t=   31  parse_transmission -> ledger_ingest -> lookahead
+        summary (unverified): **Result:** The transmission at t=31 s was parsed as a CROSS event for RESCUE7 on runway 36 at K. Ingesting the event into the ledger produced no new warnings and cleared none. The look‑ahead at t=31 s shows a predicted occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing ru
+{
+ "turns": 5,
+ "tool_calls": 15,
+ "tool_errors": 0,
+ "duplicates_ignored": 0,
+ "unavailable_retries_refused": 0,
+ "reposts_refused": 0,
+ "recovered_after_error": 0,
+ "rounds_exhausted": 0,
+ "model_calls": 20,
+ "model_latency_s": {
+  "median": 1.303,
+  "max": 4.523,
+  "n": 20
+ },
+ "open_warnings_at_end": [
+  "w0001"
+ ]
+}
+
+--- trace files
+/home/darkstar90/gmaps_venue/demo_runs/traces/tool_loop_toolloop-20261017-180640.jsonl
+/home/darkstar90/gmaps_venue/demo_runs/traces/tool_loop_toolloop-20261017-064932.jsonl

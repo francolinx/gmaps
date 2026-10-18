@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_03_C_TKOF_CROSS_00": {
+  "text": "Endeavour 1580, runway 1-3, wind 2-8-0 at 2-1, cleared for takeoff.",
+  "asr_s": 0.256
+ },
+ "SYN_KLGA_DEV4_03_C_TKOF_CROSS_01": {
+  "text": "Endeavour 1580 cleared for takeoff runway 13.",
+  "asr_s": 0.186
+ },
+ "SYN_KLGA_DEV4_03_C_TKOF_CROSS_02": {
+  "text": "Endeavour 1391, cross runway 13 at Romeo.",
+  "asr_s": 0.19
+ },
+ "SYN_KLGA_DEV4_03_C_TKOF_CROSS_03": {
+  "text": "Crossing runway 1-3 at Romeo, Endeavour 1391.",
+  "asr_s": 0.185
+ }
+}

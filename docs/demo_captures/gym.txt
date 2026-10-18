@@ -1,0 +1,21 @@
+# demo/run_track.sh gym — captured on the Spark, server 127.0.0.1:8001 (run gmaps-parser-4b-20261017-034510). SIMULATED data.
+
+--- NeMo Gym rollouts on the held-out validation sets (orchestrated, verifier = record exact match)
+0 gym/rollouts/validation_base_failures.jsonl
+4187432 gym/rollouts/validation_base.jsonl
+2660696 gym/rollouts/validation_base_materialized_inputs.jsonl
+0 gym/rollouts/validation_gmaps-parser_failures.jsonl
+4189594 gym/rollouts/validation_gmaps-parser.jsonl
+2660696 gym/rollouts/validation_gmaps-parser_materialized_inputs.jsonl
+
+--- by set: gym/rollouts/validation_gmaps-parser.jsonl
+heldout4_asr                 n= 138 record_exact=0.652 groundable=0.754 json_valid=1.000 both=0.572 fields={'speaker_role': 0.942, 'callsign': 0.783, 'runway': 0.891, 'instruction': 0.942, 'taxiways': 0.935}
+heldout4_asr_prompt          n= 138 record_exact=0.761 groundable=0.899 json_valid=1.000 both=0.761 fields={'speaker_role': 0.971, 'callsign': 0.855, 'runway': 0.913, 'instruction': 0.993, 'taxiways': 0.957}
+heldout5_script              n= 414 record_exact=0.899 groundable=0.986 json_valid=1.000 both=0.899 fields={'speaker_role': 0.966, 'callsign': 0.993, 'runway': 0.952, 'instruction': 0.988, 'taxiways': 0.998}
+-> gym/rollouts/validation_gmaps-parser_by_set.json
+
+--- by set: gym/rollouts/validation_base.jsonl
+heldout4_asr                 n= 138 record_exact=0.254 groundable=0.536 json_valid=1.000 both=0.239 fields={'speaker_role': 0.529, 'callsign': 0.63, 'runway': 0.87, 'instruction': 0.899, 'taxiways': 0.775}
+heldout4_asr_prompt          n= 138 record_exact=0.304 groundable=0.696 json_valid=1.000 both=0.304 fields={'speaker_role': 0.536, 'callsign': 0.71, 'runway': 0.913, 'instruction': 0.978, 'taxiways': 0.783}
+heldout5_script              n= 414 record_exact=0.365 groundable=0.802 json_valid=1.000 both=0.365 fields={'speaker_role': 0.543, 'callsign': 0.894, 'runway': 0.957, 'instruction': 0.961, 'taxiways': 0.85}
+-> gym/rollouts/validation_base_by_set.json

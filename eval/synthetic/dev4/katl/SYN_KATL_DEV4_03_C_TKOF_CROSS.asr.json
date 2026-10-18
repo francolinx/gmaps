@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_00": {
+  "text": "Endeavour 1580, runway niner left, wind 280 at 21, cleared for takeoff.",
+  "asr_s": 0.241
+ },
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_01": {
+  "text": "Endeavour 1580 cleared for takeoff runway 9 or left.",
+  "asr_s": 0.193
+ },
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_02": {
+  "text": "Endeavour 1391, cross runway Niner, left at November 5",
+  "asr_s": 0.194
+ },
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_03": {
+  "text": "Crossing runway 9 are left at November 5, Endeavour 1391.",
+  "asr_s": 0.195
+ }
+}

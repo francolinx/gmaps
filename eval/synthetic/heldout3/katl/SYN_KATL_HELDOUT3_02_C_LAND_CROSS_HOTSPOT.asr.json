@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "Delta 278, wind 260 at 1-0 gusts 2-2. Runway niner left, clear to land.",
+  "asr_s": 0.258
+ },
+ "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "Delta 278, roger. Clear to land runway 9 or left.",
+  "asr_s": 0.208
+ },
+ "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "Air 379, follow the regional jet, cross runway 9 or left to go.",
+  "asr_s": 0.219
+ },
+ "SYN_KATL_HELDOUT3_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Crossing runway niner left at Delta, American 379.",
+  "asr_s": 0.19
+ }
+}

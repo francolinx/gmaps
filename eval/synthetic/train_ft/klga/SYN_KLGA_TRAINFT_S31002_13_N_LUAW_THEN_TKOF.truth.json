@@ -1,0 +1,87 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31002_13_N_LUAW_THEN_TKOF",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31002_13_N_LUAW_THEN_TKOF_00",
+   "fields": {
+    "callsigns": [
+     "N8469P"
+    ],
+    "runway": "13",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N8469P",
+    "runway": "13",
+    "instruction": "LUAW",
+    "taxiways": [
+     "N",
+     "P",
+     "R"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31002_13_N_LUAW_THEN_TKOF_01",
+   "fields": {
+    "callsigns": [
+     "N8469P"
+    ],
+    "runway": "13",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N8469P",
+    "runway": "13",
+    "instruction": "LUAW",
+    "taxiways": [
+     "N",
+     "P"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31002_13_N_LUAW_THEN_TKOF_02",
+   "fields": {
+    "callsigns": [
+     "N8469P"
+    ],
+    "runway": "13",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N8469P",
+    "runway": "13",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "N",
+     "P"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31002_13_N_LUAW_THEN_TKOF_03",
+   "fields": {
+    "callsigns": [
+     "N8469P"
+    ],
+    "runway": "13",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N8469P",
+    "runway": "13",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "N",
+     "P"
+    ]
+   }
+  }
+ ]
+}

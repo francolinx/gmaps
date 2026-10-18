@@ -1,0 +1,786 @@
+{
+ "meta": {
+  "icao": "KHWD",
+  "pdf": "data/airports/sources/hwd_faa_2610_05015AD.pdf",
+  "pdf_sha256": "a5006db945561b5d2638684ed4830be90179fe753da2c6891caf55990350c050",
+  "page_size_pt": [
+   387.36,
+   594.0
+  ],
+  "content_rotation_deg": 90,
+  "frame_size_pt": [
+   594.0,
+   387.36
+  ],
+  "chart_frame_bbox": [
+   44.72,
+   18.04,
+   549.11,
+   369.32
+  ],
+  "extractor": "pdfminer.six 20260107",
+  "styles": "tools/airport_map/styles/faa_apd.json",
+  "debug_text_layer_in_preview": false
+ },
+ "objects_total": 1108,
+ "objects_by_class": {
+  "glyph": 788,
+  "linework": 97,
+  "pavement": 89,
+  "building": 45,
+  "hot_spot": 36,
+  "graticule_line": 22,
+  "symbol": 12,
+  "arrowhead": 11,
+  "runway": 2,
+  "runway_marking": 2,
+  "label_background": 2,
+  "graticule_label": 1,
+  "frame": 1
+ },
+ "labels_total": 124,
+ "labels_by_class": {
+  "note": 54,
+  "taxiway_candidate": 29,
+  "annotation": 7,
+  "closed_marker": 7,
+  "hot_spot_label": 6,
+  "graticule": 5,
+  "elevation": 4,
+  "heading": 4,
+  "runway_end": 4,
+  "dimension": 2,
+  "runway_reference": 1,
+  "area_label": 1
+ },
+ "fill_rule": {
+  "evenodd": 976
+ },
+ "multi_subpath_objects": 302,
+ "bezier_objects": 32,
+ "dashed_objects": [
+  {
+   "index": 185,
+   "class": "linework",
+   "dash": [
+    [
+     1.23,
+     1.23
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 187,
+   "class": "linework",
+   "dash": [
+    [
+     1.23,
+     1.23
+    ],
+    0.0
+   ]
+  }
+ ],
+ "clipped_objects": [],
+ "runways": [
+  {
+   "index": 814,
+   "long_pt": 378.709,
+   "short_pt": 12.426,
+   "axis_deg": 30.3
+  },
+  {
+   "index": 815,
+   "long_pt": 206.779,
+   "short_pt": 7.337,
+   "axis_deg": 29.2
+  }
+ ],
+ "runway_end_points_pt": [
+  [
+   168.0,
+   140.79
+  ],
+  [
+   495.09,
+   331.67
+  ],
+  [
+   214.34,
+   134.47
+  ],
+  [
+   394.83,
+   235.37
+  ]
+ ],
+ "hold_line_groups": [],
+ "hot_spot_labels": [
+  "HS 1",
+  "HS 2",
+  "HS 3",
+  "HS 4",
+  "HS 5"
+ ],
+ "runway_end_labels": [
+  "10L",
+  "10R",
+  "28L",
+  "28R"
+ ],
+ "gate_leadins": [],
+ "elevations": [
+  "28",
+  "37",
+  "52"
+ ],
+ "taxiway_candidates": [
+  "A",
+  "A1",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "L",
+  "P",
+  "V",
+  "Z",
+  "Z1"
+ ],
+ "terminal_labels": [],
+ "helipad_labels": [],
+ "unclassified_numbers": [],
+ "visible_text_labels": [
+  "SW-2, 01 OCT 2026 to 29 OCT 2026",
+  "SW-2, 01 OCT 2026 to 29 OCT 2026"
+ ],
+ "label_glyph_shortfall": [],
+ "label_glyphs": [
+  {
+   "text": "0.4% UP",
+   "chars": 6,
+   "glyphs": 8
+  },
+  {
+   "text": "0.3% UP",
+   "chars": 6,
+   "glyphs": 8
+  },
+  {
+   "text": "VAR 15° E",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "(HWD)",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "HAYWARD, CALIFORNIA",
+   "chars": 18,
+   "glyphs": 18
+  },
+  {
+   "text": "HAYWARD, CALIFORNIA",
+   "chars": 18,
+   "glyphs": 18
+  },
+  {
+   "text": "(HWD)",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "AL-5015 (FAA)",
+   "chars": 12,
+   "glyphs": 12
+  },
+  {
+   "text": "AIRPORT DIAGRAM",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "AIRPORT DIAGRAM",
+   "chars": 14,
+   "glyphs": 17
+  },
+  {
+   "text": "S-30, D-75",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "RWY 10R-28L",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "S-13",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "RWY 10L-28R",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "HAYWARD EXEC",
+   "chars": 11,
+   "glyphs": 12
+  },
+  {
+   "text": "HAYWARD EXEC",
+   "chars": 11,
+   "glyphs": 12
+  },
+  {
+   "text": "REIL Rwys 10R and 28L",
+   "chars": 17,
+   "glyphs": 17
+  },
+  {
+   "text": "MIRL Rwy 10R-28L",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "MIRL Rwy 10L-28R",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "122°07.0'W",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "122°07.5'W",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "122°08.0'W",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "37°39.5'N",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "37°40.0'N",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "28",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "37",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "28",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "RUN-UP",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "28L",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "RAMP",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "FBO",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "RAMP",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "FBO",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "RAMP",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "TRANSIENT",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "GA",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "STATION",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "FIRE",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "ADMINISTRATION",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "TERMINAL/AIRPORT",
+   "chars": 16,
+   "glyphs": 16
+  },
+  {
+   "text": "WEST HANGARS",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "HANGARS",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "EAST",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "XXX",
+   "chars": 3,
+   "glyphs": 4
+  },
+  {
+   "text": "X",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "X",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "X",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "X",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "RAMP",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "FBO",
+   "chars": 3,
+   "glyphs": 5
+  },
+  {
+   "text": "TWR",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "285°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "105°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "128.05",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "CLNC DEL",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "121.4",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "GND CON",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "120.2 (CTAF) 257.8",
+   "chars": 16,
+   "glyphs": 17
+  },
+  {
+   "text": "HAYWARD TOWER",
+   "chars": 12,
+   "glyphs": 12
+  },
+  {
+   "text": "126.7",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "ATIS",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "26134",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "26134",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "5694 X 150",
+   "chars": 8,
+   "glyphs": 9
+  },
+  {
+   "text": "3108 X 75",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "enabled on all airport surfaces.",
+   "chars": 28,
+   "glyphs": 29
+  },
+  {
+   "text": "altitude reporting mode and ADS-B (if equipped)",
+   "chars": 41,
+   "glyphs": 45
+  },
+  {
+   "text": "SAID in use. Operate transponders with",
+   "chars": 33,
+   "glyphs": 35
+  },
+  {
+   "text": "105°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "285°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "FIELD",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "52",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "READBACK OF ALL RUNWAY HOLDING INSTRUCTIONS IS REQUIRED.",
+   "chars": 49,
+   "glyphs": 49
+  },
+  {
+   "text": "CAUTION: BE ALERT TO RUNWAY CROSSING CLEARANCES.",
+   "chars": 42,
+   "glyphs": 43
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "V",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "V",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "0.1° W",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "ANNUAL RATE OF CHANGE",
+   "chars": 18,
+   "glyphs": 18
+  },
+  {
+   "text": "JANUARY 2005",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "HS 1",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "HS 4",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "HS 2",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "HS 5",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "HS 5",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "HS 3",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "X",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "X",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A1",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Z1",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "10L",
+   "chars": 3,
+   "glyphs": 8
+  },
+  {
+   "text": "28R",
+   "chars": 3,
+   "glyphs": 6
+  },
+  {
+   "text": "10R",
+   "chars": 3,
+   "glyphs": 7
+  },
+  {
+   "text": "28L",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "SW-2, 01 OCT 2026 to 29 OCT 2026",
+   "chars": 25,
+   "glyphs": 0
+  },
+  {
+   "text": "SW-2, 01 OCT 2026 to 29 OCT 2026",
+   "chars": 25,
+   "glyphs": 0
+  }
+ ],
+ "unclassified_objects": [],
+ "area_labels": [
+  "GA"
+ ]
+}

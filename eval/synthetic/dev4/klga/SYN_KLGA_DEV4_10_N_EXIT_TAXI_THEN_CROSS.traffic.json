@@ -1,0 +1,31 @@
+{
+ "id": "SYN_KLGA_DEV4_10_N_EXIT_TAXI_THEN_CROSS",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL2758",
+  "EDV1835",
+  "EDV2878",
+  "FFT330",
+  "JBU1686",
+  "N907JS",
+  "NKS982",
+  "SWA1882",
+  "UAL1023",
+  "UAL824"
+ ],
+ "realistic": [
+  "AAL2758",
+  "EDV1835",
+  "EDV2878",
+  "EDV355",
+  "FFT330",
+  "JBU1686",
+  "N4566W",
+  "NKS982",
+  "SWA1882",
+  "UAL1023",
+  "UAL508",
+  "UAL824"
+ ]
+}

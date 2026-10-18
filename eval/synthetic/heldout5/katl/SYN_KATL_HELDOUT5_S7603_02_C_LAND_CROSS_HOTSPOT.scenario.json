@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7603_02_C_LAND_CROSS_HOTSPOT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "C_LAND_CROSS_HOTSPOT",
+ "basis": "R1, crossing at a hot-spot taxiway",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7603,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "C",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Twin Cessna eight six four four Tango, number two, runway eight right, cleared to land.",
+   "id": "SYN_KATL_HELDOUT5_S7603_02_C_LAND_CROSS_HOTSPOT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway eight right, cleared to land, Twin Cessna eight six four four Tango.",
+   "id": "SYN_KATL_HELDOUT5_S7603_02_C_LAND_CROSS_HOTSPOT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "United twenty five hundred, cross runway eight right at Charlie, hold short of runway two six right.",
+   "id": "SYN_KATL_HELDOUT5_S7603_02_C_LAND_CROSS_HOTSPOT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway eight right at Charlie, United twenty five hundred.",
+   "id": "SYN_KATL_HELDOUT5_S7603_02_C_LAND_CROSS_HOTSPOT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

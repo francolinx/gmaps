@@ -1,0 +1,64 @@
+{
+ "icao": "KLGA",
+ "generated_at": "2026-10-08T22:45:57-0400",
+ "chart": {
+  "publisher": "FAA Aeronautical Information Services, d-TPP airport diagram",
+  "title": "FAA LaGuardia diagram, cycle 2610, 00289AD",
+  "chart_code": "AL-289; printed revision mark 26134",
+  "cycle": "2610",
+  "effective_from": "2026-10-01",
+  "effective_to": "2026-10-29",
+  "printed_cycle_banner": "NE-2, 01 OCT 2026 to 29 OCT 2026",
+  "banner_checked_against_pdf": true,
+  "url": "https://aeronav.faa.gov/d-tpp/2610/00289AD.PDF",
+  "local_path": "data/airports/sources/lga_faa_2610_00289AD.pdf",
+  "sha256": "99951faddb8779db57ba617e6f136338a3df6df4a37dc300a749d7dd3af54b93",
+  "retrieved_on": "2026-10-03",
+  "licence": "US Government work (public domain)",
+  "note": "Not for navigation."
+ },
+ "nasr": {
+  "source": "FAA NASR 28-day subscription, CSV extract",
+  "cycle_effective": "2026-10-01",
+  "url": "https://nfdc.faa.gov/webContent/28DaySub/extra/01_Oct_2026_APT_CSV.zip",
+  "zip_sha256": "aba48ea877f249d9b8cd63988b14b3432a6a09ad1fbe9561a5e6443c99c03dd0",
+  "retrieved_at": "2026-10-08T20:17:48-0400",
+  "licence": "US Government work (public domain)"
+ },
+ "graticule": {
+  "values": [
+   "40°47'N",
+   "40°46'N",
+   "73°53'W",
+   "73°52'W"
+  ],
+  "source": "human_transcription",
+  "confirmed_by": "Franco",
+  "confirmed_at": "2026-10-08",
+  "read_at": null
+ },
+ "osm": {
+  "source": "OpenStreetMap via Overpass API",
+  "licence": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "requested_at": "2026-10-09T00:32:22Z",
+  "osm_data_timestamp": "2026-10-09T00:31:15Z",
+  "raw_sha256": "20a75e1e472cc190fb4288ddc401a5c81d59ce80edf8c6e6dfd272f8c09ab184",
+  "folder": "osm/"
+ },
+ "tools": {
+  "extract": "pdfminer.six 20260107",
+  "styles": "tools/airport_map/styles/faa_apd.json"
+ },
+ "display": {
+  "footer": "Reconstructed from FAA airport diagram AL-289, d-TPP cycle 2610 (effective 2026-10-01 to 2026-10-29), sha256 99951faddb87…, https://aeronav.faa.gov/d-tpp/2610/00289AD.PDF. Display only. Not for navigation. No predictions.",
+  "must_show": [
+   "chart.cycle",
+   "chart.effective_from",
+   "chart.effective_to",
+   "chart.sha256",
+   "chart.url"
+  ]
+ }
+}

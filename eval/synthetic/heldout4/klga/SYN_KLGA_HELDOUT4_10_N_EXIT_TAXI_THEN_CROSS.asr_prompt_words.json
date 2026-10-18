@@ -1,0 +1,298 @@
+{
+ "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_00": {
+  "text": "United 2200, runway three one, cleared to land, wind calm.",
+  "asr_s": 0.445,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9805
+   },
+   {
+    "w": "2200,",
+    "p": 0.4311
+   },
+   {
+    "w": "runway",
+    "p": 0.9756
+   },
+   {
+    "w": "three",
+    "p": 0.9955
+   },
+   {
+    "w": "one,",
+    "p": 0.6868
+   },
+   {
+    "w": "cleared",
+    "p": 0.9905
+   },
+   {
+    "w": "to",
+    "p": 0.8657
+   },
+   {
+    "w": "land,",
+    "p": 0.8631
+   },
+   {
+    "w": "wind",
+    "p": 0.8742
+   },
+   {
+    "w": "calm.",
+    "p": 0.226
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_01": {
+  "text": "Runway three one, cleared to land, United 2200.",
+  "asr_s": 0.392,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.8422
+   },
+   {
+    "w": "three",
+    "p": 0.9898
+   },
+   {
+    "w": "one,",
+    "p": 0.8157
+   },
+   {
+    "w": "cleared",
+    "p": 0.9238
+   },
+   {
+    "w": "to",
+    "p": 0.8675
+   },
+   {
+    "w": "land,",
+    "p": 0.6146
+   },
+   {
+    "w": "United",
+    "p": 0.8662
+   },
+   {
+    "w": "2200.",
+    "p": 0.6948
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_02": {
+  "text": "United 2200, exit right at Charlie Charlie, contact ground point Niner.",
+  "asr_s": 0.431,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.7776
+   },
+   {
+    "w": "2200,",
+    "p": 0.4645
+   },
+   {
+    "w": "exit",
+    "p": 0.9865
+   },
+   {
+    "w": "right",
+    "p": 0.9987
+   },
+   {
+    "w": "at",
+    "p": 0.9909
+   },
+   {
+    "w": "Charlie",
+    "p": 0.9534
+   },
+   {
+    "w": "Charlie,",
+    "p": 0.7671
+   },
+   {
+    "w": "contact",
+    "p": 0.9907
+   },
+   {
+    "w": "ground",
+    "p": 0.7046
+   },
+   {
+    "w": "point",
+    "p": 0.8826
+   },
+   {
+    "w": "Niner.",
+    "p": 0.5369
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_03": {
+  "text": "United 2200, taxi via Charlie Charlie to gate.",
+  "asr_s": 0.439,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.8849
+   },
+   {
+    "w": "2200,",
+    "p": 0.4059
+   },
+   {
+    "w": "taxi",
+    "p": 0.9737
+   },
+   {
+    "w": "via",
+    "p": 0.9382
+   },
+   {
+    "w": "Charlie",
+    "p": 0.9617
+   },
+   {
+    "w": "Charlie",
+    "p": 0.962
+   },
+   {
+    "w": "to",
+    "p": 0.938
+   },
+   {
+    "w": "gate.",
+    "p": 0.3282
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_04": {
+  "text": "Twin Tessna 4321 Sierra, cross runway three one at Zulu without delay, traffic short final.",
+  "asr_s": 0.504,
+  "words": [
+   {
+    "w": "Twin",
+    "p": 0.7769
+   },
+   {
+    "w": "Tessna",
+    "p": 0.4645
+   },
+   {
+    "w": "4321",
+    "p": 0.3975
+   },
+   {
+    "w": "Sierra,",
+    "p": 0.4483
+   },
+   {
+    "w": "cross",
+    "p": 0.9553
+   },
+   {
+    "w": "runway",
+    "p": 0.9971
+   },
+   {
+    "w": "three",
+    "p": 0.9927
+   },
+   {
+    "w": "one",
+    "p": 0.9758
+   },
+   {
+    "w": "at",
+    "p": 0.9477
+   },
+   {
+    "w": "Zulu",
+    "p": 0.9929
+   },
+   {
+    "w": "without",
+    "p": 0.987
+   },
+   {
+    "w": "delay,",
+    "p": 0.7806
+   },
+   {
+    "w": "traffic",
+    "p": 0.9969
+   },
+   {
+    "w": "short",
+    "p": 0.9917
+   },
+   {
+    "w": "final.",
+    "p": 0.4022
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_05": {
+  "text": "Cross runway three one at Zulu, twin Cessna four three two one Sierra.",
+  "asr_s": 0.445,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.915
+   },
+   {
+    "w": "runway",
+    "p": 0.9769
+   },
+   {
+    "w": "three",
+    "p": 0.9897
+   },
+   {
+    "w": "one",
+    "p": 0.8812
+   },
+   {
+    "w": "at",
+    "p": 0.5209
+   },
+   {
+    "w": "Zulu,",
+    "p": 0.5283
+   },
+   {
+    "w": "twin",
+    "p": 0.6831
+   },
+   {
+    "w": "Cessna",
+    "p": 0.9498
+   },
+   {
+    "w": "four",
+    "p": 0.6592
+   },
+   {
+    "w": "three",
+    "p": 0.7516
+   },
+   {
+    "w": "two",
+    "p": 0.8677
+   },
+   {
+    "w": "one",
+    "p": 0.9889
+   },
+   {
+    "w": "Sierra.",
+    "p": 0.7209
+   }
+  ]
+ }
+}

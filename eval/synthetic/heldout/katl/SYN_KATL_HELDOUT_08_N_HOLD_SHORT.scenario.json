@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KATL_HELDOUT_08_N_HOLD_SHORT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "N_HOLD_SHORT",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7301,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "C",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit six two five, cleared to land runway eight right.",
+   "id": "SYN_KATL_HELDOUT_08_N_HOLD_SHORT_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land eight right, Spirit six two five.",
+   "id": "SYN_KATL_HELDOUT_08_N_HOLD_SHORT_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "United one seven seven four, hold short runway eight right at Charlie.",
+   "id": "SYN_KATL_HELDOUT_08_N_HOLD_SHORT_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Holding short runway eight right at Charlie, United one seven seven four.",
+   "id": "SYN_KATL_HELDOUT_08_N_HOLD_SHORT_03"
+  }
+ ]
+}

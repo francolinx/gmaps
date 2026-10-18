@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV4_13_N_LUAW_THEN_TKOF_00": {
+  "text": "Jet Blue 2866, Runway Niner right at Romeo 3, line up and wait.",
+  "asr_s": 0.219
+ },
+ "SYN_KATL_DEV4_13_N_LUAW_THEN_TKOF_01": {
+  "text": "Line up and wait, Niner right. Jet Blue 2866.",
+  "asr_s": 0.195
+ },
+ "SYN_KATL_DEV4_13_N_LUAW_THEN_TKOF_02": {
+  "text": "Jet blue 2866, runway niner right, wind 180 at 5, cleared for takeoff.",
+  "asr_s": 0.232
+ },
+ "SYN_KATL_DEV4_13_N_LUAW_THEN_TKOF_03": {
+  "text": "Cleared for takeoff, Niner right. Jet blue 2866.",
+  "asr_s": 0.205
+ }
+}

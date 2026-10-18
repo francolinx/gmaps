@@ -1,0 +1,82 @@
+{
+ "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY_00": {
+  "text": "United 2163, runway two seven left, cleared to land, wind cost.",
+  "asr_s": 0.454,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9794
+   },
+   {
+    "w": "2163,",
+    "p": 0.5566
+   },
+   {
+    "w": "runway",
+    "p": 0.9904
+   },
+   {
+    "w": "two",
+    "p": 0.9933
+   },
+   {
+    "w": "seven",
+    "p": 0.9957
+   },
+   {
+    "w": "left,",
+    "p": 0.8005
+   },
+   {
+    "w": "cleared",
+    "p": 0.9923
+   },
+   {
+    "w": "to",
+    "p": 0.7716
+   },
+   {
+    "w": "land,",
+    "p": 0.7462
+   },
+   {
+    "w": "wind",
+    "p": 0.6754
+   },
+   {
+    "w": "cost.",
+    "p": 0.1441
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY_01": {
+  "text": "Roger, cleared to land, United 2163.",
+  "asr_s": 0.427,
+  "words": [
+   {
+    "w": "Roger,",
+    "p": 0.542
+   },
+   {
+    "w": "cleared",
+    "p": 0.9841
+   },
+   {
+    "w": "to",
+    "p": 0.8074
+   },
+   {
+    "w": "land,",
+    "p": 0.819
+   },
+   {
+    "w": "United",
+    "p": 0.6561
+   },
+   {
+    "w": "2163.",
+    "p": 0.7854
+   }
+  ]
+ }
+}

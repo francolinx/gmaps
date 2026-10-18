@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_00": {
+  "text": "United 1321, runway two six right, cleared for takeoff, turn left heading two seven zero.",
+  "asr_s": 0.234
+ },
+ "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_01": {
+  "text": "Roger, cleared for takeoff, two six right, United 1321.",
+  "asr_s": 0.196
+ },
+ "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_02": {
+  "text": "United 2312, proceed via Bravo One, cross runway two six right.",
+  "asr_s": 0.197
+ },
+ "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_03": {
+  "text": "Cross runway two six right at Bravo one, United 2312.",
+  "asr_s": 0.195
+ }
+}

@@ -1,0 +1,6 @@
+{
+ "about": "Human review notes for KLGA, read by tools/airport_map/osm.py (data, not code). Moved out of osm.py unchanged (overnight run, Oct 8/9).",
+ "gate_leadin_chart_only": {
+  "14": "chart-only: no OSM taxiway/taxilane with ref 14; OSM shows gate stands (parking_position 76-79) there. Kept chart-only."
+ }
+}

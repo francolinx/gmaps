@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV_07_N_CROSS_OTHER_RWY_00": {
+  "text": "Frontier 2203, runway Niner right, cleared to land.",
+  "asr_s": 0.219
+ },
+ "SYN_KATL_DEV_07_N_CROSS_OTHER_RWY_01": {
+  "text": "Runway 9 arrived. Clear to land. Frontier 2203.",
+  "asr_s": 0.215
+ },
+ "SYN_KATL_DEV_07_N_CROSS_OTHER_RWY_02": {
+  "text": "Frontier 2743, cross runway 26, right at Bravo 1.",
+  "asr_s": 0.221
+ },
+ "SYN_KATL_DEV_07_N_CROSS_OTHER_RWY_03": {
+  "text": "Cross runway 26, right at Bravo 1, Frontier 2743.",
+  "asr_s": 0.223
+ }
+}

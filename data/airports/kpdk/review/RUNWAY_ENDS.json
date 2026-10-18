@@ -1,0 +1,80 @@
+{
+ "icao": "KPDK",
+ "graticule_source": "outline_glyph_decode",
+ "fit": {
+  "fitted_on": "graticule intersections only",
+  "graticule_source": "outline_glyph_decode",
+  "control_points_n": 4,
+  "fit_rms_m": 0.0
+ },
+ "along_flag_m": 5.0,
+ "flagged_fit_problems": [
+  "03L",
+  "16"
+ ],
+ "diagnosis": {
+  "03L": "this end only: runway 03L/21R is drawn 16.0 m short at this end, the other end is within 0.9 m and the other runways fit: a chart drawing / extraction issue at this end, not the georeference",
+  "16": "this end only: runway 16/34 is drawn 5.8 m long at this end, the other end is within 0.0 m and the other runways fit: a chart drawing / extraction issue at this end, not the georeference"
+ },
+ "ends": [
+  {
+   "id": "03L",
+   "residual_m": 16.64,
+   "along_m": 16.63,
+   "across_m": 0.4
+  },
+  {
+   "id": "03R",
+   "residual_m": 0.99,
+   "along_m": 0.82,
+   "across_m": 0.56
+  },
+  {
+   "id": "16",
+   "residual_m": 5.87,
+   "along_m": -5.76,
+   "across_m": -1.13
+  },
+  {
+   "id": "21L",
+   "residual_m": 0.67,
+   "along_m": 0.09,
+   "across_m": -0.66
+  },
+  {
+   "id": "21R",
+   "residual_m": 1.79,
+   "along_m": -0.86,
+   "across_m": -1.57
+  },
+  {
+   "id": "34",
+   "residual_m": 0.53,
+   "along_m": 0.04,
+   "across_m": -0.53
+  }
+ ],
+ "runways": [
+  {
+   "runway": "03L/21R",
+   "nasr_length_ft": 3746,
+   "diagram_length_ft": 3694,
+   "length_diff_m": -16.0,
+   "bearing_diff_deg": -0.059
+  },
+  {
+   "runway": "03R/21L",
+   "nasr_length_ft": 6001,
+   "diagram_length_ft": 5998,
+   "length_diff_m": -1.0,
+   "bearing_diff_deg": -0.003
+  },
+  {
+   "runway": "16/34",
+   "nasr_length_ft": 3968,
+   "diagram_length_ft": 3987,
+   "length_diff_m": 5.8,
+   "bearing_diff_deg": -0.078
+  }
+ ]
+}

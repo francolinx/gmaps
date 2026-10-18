@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31001_10_N_EXIT_TAXI_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_EXIT_TAXI_THEN_CROSS",
+ "basis": "section 8: exit + ground taxi clearance release the landing (3-10-9, 3-7-2a)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31001,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "P",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor ten eighty seven, runway two seven left cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31001_10_N_EXIT_TAXI_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two seven left, Endeavor ten eighty seven.",
+   "id": "SYN_KATL_TRAINFT_S31001_10_N_EXIT_TAXI_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 40,
+   "speaker": "ATC",
+   "text": "Endeavor ten eighty seven, turn left next taxiway, contact ground point seven.",
+   "id": "SYN_KATL_TRAINFT_S31001_10_N_EXIT_TAXI_THEN_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 48,
+   "speaker": "ATC",
+   "text": "Endeavor ten eighty seven, continue taxiing via Sierra Golf to the ramp.",
+   "id": "SYN_KATL_TRAINFT_S31001_10_N_EXIT_TAXI_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Delta thirteen eighty three, taxi via Papa, cross runway two seven left.",
+   "id": "SYN_KATL_TRAINFT_S31001_10_N_EXIT_TAXI_THEN_CROSS_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Cross two seven left at Papa, Delta thirteen eighty three.",
+   "id": "SYN_KATL_TRAINFT_S31001_10_N_EXIT_TAXI_THEN_CROSS_05",
+   "speaker_ref": "b"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "SYN_KATL_HELDOUT4_15_RB_WRONG_RUNWAY_00": {
+  "text": "Delta 2523, runway two seven left, cleared to land, wind calm.",
+  "asr_s": 0.45,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9684
+   },
+   {
+    "w": "2523,",
+    "p": 0.5746
+   },
+   {
+    "w": "runway",
+    "p": 0.9966
+   },
+   {
+    "w": "two",
+    "p": 0.9259
+   },
+   {
+    "w": "seven",
+    "p": 0.9909
+   },
+   {
+    "w": "left,",
+    "p": 0.7545
+   },
+   {
+    "w": "cleared",
+    "p": 0.991
+   },
+   {
+    "w": "to",
+    "p": 0.6734
+   },
+   {
+    "w": "land,",
+    "p": 0.6292
+   },
+   {
+    "w": "wind",
+    "p": 0.7281
+   },
+   {
+    "w": "calm.",
+    "p": 0.1079
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_15_RB_WRONG_RUNWAY_01": {
+  "text": "Runway eight right is cleared to land, Delta 2520.",
+  "asr_s": 0.449,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.5331
+   },
+   {
+    "w": "eight",
+    "p": 0.9863
+   },
+   {
+    "w": "right",
+    "p": 0.9939
+   },
+   {
+    "w": "is",
+    "p": 0.4859
+   },
+   {
+    "w": "cleared",
+    "p": 0.7792
+   },
+   {
+    "w": "to",
+    "p": 0.8483
+   },
+   {
+    "w": "land,",
+    "p": 0.862
+   },
+   {
+    "w": "Delta",
+    "p": 0.9452
+   },
+   {
+    "w": "2520.",
+    "p": 0.1627
+   }
+  ]
+ }
+}

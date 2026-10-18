@@ -1,0 +1,18 @@
+{
+ "icao": "KBOS",
+ "checked_at": "2026-10-08T23:41:33-0400",
+ "dpi": 300,
+ "ink_level": 250,
+ "tolerance_px": 1,
+ "pdf_sha256": "36121d2286d09cb269ba7bc20d8fd95b9c1e76839d92809dcce2ce043b96de15",
+ "faa_ink_px": 913929,
+ "reconstruction_ink_px": 914276,
+ "covered_pct": 99.832,
+ "extra_pct": 0.237,
+ "thresholds": {
+  "min_covered_pct": 99.0,
+  "max_extra_pct": 2.0
+ },
+ "pass": true,
+ "note": "faithful.svg uses original FAA styling; visible-text labels use a substitute font."
+}

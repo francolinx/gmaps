@@ -1,0 +1,1207 @@
+{
+ "SIMULATED": true,
+ "bench": "venue/tool_loop_bench.py",
+ "model": "lightning [v3]",
+ "procedure": "v3",
+ "base_url": "http://127.0.0.1:8002/v1",
+ "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+ "generated": "2026-10-17T17:43:09",
+ "summary": {
+  "no_feed": {
+   "runs": 2,
+   "pass_rate": 1.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 1.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 0,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.0,
+   "model_latency_median_s": 1.107,
+   "time_to_alert_median_s": 6.392
+  },
+  "positive": {
+   "runs": 2,
+   "pass_rate": 1.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 1.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 0,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.0,
+   "model_latency_median_s": 1.087,
+   "time_to_alert_median_s": 7.191
+  },
+  "stale": {
+   "runs": 2,
+   "pass_rate": 1.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 1.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 0,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.0,
+   "model_latency_median_s": 1.105,
+   "time_to_alert_median_s": 7.115
+  },
+  "transient": {
+   "runs": 2,
+   "pass_rate": 1.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 1.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 2,
+   "faults_injected": 2,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.2,
+   "model_latency_median_s": 0.86,
+   "time_to_alert_median_s": 6.897
+  }
+ },
+ "runs": [
+  {
+   "run_id": "20261017-173913_positive_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "positive",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.092,
+    "p95": 3.588,
+    "n": 20
+   },
+   "turn_wall_s_median": 5.466,
+   "time_to_alert_s": 6.894,
+   "alert_turn_t": 28,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 5.383,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** ATC cleared SimAir\u202f212 to land on runway\u202f36 at\u202ft=0\u202fs (event\u202fev00006). The ledger entry added the landing instruction and a reservation for that aircraft on runway\u202f36.\n\n**Warning posted:** None. The landing clearance produced no CONFLICT\u2011severity warnings in the ledger.\n\n**"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 5.157,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=3\u202fs, tower cleared SimAir\u202f212 to land runway\u202f36. The parser identified a LANDING_CLEARANCE event (event_id\u202fev00007) and the ledger entry added the aircraft to the active landing reservation for runway\u202f36.\n\n**Warning posted:** No CONFLICT warning was generated (new_war"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 5.466,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "At t=24\u202fs the pilot of Rescue\u202f7 (source\u202fSIM_E1_CROSS_DURING_ROLLOUT_024) requested crossing runway\u202f36 at Kilo. The event was parsed as a CROSS_REQUEST and ingested into the ledger; no immediate conflict warnings were generated. The look\u2011ahead at t=24\u202fs shows that aircraft SIM212 is occupying the run"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 6.894,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "post_alert"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 1,
+     "summary": "**Transmission t=28\u202fs** \u2013 The ATC instruction \u201cRescue seven, cross runway three six at Kilo.\u201d was parsed as a CROSS event (event_id\u202fev00009) for runway\u202f36 at\u202fK. Ingesting that event into the ledger created a CONFLICT warning\u202fw0002 because runway\u202f36 already has a landing authorization for SIM212 (t=0"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 6.321,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=31\u202fs, pilot of RESCUE7 reported crossing runway\u202f36 at Kilo (event\u202fev00010). The event was ingested into the ledger; no new warnings were generated, and the existing warning w0002 remains open.\n\n**Warning posted:** None \u2013 the new\u2011warnings list was empty and the severit"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-173913_positive_0.jsonl"
+  },
+  {
+   "run_id": "20261017-173913_positive_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "positive",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.0815000000000001,
+    "p95": 4.517,
+    "n": 20
+   },
+   "turn_wall_s_median": 6.444,
+   "time_to_alert_s": 7.487,
+   "alert_turn_t": 28,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 5.248,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** ATC cleared SimAir\u202f212 to land on runway\u202f36 at\u202ft=0\u202fs (event\u202fev00016). The landing\u2011clearance was ingested into the ledger, creating an active reservation for that aircraft on runway\u202f36.\n\n**Warning posted:** None. The landing\u2011clearance produced no CONFLICT\u2011severity warnings,"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 5.037,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=3\u202fs, tower cleared SimAir\u202f212 to land runway\u202f36. The parser identified a LANDING_CLEARANCE event (event_id\u202fev00017) and the ledger ingested it, reserving runway\u202f36 for that aircraft.\n\n**Warning posted:** No CONFLICT\u2011severity warning was generated, so no alert was post"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 6.444,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "At t=24\u202fs the pilot of Rescue\u202f7 requested crossing runway\u202f36 at Kilo. The event was parsed as a CROSS_REQUEST (event_id\u202fev00018) and ingested into the ledger; no new warnings were generated and no existing warnings were cleared. The look\u2011ahead at t=24\u202fs shows that the landing aircraft SIM212 occupie"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.487,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "post_alert"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 1,
+     "summary": "**Transmission t=28\u202fs**  \nThe ATC instruction \u201cRescue seven, cross runway three six at Kilo.\u201d was parsed as a CROSS event (event_id\u202fev00019) for runway\u202f36 at\u202fK. Ingesting this event into the ledger produced a new CONFLICT warning\u202fw0004 (crossing vs active landing) because runway\u202f36 already has a lan"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.23,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=31\u202fs, pilot of RESCUE7 reported crossing runway\u202f36 at Kilo (event\u202fev00020). The ledger ingest added the crossing and revealed an existing open warning\u202fw0004. No new warnings were generated from this ingestion.\n\n**Warning posted:** None \u2013 the new\u2011warnings list from led"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-173913_positive_1.jsonl"
+  },
+  {
+   "run_id": "20261017-173913_no_feed_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "no_feed",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.0995,
+    "p95": 2.134,
+    "n": 20
+   },
+   "turn_wall_s_median": 4.507,
+   "time_to_alert_s": 6.54,
+   "alert_turn_t": 28,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 4.507,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** ATC cleared SimAir\u202f212 to land on runway\u202f36 at\u202ft=0\u202fs (event\u202fev00026). The landing clearance was ingested into the ledger, and a reservation for that landing was created.\n\n**Warning posted:** None. The landing clearance did not generate a CONFLICT\u2011severity warning.\n\n**Look\u2011ahead result:"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 4.408,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** A pilot readback of a landing clearance for SimAir\u202f212 on runway\u202f36 at\u202ft\u202f=\u202f3\u202fs, logged as event\u202fev00027.  \n**Warning posted:** None \u2013 the ledger had no new warnings, and the look\u2011ahead returned *prediction_unavailable* rather than a conflict.  \n**Look\u2011ahead result:** Prediction unavail"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 4.45,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission t=24\u202fs**  \nThe pilot of Rescue\u202f7 requested crossing runway\u202f36 at Kilo. The parse produced event\u202fev00028 (CROSS_REQUEST). Ingesting it into the ledger added no new warnings and cleared none. The look\u2011ahead at t=24\u202fs returned **prediction_unavailable** because no simulated observation f"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 6.54,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "post_alert"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 1,
+     "summary": "**Transmission t=28\u202fs**  \n- Parsed as a CROSS instruction for RESCUE7 to cross runway\u202f36 at K.  \n- Ingested into the ledger; a CONFLICT warning **w0006** was generated because runway\u202f36 already has a landing authorization for SIM212 (t=0\u202fs) and now a crossing authorization for RESCUE7 (t=28\u202fs).  \n\n*"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 4.815,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** A pilot (RESCUE7) read back a crossing clearance for runway 36 at Kilo at t=31\u202fs (event\u202fev00030). The ledger now shows two active runway\u201136 entries: SIM212 (landing) and RESCUE7 (crossing).\n\n**Warning posted:** None \u2013 the ingestion produced no new warnings, and there was no CONFLICT se"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-173913_no_feed_0.jsonl"
+  },
+  {
+   "run_id": "20261017-173913_no_feed_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "no_feed",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.114,
+    "p95": 2.442,
+    "n": 20
+   },
+   "turn_wall_s_median": 5.025,
+   "time_to_alert_s": 6.243,
+   "alert_turn_t": 28,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 5.025,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** ATC clearance \u201cSimAir\u202f212, runway\u202f36, cleared to land\u201d parsed as a LANDING_CLEARANCE event (event_id\u202fev00036) and ingested into the ledger. The ledger added a reservation for SIM212 on runway\u202f36.\n\n**Warning posted:** None \u2013 the ledger reported no new warnings, and there was no CONFLICT"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 4.748,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** A pilot readback of a landing clearance for SimAir\u202f212 on runway\u202f36 at\u202ft\u202f=\u202f3\u202fs (event\u202fev00037). The ledger ingested the event and reserved the runway end for that callsign.\n\n**Warning posted:** None. The ledger reported no new warnings, and the look\u2011ahead at t\u202f=\u202f3\u202fs returned *predictio"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 5.18,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** A pilot (RESCUE\u202f7) requested crossing runway\u202f36 at Kilo at\u202ft\u202f=\u202f24\u202fs (event\u202fev00038). The request was ingested into the clearance\u2011state ledger; no immediate runway\u2011conflict warnings were generated.\n\n**Warning posted:** None \u2013 the ledger returned no new warnings, and the look\u2011ahead at t\u202f"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 6.243,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "post_alert"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": true,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 1,
+     "summary": "**Transmission t=28\u202fs**  \n- Parsed as a CROSS instruction for RESCUE7 to cross runway\u202f36 at K.  \n- Ingested into the ledger; a CONFLICT warning **w0008** was generated because both SIM212 (landing) and RESCUE7 (crossing) hold authorizations on the same 18\u201136 protected area.  \n\n**Warning posted?**  \n"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 4.672,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** A pilot readback of crossing runway 36 at Kilo (RESCUE7) was parsed and ingested into the ledger at t=31\u202fs. The ledger now shows an active crossing reservation for RESCUE7 on runway\u202f36 and a concurrent landing reservation for SIM212 on the same runway end.\n\n**Warning posted:** None \u2013 t"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-173913_no_feed_1.jsonl"
+  },
+  {
+   "run_id": "20261017-173913_transient_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "transient",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 16,
+    "tool_errors": 1,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 1,
+    "rounds_exhausted": 0,
+    "model_calls": 21
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 1,
+   "model_latency_s": {
+    "median": 0.855,
+    "p95": 3.776,
+    "n": 21
+   },
+   "turn_wall_s_median": 5.989,
+   "time_to_alert_s": 6.824,
+   "alert_turn_t": 28,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 5.989,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** ATC cleared SimAir\u202f212 to land on runway\u202f36 at\u202ft=0\u202fs (event\u202fev00046, LANDING_CLEARANCE). The event was ingested into the ledger; no runway\u2011incursion warnings were generated.\n\n**Warning posted:** None \u2013 the ledger returned no new warnings of severity \"CONFLICT\".\n\n**Look\u2011ahe"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 5.008,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=3\u202fs, pilot SimAir\u202f212 was cleared to land runway\u202f36 (event\u202fev00047). The landing\u2011clearance was ingested into the ledger with no immediate warnings.\n\n**Warning posted:** None \u2013 the ledger reported zero new warnings, and no CONFLICT severity was triggered.\n\n**Look\u2011ahead"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 5.374,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "At t=24\u202fs the pilot of Rescue\u202f7 (source\u202fSIM_E1_CROSS_DURING_ROLLOUT_024) requested crossing runway\u202f36 at Kilo. The event was parsed as a CROSS_REQUEST and ingested into the ledger; no immediate warnings were generated. The look\u2011ahead at t=24\u202fs shows that aircraft SIM212 is occupying zone\u202fZ1 (runway\u202f"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 6.824,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "post_alert"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 1,
+     "summary": "**Transmission t=28\u202fs**  \nThe ATC instruction \u201cRescue seven, cross runway three six at Kilo.\u201d was parsed as a CROSS event (event_id\u202fev00049) for runway\u202f36 at\u202fK. Ingesting the event into the ledger created a CONFLICT warning\u202fw0010 because runway\u202f36 already had a landing authorization for SIM212 (t=0\u202f"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 6.592,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded.**  \nThe pilot of RESCUE7 reported crossing runway 36 at Kilo at t\u202f=\u202f31\u202fs; the event was parsed as `ev00050` and ingested into the ledger. The ledger now shows an open warning `w0010` and two active reservations (SIM212 landing, RESCUE7 crossing) on runway\u202f36.\n\n**No conflict "
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-173913_transient_0.jsonl"
+  },
+  {
+   "run_id": "20261017-173913_transient_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "transient",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 16,
+    "tool_errors": 1,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 1,
+    "rounds_exhausted": 0,
+    "model_calls": 21
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 1,
+   "model_latency_s": {
+    "median": 0.865,
+    "p95": 4.05,
+    "n": 21
+   },
+   "turn_wall_s_median": 6.043,
+   "time_to_alert_s": 6.97,
+   "alert_turn_t": 28,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 6.043,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** ATC clearance \"SimAir\u202f212, runway\u202f36, cleared to land\" parsed as a LANDING_CLEARANCE event (event_id\u202fev00056) and ingested into the ledger. The ledger added the callsign SIM212 with a LANDING status on runway\u202f36 and produced no new warnings.\n\n**Warning posted:** None \u2013 the ledger retur"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 6.037,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=3\u202fs, tower cleared SimAir\u202f212 to land runway\u202f36. The parser identified a LANDING_CLEARANCE event (event_id\u202fev00057) and the ledger ingested it, reserving runway\u202f36 for SIM212. No runway\u2011incursion warnings were generated from this ingestion.\n\n**Look\u2011ahead at t=3\u202fs:** T"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 4.786,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "At t=24\u202fs the pilot of Rescue\u202f7 (source\u202fSIM_E1_CROSS_DURING_ROLLOUT_024) requested crossing runway\u202f36 at Kilo. The event was parsed as CROSS_REQUEST and ingested into the ledger; no new warnings were generated, and the look\u2011ahead at t=24 shows no conflict (the runway\u201136 occupancy zone is clear of th"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 6.97,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "post_alert"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 1,
+     "summary": "**Transmission t=28\u202fs**  \nThe ATC instruction \u201cRescue seven, cross runway three six at Kilo.\u201d was parsed as a CROSS event (event_id\u202fev00059) for runway\u202f36 at K. Ingesting it into the ledger created a new CONFLICT warning (w0012) because runway\u202f36 already has a landing authorization for SIM212 (t=0\u202fs"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 9.269,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Result:** The transmission at t=31\u202fs was parsed as a CROSS event for RESCUE7 crossing runway\u202f36 at K. The ledger ingest recorded the event and produced no new warnings, but it did reveal an existing open warning **w0012**. The look\u2011ahead at t=31\u202fs shows a predicted occupancy overlap between SIM212"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-173913_transient_1.jsonl"
+  },
+  {
+   "run_id": "20261017-173913_stale_0",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "stale",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.1,
+    "p95": 4.094,
+    "n": 20
+   },
+   "turn_wall_s_median": 6.556,
+   "time_to_alert_s": 7.071,
+   "alert_turn_t": 28,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 4.723,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** ATC clearance \u201cSimAir\u202f212, runway\u202f36, cleared to land.\u201d parsed as a LANDING_CLEARANCE for callsign\u202fSIM212 on runway\u202f36; the event was ingested into the ledger (event_id\u202fev00066).\n\n**Warning posted:** None \u2013 the ledger had no new warnings of severity \u201cCONFLICT\u201d.\n\n**Look\u2011ahead result:** "
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 5.349,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=3\u202fs, tower cleared SimAir\u202f212 to land runway\u202f36. The parser identified a LANDING_CLEARANCE readback (event\u202fev00067); ledger ingestion added the landing intent and produced no new warnings or cleared warnings.\n\n**Warning posted:** None \u2013 the new\u2011warnings list was empty"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 6.556,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "At t=24\u202fs the pilot of Rescue\u202f7 requested crossing runway\u202f36 at Kilo. The ledger recorded a CROSS_REQUEST event (ev00068) with no immediate warnings. The look\u2011ahead at t=24 shows that the active landing aircraft SIM212 occupies the runway\u201136 zone from s\u22481460\u202fs to 1540\u202fs (well beyond the crossing poi"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.071,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "post_alert"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 1,
+     "summary": "**Transmission t=28\u202fs**  \nThe ATC instruction \u201cRescue seven, cross runway three six at Kilo.\u201d was parsed as a CROSS event (event_id\u202fev00069) for runway\u202f36 at\u202fK. Ingesting the event into the ledger produced a CONFLICT\u2011severity warning\u202fw0014 (crossing vs active landing) because runway\u202f36 already has a"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 7.689,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Result:** The transmission at t=31\u202fs was parsed as a CROSS event for RESCUE7 crossing runway\u202f36 at K. The ledger recorded the event and showed no new warnings; an existing warning w0014 remains open. The look\u2011ahead at t=31\u202fs predicts an occupancy overlap in zone\u202fZ1 between SIM212 (landing on runwa"
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-173913_stale_0.jsonl"
+  },
+  {
+   "run_id": "20261017-173913_stale_1",
+   "episode": "SIM_E1_CROSS_DURING_ROLLOUT",
+   "scenario": "stale",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 5,
+    "tool_calls": 15,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 20
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 1.1105,
+    "p95": 4.184,
+    "n": 20
+   },
+   "turn_wall_s_median": 5.087,
+   "time_to_alert_s": 7.16,
+   "alert_turn_t": 28,
+   "reference_posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "posted": [
+    "R1|XSIM:RWY:18-36|28.0|RESCUE7+SIM212"
+   ],
+   "turns": [
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_000",
+     "t": 0,
+     "wall_s": 4.749,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** ATC clearance \"Cleared to land, runway 36\" for SimAir\u202f212 (event\u202fev00076) was ingested into the ledger; the reservation for that landing is now active.\n\n**Warning posted:** None \u2014 the event produced no new warnings, and no CONFLICT\u2011severity warning was generated.\n\n**Look\u2011ahead result:*"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_003",
+     "t": 3,
+     "wall_s": 4.634,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded.** The pilot SimAir\u202f212 was read back a landing clearance on runway\u202f36 at t\u202f=\u202f3\u202fs; the ledger entry ev00077 added a reservation for that aircraft on runway\u202f36. No conflict warnings were generated. The look\u2011ahead at t\u202f=\u202f3\u202fs shows the airborne track for SIM212 is marked \u201cunavai"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_024",
+     "t": 24,
+     "wall_s": 5.087,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "At t=24\u202fs the pilot of Rescue\u202f7 (source SIM_E1_CROSS_DURING_ROLLOUT_024) requested crossing runway\u202f36 at Kilo. The event was parsed as a CROSS_REQUEST and ingested into the ledger; no new warnings were generated, and no warning was posted. The look\u2011ahead at t=24\u202fs shows that aircraft SIM212 is occup"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_028",
+     "t": 28,
+     "wall_s": 7.16,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "post_alert"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": true,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 1,
+     "summary": "**Transmission t=28\u202fs**  \n- Parsed as a CROSS instruction for RESCUE7 to cross runway\u202f36 at Kilo.  \n- Ingested into the ledger (event\u202fev00079) and created a CONFLICT warning\u202fw0016 because runway\u202f36 already has a landing authorization for SIM212 (t=0\u202fs) and a crossing authorization for RESCUE7 (t=28\u202f"
+    },
+    {
+     "source_id": "SIM_E1_CROSS_DURING_ROLLOUT_031",
+     "t": 31,
+     "wall_s": 8.456,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Result:** The transmission at t=31\u202fs was parsed as a CROSS event for RESCUE7 crossing runway\u202f36 at K. The ledger ingest recorded the event and produced no new warnings, but an existing open warning w0016 remains. The look\u2011ahead at t=31\u202fs shows a predicted occupancy overlap between SIM212 (landing "
+    }
+   ],
+   "trace": "/home/darkstar90/projects/gmaps/gym/rollouts/trace_20261017-173913_stale_1.jsonl"
+  }
+ ]
+}

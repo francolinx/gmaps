@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7603_01_C_LAND_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "C_LAND_CROSS",
+ "basis": "R1 crossing vs active landing (3-7-2g2)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7603,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "E",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Twin Cessna seven one zero zero Lima, runway two two, cleared to land, wind calm.",
+   "id": "SYN_KLGA_HELDOUT5_S7603_01_C_LAND_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two two, cleared to land, Twin Cessna seven one zero zero Lima.",
+   "id": "SYN_KLGA_HELDOUT5_S7603_01_C_LAND_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Delta twenty seven eighteen, cross runway two two at Echo without delay, traffic short final.",
+   "id": "SYN_KLGA_HELDOUT5_S7603_01_C_LAND_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway two two at Echo, Delta twenty seven eighteen.",
+   "id": "SYN_KLGA_HELDOUT5_S7603_01_C_LAND_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

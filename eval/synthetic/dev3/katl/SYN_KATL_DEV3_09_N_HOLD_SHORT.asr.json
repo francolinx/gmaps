@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV3_09_N_HOLD_SHORT_00": {
+  "text": "Jet blue 2614, runway 8 right, wind 220 at 8, cleared to land.",
+  "asr_s": 0.215
+ },
+ "SYN_KATL_DEV3_09_N_HOLD_SHORT_01": {
+  "text": "Cleared to land 8 right, jet blue 2614.",
+  "asr_s": 0.188
+ },
+ "SYN_KATL_DEV3_09_N_HOLD_SHORT_02": {
+  "text": "Spirit 2184, runway 9 are left, taxi via Echo 3, hold short of runway 8 right.",
+  "asr_s": 0.249
+ },
+ "SYN_KATL_DEV3_09_N_HOLD_SHORT_03": {
+  "text": "Holding short runway eight right, spirit 2184.",
+  "asr_s": 0.172
+ }
+}

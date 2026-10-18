@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7602_02_C_LAND_CROSS_HOTSPOT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "C_LAND_CROSS_HOTSPOT",
+ "basis": "R1, crossing at a hot-spot taxiway",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7602,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "P",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American seventeen seventy four, number two, runway two two, cleared to land.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_02_C_LAND_CROSS_HOTSPOT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two two, cleared to land, American seventeen seventy four.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_02_C_LAND_CROSS_HOTSPOT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Spirit two one zero four, cross runway two two at Papa, hold short of runway one three.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_02_C_LAND_CROSS_HOTSPOT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway two two at Papa, Spirit two one zero four.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_02_C_LAND_CROSS_HOTSPOT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

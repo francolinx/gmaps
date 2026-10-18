@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_05_C_TKOF_LAND_SAME_00": {
+  "text": "United four hundred five, runway three one, wind one two zero at one six, cleared for takeoff.",
+  "asr_s": 0.256
+ },
+ "SYN_KLGA_DEV4_05_C_TKOF_LAND_SAME_01": {
+  "text": "United 405. Cleared for takeoff, runway three one.",
+  "asr_s": 0.197
+ },
+ "SYN_KLGA_DEV4_05_C_TKOF_LAND_SAME_02": {
+  "text": "Endeavor ten eighty four, runway three one, cleared to land.",
+  "asr_s": 0.19
+ },
+ "SYN_KLGA_DEV4_05_C_TKOF_LAND_SAME_03": {
+  "text": "Endeavor 1084, roger, cleared to land, runway three one.",
+  "asr_s": 0.204
+ }
+}

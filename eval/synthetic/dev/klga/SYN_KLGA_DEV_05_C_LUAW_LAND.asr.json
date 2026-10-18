@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV_05_C_LUAW_LAND_00": {
+  "text": "American 1088, runway 4, line up and wait.",
+  "asr_s": 0.213
+ },
+ "SYN_KLGA_DEV_05_C_LUAW_LAND_01": {
+  "text": "Line up and wait runway 4, American 1088.",
+  "asr_s": 0.196
+ },
+ "SYN_KLGA_DEV_05_C_LUAW_LAND_02": {
+  "text": "Frontier 1654, Runway 4, cleared to land.",
+  "asr_s": 0.212
+ },
+ "SYN_KLGA_DEV_05_C_LUAW_LAND_03": {
+  "text": "Runway 4 cleared to land, Frontier 1654.",
+  "asr_s": 0.203
+ }
+}

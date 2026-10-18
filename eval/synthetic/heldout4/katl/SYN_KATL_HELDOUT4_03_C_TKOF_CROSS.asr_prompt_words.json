@@ -1,0 +1,206 @@
+{
+ "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_00": {
+  "text": "United 1321, runway two six right, cleared for takeoff, turn left heading two seven zero.",
+  "asr_s": 0.502,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9778
+   },
+   {
+    "w": "1321,",
+    "p": 0.64
+   },
+   {
+    "w": "runway",
+    "p": 0.9958
+   },
+   {
+    "w": "two",
+    "p": 0.9976
+   },
+   {
+    "w": "six",
+    "p": 0.9986
+   },
+   {
+    "w": "right,",
+    "p": 0.9245
+   },
+   {
+    "w": "cleared",
+    "p": 0.999
+   },
+   {
+    "w": "for",
+    "p": 0.999
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.8782
+   },
+   {
+    "w": "turn",
+    "p": 0.9111
+   },
+   {
+    "w": "left",
+    "p": 0.9996
+   },
+   {
+    "w": "heading",
+    "p": 0.8268
+   },
+   {
+    "w": "two",
+    "p": 0.9884
+   },
+   {
+    "w": "seven",
+    "p": 0.9992
+   },
+   {
+    "w": "zero.",
+    "p": 0.9658
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_01": {
+  "text": "Roger, cleared for takeoff, two six right, United 1321.",
+  "asr_s": 0.44,
+  "words": [
+   {
+    "w": "Roger,",
+    "p": 0.5963
+   },
+   {
+    "w": "cleared",
+    "p": 0.9954
+   },
+   {
+    "w": "for",
+    "p": 0.9973
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.6194
+   },
+   {
+    "w": "two",
+    "p": 0.9481
+   },
+   {
+    "w": "six",
+    "p": 0.9904
+   },
+   {
+    "w": "right,",
+    "p": 0.8924
+   },
+   {
+    "w": "United",
+    "p": 0.9668
+   },
+   {
+    "w": "1321.",
+    "p": 0.506
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_02": {
+  "text": "United 2312 proceed via Bravo One, cross runway two six right.",
+  "asr_s": 0.466,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.99
+   },
+   {
+    "w": "2312",
+    "p": 0.6382
+   },
+   {
+    "w": "proceed",
+    "p": 0.4415
+   },
+   {
+    "w": "via",
+    "p": 0.7243
+   },
+   {
+    "w": "Bravo",
+    "p": 0.9353
+   },
+   {
+    "w": "One,",
+    "p": 0.5023
+   },
+   {
+    "w": "cross",
+    "p": 0.9811
+   },
+   {
+    "w": "runway",
+    "p": 0.9982
+   },
+   {
+    "w": "two",
+    "p": 0.9795
+   },
+   {
+    "w": "six",
+    "p": 0.9974
+   },
+   {
+    "w": "right.",
+    "p": 0.8528
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_03": {
+  "text": "Cross runway two six right at Bravo one, United 2312.",
+  "asr_s": 0.456,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.8356
+   },
+   {
+    "w": "runway",
+    "p": 0.9887
+   },
+   {
+    "w": "two",
+    "p": 0.9894
+   },
+   {
+    "w": "six",
+    "p": 0.9944
+   },
+   {
+    "w": "right",
+    "p": 0.8021
+   },
+   {
+    "w": "at",
+    "p": 0.9706
+   },
+   {
+    "w": "Bravo",
+    "p": 0.7852
+   },
+   {
+    "w": "one,",
+    "p": 0.421
+   },
+   {
+    "w": "United",
+    "p": 0.9432
+   },
+   {
+    "w": "2312.",
+    "p": 0.4587
+   }
+  ]
+ }
+}

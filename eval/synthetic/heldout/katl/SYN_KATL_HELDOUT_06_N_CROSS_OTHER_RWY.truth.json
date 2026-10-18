@@ -1,0 +1,50 @@
+{
+ "id": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "EDV1475"
+    ],
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "EDV1475"
+    ],
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "DAL137"
+    ],
+    "runway": "26R",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "DAL137"
+    ],
+    "runway": "26R",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_03"
+  }
+ ]
+}

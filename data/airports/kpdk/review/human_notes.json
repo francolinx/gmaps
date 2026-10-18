@@ -1,0 +1,16 @@
+{
+ "about": "Human review notes for KPDK, read by tools/airport_map/osm.py (data, not code).",
+ "taxiway_names_pending_crop": {
+  "decided_by": "Franco",
+  "decided_at": "2026-10-09",
+  "note": "Render a crop; not decided.",
+  "rows": [
+   {
+    "label": "S",
+    "lat": 33.8781626,
+    "lon": -84.2974961,
+    "question": "chart-only \"S\": possibly a decode fragment (render a crop)"
+   }
+  ]
+ }
+}

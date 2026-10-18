@@ -1,0 +1,22 @@
+{
+ "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "American 795, Wing 280 at 11G25, runway 22, cleared to land.",
+  "asr_s": 0.222
+ },
+ "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "American 795, Roger. Clear to land runway 22.",
+  "asr_s": 0.185
+ },
+ "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "American 795, clear runway 22 at Mike.",
+  "asr_s": 0.166
+ },
+ "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "JetBlue 700, taxi buyer Echo, cross runway 22.",
+  "asr_s": 0.21
+ },
+ "SYN_KLGA_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Crossing runway 22 and Echo, jet please 700.",
+  "asr_s": 0.169
+ }
+}

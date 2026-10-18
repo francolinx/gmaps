@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7601_11_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "basis": "section 8: pilot's 'clear of the runway' releases the landing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7601,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "F",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "JetBlue eight one zero two, runway two two, cleared to land, wind two five zero at two two.",
+   "id": "SYN_KLGA_HELDOUT5_S7601_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two two, cleared to land, JetBlue eight one zero two.",
+   "id": "SYN_KLGA_HELDOUT5_S7601_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "JetBlue eight one zero two, clear of the runway.",
+   "id": "SYN_KLGA_HELDOUT5_S7601_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Spirit twenty six hundred, proceed via Foxtrot, cross runway two two.",
+   "id": "SYN_KLGA_HELDOUT5_S7601_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Cross runway two two at Foxtrot, Spirit twenty six hundred.",
+   "id": "SYN_KLGA_HELDOUT5_S7601_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "speaker_ref": "b"
+  }
+ ]
+}

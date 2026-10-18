@@ -1,0 +1,32 @@
+{
+ "about": "Human review notes for KJFK, read by tools/airport_map/osm.py (data, not code).",
+ "taxiway_names_decisions": {
+  "decided_by": "Franco",
+  "decided_at": "2026-10-09",
+  "rows": [
+   {
+    "label": "LA",
+    "lat": 40.637087,
+    "lon": -73.7876964,
+    "decision": "chart right: LA exists in OSM nearby",
+    "rule": "R5"
+   },
+   {
+    "label": "LL",
+    "lat": 40.6359149,
+    "lon": -73.7848994,
+    "decision": "chart right: LL's OSM connector is unnamed",
+    "rule": "R4"
+   }
+  ]
+ },
+ "open_items": [
+  {
+   "label": "X",
+   "status": "unresolved (Franco, Oct 9)",
+   "note": "Kept as closed_marker, out of the parser vocabulary. OSM has a VV stub at the same spot. Re-check against cycle 2611 and any KJFK NOTAMs mentioning X or VV.",
+   "lat": 40.651643,
+   "lon": -73.7824174
+  }
+ ]
+}

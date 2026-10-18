@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV3_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Spirit 2123, runway 26L, wind 120 at 12, cleared to land.",
+  "asr_s": 0.224
+ },
+ "SYN_KATL_DEV3_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Clear to land 2-6 left. Spirit-21-23.",
+  "asr_s": 0.188
+ },
+ "SYN_KATL_DEV3_08_N_CROSS_OTHER_RWY_02": {
+  "text": "November 2662 Uniform, at Lima, cross runway 9 or left.",
+  "asr_s": 0.223
+ },
+ "SYN_KATL_DEV3_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Cross 9 or left at Lima, November 2662 uniform.",
+  "asr_s": 0.218
+ }
+}

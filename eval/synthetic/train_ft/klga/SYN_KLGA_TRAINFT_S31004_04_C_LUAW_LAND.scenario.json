@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31004_04_C_LUAW_LAND",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_LUAW_LAND",
+ "basis": "R5 line up and wait vs landing, same runway (3-9-4; landing clearance carries 'traffic holding in position': CAUTION)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31004,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "G",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United eight niner four, runway four, line up and wait. Traffic a Boeing seven thirty seven, five mile final.",
+   "id": "SYN_KLGA_TRAINFT_S31004_04_C_LUAW_LAND_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Line up and wait four, United eight niner four.",
+   "id": "SYN_KLGA_TRAINFT_S31004_04_C_LUAW_LAND_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "American seven five seven, runway four, cleared to land, traffic holding in position.",
+   "id": "SYN_KLGA_TRAINFT_S31004_04_C_LUAW_LAND_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Cleared to land four, American seven five seven.",
+   "id": "SYN_KLGA_TRAINFT_S31004_04_C_LUAW_LAND_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

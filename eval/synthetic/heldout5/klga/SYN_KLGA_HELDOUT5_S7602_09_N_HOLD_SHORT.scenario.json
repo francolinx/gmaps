@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7602_09_N_HOLD_SHORT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "N_HOLD_SHORT",
+ "basis": "hold short, read back",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7602,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "E",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Delta three four zero two, number two, runway four, cleared to land.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_09_N_HOLD_SHORT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway four, cleared to land, Delta three four zero two.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_09_N_HOLD_SHORT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "American fifteen hundred, proceed via Echo, hold short of runway four.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_09_N_HOLD_SHORT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Hold short of runway four, American fifteen hundred.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_09_N_HOLD_SHORT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

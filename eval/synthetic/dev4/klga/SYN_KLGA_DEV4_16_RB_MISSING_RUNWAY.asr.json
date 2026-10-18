@@ -1,0 +1,10 @@
+{
+ "SYN_KLGA_DEV4_16_RB_MISSING_RUNWAY_00": {
+  "text": "Southwest 1038, wind 230 at 17 gusts 30, runway 13 cleared to land.",
+  "asr_s": 0.217
+ },
+ "SYN_KLGA_DEV4_16_RB_MISSING_RUNWAY_01": {
+  "text": "Southwest 1038 cleared to land",
+  "asr_s": 0.159
+ }
+}

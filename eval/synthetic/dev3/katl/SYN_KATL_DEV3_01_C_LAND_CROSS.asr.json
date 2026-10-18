@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV3_01_C_LAND_CROSS_00": {
+  "text": "United 313, runway 27R cleared to land.",
+  "asr_s": 0.19
+ },
+ "SYN_KATL_DEV3_01_C_LAND_CROSS_01": {
+  "text": "Clear to land 2-7 right. United 3-1-3.",
+  "asr_s": 0.202
+ },
+ "SYN_KATL_DEV3_01_C_LAND_CROSS_02": {
+  "text": "Delta 3906, at Sierra, cross runway 27R.",
+  "asr_s": 0.185
+ },
+ "SYN_KATL_DEV3_01_C_LAND_CROSS_03": {
+  "text": "Cross two seven right at Sierra, Delta three niner six.",
+  "asr_s": 0.207
+ }
+}

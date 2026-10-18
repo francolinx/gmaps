@@ -1,0 +1,162 @@
+{
+ "SYN_KLGA_DEV4_01_C_LAND_CROSS_00": {
+  "text": "American 669, runway two two, cleared to land.",
+  "asr_s": 0.522,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9871
+   },
+   {
+    "w": "669,",
+    "p": 0.4789
+   },
+   {
+    "w": "runway",
+    "p": 0.9868
+   },
+   {
+    "w": "two",
+    "p": 0.9977
+   },
+   {
+    "w": "two,",
+    "p": 0.9339
+   },
+   {
+    "w": "cleared",
+    "p": 0.9954
+   },
+   {
+    "w": "to",
+    "p": 0.9929
+   },
+   {
+    "w": "land.",
+    "p": 0.9608
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_01_C_LAND_CROSS_01": {
+  "text": "American 669, roger. Cleared to land, runway two two.",
+  "asr_s": 0.461,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9873
+   },
+   {
+    "w": "669,",
+    "p": 0.7422
+   },
+   {
+    "w": "roger.",
+    "p": 0.7041
+   },
+   {
+    "w": "Cleared",
+    "p": 0.8297
+   },
+   {
+    "w": "to",
+    "p": 0.9961
+   },
+   {
+    "w": "land,",
+    "p": 0.7057
+   },
+   {
+    "w": "runway",
+    "p": 0.9906
+   },
+   {
+    "w": "two",
+    "p": 0.9979
+   },
+   {
+    "w": "two.",
+    "p": 0.9793
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_01_C_LAND_CROSS_02": {
+  "text": "Frontier 900, taxi via Foxtrot, cross runway two two.",
+  "asr_s": 0.449,
+  "words": [
+   {
+    "w": "Frontier",
+    "p": 0.9885
+   },
+   {
+    "w": "900,",
+    "p": 0.7323
+   },
+   {
+    "w": "taxi",
+    "p": 0.9654
+   },
+   {
+    "w": "via",
+    "p": 0.9812
+   },
+   {
+    "w": "Foxtrot,",
+    "p": 0.4994
+   },
+   {
+    "w": "cross",
+    "p": 0.9894
+   },
+   {
+    "w": "runway",
+    "p": 0.9986
+   },
+   {
+    "w": "two",
+    "p": 0.9974
+   },
+   {
+    "w": "two.",
+    "p": 0.8936
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_01_C_LAND_CROSS_03": {
+  "text": "Crossing runway two two at Foxtrot Frontier 900.",
+  "asr_s": 0.458,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.8056
+   },
+   {
+    "w": "runway",
+    "p": 0.9338
+   },
+   {
+    "w": "two",
+    "p": 0.9934
+   },
+   {
+    "w": "two",
+    "p": 0.9764
+   },
+   {
+    "w": "at",
+    "p": 0.9133
+   },
+   {
+    "w": "Foxtrot",
+    "p": 0.9863
+   },
+   {
+    "w": "Frontier",
+    "p": 0.8045
+   },
+   {
+    "w": "900.",
+    "p": 0.7379
+   }
+  ]
+ }
+}

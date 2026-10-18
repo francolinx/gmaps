@@ -1,0 +1,246 @@
+{
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_00": {
+  "text": "Spirit 2444, wind two three zero at two one, runway one three, cleared to land.",
+  "asr_s": 0.493,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9799
+   },
+   {
+    "w": "2444,",
+    "p": 0.6602
+   },
+   {
+    "w": "wind",
+    "p": 0.7804
+   },
+   {
+    "w": "two",
+    "p": 0.6427
+   },
+   {
+    "w": "three",
+    "p": 0.9379
+   },
+   {
+    "w": "zero",
+    "p": 0.9933
+   },
+   {
+    "w": "at",
+    "p": 0.7986
+   },
+   {
+    "w": "two",
+    "p": 0.9704
+   },
+   {
+    "w": "one,",
+    "p": 0.8289
+   },
+   {
+    "w": "runway",
+    "p": 0.9971
+   },
+   {
+    "w": "one",
+    "p": 0.9819
+   },
+   {
+    "w": "three,",
+    "p": 0.9284
+   },
+   {
+    "w": "cleared",
+    "p": 0.9873
+   },
+   {
+    "w": "to",
+    "p": 0.9794
+   },
+   {
+    "w": "land.",
+    "p": 0.9629
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_01": {
+  "text": "Spirit 2444 roger, cleared to land runway one three.",
+  "asr_s": 0.412,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.987
+   },
+   {
+    "w": "2444",
+    "p": 0.7535
+   },
+   {
+    "w": "roger,",
+    "p": 0.4017
+   },
+   {
+    "w": "cleared",
+    "p": 0.9795
+   },
+   {
+    "w": "to",
+    "p": 0.9567
+   },
+   {
+    "w": "land",
+    "p": 0.9984
+   },
+   {
+    "w": "runway",
+    "p": 0.7089
+   },
+   {
+    "w": "one",
+    "p": 0.9609
+   },
+   {
+    "w": "three.",
+    "p": 0.9451
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_02": {
+  "text": "Spirit 2444, go around, climb and maintain 3000.",
+  "asr_s": 0.453,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9702
+   },
+   {
+    "w": "2444,",
+    "p": 0.5206
+   },
+   {
+    "w": "go",
+    "p": 0.9785
+   },
+   {
+    "w": "around,",
+    "p": 0.9653
+   },
+   {
+    "w": "climb",
+    "p": 0.9992
+   },
+   {
+    "w": "and",
+    "p": 0.8118
+   },
+   {
+    "w": "maintain",
+    "p": 0.9984
+   },
+   {
+    "w": "3000.",
+    "p": 0.5195
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_03": {
+  "text": "Spirit 2444 going around.",
+  "asr_s": 0.403,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9722
+   },
+   {
+    "w": "2444",
+    "p": 0.8195
+   },
+   {
+    "w": "going",
+    "p": 0.9452
+   },
+   {
+    "w": "around.",
+    "p": 0.9021
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_04": {
+  "text": "JetBlue 1023, cross runway one three at Zulu.",
+  "asr_s": 0.408,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9718
+   },
+   {
+    "w": "1023,",
+    "p": 0.7459
+   },
+   {
+    "w": "cross",
+    "p": 0.9546
+   },
+   {
+    "w": "runway",
+    "p": 0.9974
+   },
+   {
+    "w": "one",
+    "p": 0.9784
+   },
+   {
+    "w": "three",
+    "p": 0.9932
+   },
+   {
+    "w": "at",
+    "p": 0.8604
+   },
+   {
+    "w": "Zulu.",
+    "p": 0.9091
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_05": {
+  "text": "Crossing runway one three at Zulu, JetBlue 1023.",
+  "asr_s": 0.393,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.8917
+   },
+   {
+    "w": "runway",
+    "p": 0.9633
+   },
+   {
+    "w": "one",
+    "p": 0.9765
+   },
+   {
+    "w": "three",
+    "p": 0.9841
+   },
+   {
+    "w": "at",
+    "p": 0.8879
+   },
+   {
+    "w": "Zulu,",
+    "p": 0.7877
+   },
+   {
+    "w": "JetBlue",
+    "p": 0.8554
+   },
+   {
+    "w": "1023.",
+    "p": 0.4502
+   }
+  ]
+ }
+}

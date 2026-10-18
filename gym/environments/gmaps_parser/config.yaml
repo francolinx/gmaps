@@ -1,0 +1,39 @@
+config_paths:
+- resources_servers/gmaps_parser/configs/gmaps_parser.yaml
+
+gmaps_parser_agent:
+  responses_api_agents:
+    simple_agent:
+      entrypoint: app.py
+      resources_server:
+        type: resources_servers
+        name: gmaps_parser_resources_server
+      model_server:
+        type: responses_api_models
+        name: policy_model
+gmaps_parser_resources_server:
+  resources_servers:
+    gmaps_parser:
+      datasets:
+      - name: heldout5_script
+        type: validation
+        jsonl_fpath: environments/gmaps_parser/data/heldout5_script.jsonl
+        num_repeats: 1
+        license: Apache 2.0
+      - name: heldout4_asr
+        type: validation
+        jsonl_fpath: environments/gmaps_parser/data/heldout4_asr.jsonl
+        num_repeats: 1
+        license: Apache 2.0
+      - name: heldout4_asr_prompt
+        type: validation
+        jsonl_fpath: environments/gmaps_parser/data/heldout4_asr_prompt.jsonl
+        num_repeats: 1
+        license: Apache 2.0
+gmaps_parser_environment_server:
+  environment_servers:
+    legacy_agent:
+      entrypoint: app.py
+      agent_server:
+        type: responses_api_agents
+        name: gmaps_parser_agent

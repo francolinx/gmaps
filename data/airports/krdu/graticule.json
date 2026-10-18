@@ -1,0 +1,87 @@
+{
+ "icao": "KRDU",
+ "source": "outline_glyph_decode",
+ "about": "Graticule values drawn as outlines only, decoded by exact glyph shape against glyphs the same chart draws over its own text layer, and tied to the extracted grid lines by position (tools/airport_map/graticule.py). Not human-confirmed.",
+ "pdf_sha256": "438961f017677e0036276a72aa27f72bc0d1a508b7609b047d7b1ab9cab26623",
+ "read_at": "2026-10-18T07:17:00-0400",
+ "confirmed_by": null,
+ "parallels": [
+  {
+   "value": "35°53'N",
+   "lat": 35.88333333333333,
+   "line_pt_y": 225.68,
+   "label_bbox": [
+    27.21,
+    222.81,
+    49.82,
+    227.81
+   ]
+  },
+  {
+   "value": "35°52'N",
+   "lat": 35.86666666666667,
+   "line_pt_y": 434.71,
+   "label_bbox": [
+    27.21,
+    431.98,
+    49.82,
+    436.99
+   ]
+  }
+ ],
+ "meridians": [
+  {
+   "value": "78°48'W",
+   "lon": -78.8,
+   "line_pt_x": 65.74,
+   "label_bbox": [
+    52.67,
+    531.0,
+    77.28,
+    536.0
+   ]
+  },
+  {
+   "value": "78°47'W",
+   "lon": -78.78333333333333,
+   "line_pt_x": 235.87,
+   "label_bbox": [
+    222.87,
+    531.0,
+    247.48,
+    536.0
+   ]
+  }
+ ],
+ "decode": {
+  "method": "exact glyph-shape match against glyphs the same chart draws over its own text layer",
+  "training": "this chart",
+  "training_glyphs": 462,
+  "rule": "every glyph within 0.03 of a learned shape of one character, and at least 0.1 from any other character (Franco, Oct 9: unambiguous only)",
+  "per_value": [
+   {
+    "text": "78°48'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "78°47'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "35°53'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "35°52'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   }
+  ],
+  "distinct_shapes": 249,
+  "decoded_labels": 4,
+  "undecoded_groups": 43
+ }
+}

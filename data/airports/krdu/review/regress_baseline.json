@@ -1,0 +1,57 @@
+{
+ "icao": "KRDU",
+ "recorded_at": "2026-10-18T07:10:28-0400",
+ "commit": "6d7da11",
+ "metrics": {
+  "objects": {
+   "arrowhead": 28,
+   "building": 44,
+   "frame": 1,
+   "glyph": 850,
+   "graticule_label": 4,
+   "graticule_line": 11,
+   "hot_spot": 6,
+   "label_background": 2,
+   "linework": 122,
+   "pavement": 8,
+   "runway": 3,
+   "runway_marking": 2,
+   "symbol": 137,
+   "unclassified": 1
+  },
+  "labels": {
+   "annotation": 9,
+   "area_label": 1,
+   "heading": 3,
+   "hot_spot_label": 1,
+   "note": 138,
+   "runway_end": 7,
+   "taxiway_candidate": 53
+  },
+  "overlay": {
+   "covered_pct": 99.729,
+   "extra_pct": 0.338
+  },
+  "georef_m": {
+   "05L": 7.88,
+   "05R": 10.83,
+   "14": 48.75,
+   "23L": 8.76,
+   "23R": 8.77,
+   "32": 30.15
+  },
+  "hold_lines": 0,
+  "statuses": {
+   "overlay_ink": "pass",
+   "runway_ends": "fail",
+   "runway_identifiers": "fail",
+   "taxiway_names": "review",
+   "hot_spots": "pass",
+   "ils_hold_lines": "not_applicable",
+   "lahso_points": "not_applicable",
+   "unclassified": "fail",
+   "cycle_current": "pass"
+  },
+  "draft": "draft"
+ }
+}

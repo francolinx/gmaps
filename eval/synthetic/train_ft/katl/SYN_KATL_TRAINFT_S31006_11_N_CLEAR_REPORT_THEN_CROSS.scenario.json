@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31006_11_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "basis": "section 8: pilot's 'clear of the runway' releases the landing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31006,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "B1",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest two ninety eight, wind zero six zero at two two, runway two six right, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31006_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Southwest two ninety eight, roger, cleared to land runway two six right.",
+   "id": "SYN_KATL_TRAINFT_S31006_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "Southwest two ninety eight, clear runway two six right at Lima Charlie.",
+   "id": "SYN_KATL_TRAINFT_S31006_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Spirit ten forty, follow the Boeing seven thirty seven, cross runway two six right at Bravo one.",
+   "id": "SYN_KATL_TRAINFT_S31006_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Crossing runway two six right at Bravo one, Spirit ten forty.",
+   "id": "SYN_KATL_TRAINFT_S31006_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "speaker_ref": "b"
+  }
+ ]
+}

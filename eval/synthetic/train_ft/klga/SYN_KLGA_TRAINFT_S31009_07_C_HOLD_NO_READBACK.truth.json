@@ -1,0 +1,108 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31009_07_C_HOLD_NO_READBACK",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_07_C_HOLD_NO_READBACK_00",
+   "fields": {
+    "callsigns": [
+     "UAL922"
+    ],
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "UAL922",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_07_C_HOLD_NO_READBACK_01",
+   "fields": {
+    "callsigns": [
+     "UAL922"
+    ],
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL922",
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_07_C_HOLD_NO_READBACK_02",
+   "fields": {
+    "callsigns": [
+     "SWA2954"
+    ],
+    "runway": "22",
+    "instruction": "HOLD_SHORT"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "SWA2954",
+    "runway": "22",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_07_C_HOLD_NO_READBACK_03",
+   "fields": {
+    "callsigns": [
+     "SWA2954"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA2954",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_07_C_HOLD_NO_READBACK_04",
+   "fields": {
+    "callsigns": [
+     "SWA2954"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "SWA2954",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_07_C_HOLD_NO_READBACK_05",
+   "fields": {
+    "callsigns": [
+     "SWA2954"
+    ],
+    "runway": "22",
+    "instruction": "HOLD_SHORT"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA2954",
+    "runway": "22",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   }
+  }
+ ]
+}

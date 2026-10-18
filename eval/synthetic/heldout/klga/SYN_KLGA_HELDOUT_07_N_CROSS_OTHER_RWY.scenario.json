@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KLGA_HELDOUT_07_N_CROSS_OTHER_RWY",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "N_CROSS_OTHER_RWY",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7302,
+ "context": {
+  "runway": "13-31",
+  "taxiway": "W",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American one eight two one, cleared to land runway one three.",
+   "id": "SYN_KLGA_HELDOUT_07_N_CROSS_OTHER_RWY_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land one three, American one eight two one.",
+   "id": "SYN_KLGA_HELDOUT_07_N_CROSS_OTHER_RWY_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Spirit one five six niner, at Charlie cross runway four.",
+   "id": "SYN_KLGA_HELDOUT_07_N_CROSS_OTHER_RWY_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway four at Charlie, Spirit one five six niner.",
+   "id": "SYN_KLGA_HELDOUT_07_N_CROSS_OTHER_RWY_03"
+  }
+ ]
+}

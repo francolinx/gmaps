@@ -1,0 +1,33 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31013_16_RB_MISSING_RUNWAY",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "RB_MISSING_RUNWAY",
+ "basis": "readback mismatch: the landing clearance read back without the runway (R14, scored separately)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31013,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "P",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American two forty two, runway four, wind three six zero at one two, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31013_16_RB_MISSING_RUNWAY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "American two forty two, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31013_16_RB_MISSING_RUNWAY_01",
+   "speaker_ref": "a"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31004_03_C_TKOF_CROSS",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31004_03_C_TKOF_CROSS_00",
+   "fields": {
+    "callsigns": [
+     "N7666F"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N7666F",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "N",
+     "F"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31004_03_C_TKOF_CROSS_01",
+   "fields": {
+    "callsigns": [
+     "N7666F"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N7666F",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "N",
+     "F"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31004_03_C_TKOF_CROSS_02",
+   "fields": {
+    "callsigns": [
+     "FFT1084"
+    ],
+    "runway": "22",
+    "instruction": "CROSS"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "FFT1084",
+    "runway": "22",
+    "instruction": "CROSS",
+    "taxiways": [
+     "F"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31004_03_C_TKOF_CROSS_03",
+   "fields": {
+    "callsigns": [
+     "FFT1084"
+    ],
+    "runway": "22",
+    "instruction": "CROSS"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT1084",
+    "runway": "22",
+    "instruction": "CROSS",
+    "taxiways": [
+     "F"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,222 @@
+{
+ "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_00": {
+  "text": "Winchester, four zero six niner Zulu, number two, runway eight left, cleared to land.",
+  "asr_s": 0.552,
+  "words": [
+   {
+    "w": "Winchester,",
+    "p": 0.4532
+   },
+   {
+    "w": "four",
+    "p": 0.8876
+   },
+   {
+    "w": "zero",
+    "p": 0.9818
+   },
+   {
+    "w": "six",
+    "p": 0.9415
+   },
+   {
+    "w": "niner",
+    "p": 0.9169
+   },
+   {
+    "w": "Zulu,",
+    "p": 0.5599
+   },
+   {
+    "w": "number",
+    "p": 0.9831
+   },
+   {
+    "w": "two,",
+    "p": 0.855
+   },
+   {
+    "w": "runway",
+    "p": 0.9998
+   },
+   {
+    "w": "eight",
+    "p": 0.9964
+   },
+   {
+    "w": "left,",
+    "p": 0.9576
+   },
+   {
+    "w": "cleared",
+    "p": 0.9926
+   },
+   {
+    "w": "to",
+    "p": 0.7411
+   },
+   {
+    "w": "land.",
+    "p": 0.9224
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_01": {
+  "text": "runway eight left, cleared to land, twin Cessna 406-902.",
+  "asr_s": 0.502,
+  "words": [
+   {
+    "w": "runway",
+    "p": 0.8487
+   },
+   {
+    "w": "eight",
+    "p": 0.9919
+   },
+   {
+    "w": "left,",
+    "p": 0.9347
+   },
+   {
+    "w": "cleared",
+    "p": 0.9916
+   },
+   {
+    "w": "to",
+    "p": 0.905
+   },
+   {
+    "w": "land,",
+    "p": 0.9367
+   },
+   {
+    "w": "twin",
+    "p": 0.689
+   },
+   {
+    "w": "Cessna",
+    "p": 0.8295
+   },
+   {
+    "w": "406-902.",
+    "p": 0.4685
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_02": {
+  "text": "Quincesta 4087 Romeo, proceed by a charge, hold short of runway eight left.",
+  "asr_s": 0.493,
+  "words": [
+   {
+    "w": "Quincesta",
+    "p": 0.3188
+   },
+   {
+    "w": "4087",
+    "p": 0.6132
+   },
+   {
+    "w": "Romeo,",
+    "p": 0.7273
+   },
+   {
+    "w": "proceed",
+    "p": 0.9322
+   },
+   {
+    "w": "by",
+    "p": 0.5063
+   },
+   {
+    "w": "a",
+    "p": 0.9863
+   },
+   {
+    "w": "charge,",
+    "p": 0.7621
+   },
+   {
+    "w": "hold",
+    "p": 0.9912
+   },
+   {
+    "w": "short",
+    "p": 0.999
+   },
+   {
+    "w": "of",
+    "p": 0.9829
+   },
+   {
+    "w": "runway",
+    "p": 0.9975
+   },
+   {
+    "w": "eight",
+    "p": 0.994
+   },
+   {
+    "w": "left.",
+    "p": 0.8849
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_03": {
+  "text": "Hold short of runway eight left, twin Cessna pole zero eight seven Romeo.",
+  "asr_s": 0.465,
+  "words": [
+   {
+    "w": "Hold",
+    "p": 0.9195
+   },
+   {
+    "w": "short",
+    "p": 0.8632
+   },
+   {
+    "w": "of",
+    "p": 0.9644
+   },
+   {
+    "w": "runway",
+    "p": 0.9985
+   },
+   {
+    "w": "eight",
+    "p": 0.9934
+   },
+   {
+    "w": "left,",
+    "p": 0.9425
+   },
+   {
+    "w": "twin",
+    "p": 0.9178
+   },
+   {
+    "w": "Cessna",
+    "p": 0.9395
+   },
+   {
+    "w": "pole",
+    "p": 0.2824
+   },
+   {
+    "w": "zero",
+    "p": 0.9496
+   },
+   {
+    "w": "eight",
+    "p": 0.8923
+   },
+   {
+    "w": "seven",
+    "p": 0.9933
+   },
+   {
+    "w": "Romeo.",
+    "p": 0.6493
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout3",
+ "phrasing_pool": "D",
+ "template": "C_LAND_CROSS",
+ "basis": "R1 crossing vs active landing (3-7-2g2)",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7402,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "CY",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Bonanza four seven six eight Hotel, runway four cleared to land.",
+   "id": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Bonanza four seven six eight Hotel, roger, cleared to land runway four.",
+   "id": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Frontier six hundred, at Charlie Yankee cross runway four without delay.",
+   "id": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway four at Charlie Yankee, Frontier six hundred.",
+   "id": "SYN_KLGA_HELDOUT3_01_C_LAND_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

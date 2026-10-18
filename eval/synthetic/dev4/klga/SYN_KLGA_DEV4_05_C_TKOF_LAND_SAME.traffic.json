@@ -1,0 +1,31 @@
+{
+ "id": "SYN_KLGA_DEV4_05_C_TKOF_LAND_SAME",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL2624",
+  "AAL555",
+  "DAL104",
+  "EDV1084",
+  "FFT746",
+  "N7533P",
+  "N8440X",
+  "NKS663",
+  "SWA1096",
+  "UAL405"
+ ],
+ "realistic": [
+  "AAL555",
+  "DAL104",
+  "DAL257",
+  "EDV1084",
+  "FFT746",
+  "JBU630",
+  "N7533P",
+  "N8440X",
+  "N9214H",
+  "NKS663",
+  "SWA1096",
+  "UAL405"
+ ]
+}

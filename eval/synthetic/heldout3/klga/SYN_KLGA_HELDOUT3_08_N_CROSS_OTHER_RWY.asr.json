@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT3_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Endeavor 1060, winds 1-7-0 at 1-9 Augusta 28. Runway 4, cleared to land.",
+  "asr_s": 0.27
+ },
+ "SYN_KLGA_HELDOUT3_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Defense 60, Roger. Glazer land, running 4.",
+  "asr_s": 0.188
+ },
+ "SYN_KLGA_HELDOUT3_08_N_CROSS_OTHER_RWY_02": {
+  "text": "Southwest 412, follow the regional jet, cross runway 31 and Romeo.",
+  "asr_s": 0.198
+ },
+ "SYN_KLGA_HELDOUT3_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Crossing runway 31 at Romeo, Southwest 412.",
+  "asr_s": 0.177
+ }
+}

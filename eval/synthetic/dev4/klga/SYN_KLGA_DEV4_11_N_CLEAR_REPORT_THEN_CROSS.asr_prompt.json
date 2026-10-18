@@ -1,0 +1,22 @@
+{
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "American Niner 51, wind one one zero at seven, runway three one, cleared to land.",
+  "asr_s": 0.238
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "American Niner 51, roger, cleared to land runway three one.",
+  "asr_s": 0.212
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "American Niner 51, clear runway three one at Tango.",
+  "asr_s": 0.188
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "Spirit 839, cross runway three one at Whiskey.",
+  "asr_s": 0.188
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Crossing runway three one, at Whiskey, Spirit 839.",
+  "asr_s": 0.185
+ }
+}

@@ -1,0 +1,36 @@
+# demo/run_track.sh tools — captured on the Spark, server 127.0.0.1:8001 (run gmaps-parser-4b-20261017-034510). SIMULATED data.
+
+--- tool loop: SIM_E1_CROSS_DURING_ROLLOUT (fictional SIM-1 map), model base, bounded tools only
+SIM_E1_CROSS_DURING_ROLLOUT: 5 transmissions -> base at http://127.0.0.1:8001/v1; trace /home/darkstar90/gmaps_venue/demo_runs/traces/tool_loop_toolloop-20261017-064932.jsonl
+t=    0  parse_transmission -> ledger_ingest -> lookahead
+        summary (unverified): The transmission recorded a landing clearance for SimAir 212 to runway 36. The look-ahead indicated prediction unavailable due to lack of surface observations and unmodelled airborne phase for the aircraft, with no conflict detected. No warning was posted.
+t=    3  parse_transmission -> ledger_ingest -> lookahead
+        summary (unverified): The transmission recorded a landing clearance for SimAir 212 to runway 36 at t=3 s. The look-ahead indicated that SimAir 212 (T-AC1) is not yet modelled on the surface due to lack of observation, and no conflict was detected in the shared zone. No warning was posted.
+t=   24  parse_transmission -> ledger_ingest -> lookahead
+        summary (unverified): The system recorded a cross-request from vehicle "RESCUE7" to cross runway 36 at Kilo at t=24 s. Look-ahead analysis showed that the vehicle is currently outside the runway's operational zone and not entering the runway, with no conflict detected. No warning was posted.
+t=   28  parse_transmission -> ledger_ingest -> lookahead
+        summary (unverified): The transmission recorded an instruction for "RESCUE7" to cross runway 36 at "K." Look-ahead analysis showed a predicted occupancy overlap between SIM212 (landing on runway 36) and RESCUE7 (crossing at K) within zone Z1, with a time window of [47.3, 72.8] seconds. A conflict warning (w0001) was post
+t=   31  parse_transmission -> ledger_ingest -> lookahead
+        summary (unverified): The transmission recorded a pilot readback indicating "RESCUE7" is crossing runway 36 at "K." The look-ahead analysis detected an occupancy overlap between aircraft SIM212 and vehicle RESCUE7 in zone XSIM:ZONE:Z1, with a conflict window from 50.2 to 75.7 seconds. A conflict warning was posted: warni
+{
+ "turns": 5,
+ "tool_calls": 15,
+ "tool_errors": 0,
+ "duplicates_ignored": 0,
+ "unavailable_retries_refused": 0,
+ "reposts_refused": 0,
+ "recovered_after_error": 0,
+ "rounds_exhausted": 0,
+ "model_calls": 20,
+ "model_latency_s": {
+  "median": 2.308,
+  "max": 4.637,
+  "n": 20
+ },
+ "open_warnings_at_end": [
+  "w0001"
+ ]
+}
+
+--- trace files
+/home/darkstar90/gmaps_venue/demo_runs/traces/tool_loop_toolloop-20261017-064932.jsonl

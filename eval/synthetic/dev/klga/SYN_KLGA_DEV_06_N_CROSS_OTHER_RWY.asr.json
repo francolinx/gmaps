@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV_06_N_CROSS_OTHER_RWY_00": {
+  "text": "American 4-1-2, runway 4 cleared to land.",
+  "asr_s": 0.216
+ },
+ "SYN_KLGA_DEV_06_N_CROSS_OTHER_RWY_01": {
+  "text": "Runway 4 cleared to land, American 412.",
+  "asr_s": 0.208
+ },
+ "SYN_KLGA_DEV_06_N_CROSS_OTHER_RWY_02": {
+  "text": "Spirit 2347, cross runway 31 at Whiskey.",
+  "asr_s": 0.197
+ },
+ "SYN_KLGA_DEV_06_N_CROSS_OTHER_RWY_03": {
+  "text": "Cross runway 31 at Whiskey, Spirit 2347.",
+  "asr_s": 0.206
+ }
+}

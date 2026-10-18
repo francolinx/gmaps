@@ -1,0 +1,206 @@
+{
+ "SYN_KLGA_DEV4_13_N_LUAW_THEN_TKOF_00": {
+  "text": "Spirit 1094, runway four, line up and wait, traffic a regional jet, six mile final.",
+  "asr_s": 0.509,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9774
+   },
+   {
+    "w": "1094,",
+    "p": 0.5197
+   },
+   {
+    "w": "runway",
+    "p": 0.9785
+   },
+   {
+    "w": "four,",
+    "p": 0.9175
+   },
+   {
+    "w": "line",
+    "p": 0.9985
+   },
+   {
+    "w": "up",
+    "p": 0.9995
+   },
+   {
+    "w": "and",
+    "p": 0.9975
+   },
+   {
+    "w": "wait,",
+    "p": 0.5432
+   },
+   {
+    "w": "traffic",
+    "p": 0.9907
+   },
+   {
+    "w": "a",
+    "p": 0.8833
+   },
+   {
+    "w": "regional",
+    "p": 0.9701
+   },
+   {
+    "w": "jet,",
+    "p": 0.9014
+   },
+   {
+    "w": "six",
+    "p": 0.9811
+   },
+   {
+    "w": "mile",
+    "p": 0.9125
+   },
+   {
+    "w": "final.",
+    "p": 0.9324
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_13_N_LUAW_THEN_TKOF_01": {
+  "text": "Line up and wait for Spirit 1094.",
+  "asr_s": 0.407,
+  "words": [
+   {
+    "w": "Line",
+    "p": 0.9803
+   },
+   {
+    "w": "up",
+    "p": 0.9831
+   },
+   {
+    "w": "and",
+    "p": 0.995
+   },
+   {
+    "w": "wait",
+    "p": 0.9989
+   },
+   {
+    "w": "for",
+    "p": 0.7774
+   },
+   {
+    "w": "Spirit",
+    "p": 0.7933
+   },
+   {
+    "w": "1094.",
+    "p": 0.6365
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_13_N_LUAW_THEN_TKOF_02": {
+  "text": "Spirit 1094, runway four, wind two two zero at one zero gusts two one, cleared for takeoff.",
+  "asr_s": 0.564,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9811
+   },
+   {
+    "w": "1094,",
+    "p": 0.6735
+   },
+   {
+    "w": "runway",
+    "p": 0.9653
+   },
+   {
+    "w": "four,",
+    "p": 0.9816
+   },
+   {
+    "w": "wind",
+    "p": 0.9879
+   },
+   {
+    "w": "two",
+    "p": 0.9776
+   },
+   {
+    "w": "two",
+    "p": 0.9903
+   },
+   {
+    "w": "zero",
+    "p": 0.9986
+   },
+   {
+    "w": "at",
+    "p": 0.9521
+   },
+   {
+    "w": "one",
+    "p": 0.9853
+   },
+   {
+    "w": "zero",
+    "p": 0.9989
+   },
+   {
+    "w": "gusts",
+    "p": 0.5127
+   },
+   {
+    "w": "two",
+    "p": 0.9936
+   },
+   {
+    "w": "one,",
+    "p": 0.8495
+   },
+   {
+    "w": "cleared",
+    "p": 0.9989
+   },
+   {
+    "w": "for",
+    "p": 0.9993
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.9347
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_13_N_LUAW_THEN_TKOF_03": {
+  "text": "Cleared for takeoff four, Spirit 10-94.",
+  "asr_s": 0.455,
+  "words": [
+   {
+    "w": "Cleared",
+    "p": 0.9441
+   },
+   {
+    "w": "for",
+    "p": 0.9608
+   },
+   {
+    "w": "takeoff",
+    "p": 0.9905
+   },
+   {
+    "w": "four,",
+    "p": 0.7814
+   },
+   {
+    "w": "Spirit",
+    "p": 0.7083
+   },
+   {
+    "w": "10-94.",
+    "p": 0.4551
+   }
+  ]
+ }
+}

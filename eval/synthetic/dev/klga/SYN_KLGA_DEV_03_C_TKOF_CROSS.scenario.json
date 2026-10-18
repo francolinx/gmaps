@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KLGA_DEV_03_C_TKOF_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "dev",
+ "phrasing_pool": "A",
+ "template": "C_TKOF_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 9101,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "Y",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier niner six six, runway four, cleared for takeoff.",
+   "id": "SYN_KLGA_DEV_03_C_TKOF_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway four, cleared for takeoff, Frontier niner six six.",
+   "id": "SYN_KLGA_DEV_03_C_TKOF_CROSS_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Southwest two niner five six, cross runway four at Yankee.",
+   "id": "SYN_KLGA_DEV_03_C_TKOF_CROSS_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway four at Yankee, Southwest two niner five six.",
+   "id": "SYN_KLGA_DEV_03_C_TKOF_CROSS_03"
+  }
+ ]
+}

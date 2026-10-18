@@ -1,0 +1,16 @@
+{
+ "about": "Human review notes for KAHN, read by tools/airport_map/osm.py (data, not code).",
+ "taxiway_names_decisions": {
+  "decided_by": "Franco",
+  "decided_at": "2026-10-09",
+  "rows": [
+   {
+    "label": "B",
+    "lat": 33.9498985,
+    "lon": -83.3224091,
+    "decision": "chart right: the label sits where OSM's B3 ends and B continues",
+    "rule": "R5"
+   }
+  ]
+ }
+}

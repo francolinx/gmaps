@@ -1,0 +1,270 @@
+{
+  "checked_at": "2026-10-18T13:23:26.459990+00:00",
+  "schema_valid": true,
+  "airports": [
+    {
+      "airport": "KBOS",
+      "errors": [
+        "missing source file: sources/lga_resources_addendum14.txt",
+        "missing source file: sources/joe_design_addendum11.txt",
+        "missing source file: sources/gmaps_master_reference.txt"
+      ],
+      "counts": {
+        "surfaces": 40,
+        "runway_ends": 12,
+        "nodes": 6,
+        "segments": 7,
+        "hold_points": 4,
+        "zones": 2,
+        "route_templates": 1
+      },
+      "expert_review": "pending",
+      "metric_prediction_ready": false
+    },
+    {
+      "airport": "KLGA",
+      "errors": [
+        "missing source file: sources/lga_resources_addendum14.txt",
+        "missing source file: sources/joe_design_addendum11.txt",
+        "missing source file: sources/gmaps_master_reference.txt",
+        "missing source file: sources/notes_from_joe.txt"
+      ],
+      "counts": {
+        "surfaces": 40,
+        "runway_ends": 4,
+        "nodes": 5,
+        "segments": 3,
+        "hold_points": 5,
+        "zones": 3,
+        "route_templates": 2
+      },
+      "expert_review": "pending",
+      "metric_prediction_ready": false
+    }
+  ],
+  "self_tests": [
+    {
+      "name": "invented_geometry",
+      "passed": true,
+      "rejected_by": [
+        "schema:nodes/0/geometry: {'x': 12, 'y': 13} is not of type 'null'"
+      ]
+    },
+    {
+      "name": "guessed_segment_length",
+      "passed": true,
+      "rejected_by": [
+        "schema:segments/0/length_m: 50 is not of type 'null'"
+      ]
+    },
+    {
+      "name": "prediction_enabled_on_draft",
+      "passed": true,
+      "rejected_by": [
+        "schema:usability/metric_prediction: False was expected"
+      ]
+    },
+    {
+      "name": "routing_enabled_on_draft",
+      "passed": true,
+      "rejected_by": [
+        "schema:segments/0/routing_enabled: False was expected"
+      ]
+    },
+    {
+      "name": "duplicate_entity_id",
+      "passed": true,
+      "rejected_by": [
+        "duplicate entity ID"
+      ]
+    },
+    {
+      "name": "cross_airport_endpoint",
+      "passed": true,
+      "rejected_by": [
+        "dangling segment endpoint",
+        "hold side is not an approach endpoint"
+      ]
+    },
+    {
+      "name": "disconnected_route",
+      "passed": true,
+      "rejected_by": [
+        "disconnected route walk",
+        "disconnected route walk"
+      ]
+    },
+    {
+      "name": "unknown_source",
+      "passed": true,
+      "rejected_by": [
+        "dangling evidence source: KBOS:N:RWY09-27_RWY15R-33L"
+      ]
+    },
+    {
+      "name": "wrong_reciprocal_suffix",
+      "passed": true,
+      "rejected_by": [
+        "bad reciprocal runway suffix",
+        "bad reciprocal runway suffix"
+      ]
+    },
+    {
+      "name": "reversed_effective_dates",
+      "passed": true,
+      "rejected_by": [
+        "source date range reversed",
+        "retrieval date outside claimed printed range"
+      ]
+    },
+    {
+      "name": "hold_as_runway_center_node",
+      "passed": true,
+      "rejected_by": [
+        "schema:hold_points/0/node_id: 'KBOS:N:RWY09-27_RWY15R-33L' is not of type 'null'"
+      ]
+    },
+    {
+      "name": "invented_review_acceptance",
+      "passed": true,
+      "rejected_by": [
+        "accepted without named reviewer and time"
+      ]
+    },
+    {
+      "name": "alias_targets_exist",
+      "passed": true
+    },
+    {
+      "name": "lga_delta",
+      "passed": true,
+      "actual": [
+        "KLGA:TWY:D"
+      ]
+    },
+    {
+      "name": "bos_delta_one",
+      "passed": true,
+      "actual": [
+        "KBOS:TWY:D1"
+      ]
+    },
+    {
+      "name": "lga_alpha_alpha",
+      "passed": true,
+      "actual": [
+        "KLGA:TWY:AA"
+      ]
+    },
+    {
+      "name": "lga_four",
+      "passed": true,
+      "actual": [
+        "KLGA:END:04"
+      ]
+    },
+    {
+      "name": "bos_33_left",
+      "passed": true,
+      "actual": [
+        "KBOS:END:33L"
+      ]
+    },
+    {
+      "name": "bos_four_ambiguous",
+      "passed": true,
+      "actual": [
+        "KBOS:END:04L",
+        "KBOS:END:04R"
+      ]
+    },
+    {
+      "name": "cross_airport_D1",
+      "passed": true,
+      "actual": []
+    },
+    {
+      "name": "no_runway_three_at_lga",
+      "passed": true,
+      "actual": []
+    },
+    {
+      "name": "bos_27_digits",
+      "passed": true,
+      "actual": [
+        "KBOS:END:27"
+      ]
+    },
+    {
+      "name": "bos_27_words",
+      "passed": true,
+      "actual": [
+        "KBOS:END:27"
+      ]
+    },
+    {
+      "name": "bos_33_left_digits",
+      "passed": true,
+      "actual": [
+        "KBOS:END:33L"
+      ]
+    },
+    {
+      "name": "bos_33_missing_suffix_digits",
+      "passed": true,
+      "actual": [
+        "KBOS:END:33L",
+        "KBOS:END:33R"
+      ]
+    },
+    {
+      "name": "bos_33_missing_suffix_words",
+      "passed": true,
+      "actual": [
+        "KBOS:END:33L",
+        "KBOS:END:33R"
+      ]
+    },
+    {
+      "name": "bos_15_missing_suffix",
+      "passed": true,
+      "actual": [
+        "KBOS:END:15L",
+        "KBOS:END:15R"
+      ]
+    },
+    {
+      "name": "bos_delta_not_delta_one",
+      "passed": true,
+      "actual": [
+        "KBOS:TWY:D"
+      ]
+    },
+    {
+      "name": "bos_delta_one_digits",
+      "passed": true,
+      "actual": [
+        "KBOS:TWY:D1"
+      ]
+    },
+    {
+      "name": "bos_delta_two",
+      "passed": true,
+      "actual": [
+        "KBOS:TWY:D2"
+      ]
+    },
+    {
+      "name": "cross_airport_D2",
+      "passed": true,
+      "actual": []
+    },
+    {
+      "name": "cross_airport_33L",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "all_checks_passed": false,
+  "meaning": "Artifact integrity and conservative draft gates only; not expert verification of airport topology or operational suitability."
+}

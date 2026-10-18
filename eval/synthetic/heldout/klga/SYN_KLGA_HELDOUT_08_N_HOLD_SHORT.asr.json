@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT_08_N_HOLD_SHORT_00": {
+  "text": "Spirit 1440, cleared to land runway 22.",
+  "asr_s": 0.175
+ },
+ "SYN_KLGA_HELDOUT_08_N_HOLD_SHORT_01": {
+  "text": "Clear to land T2, Spirit 1440.",
+  "asr_s": 0.166
+ },
+ "SYN_KLGA_HELDOUT_08_N_HOLD_SHORT_02": {
+  "text": "Lear at 113, hold short runway 22 at Papa.",
+  "asr_s": 0.187
+ },
+ "SYN_KLGA_HELDOUT_08_N_HOLD_SHORT_03": {
+  "text": "Holding short runway 22 at Papa, Spirit 113.",
+  "asr_s": 0.185
+ }
+}

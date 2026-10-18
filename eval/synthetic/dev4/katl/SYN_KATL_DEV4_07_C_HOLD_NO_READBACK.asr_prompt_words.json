@@ -1,0 +1,306 @@
+{
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_00": {
+  "text": "American 1839, runway two six right, wind two eight zero at one four, cleared to land.",
+  "asr_s": 0.528,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9805
+   },
+   {
+    "w": "1839,",
+    "p": 0.7488
+   },
+   {
+    "w": "runway",
+    "p": 0.9895
+   },
+   {
+    "w": "two",
+    "p": 0.9928
+   },
+   {
+    "w": "six",
+    "p": 0.9976
+   },
+   {
+    "w": "right,",
+    "p": 0.9946
+   },
+   {
+    "w": "wind",
+    "p": 0.97
+   },
+   {
+    "w": "two",
+    "p": 0.9956
+   },
+   {
+    "w": "eight",
+    "p": 0.9991
+   },
+   {
+    "w": "zero",
+    "p": 0.9994
+   },
+   {
+    "w": "at",
+    "p": 0.9885
+   },
+   {
+    "w": "one",
+    "p": 0.9884
+   },
+   {
+    "w": "four,",
+    "p": 0.9441
+   },
+   {
+    "w": "cleared",
+    "p": 0.9987
+   },
+   {
+    "w": "to",
+    "p": 0.9816
+   },
+   {
+    "w": "land.",
+    "p": 0.9684
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_01": {
+  "text": "American 1839, roger, cleared to land runway two six right.",
+  "asr_s": 0.442,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9855
+   },
+   {
+    "w": "1839,",
+    "p": 0.6506
+   },
+   {
+    "w": "roger,",
+    "p": 0.8747
+   },
+   {
+    "w": "cleared",
+    "p": 0.9823
+   },
+   {
+    "w": "to",
+    "p": 0.9211
+   },
+   {
+    "w": "land",
+    "p": 0.999
+   },
+   {
+    "w": "runway",
+    "p": 0.5582
+   },
+   {
+    "w": "two",
+    "p": 0.9824
+   },
+   {
+    "w": "six",
+    "p": 0.9959
+   },
+   {
+    "w": "right.",
+    "p": 0.9568
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_02": {
+  "text": "American six two zero, hold short of runway two six right, traffic landing runway two six right.",
+  "asr_s": 0.468,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.98
+   },
+   {
+    "w": "six",
+    "p": 0.7765
+   },
+   {
+    "w": "two",
+    "p": 0.9395
+   },
+   {
+    "w": "zero,",
+    "p": 0.9299
+   },
+   {
+    "w": "hold",
+    "p": 0.9866
+   },
+   {
+    "w": "short",
+    "p": 0.9993
+   },
+   {
+    "w": "of",
+    "p": 0.9893
+   },
+   {
+    "w": "runway",
+    "p": 0.9956
+   },
+   {
+    "w": "two",
+    "p": 0.9932
+   },
+   {
+    "w": "six",
+    "p": 0.9975
+   },
+   {
+    "w": "right,",
+    "p": 0.935
+   },
+   {
+    "w": "traffic",
+    "p": 0.9977
+   },
+   {
+    "w": "landing",
+    "p": 0.9971
+   },
+   {
+    "w": "runway",
+    "p": 0.9766
+   },
+   {
+    "w": "two",
+    "p": 0.9928
+   },
+   {
+    "w": "six",
+    "p": 0.9986
+   },
+   {
+    "w": "right.",
+    "p": 0.9396
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_03": {
+  "text": "American six two zero, roger.",
+  "asr_s": 0.428,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9622
+   },
+   {
+    "w": "six",
+    "p": 0.297
+   },
+   {
+    "w": "two",
+    "p": 0.7806
+   },
+   {
+    "w": "zero,",
+    "p": 0.8106
+   },
+   {
+    "w": "roger.",
+    "p": 0.9691
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_04": {
+  "text": "American six two zero, read back hold instructions.",
+  "asr_s": 0.424,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9609
+   },
+   {
+    "w": "six",
+    "p": 0.4882
+   },
+   {
+    "w": "two",
+    "p": 0.9066
+   },
+   {
+    "w": "zero,",
+    "p": 0.7892
+   },
+   {
+    "w": "read",
+    "p": 0.9714
+   },
+   {
+    "w": "back",
+    "p": 0.9061
+   },
+   {
+    "w": "hold",
+    "p": 0.8512
+   },
+   {
+    "w": "instructions.",
+    "p": 0.927
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_05": {
+  "text": "American six two zero, holding short of runway two six right.",
+  "asr_s": 0.426,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9831
+   },
+   {
+    "w": "six",
+    "p": 0.7597
+   },
+   {
+    "w": "two",
+    "p": 0.9624
+   },
+   {
+    "w": "zero,",
+    "p": 0.917
+   },
+   {
+    "w": "holding",
+    "p": 0.9752
+   },
+   {
+    "w": "short",
+    "p": 0.9928
+   },
+   {
+    "w": "of",
+    "p": 0.996
+   },
+   {
+    "w": "runway",
+    "p": 0.9977
+   },
+   {
+    "w": "two",
+    "p": 0.9832
+   },
+   {
+    "w": "six",
+    "p": 0.9979
+   },
+   {
+    "w": "right.",
+    "p": 0.9036
+   }
+  ]
+ }
+}

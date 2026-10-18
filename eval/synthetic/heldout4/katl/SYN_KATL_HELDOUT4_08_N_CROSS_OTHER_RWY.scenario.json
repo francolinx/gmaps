@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout4",
+ "phrasing_pool": "E",
+ "template": "N_CROSS_OTHER_RWY",
+ "basis": "crossing a runway with no active operation",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7501,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "C",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier twenty one hundred, runway two six left, cleared to land, wind calm.",
+   "id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two six left, cleared to land, Frontier twenty one hundred.",
+   "id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Twin Cessna two six six five Zulu, cross runway niner left at November five, hold short of runway eight left.",
+   "id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway niner left at November five, Twin Cessna two six six five Zulu.",
+   "id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

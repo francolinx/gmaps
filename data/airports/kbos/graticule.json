@@ -1,0 +1,103 @@
+{
+ "icao": "KBOS",
+ "source": "outline_glyph_decode",
+ "about": "Graticule values drawn as outlines only, decoded by exact glyph shape against glyphs the same chart draws over its own text layer, and tied to the extracted grid lines by position (tools/airport_map/graticule.py). Not human-confirmed.",
+ "pdf_sha256": "36121d2286d09cb269ba7bc20d8fd95b9c1e76839d92809dcce2ce043b96de15",
+ "read_at": "2026-10-09T12:25:32-0400",
+ "confirmed_by": null,
+ "parallels": [
+  {
+   "value": "42°23'N",
+   "lat": 42.38333333333333,
+   "line_pt_y": 144.498,
+   "label_bbox": [
+    269.15,
+    141.9,
+    292.04,
+    146.93
+   ]
+  },
+  {
+   "value": "42°22'N",
+   "lat": 42.36666666666667,
+   "line_pt_y": 319.558,
+   "label_bbox": [
+    339.09,
+    317.06,
+    361.98,
+    322.09
+   ]
+  },
+  {
+   "value": "42°21'N",
+   "lat": 42.35,
+   "line_pt_y": 494.621,
+   "label_bbox": [
+    343.21,
+    492.2,
+    366.1,
+    497.23
+   ]
+  }
+ ],
+ "meridians": [
+  {
+   "value": "71°01'W",
+   "lon": -71.01666666666667,
+   "line_pt_x": 125.091,
+   "label_bbox": [
+    117.57,
+    503.95,
+    142.18,
+    508.89
+   ]
+  },
+  {
+   "value": "71°00'W",
+   "lon": -71.0,
+   "line_pt_x": 254.914,
+   "label_bbox": [
+    242.71,
+    48.51,
+    267.33,
+    53.45
+   ]
+  }
+ ],
+ "decode": {
+  "method": "exact glyph-shape match against glyphs the same chart draws over its own text layer",
+  "training": "this chart",
+  "training_glyphs": 970,
+  "rule": "every glyph within 0.03 of a learned shape of one character, and at least 0.1 from any other character (Franco, Oct 9: unambiguous only)",
+  "per_value": [
+   {
+    "text": "71°00'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "71°01'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "42°21'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "42°22'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "42°23'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   }
+  ],
+  "distinct_shapes": 447,
+  "decoded_labels": 5,
+  "undecoded_groups": 0
+ }
+}

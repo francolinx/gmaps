@@ -1,0 +1,292 @@
+{
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "United 500, runway two seven right, wind two zero zero at four, cleared to land.",
+  "asr_s": 0.493,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9768
+   },
+   {
+    "w": "500,",
+    "p": 0.4856
+   },
+   {
+    "w": "runway",
+    "p": 0.9899
+   },
+   {
+    "w": "two",
+    "p": 0.9921
+   },
+   {
+    "w": "seven",
+    "p": 0.9968
+   },
+   {
+    "w": "right,",
+    "p": 0.9955
+   },
+   {
+    "w": "wind",
+    "p": 0.9664
+   },
+   {
+    "w": "two",
+    "p": 0.9961
+   },
+   {
+    "w": "zero",
+    "p": 0.9986
+   },
+   {
+    "w": "zero",
+    "p": 0.998
+   },
+   {
+    "w": "at",
+    "p": 0.9963
+   },
+   {
+    "w": "four,",
+    "p": 0.9007
+   },
+   {
+    "w": "cleared",
+    "p": 0.9977
+   },
+   {
+    "w": "to",
+    "p": 0.9583
+   },
+   {
+    "w": "land.",
+    "p": 0.9744
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "United five hundred, roger, cleared to land runway two seven right.",
+  "asr_s": 0.47,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9847
+   },
+   {
+    "w": "five",
+    "p": 0.5679
+   },
+   {
+    "w": "hundred,",
+    "p": 0.7111
+   },
+   {
+    "w": "roger,",
+    "p": 0.6496
+   },
+   {
+    "w": "cleared",
+    "p": 0.9692
+   },
+   {
+    "w": "to",
+    "p": 0.9327
+   },
+   {
+    "w": "land",
+    "p": 0.9986
+   },
+   {
+    "w": "runway",
+    "p": 0.631
+   },
+   {
+    "w": "two",
+    "p": 0.9948
+   },
+   {
+    "w": "seven",
+    "p": 0.9971
+   },
+   {
+    "w": "right.",
+    "p": 0.9685
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "United 500, cleared runway two seven right at Lima five.",
+  "asr_s": 0.432,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9788
+   },
+   {
+    "w": "500,",
+    "p": 0.7494
+   },
+   {
+    "w": "cleared",
+    "p": 0.721
+   },
+   {
+    "w": "runway",
+    "p": 0.9596
+   },
+   {
+    "w": "two",
+    "p": 0.9912
+   },
+   {
+    "w": "seven",
+    "p": 0.9949
+   },
+   {
+    "w": "right",
+    "p": 0.9975
+   },
+   {
+    "w": "at",
+    "p": 0.9048
+   },
+   {
+    "w": "Lima",
+    "p": 0.984
+   },
+   {
+    "w": "five.",
+    "p": 0.6102
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "November seven seven zero four kilo, taxi via November five, cross runway two seven right.",
+  "asr_s": 0.499,
+  "words": [
+   {
+    "w": "November",
+    "p": 0.9094
+   },
+   {
+    "w": "seven",
+    "p": 0.9046
+   },
+   {
+    "w": "seven",
+    "p": 0.9817
+   },
+   {
+    "w": "zero",
+    "p": 0.9972
+   },
+   {
+    "w": "four",
+    "p": 0.9924
+   },
+   {
+    "w": "kilo,",
+    "p": 0.7199
+   },
+   {
+    "w": "taxi",
+    "p": 0.9901
+   },
+   {
+    "w": "via",
+    "p": 0.9857
+   },
+   {
+    "w": "November",
+    "p": 0.9875
+   },
+   {
+    "w": "five,",
+    "p": 0.9703
+   },
+   {
+    "w": "cross",
+    "p": 0.9957
+   },
+   {
+    "w": "runway",
+    "p": 0.9979
+   },
+   {
+    "w": "two",
+    "p": 0.9959
+   },
+   {
+    "w": "seven",
+    "p": 0.9985
+   },
+   {
+    "w": "right.",
+    "p": 0.9593
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Crossing runway two seven right at November five, November seven seven zero four kilo.",
+  "asr_s": 0.475,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.7037
+   },
+   {
+    "w": "runway",
+    "p": 0.9549
+   },
+   {
+    "w": "two",
+    "p": 0.9805
+   },
+   {
+    "w": "seven",
+    "p": 0.9971
+   },
+   {
+    "w": "right",
+    "p": 0.8927
+   },
+   {
+    "w": "at",
+    "p": 0.9762
+   },
+   {
+    "w": "November",
+    "p": 0.9284
+   },
+   {
+    "w": "five,",
+    "p": 0.6448
+   },
+   {
+    "w": "November",
+    "p": 0.9961
+   },
+   {
+    "w": "seven",
+    "p": 0.9211
+   },
+   {
+    "w": "seven",
+    "p": 0.9779
+   },
+   {
+    "w": "zero",
+    "p": 0.9969
+   },
+   {
+    "w": "four",
+    "p": 0.9785
+   },
+   {
+    "w": "kilo.",
+    "p": 0.6494
+   }
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV3_04_C_LUAW_LAND_00": {
+  "text": "American 2959, runway 22 at Farkstraat, line up and wait.",
+  "asr_s": 0.214
+ },
+ "SYN_KLGA_DEV3_04_C_LUAW_LAND_01": {
+  "text": "Line up and wait 2-2, American 29-59.",
+  "asr_s": 0.19
+ },
+ "SYN_KLGA_DEV3_04_C_LUAW_LAND_02": {
+  "text": "Delta 1726, runway 22, cleared to land, traffic holding in position.",
+  "asr_s": 0.207
+ },
+ "SYN_KLGA_DEV3_04_C_LUAW_LAND_03": {
+  "text": "Clear to land 2-2, Delta 17-26.",
+  "asr_s": 0.19
+ }
+}

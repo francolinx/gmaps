@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_00": {
+  "text": "American twenty hundred, runway eight right at hotel line up and wait.",
+  "asr_s": 0.199
+ },
+ "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_01": {
+  "text": "Line up and wait runway eight right, American 200.",
+  "asr_s": 0.184
+ },
+ "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_02": {
+  "text": "Frontier 1600, runway eight right, extend downward, traffic holding in position.",
+  "asr_s": 0.209
+ },
+ "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_03": {
+  "text": "Wilco Frontier 1600.",
+  "asr_s": 0.152
+ },
+ "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_04": {
+  "text": "American twenty hundred, runway eight right at hotel, intersection departure, cleared for takeoff.",
+  "asr_s": 0.218
+ },
+ "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_05": {
+  "text": "Roger, cleared for takeoff eight right, American, twenty hundred.",
+  "asr_s": 0.191
+ }
+}

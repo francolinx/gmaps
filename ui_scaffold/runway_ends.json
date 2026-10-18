@@ -1,0 +1,788 @@
+{
+ "_about": "NASR runway ends in each chart's local metre frame (x east, y south of the ARP). Display only; see tools/airport_map/export_runway_ends.py.",
+ "airports": {
+  "kahn": {
+   "icao": "KAHN",
+   "runways": [
+    {
+     "id": "02-20",
+     "ends": [
+      {
+       "id": "02",
+       "x": 96.6,
+       "y": 657.2
+      },
+      {
+       "id": "20",
+       "x": 528.8,
+       "y": -481.2
+      }
+     ],
+     "nasr_length_ft": 3995,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "09-27",
+     "ends": [
+      {
+       "id": "09",
+       "x": -1136.6,
+       "y": -30.0
+      },
+      {
+       "id": "27",
+       "x": 728.5,
+       "y": -84.7
+      }
+     ],
+     "nasr_length_ft": 6122,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    }
+   ],
+   "frame": {
+    "lat0": 33.94864027,
+    "lon0": -83.32591416,
+    "M": 6355331.438336591,
+    "N": 6384805.416949339,
+    "projection": "local equirectangular, WGS84"
+   }
+  },
+  "katl": {
+   "icao": "KATL",
+   "runways": [
+    {
+     "id": "08L-26R",
+     "ends": [
+      {
+       "id": "08L",
+       "x": -1035.5,
+       "y": -1423.6
+      },
+      {
+       "id": "26R",
+       "x": 1708.0,
+       "y": -1424.4
+      }
+     ],
+     "nasr_length_ft": 9000,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "08R-26L",
+     "ends": [
+      {
+       "id": "08R",
+       "x": -974.0,
+       "y": -1118.8
+      },
+      {
+       "id": "26L",
+       "x": 2074.0,
+       "y": -1119.7
+      }
+     ],
+     "nasr_length_ft": 9999,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "09L-27R",
+     "ends": [
+      {
+       "id": "09L",
+       "x": -1865.1,
+       "y": 221.3
+      },
+      {
+       "id": "27R",
+       "x": 1911.0,
+       "y": 221.5
+      }
+     ],
+     "nasr_length_ft": 12390,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "09R-27L",
+     "ends": [
+      {
+       "id": "09R",
+       "x": -1865.0,
+       "y": 542.0
+      },
+      {
+       "id": "27L",
+       "x": 878.0,
+       "y": 540.8
+      }
+     ],
+     "nasr_length_ft": 9000,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "10-28",
+     "ends": [
+      {
+       "id": "10",
+       "x": -1856.7,
+       "y": 1822.0
+      },
+      {
+       "id": "28",
+       "x": 885.9,
+       "y": 1820.6
+      }
+     ],
+     "nasr_length_ft": 9000,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    }
+   ],
+   "frame": {
+    "lat0": 33.63669961,
+    "lon0": -84.427864,
+    "M": 6355009.584217611,
+    "N": 6384697.632871597,
+    "projection": "local equirectangular, WGS84"
+   }
+  },
+  "kbos": {
+   "icao": "KBOS",
+   "runways": [
+    {
+     "id": "04L-22R",
+     "ends": [
+      {
+       "id": "04L",
+       "x": -654.9,
+       "y": 550.5
+      },
+      {
+       "id": "22R",
+       "x": 154.5,
+       "y": -1705.6
+      }
+     ],
+     "nasr_length_ft": 7864,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "04R-22L",
+     "ends": [
+      {
+       "id": "04R",
+       "x": -445.3,
+       "y": 1320.3
+      },
+      {
+       "id": "22L",
+       "x": 584.7,
+       "y": -1550.2
+      }
+     ],
+     "nasr_length_ft": 10006,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "09-27",
+     "ends": [
+      {
+       "id": "09",
+       "x": -535.9,
+       "y": 798.7
+      },
+      {
+       "id": "27",
+       "x": 1539.4,
+       "y": 303.1
+      }
+     ],
+     "nasr_length_ft": 7001,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "14-32",
+     "ends": [
+      {
+       "id": "14",
+       "x": -1391.0,
+       "y": 705.0
+      },
+      {
+       "id": "32",
+       "x": -153.0,
+       "y": 1593.5
+      }
+     ],
+     "nasr_length_ft": 5000,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "15L-33R",
+     "ends": [
+      {
+       "id": "15L",
+       "x": -183.2,
+       "y": -1138.6
+      },
+      {
+       "id": "33R",
+       "x": 366.1,
+       "y": -585.6
+      }
+     ],
+     "nasr_length_ft": 2557,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "15R-33L",
+     "ends": [
+      {
+       "id": "15R",
+       "x": -947.6,
+       "y": -1258.1
+      },
+      {
+       "id": "33L",
+       "x": 1219.4,
+       "y": 921.3
+      }
+     ],
+     "nasr_length_ft": 10083,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    }
+   ],
+   "frame": {
+    "lat0": 42.36294444,
+    "lon0": -71.00638888,
+    "M": 6364434.448653208,
+    "N": 6387852.371699345,
+    "projection": "local equirectangular, WGS84"
+   }
+  },
+  "kewr": {
+   "icao": "KEWR",
+   "runways": [
+    {
+     "id": "04L-22R",
+     "ends": [
+      {
+       "id": "04L",
+       "x": -909.6,
+       "y": 1898.8
+      },
+      {
+       "id": "22R",
+       "x": 550.8,
+       "y": -1119.3
+      }
+     ],
+     "nasr_length_ft": 11000,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "04R-22L",
+     "ends": [
+      {
+       "id": "04R",
+       "x": -469.7,
+       "y": 1654.2
+      },
+      {
+       "id": "22L",
+       "x": 857.9,
+       "y": -1089.2
+      }
+     ],
+     "nasr_length_ft": 9999,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "11-29",
+     "ends": [
+      {
+       "id": "11",
+       "x": -1016.0,
+       "y": -1146.4
+      },
+      {
+       "id": "29",
+       "x": 1026.5,
+       "y": -968.2
+      }
+     ],
+     "nasr_length_ft": 6725,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    }
+   ],
+   "frame": {
+    "lat0": 40.69248055,
+    "lon0": -74.16868777,
+    "M": 6362579.922174843,
+    "N": 6387231.861357268,
+    "projection": "local equirectangular, WGS84"
+   }
+  },
+  "khwd": {
+   "icao": "KHWD",
+   "runways": [
+    {
+     "id": "10L-28R",
+     "ends": [
+      {
+       "id": "10L",
+       "x": -487.5,
+       "y": -393.7
+      },
+      {
+       "id": "28R",
+       "x": 334.1,
+       "y": 78.0
+      }
+     ],
+     "nasr_length_ft": 3108,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "10R-28L",
+     "ends": [
+      {
+       "id": "10R",
+       "x": -710.7,
+       "y": -345.8
+      },
+      {
+       "id": "28L",
+       "x": 794.4,
+       "y": 518.2
+      }
+     ],
+     "nasr_length_ft": 5694,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    }
+   ],
+   "frame": {
+    "lat0": 37.65893166,
+    "lon0": -122.12173888,
+    "M": 6359260.433674505,
+    "N": 6386120.884820828,
+    "projection": "local equirectangular, WGS84"
+   }
+  },
+  "kjfk": {
+   "icao": "KJFK",
+   "runways": [
+    {
+     "id": "04L-22R",
+     "ends": [
+      {
+       "id": "04L",
+       "x": -583.0,
+       "y": 1988.5
+      },
+      {
+       "id": "22R",
+       "x": 1300.2,
+       "y": -1175.0
+      }
+     ],
+     "nasr_length_ft": 12079,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "04R-22L",
+     "ends": [
+      {
+       "id": "04R",
+       "x": 706.1,
+       "y": 1610.2
+      },
+      {
+       "id": "22L",
+       "x": 2015.8,
+       "y": -589.5
+      }
+     ],
+     "nasr_length_ft": 8400,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "13L-31R",
+     "ends": [
+      {
+       "id": "13L",
+       "x": -976.8,
+       "y": -1980.7
+      },
+      {
+       "id": "31R",
+       "x": 1642.7,
+       "y": -421.6
+      }
+     ],
+     "nasr_length_ft": 10000,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "13R-31L",
+     "ends": [
+      {
+       "id": "13R",
+       "x": -3216.4,
+       "y": -936.5
+      },
+      {
+       "id": "31L",
+       "x": 584.7,
+       "y": 1325.2
+      }
+     ],
+     "nasr_length_ft": 14511,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    }
+   ],
+   "frame": {
+    "lat0": 40.63992805,
+    "lon0": -73.77869222,
+    "M": 6362521.825478594,
+    "N": 6387212.4207004225,
+    "projection": "local equirectangular, WGS84"
+   }
+  },
+  "klga": {
+   "icao": "KLGA",
+   "runways": [
+    {
+     "id": "04-22",
+     "ends": [
+      {
+       "id": "04",
+       "x": -971.9,
+       "y": 897.2
+      },
+      {
+       "id": "22",
+       "x": 163.1,
+       "y": -910.0
+      }
+     ],
+     "nasr_length_ft": 7002,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "13-31",
+     "ends": [
+      {
+       "id": "13",
+       "x": -499.2,
+       "y": -561.2
+      },
+      {
+       "id": "31",
+       "x": 1308.0,
+       "y": 574.2
+      }
+     ],
+     "nasr_length_ft": 7002,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    }
+   ],
+   "frame": {
+    "lat0": 40.77724222,
+    "lon0": -73.87260555,
+    "M": 6362673.661859735,
+    "N": 6387263.228830262,
+    "projection": "local equirectangular, WGS84"
+   }
+  },
+  "kord": {
+   "icao": "KORD",
+   "runways": [
+    {
+     "id": "04L-22R",
+     "ends": [
+      {
+       "id": "04L",
+       "x": -478.1,
+       "y": -523.7
+      },
+      {
+       "id": "22R",
+       "x": 976.2,
+       "y": -2287.7
+      }
+     ],
+     "nasr_length_ft": 7500,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "04R-22L",
+     "ends": [
+      {
+       "id": "04R",
+       "x": 723.6,
+       "y": 2622.8
+      },
+      {
+       "id": "22L",
+       "x": 2354.3,
+       "y": 779.6
+      }
+     ],
+     "nasr_length_ft": 8075,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "09C-27C",
+     "ends": [
+      {
+       "id": "09C",
+       "x": -1941.2,
+       "y": -1262.1
+      },
+      {
+       "id": "27C",
+       "x": 1486.9,
+       "y": -1262.9
+      }
+     ],
+     "nasr_length_ft": 11245,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "09L-27R",
+     "ends": [
+      {
+       "id": "09L",
+       "x": -1535.5,
+       "y": -2875.9
+      },
+      {
+       "id": "27R",
+       "x": 751.4,
+       "y": -2875.7
+      }
+     ],
+     "nasr_length_ft": 7500,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "09R-27L",
+     "ends": [
+      {
+       "id": "09R",
+       "x": -1941.0,
+       "y": -772.3
+      },
+      {
+       "id": "27L",
+       "x": 1491.4,
+       "y": -773.1
+      }
+     ],
+     "nasr_length_ft": 11260,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "10C-28C",
+     "ends": [
+      {
+       "id": "10C",
+       "x": -1937.1,
+       "y": 1248.3
+      },
+      {
+       "id": "28C",
+       "x": 1354.2,
+       "y": 1241.2
+      }
+     ],
+     "nasr_length_ft": 10800,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "10L-28R",
+     "ends": [
+      {
+       "id": "10L",
+       "x": -1937.9,
+       "y": 882.5
+      },
+      {
+       "id": "28R",
+       "x": 2024.0,
+       "y": 874.1
+      }
+     ],
+     "nasr_length_ft": 13000,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "10R-28L",
+     "ends": [
+      {
+       "id": "10R",
+       "x": -1633.7,
+       "y": 2192.5
+      },
+      {
+       "id": "28L",
+       "x": 651.6,
+       "y": 2187.5
+      }
+     ],
+     "nasr_length_ft": 7500,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    }
+   ],
+   "frame": {
+    "lat0": 41.97694027,
+    "lon0": -87.90814972,
+    "M": 6364004.711861602,
+    "N": 6387708.595794231,
+    "projection": "local equirectangular, WGS84"
+   }
+  },
+  "kpdk": {
+   "icao": "KPDK",
+   "runways": [
+    {
+     "id": "03L-21R",
+     "ends": [
+      {
+       "id": "03L",
+       "x": -329.6,
+       "y": 782.9
+      },
+      {
+       "id": "21R",
+       "x": 70.3,
+       "y": -286.4
+      }
+     ],
+     "nasr_length_ft": 3746,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "03R-21L",
+     "ends": [
+      {
+       "id": "03R",
+       "x": -181.5,
+       "y": 822.0
+      },
+      {
+       "id": "21L",
+       "x": 459.2,
+       "y": -891.1
+      }
+     ],
+     "nasr_length_ft": 6001,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "16-34",
+     "ends": [
+      {
+       "id": "16",
+       "x": -320.1,
+       "y": -740.3
+      },
+      {
+       "id": "34",
+       "x": 144.9,
+       "y": 376.2
+      }
+     ],
+     "nasr_length_ft": 3968,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    }
+   ],
+   "frame": {
+    "lat0": 33.87600194,
+    "lon0": -84.30203055,
+    "M": 6355256.360325098,
+    "N": 6384780.274783964,
+    "projection": "local equirectangular, WGS84"
+   }
+  },
+  "ksfo": {
+   "icao": "KSFO",
+   "runways": [
+    {
+     "id": "01L-19R",
+     "ends": [
+      {
+       "id": "01L",
+       "x": -663.2,
+       "y": 1210.6
+      },
+      {
+       "id": "19R",
+       "x": 424.4,
+       "y": -851.9
+      }
+     ],
+     "nasr_length_ft": 7650,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "01R-19L",
+     "ends": [
+      {
+       "id": "01R",
+       "x": -496.5,
+       "y": 1384.7
+      },
+      {
+       "id": "19L",
+       "x": 733.3,
+       "y": -947.5
+      }
+     ],
+     "nasr_length_ft": 8650,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "10L-28R",
+     "ends": [
+      {
+       "id": "10L",
+       "x": -1586.9,
+       "y": -1102.5
+      },
+      {
+       "id": "28R",
+       "x": 1613.5,
+       "y": 585.1
+      }
+     ],
+     "nasr_length_ft": 11870,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    },
+    {
+     "id": "10R-28L",
+     "ends": [
+      {
+       "id": "10R",
+       "x": -1561.7,
+       "y": -830.8
+      },
+      {
+       "id": "28L",
+       "x": 1506.8,
+       "y": 787.3
+      }
+     ],
+     "nasr_length_ft": 11381,
+     "source": "NASR 2026-10-01 runway ends (3RD PARTY SURVEY)"
+    }
+   ],
+   "frame": {
+    "lat0": 37.61880555,
+    "lon0": -122.37541666,
+    "M": 6359217.072689273,
+    "N": 6386106.3700762475,
+    "projection": "local equirectangular, WGS84"
+   }
+  }
+ }
+}

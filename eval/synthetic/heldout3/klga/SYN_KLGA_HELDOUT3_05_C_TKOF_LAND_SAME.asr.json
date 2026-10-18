@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME_00": {
+  "text": "JetBlue 317, runway 22, wind 130 at 4G13, cleared for takeoff.",
+  "asr_s": 0.291
+ },
+ "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME_01": {
+  "text": "JetBlue 317 cleared for takeoff runway 22.",
+  "asr_s": 0.179
+ },
+ "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME_02": {
+  "text": "United 561, wind 350 at 11 gust 190. Runway 22, cleared to land.",
+  "asr_s": 0.221
+ },
+ "SYN_KLGA_HELDOUT3_05_C_TKOF_LAND_SAME_03": {
+  "text": "United 561, Roger. Clear to land runway 22.",
+  "asr_s": 0.187
+ }
+}

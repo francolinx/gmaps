@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KATL_HELDOUT_07_N_CROSS_OTHER_RWY",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "N_CROSS_OTHER_RWY",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7301,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "E3",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United twenty two forty four, cleared to land runway eight right.",
+   "id": "SYN_KATL_HELDOUT_07_N_CROSS_OTHER_RWY_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land eight right, United twenty two forty four.",
+   "id": "SYN_KATL_HELDOUT_07_N_CROSS_OTHER_RWY_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "JetBlue twenty eight fifty four, at Uniform cross runway niner left.",
+   "id": "SYN_KATL_HELDOUT_07_N_CROSS_OTHER_RWY_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway niner left at Uniform, JetBlue twenty eight fifty four.",
+   "id": "SYN_KATL_HELDOUT_07_N_CROSS_OTHER_RWY_03"
+  }
+ ]
+}

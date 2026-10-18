@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Spirit 1544, runway two two, cleared to land.",
+  "asr_s": 0.182
+ },
+ "SYN_KLGA_DEV4_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Spirit 1544, roger. Cleared to land, runway two two.",
+  "asr_s": 0.209
+ },
+ "SYN_KLGA_DEV4_08_N_CROSS_OTHER_RWY_02": {
+  "text": "Southwest nine hundred, cross runway one three at Zulu.",
+  "asr_s": 0.18
+ },
+ "SYN_KLGA_DEV4_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Crossing runway one three at Zulu, Southwest 900.",
+  "asr_s": 0.173
+ }
+}

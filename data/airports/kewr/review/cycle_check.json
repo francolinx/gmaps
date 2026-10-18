@@ -1,0 +1,74 @@
+{
+ "icao": "KEWR",
+ "checked_at": "2026-10-08T23:57:34-0400",
+ "now_utc": "2026-10-09T03:57:34.786284+00:00",
+ "chart": {
+  "cycle": "2610",
+  "effective_from": "2026-10-01",
+  "effective_to": "2026-10-29",
+  "url": "https://aeronav.faa.gov/d-tpp/2610/00285AD.PDF",
+  "sha256": "89f34baa16739a4d9df47a9fcf04fbb9fed12c05a47d3eb9e6109796cda894b2"
+ },
+ "in_effective_window": true,
+ "days_left": 20.21,
+ "faa_cycle": {
+  "metafile": "https://aeronav.faa.gov/d-tpp/2610/xml_data/d-TPP_Metafile.xml",
+  "cycle": "2610",
+  "from_edate": "0901Z  10/01/26",
+  "to_edate": "0901Z  10/29/26",
+  "apd_record": {
+   "chartseq": "70000",
+   "chart_code": "APD",
+   "chart_name": "AIRPORT DIAGRAM",
+   "useraction": "",
+   "pdf_name": "00285AD.PDF",
+   "cn_flg": "N",
+   "cnsection": "",
+   "cnpage": "",
+   "bvsection": "",
+   "bvpage": "340",
+   "procuid": "1414",
+   "two_colored": "Y",
+   "civil": "C",
+   "faanfd18": "",
+   "copter": "",
+   "amdtnum": "",
+   "amdtdate": ""
+  }
+ },
+ "served_pdf": {
+  "url": "https://aeronav.faa.gov/d-tpp/2610/00285AD.PDF",
+  "sha256": "89f34baa16739a4d9df47a9fcf04fbb9fed12c05a47d3eb9e6109796cda894b2",
+  "bytes": 272993,
+  "matches_local": true
+ },
+ "next_cycle": {
+  "cycle": "2611",
+  "from_edate": "0901Z  10/29/26",
+  "to_edate": "0901Z  11/26/26",
+  "published": true,
+  "apd_record": {
+   "chartseq": "70000",
+   "chart_code": "APD",
+   "chart_name": "AIRPORT DIAGRAM",
+   "useraction": "",
+   "pdf_name": "00285AD.PDF",
+   "cn_flg": "N",
+   "cnsection": "",
+   "cnpage": "",
+   "bvsection": "",
+   "bvpage": "334",
+   "procuid": "1414",
+   "two_colored": "Y",
+   "civil": "C",
+   "faanfd18": "",
+   "copter": "",
+   "amdtnum": "",
+   "amdtdate": ""
+  },
+  "useraction": "",
+  "apd_changed": false
+ },
+ "pass": true,
+ "warnings": []
+}

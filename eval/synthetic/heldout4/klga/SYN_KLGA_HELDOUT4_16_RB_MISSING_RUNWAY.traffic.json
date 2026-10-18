@@ -1,0 +1,29 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL8664",
+  "EDV2800",
+  "EDV6774",
+  "EDV7353",
+  "EDV9526",
+  "JBU2972",
+  "JBU3502",
+  "NKS2483",
+  "UAL2146"
+ ],
+ "realistic": [
+  "AAL8664",
+  "EDV1600",
+  "EDV2800",
+  "EDV5654",
+  "EDV6774",
+  "EDV7353",
+  "EDV9526",
+  "JBU2972",
+  "JBU3502",
+  "UAL2146",
+  "UAL8460"
+ ]
+}

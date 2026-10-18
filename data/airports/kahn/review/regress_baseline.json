@@ -1,0 +1,55 @@
+{
+ "icao": "KAHN",
+ "recorded_at": "2026-10-09T14:14:29-0400",
+ "commit": "a72c5a2",
+ "metrics": {
+  "objects": {
+   "arrowhead": 21,
+   "building": 15,
+   "frame": 1,
+   "glyph": 779,
+   "graticule_line": 23,
+   "label_background": 2,
+   "linework": 102,
+   "pavement": 66,
+   "runway": 2,
+   "runway_centerline_extension": 3,
+   "runway_marking": 2,
+   "runway_overdraw": 1,
+   "symbol": 23
+  },
+  "labels": {
+   "annotation": 7,
+   "dimension": 2,
+   "graticule": 5,
+   "heading": 4,
+   "note": 62,
+   "number": 1,
+   "runway_end": 4,
+   "taxiway_candidate": 28,
+   "terminal_label": 4
+  },
+  "overlay": {
+   "covered_pct": 99.56,
+   "extra_pct": 0.567
+  },
+  "georef_m": {
+   "02": 0.08,
+   "09": 10.12,
+   "20": 0.04,
+   "27": 3.65
+  },
+  "hold_lines": 0,
+  "statuses": {
+   "overlay_ink": "pass",
+   "runway_ends": "pass",
+   "runway_identifiers": "pass",
+   "taxiway_names": "pass",
+   "hot_spots": "not_applicable",
+   "ils_hold_lines": "not_applicable",
+   "unclassified": "pass",
+   "cycle_current": "pass",
+   "lahso_points": "not_applicable"
+  }
+ }
+}

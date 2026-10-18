@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_DEV4_09_N_HOLD_SHORT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev4",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_HOLD_SHORT",
+ "basis": "hold short, read back",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9301,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "L",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American twenty three thirty one, runway two seven right, wind one two zero at one seven gusts three zero, cleared to land.",
+   "id": "SYN_KATL_DEV4_09_N_HOLD_SHORT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "American twenty three thirty one, roger, cleared to land runway two seven right.",
+   "id": "SYN_KATL_DEV4_09_N_HOLD_SHORT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Southwest seven hundred, hold short of runway two seven right, traffic landing runway two seven right.",
+   "id": "SYN_KATL_DEV4_09_N_HOLD_SHORT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Southwest seven hundred, holding short of runway two seven right.",
+   "id": "SYN_KATL_DEV4_09_N_HOLD_SHORT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

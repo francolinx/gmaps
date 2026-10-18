@@ -1,0 +1,31 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL2582",
+  "DAL1996",
+  "EDV2152",
+  "FFT1520",
+  "FFT1700",
+  "JBU4148",
+  "N187Z",
+  "NKS1169",
+  "UAL1969",
+  "UAL4141"
+ ],
+ "realistic": [
+  "AAL2582",
+  "DAL1996",
+  "DAL2500",
+  "EDV2152",
+  "FFT1520",
+  "FFT1700",
+  "JBU1982",
+  "JBU4148",
+  "N187Z",
+  "NKS1169",
+  "NKS2500",
+  "UAL4141"
+ ]
+}

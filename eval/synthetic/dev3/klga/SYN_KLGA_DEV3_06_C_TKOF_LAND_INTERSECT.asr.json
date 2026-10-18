@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV3_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Frontier 647, runway 22, wind 010 at 18, cleared for takeoff.",
+  "asr_s": 0.226
+ },
+ "SYN_KLGA_DEV3_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Speared for takeoff 2-2. Frontier 6-4-7.",
+  "asr_s": 0.206
+ },
+ "SYN_KLGA_DEV3_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "JetBlue 1995, runway 3-1, wind 2-9-0 at 4, cleared to land.",
+  "asr_s": 0.246
+ },
+ "SYN_KLGA_DEV3_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Cleared to land 3-1, jet blue 1995.",
+  "asr_s": 0.186
+ }
+}

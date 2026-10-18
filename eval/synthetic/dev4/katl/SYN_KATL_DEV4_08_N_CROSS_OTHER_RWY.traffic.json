@@ -1,0 +1,30 @@
+{
+ "id": "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL2531",
+  "EDV1078",
+  "FFT1011",
+  "FFT764",
+  "JBU500",
+  "N118L",
+  "SWA2394",
+  "UAL1054",
+  "UAL2693",
+  "UAL2813"
+ ],
+ "realistic": [
+  "AAL2070",
+  "AAL2531",
+  "EDV1078",
+  "FFT1011",
+  "JBU500",
+  "N118L",
+  "NKS1822",
+  "SWA2394",
+  "UAL2693",
+  "UAL2813",
+  "UAL745"
+ ]
+}

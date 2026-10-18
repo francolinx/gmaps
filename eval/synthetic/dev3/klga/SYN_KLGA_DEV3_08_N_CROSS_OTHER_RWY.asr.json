@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Delta 10 niner, runway 22, wind 160 at 20, cleared to land.",
+  "asr_s": 0.211
+ },
+ "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Clear to land C2. Delta 109.",
+  "asr_s": 0.177
+ },
+ "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_02": {
+  "text": "American 1633, at Romeo, cross runway 381.",
+  "asr_s": 0.18
+ },
+ "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Cross 3-1 at Romeo, American 1633.",
+  "asr_s": 0.177
+ }
+}

@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "steps": [
+    "Preserve airport context, original audio/transcript, actor candidates, capture/channel, source interval, event time and receipt time.",
+    "Parse speech act separately: request, instruction, readback, report, cancellation or unknown. Never make a request into authorization.",
+    "Normalize identifiers against that airport inventory; preserve runway suffixes and double letters. Return unresolved or multiple candidates when ambiguous.",
+    "Resolve intersection candidates from surface membership; a label alone maps to a surface or named area, not a unique position.",
+    "Keep the ordered taxiway words and hold constraints even if a continuous route is unknown. Do not substitute a shortest path.",
+    "Require reviewed connected segments and explicit crossing/hold constraints before route use. v1 files are review drafts, so automatic routing stays disabled.",
+    "Maintain instructed, acknowledged, reported, observed and predicted state separately with evidence links and amendment/supersedes IDs.",
+    "Use independent timestamped motion inputs and reviewed metric geometry or a separate explicitly fictional map for numerical prediction. Never measure PDF label locations as vehicle positions."
+  ],
+  "required_event_fields": [
+    "event_id",
+    "airport_icao",
+    "actor_candidates",
+    "speech_act",
+    "raw_text",
+    "source_id",
+    "source_start_s",
+    "source_end_s",
+    "event_time",
+    "received_time",
+    "route_surface_candidates",
+    "runway_end_candidates",
+    "hold_constraints",
+    "uncertainty",
+    "supersedes_event_id"
+  ],
+  "required_motion_fields": [
+    "track_id",
+    "actor_association_status",
+    "observed_at",
+    "received_at",
+    "position",
+    "coordinate_frame",
+    "speed_or_velocity",
+    "uncertainty",
+    "provenance",
+    "is_simulated"
+  ],
+  "unknown_policy": "null plus reason; never zero, guessed geometry, invented velocity or unspoken authorization",
+  "prediction_gate": {
+    "required": [
+      "Expert-accepted topology",
+      "Metric geometry and declared CRS or explicitly fictional frame",
+      "Measured/modelled boundaries and footprint",
+      "Fresh independently supplied observations",
+      "Clock alignment, motion model and uncertainty assumptions"
+    ],
+    "on_missing": "metric_prediction_unavailable",
+    "not_equivalent_to": "no_conflict"
+  },
+  "review_date": null
+}

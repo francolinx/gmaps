@@ -1,0 +1,51 @@
+{
+  "_readme": {
+    "purpose": "Runway-resource reservation rules for the deterministic engine. Every clearance that touches a runway creates a RESERVATION on that runway (and, for intersecting runways, on the intersection). Rules fire when two reservations overlap in time. Each rule cites the JO 7110.65BB paragraph it is derived from (fetched Oct 2, 2026) so a judge or a controller can check it.",
+    "reservation_types": {
+      "LANDING": "RUNWAY (n) CLEARED TO LAND — until landing observed/reported or GO_AROUND",
+      "TAKEOFF": "RUNWAY (n) CLEARED FOR TAKEOFF — until airborne observed/reported or CANCEL",
+      "LUAW": "RUNWAY (n) LINE UP AND WAIT — until TAKEOFF issued or exit; 90 s timer (3-9-4)",
+      "CROSSING": "CROSS RUNWAY (n) AT (twy) — until CROSSING_COMPLETE; timer (Joe: 'close out the crossing')",
+      "OCCUPYING": "aircraft/vehicle instructed to be on the runway for another reason: rejected takeoff still on runway, 'hold short of Lima on runway 13', runway used as taxiway, disabled aircraft",
+      "CLOSED": "runway closed by ATC/NOTAM or after an incident ('is the runway closed?')"
+    },
+    "severities": {
+      "CONFLICT": "two authorizations require the same protected area with no qualifier that makes them compatible",
+      "CAUTION": "overlap is permitted by procedure only under a condition the engine cannot verify from audio (distance, visibility, safety-logic configuration)",
+      "ADVISED": "overlap is normal and the controller issued the required traffic information; shown, not alarmed",
+      "REMINDER": "a timer expired on an open obligation"
+    },
+    "state_kinds_reminder": "authorized / acknowledged / reported / inferred / observed are tracked separately (Eichelberger). A reservation is created on AUTHORIZED. It is never promoted to 'physically on the runway' by voice alone.",
+    "claim": "A fired rule means: at time t the engine held two authorizations on one runway. Nothing more."
+  },
+  "intersecting_runways": {"KLGA": [["04/22", "13/31"]], "KBOS": [["27", "33L"], ["27", "33R"], ["22L", "27"], ["22R", "27"], ["04L", "27"], ["04R", "27"], ["15R", "04L"], ["15R", "22L"]], "note": "KBOS list is partial; verify against the BOS diagram. Only 27×33L is needed for the Logan scenario."},
+  "rules": [
+    {"id": "R1", "name": "crossing vs active landing", "a": "LANDING", "b": "CROSSING", "same_runway": true, "severity": "CONFLICT", "downgrade_to": {"CAUTION": "when the crossing clearance carries an explicit traffic/timing qualifier (e.g., 'traffic three mile final, cross without delay')"}, "cite": "3-1-3 (ground must obtain local's approval before authorizing a crossing of an active runway); 3-7-2 (crossing phraseology; one crossing at a time)", "scenario": "LGA 2026-03-22 t=+40: JZA646 LANDING 04 + TRUCK1 CROSSING 04 at D → CONFLICT"},
+    {"id": "R2", "name": "crossing vs active takeoff", "a": "TAKEOFF", "b": "CROSSING", "same_runway": true, "severity": "CONFLICT", "cite": "3-1-3; 3-9-10"},
+    {"id": "R3", "name": "takeoff vs landing, same runway", "a": "TAKEOFF", "b": "LANDING", "same_runway": true, "severity": "CONFLICT", "downgrade_to": {"CAUTION": "when the takeoff clearance names the arrival ('traffic (distance) final') — anticipated separation, 3-9-6/3-10-3"}, "cite": "3-9-6 same-runway separation; 3-10-3 anticipating separation"},
+    {"id": "R4", "name": "takeoff vs landing, intersecting runways", "a": "TAKEOFF", "b": "LANDING", "intersecting": true, "severity": "CONFLICT", "downgrade_to": {"ADVISED": "when traffic information was issued to the aircraft receiving the second clearance (3-9 intersecting-runway operations: 'issue traffic information to each aircraft on intersecting runways')", "CAUTION": "when traffic information was issued to only one of the two"}, "cite": "3-9 intersecting runway operations; 3-10-4 LAHSO when applicable", "scenarios": ["BOS 2026-06-20 t=82: AAL3161 TAKEOFF 27 issued with no advisory while DAL2351 LANDING 33L live → CONFLICT (the LUAW at t=0 carried 'traffic landing 33L', but the takeoff clearance 82 s later carried nothing)", "LGA 2026-03-22 t=-577: UAL2384 TAKEOFF 13 with 'traffic inside three mile final runway 4' → ADVISED (negative case; must not alarm)"]},
+    {"id": "R5", "name": "line up and wait vs landing, same runway", "a": "LUAW", "b": "LANDING", "same_runway": true, "severity": "CAUTION", "escalate_to": {"CONFLICT": "if the landing clearance omits 'traffic holding in position', or weather is reported below 2 miles / 800 ft, or the facility has no full-configuration safety logic (ASDE-X)"}, "cite": "3-9-4 (LUAW not authorized when a landing clearance is active on the same runway); 3-10-5 (landing clearance with LUAW traffic only with safety logic in full configuration, visibility ≥ 2 mi and ceiling ≥ 800 ft, and 'traffic holding in position' advised)"},
+    {"id": "R6", "name": "route crosses a runway without a hold-short", "trigger": "TAXI whose traced route on the graph crosses a runway edge and whose hold_short does not name that runway (and no CROSS clearance exists for it)", "severity": "CONFLICT", "cite": "3-7-2 (taxi clearance must include the route; hold-short instructions; crossing clearance required for each runway)", "scenario": "Taxi exercise variant A"},
+    {"id": "R7", "name": "hold-short not read back", "trigger": "HOLD_SHORT issued; no READBACK naming the hold within 15 s, or READBACK with hold_short=null (clipped)", "severity": "CAUTION", "cite": "3-7-2: 'Request a read back of runway hold short instructions when it is not received from the pilot/vehicle operator' — READ BACK HOLD INSTRUCTIONS", "scenario": "Clipped-readback scenario; taxi exercise variant B (discrepant runway → CONFLICT)"},
+    {"id": "R8", "name": "crossing not closed out", "trigger": "CROSSING reservation older than 90 s with no CROSSING_COMPLETE / clear-of-runway report", "severity": "REMINDER", "cite": "3-1-3: ground must advise local when the coordinated runway operation is complete", "scenario": "Taxi exercise variant C"},
+    {"id": "R9", "name": "line up and wait timer", "trigger": "LUAW older than 90 s with no TAKEOFF or further instruction", "severity": "REMINDER", "cite": "3-9-4 (LUAW not to remain in position longer than 90 s without additional instructions)"},
+    {"id": "R10", "name": "occupied runway vs landing or takeoff", "a": "OCCUPYING", "b": "LANDING|TAKEOFF", "same_runway": true, "severity": "CONFLICT", "cite": "3-1-3 (local controller controls the use of the active runway); 3-10-5", "scenarios": ["LGA: UAL2384 'rejected on 13' is OCCUPYING 13 until exit at L/M is instructed and reported", "LGA: DAL520 'hold short of Lima on runway 13' is OCCUPYING 13"]},
+    {"id": "R11", "name": "two crossings at the same point", "a": "CROSSING", "b": "CROSSING", "same_runway": true, "same_point": true, "severity": "CAUTION", "cite": "3-7-2: an aircraft must have crossed a previous runway before another crossing clearance; vehicles get a crossing clearance for each runway"},
+    {"id": "R12", "name": "closed runway vs any clearance", "a": "CLOSED", "b": "LANDING|TAKEOFF|LUAW|CROSSING", "severity": "CONFLICT", "cite": "FAA runway-incursion definition of an Operational Incident includes clearing an aircraft to take off or land on a closed runway"},
+    {"id": "R13", "name": "stop/cancel unacknowledged", "trigger": "CANCEL issued to an entity holding a reservation; no readback/report within 10 s", "severity": "CAUTION", "note": "Keeps the reservation live; the engine must not assume the stop took effect (LGA: three stop calls over 25 s, no acknowledgement captured)."}
+  ],
+  "warning_object": {
+    "fields": ["rule_id", "severity", "runway", "t_fired", "authorization_a {callsign, type, t_issued, source_transmission_id}", "authorization_b {...}", "state_snapshot {authorized, acknowledged, reported, inferred, observed}", "explain (one sentence naming both authorizations and the rule)", "what_would_clear_it (e.g., 'crossing complete reported', 'go-around', 'cancel acknowledged')"],
+    "example": "R1 CONFLICT runway 04 @ t=+40: JZA646 holds LANDING 04 (issued t=0, tx#61); TRUCK1 holds CROSSING 04 at D (issued t=+40, tx#66). Both require the runway 4 protected area. Clears on: TRUCK1 clear of 4, or JZA646 go-around."
+  },
+  "incursion_categories_for_ui": {
+    "definition": "Any occurrence at an airport involving the incorrect presence of an aircraft, vehicle or person on the protected area of a surface designated for the landing and take off of aircraft.",
+    "A": "A serious incident in which a collision was narrowly avoided.",
+    "B": "An incident in which separation decreases and there is a significant potential for collision, which may result in a time critical corrective/evasive response to avoid a collision.",
+    "C": "An incident characterized by ample time and/or distance to avoid a collision.",
+    "D": "Incorrect presence … but with no immediate safety consequences.",
+    "types": {"OI": "Operational Incident — action of a controller resulting in less than required separation, or clearing an aircraft to take off or land on a closed runway", "PD": "Pilot Deviation — e.g., crossing a runway without clearance", "V/PD": "Vehicle/Pedestrian Deviation — entering the movement area without ATC authorization"},
+    "use": "Label the demo scenarios: LGA 2026-03-22 → collision (beyond A); BOS 2026-06-20 → NTSB-classified incident with go-around (category per NTSB/FAA, do not assign yourself); the monitor's rules target the OI type (the authorization conflict), which is the type surveillance-based tools see last.",
+    "source": "FAA Runway Safety, 'Runway Incursions' resource page, fetched Oct 2, 2026"
+  }
+}

@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31002_03_C_TKOF_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_TKOF_CROSS",
+ "basis": "R2 crossing vs active takeoff (3-7-2g1)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31002,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "U",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor one four niner, runway niner left, wind two seven zero at one seven, cleared for takeoff.",
+   "id": "SYN_KATL_TRAINFT_S31002_03_C_TKOF_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared for takeoff niner left, Endeavor one four niner.",
+   "id": "SYN_KATL_TRAINFT_S31002_03_C_TKOF_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "American seven seven four, at Uniform cross runway niner left without delay.",
+   "id": "SYN_KATL_TRAINFT_S31002_03_C_TKOF_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross niner left at Uniform, American seven seven four.",
+   "id": "SYN_KATL_TRAINFT_S31002_03_C_TKOF_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

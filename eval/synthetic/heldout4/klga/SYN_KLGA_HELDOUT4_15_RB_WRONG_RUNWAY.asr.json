@@ -1,0 +1,10 @@
+{
+ "SYN_KLGA_HELDOUT4_15_RB_WRONG_RUNWAY_00": {
+  "text": "Southwest 1200, runway 22, cleared to land, wind 260 at 7.",
+  "asr_s": 0.206
+ },
+ "SYN_KLGA_HELDOUT4_15_RB_WRONG_RUNWAY_01": {
+  "text": "Runway 13, clear to land southwest 1200.",
+  "asr_s": 0.164
+ }
+}

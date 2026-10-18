@@ -1,0 +1,22 @@
+{
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "American Niner 51, wind 110 at 7, runway 31 cleared to land.",
+  "asr_s": 0.208
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "American Niner 51, Roger, cleared to land runway 31.",
+  "asr_s": 0.207
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "American Niner 51, clear runway 3-1 at Tango.",
+  "asr_s": 0.198
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "Spirit 839, cross runway 31 at Whiskey.",
+  "asr_s": 0.184
+ },
+ "SYN_KLGA_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Crossing runway 31 at Whiskey, Spirit 839.",
+  "asr_s": 0.197
+ }
+}

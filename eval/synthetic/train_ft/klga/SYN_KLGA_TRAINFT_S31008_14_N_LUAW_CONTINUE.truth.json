@@ -1,0 +1,110 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31008_14_N_LUAW_CONTINUE",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31008_14_N_LUAW_CONTINUE_00",
+   "fields": {
+    "callsigns": [
+     "SWA2110"
+    ],
+    "runway": "4",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "SWA2110",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": [
+     "Q"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31008_14_N_LUAW_CONTINUE_01",
+   "fields": {
+    "callsigns": [
+     "SWA2110"
+    ],
+    "runway": "4",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA2110",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31008_14_N_LUAW_CONTINUE_02",
+   "fields": {
+    "callsigns": [
+     "JBU327"
+    ],
+    "runway": "4",
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "JBU327",
+    "runway": "4",
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31008_14_N_LUAW_CONTINUE_03",
+   "fields": {
+    "callsigns": [
+     "JBU327"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "JBU327",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31008_14_N_LUAW_CONTINUE_04",
+   "fields": {
+    "callsigns": [
+     "SWA2110"
+    ],
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "SWA2110",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31008_14_N_LUAW_CONTINUE_05",
+   "fields": {
+    "callsigns": [
+     "SWA2110"
+    ],
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA2110",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   }
+  }
+ ]
+}

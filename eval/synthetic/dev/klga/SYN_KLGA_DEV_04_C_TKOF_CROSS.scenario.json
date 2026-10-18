@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KLGA_DEV_04_C_TKOF_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "dev",
+ "phrasing_pool": "A",
+ "template": "C_TKOF_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 9101,
+ "context": {
+  "runway": "13-31",
+  "taxiway": "Z",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United one seven two four, runway three one, cleared for takeoff.",
+   "id": "SYN_KLGA_DEV_04_C_TKOF_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway three one, cleared for takeoff, United one seven two four.",
+   "id": "SYN_KLGA_DEV_04_C_TKOF_CROSS_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Delta one four three two, cross runway three one at Zulu.",
+   "id": "SYN_KLGA_DEV_04_C_TKOF_CROSS_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway three one at Zulu, Delta one four three two.",
+   "id": "SYN_KLGA_DEV_04_C_TKOF_CROSS_03"
+  }
+ ]
+}

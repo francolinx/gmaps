@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_00": {
+  "text": "Endeavor 1580, runway niner left, wind two eight zero at two one, cleared for takeoff.",
+  "asr_s": 0.242
+ },
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_01": {
+  "text": "Endeavor 1580, cleared for takeoff, runway nine or left.",
+  "asr_s": 0.194
+ },
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_02": {
+  "text": "Endeavor 1391, cross runway niner left at November five.",
+  "asr_s": 0.194
+ },
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_03": {
+  "text": "Crossing runway nine are left at November five, endeavor 1391.",
+  "asr_s": 0.186
+ }
+}

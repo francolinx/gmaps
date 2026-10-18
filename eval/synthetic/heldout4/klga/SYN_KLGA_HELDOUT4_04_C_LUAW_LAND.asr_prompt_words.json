@@ -1,0 +1,206 @@
+{
+ "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_00": {
+  "text": "Tier 2700, runway four, line up and wait, traffic landing runway one three.",
+  "asr_s": 0.44,
+  "words": [
+   {
+    "w": "Tier",
+    "p": 0.4208
+   },
+   {
+    "w": "2700,",
+    "p": 0.6682
+   },
+   {
+    "w": "runway",
+    "p": 0.9926
+   },
+   {
+    "w": "four,",
+    "p": 0.9291
+   },
+   {
+    "w": "line",
+    "p": 0.9988
+   },
+   {
+    "w": "up",
+    "p": 0.9997
+   },
+   {
+    "w": "and",
+    "p": 0.9976
+   },
+   {
+    "w": "wait,",
+    "p": 0.7545
+   },
+   {
+    "w": "traffic",
+    "p": 0.9987
+   },
+   {
+    "w": "landing",
+    "p": 0.9988
+   },
+   {
+    "w": "runway",
+    "p": 0.9663
+   },
+   {
+    "w": "one",
+    "p": 0.986
+   },
+   {
+    "w": "three.",
+    "p": 0.9395
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_01": {
+  "text": "Line up and wait runway four, Frontier 2700.",
+  "asr_s": 0.445,
+  "words": [
+   {
+    "w": "Line",
+    "p": 0.9643
+   },
+   {
+    "w": "up",
+    "p": 0.9881
+   },
+   {
+    "w": "and",
+    "p": 0.9703
+   },
+   {
+    "w": "wait",
+    "p": 0.999
+   },
+   {
+    "w": "runway",
+    "p": 0.555
+   },
+   {
+    "w": "four,",
+    "p": 0.8516
+   },
+   {
+    "w": "Frontier",
+    "p": 0.8507
+   },
+   {
+    "w": "2700.",
+    "p": 0.8895
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_02": {
+  "text": "Frontier four three niner niner, runway four, cleared to land, traffic holding in position runway four.",
+  "asr_s": 0.551,
+  "words": [
+   {
+    "w": "Frontier",
+    "p": 0.9927
+   },
+   {
+    "w": "four",
+    "p": 0.6085
+   },
+   {
+    "w": "three",
+    "p": 0.743
+   },
+   {
+    "w": "niner",
+    "p": 0.7648
+   },
+   {
+    "w": "niner,",
+    "p": 0.7194
+   },
+   {
+    "w": "runway",
+    "p": 0.9967
+   },
+   {
+    "w": "four,",
+    "p": 0.8056
+   },
+   {
+    "w": "cleared",
+    "p": 0.9947
+   },
+   {
+    "w": "to",
+    "p": 0.9929
+   },
+   {
+    "w": "land,",
+    "p": 0.6559
+   },
+   {
+    "w": "traffic",
+    "p": 0.9989
+   },
+   {
+    "w": "holding",
+    "p": 0.9998
+   },
+   {
+    "w": "in",
+    "p": 0.9989
+   },
+   {
+    "w": "position",
+    "p": 0.9993
+   },
+   {
+    "w": "runway",
+    "p": 0.9661
+   },
+   {
+    "w": "four.",
+    "p": 0.9642
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_03": {
+  "text": "runway four cleared to land, Frontier 4 3909.",
+  "asr_s": 0.396,
+  "words": [
+   {
+    "w": "runway",
+    "p": 0.5547
+   },
+   {
+    "w": "four",
+    "p": 0.9872
+   },
+   {
+    "w": "cleared",
+    "p": 0.5853
+   },
+   {
+    "w": "to",
+    "p": 0.9837
+   },
+   {
+    "w": "land,",
+    "p": 0.4343
+   },
+   {
+    "w": "Frontier",
+    "p": 0.5343
+   },
+   {
+    "w": "4",
+    "p": 0.6845
+   },
+   {
+    "w": "3909.",
+    "p": 0.6524
+   }
+  ]
+ }
+}

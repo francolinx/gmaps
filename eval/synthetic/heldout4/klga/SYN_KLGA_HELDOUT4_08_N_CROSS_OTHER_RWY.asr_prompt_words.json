@@ -1,0 +1,202 @@
+{
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Frontier 1700, runway three one, cleared to land, wind zero six zero at one five.",
+  "asr_s": 0.503,
+  "words": [
+   {
+    "w": "Frontier",
+    "p": 0.9949
+   },
+   {
+    "w": "1700,",
+    "p": 0.6892
+   },
+   {
+    "w": "runway",
+    "p": 0.9623
+   },
+   {
+    "w": "three",
+    "p": 0.996
+   },
+   {
+    "w": "one,",
+    "p": 0.7961
+   },
+   {
+    "w": "cleared",
+    "p": 0.991
+   },
+   {
+    "w": "to",
+    "p": 0.9057
+   },
+   {
+    "w": "land,",
+    "p": 0.9611
+   },
+   {
+    "w": "wind",
+    "p": 0.4373
+   },
+   {
+    "w": "zero",
+    "p": 0.8129
+   },
+   {
+    "w": "six",
+    "p": 0.9667
+   },
+   {
+    "w": "zero",
+    "p": 0.9969
+   },
+   {
+    "w": "at",
+    "p": 0.9117
+   },
+   {
+    "w": "one",
+    "p": 0.99
+   },
+   {
+    "w": "five.",
+    "p": 0.971
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Runway three one, cleared the land, Frontier 1700.",
+  "asr_s": 0.406,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.8623
+   },
+   {
+    "w": "three",
+    "p": 0.9915
+   },
+   {
+    "w": "one,",
+    "p": 0.7609
+   },
+   {
+    "w": "cleared",
+    "p": 0.9987
+   },
+   {
+    "w": "the",
+    "p": 0.7127
+   },
+   {
+    "w": "land,",
+    "p": 0.7902
+   },
+   {
+    "w": "Frontier",
+    "p": 0.8579
+   },
+   {
+    "w": "1700.",
+    "p": 0.7431
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_02": {
+  "text": "Spirit 1169, cross runway two two at Foxtrot without delay, traffic short final.",
+  "asr_s": 0.448,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9328
+   },
+   {
+    "w": "1169,",
+    "p": 0.6214
+   },
+   {
+    "w": "cross",
+    "p": 0.9625
+   },
+   {
+    "w": "runway",
+    "p": 0.9985
+   },
+   {
+    "w": "two",
+    "p": 0.9922
+   },
+   {
+    "w": "two",
+    "p": 0.938
+   },
+   {
+    "w": "at",
+    "p": 0.952
+   },
+   {
+    "w": "Foxtrot",
+    "p": 0.9502
+   },
+   {
+    "w": "without",
+    "p": 0.9169
+   },
+   {
+    "w": "delay,",
+    "p": 0.7499
+   },
+   {
+    "w": "traffic",
+    "p": 0.997
+   },
+   {
+    "w": "short",
+    "p": 0.9945
+   },
+   {
+    "w": "final.",
+    "p": 0.6323
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Board runway two two at Foxtrot, period 1169.",
+  "asr_s": 0.398,
+  "words": [
+   {
+    "w": "Board",
+    "p": 0.0628
+   },
+   {
+    "w": "runway",
+    "p": 0.7613
+   },
+   {
+    "w": "two",
+    "p": 0.9781
+   },
+   {
+    "w": "two",
+    "p": 0.9547
+   },
+   {
+    "w": "at",
+    "p": 0.871
+   },
+   {
+    "w": "Foxtrot,",
+    "p": 0.5068
+   },
+   {
+    "w": "period",
+    "p": 0.1078
+   },
+   {
+    "w": "1169.",
+    "p": 0.6794
+   }
+  ]
+ }
+}

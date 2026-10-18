@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS_00": {
+  "text": "American 201, wind 250 at 19 August 27, Runway 31, cleared for takeoff.",
+  "asr_s": 0.221
+ },
+ "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS_01": {
+  "text": "American 201, cleared for takeoff runway 31.",
+  "asr_s": 0.181
+ },
+ "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS_02": {
+  "text": "American 10-12, follow the Embraer 155, cross runway 31.",
+  "asr_s": 0.235
+ },
+ "SYN_KLGA_HELDOUT3_03_C_TKOF_CROSS_03": {
+  "text": "Crossing runway 31 at Zulu, American 1012.",
+  "asr_s": 0.192
+ }
+}

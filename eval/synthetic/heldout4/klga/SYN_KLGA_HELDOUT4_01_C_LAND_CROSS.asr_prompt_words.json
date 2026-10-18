@@ -1,0 +1,166 @@
+{
+ "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_00": {
+  "text": "Winchester Niner 303 Hotel Number two, runway four, cleared to land.",
+  "asr_s": 0.531,
+  "words": [
+   {
+    "w": "Winchester",
+    "p": 0.4654
+   },
+   {
+    "w": "Niner",
+    "p": 0.4072
+   },
+   {
+    "w": "303",
+    "p": 0.8259
+   },
+   {
+    "w": "Hotel",
+    "p": 0.9023
+   },
+   {
+    "w": "Number",
+    "p": 0.4377
+   },
+   {
+    "w": "two,",
+    "p": 0.8387
+   },
+   {
+    "w": "runway",
+    "p": 0.9977
+   },
+   {
+    "w": "four,",
+    "p": 0.7524
+   },
+   {
+    "w": "cleared",
+    "p": 0.9964
+   },
+   {
+    "w": "to",
+    "p": 0.9832
+   },
+   {
+    "w": "land.",
+    "p": 0.7823
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_01": {
+  "text": "runway four cleared to land, twin Cessna 90303 Hotel.",
+  "asr_s": 0.364,
+  "words": [
+   {
+    "w": "runway",
+    "p": 0.6678
+   },
+   {
+    "w": "four",
+    "p": 0.9937
+   },
+   {
+    "w": "cleared",
+    "p": 0.4851
+   },
+   {
+    "w": "to",
+    "p": 0.9745
+   },
+   {
+    "w": "land,",
+    "p": 0.7426
+   },
+   {
+    "w": "twin",
+    "p": 0.6891
+   },
+   {
+    "w": "Cessna",
+    "p": 0.7841
+   },
+   {
+    "w": "90303",
+    "p": 0.5197
+   },
+   {
+    "w": "Hotel.",
+    "p": 0.8143
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_02": {
+  "text": "JetBlue 1400, received by Charlie Cross Runway Four.",
+  "asr_s": 0.323,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9861
+   },
+   {
+    "w": "1400,",
+    "p": 0.6732
+   },
+   {
+    "w": "received",
+    "p": 0.3424
+   },
+   {
+    "w": "by",
+    "p": 0.9896
+   },
+   {
+    "w": "Charlie",
+    "p": 0.6957
+   },
+   {
+    "w": "Cross",
+    "p": 0.5493
+   },
+   {
+    "w": "Runway",
+    "p": 0.4794
+   },
+   {
+    "w": "Four.",
+    "p": 0.4989
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_03": {
+  "text": "Cross runway four at Charlie, JetBlue 1400.",
+  "asr_s": 0.432,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.9237
+   },
+   {
+    "w": "runway",
+    "p": 0.9831
+   },
+   {
+    "w": "four",
+    "p": 0.9901
+   },
+   {
+    "w": "at",
+    "p": 0.7117
+   },
+   {
+    "w": "Charlie,",
+    "p": 0.6212
+   },
+   {
+    "w": "JetBlue",
+    "p": 0.9586
+   },
+   {
+    "w": "1400.",
+    "p": 0.533
+   }
+  ]
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "id": "SYN_KLGA_DEV4_07_C_HOLD_NO_READBACK",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL1061",
+  "AAL2175",
+  "AAL258",
+  "AAL620",
+  "DAL341",
+  "FFT1357",
+  "JBU650",
+  "N203U",
+  "NKS1591",
+  "SWA473"
+ ],
+ "realistic": [
+  "AAL2175",
+  "AAL258",
+  "AAL620",
+  "DAL341",
+  "JBU650",
+  "N203U",
+  "NKS1591",
+  "SWA1697",
+  "SWA2394",
+  "SWA473",
+  "UAL2871"
+ ]
+}

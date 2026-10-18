@@ -1,0 +1,71 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7601_10_N_EXIT_TAXI_THEN_CROSS",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": true,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "SWA2694"
+    ],
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7601_10_N_EXIT_TAXI_THEN_CROSS_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA2694"
+    ],
+    "runway": "4",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7601_10_N_EXIT_TAXI_THEN_CROSS_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA2694"
+    ],
+    "runway": null,
+    "instruction": "TAXI"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7601_10_N_EXIT_TAXI_THEN_CROSS_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA2694"
+    ],
+    "runway": null,
+    "instruction": "TAXI"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7601_10_N_EXIT_TAXI_THEN_CROSS_03"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "NKS1800"
+    ],
+    "runway": "4",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7601_10_N_EXIT_TAXI_THEN_CROSS_04"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "NKS1800"
+    ],
+    "runway": "4",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7601_10_N_EXIT_TAXI_THEN_CROSS_05"
+  }
+ ]
+}

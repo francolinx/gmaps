@@ -1,0 +1,7362 @@
+{
+ "summary": {
+  "split": "heldout4",
+  "text": "asr (Whisper prompt)",
+  "tag": "_llm_item2_noagent",
+  "SIMULATED": true,
+  "scenarios": 32,
+  "fast_path_grammar_only": {
+   "transmissions": 138,
+   "callsign_acc": 0.812,
+   "runway_acc": 0.819,
+   "instruction_acc": 0.833,
+   "conflict_alerts": {
+    "tp": 11,
+    "fp": 1,
+    "fn": 3,
+    "precision": 0.917,
+    "recall": 0.786
+   },
+   "readback_mismatch_alerts (R14)": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": null,
+    "recall": 0.0
+   },
+   "missed_readback (R7) false alarms": 1,
+   "eot_to_alert_s": {
+    "n": 10,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.02
+   }
+  },
+  "fast_path_plus_llm": {
+   "transmissions": 138,
+   "callsign_acc": 0.833,
+   "runway_acc": 0.826,
+   "instruction_acc": 0.855,
+   "conflict_alerts": {
+    "tp": 11,
+    "fp": 1,
+    "fn": 3,
+    "precision": 0.917,
+    "recall": 0.786
+   },
+   "readback_mismatch_alerts (R14)": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": null,
+    "recall": 0.0
+   },
+   "missed_readback (R7) false alarms": 1,
+   "eot_to_alert_s": {
+    "n": 10,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.02
+   }
+  },
+  "end_to_end": {
+   "transmissions": 138,
+   "callsign_acc": 0.833,
+   "runway_acc": 0.826,
+   "instruction_acc": 0.855,
+   "conflict_alerts": {
+    "tp": 11,
+    "fp": 1,
+    "fn": 3,
+    "precision": 0.917,
+    "recall": 0.786
+   },
+   "readback_mismatch_alerts (R14)": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "precision": null,
+    "recall": 0.0
+   },
+   "missed_readback (R7) false alarms": 1,
+   "eot_to_alert_s": {
+    "n": 10,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.02
+   }
+  },
+  "llm_fallback": {
+   "calls": 22,
+   "dropped_after_failed_validation": 3,
+   "drop_reasons": {
+    "grounding: flight number not heard": 2,
+    "grounding: no 'LUAW' words in the text": 1
+   },
+   "dropped_lines": [
+    {
+     "source_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_05",
+     "text": null,
+     "reason": "grounding: flight number not heard",
+     "reference": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     }
+    },
+    {
+     "source_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00",
+     "text": null,
+     "reason": "grounding: flight number not heard",
+     "reference": {
+      "callsigns": [
+       "NKS4995"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     }
+    },
+    {
+     "source_id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_03",
+     "text": null,
+     "reason": "grounding: no 'LUAW' words in the text",
+     "reference": {
+      "callsigns": [
+       "NKS1169"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     }
+    }
+   ],
+   "no_actionable_content": 10,
+   "unidentified_aircraft": 6,
+   "unidentified_lines": [
+    {
+     "source_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_03",
+     "text": null,
+     "reason": "unidentified aircraft: not on the traffic list or active in the ledger",
+     "reference": {
+      "callsigns": [
+       "NKS9624"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     }
+    },
+    {
+     "source_id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02",
+     "text": null,
+     "reason": "unidentified aircraft: not on the traffic list or active in the ledger",
+     "reference": {
+      "callsigns": [
+       "FFT2411"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     }
+    },
+    {
+     "source_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_03",
+     "text": null,
+     "reason": "unidentified aircraft: registration not heard whole in the text",
+     "reference": {
+      "callsigns": [
+       "N9623D"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     }
+    },
+    {
+     "source_id": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_03",
+     "text": null,
+     "reason": "unidentified aircraft: registration not heard whole in the text",
+     "reference": {
+      "callsigns": [
+       "N4087R"
+      ],
+      "runway": "8L",
+      "instruction": "HOLD_SHORT"
+     }
+    },
+    {
+     "source_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_00",
+     "text": null,
+     "reason": "unidentified aircraft: registration not heard whole in the text",
+     "reference": {
+      "callsigns": [
+       "N9303H"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     }
+    },
+    {
+     "source_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01",
+     "text": null,
+     "reason": "unidentified aircraft: not on the traffic list or active in the ledger",
+     "reference": {
+      "callsigns": [
+       "NKS4995"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     }
+    }
+   ],
+   "used": 3,
+   "used_fields_all_correct": 1,
+   "llm_tagged_alerts": [],
+   "latency_s": {
+    "n": 22,
+    "median": 0.85,
+    "min": 0.796,
+    "max": 1.723
+   }
+  },
+  "speaker_classifier": {
+   "scored": 116,
+   "right": 108,
+   "wrong": 0,
+   "ambiguous_or_none": 8
+  },
+  "agent": {
+   "transmissions_left_by_fast_path": 19,
+   "ingested_by_agent": 0,
+   "turns_rc_nonzero": 0,
+   "text_not_verbatim": 0,
+   "turn_wall_s": {
+    "n": 0,
+    "median": null,
+    "min": null,
+    "max": null
+   },
+   "eot_to_agent_ingest_s": {
+    "n": 0,
+    "median": null,
+    "min": null,
+    "max": null
+   }
+  },
+  "alerts_by_path": {
+   "fast path / conflict": 10,
+   "clock / missed_readback": 3
+  }
+ },
+ "scenarios": [
+  {
+   "scenario": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS",
+   "run_id": "e2e-syn_katl_heldout4_01_c_land_cross-20261009-195246",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R1",
+     "category": "conflict",
+     "llm_parse": false,
+     "via": "host fast path",
+     "path": "fast path",
+     "t_fired": 18.0,
+     "source_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_02",
+     "eot_to_alert_s": 0.0
+    },
+    {
+     "warning_id": "w0002",
+     "rule": "R1",
+     "category": "conflict",
+     "llm_parse": false,
+     "via": "host fast path",
+     "path": "fast path",
+     "t_fired": 18.0,
+     "source_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_02",
+     "eot_to_alert_s": 0.0
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N6648J"
+      ],
+      "runway": "26R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": null,
+      "reason": "no callsign heard"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS9624"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS9624"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "NKS9624"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS9624"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0018,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS9624"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_03",
+      "t": 22,
+      "latency_s": 1.723,
+      "reason": "valid",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"DAL964\",\n  \"runway\": \"26R\",\n  \"instruction\": \"CROSS\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false,
+      "unidentified": "unidentified aircraft: not on the traffic list or active in the ledger"
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 1.7236,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT",
+   "run_id": "e2e-syn_katl_heldout4_02_c_land_cross_hotspot-20261009-195327",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0016,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL4872"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2411"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02",
+      "t": 18,
+      "latency_s": 0.952,
+      "reason": "valid",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"DAL411\",\n  \"runway\": \"9L\",\n  \"instruction\": \"CROSS\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false,
+      "unidentified": "unidentified aircraft: not on the traffic list or active in the ledger"
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.9528,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2411"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT2411"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT2411"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT2411"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS",
+   "run_id": "e2e-syn_katl_heldout4_03_c_tkof_cross-20261009-195408",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R2",
+     "category": "conflict",
+     "llm_parse": false,
+     "via": "host fast path",
+     "path": "fast path",
+     "t_fired": 18.0,
+     "source_id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_02",
+     "eot_to_alert_s": 0.02
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0011,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1321"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0104,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2312"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND",
+   "run_id": "e2e-syn_katl_heldout4_04_c_luaw_land-20261009-195448",
+   "expected_alert": true,
+   "expected_rules": [
+    "R5"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R5",
+     "category": "conflict",
+     "llm_parse": false,
+     "via": "host fast path",
+     "path": "fast path",
+     "t_fired": 14.0,
+     "source_id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_02",
+     "eot_to_alert_s": 0.0
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0022,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS2400"
+      ],
+      "runway": "27R",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA2163"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME",
+   "run_id": "e2e-syn_katl_heldout4_05_c_tkof_land_same-20261009-195524",
+   "expected_alert": true,
+   "expected_rules": [
+    "R3"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R3",
+     "category": "conflict",
+     "llm_parse": false,
+     "via": "host fast path",
+     "path": "fast path",
+     "t_fired": 14.0,
+     "source_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_02",
+     "eot_to_alert_s": 0.0
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.001,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL5678"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N9623D"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N9623D"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N9623D"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N9623D"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0007,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N9623D"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_03",
+      "t": 18,
+      "latency_s": 0.903,
+      "reason": "valid",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"N9623L\",\n  \"runway\": \"9R\",\n  \"instruction\": \"LANDING_CLEARANCE\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false,
+      "unidentified": "unidentified aircraft: registration not heard whole in the text"
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.9061,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT",
+   "run_id": "e2e-syn_katl_heldout4_06_c_tkof_land_intersect-20261009-195600",
+   "expected_alert": true,
+   "expected_rules": [
+    "R3"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0002",
+     "rule": "R3",
+     "category": "conflict",
+     "llm_parse": false,
+     "via": "host fast path",
+     "path": "fast path",
+     "t_fired": 14.0,
+     "source_id": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02",
+     "eot_to_alert_s": 0.0
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL1976"
+      ],
+      "runway": "26L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL1976"
+      ],
+      "runway": "26L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL1976"
+      ],
+      "runway": "26L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1976"
+      ],
+      "runway": "26L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.001,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL1976"
+      ],
+      "runway": "26L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL1976"
+      ],
+      "runway": "9L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1976"
+      ],
+      "runway": "9L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path llm_parse",
+     "llm": {
+      "latency_s": 0.916,
+      "reason": "valid",
+      "raw": "{\n  \"speaker_role\": \"PILOT\",\n  \"callsign\": \"DAL1976\",\n  \"runway\": \"09L\",\n  \"instruction\": \"TAKEOFF_CLEARANCE\",\n  \"taxiways\": []\n}"
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.9163,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL6414"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK",
+   "run_id": "e2e-syn_katl_heldout4_07_c_hold_no_readback-20261009-195637",
+   "expected_alert": true,
+   "expected_rules": [
+    "R7"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R7",
+     "category": "missed_readback",
+     "llm_parse": false,
+     "via": "host fast path clock",
+     "path": "clock",
+     "t_fired": 33.0,
+     "source_id": null,
+     "eot_to_alert_s": null
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL6731"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0014,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_03",
+      "t": 22,
+      "latency_s": 0.814,
+      "reason": "no actionable content",
+      "raw": "{\n  \"speaker_role\": \"PILOT\",\n  \"callsign\": \"UAL2400\",\n  \"runway\": null,\n  \"instruction\": \"OTHER\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.8143,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_04",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_04",
+      "t": 40,
+      "latency_s": 0.805,
+      "reason": "no actionable content",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"UAL2400\",\n  \"runway\": null,\n  \"instruction\": \"OTHER\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.805,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 44,
+     "source_id": "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_05",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2400"
+      ],
+      "runway": "8R",
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY",
+   "run_id": "e2e-syn_katl_heldout4_08_n_cross_other_rwy-20261009-195739",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT2100"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N2665Z"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N2665Z"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N2665Z"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N2665Z"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0014,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N2665Z"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KATL_HELDOUT4_08_N_CROSS_OTHER_RWY_03",
+      "t": 22,
+      "latency_s": 0.852,
+      "reason": "no actionable content",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"N26652\",\n  \"runway\": \"9L\",\n  \"instruction\": \"OTHER\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.853,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT",
+   "run_id": "e2e-syn_katl_heldout4_09_n_hold_short-20261009-195819",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R7",
+     "category": "missed_readback",
+     "llm_parse": false,
+     "via": "host fast path clock",
+     "path": "clock",
+     "t_fired": 33.0,
+     "source_id": null,
+     "eot_to_alert_s": null
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N4069Z"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N4069Z"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N4069Z"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N4069Z"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": null,
+      "reason": "no callsign heard"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0018,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N4069Z"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "?902"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "?902"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "?902"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N4087R"
+      ],
+      "runway": "8L",
+      "instruction": "TAXI"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N4087R"
+      ],
+      "runway": "8L",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N4087R"
+      ],
+      "runway": "8L",
+      "instruction": "HOLD_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N4087R"
+      ],
+      "runway": "8L",
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": null,
+      "reason": "no callsign heard"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0026,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N4087R"
+      ],
+      "runway": "8L",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KATL_HELDOUT4_09_N_HOLD_SHORT_03",
+      "t": 22,
+      "latency_s": 0.849,
+      "reason": "valid",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"N87R\",\n  \"runway\": \"8L\",\n  \"instruction\": \"HOLD_SHORT\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false,
+      "unidentified": "unidentified aircraft: registration not heard whole in the text"
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.8496,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS",
+   "run_id": "e2e-syn_katl_heldout4_10_n_exit_taxi_then_cross-20261009-195900",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0026,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 48,
+     "source_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_03",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT2444"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 55,
+     "source_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_04",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": null,
+      "reason": "no callsign heard"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0006,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 59,
+     "source_id": "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_05",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS1135"
+      ],
+      "runway": "8R",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS",
+   "run_id": "e2e-syn_katl_heldout4_11_n_clear_report_then_cross-20261009-200017",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0015,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0006,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 45,
+     "source_id": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_02",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": "26L",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": null,
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": null,
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N2523R"
+      ],
+      "runway": null,
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0007,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 55,
+     "source_id": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_03",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 59,
+     "source_id": "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_04",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1100"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS",
+   "run_id": "e2e-syn_katl_heldout4_12_n_go_around_then_cross-20261009-200134",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0016,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 30,
+     "source_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 33,
+     "source_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL8805"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 45,
+     "source_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_04",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 49,
+     "source_id": "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_05",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL3303"
+      ],
+      "runway": "27",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF",
+   "run_id": "e2e-syn_katl_heldout4_13_n_luaw_then_tkof-20261009-200241",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0011,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 44,
+     "source_id": "SYN_KATL_HELDOUT4_13_N_LUAW_THEN_TKOF_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": "9R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV2900"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE",
+   "run_id": "e2e-syn_katl_heldout4_14_n_luaw_continue-20261009-200344",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0022,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL200"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "AAL200"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL200"
+      ],
+      "runway": "8R",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT1600"
+      ],
+      "runway": "8R",
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_02",
+      "t": 14,
+      "latency_s": 0.855,
+      "reason": "no actionable content",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"FFT1600\",\n  \"runway\": \"8R\",\n  \"instruction\": \"OTHER\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.8574,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT1600"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_03",
+      "t": 18,
+      "latency_s": 0.796,
+      "reason": "no actionable content",
+      "raw": "{\n  \"speaker_role\": \"PILOT\",\n  \"callsign\": \"FFT1600\",\n  \"runway\": null,\n  \"instruction\": \"OTHER\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.7966,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 30,
+     "source_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_04",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 34,
+     "source_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_05",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL2000"
+      ],
+      "runway": "8R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KATL_HELDOUT4_14_N_LUAW_CONTINUE_05",
+      "t": 34,
+      "latency_s": 0.889,
+      "reason": "grounding: flight number not heard",
+      "raw": "{\n  \"speaker_role\": \"PILOT\",\n  \"callsign\": \"AAL2000\",\n  \"runway\": \"8R\",\n  \"instruction\": \"TAKEOFF_CLEARANCE\",\n  \"taxiways\": []\n}",
+      "dropped": true,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.8897,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_15_RB_WRONG_RUNWAY",
+   "run_id": "e2e-syn_katl_heldout4_15_rb_wrong_runway-20261009-200436",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": true,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_15_RB_WRONG_RUNWAY_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_15_RB_WRONG_RUNWAY_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": "8R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL2523"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY",
+   "run_id": "e2e-syn_katl_heldout4_16_rb_missing_runway-20261009-200458",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": true,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0016,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KATL_HELDOUT4_16_RB_MISSING_RUNWAY_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2163"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS",
+   "run_id": "e2e-syn_klga_heldout4_01_c_land_cross-20261009-200520",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N9303H"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_00",
+      "t": 0,
+      "latency_s": 0.874,
+      "reason": "valid",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"N303H\",\n  \"runway\": \"4\",\n  \"instruction\": \"LANDING_CLEARANCE\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false,
+      "unidentified": "unidentified aircraft: registration not heard whole in the text"
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.876,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N9303H"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_01",
+      "t": 4,
+      "latency_s": 0.809,
+      "reason": "no actionable content",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": null,\n  \"runway\": \"4\",\n  \"instruction\": \"LANDING_CLEARANCE\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.8093,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0015,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "JBU1400"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT",
+   "run_id": "e2e-syn_klga_heldout4_02_c_land_cross_hotspot-20261009-200601",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R1",
+     "category": "conflict",
+     "llm_parse": false,
+     "via": "host fast path",
+     "path": "fast path",
+     "t_fired": 18.0,
+     "source_id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02",
+     "eot_to_alert_s": 0.0
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "EDV1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "EDV1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": null,
+      "reason": "no callsign heard"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "EDV1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "EDV1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV1558"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.001,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL2152"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS",
+   "run_id": "e2e-syn_klga_heldout4_03_c_tkof_cross-20261009-200641",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0002",
+     "rule": "R2",
+     "category": "conflict",
+     "llm_parse": false,
+     "via": "host fast path",
+     "path": "fast path",
+     "t_fired": 18.0,
+     "source_id": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_02",
+     "eot_to_alert_s": 0.0
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.001,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS7508"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL1800"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND",
+   "run_id": "e2e-syn_klga_heldout4_04_c_luaw_land-20261009-200721",
+   "expected_alert": true,
+   "expected_rules": [
+    "R5"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R5",
+     "category": "conflict",
+     "llm_parse": false,
+     "via": "host fast path",
+     "path": "fast path",
+     "t_fired": 14.0,
+     "source_id": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_02",
+     "eot_to_alert_s": 0.0
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": null,
+      "reason": "no callsign heard"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0012,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT2700"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT4399"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT4399"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT4399"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT4399"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT4399"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "?3909"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "?3909"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "?3909"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME",
+   "run_id": "e2e-syn_klga_heldout4_05_c_tkof_land_same-20261009-200758",
+   "expected_alert": true,
+   "expected_rules": [
+    "R3"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0002",
+     "rule": "R3",
+     "category": "conflict",
+     "llm_parse": false,
+     "via": "host fast path",
+     "path": "fast path",
+     "t_fired": 14.0,
+     "source_id": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_02",
+     "eot_to_alert_s": 0.0
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0019,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA2600"
+      ],
+      "runway": null,
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0005,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N7715J"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT",
+   "run_id": "e2e-syn_klga_heldout4_06_c_tkof_land_intersect-20261009-200834",
+   "expected_alert": true,
+   "expected_rules": [
+    "R4"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS4995"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00",
+      "t": 0,
+      "latency_s": 0.91,
+      "reason": "grounding: flight number not heard",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"NKS495\",\n  \"runway\": \"22\",\n  \"instruction\": \"TAKEOFF_CLEARANCE\",\n  \"taxiways\": []\n}",
+      "dropped": true,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.9112,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS4995"
+      ],
+      "runway": "22",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01",
+      "t": 4,
+      "latency_s": 0.825,
+      "reason": "valid",
+      "raw": "{\n  \"speaker_role\": \"PILOT\",\n  \"callsign\": \"NKS4\",\n  \"runway\": null,\n  \"instruction\": \"TAKEOFF_CLEARANCE\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false,
+      "unidentified": "unidentified aircraft: not on the traffic list or active in the ledger"
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.8256,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV2302"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK",
+   "run_id": "e2e-syn_klga_heldout4_07_c_hold_no_readback-20261009-200910",
+   "expected_alert": true,
+   "expected_rules": [
+    "R7"
+   ],
+   "expected_readback_mismatch": false,
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R7",
+     "category": "missed_readback",
+     "llm_parse": false,
+     "via": "host fast path clock",
+     "path": "clock",
+     "t_fired": 33.0,
+     "source_id": null,
+     "eot_to_alert_s": null
+    }
+   ],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0015,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2355"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0014,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_03",
+      "t": 22,
+      "latency_s": 0.819,
+      "reason": "no actionable content",
+      "raw": "{\n  \"speaker_role\": \"PILOT\",\n  \"callsign\": \"NKS1400\",\n  \"runway\": null,\n  \"instruction\": \"OTHER\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.82,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_04",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_04",
+      "t": 40,
+      "latency_s": 0.816,
+      "reason": "no actionable content",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"NKS1400\",\n  \"runway\": null,\n  \"instruction\": \"OTHER\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.8161,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 44,
+     "source_id": "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_05",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS1400"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY",
+   "run_id": "e2e-syn_klga_heldout4_08_n_cross_other_rwy-20261009-201012",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0016,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "FFT1700"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path llm_parse",
+     "llm": {
+      "latency_s": 0.885,
+      "reason": "valid",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"FFT1700\",\n  \"runway\": \"31\",\n  \"instruction\": \"LANDING_CLEARANCE\",\n  \"taxiways\": []\n}"
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.8881,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS1169"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "NKS1169"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "NKS1169"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "NKS1169"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "NKS1169"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_03",
+      "t": 22,
+      "latency_s": 0.947,
+      "reason": "grounding: no 'LUAW' words in the text",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"N1169\",\n  \"runway\": \"22\",\n  \"instruction\": \"LUAW\",\n  \"taxiways\": [\n    \"F\"\n  ]\n}",
+      "dropped": true,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.9481,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT",
+   "run_id": "e2e-syn_klga_heldout4_09_n_hold_short-20261009-201053",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0008,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL2233"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0027,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 22,
+     "source_id": "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "DAL6217"
+      ],
+      "runway": "4",
+      "instruction": "HOLD_SHORT"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS",
+   "run_id": "e2e-syn_klga_heldout4_10_n_exit_taxi_then_cross-20261009-201133",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0015,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0028,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 48,
+     "source_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_03",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL2200"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 55,
+     "source_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_04",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": null,
+      "reason": "no callsign heard"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0006,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 59,
+     "source_id": "SYN_KLGA_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_05",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N4321S"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS",
+   "run_id": "e2e-syn_klga_heldout4_11_n_clear_report_then_cross-20261009-201250",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 45,
+     "source_id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_02",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": "4",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": null,
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N1128N"
+      ],
+      "runway": null,
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "handled_by": "fast path llm_parse",
+     "llm": {
+      "latency_s": 0.865,
+      "reason": "valid",
+      "raw": "{\n  \"speaker_role\": \"PILOT\",\n  \"callsign\": \"N1128N\",\n  \"runway\": null,\n  \"instruction\": \"CROSSING_COMPLETE\",\n  \"taxiways\": []\n}"
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.8665,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 55,
+     "source_id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_03",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 59,
+     "source_id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_04",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": null,
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": null,
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "N2656U"
+      ],
+      "runway": null,
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS",
+   "run_id": "e2e-syn_klga_heldout4_12_n_go_around_then_cross-20261009-201408",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 30,
+     "source_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 33,
+     "source_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA1262"
+      ],
+      "runway": null,
+      "instruction": "GO_AROUND"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 45,
+     "source_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_04",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 49,
+     "source_id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_05",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL9049"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF",
+   "run_id": "e2e-syn_klga_heldout4_13_n_luaw_then_tkof-20261009-201515",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": null,
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": null,
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": null,
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0019,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 40,
+     "source_id": "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0004,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 44,
+     "source_id": "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "UAL1736"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE",
+   "run_id": "e2e-syn_klga_heldout4_14_n_luaw_continue-20261009-201617",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": false,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0023,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "callsign last"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 14,
+     "source_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_02",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2816"
+      ],
+      "runway": "4",
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_02",
+      "t": 14,
+      "latency_s": 0.831,
+      "reason": "no actionable content",
+      "raw": "{\n  \"speaker_role\": \"ATC\",\n  \"callsign\": \"FFT2816\",\n  \"runway\": \"4\",\n  \"instruction\": \"OTHER\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.8324,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 18,
+     "source_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_03",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "FFT2816"
+      ],
+      "runway": null,
+      "instruction": "OTHER"
+     },
+     "fast_path": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "fast_path_llm": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "end_to_end": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": null
+     },
+     "handled_by": "none",
+     "llm": {
+      "source_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_03",
+      "t": 18,
+      "latency_s": 0.797,
+      "reason": "no actionable content",
+      "raw": "{\n  \"speaker_role\": \"PILOT\",\n  \"callsign\": \"FFT2816\",\n  \"runway\": null,\n  \"instruction\": \"OTHER\",\n  \"taxiways\": []\n}",
+      "dropped": false,
+      "actionable": false
+     },
+     "speaker_classifier": null,
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.7973,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 30,
+     "source_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_04",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 34,
+     "source_id": "SYN_KLGA_HELDOUT4_14_N_LUAW_CONTINUE_05",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "AAL1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "?1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "?1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "?1195"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0002,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_15_RB_WRONG_RUNWAY",
+   "run_id": "e2e-syn_klga_heldout4_15_rb_wrong_runway-20261009-201709",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": true,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_15_RB_WRONG_RUNWAY_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0009,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_15_RB_WRONG_RUNWAY_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "SWA1200"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": null,
+      "reason": "no callsign heard"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0006,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY",
+   "run_id": "e2e-syn_klga_heldout4_16_rb_missing_runway-20261009-201732",
+   "expected_alert": false,
+   "expected_rules": [],
+   "expected_readback_mismatch": true,
+   "alerts": [],
+   "rows": [
+    {
+     "t": 0,
+     "source_id": "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY_00",
+     "speaker": "ATC",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "ATC",
+      "reason": "callsign first"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0015,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    },
+    {
+     "t": 4,
+     "source_id": "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY_01",
+     "speaker": "PILOT",
+     "input": null,
+     "text": null,
+     "reference": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "fast_path_llm": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "end_to_end": {
+      "callsigns": [
+       "EDV2800"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "handled_by": "fast path",
+     "llm": null,
+     "speaker_classifier": {
+      "role": "PILOT",
+      "reason": "pilot phrase"
+     },
+     "agent_called_process_transmission": 0,
+     "agent_text_verbatim": null,
+     "agent_rc": null,
+     "asr_s": null,
+     "fast_path_s": 0.0003,
+     "agent_ingest_s": null,
+     "agent_turn_s": null
+    }
+   ]
+  }
+ ]
+}

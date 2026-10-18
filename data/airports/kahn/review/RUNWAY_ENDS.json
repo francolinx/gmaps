@@ -1,0 +1,55 @@
+{
+ "icao": "KAHN",
+ "graticule_source": "pdf_text_layer",
+ "fit": {
+  "fitted_on": "graticule intersections only",
+  "graticule_source": "pdf_text_layer",
+  "control_points_n": 6,
+  "fit_rms_m": 0.005
+ },
+ "along_flag_m": 5.0,
+ "flagged_fit_problems": [],
+ "diagnosis": {},
+ "ends": [
+  {
+   "id": "02",
+   "residual_m": 0.08,
+   "along_m": -0.07,
+   "across_m": -0.04
+  },
+  {
+   "id": "09",
+   "residual_m": 10.12,
+   "along_m": -0.49,
+   "across_m": 10.11
+  },
+  {
+   "id": "20",
+   "residual_m": 0.04,
+   "along_m": 0.03,
+   "across_m": -0.02
+  },
+  {
+   "id": "27",
+   "residual_m": 3.65,
+   "along_m": -0.32,
+   "across_m": -3.64
+  }
+ ],
+ "runways": [
+  {
+   "runway": "02/20",
+   "nasr_length_ft": 3995,
+   "diagram_length_ft": 3995,
+   "length_diff_m": 0.0,
+   "bearing_diff_deg": -0.002
+  },
+  {
+   "runway": "09/27",
+   "nasr_length_ft": 6122,
+   "diagram_length_ft": 6124,
+   "length_diff_m": 0.7,
+   "bearing_diff_deg": 0.199
+  }
+ ]
+}

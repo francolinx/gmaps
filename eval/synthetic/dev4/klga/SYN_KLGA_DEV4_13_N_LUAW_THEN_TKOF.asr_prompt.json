@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_13_N_LUAW_THEN_TKOF_00": {
+  "text": "Spirit 1094, runway four, line up and wait, traffic a regional jet, six mile final.",
+  "asr_s": 0.235
+ },
+ "SYN_KLGA_DEV4_13_N_LUAW_THEN_TKOF_01": {
+  "text": "Line up and wait for Spirit 1094.",
+  "asr_s": 0.169
+ },
+ "SYN_KLGA_DEV4_13_N_LUAW_THEN_TKOF_02": {
+  "text": "Spirit 1094, runway four, wind two two zero at one zero gusts two one, cleared for takeoff.",
+  "asr_s": 0.252
+ },
+ "SYN_KLGA_DEV4_13_N_LUAW_THEN_TKOF_03": {
+  "text": "Cleared for takeoff four, Spirit 10-94.",
+  "asr_s": 0.183
+ }
+}

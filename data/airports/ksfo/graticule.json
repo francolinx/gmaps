@@ -1,0 +1,103 @@
+{
+ "icao": "KSFO",
+ "source": "outline_glyph_decode",
+ "about": "Graticule values drawn as outlines only, decoded by exact glyph shape against glyphs the same chart draws over its own text layer, and tied to the extracted grid lines by position (tools/airport_map/graticule.py). Not human-confirmed.",
+ "pdf_sha256": "40018bd03c5fb1f6b54faacd6a05503f97c7ceb7d79eff2ae317325a250938fb",
+ "read_at": "2026-10-09T12:26:59-0400",
+ "confirmed_by": null,
+ "parallels": [
+  {
+   "value": "37°38'N",
+   "lat": 37.63333333333333,
+   "line_pt_y": 78.9,
+   "label_bbox": [
+    518.94,
+    76.36,
+    541.55,
+    81.37
+   ]
+  },
+  {
+   "value": "37°37'N",
+   "lat": 37.61666666666667,
+   "line_pt_y": 242.888,
+   "label_bbox": [
+    519.59,
+    240.35,
+    542.2,
+    245.35
+   ]
+  }
+ ],
+ "meridians": [
+  {
+   "value": "122°24'W",
+   "lon": -122.4,
+   "line_pt_x": 154.413,
+   "label_bbox": [
+    140.82,
+    23.46,
+    168.51,
+    28.46
+   ]
+  },
+  {
+   "value": "122°23'W",
+   "lon": -122.38333333333334,
+   "line_pt_x": 284.836,
+   "label_bbox": [
+    271.27,
+    23.52,
+    298.95,
+    28.46
+   ]
+  },
+  {
+   "value": "122°22'W",
+   "lon": -122.36666666666666,
+   "line_pt_x": 415.266,
+   "label_bbox": [
+    401.71,
+    23.52,
+    429.39,
+    28.46
+   ]
+  }
+ ],
+ "decode": {
+  "method": "exact glyph-shape match against glyphs the same chart draws over its own text layer",
+  "training": "this chart",
+  "training_glyphs": 911,
+  "rule": "every glyph within 0.03 of a learned shape of one character, and at least 0.1 from any other character (Franco, Oct 9: unambiguous only)",
+  "per_value": [
+   {
+    "text": "37°38'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "37°37'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "122°24'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "122°23'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "122°22'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   }
+  ],
+  "distinct_shapes": 383,
+  "decoded_labels": 5,
+  "undecoded_groups": 0
+ }
+}

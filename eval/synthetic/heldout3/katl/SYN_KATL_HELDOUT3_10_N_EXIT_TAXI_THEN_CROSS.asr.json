@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_00": {
+  "text": "JetBlue 100, Wing 280 at 17G28, runway 26L, cleared to land.",
+  "asr_s": 0.222
+ },
+ "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_01": {
+  "text": "Jet Blue 100, Roger. Clear to land runway 26L.",
+  "asr_s": 0.187
+ },
+ "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_02": {
+  "text": "JetBlue 100 enabled. Turn left next taxiway. Contact ground 121.9.",
+  "asr_s": 0.223
+ },
+ "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_03": {
+  "text": "Get through the 100 and continue taxiing by a mic towards the ramp.",
+  "asr_s": 0.197
+ },
+ "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_04": {
+  "text": "Southwest 390 and Echo 5 cross runway 26L without delay.",
+  "asr_s": 0.186
+ },
+ "SYN_KATL_HELDOUT3_10_N_EXIT_TAXI_THEN_CROSS_05": {
+  "text": "Crossing runway 26 left at Echo 5, Southwest 319.",
+  "asr_s": 0.181
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "id": "SYN_KATL_DEV4_14_N_LUAW_CONTINUE",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "SWA1023"
+    ],
+    "runway": "26L",
+    "instruction": "LUAW"
+   },
+   "id": "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA1023"
+    ],
+    "runway": "26L",
+    "instruction": "LUAW"
+   },
+   "id": "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "NKS2832"
+    ],
+    "runway": "26L",
+    "instruction": "OTHER"
+   },
+   "id": "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "NKS2832"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "id": "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_03"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA1023"
+    ],
+    "runway": "26L",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_04"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA1023"
+    ],
+    "runway": "26L",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KATL_DEV4_14_N_LUAW_CONTINUE_05"
+  }
+ ]
+}

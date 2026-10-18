@@ -1,0 +1,40 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31004_16_RB_MISSING_RUNWAY",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KATL_TRAINFT_S31004_16_RB_MISSING_RUNWAY_00",
+   "fields": {
+    "callsigns": [
+     "JBU1983"
+    ],
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "JBU1983",
+    "runway": "27R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31004_16_RB_MISSING_RUNWAY_01",
+   "fields": {
+    "callsigns": [
+     "JBU1983"
+    ],
+    "runway": null,
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "JBU1983",
+    "runway": null,
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  }
+ ]
+}

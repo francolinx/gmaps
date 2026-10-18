@@ -1,0 +1,55 @@
+{
+ "icao": "KHWD",
+ "graticule_source": "pdf_text_layer",
+ "fit": {
+  "fitted_on": "graticule intersections only",
+  "graticule_source": "pdf_text_layer",
+  "control_points_n": 6,
+  "fit_rms_m": 0.019
+ },
+ "along_flag_m": 5.0,
+ "flagged_fit_problems": [],
+ "diagnosis": {},
+ "ends": [
+  {
+   "id": "10L",
+   "residual_m": 11.83,
+   "along_m": -1.18,
+   "across_m": -11.77
+  },
+  {
+   "id": "10R",
+   "residual_m": 10.13,
+   "along_m": -1.18,
+   "across_m": 10.06
+  },
+  {
+   "id": "28L",
+   "residual_m": 2.65,
+   "along_m": 1.14,
+   "across_m": 2.39
+  },
+  {
+   "id": "28R",
+   "residual_m": 1.42,
+   "along_m": 1.03,
+   "across_m": 0.97
+  }
+ ],
+ "runways": [
+  {
+   "runway": "10L/28R",
+   "nasr_length_ft": 3108,
+   "diagram_length_ft": 3109,
+   "length_diff_m": 0.3,
+   "bearing_diff_deg": -0.652
+  },
+  {
+   "runway": "10R/28L",
+   "nasr_length_ft": 5694,
+   "diagram_length_ft": 5694,
+   "length_diff_m": -0.0,
+   "bearing_diff_deg": 0.411
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_00": {
+  "text": "November 7-6-0, 1-Victor, Runway 2-2, line up and wait. Trafficker Airbus 320, 4-mile final.",
+  "asr_s": 0.32
+ },
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_01": {
+  "text": "Line up and wait 2-2, November 7-6-0, one victor.",
+  "asr_s": 0.224
+ },
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_02": {
+  "text": "November 8728 Lima, runway 22, cleared to land, traffic holding in position.",
+  "asr_s": 0.213
+ },
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_03": {
+  "text": "Cleared to land 2-2. November 8-7-2. 8 Lima.",
+  "asr_s": 0.216
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_00": {
+  "text": "Endeavor 1475, cleared to land runway 9 or left.",
+  "asr_s": 0.185
+ },
+ "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_01": {
+  "text": "Clear to land, niner left, Endeavour 1475.",
+  "asr_s": 0.194
+ },
+ "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_02": {
+  "text": "Delta 137 at Bravo 3 Cross runway 26R.",
+  "asr_s": 0.192
+ },
+ "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_03": {
+  "text": "Crossing runway 26 right at Bravo 3, Delta 137.",
+  "asr_s": 0.185
+ }
+}

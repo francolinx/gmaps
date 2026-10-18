@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev4",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CROSS_OTHER_RWY",
+ "basis": "crossing a runway with no active operation",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9301,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "U",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest twenty three ninety four, runway niner left, wind two three zero at one three gusts two four, cleared to land.",
+   "id": "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Southwest twenty three ninety four, roger, cleared to land runway niner left.",
+   "id": "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "United ten fifty four, cross runway eight right at Echo three.",
+   "id": "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway eight right at Echo three, United ten fifty four.",
+   "id": "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "id": "RDU_EXERCISE_FICTIONAL",
+ "title": "Fictional exercise in RDU phraseology: crossing clearance on the landing runway, stop given, no readback",
+ "airport": "KRDU",
+ "is_fictional": true,
+ "source_note": "Fictional, scripted exchange. Callsigns invented (SimAir, Rescue). Uses KRDU runway and taxiway names only; not a reconstruction of any event. Ledger only: no positions, no predictions.",
+ "expected_engine_behaviour": [
+  "t=0 landing clearance runway 23L recorded (SIM212); t=3 read back.",
+  "t=28 crossing clearance runway 23L at C (RESCUE7): two recorded authorizations on 05R-23L -> R1 CONFLICT.",
+  "t=38 stop issued to RESCUE7; no readback follows -> R13 CAUTION at t=48."
+ ],
+ "events": [
+  {"t": 0, "freq": "tower", "speaker": "ATC", "text_clean": "SimAir two one two, runway two three left, cleared to land."},
+  {"t": 3, "freq": "tower", "speaker": "SIM212", "text_clean": "Cleared to land runway two three left, SimAir two one two."},
+  {"t": 24, "freq": "tower", "speaker": "RESCUE7", "text_clean": "Raleigh tower, Rescue seven, request to cross runway two three left at Charlie."},
+  {"t": 28, "freq": "tower", "speaker": "ATC", "text_clean": "Rescue seven, cross runway two three left at Charlie."},
+  {"t": 31, "freq": "tower", "speaker": "RESCUE7", "text_clean": "Crossing runway two three left at Charlie, Rescue seven."},
+  {"t": 38, "freq": "tower", "speaker": "ATC", "text_clean": "Rescue seven, stop, stop, stop."}
+ ]
+}

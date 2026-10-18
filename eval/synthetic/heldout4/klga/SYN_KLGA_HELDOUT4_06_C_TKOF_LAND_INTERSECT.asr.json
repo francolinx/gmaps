@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Spirit 4-9-9-5, runway 2-2, cleared for takeoff. Turn left heading 2-7-0.",
+  "asr_s": 0.272
+ },
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Roger, cleared for takeoff, PC Spirit 490905",
+  "asr_s": 0.19
+ },
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Denver 2302, number 2, runway 31, cleared to left.",
+  "asr_s": 0.196
+ },
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Runway 31 clears the land, Endeavour 2302",
+  "asr_s": 0.191
+ }
+}

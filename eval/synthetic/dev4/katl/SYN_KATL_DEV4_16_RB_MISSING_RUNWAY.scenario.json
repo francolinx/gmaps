@@ -1,0 +1,33 @@
+{
+ "id": "SYN_KATL_DEV4_16_RB_MISSING_RUNWAY",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev4",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "RB_MISSING_RUNWAY",
+ "basis": "readback mismatch: the landing clearance read back without the runway (R14, scored separately)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9301,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "D",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Delta twenty five ninety three, runway two six left, wind zero five zero at one two, cleared to land.",
+   "id": "SYN_KATL_DEV4_16_RB_MISSING_RUNWAY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Delta twenty five ninety three, cleared to land.",
+   "id": "SYN_KATL_DEV4_16_RB_MISSING_RUNWAY_01",
+   "speaker_ref": "a"
+  }
+ ]
+}

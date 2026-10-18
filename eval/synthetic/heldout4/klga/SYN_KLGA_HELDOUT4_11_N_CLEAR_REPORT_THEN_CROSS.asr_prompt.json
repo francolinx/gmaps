@@ -1,0 +1,22 @@
+{
+ "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Twin Cessna one one two eight November, runway four, cleared to land, wind zero six zero at one five.",
+  "asr_s": 0.255
+ },
+ "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "Runway four cleared to land, twin Cessna one one two eight November.",
+  "asr_s": 0.204
+ },
+ "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Winchester one one two eight November, clear of the runway.",
+  "asr_s": 0.199
+ },
+ "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "Twin Cessna 2656 Uniform, cross runway four at Papa without delay, traffic short final.",
+  "asr_s": 0.222
+ },
+ "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Cross runway four, eight bumper, twin Cessna two six five six uniform.",
+  "asr_s": 0.197
+ }
+}

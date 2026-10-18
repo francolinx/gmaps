@@ -1,0 +1,116 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31009_14_N_LUAW_CONTINUE",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_14_N_LUAW_CONTINUE_00",
+   "fields": {
+    "callsigns": [
+     "N2515H"
+    ],
+    "runway": "4",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N2515H",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": [
+     "H"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_14_N_LUAW_CONTINUE_01",
+   "fields": {
+    "callsigns": [
+     "N2515H"
+    ],
+    "runway": "4",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N2515H",
+    "runway": "4",
+    "instruction": "LUAW",
+    "taxiways": [
+     "H"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_14_N_LUAW_CONTINUE_02",
+   "fields": {
+    "callsigns": [
+     "EDV1983"
+    ],
+    "runway": "4",
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "EDV1983",
+    "runway": "4",
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_14_N_LUAW_CONTINUE_03",
+   "fields": {
+    "callsigns": [
+     "EDV1983"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "EDV1983",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_14_N_LUAW_CONTINUE_04",
+   "fields": {
+    "callsigns": [
+     "N2515H"
+    ],
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N2515H",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "H"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31009_14_N_LUAW_CONTINUE_05",
+   "fields": {
+    "callsigns": [
+     "N2515H"
+    ],
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N2515H",
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "H"
+    ]
+   }
+  }
+ ]
+}

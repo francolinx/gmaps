@@ -1,0 +1,30 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "DAL2900",
+  "EDV1300",
+  "FFT2516",
+  "FFT2700",
+  "FFT4399",
+  "FFT8268",
+  "JBU1300",
+  "JBU1500",
+  "NKS2600",
+  "SWA9920"
+ ],
+ "realistic": [
+  "EDV1300",
+  "FFT1542",
+  "FFT2516",
+  "FFT2700",
+  "FFT2863",
+  "FFT4399",
+  "FFT8268",
+  "JBU1300",
+  "JBU1500",
+  "NKS2300",
+  "NKS2600"
+ ]
+}

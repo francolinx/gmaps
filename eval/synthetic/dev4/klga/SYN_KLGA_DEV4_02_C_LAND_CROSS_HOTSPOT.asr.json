@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "JetBlue 781, runway 4 cleared to land.",
+  "asr_s": 0.183
+ },
+ "SYN_KLGA_DEV4_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "Clear to land for JetBlue 781.",
+  "asr_s": 0.168
+ },
+ "SYN_KLGA_DEV4_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "Cessna Niner, 1-2 Sierra, at Quebec cross runway 4 without delay.",
+  "asr_s": 0.224
+ },
+ "SYN_KLGA_DEV4_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Cross 4 at Quebec, Cessna Niner 1-2 Sierra.",
+  "asr_s": 0.201
+ }
+}

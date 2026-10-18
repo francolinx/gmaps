@@ -1,0 +1,30 @@
+{
+ "id": "SYN_KLGA_DEV4_03_C_TKOF_CROSS",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL2915",
+  "DAL521",
+  "EDV1391",
+  "EDV1580",
+  "JBU1049",
+  "JBU1143",
+  "JBU803",
+  "NKS2583",
+  "SWA609",
+  "UAL119"
+ ],
+ "realistic": [
+  "AAL2915",
+  "DAL521",
+  "DAL817",
+  "EDV1391",
+  "FFT890",
+  "JBU1143",
+  "JBU803",
+  "NKS1154",
+  "NKS2583",
+  "SWA609",
+  "UAL119"
+ ]
+}

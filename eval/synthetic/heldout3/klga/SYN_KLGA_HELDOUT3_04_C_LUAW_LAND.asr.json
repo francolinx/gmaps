@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_00": {
+  "text": "Your 700 runway 22, line up and wait. Traffic in bar 155, mile line.",
+  "asr_s": 0.23
+ },
+ "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_01": {
+  "text": "Spirit 700, line up and wait runway 22.",
+  "asr_s": 0.175
+ },
+ "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_02": {
+  "text": "American 700, runway 22, wind 080 and 6 gusts 18, clear to land. Traffic holding in position.",
+  "asr_s": 0.247
+ },
+ "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_03": {
+  "text": "American 700, Roger. Clear to land runway 22.",
+  "asr_s": 0.184
+ }
+}

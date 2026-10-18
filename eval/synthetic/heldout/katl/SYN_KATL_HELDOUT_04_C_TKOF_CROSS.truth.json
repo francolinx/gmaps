@@ -1,0 +1,52 @@
+{
+ "id": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS",
+ "EVALUATION_ONLY": true,
+ "expected_alert": true,
+ "expected_rules": [
+  "R2"
+ ],
+ "conflict_t": null,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "AAL231"
+    ],
+    "runway": "27R",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "AAL231"
+    ],
+    "runway": "27R",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "UAL748"
+    ],
+    "runway": "27R",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "UAL748"
+    ],
+    "runway": "27R",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_HELDOUT_04_C_TKOF_CROSS_03"
+  }
+ ]
+}

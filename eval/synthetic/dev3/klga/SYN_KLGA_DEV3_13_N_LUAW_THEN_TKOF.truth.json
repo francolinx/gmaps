@@ -1,0 +1,50 @@
+{
+ "id": "SYN_KLGA_DEV3_13_N_LUAW_THEN_TKOF",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "JBU228"
+    ],
+    "runway": "4",
+    "instruction": "LUAW"
+   },
+   "id": "SYN_KLGA_DEV3_13_N_LUAW_THEN_TKOF_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "JBU228"
+    ],
+    "runway": "4",
+    "instruction": "LUAW"
+   },
+   "id": "SYN_KLGA_DEV3_13_N_LUAW_THEN_TKOF_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "JBU228"
+    ],
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KLGA_DEV3_13_N_LUAW_THEN_TKOF_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "JBU228"
+    ],
+    "runway": "4",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "id": "SYN_KLGA_DEV3_13_N_LUAW_THEN_TKOF_03"
+  }
+ ]
+}

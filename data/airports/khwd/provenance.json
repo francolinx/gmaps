@@ -1,0 +1,65 @@
+{
+ "icao": "KHWD",
+ "generated_at": "2026-10-08T23:07:28-0400",
+ "chart": {
+  "publisher": "FAA Aeronautical Information Services, d-TPP airport diagram",
+  "title": "FAA Hayward Exec airport diagram, cycle 2610, 05015AD.PDF",
+  "chart_code": "AL-5015 (FAA)",
+  "cycle": "2610",
+  "effective_from": "2026-10-01",
+  "effective_to": "2026-10-29",
+  "printed_cycle_banner": "SW-2, 01 OCT 2026 to 29 OCT 2026",
+  "banner_checked_against_pdf": true,
+  "url": "https://aeronav.faa.gov/d-tpp/2610/05015AD.PDF",
+  "local_path": "data/airports/sources/hwd_faa_2610_05015AD.pdf",
+  "sha256": "a5006db945561b5d2638684ed4830be90179fe753da2c6891caf55990350c050",
+  "retrieved_on": "2026-10-08",
+  "licence": "US Government work (public domain)",
+  "note": "Not for navigation."
+ },
+ "nasr": {
+  "source": "FAA NASR 28-day subscription, CSV extract",
+  "cycle_effective": "2026-10-01",
+  "url": "https://nfdc.faa.gov/webContent/28DaySub/extra/01_Oct_2026_APT_CSV.zip",
+  "zip_sha256": "aba48ea877f249d9b8cd63988b14b3432a6a09ad1fbe9561a5e6443c99c03dd0",
+  "retrieved_at": "2026-10-08T22:44:58-0400",
+  "licence": "US Government work (public domain)"
+ },
+ "graticule": {
+  "values": [
+   "37°40.0'N",
+   "37°39.5'N",
+   "122°08.0'W",
+   "122°07.5'W",
+   "122°07.0'W"
+  ],
+  "source": "pdf_text_layer",
+  "confirmed_by": null,
+  "confirmed_at": null,
+  "read_at": "2026-10-08T23:07:27-0400"
+ },
+ "osm": {
+  "source": "OpenStreetMap via Overpass API",
+  "licence": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "requested_at": "2026-10-09T02:41:42Z",
+  "osm_data_timestamp": "2026-10-09T02:40:42Z",
+  "raw_sha256": "5fc6803cc189b96cb1d0e6407c841b1ba47a00ffd8baf27e36121f3d074f5793",
+  "folder": "osm/"
+ },
+ "tools": {
+  "extract": "pdfminer.six 20260107",
+  "styles": "tools/airport_map/styles/faa_apd.json"
+ },
+ "display": {
+  "footer": "Reconstructed from FAA airport diagram AL-5015 (FAA), d-TPP cycle 2610 (effective 2026-10-01 to 2026-10-29), sha256 a5006db94556…, https://aeronav.faa.gov/d-tpp/2610/05015AD.PDF. Display only. Not for navigation. No predictions.",
+  "must_show": [
+   "chart.cycle",
+   "chart.effective_from",
+   "chart.effective_to",
+   "chart.sha256",
+   "chart.url"
+  ]
+ }
+}

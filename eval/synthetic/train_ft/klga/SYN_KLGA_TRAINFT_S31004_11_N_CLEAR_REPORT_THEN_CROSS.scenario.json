@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31004_11_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "basis": "section 8: pilot's 'clear of the runway' releases the landing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31004,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "P",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American ten forty, runway four, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31004_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land four, American ten forty.",
+   "id": "SYN_KLGA_TRAINFT_S31004_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "American ten forty, clear of runway four.",
+   "id": "SYN_KLGA_TRAINFT_S31004_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Southwest three seventy eight, at Papa cross runway four without delay.",
+   "id": "SYN_KLGA_TRAINFT_S31004_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Cross four at Papa, Southwest three seventy eight.",
+   "id": "SYN_KLGA_TRAINFT_S31004_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "speaker_ref": "b"
+  }
+ ]
+}

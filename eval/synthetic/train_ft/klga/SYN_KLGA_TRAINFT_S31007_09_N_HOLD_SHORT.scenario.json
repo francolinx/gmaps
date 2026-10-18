@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31007_09_N_HOLD_SHORT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_HOLD_SHORT",
+ "basis": "hold short, read back",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31007,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "C",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor seven eighty nine, runway four, wind two two zero at two zero, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31007_09_N_HOLD_SHORT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land four, Endeavor seven eighty nine.",
+   "id": "SYN_KLGA_TRAINFT_S31007_09_N_HOLD_SHORT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Endeavor niner six two, hold short of runway four.",
+   "id": "SYN_KLGA_TRAINFT_S31007_09_N_HOLD_SHORT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Holding short runway four, Endeavor niner six two.",
+   "id": "SYN_KLGA_TRAINFT_S31007_09_N_HOLD_SHORT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

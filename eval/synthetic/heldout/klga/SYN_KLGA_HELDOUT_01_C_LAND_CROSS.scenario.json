@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KLGA_HELDOUT_01_C_LAND_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "C_LAND_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7302,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "U",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United twenty two fifty, cleared to land runway four.",
+   "id": "SYN_KLGA_HELDOUT_01_C_LAND_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land four, United twenty two fifty.",
+   "id": "SYN_KLGA_HELDOUT_01_C_LAND_CROSS_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Southwest one two six five, at Uniform cross runway four.",
+   "id": "SYN_KLGA_HELDOUT_01_C_LAND_CROSS_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway four at Uniform, Southwest one two six five.",
+   "id": "SYN_KLGA_HELDOUT_01_C_LAND_CROSS_03"
+  }
+ ]
+}

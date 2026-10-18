@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7603_09_N_HOLD_SHORT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "N_HOLD_SHORT",
+ "basis": "hold short, read back",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7603,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "E",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest eight eight four eight, runway two two, cleared to land, wind one six zero at one three.",
+   "id": "SYN_KLGA_HELDOUT5_S7603_09_N_HOLD_SHORT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two two, cleared to land, Southwest eight eight four eight.",
+   "id": "SYN_KLGA_HELDOUT5_S7603_09_N_HOLD_SHORT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Spirit twenty seven hundred, hold short runway two two, traffic on final.",
+   "id": "SYN_KLGA_HELDOUT5_S7603_09_N_HOLD_SHORT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Hold short of runway two two, Spirit twenty seven hundred.",
+   "id": "SYN_KLGA_HELDOUT5_S7603_09_N_HOLD_SHORT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_00": {
+  "text": "Spirit 2444, wind two three zero at two one, runway one three, cleared to land.",
+  "asr_s": 0.241
+ },
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_01": {
+  "text": "Spirit 2444 roger, cleared to land runway one three.",
+  "asr_s": 0.198
+ },
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_02": {
+  "text": "Spirit 2444, go around, climb and maintain 3000.",
+  "asr_s": 0.197
+ },
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_03": {
+  "text": "Spirit 2444 going around.",
+  "asr_s": 0.164
+ },
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_04": {
+  "text": "JetBlue 1023, cross runway one three at Zulu.",
+  "asr_s": 0.194
+ },
+ "SYN_KLGA_DEV4_12_N_GO_AROUND_THEN_CROSS_05": {
+  "text": "Crossing runway one three at Zulu, JetBlue 1023.",
+  "asr_s": 0.195
+ }
+}

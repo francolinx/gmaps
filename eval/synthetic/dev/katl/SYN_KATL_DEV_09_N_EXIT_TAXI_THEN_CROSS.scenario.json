@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev",
+ "phrasing_pool": "A",
+ "template": "N_EXIT_TAXI_THEN_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 9101,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "D",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Delta eight four five, runway two seven right, cleared to land.",
+   "id": "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two seven right, cleared to land, Delta eight four five.",
+   "id": "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_01"
+  },
+  {
+   "t": 40,
+   "speaker": "ATC",
+   "text": "Delta eight four five, turn right at Bravo four, contact ground point eight two.",
+   "id": "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_02"
+  },
+  {
+   "t": 48,
+   "speaker": "ATC",
+   "text": "Delta eight four five, taxi to the ramp via Bravo four.",
+   "id": "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_03"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Endeavor seven two one, cross runway two seven right at Delta.",
+   "id": "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_04"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Cross runway two seven right at Delta, Endeavor seven two one.",
+   "id": "SYN_KATL_DEV_09_N_EXIT_TAXI_THEN_CROSS_05"
+  }
+ ]
+}

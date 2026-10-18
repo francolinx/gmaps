@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_00": {
+  "text": "This is 3-3-0-0 Luma, runway 9 or left, line up and wait. Traffic in RAR 175, 5 mile final.",
+  "asr_s": 0.304
+ },
+ "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_01": {
+  "text": "This is 3300 Lima, line up and wait runway 911.",
+  "asr_s": 0.237
+ },
+ "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_02": {
+  "text": "Jet Blue 297, runway 9 or left continues, traffic holding in position.",
+  "asr_s": 0.203
+ },
+ "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_03": {
+  "text": "JetBlue 297, continuing.",
+  "asr_s": 0.158
+ },
+ "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_04": {
+  "text": "SESA 3300 Lima, runway 9 or left, full length, cleared for takeoff.",
+  "asr_s": 0.228
+ },
+ "SYN_KATL_HELDOUT3_14_N_LUAW_CONTINUE_05": {
+  "text": "DEFINIT 3-3-0-0 Lima, cleared for takeoff runway 9 or less.",
+  "asr_s": 0.239
+ }
+}

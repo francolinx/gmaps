@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV_06_N_CROSS_OTHER_RWY_00": {
+  "text": "American 412, runway 8L cleared to land.",
+  "asr_s": 0.196
+ },
+ "SYN_KATL_DEV_06_N_CROSS_OTHER_RWY_01": {
+  "text": "Runway 8 left, cleared to land American 412.",
+  "asr_s": 0.203
+ },
+ "SYN_KATL_DEV_06_N_CROSS_OTHER_RWY_02": {
+  "text": "Spirit 2347, cross runway 27, left at Papa.",
+  "asr_s": 0.213
+ },
+ "SYN_KATL_DEV_06_N_CROSS_OTHER_RWY_03": {
+  "text": "Cross runway 27 left at Papa, Spirit 2347.",
+  "asr_s": 0.204
+ }
+}

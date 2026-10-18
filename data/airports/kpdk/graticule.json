@@ -1,0 +1,87 @@
+{
+ "icao": "KPDK",
+ "source": "outline_glyph_decode",
+ "about": "Graticule values drawn as outlines only, decoded by exact glyph shape against glyphs the same chart draws over its own text layer, and tied to the extracted grid lines by position (tools/airport_map/graticule.py). Not human-confirmed.",
+ "pdf_sha256": "424430bf990a787cad5a37faf58c288b515b656b29a2a54d474e3ed8aa75bacf",
+ "read_at": "2026-10-09T14:13:59-0400",
+ "confirmed_by": null,
+ "parallels": [
+  {
+   "value": "33°53.0'N",
+   "lat": 33.88333333333333,
+   "line_pt_y": 107.993,
+   "label_bbox": [
+    327.95,
+    105.51,
+    357.6,
+    110.52
+   ]
+  },
+  {
+   "value": "33°52.5'N",
+   "lat": 33.875,
+   "line_pt_y": 326.423,
+   "label_bbox": [
+    327.95,
+    323.95,
+    357.6,
+    328.95
+   ]
+  }
+ ],
+ "meridians": [
+  {
+   "value": "84°18.5'W",
+   "lon": -84.30833333333334,
+   "line_pt_x": 69.916,
+   "label_bbox": [
+    54.29,
+    513.25,
+    85.86,
+    518.25
+   ]
+  },
+  {
+   "value": "84°18.0'W",
+   "lon": -84.3,
+   "line_pt_x": 252.112,
+   "label_bbox": [
+    236.5,
+    513.25,
+    268.07,
+    518.25
+   ]
+  }
+ ],
+ "decode": {
+  "method": "exact glyph-shape match against the shared FAA glyph library",
+  "training": "shared glyph library from KAHN (566), KATL (1681), KBOS (970), KEWR (806), KHWD (537), KJFK (769), KLGA (745), KORD (1643), KSFO (911)",
+  "training_glyphs": 8628,
+  "rule": "every glyph within 0.03 of a learned shape of one character, and at least 0.1 from any other character (Franco, Oct 9: unambiguous only)",
+  "per_value": [
+   {
+    "text": "84°18.5'W",
+    "max_deviation": 0.02,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "33°52.5'N",
+    "max_deviation": 0.0,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "84°18.0'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "33°53.0'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   }
+  ],
+  "distinct_shapes": 2247,
+  "decoded_labels": 4,
+  "undecoded_groups": 27
+ }
+}

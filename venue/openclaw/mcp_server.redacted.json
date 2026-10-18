@@ -1,0 +1,15 @@
+{
+ "mcp": {
+  "servers": {
+   "gmaps": {
+    "url": "http://host.openshell.internal:11435/mcp",
+    "transport": "streamable-http",
+    "headers": {
+     "Authorization": "Bearer <GMAPS_MCP_TOKEN from ~/gmaps_venue/secrets/mcp_token>"
+    },
+    "connectTimeout": 10,
+    "timeout": 30
+   }
+  }
+ }
+}

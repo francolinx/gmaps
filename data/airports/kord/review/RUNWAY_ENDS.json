@@ -1,0 +1,169 @@
+{
+ "icao": "KORD",
+ "graticule_source": "outline_glyph_decode",
+ "fit": {
+  "fitted_on": "graticule intersections only",
+  "graticule_source": "outline_glyph_decode",
+  "control_points_n": 12,
+  "fit_rms_m": 0.186
+ },
+ "along_flag_m": 5.0,
+ "flagged_fit_problems": [],
+ "diagnosis": {},
+ "ends": [
+  {
+   "id": "04L",
+   "residual_m": 2.79,
+   "along_m": -0.19,
+   "across_m": -2.79
+  },
+  {
+   "id": "04R",
+   "residual_m": 17.22,
+   "along_m": 0.21,
+   "across_m": 17.22
+  },
+  {
+   "id": "09C",
+   "residual_m": 7.17,
+   "along_m": -2.34,
+   "across_m": -6.78
+  },
+  {
+   "id": "09L",
+   "residual_m": 14.18,
+   "along_m": -2.54,
+   "across_m": -13.95
+  },
+  {
+   "id": "09R",
+   "residual_m": 4.13,
+   "along_m": -2.74,
+   "across_m": -3.1
+  },
+  {
+   "id": "10C",
+   "residual_m": 5.34,
+   "along_m": -2.76,
+   "across_m": 4.58
+  },
+  {
+   "id": "10L",
+   "residual_m": 3.21,
+   "along_m": -3.14,
+   "across_m": 0.66
+  },
+  {
+   "id": "10R",
+   "residual_m": 17.85,
+   "along_m": -1.04,
+   "across_m": 17.82
+  },
+  {
+   "id": "22L",
+   "residual_m": 11.18,
+   "along_m": -1.1,
+   "across_m": -11.13
+  },
+  {
+   "id": "22R",
+   "residual_m": 5.94,
+   "along_m": 0.02,
+   "across_m": 5.94
+  },
+  {
+   "id": "27C",
+   "residual_m": 6.21,
+   "along_m": -0.18,
+   "across_m": 6.21
+  },
+  {
+   "id": "27L",
+   "residual_m": 3.15,
+   "along_m": -0.34,
+   "across_m": -3.14
+  },
+  {
+   "id": "27R",
+   "residual_m": 13.72,
+   "along_m": 0.03,
+   "across_m": 13.72
+  },
+  {
+   "id": "28C",
+   "residual_m": 0.78,
+   "along_m": -0.73,
+   "across_m": -0.26
+  },
+  {
+   "id": "28L",
+   "residual_m": 17.22,
+   "along_m": -0.47,
+   "across_m": -17.21
+  },
+  {
+   "id": "28R",
+   "residual_m": 1.62,
+   "along_m": -0.84,
+   "across_m": -1.39
+  }
+ ],
+ "runways": [
+  {
+   "runway": "04L/22R",
+   "nasr_length_ft": 7500,
+   "diagram_length_ft": 7501,
+   "length_diff_m": 0.4,
+   "bearing_diff_deg": 0.079
+  },
+  {
+   "runway": "04R/22L",
+   "nasr_length_ft": 8075,
+   "diagram_length_ft": 8077,
+   "length_diff_m": 0.7,
+   "bearing_diff_deg": 0.142
+  },
+  {
+   "runway": "09C/27C",
+   "nasr_length_ft": 11245,
+   "diagram_length_ft": 11255,
+   "length_diff_m": 3.1,
+   "bearing_diff_deg": -0.009
+  },
+  {
+   "runway": "09L/27R",
+   "nasr_length_ft": 7500,
+   "diagram_length_ft": 7511,
+   "length_diff_m": 3.4,
+   "bearing_diff_deg": -0.005
+  },
+  {
+   "runway": "09R/27L",
+   "nasr_length_ft": 11260,
+   "diagram_length_ft": 11271,
+   "length_diff_m": 3.5,
+   "bearing_diff_deg": -0.104
+  },
+  {
+   "runway": "10C/28C",
+   "nasr_length_ft": 10800,
+   "diagram_length_ft": 10810,
+   "length_diff_m": 3.0,
+   "bearing_diff_deg": 0.075
+  },
+  {
+   "runway": "10L/28R",
+   "nasr_length_ft": 13000,
+   "diagram_length_ft": 13012,
+   "length_diff_m": 3.5,
+   "bearing_diff_deg": -0.011
+  },
+  {
+   "runway": "10R/28L",
+   "nasr_length_ft": 7500,
+   "diagram_length_ft": 7503,
+   "length_diff_m": 0.8,
+   "bearing_diff_deg": 0.015
+  }
+ ]
+}

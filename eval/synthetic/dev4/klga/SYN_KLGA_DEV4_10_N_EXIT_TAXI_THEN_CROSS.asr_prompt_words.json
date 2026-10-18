@@ -1,0 +1,250 @@
+{
+ "SYN_KLGA_DEV4_10_N_EXIT_TAXI_THEN_CROSS_00": {
+  "text": "Southwest 1882, runway two two cleared to land.",
+  "asr_s": 0.452,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9614
+   },
+   {
+    "w": "1882,",
+    "p": 0.6742
+   },
+   {
+    "w": "runway",
+    "p": 0.9767
+   },
+   {
+    "w": "two",
+    "p": 0.9969
+   },
+   {
+    "w": "two",
+    "p": 0.9905
+   },
+   {
+    "w": "cleared",
+    "p": 0.6162
+   },
+   {
+    "w": "to",
+    "p": 0.9992
+   },
+   {
+    "w": "land.",
+    "p": 0.9477
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_10_N_EXIT_TAXI_THEN_CROSS_01": {
+  "text": "Southwest 1882, roger, cleared to land runway two two.",
+  "asr_s": 0.404,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9412
+   },
+   {
+    "w": "1882,",
+    "p": 0.6192
+   },
+   {
+    "w": "roger,",
+    "p": 0.4916
+   },
+   {
+    "w": "cleared",
+    "p": 0.9947
+   },
+   {
+    "w": "to",
+    "p": 0.9612
+   },
+   {
+    "w": "land",
+    "p": 0.9992
+   },
+   {
+    "w": "runway",
+    "p": 0.5976
+   },
+   {
+    "w": "two",
+    "p": 0.9959
+   },
+   {
+    "w": "two.",
+    "p": 0.9391
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_10_N_EXIT_TAXI_THEN_CROSS_02": {
+  "text": "Southwest 1882, turn right next taxiway, contact ground point seven.",
+  "asr_s": 0.471,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9507
+   },
+   {
+    "w": "1882,",
+    "p": 0.6843
+   },
+   {
+    "w": "turn",
+    "p": 0.9852
+   },
+   {
+    "w": "right",
+    "p": 0.9983
+   },
+   {
+    "w": "next",
+    "p": 0.9979
+   },
+   {
+    "w": "taxiway,",
+    "p": 0.8055
+   },
+   {
+    "w": "contact",
+    "p": 0.9935
+   },
+   {
+    "w": "ground",
+    "p": 0.871
+   },
+   {
+    "w": "point",
+    "p": 0.9252
+   },
+   {
+    "w": "seven.",
+    "p": 0.9372
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_10_N_EXIT_TAXI_THEN_CROSS_03": {
+  "text": "Southwest 1882, continue taxiing via Yankee Yankee to the ramp.",
+  "asr_s": 0.437,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9327
+   },
+   {
+    "w": "1882,",
+    "p": 0.578
+   },
+   {
+    "w": "continue",
+    "p": 0.9737
+   },
+   {
+    "w": "taxiing",
+    "p": 0.9595
+   },
+   {
+    "w": "via",
+    "p": 0.9815
+   },
+   {
+    "w": "Yankee",
+    "p": 0.9518
+   },
+   {
+    "w": "Yankee",
+    "p": 0.9501
+   },
+   {
+    "w": "to",
+    "p": 0.9889
+   },
+   {
+    "w": "the",
+    "p": 0.9975
+   },
+   {
+    "w": "ramp.",
+    "p": 0.9434
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_10_N_EXIT_TAXI_THEN_CROSS_04": {
+  "text": "Endeavor 2878, cross runway two two at Quebec.",
+  "asr_s": 0.495,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.6428
+   },
+   {
+    "w": "2878,",
+    "p": 0.7538
+   },
+   {
+    "w": "cross",
+    "p": 0.9806
+   },
+   {
+    "w": "runway",
+    "p": 0.9981
+   },
+   {
+    "w": "two",
+    "p": 0.9963
+   },
+   {
+    "w": "two",
+    "p": 0.9906
+   },
+   {
+    "w": "at",
+    "p": 0.8118
+   },
+   {
+    "w": "Quebec.",
+    "p": 0.8985
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_10_N_EXIT_TAXI_THEN_CROSS_05": {
+  "text": "Crossing runway two two at Quebec, Endeavor 2878.",
+  "asr_s": 0.458,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.9396
+   },
+   {
+    "w": "runway",
+    "p": 0.9582
+   },
+   {
+    "w": "two",
+    "p": 0.9958
+   },
+   {
+    "w": "two",
+    "p": 0.9773
+   },
+   {
+    "w": "at",
+    "p": 0.8992
+   },
+   {
+    "w": "Quebec,",
+    "p": 0.7536
+   },
+   {
+    "w": "Endeavor",
+    "p": 0.7202
+   },
+   {
+    "w": "2878.",
+    "p": 0.7892
+   }
+  ]
+ }
+}

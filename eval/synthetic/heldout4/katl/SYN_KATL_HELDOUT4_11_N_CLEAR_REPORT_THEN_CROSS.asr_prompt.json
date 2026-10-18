@@ -1,0 +1,22 @@
+{
+ "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Twin Cessna 2523 Romeo, number two, runway two six left, cleared to land.",
+  "asr_s": 0.251
+ },
+ "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "runway two six left, cleared to land, twin Cessna two five two three, roger.",
+  "asr_s": 0.221
+ },
+ "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Cessna 2523 Romeo clear of the runway.",
+  "asr_s": 0.188
+ },
+ "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "United 1100, proceed via Echo One, cross runway two six left.",
+  "asr_s": 0.198
+ },
+ "SYN_KATL_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Cross runway two six left at Echo One, United 1100.",
+  "asr_s": 0.187
+ }
+}

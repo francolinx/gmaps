@@ -1,0 +1,18 @@
+{
+ "icao": "KORD",
+ "checked_at": "2026-10-09T00:12:50-0400",
+ "dpi": 300,
+ "ink_level": 250,
+ "tolerance_px": 1,
+ "pdf_sha256": "e936b9b0a787042c522c0bb50b38837c08d628d78fb4ef876d816fda47fb44de",
+ "faa_ink_px": 828881,
+ "reconstruction_ink_px": 831134,
+ "covered_pct": 99.808,
+ "extra_pct": 0.258,
+ "thresholds": {
+  "min_covered_pct": 99.0,
+  "max_extra_pct": 2.0
+ },
+ "pass": true,
+ "note": "faithful.svg uses original FAA styling; visible-text labels use a substitute font."
+}

@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KATL_HELDOUT_02_C_LAND_CROSS_HOTSPOT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "C_LAND_CROSS_HOTSPOT",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7301,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "D",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit niner three eight, cleared to land runway eight left.",
+   "id": "SYN_KATL_HELDOUT_02_C_LAND_CROSS_HOTSPOT_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land eight left, Spirit niner three eight.",
+   "id": "SYN_KATL_HELDOUT_02_C_LAND_CROSS_HOTSPOT_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Delta six niner, at Delta cross runway eight left.",
+   "id": "SYN_KATL_HELDOUT_02_C_LAND_CROSS_HOTSPOT_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway eight left at Delta, Delta six niner.",
+   "id": "SYN_KATL_HELDOUT_02_C_LAND_CROSS_HOTSPOT_03"
+  }
+ ]
+}

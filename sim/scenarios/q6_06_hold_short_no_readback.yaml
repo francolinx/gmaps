@@ -1,0 +1,14 @@
+# Held-out (claude/sim-upgrades, Oct 16): written before any run; the parser and ledger were not changed for it.
+id: Q6_06_HOLD_SHORT_NO_READBACK
+title: Hold short instruction during a landing with no read back heard (missed-read-back caution expected)
+airport: XSIM
+simulated: true
+end_t: 50
+transmissions:
+  - {id: t1, t: 0, speaker: ATC, text: "SimAir two one two, runway three six, cleared to land.", cite: "7110.65 3-10-5a"}
+  - {id: t2, t: 5, speaker: PILOT, callsign: SIM212, text: "Cleared to land runway three six, SimAir two one two.", cite: "AIM via 7110.65 2-4-3 NOTE 1c"}
+  - {id: t3, t: 15, speaker: ATC, text: "Rescue seven, hold short of runway three six at Kilo.", cite: "7110.65 3-7-2 (hold short instruction; read back required)"}
+expected_alerts:
+  - {id: A1, rule: [R7], runway: "36", window: [28, 42], why: "no read back naming the runway hold within the configured 15 s (readback_timeout_s)"}
+expected_no_alert:
+  - {window: [0, 27], why: "the read back window has not run out yet"}

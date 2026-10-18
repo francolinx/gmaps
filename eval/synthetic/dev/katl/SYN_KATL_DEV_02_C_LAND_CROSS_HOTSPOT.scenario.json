@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KATL_DEV_02_C_LAND_CROSS_HOTSPOT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev",
+ "phrasing_pool": "A",
+ "template": "C_LAND_CROSS_HOTSPOT",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 9101,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "D",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United six zero niner, runway two six left, cleared to land.",
+   "id": "SYN_KATL_DEV_02_C_LAND_CROSS_HOTSPOT_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two six left, cleared to land, United six zero niner.",
+   "id": "SYN_KATL_DEV_02_C_LAND_CROSS_HOTSPOT_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Southwest two three eight zero, cross runway two six left at Delta.",
+   "id": "SYN_KATL_DEV_02_C_LAND_CROSS_HOTSPOT_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway two six left at Delta, Southwest two three eight zero.",
+   "id": "SYN_KATL_DEV_02_C_LAND_CROSS_HOTSPOT_03"
+  }
+ ]
+}

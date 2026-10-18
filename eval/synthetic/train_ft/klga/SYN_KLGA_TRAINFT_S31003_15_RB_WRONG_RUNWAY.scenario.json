@@ -1,0 +1,33 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31003_15_RB_WRONG_RUNWAY",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "RB_WRONG_RUNWAY",
+ "basis": "readback mismatch: the landing clearance read back with another runway (R14, scored separately)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31003,
+ "context": {
+  "runway": "13-31",
+  "taxiway": "R",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier one hundred four, runway three one, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31003_15_RB_WRONG_RUNWAY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two two, Frontier one hundred four.",
+   "id": "SYN_KLGA_TRAINFT_S31003_15_RB_WRONG_RUNWAY_01",
+   "speaker_ref": "a"
+  }
+ ]
+}

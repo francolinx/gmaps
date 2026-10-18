@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31013_05_C_TKOF_LAND_SAME",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_TKOF_LAND_SAME",
+ "basis": "R3 takeoff vs landing, same runway (3-9-6, 3-10-3)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31013,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "N2",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American five two two, runway niner right, wind zero six zero at two two. Cleared for takeoff.",
+   "id": "SYN_KATL_TRAINFT_S31013_05_C_TKOF_LAND_SAME_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared for takeoff niner right, American five two two.",
+   "id": "SYN_KATL_TRAINFT_S31013_05_C_TKOF_LAND_SAME_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Spirit thirteen twenty five, runway niner right cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31013_05_C_TKOF_LAND_SAME_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Cleared to land niner right, Spirit thirteen twenty five.",
+   "id": "SYN_KATL_TRAINFT_S31013_05_C_TKOF_LAND_SAME_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

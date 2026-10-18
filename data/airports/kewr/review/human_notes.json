@@ -1,0 +1,29 @@
+{
+ "about": "Human review notes for KEWR, read by tools/airport_map/osm.py (data, not code).",
+ "taxiway_names_decisions": {
+  "decided_by": "Franco",
+  "decided_at": "2026-10-09",
+  "rows": [
+   {
+    "label": "F",
+    "lat": 40.6842023,
+    "lon": -74.1778418,
+    "decision": "chart right: F is labelled along its lane; OSM has no way there",
+    "rule": "R1"
+   },
+   {
+    "label": "F",
+    "lat": 40.6851973,
+    "lon": -74.1772028,
+    "decision": "chart right: F is labelled along its lane; OSM has no way there",
+    "rule": "R1"
+   }
+  ]
+ },
+ "osm_name_flags": [
+  {
+   "label": "F",
+   "flag": "OSM geometry missing for KEWR F (do not borrow L1-L3 / F2 / F3 for it)"
+  }
+ ]
+}

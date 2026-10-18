@@ -1,0 +1,15 @@
+{
+ "SIMULATED": true,
+ "split": "heldout5",
+ "text_source": "script",
+ "gold_rule": "fixed",
+ "rows": 414,
+ "rows_with_empty_text": 0,
+ "prompt_source": {
+  "KLGA": "chart_identifiers",
+  "KATL": "chart_identifiers"
+ },
+ "built_at_commit": "07f01da",
+ "sha256": "8c2f777cf8c0134a2f6f0fe38d4bc1bd3a4bf3c42ee63514211f197cac71f74e",
+ "note": "eval-side file; the policy sees responses_create_params only; gold is for the verifier"
+}

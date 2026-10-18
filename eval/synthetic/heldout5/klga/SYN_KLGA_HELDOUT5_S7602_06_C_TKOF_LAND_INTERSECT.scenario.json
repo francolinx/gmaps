@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7602_06_C_TKOF_LAND_INTERSECT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "C_TKOF_LAND_INTERSECT",
+ "basis": "R4 takeoff vs landing on intersecting runways (3-9-8, 3-10-4); airports with no intersecting runways use R3",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7602,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "G",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American fourteen hundred, runway four at Yankee, intersection departure, cleared for takeoff.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_06_C_TKOF_LAND_INTERSECT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Roger, cleared for takeoff four, American fourteen hundred.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_06_C_TKOF_LAND_INTERSECT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "JetBlue twenty three forty four, number two, runway three one, cleared to land.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_06_C_TKOF_LAND_INTERSECT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Runway three one, cleared to land, JetBlue twenty three forty four.",
+   "id": "SYN_KLGA_HELDOUT5_S7602_06_C_TKOF_LAND_INTERSECT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

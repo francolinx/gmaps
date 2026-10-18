@@ -1,0 +1,2507 @@
+{
+ "summary": {
+  "set": "synthetic",
+  "scenarios": 20,
+  "transmissions": 84,
+  "scored": 84,
+  "unscored": 0,
+  "callsign_acc": 0.738,
+  "runway_acc": 0.798,
+  "instruction_acc": 0.917,
+  "alerts": {
+   "scenarios_with_expectation": 20,
+   "tp": 6,
+   "fp": 5,
+   "fn": 4,
+   "precision": 0.545,
+   "recall": 0.6
+  },
+  "lead_time_s": {
+   "n": 0,
+   "median": null,
+   "min": null,
+   "values": []
+  },
+  "latency": {
+   "library_ms_median": 0.05,
+   "whisper_s_median": 0.19,
+   "full_stack_clip_to_alert_s_median (E1, agent)": 13.69
+  },
+  "inputs": {
+   "whisper (synthetic TTS + radio noise)": 84
+  },
+  "kinds": [
+   "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)"
+  ]
+ },
+ "scenarios": [
+  {
+   "scenario": "SYN_KATL_01_C_LAND_CROSS",
+   "kind": "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest seven three niner, runway niner right, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA739"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA739"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.24,
+     "asr_s": 0.2
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway Niner right. Cleared to land. Southwest 739er.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA739"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.241
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 2284, cross runway Niner, right at Romeo 7.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2284"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2284"
+      ],
+      "runway": "9R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.196
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway Niner, right at Romeo 7, southwest to 284.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2284"
+      ],
+      "runway": "9R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.204
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0007",
+     "rule_id": "R6",
+     "name": "route word crosses a runway with no hold-short or crossing clearance",
+     "severity": "CAUTION",
+     "runway": "KATL:RWY:09R-27L",
+     "t_fired": 18,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SWA2284",
+      "type": "TAXI",
+      "t_issued": 18,
+      "event_id": "ev00156",
+      "route": [
+       "R7"
+      ]
+     },
+     "authorization_b": null,
+     "state_snapshot": {
+      "SWA2284": {
+       "authorized": "taxi, via R7",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Route word R7 meets runway 09R-27L at KATL:N:R7_09R-27L on the review-pending draft graph, and no hold-short or crossing clearance for that runway was recorded. Direction of travel on R7 is not established in v1, so this is a possible crossing, not a traced one.",
+     "what_would_clear_it": "hold-short for that runway issued and read back, or crossing clearance",
+     "cite": "JO 7110.65BB 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "graph_basis": "KATL:N:R7_09R-27L",
+     "graph_status": "draft, expert review pending"
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_02_C_LAND_CROSS_HOTSPOT",
+   "kind": "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 609, runway 26L, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL609"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL609"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.12,
+     "asr_s": 0.197
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway to six left. Clear to land. United six zero niner.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL609"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL609"
+      ],
+      "runway": "26L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.209
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 2380, cross runway 26 left at Delta.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2380"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2380"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.176
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 26 left at Delta, Southwest 2380.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2380"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2380"
+      ],
+      "runway": "26L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.182
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0008",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "runway": "KATL:RWY:08R-26L",
+     "t_fired": 18,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "UAL609",
+      "type": "LANDING",
+      "runway_end": "26L",
+      "physical_runway": "KATL:RWY:08R-26L",
+      "t_issued": 0,
+      "event_id": "ev00158",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "SWA2380",
+      "type": "CROSSING",
+      "runway_end": "26L",
+      "physical_runway": "KATL:RWY:08R-26L",
+      "t_issued": 18,
+      "event_id": "ev00160",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "UAL609": {
+       "authorized": "landing clearance, rwy 26L",
+       "acknowledged": "read back: landing clearance",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "SWA2380": {
+       "authorized": "cross, rwy 26L, at D",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 26L has a recorded landing authorization for UAL609 (t=0) and a crossing authorization for SWA2380 at D (t=18). Both need the 08R-26L protected area.",
+     "what_would_clear_it": "SWA2380 reports clear of runway, or UAL609 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_03_C_TKOF_CROSS",
+   "kind": "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 2469, runway 26R cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2469"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2469"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.12,
+     "asr_s": 0.197
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 2-6 right, cleared for takeoff, Southwest 2-4-6-9-er.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2469"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2469"
+      ],
+      "runway": "26R",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.238
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 2956, cross runway 26, right at Bravo 1.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2956"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2956"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.206
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 26, right at Bravo 1, Southwest 295-6.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2956"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2956"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.209
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0009",
+     "rule_id": "R6",
+     "name": "route word crosses a runway with no hold-short or crossing clearance",
+     "severity": "CAUTION",
+     "runway": "KATL:RWY:08L-26R",
+     "t_fired": 18,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SWA2956",
+      "type": "TAXI",
+      "t_issued": 18,
+      "event_id": "ev00164",
+      "route": [
+       "B1"
+      ]
+     },
+     "authorization_b": null,
+     "state_snapshot": {
+      "SWA2956": {
+       "authorized": "taxi, via B1",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Route word B1 meets runway 08L-26R at KATL:N:B1_08L-26R on the review-pending draft graph, and no hold-short or crossing clearance for that runway was recorded. Direction of travel on B1 is not established in v1, so this is a possible crossing, not a traced one.",
+     "what_would_clear_it": "hold-short for that runway issued and read back, or crossing clearance",
+     "cite": "JO 7110.65BB 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "graph_basis": "KATL:N:B1_08L-26R",
+     "graph_status": "draft, expert review pending"
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_04_C_TKOF_CROSS",
+   "kind": "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Endeavour 2762, runway 8 left, cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "8L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV2762"
+      ],
+      "runway": "8L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.201
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 8 left cleared for takeoff, Endeavour 2762.",
+     "hypothesis": {
+      "callsigns": [
+       "?2762"
+      ],
+      "runway": "8L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV2762"
+      ],
+      "runway": "8L",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.201
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 1432, cross runway 8 left at hotel.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL1432"
+      ],
+      "runway": "8L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1432"
+      ],
+      "runway": "8L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.185
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 8 left at Hotel, Delta 1432.",
+     "hypothesis": {
+      "callsigns": [
+       "?1432"
+      ],
+      "runway": "8L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1432"
+      ],
+      "runway": "8L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.173
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_05_C_LUAW_LAND",
+   "kind": "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R5"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "American 1088, runway 9 are right, line up and wait.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1088"
+      ],
+      "runway": null,
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1088"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.201
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Line up and wait runway niner right. American 1088.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1088"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1088"
+      ],
+      "runway": "9R",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.188
+    },
+    {
+     "t": 14,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 1654, Runway Niner right, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1654"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1654"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.207
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway Niner right, cleared to land, Frontier 1654.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1654"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1654"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.192
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_06_N_CROSS_OTHER_RWY",
+   "kind": "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "American 412, runway 8L cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL412"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL412"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.181
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 8 left, cleared to land American 412.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL412"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL412"
+      ],
+      "runway": "8L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.186
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Spirit 2347, cross runway 27, left at Papa.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS2347"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2347"
+      ],
+      "runway": "27L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.182
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 27 left at Papa, Spirit 2347.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS2347"
+      ],
+      "runway": "27L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2347"
+      ],
+      "runway": "27L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.185
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0010",
+     "rule_id": "R6",
+     "name": "route word crosses a runway with no hold-short or crossing clearance",
+     "severity": "CAUTION",
+     "runway": "KATL:RWY:09R-27L",
+     "t_fired": 18,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "NKS2347",
+      "type": "TAXI",
+      "t_issued": 18,
+      "event_id": "ev00176",
+      "route": [
+       "P"
+      ]
+     },
+     "authorization_b": null,
+     "state_snapshot": {
+      "NKS2347": {
+       "authorized": "taxi, via P",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Route word P meets runway 09R-27L at KATL:N:P_09R-27L on the review-pending draft graph, and no hold-short or crossing clearance for that runway was recorded. Direction of travel on P is not established in v1, so this is a possible crossing, not a traced one.",
+     "what_would_clear_it": "hold-short for that runway issued and read back, or crossing clearance",
+     "cite": "JO 7110.65BB 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "graph_basis": "KATL:N:P_09R-27L",
+     "graph_status": "draft, expert review pending"
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_07_N_CROSS_OTHER_RWY",
+   "kind": "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 2203, runway Niner right, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2203"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2203"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.192
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 9 arrived. Clear to land. Frontier 2203.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2203"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2203"
+      ],
+      "runway": "9R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.192
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 2743, cross runway 26, right at Bravo 1.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2743"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2743"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.196
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 26, right at Bravo 1, Frontier 2743.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2743"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2743"
+      ],
+      "runway": "26R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.193
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0011",
+     "rule_id": "R6",
+     "name": "route word crosses a runway with no hold-short or crossing clearance",
+     "severity": "CAUTION",
+     "runway": "KATL:RWY:08L-26R",
+     "t_fired": 18,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "FFT2743",
+      "type": "TAXI",
+      "t_issued": 18,
+      "event_id": "ev00180",
+      "route": [
+       "B1"
+      ]
+     },
+     "authorization_b": null,
+     "state_snapshot": {
+      "FFT2743": {
+       "authorized": "taxi, via B1",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Route word B1 meets runway 08L-26R at KATL:N:B1_08L-26R on the review-pending draft graph, and no hold-short or crossing clearance for that runway was recorded. Direction of travel on B1 is not established in v1, so this is a possible crossing, not a traced one.",
+     "what_would_clear_it": "hold-short for that runway issued and read back, or crossing clearance",
+     "cite": "JO 7110.65BB 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "graph_basis": "KATL:N:B1_08L-26R",
+     "graph_status": "draft, expert review pending"
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_08_N_HOLD_SHORT",
+   "kind": "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Spirit 463, runway 27L cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS463"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS463"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.188
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 27 left, cleared to land Spirit 463.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS463"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS463"
+      ],
+      "runway": "27L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.184
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Jet Blue 2138, hold short of runway 27L at November 2.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU2138"
+      ],
+      "runway": "27L",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.09,
+     "asr_s": 0.204
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Hold short of runway 2, 7 left at November 2, jet blue 2138.",
+     "hypothesis": {
+      "callsigns": [
+       "?2138"
+      ],
+      "runway": null,
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU2138"
+      ],
+      "runway": "27L",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.217
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KATL_09_N_PROBE_EXIT_THEN_CROSS",
+   "kind": "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 845, runway 27R cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL845"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL845"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.178
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 27R, cleared to land, Delta 845.",
+     "hypothesis": {
+      "callsigns": [
+       "?845"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL845"
+      ],
+      "runway": "27R",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.192
+    },
+    {
+     "t": 45,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 845, turn right at Bravo 3, contact ground point 82.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL845"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL845"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.195
+    },
+    {
+     "t": 55,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Endeavour 721, cross runway 27 right at Delta.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV721"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.177
+    },
+    {
+     "t": 59,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 27 right at Delta, Endeavour 721.",
+     "hypothesis": {
+      "callsigns": [
+       "?721"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV721"
+      ],
+      "runway": "27R",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.19
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0012",
+     "rule_id": "R6",
+     "name": "route word crosses a runway with no hold-short or crossing clearance",
+     "severity": "CAUTION",
+     "runway": "KATL:RWY:08L-26R",
+     "t_fired": 45,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "DAL845",
+      "type": "TAXI",
+      "t_issued": 45,
+      "event_id": "ev00188",
+      "route": [
+       "B3"
+      ]
+     },
+     "authorization_b": null,
+     "state_snapshot": {
+      "DAL845": {
+       "authorized": "taxi, via B3",
+       "acknowledged": "read back: landing clearance, rwy 27R",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Route word B3 meets runway 08L-26R at KATL:N:B3_08L-26R on the review-pending draft graph, and no hold-short or crossing clearance for that runway was recorded. Direction of travel on B3 is not established in v1, so this is a possible crossing, not a traced one.",
+     "what_would_clear_it": "hold-short for that runway issued and read back, or crossing clearance",
+     "cite": "JO 7110.65BB 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+     "graph_basis": "KATL:N:B3_08L-26R",
+     "graph_status": "draft, expert review pending"
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KATL_10_N_PROBE_CLEAR_THEN_CROSS",
+   "kind": "SIMULATED (synthetic, KATL identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 771, runway niner left, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.11,
+     "asr_s": 0.2
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 9 or left, cleared to land, Southwest 771.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": null,
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "9L",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.19
+    },
+    {
+     "t": 45,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 771, clear of runway 9 or left.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "9",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "9L",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.178
+    },
+    {
+     "t": 55,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest Niner 6-2, cross runway Niner left at Lima.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA962"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA962"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.203
+    },
+    {
+     "t": 59,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway Niner left at Lima, Southwest Niner 6-2.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA962"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA962"
+      ],
+      "runway": "9L",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.195
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0013",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "runway": "KATL:RWY:09L-27R",
+     "t_fired": 55,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SWA771",
+      "type": "LANDING",
+      "runway_end": "09L",
+      "physical_runway": "KATL:RWY:09L-27R",
+      "t_issued": 0,
+      "event_id": "ev00191",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "SWA962",
+      "type": "CROSSING",
+      "runway_end": "09L",
+      "physical_runway": "KATL:RWY:09L-27R",
+      "t_issued": 55,
+      "event_id": "ev00194",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "SWA771": {
+       "authorized": "landing clearance, rwy 09L",
+       "acknowledged": "read back: landing clearance",
+       "reported": "crossing complete, rwy 09",
+       "inferred": null,
+       "observed": null
+      },
+      "SWA962": {
+       "authorized": "cross, rwy 09L, at L",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 09L has a recorded landing authorization for SWA771 (t=0) and a crossing authorization for SWA962 at L (t=55). Both need the 09L-27R protected area.",
+     "what_would_clear_it": "SWA962 reports clear of runway, or SWA771 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_01_C_LAND_CROSS",
+   "kind": "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 739er, runway 4, cleared to land.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA739"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.198
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 4, cleared to land. Southwest 739er.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA739"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.192
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 2284, cross runway 4 at Unifor.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2284"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2284"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.182
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 4 at Unifor, southwest to 284.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2284"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.185
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_02_C_LAND_CROSS_HOTSPOT",
+   "kind": "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R1"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 117, runway 31, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL117"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL117"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.179
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 31, cleared to land, Delta 117.",
+     "hypothesis": {
+      "callsigns": [
+       "?117"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL117"
+      ],
+      "runway": "31",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.189
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Jet Blue 812, cross runway 31 at Romeo.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU812"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.174
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 31 at Romeo, jet blue 812.",
+     "hypothesis": {
+      "callsigns": [
+       "?812"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU812"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.175
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_03_C_TKOF_CROSS",
+   "kind": "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier Niner 6-6, Runway 4 cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT966"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT966"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.207
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 4 cleared for takeoff. Frontier Niner 6-6.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT966"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT966"
+      ],
+      "runway": "4",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.21
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 295-6, cross runway 4 at Yankee.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2956"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2956"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.188
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway four at Yankee, southwest 295-6.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA2956"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA2956"
+      ],
+      "runway": "4",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.186
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0014",
+     "rule_id": "R2",
+     "name": "crossing vs active takeoff",
+     "severity": "CONFLICT",
+     "runway": "KLGA:RWY:04-22",
+     "t_fired": 18,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "FFT966",
+      "type": "TAKEOFF",
+      "runway_end": "04",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 0,
+      "event_id": "ev00204",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "SWA2956",
+      "type": "CROSSING",
+      "runway_end": "04",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 18,
+      "event_id": "ev00206",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "FFT966": {
+       "authorized": "takeoff clearance, rwy 04",
+       "acknowledged": "read back: takeoff clearance, rwy 04",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "SWA2956": {
+       "authorized": "cross, rwy 04, at Y",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Takeoff authorization and crossing authorization recorded on the same runway (04-22).",
+     "what_would_clear_it": "crossing complete, or takeoff cancelled and acknowledged",
+     "cite": "JO 7110.65BB 3-1-3; 3-9-10",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_04_C_TKOF_CROSS",
+   "kind": "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R2"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "United 1724, runway 31, cleared for takeoff.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1724"
+      ],
+      "runway": "31",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1724"
+      ],
+      "runway": "31",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.19
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 31 cleared for takeoff. United 1724.",
+     "hypothesis": {
+      "callsigns": [
+       "UAL1724"
+      ],
+      "runway": "31",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "UAL1724"
+      ],
+      "runway": "31",
+      "instruction": "TAKEOFF_CLEARANCE"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.219
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 1432, cross runway 31 at Zulu.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL1432"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1432"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.18
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 31 at Zulu, Delta 1432.",
+     "hypothesis": {
+      "callsigns": [
+       "?1432"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL1432"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.189
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0015",
+     "rule_id": "R2",
+     "name": "crossing vs active takeoff",
+     "severity": "CONFLICT",
+     "runway": "KLGA:RWY:13-31",
+     "t_fired": 18,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "UAL1724",
+      "type": "TAKEOFF",
+      "runway_end": "31",
+      "physical_runway": "KLGA:RWY:13-31",
+      "t_issued": 0,
+      "event_id": "ev00208",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "DAL1432",
+      "type": "CROSSING",
+      "runway_end": "31",
+      "physical_runway": "KLGA:RWY:13-31",
+      "t_issued": 18,
+      "event_id": "ev00210",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "UAL1724": {
+       "authorized": "takeoff clearance, rwy 31",
+       "acknowledged": "read back: takeoff clearance, rwy 31",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "DAL1432": {
+       "authorized": "cross, rwy 31, at Z",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Takeoff authorization and crossing authorization recorded on the same runway (13-31).",
+     "what_would_clear_it": "crossing complete, or takeoff cancelled and acknowledged",
+     "cite": "JO 7110.65BB 3-1-3; 3-9-10",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_05_C_LUAW_LAND",
+   "kind": "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": true,
+   "expected_rules": [
+    "R5"
+   ],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "American 1088, runway 4, line up and wait.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1088"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1088"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.08,
+     "asr_s": 0.185
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Line up and wait runway 4, American 1088.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL1088"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL1088"
+      ],
+      "runway": "4",
+      "instruction": "LUAW"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.177
+    },
+    {
+     "t": 14,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 1654, Runway 4, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1654"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1654"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.188
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 4 cleared to land, Frontier 1654.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT1654"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT1654"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.21
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0016",
+     "rule_id": "R5",
+     "name": "line up and wait vs landing, same runway",
+     "severity": "CONFLICT",
+     "runway": "KLGA:RWY:04-22",
+     "t_fired": 14,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "AAL1088",
+      "type": "LUAW",
+      "runway_end": "04",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 0,
+      "event_id": "ev00212",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "FFT1654",
+      "type": "LANDING",
+      "runway_end": "04",
+      "physical_runway": "KLGA:RWY:04-22",
+      "t_issued": 14,
+      "event_id": "ev00214",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "AAL1088": {
+       "authorized": "luaw, rwy 04",
+       "acknowledged": "read back: luaw, rwy 04",
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      },
+      "FFT1654": {
+       "authorized": "landing clearance, rwy 04",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Line up and wait and a landing authorization recorded on the same runway.",
+     "what_would_clear_it": "takeoff issued and airborne, or landing authorization withdrawn",
+     "cite": "JO 7110.65BB 3-9-4; 3-10-5",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  },
+  {
+   "scenario": "SYN_KLGA_06_N_CROSS_OTHER_RWY",
+   "kind": "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "American 4-1-2, runway 4 cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL412"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL412"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.203
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 4 cleared to land, American 412.",
+     "hypothesis": {
+      "callsigns": [
+       "AAL412"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "AAL412"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.19
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Spirit 2347, cross runway 31 at Whiskey.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS2347"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2347"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.184
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 31 at Whiskey, Spirit 2347.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS2347"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS2347"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.184
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_07_N_CROSS_OTHER_RWY",
+   "kind": "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 2203, runway 4 cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2203"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2203"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.183
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 4, cleared to land. Frontier 2203.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2203"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2203"
+      ],
+      "runway": "4",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.185
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Frontier 2743, cross runway 31 at Romeo.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2743"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2743"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.186
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 31 at Romeo, Frontier 2743.",
+     "hypothesis": {
+      "callsigns": [
+       "FFT2743"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "FFT2743"
+      ],
+      "runway": "31",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.183
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_08_N_HOLD_SHORT",
+   "kind": "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Spirit 463, runway 22 cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS463"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS463"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.174
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 22, cleared to land, Spirit 463.",
+     "hypothesis": {
+      "callsigns": [
+       "NKS463"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "NKS463"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.189
+    },
+    {
+     "t": 18,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Jet Blue 2138, hold short of runway 22 at Romeo.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": null,
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU2138"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.195
+    },
+    {
+     "t": 22,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Hold short of runway 22 at Romeo, jet blue 2138.",
+     "hypothesis": {
+      "callsigns": [
+       "?2138"
+      ],
+      "runway": null,
+      "instruction": "HOLD_SHORT"
+     },
+     "reference": {
+      "callsigns": [
+       "JBU2138"
+      ],
+      "runway": "22",
+      "instruction": "HOLD_SHORT"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.21
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_09_N_PROBE_EXIT_THEN_CROSS",
+   "kind": "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 845, runway 22 cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL845"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL845"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.06,
+     "asr_s": 0.179
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 22, cleared to land, Delta 845.",
+     "hypothesis": {
+      "callsigns": [
+       "?845"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL845"
+      ],
+      "runway": "22",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.187
+    },
+    {
+     "t": 45,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Delta 845, turn right at Bravo Bravo, contact ground point 82.",
+     "hypothesis": {
+      "callsigns": [
+       "DAL845"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "reference": {
+      "callsigns": [
+       "DAL845"
+      ],
+      "runway": null,
+      "instruction": "TAXI"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.206
+    },
+    {
+     "t": 55,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Endeavour 721, cross runway 22 at Echo.",
+     "hypothesis": {
+      "callsigns": [],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV721"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.04,
+     "asr_s": 0.201
+    },
+    {
+     "t": 59,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 22 at Echo, Endeavour 721.",
+     "hypothesis": {
+      "callsigns": [
+       "?721"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "EDV721"
+      ],
+      "runway": "22",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.199
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "scenario": "SYN_KLGA_10_N_PROBE_CLEAR_THEN_CROSS",
+   "kind": "SIMULATED (synthetic, KLGA identifiers; no predictions on real geometry)",
+   "reference_kind": "scenario_truth",
+   "expected_alert": false,
+   "expected_rules": [],
+   "reference_t": null,
+   "rows": [
+    {
+     "t": 0,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 771, runway 13, cleared to land.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.07,
+     "asr_s": 0.176
+    },
+    {
+     "t": 4,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Runway 13 cleared to land, Southwest 771.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "13",
+      "instruction": "LANDING_CLEARANCE"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.176
+    },
+    {
+     "t": 45,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest 771, clear of runway 13.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "13",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA771"
+      ],
+      "runway": "13",
+      "instruction": "CROSSING_COMPLETE"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.167
+    },
+    {
+     "t": 55,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Southwest Niner 6-2, cross runway 1-3 at Zulu.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA962"
+      ],
+      "runway": "13",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA962"
+      ],
+      "runway": "13",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.05,
+     "asr_s": 0.2
+    },
+    {
+     "t": 59,
+     "input": "whisper (synthetic TTS + radio noise)",
+     "text": "Cross runway 13 at Zulu, Southwest Niner 6-2.",
+     "hypothesis": {
+      "callsigns": [
+       "SWA962"
+      ],
+      "runway": "13",
+      "instruction": "CROSS"
+     },
+     "reference": {
+      "callsigns": [
+       "SWA962"
+      ],
+      "runway": "13",
+      "instruction": "CROSS"
+     },
+     "library_ms": 0.03,
+     "asr_s": 0.198
+    }
+   ],
+   "warnings": [
+    {
+     "warning_id": "w0017",
+     "rule_id": "R1",
+     "name": "crossing vs active landing",
+     "severity": "CONFLICT",
+     "runway": "KLGA:RWY:13-31",
+     "t_fired": 55,
+     "status": "open",
+     "cleared_at": null,
+     "cleared_by": null,
+     "authorization_a": {
+      "callsign": "SWA771",
+      "type": "LANDING",
+      "runway_end": "13",
+      "physical_runway": "KLGA:RWY:13-31",
+      "t_issued": 0,
+      "event_id": "ev00233",
+      "acknowledged": "acknowledged"
+     },
+     "authorization_b": {
+      "callsign": "SWA962",
+      "type": "CROSSING",
+      "runway_end": "13",
+      "physical_runway": "KLGA:RWY:13-31",
+      "t_issued": 55,
+      "event_id": "ev00236",
+      "acknowledged": "pending"
+     },
+     "state_snapshot": {
+      "SWA771": {
+       "authorized": "landing clearance, rwy 13",
+       "acknowledged": "read back: landing clearance, rwy 13",
+       "reported": "crossing complete, rwy 13",
+       "inferred": null,
+       "observed": null
+      },
+      "SWA962": {
+       "authorized": "cross, rwy 13, at Z",
+       "acknowledged": null,
+       "reported": null,
+       "inferred": null,
+       "observed": null
+      }
+     },
+     "explain": "Runway 13 has a recorded landing authorization for SWA771 (t=0) and a crossing authorization for SWA962 at Z (t=55). Both need the 13-31 protected area.",
+     "what_would_clear_it": "SWA962 reports clear of runway, or SWA771 go-around / landing complete",
+     "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+     "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction."
+    }
+   ]
+  }
+ ]
+}

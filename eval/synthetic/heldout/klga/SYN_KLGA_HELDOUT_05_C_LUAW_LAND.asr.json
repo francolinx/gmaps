@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT_05_C_LUAW_LAND_00": {
+  "text": "Ranger 2535, line up and wait runway 22.",
+  "asr_s": 0.186
+ },
+ "SYN_KLGA_HELDOUT_05_C_LUAW_LAND_01": {
+  "text": "Line up and wait 22, Frontier 2535.",
+  "asr_s": 0.186
+ },
+ "SYN_KLGA_HELDOUT_05_C_LUAW_LAND_02": {
+  "text": "Mira 2848, cleared to land runway 22.",
+  "asr_s": 0.173
+ },
+ "SYN_KLGA_HELDOUT_05_C_LUAW_LAND_03": {
+  "text": "Clear to land 22, Spirit 2848.",
+  "asr_s": 0.174
+ }
+}

@@ -1,0 +1,4816 @@
+{
+ "id": "SIM_H56774_1",
+ "is_simulated": true,
+ "tracks": {
+  "T-AC1": {
+   "class": "aircraft",
+   "callsign": "SIM212"
+  },
+  "T-VH7": {
+   "class": "vehicle",
+   "callsign": "RESCUE7"
+  }
+ },
+ "packets": [
+  {
+   "packet_id": "T-VH7-0001",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 0.0,
+   "received_at": 0.6,
+   "position": {
+    "x": 1499.64,
+    "y": -351.04
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.08,
+    "vy": 6.6
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0002",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 1.0,
+   "received_at": 1.6,
+   "position": {
+    "x": 1499.39,
+    "y": -349.14
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.31,
+    "vy": 6.45
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0003",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 2.0,
+   "received_at": 2.6,
+   "position": {
+    "x": 1502.35,
+    "y": -340.88
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.47,
+    "vy": 5.48
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0004",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 3.0,
+   "received_at": 3.6,
+   "position": {
+    "x": 1497.18,
+    "y": -340.52
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.33,
+    "vy": 6.74
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0005",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 4.0,
+   "received_at": 4.6,
+   "position": {
+    "x": 1497.38,
+    "y": -327.1
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.34,
+    "vy": 7.23
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0006",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 5.0,
+   "received_at": 5.6,
+   "position": {
+    "x": 1498.45,
+    "y": -319.14
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.15,
+    "vy": 7.99
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0007",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 6.0,
+   "received_at": 6.6,
+   "position": {
+    "x": 1501.8,
+    "y": -311.85
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.34,
+    "vy": 7.75
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0008",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 7.0,
+   "received_at": 7.6,
+   "position": {
+    "x": 1496.62,
+    "y": -310.57
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.99,
+    "vy": 8.81
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0009",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 8.0,
+   "received_at": 8.6,
+   "position": {
+    "x": 1501.59,
+    "y": -293.75
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.17,
+    "vy": 7.47
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0010",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 9.0,
+   "received_at": 9.6,
+   "position": {
+    "x": 1507.13,
+    "y": -284.81
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.62,
+    "vy": 8.41
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0011",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 10.0,
+   "received_at": 10.6,
+   "position": {
+    "x": 1503.67,
+    "y": -281.74
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.24,
+    "vy": 9.0
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0012",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 11.0,
+   "received_at": 11.6,
+   "position": {
+    "x": 1501.19,
+    "y": -272.13
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.14,
+    "vy": 8.32
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0013",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 12.0,
+   "received_at": 12.6,
+   "position": {
+    "x": 1501.43,
+    "y": -264.18
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.73,
+    "vy": 9.25
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0014",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 13.0,
+   "received_at": 13.6,
+   "position": {
+    "x": 1496.0,
+    "y": -256.39
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 1.08,
+    "vy": 9.42
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0015",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 14.0,
+   "received_at": 14.6,
+   "position": {
+    "x": 1494.62,
+    "y": -243.5
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.2,
+    "vy": 10.58
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0016",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 15.0,
+   "received_at": 15.6,
+   "position": {
+    "x": 1494.91,
+    "y": -232.97
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.01,
+    "vy": 9.31
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0017",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 16.0,
+   "received_at": 16.6,
+   "position": {
+    "x": 1500.56,
+    "y": -221.62
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.06,
+    "vy": 10.82
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0018",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 17.0,
+   "received_at": 17.6,
+   "position": {
+    "x": 1500.6,
+    "y": -216.13
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.61,
+    "vy": 11.22
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0019",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 18.0,
+   "received_at": 18.6,
+   "position": {
+    "x": 1503.27,
+    "y": -199.52
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.68,
+    "vy": 10.7
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0020",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 19.0,
+   "received_at": 19.6,
+   "position": {
+    "x": 1504.46,
+    "y": -186.51
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.2,
+    "vy": 10.88
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0021",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 20.0,
+   "received_at": 20.6,
+   "position": {
+    "x": 1496.36,
+    "y": -175.15
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.36,
+    "vy": 11.03
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0022",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 21.0,
+   "received_at": 21.6,
+   "position": {
+    "x": 1501.97,
+    "y": -170.74
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.29,
+    "vy": 11.83
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0001",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 21.22,
+   "received_at": 21.82,
+   "position": {
+    "x": 300.75,
+    "y": 1.67
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 65.24,
+    "vy": 0.34
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0023",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 22.0,
+   "received_at": 22.6,
+   "position": {
+    "x": 1503.33,
+    "y": -157.73
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.41,
+    "vy": 10.95
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0002",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 22.22,
+   "received_at": 22.82,
+   "position": {
+    "x": 366.14,
+    "y": -3.8
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 63.12,
+    "vy": -0.3
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0024",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 23.0,
+   "received_at": 23.6,
+   "position": {
+    "x": 1498.09,
+    "y": -144.78
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.96,
+    "vy": 10.99
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0003",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 23.22,
+   "received_at": 23.82,
+   "position": {
+    "x": 427.18,
+    "y": -0.17
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 61.45,
+    "vy": 0.17
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0025",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 24.0,
+   "received_at": 24.6,
+   "position": {
+    "x": 1502.79,
+    "y": -143.15
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.44,
+    "vy": 9.29
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0004",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 24.22,
+   "received_at": 24.82,
+   "position": {
+    "x": 487.44,
+    "y": 0.27
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 59.12,
+    "vy": -1.4
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0026",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 25.0,
+   "received_at": 25.6,
+   "position": {
+    "x": 1503.93,
+    "y": -130.8
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.34,
+    "vy": 10.35
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0005",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 25.22,
+   "received_at": 25.82,
+   "position": {
+    "x": 547.45,
+    "y": -0.19
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 57.04,
+    "vy": 0.33
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0027",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 26.0,
+   "received_at": 26.6,
+   "position": {
+    "x": 1497.86,
+    "y": -111.34
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.86,
+    "vy": 9.74
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0006",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 26.22,
+   "received_at": 26.82,
+   "position": {
+    "x": 603.1,
+    "y": 5.42
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 55.71,
+    "vy": 0.16
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0028",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 27.0,
+   "received_at": 27.6,
+   "position": {
+    "x": 1504.46,
+    "y": -104.86
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.68,
+    "vy": 7.81
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0007",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 27.22,
+   "received_at": 27.82,
+   "position": {
+    "x": 655.73,
+    "y": -2.01
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 54.01,
+    "vy": -0.9
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0029",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 28.0,
+   "received_at": 28.6,
+   "position": {
+    "x": 1494.38,
+    "y": -105.48
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.24,
+    "vy": 6.78
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0008",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 28.22,
+   "received_at": 28.82,
+   "position": {
+    "x": 704.52,
+    "y": -2.03
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 52.9,
+    "vy": -0.16
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0030",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 29.0,
+   "received_at": 29.6,
+   "position": {
+    "x": 1502.38,
+    "y": -94.38
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.2,
+    "vy": 5.03
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0009",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 29.22,
+   "received_at": 29.82,
+   "position": {
+    "x": 761.82,
+    "y": -3.25
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 50.83,
+    "vy": -1.02
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0031",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 30.0,
+   "received_at": 30.6,
+   "position": {
+    "x": 1500.43,
+    "y": -86.62
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.44,
+    "vy": 4.26
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0010",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 30.22,
+   "received_at": 30.82,
+   "position": {
+    "x": 814.73,
+    "y": 0.08
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 49.9,
+    "vy": 0.18
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0032",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 31.0,
+   "received_at": 31.6,
+   "position": {
+    "x": 1501.77,
+    "y": -82.39
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.84,
+    "vy": 2.32
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0011",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 31.22,
+   "received_at": 31.82,
+   "position": {
+    "x": 855.9,
+    "y": 6.04
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 46.79,
+    "vy": 0.26
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0033",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 32.0,
+   "received_at": 32.6,
+   "position": {
+    "x": 1498.52,
+    "y": -83.15
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.39,
+    "vy": 2.84
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0012",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 32.22,
+   "received_at": 32.82,
+   "position": {
+    "x": 903.64,
+    "y": -1.41
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 44.7,
+    "vy": -0.46
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0034",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 33.0,
+   "received_at": 33.6,
+   "position": {
+    "x": 1503.92,
+    "y": -83.28
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.54,
+    "vy": 0.68
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0013",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 33.22,
+   "received_at": 33.82,
+   "position": {
+    "x": 946.78,
+    "y": -1.05
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 44.34,
+    "vy": 0.22
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0035",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 34.0,
+   "received_at": 34.6,
+   "position": {
+    "x": 1499.87,
+    "y": -80.4
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.28,
+    "vy": 0.23
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0014",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 34.22,
+   "received_at": 34.82,
+   "position": {
+    "x": 990.94,
+    "y": 0.4
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 41.28,
+    "vy": -0.43
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0036",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 35.0,
+   "received_at": 35.6,
+   "position": {
+    "x": 1500.37,
+    "y": -79.26
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.3,
+    "vy": 0.43
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0015",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 35.22,
+   "received_at": 35.82,
+   "position": {
+    "x": 1032.91,
+    "y": 2.38
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 40.27,
+    "vy": 0.5
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0037",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 36.0,
+   "received_at": 36.6,
+   "position": {
+    "x": 1500.29,
+    "y": -79.17
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.48,
+    "vy": -0.27
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0016",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 36.22,
+   "received_at": 36.82,
+   "position": {
+    "x": 1074.23,
+    "y": -2.09
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 38.24,
+    "vy": -0.23
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0038",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 37.0,
+   "received_at": 37.6,
+   "position": {
+    "x": 1498.99,
+    "y": -77.08
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.56,
+    "vy": -0.26
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0017",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 37.22,
+   "received_at": 37.82,
+   "position": {
+    "x": 1108.51,
+    "y": -1.61
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 35.98,
+    "vy": 0.33
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0039",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 38.0,
+   "received_at": 38.6,
+   "position": {
+    "x": 1503.99,
+    "y": -76.48
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.69,
+    "vy": 0.52
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0018",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 38.22,
+   "received_at": 38.82,
+   "position": {
+    "x": 1145.52,
+    "y": -1.12
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 33.95,
+    "vy": -0.2
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0040",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 39.0,
+   "received_at": 39.6,
+   "position": {
+    "x": 1501.99,
+    "y": -79.59
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.71,
+    "vy": -0.61
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0019",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 39.22,
+   "received_at": 39.82,
+   "position": {
+    "x": 1181.95,
+    "y": 4.1
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 32.99,
+    "vy": -0.3
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0041",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 40.0,
+   "received_at": 40.6,
+   "position": {
+    "x": 1500.27,
+    "y": -81.22
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.08,
+    "vy": 0.76
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0020",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 40.22,
+   "received_at": 40.82,
+   "position": {
+    "x": 1213.04,
+    "y": -0.81
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 31.1,
+    "vy": -0.31
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0042",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 41.0,
+   "received_at": 41.6,
+   "position": {
+    "x": 1503.59,
+    "y": -80.3
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.03,
+    "vy": -0.3
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0021",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 41.22,
+   "received_at": 41.82,
+   "position": {
+    "x": 1245.8,
+    "y": 0.17
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 29.6,
+    "vy": 0.65
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0043",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 42.0,
+   "received_at": 42.6,
+   "position": {
+    "x": 1502.77,
+    "y": -82.84
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.09,
+    "vy": -0.43
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0022",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 42.22,
+   "received_at": 42.82,
+   "position": {
+    "x": 1274.88,
+    "y": -2.85
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 26.99,
+    "vy": 0.54
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0044",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 43.0,
+   "received_at": 43.6,
+   "position": {
+    "x": 1505.39,
+    "y": -74.87
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.53,
+    "vy": 0.06
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0023",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 43.22,
+   "received_at": 43.82,
+   "position": {
+    "x": 1299.93,
+    "y": 4.83
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 25.96,
+    "vy": -0.62
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0045",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 44.0,
+   "received_at": 44.6,
+   "position": {
+    "x": 1503.63,
+    "y": -84.92
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -1.39,
+    "vy": -0.22
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0024",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 44.22,
+   "received_at": 44.82,
+   "position": {
+    "x": 1326.29,
+    "y": -0.61
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 24.82,
+    "vy": 0.88
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0046",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 45.0,
+   "received_at": 45.6,
+   "position": {
+    "x": 1494.85,
+    "y": -78.95
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.18,
+    "vy": -0.8
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0025",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 45.22,
+   "received_at": 45.82,
+   "position": {
+    "x": 1349.01,
+    "y": -0.06
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 22.86,
+    "vy": 0.23
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0047",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 46.0,
+   "received_at": 46.6,
+   "position": {
+    "x": 1492.89,
+    "y": -84.04
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.39,
+    "vy": -0.18
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0026",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 46.22,
+   "received_at": 46.82,
+   "position": {
+    "x": 1367.46,
+    "y": -1.3
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 21.39,
+    "vy": -0.39
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0048",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 47.0,
+   "received_at": 47.6,
+   "position": {
+    "x": 1501.07,
+    "y": -78.88
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.02,
+    "vy": -0.07
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0027",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 47.22,
+   "received_at": 47.82,
+   "position": {
+    "x": 1386.37,
+    "y": 0.49
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 19.26,
+    "vy": 0.4
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0049",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 48.0,
+   "received_at": 48.6,
+   "position": {
+    "x": 1497.04,
+    "y": -77.12
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.2,
+    "vy": -0.45
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0028",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 48.22,
+   "received_at": 48.82,
+   "position": {
+    "x": 1409.21,
+    "y": 4.39
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 17.53,
+    "vy": 0.22
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0050",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 49.0,
+   "received_at": 49.6,
+   "position": {
+    "x": 1505.03,
+    "y": -81.26
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.69,
+    "vy": -1.24
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0029",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 49.22,
+   "received_at": 49.82,
+   "position": {
+    "x": 1422.72,
+    "y": -1.68
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 16.17,
+    "vy": 0.01
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0051",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 50.0,
+   "received_at": 50.6,
+   "position": {
+    "x": 1499.44,
+    "y": -87.9
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.63,
+    "vy": -0.11
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0030",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 50.22,
+   "received_at": 50.82,
+   "position": {
+    "x": 1437.68,
+    "y": 3.11
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 13.89,
+    "vy": 0.48
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0052",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 51.0,
+   "received_at": 51.6,
+   "position": {
+    "x": 1499.36,
+    "y": -82.97
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -1.08,
+    "vy": -1.09
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0031",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 51.22,
+   "received_at": 51.82,
+   "position": {
+    "x": 1452.23,
+    "y": -2.06
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.68,
+    "vy": 0.11
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0053",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 52.0,
+   "received_at": 52.6,
+   "position": {
+    "x": 1493.81,
+    "y": -82.68
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.15,
+    "vy": 0.01
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0032",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 52.22,
+   "received_at": 52.82,
+   "position": {
+    "x": 1463.04,
+    "y": -5.29
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.68,
+    "vy": -0.3
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0054",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 53.0,
+   "received_at": 53.6,
+   "position": {
+    "x": 1507.1,
+    "y": -82.55
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.17,
+    "vy": 1.16
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0033",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 53.22,
+   "received_at": 53.82,
+   "position": {
+    "x": 1479.86,
+    "y": 3.06
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.4,
+    "vy": -0.05
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0055",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 54.0,
+   "received_at": 54.6,
+   "position": {
+    "x": 1496.83,
+    "y": -77.73
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.27,
+    "vy": 0.64
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0034",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 54.22,
+   "received_at": 54.82,
+   "position": {
+    "x": 1484.9,
+    "y": 1.84
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.14,
+    "vy": 0.6
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0056",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 55.0,
+   "received_at": 55.6,
+   "position": {
+    "x": 1502.02,
+    "y": -76.33
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.66,
+    "vy": 0.07
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0035",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 55.22,
+   "received_at": 55.82,
+   "position": {
+    "x": 1494.99,
+    "y": 3.57
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.41,
+    "vy": 0.13
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0057",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 56.0,
+   "received_at": 56.6,
+   "position": {
+    "x": 1500.79,
+    "y": -85.86
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.32,
+    "vy": 0.4
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0036",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 56.22,
+   "received_at": 56.82,
+   "position": {
+    "x": 1509.37,
+    "y": 0.13
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.41,
+    "vy": 0.21
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0058",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 57.0,
+   "received_at": 57.6,
+   "position": {
+    "x": 1499.92,
+    "y": -83.5
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.14,
+    "vy": -0.27
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0037",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 57.22,
+   "received_at": 57.82,
+   "position": {
+    "x": 1522.8,
+    "y": -3.83
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.72,
+    "vy": 0.84
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0059",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 58.0,
+   "received_at": 58.6,
+   "position": {
+    "x": 1500.61,
+    "y": -81.02
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.46,
+    "vy": -0.16
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0038",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 58.22,
+   "received_at": 58.82,
+   "position": {
+    "x": 1534.86,
+    "y": 3.95
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.29,
+    "vy": 0.3
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0060",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 59.0,
+   "received_at": 59.6,
+   "position": {
+    "x": 1497.31,
+    "y": -78.06
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.84,
+    "vy": 0.0
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0039",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 59.22,
+   "received_at": 59.82,
+   "position": {
+    "x": 1545.82,
+    "y": 1.77
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.95,
+    "vy": -0.76
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0061",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 60.0,
+   "received_at": 60.6,
+   "position": {
+    "x": 1502.14,
+    "y": -77.66
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.39,
+    "vy": 0.53
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0040",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 60.22,
+   "received_at": 60.82,
+   "position": {
+    "x": 1562.7,
+    "y": -1.39
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.57,
+    "vy": -0.24
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0062",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 61.0,
+   "received_at": 61.6,
+   "position": {
+    "x": 1502.18,
+    "y": -80.75
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.15,
+    "vy": 0.01
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0041",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 61.22,
+   "received_at": 61.82,
+   "position": {
+    "x": 1572.38,
+    "y": 0.75
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.96,
+    "vy": -0.51
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0063",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 62.0,
+   "received_at": 62.6,
+   "position": {
+    "x": 1499.93,
+    "y": -79.44
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.08,
+    "vy": -0.11
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0042",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 62.22,
+   "received_at": 62.82,
+   "position": {
+    "x": 1577.94,
+    "y": 1.0
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.28,
+    "vy": 0.22
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0064",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 63.0,
+   "received_at": 63.6,
+   "position": {
+    "x": 1498.55,
+    "y": -80.87
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.33,
+    "vy": 0.88
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0043",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 63.22,
+   "received_at": 63.82,
+   "position": {
+    "x": 1594.2,
+    "y": -3.49
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.24,
+    "vy": -0.06
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0065",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 64.0,
+   "received_at": 64.6,
+   "position": {
+    "x": 1500.01,
+    "y": -80.85
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.05,
+    "vy": 0.05
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0044",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 64.22,
+   "received_at": 64.82,
+   "position": {
+    "x": 1607.5,
+    "y": 1.28
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.11,
+    "vy": 0.96
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0066",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 65.0,
+   "received_at": 65.6,
+   "position": {
+    "x": 1497.25,
+    "y": -86.75
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.13,
+    "vy": 0.46
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0045",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 65.22,
+   "received_at": 65.82,
+   "position": {
+    "x": 1615.87,
+    "y": 1.65
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.91,
+    "vy": -0.74
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0067",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 66.0,
+   "received_at": 66.6,
+   "position": {
+    "x": 1500.32,
+    "y": -83.05
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.54,
+    "vy": -0.38
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0046",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 66.22,
+   "received_at": 66.82,
+   "position": {
+    "x": 1633.49,
+    "y": 3.38
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.02,
+    "vy": -0.24
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0068",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 67.0,
+   "received_at": 67.6,
+   "position": {
+    "x": 1501.81,
+    "y": -81.11
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 1.01,
+    "vy": -0.17
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0047",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 67.22,
+   "received_at": 67.82,
+   "position": {
+    "x": 1644.64,
+    "y": -0.03
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.46,
+    "vy": -0.19
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0069",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 68.0,
+   "received_at": 68.6,
+   "position": {
+    "x": 1496.19,
+    "y": -78.95
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.39,
+    "vy": -0.29
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0048",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 68.22,
+   "received_at": 68.82,
+   "position": {
+    "x": 1659.54,
+    "y": -0.07
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.42,
+    "vy": -0.07
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0070",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 69.0,
+   "received_at": 69.6,
+   "position": {
+    "x": 1498.63,
+    "y": -78.05
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.07,
+    "vy": -0.08
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0049",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 69.22,
+   "received_at": 69.82,
+   "position": {
+    "x": 1669.25,
+    "y": 0.79
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.47,
+    "vy": -0.18
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0071",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 70.0,
+   "received_at": 70.6,
+   "position": {
+    "x": 1502.39,
+    "y": -82.09
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.33,
+    "vy": -0.31
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0050",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 70.22,
+   "received_at": 70.82,
+   "position": {
+    "x": 1680.45,
+    "y": -1.46
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.26,
+    "vy": 0.54
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0072",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 71.0,
+   "received_at": 71.6,
+   "position": {
+    "x": 1496.58,
+    "y": -84.49
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.1,
+    "vy": 0.25
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0051",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 71.22,
+   "received_at": 71.82,
+   "position": {
+    "x": 1685.62,
+    "y": 3.64
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.72,
+    "vy": -0.03
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0073",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 72.0,
+   "received_at": 72.6,
+   "position": {
+    "x": 1502.03,
+    "y": -81.06
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.73,
+    "vy": -0.23
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0052",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 72.22,
+   "received_at": 72.82,
+   "position": {
+    "x": 1699.86,
+    "y": -2.23
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.7,
+    "vy": -0.12
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0074",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 73.0,
+   "received_at": 73.6,
+   "position": {
+    "x": 1500.74,
+    "y": -81.13
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.91,
+    "vy": -0.1
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0053",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 73.22,
+   "received_at": 73.82,
+   "position": {
+    "x": 1713.82,
+    "y": -4.71
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.88,
+    "vy": -0.05
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0075",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 74.0,
+   "received_at": 74.6,
+   "position": {
+    "x": 1500.62,
+    "y": -78.34
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.73,
+    "vy": 0.24
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0054",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 74.22,
+   "received_at": 74.82,
+   "position": {
+    "x": 1730.15,
+    "y": -3.89
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.51,
+    "vy": -0.39
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0076",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 75.0,
+   "received_at": 75.6,
+   "position": {
+    "x": 1495.29,
+    "y": -82.54
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.56,
+    "vy": 0.12
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0055",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 75.22,
+   "received_at": 75.82,
+   "position": {
+    "x": 1739.21,
+    "y": 1.91
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.1,
+    "vy": 0.79
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0077",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 76.0,
+   "received_at": 76.6,
+   "position": {
+    "x": 1499.23,
+    "y": -83.7
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.08,
+    "vy": -0.05
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0056",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 76.22,
+   "received_at": 76.82,
+   "position": {
+    "x": 1750.24,
+    "y": 4.2
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.35,
+    "vy": 0.39
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0078",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 77.0,
+   "received_at": 77.6,
+   "position": {
+    "x": 1502.54,
+    "y": -85.0
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.56,
+    "vy": -0.39
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0057",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 77.22,
+   "received_at": 77.82,
+   "position": {
+    "x": 1762.11,
+    "y": -0.22
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.8,
+    "vy": -0.7
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0079",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 78.0,
+   "received_at": 78.6,
+   "position": {
+    "x": 1501.47,
+    "y": -84.32
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.14,
+    "vy": -0.21
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0058",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 78.22,
+   "received_at": 78.82,
+   "position": {
+    "x": 1777.85,
+    "y": -2.72
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.56,
+    "vy": -0.66
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0080",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 79.0,
+   "received_at": 79.6,
+   "position": {
+    "x": 1499.83,
+    "y": -82.1
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.26,
+    "vy": 0.61
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0059",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 79.22,
+   "received_at": 79.82,
+   "position": {
+    "x": 1789.63,
+    "y": 1.19
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.23,
+    "vy": 0.4
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0081",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 80.0,
+   "received_at": 80.6,
+   "position": {
+    "x": 1498.44,
+    "y": -85.36
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.12,
+    "vy": 0.89
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0060",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 80.22,
+   "received_at": 80.82,
+   "position": {
+    "x": 1797.73,
+    "y": 3.2
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.98,
+    "vy": -0.5
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0082",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 81.0,
+   "received_at": 81.6,
+   "position": {
+    "x": 1500.95,
+    "y": -75.99
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.65,
+    "vy": -0.44
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0061",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 81.22,
+   "received_at": 81.82,
+   "position": {
+    "x": 1814.82,
+    "y": -5.9
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.2,
+    "vy": -0.91
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0083",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 82.0,
+   "received_at": 82.6,
+   "position": {
+    "x": 1504.54,
+    "y": -77.51
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.82,
+    "vy": -1.14
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0062",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 82.22,
+   "received_at": 82.82,
+   "position": {
+    "x": 1818.55,
+    "y": -3.73
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.34,
+    "vy": 0.09
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0084",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 83.0,
+   "received_at": 83.6,
+   "position": {
+    "x": 1494.98,
+    "y": -77.08
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.3,
+    "vy": -0.46
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0063",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 83.22,
+   "received_at": 83.82,
+   "position": {
+    "x": 1834.06,
+    "y": 2.01
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.01,
+    "vy": -0.75
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0085",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 84.0,
+   "received_at": 84.6,
+   "position": {
+    "x": 1504.34,
+    "y": -81.54
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.22,
+    "vy": 0.36
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0064",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 84.22,
+   "received_at": 84.82,
+   "position": {
+    "x": 1844.03,
+    "y": -0.49
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.56,
+    "vy": -0.53
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0086",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 85.0,
+   "received_at": 85.6,
+   "position": {
+    "x": 1495.99,
+    "y": -81.32
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.23,
+    "vy": -0.28
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0065",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 85.22,
+   "received_at": 85.82,
+   "position": {
+    "x": 1860.7,
+    "y": -2.62
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.49,
+    "vy": 0.04
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0087",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 86.0,
+   "received_at": 86.6,
+   "position": {
+    "x": 1502.3,
+    "y": -86.24
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.1,
+    "vy": 0.56
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0066",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 86.22,
+   "received_at": 86.82,
+   "position": {
+    "x": 1873.17,
+    "y": 1.21
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.77,
+    "vy": -0.7
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0088",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 87.0,
+   "received_at": 87.6,
+   "position": {
+    "x": 1497.42,
+    "y": -80.36
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.47,
+    "vy": 0.39
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0067",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 87.22,
+   "received_at": 87.82,
+   "position": {
+    "x": 1878.02,
+    "y": 3.89
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.44,
+    "vy": -0.4
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0089",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 88.0,
+   "received_at": 88.6,
+   "position": {
+    "x": 1498.53,
+    "y": -76.59
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.22,
+    "vy": -0.22
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0068",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 88.22,
+   "received_at": 88.82,
+   "position": {
+    "x": 1897.4,
+    "y": -2.74
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.61,
+    "vy": -0.04
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0090",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 89.0,
+   "received_at": 89.6,
+   "position": {
+    "x": 1498.8,
+    "y": -79.12
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.03,
+    "vy": -0.21
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0069",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 89.22,
+   "received_at": 89.82,
+   "position": {
+    "x": 1909.85,
+    "y": -1.0
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.34,
+    "vy": -0.05
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0091",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 90.0,
+   "received_at": 90.6,
+   "position": {
+    "x": 1505.93,
+    "y": -82.53
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.16,
+    "vy": -0.3
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0070",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 90.22,
+   "received_at": 90.82,
+   "position": {
+    "x": 1919.93,
+    "y": -3.67
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.26,
+    "vy": -0.33
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0092",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 91.0,
+   "received_at": 91.6,
+   "position": {
+    "x": 1495.42,
+    "y": -79.98
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.63,
+    "vy": -0.17
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0071",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 91.22,
+   "received_at": 91.82,
+   "position": {
+    "x": 1929.87,
+    "y": 4.02
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.56,
+    "vy": -0.59
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0093",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 92.0,
+   "received_at": 92.6,
+   "position": {
+    "x": 1499.7,
+    "y": -81.11
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.56,
+    "vy": 0.52
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0072",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 92.22,
+   "received_at": 92.82,
+   "position": {
+    "x": 1945.35,
+    "y": 0.04
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.66,
+    "vy": 0.05
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0094",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 93.0,
+   "received_at": 93.6,
+   "position": {
+    "x": 1500.28,
+    "y": -84.72
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.13,
+    "vy": -0.67
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0073",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 93.22,
+   "received_at": 93.82,
+   "position": {
+    "x": 1959.95,
+    "y": 4.68
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.3,
+    "vy": -0.78
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0095",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 94.0,
+   "received_at": 94.6,
+   "position": {
+    "x": 1502.15,
+    "y": -81.88
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.24,
+    "vy": 1.2
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0074",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 94.22,
+   "received_at": 94.82,
+   "position": {
+    "x": 1973.14,
+    "y": -3.59
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.27,
+    "vy": 1.02
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0096",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 95.0,
+   "received_at": 95.6,
+   "position": {
+    "x": 1495.34,
+    "y": -76.19
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.37,
+    "vy": -0.13
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0075",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 95.22,
+   "received_at": 95.82,
+   "position": {
+    "x": 1979.36,
+    "y": 0.21
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.41,
+    "vy": 0.16
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0097",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 96.0,
+   "received_at": 96.6,
+   "position": {
+    "x": 1497.09,
+    "y": -79.84
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.22,
+    "vy": -0.55
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0076",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 96.22,
+   "received_at": 96.82,
+   "position": {
+    "x": 1992.52,
+    "y": 3.75
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.04,
+    "vy": -0.83
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0098",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 97.0,
+   "received_at": 97.6,
+   "position": {
+    "x": 1495.78,
+    "y": -80.4
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.86,
+    "vy": 0.42
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0077",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 97.22,
+   "received_at": 97.82,
+   "position": {
+    "x": 2005.0,
+    "y": 1.08
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.36,
+    "vy": -0.24
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0099",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 98.0,
+   "received_at": 98.6,
+   "position": {
+    "x": 1500.19,
+    "y": -82.46
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.19,
+    "vy": 0.32
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0078",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 98.22,
+   "received_at": 98.82,
+   "position": {
+    "x": 2015.99,
+    "y": 0.61
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.4,
+    "vy": 0.08
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0100",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 99.0,
+   "received_at": 99.6,
+   "position": {
+    "x": 1498.68,
+    "y": -79.27
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.51,
+    "vy": 0.68
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0079",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 99.22,
+   "received_at": 99.82,
+   "position": {
+    "x": 2027.65,
+    "y": 1.21
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.83,
+    "vy": 0.14
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0101",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 100.0,
+   "received_at": 100.6,
+   "position": {
+    "x": 1501.01,
+    "y": -80.49
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.15,
+    "vy": -0.51
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0080",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 100.22,
+   "received_at": 100.82,
+   "position": {
+    "x": 2034.32,
+    "y": -0.7
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.67,
+    "vy": -0.23
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0102",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 101.0,
+   "received_at": 101.6,
+   "position": {
+    "x": 1505.45,
+    "y": -77.55
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.37,
+    "vy": -0.21
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0081",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 101.22,
+   "received_at": 101.82,
+   "position": {
+    "x": 2052.16,
+    "y": 2.03
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.55,
+    "vy": -0.01
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0103",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 102.0,
+   "received_at": 102.6,
+   "position": {
+    "x": 1503.73,
+    "y": -76.75
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.43,
+    "vy": -0.35
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0082",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 102.22,
+   "received_at": 102.82,
+   "position": {
+    "x": 2068.59,
+    "y": 2.29
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.77,
+    "vy": 0.7
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0104",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 103.0,
+   "received_at": 103.6,
+   "position": {
+    "x": 1497.66,
+    "y": -85.55
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.07,
+    "vy": -0.16
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0083",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 103.22,
+   "received_at": 103.82,
+   "position": {
+    "x": 2081.38,
+    "y": 2.06
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.02,
+    "vy": 0.69
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0105",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 104.0,
+   "received_at": 104.6,
+   "position": {
+    "x": 1501.18,
+    "y": -77.19
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.24,
+    "vy": 0.03
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0084",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 104.22,
+   "received_at": 104.82,
+   "position": {
+    "x": 2091.45,
+    "y": -2.08
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.61,
+    "vy": 1.33
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0106",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 105.0,
+   "received_at": 105.6,
+   "position": {
+    "x": 1498.73,
+    "y": -80.47
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.7,
+    "vy": -0.67
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0085",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 105.22,
+   "received_at": 105.82,
+   "position": {
+    "x": 2099.55,
+    "y": -6.6
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.58,
+    "vy": -0.61
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0107",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 106.0,
+   "received_at": 106.6,
+   "position": {
+    "x": 1500.28,
+    "y": -80.38
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.21,
+    "vy": -0.34
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0086",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 106.22,
+   "received_at": 106.82,
+   "position": {
+    "x": 2114.14,
+    "y": 4.21
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.73,
+    "vy": 0.81
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0108",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 107.0,
+   "received_at": 107.6,
+   "position": {
+    "x": 1502.33,
+    "y": -78.3
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.56,
+    "vy": 0.98
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0087",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 107.22,
+   "received_at": 107.82,
+   "position": {
+    "x": 2118.82,
+    "y": -2.82
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 11.75,
+    "vy": -0.72
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0109",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 108.0,
+   "received_at": 108.6,
+   "position": {
+    "x": 1499.5,
+    "y": -79.92
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 0.16,
+    "vy": -0.3
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0088",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 108.22,
+   "received_at": 108.82,
+   "position": {
+    "x": 2135.97,
+    "y": 1.29
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.66,
+    "vy": 0.1
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0110",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 109.0,
+   "received_at": 109.6,
+   "position": {
+    "x": 1501.19,
+    "y": -88.87
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.36,
+    "vy": 0.31
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-AC1-0089",
+   "track_id": "T-AC1",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "SIM212",
+   "observed_at": 109.22,
+   "received_at": 109.82,
+   "position": {
+    "x": 2148.43,
+    "y": -0.33
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": 12.05,
+    "vy": 0.58
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  },
+  {
+   "packet_id": "T-VH7-0111",
+   "track_id": "T-VH7",
+   "actor_association_status": "associated_by_scenario_fixture",
+   "actor_hint": "RESCUE7",
+   "observed_at": 110.0,
+   "received_at": 110.6,
+   "position": {
+    "x": 1506.12,
+    "y": -77.07
+   },
+   "coordinate_frame": "SIM-LOCAL-1 (fictional, metres)",
+   "speed_or_velocity": {
+    "vx": -0.59,
+    "vy": 0.26
+   },
+   "uncertainty": {
+    "sigma_pos_m": 3.0,
+    "sigma_vel_mps": 0.5,
+    "basis": "declared simulation noise"
+   },
+   "provenance": "simulated observation emitter (gmaps_core.sim.observe)",
+   "is_simulated": true
+  }
+ ]
+}

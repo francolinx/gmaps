@@ -1,0 +1,190 @@
+{
+ "SYN_KATL_DEV4_01_C_LAND_CROSS_00": {
+  "text": "American six sixty nine, runway two six left, cleared to land.",
+  "asr_s": 0.529,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9791
+   },
+   {
+    "w": "six",
+    "p": 0.7094
+   },
+   {
+    "w": "sixty",
+    "p": 0.6872
+   },
+   {
+    "w": "nine,",
+    "p": 0.826
+   },
+   {
+    "w": "runway",
+    "p": 0.9979
+   },
+   {
+    "w": "two",
+    "p": 0.9951
+   },
+   {
+    "w": "six",
+    "p": 0.9978
+   },
+   {
+    "w": "left,",
+    "p": 0.9519
+   },
+   {
+    "w": "cleared",
+    "p": 0.9977
+   },
+   {
+    "w": "to",
+    "p": 0.9836
+   },
+   {
+    "w": "land.",
+    "p": 0.9654
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_01_C_LAND_CROSS_01": {
+  "text": "American 669, roger, cleared to land, runway two six left.",
+  "asr_s": 0.437,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.9848
+   },
+   {
+    "w": "669,",
+    "p": 0.5112
+   },
+   {
+    "w": "roger,",
+    "p": 0.6409
+   },
+   {
+    "w": "cleared",
+    "p": 0.9873
+   },
+   {
+    "w": "to",
+    "p": 0.885
+   },
+   {
+    "w": "land,",
+    "p": 0.5746
+   },
+   {
+    "w": "runway",
+    "p": 0.997
+   },
+   {
+    "w": "two",
+    "p": 0.996
+   },
+   {
+    "w": "six",
+    "p": 0.996
+   },
+   {
+    "w": "left.",
+    "p": 0.9768
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_01_C_LAND_CROSS_02": {
+  "text": "Frontier 900, cross runway two six left, and echo one.",
+  "asr_s": 0.447,
+  "words": [
+   {
+    "w": "Frontier",
+    "p": 0.9781
+   },
+   {
+    "w": "900,",
+    "p": 0.5642
+   },
+   {
+    "w": "cross",
+    "p": 0.9854
+   },
+   {
+    "w": "runway",
+    "p": 0.9983
+   },
+   {
+    "w": "two",
+    "p": 0.9972
+   },
+   {
+    "w": "six",
+    "p": 0.9972
+   },
+   {
+    "w": "left,",
+    "p": 0.3899
+   },
+   {
+    "w": "and",
+    "p": 0.4985
+   },
+   {
+    "w": "echo",
+    "p": 0.7305
+   },
+   {
+    "w": "one.",
+    "p": 0.9736
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_01_C_LAND_CROSS_03": {
+  "text": "Crossing runway two six left at Echo One Frontier 900.",
+  "asr_s": 0.422,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.6879
+   },
+   {
+    "w": "runway",
+    "p": 0.9665
+   },
+   {
+    "w": "two",
+    "p": 0.986
+   },
+   {
+    "w": "six",
+    "p": 0.9956
+   },
+   {
+    "w": "left",
+    "p": 0.9973
+   },
+   {
+    "w": "at",
+    "p": 0.9516
+   },
+   {
+    "w": "Echo",
+    "p": 0.8665
+   },
+   {
+    "w": "One",
+    "p": 0.7602
+   },
+   {
+    "w": "Frontier",
+    "p": 0.5914
+   },
+   {
+    "w": "900.",
+    "p": 0.782
+   }
+  ]
+ }
+}

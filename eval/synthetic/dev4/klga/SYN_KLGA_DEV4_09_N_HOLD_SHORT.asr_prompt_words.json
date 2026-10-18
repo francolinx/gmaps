@@ -1,0 +1,178 @@
+{
+ "SYN_KLGA_DEV4_09_N_HOLD_SHORT_00": {
+  "text": "United 1151, runway three one, cleared to land.",
+  "asr_s": 0.47,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.986
+   },
+   {
+    "w": "1151,",
+    "p": 0.4434
+   },
+   {
+    "w": "runway",
+    "p": 0.9665
+   },
+   {
+    "w": "three",
+    "p": 0.9967
+   },
+   {
+    "w": "one,",
+    "p": 0.9057
+   },
+   {
+    "w": "cleared",
+    "p": 0.9966
+   },
+   {
+    "w": "to",
+    "p": 0.99
+   },
+   {
+    "w": "land.",
+    "p": 0.9609
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_09_N_HOLD_SHORT_01": {
+  "text": "United 1151, roger, cleared to land runway three one.",
+  "asr_s": 0.417,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.988
+   },
+   {
+    "w": "1151,",
+    "p": 0.5101
+   },
+   {
+    "w": "roger,",
+    "p": 0.8285
+   },
+   {
+    "w": "cleared",
+    "p": 0.9858
+   },
+   {
+    "w": "to",
+    "p": 0.9404
+   },
+   {
+    "w": "land",
+    "p": 0.9992
+   },
+   {
+    "w": "runway",
+    "p": 0.5738
+   },
+   {
+    "w": "three",
+    "p": 0.9953
+   },
+   {
+    "w": "one.",
+    "p": 0.9722
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_09_N_HOLD_SHORT_02": {
+  "text": "Southwest 294, hold short of runway three one, traffic landing runway three one.",
+  "asr_s": 0.447,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9318
+   },
+   {
+    "w": "294,",
+    "p": 0.5604
+   },
+   {
+    "w": "hold",
+    "p": 0.9913
+   },
+   {
+    "w": "short",
+    "p": 0.9997
+   },
+   {
+    "w": "of",
+    "p": 0.998
+   },
+   {
+    "w": "runway",
+    "p": 0.9965
+   },
+   {
+    "w": "three",
+    "p": 0.9945
+   },
+   {
+    "w": "one,",
+    "p": 0.8887
+   },
+   {
+    "w": "traffic",
+    "p": 0.997
+   },
+   {
+    "w": "landing",
+    "p": 0.9962
+   },
+   {
+    "w": "runway",
+    "p": 0.9901
+   },
+   {
+    "w": "three",
+    "p": 0.9977
+   },
+   {
+    "w": "one.",
+    "p": 0.9543
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_09_N_HOLD_SHORT_03": {
+  "text": "Southwest 294, holding short of runway three one.",
+  "asr_s": 0.477,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9728
+   },
+   {
+    "w": "294,",
+    "p": 0.5046
+   },
+   {
+    "w": "holding",
+    "p": 0.9711
+   },
+   {
+    "w": "short",
+    "p": 0.9989
+   },
+   {
+    "w": "of",
+    "p": 0.9955
+   },
+   {
+    "w": "runway",
+    "p": 0.9953
+   },
+   {
+    "w": "three",
+    "p": 0.9956
+   },
+   {
+    "w": "one.",
+    "p": 0.9649
+   }
+  ]
+ }
+}

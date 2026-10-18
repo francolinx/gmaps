@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT_01_C_LAND_CROSS_00": {
+  "text": "United 2250 cleared to land runway four.",
+  "asr_s": 0.177
+ },
+ "SYN_KLGA_HELDOUT_01_C_LAND_CROSS_01": {
+  "text": "Clear to land for United 2250.",
+  "asr_s": 0.165
+ },
+ "SYN_KLGA_HELDOUT_01_C_LAND_CROSS_02": {
+  "text": "Southwest 1265 at uniform cross runway 4.",
+  "asr_s": 0.179
+ },
+ "SYN_KLGA_HELDOUT_01_C_LAND_CROSS_03": {
+  "text": "Crossing Runway 4 at Uniform, Southwest 1265.",
+  "asr_s": 0.18
+ }
+}

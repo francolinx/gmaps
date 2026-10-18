@@ -1,0 +1,222 @@
+{
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Spirit four, niner niner five, runway two two, cleared for takeoff, turn left heading two seven zero.",
+  "asr_s": 0.52,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9546
+   },
+   {
+    "w": "four,",
+    "p": 0.6395
+   },
+   {
+    "w": "niner",
+    "p": 0.7805
+   },
+   {
+    "w": "niner",
+    "p": 0.6356
+   },
+   {
+    "w": "five,",
+    "p": 0.6798
+   },
+   {
+    "w": "runway",
+    "p": 0.9989
+   },
+   {
+    "w": "two",
+    "p": 0.9981
+   },
+   {
+    "w": "two,",
+    "p": 0.8862
+   },
+   {
+    "w": "cleared",
+    "p": 0.9984
+   },
+   {
+    "w": "for",
+    "p": 0.9998
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.6169
+   },
+   {
+    "w": "turn",
+    "p": 0.9737
+   },
+   {
+    "w": "left",
+    "p": 0.9994
+   },
+   {
+    "w": "heading",
+    "p": 0.9869
+   },
+   {
+    "w": "two",
+    "p": 0.612
+   },
+   {
+    "w": "seven",
+    "p": 0.9577
+   },
+   {
+    "w": "zero.",
+    "p": 0.9606
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Roger, cleared for takeoff, T2 Spirit four, line up and line up and wait.",
+  "asr_s": 0.484,
+  "words": [
+   {
+    "w": "Roger,",
+    "p": 0.6949
+   },
+   {
+    "w": "cleared",
+    "p": 0.9828
+   },
+   {
+    "w": "for",
+    "p": 0.9636
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.5697
+   },
+   {
+    "w": "T2",
+    "p": 0.0921
+   },
+   {
+    "w": "Spirit",
+    "p": 0.8678
+   },
+   {
+    "w": "four,",
+    "p": 0.4454
+   },
+   {
+    "w": "line",
+    "p": 0.658
+   },
+   {
+    "w": "up",
+    "p": 0.8385
+   },
+   {
+    "w": "and",
+    "p": 0.861
+   },
+   {
+    "w": "line",
+    "p": 0.2307
+   },
+   {
+    "w": "up",
+    "p": 0.9871
+   },
+   {
+    "w": "and",
+    "p": 0.8234
+   },
+   {
+    "w": "wait.",
+    "p": 0.2314
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Endeavor 2302, number two, runway three one, cleared to land.",
+  "asr_s": 0.423,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.6672
+   },
+   {
+    "w": "2302,",
+    "p": 0.5535
+   },
+   {
+    "w": "number",
+    "p": 0.9284
+   },
+   {
+    "w": "two,",
+    "p": 0.8564
+   },
+   {
+    "w": "runway",
+    "p": 0.9993
+   },
+   {
+    "w": "three",
+    "p": 0.9961
+   },
+   {
+    "w": "one,",
+    "p": 0.814
+   },
+   {
+    "w": "cleared",
+    "p": 0.9925
+   },
+   {
+    "w": "to",
+    "p": 0.9741
+   },
+   {
+    "w": "land.",
+    "p": 0.9308
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Runway three one, cleared to land, Endeavor 2302.",
+  "asr_s": 0.395,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.802
+   },
+   {
+    "w": "three",
+    "p": 0.9929
+   },
+   {
+    "w": "one,",
+    "p": 0.9076
+   },
+   {
+    "w": "cleared",
+    "p": 0.9604
+   },
+   {
+    "w": "to",
+    "p": 0.7688
+   },
+   {
+    "w": "land,",
+    "p": 0.9729
+   },
+   {
+    "w": "Endeavor",
+    "p": 0.7553
+   },
+   {
+    "w": "2302.",
+    "p": 0.4589
+   }
+  ]
+ }
+}

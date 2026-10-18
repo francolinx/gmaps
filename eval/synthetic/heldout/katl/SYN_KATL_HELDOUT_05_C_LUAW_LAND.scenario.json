@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KATL_HELDOUT_05_C_LUAW_LAND",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "C_LUAW_LAND",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7301,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "N2",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier one seven five, line up and wait runway niner right.",
+   "id": "SYN_KATL_HELDOUT_05_C_LUAW_LAND_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Line up and wait niner right, Frontier one seven five.",
+   "id": "SYN_KATL_HELDOUT_05_C_LUAW_LAND_01"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Endeavor eight fifteen, cleared to land runway niner right.",
+   "id": "SYN_KATL_HELDOUT_05_C_LUAW_LAND_02"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Cleared to land niner right, Endeavor eight fifteen.",
+   "id": "SYN_KATL_HELDOUT_05_C_LUAW_LAND_03"
+  }
+ ]
+}

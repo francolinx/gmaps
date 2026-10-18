@@ -1,0 +1,51 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7601_08_N_CROSS_OTHER_RWY",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "FFT2526"
+    ],
+    "runway": "13",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7601_08_N_CROSS_OTHER_RWY_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "FFT2526"
+    ],
+    "runway": "13",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7601_08_N_CROSS_OTHER_RWY_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "N9441V"
+    ],
+    "runway": "22",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7601_08_N_CROSS_OTHER_RWY_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "N9441V"
+    ],
+    "runway": "22",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7601_08_N_CROSS_OTHER_RWY_03"
+  }
+ ]
+}

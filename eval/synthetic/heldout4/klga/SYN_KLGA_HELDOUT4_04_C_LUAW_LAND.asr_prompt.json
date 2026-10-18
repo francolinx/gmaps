@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_00": {
+  "text": "Tier 2700, runway four, line up and wait, traffic landing runway one three.",
+  "asr_s": 0.209
+ },
+ "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_01": {
+  "text": "Line up and wait runway four, Frontier 2700.",
+  "asr_s": 0.179
+ },
+ "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_02": {
+  "text": "Frontier four three niner niner, runway four, cleared to land, traffic holding in position runway four.",
+  "asr_s": 0.236
+ },
+ "SYN_KLGA_HELDOUT4_04_C_LUAW_LAND_03": {
+  "text": "runway four cleared to land, Frontier 4 3909.",
+  "asr_s": 0.182
+ }
+}

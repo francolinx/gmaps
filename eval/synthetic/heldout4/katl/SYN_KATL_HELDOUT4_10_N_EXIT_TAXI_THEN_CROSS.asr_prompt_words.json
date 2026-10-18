@@ -1,0 +1,270 @@
+{
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_00": {
+  "text": "Frontier 2444, number two, runway eight right, cleared to land.",
+  "asr_s": 0.461,
+  "words": [
+   {
+    "w": "Frontier",
+    "p": 0.9875
+   },
+   {
+    "w": "2444,",
+    "p": 0.7321
+   },
+   {
+    "w": "number",
+    "p": 0.9417
+   },
+   {
+    "w": "two,",
+    "p": 0.9177
+   },
+   {
+    "w": "runway",
+    "p": 0.9997
+   },
+   {
+    "w": "eight",
+    "p": 0.9983
+   },
+   {
+    "w": "right,",
+    "p": 0.949
+   },
+   {
+    "w": "cleared",
+    "p": 0.9971
+   },
+   {
+    "w": "to",
+    "p": 0.8738
+   },
+   {
+    "w": "land.",
+    "p": 0.9342
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_01": {
+  "text": "runway eight right, cleared to land for tier 2444.",
+  "asr_s": 0.45,
+  "words": [
+   {
+    "w": "runway",
+    "p": 0.8758
+   },
+   {
+    "w": "eight",
+    "p": 0.9918
+   },
+   {
+    "w": "right,",
+    "p": 0.9155
+   },
+   {
+    "w": "cleared",
+    "p": 0.9877
+   },
+   {
+    "w": "to",
+    "p": 0.9497
+   },
+   {
+    "w": "land",
+    "p": 0.9919
+   },
+   {
+    "w": "for",
+    "p": 0.6348
+   },
+   {
+    "w": "tier",
+    "p": 0.3021
+   },
+   {
+    "w": "2444.",
+    "p": 0.9453
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_02": {
+  "text": "Frontier 2444, turn right at Alpha 5, contact ground 121.7.",
+  "asr_s": 0.493,
+  "words": [
+   {
+    "w": "Frontier",
+    "p": 0.9931
+   },
+   {
+    "w": "2444,",
+    "p": 0.7853
+   },
+   {
+    "w": "turn",
+    "p": 0.9634
+   },
+   {
+    "w": "right",
+    "p": 0.9991
+   },
+   {
+    "w": "at",
+    "p": 0.9928
+   },
+   {
+    "w": "Alpha",
+    "p": 0.8843
+   },
+   {
+    "w": "5,",
+    "p": 0.3997
+   },
+   {
+    "w": "contact",
+    "p": 0.9919
+   },
+   {
+    "w": "ground",
+    "p": 0.7778
+   },
+   {
+    "w": "121.7.",
+    "p": 0.7443
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_03": {
+  "text": "Frontier 2444, taxi via Alpha 5 to the gate.",
+  "asr_s": 0.463,
+  "words": [
+   {
+    "w": "Frontier",
+    "p": 0.9654
+   },
+   {
+    "w": "2444,",
+    "p": 0.6369
+   },
+   {
+    "w": "taxi",
+    "p": 0.9677
+   },
+   {
+    "w": "via",
+    "p": 0.7614
+   },
+   {
+    "w": "Alpha",
+    "p": 0.9484
+   },
+   {
+    "w": "5",
+    "p": 0.4195
+   },
+   {
+    "w": "to",
+    "p": 0.9545
+   },
+   {
+    "w": "the",
+    "p": 0.8769
+   },
+   {
+    "w": "gate.",
+    "p": 0.6706
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_04": {
+  "text": "Experience 1135, proceed by our Echo 3, cross runway eight right.",
+  "asr_s": 0.446,
+  "words": [
+   {
+    "w": "Experience",
+    "p": 0.5069
+   },
+   {
+    "w": "1135,",
+    "p": 0.5894
+   },
+   {
+    "w": "proceed",
+    "p": 0.4093
+   },
+   {
+    "w": "by",
+    "p": 0.454
+   },
+   {
+    "w": "our",
+    "p": 0.7828
+   },
+   {
+    "w": "Echo",
+    "p": 0.759
+   },
+   {
+    "w": "3,",
+    "p": 0.3026
+   },
+   {
+    "w": "cross",
+    "p": 0.9831
+   },
+   {
+    "w": "runway",
+    "p": 0.9976
+   },
+   {
+    "w": "eight",
+    "p": 0.9821
+   },
+   {
+    "w": "right.",
+    "p": 0.8529
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_10_N_EXIT_TAXI_THEN_CROSS_05": {
+  "text": "Cross runway eight right at Echo Street, Spirit 1135.",
+  "asr_s": 0.488,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.8571
+   },
+   {
+    "w": "runway",
+    "p": 0.9902
+   },
+   {
+    "w": "eight",
+    "p": 0.9867
+   },
+   {
+    "w": "right",
+    "p": 0.9143
+   },
+   {
+    "w": "at",
+    "p": 0.9532
+   },
+   {
+    "w": "Echo",
+    "p": 0.9445
+   },
+   {
+    "w": "Street,",
+    "p": 0.5202
+   },
+   {
+    "w": "Spirit",
+    "p": 0.9329
+   },
+   {
+    "w": "1135.",
+    "p": 0.6681
+   }
+  ]
+ }
+}

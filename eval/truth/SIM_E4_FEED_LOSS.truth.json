@@ -1,0 +1,74 @@
+{
+ "id": "SIM_E4_FEED_LOSS",
+ "EVALUATION_ONLY": true,
+ "actors": [
+  {
+   "track_id": "T-AC1",
+   "callsign": "SIM212",
+   "class": "aircraft",
+   "path": {
+    "start": [
+     0.0,
+     0.0
+    ],
+    "dir": [
+     1.0,
+     0.0
+    ]
+   },
+   "t_start": 20.0,
+   "s0": 300.0,
+   "v0": 70.0,
+   "obs_from": 20.0,
+   "phases": [
+    {
+     "t_from": 20.0,
+     "accel": -2.0,
+     "v_max": 70.0,
+     "v_min": 12.0
+    }
+   ]
+  },
+  {
+   "track_id": "T-VH7",
+   "callsign": "RESCUE7",
+   "class": "vehicle",
+   "path": {
+    "start": [
+     1500.0,
+     -400.0
+    ],
+    "dir": [
+     0.0,
+     1.0
+    ]
+   },
+   "t_start": 0.0,
+   "s0": 100.0,
+   "v0": 0.0,
+   "obs_from": 0.0,
+   "phases": [
+    {
+     "t_from": 0.0,
+     "accel": 0.0,
+     "v_max": 0.0,
+     "v_min": 0.0
+    },
+    {
+     "t_from": 31.0,
+     "accel": 2.0,
+     "v_max": 12.0,
+     "v_min": 0.0
+    }
+   ]
+  }
+ ],
+ "drops": {
+  "T-VH7": [
+   [
+    36.0,
+    70.0
+   ]
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Southwest 2394, runway niner left, wind two three zero at one three gusts two four, cleared to land.",
+  "asr_s": 0.259
+ },
+ "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Southwest 2394. Roger. Cleared to land, runway niner left.",
+  "asr_s": 0.201
+ },
+ "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_02": {
+  "text": "United 1054, cross runway eight right at Echo three.",
+  "asr_s": 0.18
+ },
+ "SYN_KATL_DEV4_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Crossing runway eight right at Echo three, United 1054.",
+  "asr_s": 0.182
+ }
+}

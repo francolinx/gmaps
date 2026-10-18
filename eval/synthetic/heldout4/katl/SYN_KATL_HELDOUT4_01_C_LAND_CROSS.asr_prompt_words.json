@@ -1,0 +1,238 @@
+{
+ "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_00": {
+  "text": "Twin Cessna six six four eight, Juliet. Runway two six right, cleared to land, wind comp.",
+  "asr_s": 0.658,
+  "words": [
+   {
+    "w": "Twin",
+    "p": 0.5637
+   },
+   {
+    "w": "Cessna",
+    "p": 0.8889
+   },
+   {
+    "w": "six",
+    "p": 0.7449
+   },
+   {
+    "w": "six",
+    "p": 0.9065
+   },
+   {
+    "w": "four",
+    "p": 0.9851
+   },
+   {
+    "w": "eight,",
+    "p": 0.7065
+   },
+   {
+    "w": "Juliet.",
+    "p": 0.4755
+   },
+   {
+    "w": "Runway",
+    "p": 0.6821
+   },
+   {
+    "w": "two",
+    "p": 0.9971
+   },
+   {
+    "w": "six",
+    "p": 0.9971
+   },
+   {
+    "w": "right,",
+    "p": 0.8194
+   },
+   {
+    "w": "cleared",
+    "p": 0.995
+   },
+   {
+    "w": "to",
+    "p": 0.8659
+   },
+   {
+    "w": "land,",
+    "p": 0.9492
+   },
+   {
+    "w": "wind",
+    "p": 0.559
+   },
+   {
+    "w": "comp.",
+    "p": 0.5193
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_01": {
+  "text": "Runway two six right, cleared to land, twin Cessna 6648 GPS.",
+  "asr_s": 0.486,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.573
+   },
+   {
+    "w": "two",
+    "p": 0.942
+   },
+   {
+    "w": "six",
+    "p": 0.9958
+   },
+   {
+    "w": "right,",
+    "p": 0.9461
+   },
+   {
+    "w": "cleared",
+    "p": 0.9719
+   },
+   {
+    "w": "to",
+    "p": 0.7594
+   },
+   {
+    "w": "land,",
+    "p": 0.9161
+   },
+   {
+    "w": "twin",
+    "p": 0.702
+   },
+   {
+    "w": "Cessna",
+    "p": 0.4026
+   },
+   {
+    "w": "6648",
+    "p": 0.5044
+   },
+   {
+    "w": "GPS.",
+    "p": 0.3386
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_02": {
+  "text": "Spirit niner six two four, proceed via Delta, cross runway two six right.",
+  "asr_s": 0.439,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9892
+   },
+   {
+    "w": "niner",
+    "p": 0.4552
+   },
+   {
+    "w": "six",
+    "p": 0.7537
+   },
+   {
+    "w": "two",
+    "p": 0.5996
+   },
+   {
+    "w": "four,",
+    "p": 0.7923
+   },
+   {
+    "w": "proceed",
+    "p": 0.9903
+   },
+   {
+    "w": "via",
+    "p": 0.8678
+   },
+   {
+    "w": "Delta,",
+    "p": 0.9066
+   },
+   {
+    "w": "cross",
+    "p": 0.9963
+   },
+   {
+    "w": "runway",
+    "p": 0.9991
+   },
+   {
+    "w": "two",
+    "p": 0.9661
+   },
+   {
+    "w": "six",
+    "p": 0.998
+   },
+   {
+    "w": "right.",
+    "p": 0.8128
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_03": {
+  "text": "Cross runway two six right at Delta Spirit nine and six to four.",
+  "asr_s": 0.426,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.8872
+   },
+   {
+    "w": "runway",
+    "p": 0.992
+   },
+   {
+    "w": "two",
+    "p": 0.7902
+   },
+   {
+    "w": "six",
+    "p": 0.9942
+   },
+   {
+    "w": "right",
+    "p": 0.8789
+   },
+   {
+    "w": "at",
+    "p": 0.91
+   },
+   {
+    "w": "Delta",
+    "p": 0.7991
+   },
+   {
+    "w": "Spirit",
+    "p": 0.6693
+   },
+   {
+    "w": "nine",
+    "p": 0.6383
+   },
+   {
+    "w": "and",
+    "p": 0.4091
+   },
+   {
+    "w": "six",
+    "p": 0.8824
+   },
+   {
+    "w": "to",
+    "p": 0.7496
+   },
+   {
+    "w": "four.",
+    "p": 0.9445
+   }
+  ]
+ }
+}

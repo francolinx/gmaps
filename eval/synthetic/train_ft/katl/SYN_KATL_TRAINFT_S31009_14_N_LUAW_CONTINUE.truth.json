@@ -1,0 +1,125 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31009_14_N_LUAW_CONTINUE",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_14_N_LUAW_CONTINUE_00",
+   "fields": {
+    "callsigns": [
+     "N6104B"
+    ],
+    "runway": "27L",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N6104B",
+    "runway": "27L",
+    "instruction": "LUAW",
+    "taxiways": [
+     "N6",
+     "B"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_14_N_LUAW_CONTINUE_01",
+   "fields": {
+    "callsigns": [
+     "N6104B"
+    ],
+    "runway": "27L",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N6104B",
+    "runway": "27L",
+    "instruction": "LUAW",
+    "taxiways": [
+     "N6",
+     "B"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_14_N_LUAW_CONTINUE_02",
+   "fields": {
+    "callsigns": [
+     "N2515H"
+    ],
+    "runway": "27L",
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N2515H",
+    "runway": "27L",
+    "instruction": "OTHER",
+    "taxiways": [
+     "H"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_14_N_LUAW_CONTINUE_03",
+   "fields": {
+    "callsigns": [
+     "N2515H"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N2515H",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": [
+     "H"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_14_N_LUAW_CONTINUE_04",
+   "fields": {
+    "callsigns": [
+     "N6104B"
+    ],
+    "runway": "27L",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N6104B",
+    "runway": "27L",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "N6",
+     "B",
+     "N2"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_14_N_LUAW_CONTINUE_05",
+   "fields": {
+    "callsigns": [
+     "N6104B"
+    ],
+    "runway": "27L",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N6104B",
+    "runway": "27L",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "N6",
+     "B"
+    ]
+   }
+  }
+ ]
+}

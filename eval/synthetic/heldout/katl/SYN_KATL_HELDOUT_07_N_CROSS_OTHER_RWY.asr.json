@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT_07_N_CROSS_OTHER_RWY_00": {
+  "text": "United 2244, cleared to land runway 8 right.",
+  "asr_s": 0.179
+ },
+ "SYN_KATL_HELDOUT_07_N_CROSS_OTHER_RWY_01": {
+  "text": "Clear to land 8 right, United 2244.",
+  "asr_s": 0.173
+ },
+ "SYN_KATL_HELDOUT_07_N_CROSS_OTHER_RWY_02": {
+  "text": "JetBlue 2864 at Uniform Cross Runway Niner Left.",
+  "asr_s": 0.197
+ },
+ "SYN_KATL_HELDOUT_07_N_CROSS_OTHER_RWY_03": {
+  "text": "Crossing runway niner left at uniform, jet blue 2854.",
+  "asr_s": 0.188
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_00": {
+  "text": "American 1839, runway 26R, wind 280 at 14, cleared to land.",
+  "asr_s": 0.211
+ },
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_01": {
+  "text": "American 1839, Roger, cleared to land runway 26 right.",
+  "asr_s": 0.188
+ },
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_02": {
+  "text": "American 620, hold short of runway 26R, traffic landing runway 26R.",
+  "asr_s": 0.207
+ },
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_03": {
+  "text": "American 6-2-0, roger.",
+  "asr_s": 0.168
+ },
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_04": {
+  "text": "American 620, read back hold instructions.",
+  "asr_s": 0.174
+ },
+ "SYN_KATL_DEV4_07_C_HOLD_NO_READBACK_05": {
+  "text": "American 620, holding short of runway 261.",
+  "asr_s": 0.178
+ }
+}

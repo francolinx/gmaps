@@ -1,0 +1,71 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "JBU5962"
+    ],
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "JBU5962"
+    ],
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "JBU5962"
+    ],
+    "runway": null,
+    "instruction": "GO_AROUND"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "JBU5962"
+    ],
+    "runway": null,
+    "instruction": "GO_AROUND"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_03"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "EDV1120"
+    ],
+    "runway": "8R",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_04"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "EDV1120"
+    ],
+    "runway": "8R",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7601_12_N_GO_AROUND_THEN_CROSS_05"
+  }
+ ]
+}

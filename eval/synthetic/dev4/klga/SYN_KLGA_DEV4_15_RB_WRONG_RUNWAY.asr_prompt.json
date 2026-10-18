@@ -1,0 +1,10 @@
+{
+ "SYN_KLGA_DEV4_15_RB_WRONG_RUNWAY_00": {
+  "text": "American seven hundred five, runway two two, cleared to land.",
+  "asr_s": 0.186
+ },
+ "SYN_KLGA_DEV4_15_RB_WRONG_RUNWAY_01": {
+  "text": "American seven hundred five, roger, cleared to land, runway three one.",
+  "asr_s": 0.203
+ }
+}

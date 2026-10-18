@@ -1,0 +1,162 @@
+{
+ "SYN_KLGA_DEV4_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "JetBlue 781, runway four cleared to land.",
+  "asr_s": 0.448,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9798
+   },
+   {
+    "w": "781,",
+    "p": 0.6084
+   },
+   {
+    "w": "runway",
+    "p": 0.9831
+   },
+   {
+    "w": "four",
+    "p": 0.9981
+   },
+   {
+    "w": "cleared",
+    "p": 0.7831
+   },
+   {
+    "w": "to",
+    "p": 0.9993
+   },
+   {
+    "w": "land.",
+    "p": 0.9617
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "Cleared to land for JetBlue 781.",
+  "asr_s": 0.436,
+  "words": [
+   {
+    "w": "Cleared",
+    "p": 0.5393
+   },
+   {
+    "w": "to",
+    "p": 0.9972
+   },
+   {
+    "w": "land",
+    "p": 0.9944
+   },
+   {
+    "w": "for",
+    "p": 0.6752
+   },
+   {
+    "w": "JetBlue",
+    "p": 0.9039
+   },
+   {
+    "w": "781.",
+    "p": 0.7753
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "Cessna Niner, one two Sierra, at Quebec Cross runway four without delay.",
+  "asr_s": 0.429,
+  "words": [
+   {
+    "w": "Cessna",
+    "p": 0.5832
+   },
+   {
+    "w": "Niner,",
+    "p": 0.3516
+   },
+   {
+    "w": "one",
+    "p": 0.9093
+   },
+   {
+    "w": "two",
+    "p": 0.9825
+   },
+   {
+    "w": "Sierra,",
+    "p": 0.5818
+   },
+   {
+    "w": "at",
+    "p": 0.8327
+   },
+   {
+    "w": "Quebec",
+    "p": 0.9854
+   },
+   {
+    "w": "Cross",
+    "p": 0.535
+   },
+   {
+    "w": "runway",
+    "p": 0.5853
+   },
+   {
+    "w": "four",
+    "p": 0.9871
+   },
+   {
+    "w": "without",
+    "p": 0.8512
+   },
+   {
+    "w": "delay.",
+    "p": 0.9308
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Cross four at Quebec Cessna Niner one two Sierra.",
+  "asr_s": 0.392,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.9254
+   },
+   {
+    "w": "four",
+    "p": 0.7013
+   },
+   {
+    "w": "at",
+    "p": 0.7631
+   },
+   {
+    "w": "Quebec",
+    "p": 0.978
+   },
+   {
+    "w": "Cessna",
+    "p": 0.6421
+   },
+   {
+    "w": "Niner",
+    "p": 0.8807
+   },
+   {
+    "w": "one",
+    "p": 0.7156
+   },
+   {
+    "w": "two",
+    "p": 0.9601
+   },
+   {
+    "w": "Sierra.",
+    "p": 0.7205
+   }
+  ]
+ }
+}

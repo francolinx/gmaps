@@ -1,0 +1,18 @@
+{
+ "icao": "KSFO",
+ "checked_at": "2026-10-08T23:58:47-0400",
+ "dpi": 300,
+ "ink_level": 250,
+ "tolerance_px": 1,
+ "pdf_sha256": "40018bd03c5fb1f6b54faacd6a05503f97c7ceb7d79eff2ae317325a250938fb",
+ "faa_ink_px": 773994,
+ "reconstruction_ink_px": 773225,
+ "covered_pct": 99.791,
+ "extra_pct": 0.275,
+ "thresholds": {
+  "min_covered_pct": 99.0,
+  "max_extra_pct": 2.0
+ },
+ "pass": true,
+ "note": "faithful.svg uses original FAA styling; visible-text labels use a substitute font."
+}

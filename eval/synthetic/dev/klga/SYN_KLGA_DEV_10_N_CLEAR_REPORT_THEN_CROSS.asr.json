@@ -1,0 +1,22 @@
+{
+ "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Southwest 771, runway 13, cleared to land.",
+  "asr_s": 0.2
+ },
+ "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "Runway 1-3 clear to land Southwest 7-7-1.",
+  "asr_s": 0.226
+ },
+ "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Southwest 771, clear of runway 13.",
+  "asr_s": 0.191
+ },
+ "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "Southwest Niners 6-2, cross runway 1-3 at Zulu.",
+  "asr_s": 0.223
+ },
+ "SYN_KLGA_DEV_10_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Cross runway 1-3 at Zulu, Southwest 9 or 6-2.",
+  "asr_s": 0.234
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "SYN_KATL_DEV4_15_RB_WRONG_RUNWAY_00": {
+  "text": "American one two six, runway two seven left, cleared to land.",
+  "asr_s": 0.47,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.981
+   },
+   {
+    "w": "one",
+    "p": 0.8574
+   },
+   {
+    "w": "two",
+    "p": 0.953
+   },
+   {
+    "w": "six,",
+    "p": 0.9199
+   },
+   {
+    "w": "runway",
+    "p": 0.9969
+   },
+   {
+    "w": "two",
+    "p": 0.9939
+   },
+   {
+    "w": "seven",
+    "p": 0.9983
+   },
+   {
+    "w": "left,",
+    "p": 0.583
+   },
+   {
+    "w": "cleared",
+    "p": 0.996
+   },
+   {
+    "w": "to",
+    "p": 0.9817
+   },
+   {
+    "w": "land.",
+    "p": 0.9668
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_15_RB_WRONG_RUNWAY_01": {
+  "text": "American one two six, roger, cleared to land, runway two six right.",
+  "asr_s": 0.521,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.982
+   },
+   {
+    "w": "one",
+    "p": 0.8151
+   },
+   {
+    "w": "two",
+    "p": 0.9615
+   },
+   {
+    "w": "six,",
+    "p": 0.7734
+   },
+   {
+    "w": "roger,",
+    "p": 0.7687
+   },
+   {
+    "w": "cleared",
+    "p": 0.9451
+   },
+   {
+    "w": "to",
+    "p": 0.7946
+   },
+   {
+    "w": "land,",
+    "p": 0.6383
+   },
+   {
+    "w": "runway",
+    "p": 0.9949
+   },
+   {
+    "w": "two",
+    "p": 0.9897
+   },
+   {
+    "w": "six",
+    "p": 0.9953
+   },
+   {
+    "w": "right.",
+    "p": 0.9669
+   }
+  ]
+ }
+}

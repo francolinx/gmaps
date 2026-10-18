@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout3",
+ "phrasing_pool": "D",
+ "template": "C_TKOF_CROSS",
+ "basis": "R2 crossing vs active takeoff (3-7-2g1)",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7401,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "SC",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "JetBlue ten seventy five, runway niner right, wind zero five zero at one niner gusts two eight. Cleared for takeoff.",
+   "id": "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "JetBlue ten seventy five, cleared for takeoff runway niner right.",
+   "id": "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Endeavor ten seventy eight, at Sierra Charlie cross runway niner right without delay.",
+   "id": "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway niner right at Sierra Charlie, Endeavor ten seventy eight.",
+   "id": "SYN_KATL_HELDOUT3_03_C_TKOF_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

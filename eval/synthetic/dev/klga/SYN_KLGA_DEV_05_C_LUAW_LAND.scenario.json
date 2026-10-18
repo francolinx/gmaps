@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KLGA_DEV_05_C_LUAW_LAND",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "dev",
+ "phrasing_pool": "A",
+ "template": "C_LUAW_LAND",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 9101,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "U",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American one zero eight eight, runway four, line up and wait.",
+   "id": "SYN_KLGA_DEV_05_C_LUAW_LAND_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Line up and wait runway four, American one zero eight eight.",
+   "id": "SYN_KLGA_DEV_05_C_LUAW_LAND_01"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Frontier one six five four, runway four, cleared to land.",
+   "id": "SYN_KLGA_DEV_05_C_LUAW_LAND_02"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Runway four, cleared to land, Frontier one six five four.",
+   "id": "SYN_KLGA_DEV_05_C_LUAW_LAND_03"
+  }
+ ]
+}

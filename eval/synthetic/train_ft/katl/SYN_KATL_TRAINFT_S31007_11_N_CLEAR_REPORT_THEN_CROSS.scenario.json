@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31007_11_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "basis": "section 8: pilot's 'clear of the runway' releases the landing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31007,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "L",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit nine hundred, runway niner left, wind three one zero at niner, cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31007_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Spirit nine hundred, roger, cleared to land runway niner left.",
+   "id": "SYN_KATL_TRAINFT_S31007_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "Spirit nine hundred, clear runway niner left at Mike two.",
+   "id": "SYN_KATL_TRAINFT_S31007_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Endeavor eighteen ninety four, at Lima, cross runway niner left.",
+   "id": "SYN_KATL_TRAINFT_S31007_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Crossing runway niner left at Lima, Endeavor eighteen ninety four.",
+   "id": "SYN_KATL_TRAINFT_S31007_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "speaker_ref": "b"
+  }
+ ]
+}

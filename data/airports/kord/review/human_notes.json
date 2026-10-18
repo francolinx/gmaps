@@ -1,0 +1,57 @@
+{
+ "about": "Human review notes for KORD, read by tools/airport_map/osm.py (data, not code).",
+ "taxiway_names_decisions": {
+  "decided_by": "Franco",
+  "decided_at": "2026-10-09",
+  "rows": [
+   {
+    "label": "F",
+    "lat": 41.9598208,
+    "lon": -87.9010898,
+    "decision": "chart right: OSM tags the chart's vertical F as S (confirmed OSM error)",
+    "rule": "R5"
+   },
+   {
+    "label": "S3",
+    "lat": 41.9627925,
+    "lon": -87.9028365,
+    "decision": "chart right: S3 is unnamed in OSM (confirmed OSM error)",
+    "rule": "R4"
+   },
+   {
+    "label": "P4",
+    "lat": 41.9679461,
+    "lon": -87.911216,
+    "decision": "chart right",
+    "rule": "R4"
+   },
+   {
+    "label": "N6",
+    "lat": 41.9705856,
+    "lon": -87.8863075,
+    "decision": "chart right",
+    "rule": "R4"
+   }
+  ]
+ },
+ "osm_name_flags": [
+  {
+   "label": "F",
+   "osm_way": 95689106,
+   "flag": "name swapped in OSM: tagged S, chart says F"
+  },
+  {
+   "label": "S3",
+   "osm_way": 673231063,
+   "flag": "unnamed in OSM: chart says S3"
+  },
+  {
+   "label": "S3",
+   "osm_way": 673231069,
+   "flag": "name swapped in OSM: tagged F, chart says S3 (the other half of the F/S swap; Franco, Oct 9)",
+   "note": "the same way also passes 19.7 m from a chart F label to the north: it likely spans both taxiways; split it at review rather than renaming all of it",
+   "decided_by": "Franco",
+   "scope": "graph draft only"
+  }
+ ]
+}

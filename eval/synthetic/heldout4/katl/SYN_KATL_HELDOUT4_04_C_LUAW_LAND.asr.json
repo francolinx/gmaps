@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_00": {
+  "text": "Spirit 2400, runway 27 right, line up and wait, traffic landing runway 26 right.",
+  "asr_s": 0.23
+ },
+ "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_01": {
+  "text": "Line up and wait runway 27R, Spirit 2400",
+  "asr_s": 0.184
+ },
+ "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_02": {
+  "text": "Southwest 2163, runway 27R, cleared to land. Traffic holding in position, runway 27R.",
+  "asr_s": 0.243
+ },
+ "SYN_KATL_HELDOUT4_04_C_LUAW_LAND_03": {
+  "text": "runway 27R clears the land, southwest 2163",
+  "asr_s": 0.178
+ }
+}

@@ -1,0 +1,282 @@
+{
+ "SYN_KATL_DEV4_10_N_EXIT_TAXI_THEN_CROSS_00": {
+  "text": "JetBlue 2519, runway two seven left, cleared to land.",
+  "asr_s": 0.471,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9633
+   },
+   {
+    "w": "2519,",
+    "p": 0.6949
+   },
+   {
+    "w": "runway",
+    "p": 0.9891
+   },
+   {
+    "w": "two",
+    "p": 0.9923
+   },
+   {
+    "w": "seven",
+    "p": 0.9974
+   },
+   {
+    "w": "left,",
+    "p": 0.6867
+   },
+   {
+    "w": "cleared",
+    "p": 0.9978
+   },
+   {
+    "w": "to",
+    "p": 0.9869
+   },
+   {
+    "w": "land.",
+    "p": 0.9723
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_10_N_EXIT_TAXI_THEN_CROSS_01": {
+  "text": "JetBlue 2519, roger, cleared to land runway two seven left.",
+  "asr_s": 0.46,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9824
+   },
+   {
+    "w": "2519,",
+    "p": 0.6923
+   },
+   {
+    "w": "roger,",
+    "p": 0.531
+   },
+   {
+    "w": "cleared",
+    "p": 0.9916
+   },
+   {
+    "w": "to",
+    "p": 0.5345
+   },
+   {
+    "w": "land",
+    "p": 0.9989
+   },
+   {
+    "w": "runway",
+    "p": 0.5718
+   },
+   {
+    "w": "two",
+    "p": 0.985
+   },
+   {
+    "w": "seven",
+    "p": 0.9964
+   },
+   {
+    "w": "left.",
+    "p": 0.9559
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_10_N_EXIT_TAXI_THEN_CROSS_02": {
+  "text": "JetBlue 2519, turn left at Alpha Seven, contact ground.",
+  "asr_s": 0.474,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9408
+   },
+   {
+    "w": "2519,",
+    "p": 0.8079
+   },
+   {
+    "w": "turn",
+    "p": 0.946
+   },
+   {
+    "w": "left",
+    "p": 0.9994
+   },
+   {
+    "w": "at",
+    "p": 0.9801
+   },
+   {
+    "w": "Alpha",
+    "p": 0.9513
+   },
+   {
+    "w": "Seven,",
+    "p": 0.4125
+   },
+   {
+    "w": "contact",
+    "p": 0.9621
+   },
+   {
+    "w": "ground.",
+    "p": 0.9416
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_10_N_EXIT_TAXI_THEN_CROSS_03": {
+  "text": "JetBlue 2519, taxi to the ramp, buyer Alpha Seven.",
+  "asr_s": 0.475,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9097
+   },
+   {
+    "w": "2519,",
+    "p": 0.5492
+   },
+   {
+    "w": "taxi",
+    "p": 0.9722
+   },
+   {
+    "w": "to",
+    "p": 0.9966
+   },
+   {
+    "w": "the",
+    "p": 0.9981
+   },
+   {
+    "w": "ramp,",
+    "p": 0.4708
+   },
+   {
+    "w": "buyer",
+    "p": 0.2431
+   },
+   {
+    "w": "Alpha",
+    "p": 0.9729
+   },
+   {
+    "w": "Seven.",
+    "p": 0.5805
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_10_N_EXIT_TAXI_THEN_CROSS_04": {
+  "text": "United two forty nine, taxi via Sierra Charlie, cross runway two seven left.",
+  "asr_s": 0.478,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9823
+   },
+   {
+    "w": "two",
+    "p": 0.4773
+   },
+   {
+    "w": "forty",
+    "p": 0.6657
+   },
+   {
+    "w": "nine,",
+    "p": 0.8068
+   },
+   {
+    "w": "taxi",
+    "p": 0.9876
+   },
+   {
+    "w": "via",
+    "p": 0.9654
+   },
+   {
+    "w": "Sierra",
+    "p": 0.9838
+   },
+   {
+    "w": "Charlie,",
+    "p": 0.9483
+   },
+   {
+    "w": "cross",
+    "p": 0.9821
+   },
+   {
+    "w": "runway",
+    "p": 0.9975
+   },
+   {
+    "w": "two",
+    "p": 0.9953
+   },
+   {
+    "w": "seven",
+    "p": 0.9967
+   },
+   {
+    "w": "left.",
+    "p": 0.9571
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_10_N_EXIT_TAXI_THEN_CROSS_05": {
+  "text": "Crossing runway two seven left at Sierra Charlie, United two 49.",
+  "asr_s": 0.472,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.8167
+   },
+   {
+    "w": "runway",
+    "p": 0.9648
+   },
+   {
+    "w": "two",
+    "p": 0.9917
+   },
+   {
+    "w": "seven",
+    "p": 0.9961
+   },
+   {
+    "w": "left",
+    "p": 0.9966
+   },
+   {
+    "w": "at",
+    "p": 0.7647
+   },
+   {
+    "w": "Sierra",
+    "p": 0.9522
+   },
+   {
+    "w": "Charlie,",
+    "p": 0.6554
+   },
+   {
+    "w": "United",
+    "p": 0.9592
+   },
+   {
+    "w": "two",
+    "p": 0.6594
+   },
+   {
+    "w": "49.",
+    "p": 0.6119
+   }
+  ]
+ }
+}

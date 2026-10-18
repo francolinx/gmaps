@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "dev3",
+ "phrasing_pool": "C",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "basis": "section 8: pilot's 'clear of the runway' releases the landing",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9201,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "R",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor twenty oh four, runway four, cleared to land.",
+   "id": "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land four, Endeavor twenty oh four.",
+   "id": "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "Endeavor twenty oh four, clear of runway four.",
+   "id": "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "JetBlue niner five niner, at Romeo, cross runway four.",
+   "id": "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Cross four at Romeo, JetBlue niner five niner.",
+   "id": "SYN_KLGA_DEV3_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "speaker_ref": "b"
+  }
+ ]
+}

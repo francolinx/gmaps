@@ -1,0 +1,20 @@
+{
+ "icao": "KPDK",
+ "rule": "Franco R1 (Oct 9): the current FAA chart is authoritative for names; OSM gives geometry only and never adds or renames a taxiway. Clearance-parser vocabulary = chart names only.",
+ "taxiways": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "J",
+  "K",
+  "L",
+  "N"
+ ],
+ "gates_destination_only": [],
+ "never": []
+}

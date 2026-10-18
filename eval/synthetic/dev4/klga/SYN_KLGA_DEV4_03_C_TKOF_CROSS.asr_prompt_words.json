@@ -1,0 +1,182 @@
+{
+ "SYN_KLGA_DEV4_03_C_TKOF_CROSS_00": {
+  "text": "Endeavor 1580, runway one three, wind two eight zero at two one. Cleared for takeoff.",
+  "asr_s": 0.523,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.7861
+   },
+   {
+    "w": "1580,",
+    "p": 0.4966
+   },
+   {
+    "w": "runway",
+    "p": 0.975
+   },
+   {
+    "w": "one",
+    "p": 0.9701
+   },
+   {
+    "w": "three,",
+    "p": 0.9813
+   },
+   {
+    "w": "wind",
+    "p": 0.9367
+   },
+   {
+    "w": "two",
+    "p": 0.9564
+   },
+   {
+    "w": "eight",
+    "p": 0.9804
+   },
+   {
+    "w": "zero",
+    "p": 0.9971
+   },
+   {
+    "w": "at",
+    "p": 0.9582
+   },
+   {
+    "w": "two",
+    "p": 0.9845
+   },
+   {
+    "w": "one.",
+    "p": 0.518
+   },
+   {
+    "w": "Cleared",
+    "p": 0.9879
+   },
+   {
+    "w": "for",
+    "p": 0.975
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.944
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_03_C_TKOF_CROSS_01": {
+  "text": "Endeavor 1580 cleared for takeoff runway one three.",
+  "asr_s": 0.464,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.8674
+   },
+   {
+    "w": "1580",
+    "p": 0.9395
+   },
+   {
+    "w": "cleared",
+    "p": 0.6815
+   },
+   {
+    "w": "for",
+    "p": 0.9833
+   },
+   {
+    "w": "takeoff",
+    "p": 0.9868
+   },
+   {
+    "w": "runway",
+    "p": 0.7539
+   },
+   {
+    "w": "one",
+    "p": 0.9563
+   },
+   {
+    "w": "three.",
+    "p": 0.9491
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_03_C_TKOF_CROSS_02": {
+  "text": "Endeavor 1391, cross runway one three at Romeo.",
+  "asr_s": 0.452,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.6252
+   },
+   {
+    "w": "1391,",
+    "p": 0.7455
+   },
+   {
+    "w": "cross",
+    "p": 0.9744
+   },
+   {
+    "w": "runway",
+    "p": 0.9991
+   },
+   {
+    "w": "one",
+    "p": 0.9759
+   },
+   {
+    "w": "three",
+    "p": 0.9937
+   },
+   {
+    "w": "at",
+    "p": 0.8757
+   },
+   {
+    "w": "Romeo.",
+    "p": 0.8546
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_03_C_TKOF_CROSS_03": {
+  "text": "Crossing runway one three at Romeo, Endeavor 1391.",
+  "asr_s": 0.438,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.8582
+   },
+   {
+    "w": "runway",
+    "p": 0.9457
+   },
+   {
+    "w": "one",
+    "p": 0.9703
+   },
+   {
+    "w": "three",
+    "p": 0.9797
+   },
+   {
+    "w": "at",
+    "p": 0.9145
+   },
+   {
+    "w": "Romeo,",
+    "p": 0.6214
+   },
+   {
+    "w": "Endeavor",
+    "p": 0.8416
+   },
+   {
+    "w": "1391.",
+    "p": 0.8585
+   }
+  ]
+ }
+}

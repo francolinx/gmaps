@@ -1,0 +1,186 @@
+{
+ "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_00": {
+  "text": "Southwest 2600, runway four at Charlie, intersection departure, cleared for takeoff.",
+  "asr_s": 0.442,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.9354
+   },
+   {
+    "w": "2600,",
+    "p": 0.4054
+   },
+   {
+    "w": "runway",
+    "p": 0.9869
+   },
+   {
+    "w": "four",
+    "p": 0.9968
+   },
+   {
+    "w": "at",
+    "p": 0.9204
+   },
+   {
+    "w": "Charlie,",
+    "p": 0.6318
+   },
+   {
+    "w": "intersection",
+    "p": 0.9863
+   },
+   {
+    "w": "departure,",
+    "p": 0.902
+   },
+   {
+    "w": "cleared",
+    "p": 0.9991
+   },
+   {
+    "w": "for",
+    "p": 0.9992
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.8945
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_01": {
+  "text": "Roger, cleared for takeoff, move southwest 2600.",
+  "asr_s": 0.445,
+  "words": [
+   {
+    "w": "Roger,",
+    "p": 0.6189
+   },
+   {
+    "w": "cleared",
+    "p": 0.9972
+   },
+   {
+    "w": "for",
+    "p": 0.9989
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.8406
+   },
+   {
+    "w": "move",
+    "p": 0.2028
+   },
+   {
+    "w": "southwest",
+    "p": 0.5099
+   },
+   {
+    "w": "2600.",
+    "p": 0.7092
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_02": {
+  "text": "Twin Cessna 7715 Juliett Runway four, cleared to land, wind 080 at 1A.",
+  "asr_s": 0.585,
+  "words": [
+   {
+    "w": "Twin",
+    "p": 0.7558
+   },
+   {
+    "w": "Cessna",
+    "p": 0.9191
+   },
+   {
+    "w": "7715",
+    "p": 0.3887
+   },
+   {
+    "w": "Juliett",
+    "p": 0.8334
+   },
+   {
+    "w": "Runway",
+    "p": 0.3984
+   },
+   {
+    "w": "four,",
+    "p": 0.8778
+   },
+   {
+    "w": "cleared",
+    "p": 0.9789
+   },
+   {
+    "w": "to",
+    "p": 0.9783
+   },
+   {
+    "w": "land,",
+    "p": 0.893
+   },
+   {
+    "w": "wind",
+    "p": 0.8751
+   },
+   {
+    "w": "080",
+    "p": 0.9329
+   },
+   {
+    "w": "at",
+    "p": 0.5802
+   },
+   {
+    "w": "1A.",
+    "p": 0.3575
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_05_C_TKOF_LAND_SAME_03": {
+  "text": "runway four, cleared to land, twin Cessna 7715 Juliet.",
+  "asr_s": 0.461,
+  "words": [
+   {
+    "w": "runway",
+    "p": 0.7014
+   },
+   {
+    "w": "four,",
+    "p": 0.5018
+   },
+   {
+    "w": "cleared",
+    "p": 0.9954
+   },
+   {
+    "w": "to",
+    "p": 0.4892
+   },
+   {
+    "w": "land,",
+    "p": 0.8883
+   },
+   {
+    "w": "twin",
+    "p": 0.6286
+   },
+   {
+    "w": "Cessna",
+    "p": 0.9561
+   },
+   {
+    "w": "7715",
+    "p": 0.6301
+   },
+   {
+    "w": "Juliet.",
+    "p": 0.4911
+   }
+  ]
+ }
+}

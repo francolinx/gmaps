@@ -1,0 +1,70 @@
+{
+ "id": "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "section8_case": true,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "FFT1209"
+    ],
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "FFT1209"
+    ],
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "FFT1209"
+    ],
+    "runway": null,
+    "instruction": "TAXI"
+   },
+   "id": "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "FFT1209"
+    ],
+    "runway": null,
+    "instruction": "TAXI"
+   },
+   "id": "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_03"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "EDV1633"
+    ],
+    "runway": "22",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_04"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "EDV1633"
+    ],
+    "runway": "22",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_DEV3_10_N_EXIT_TAXI_THEN_CROSS_05"
+  }
+ ]
+}

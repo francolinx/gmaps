@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT3_01_C_LAND_CROSS_00": {
+  "text": "Interior 1076, runway 26L cleared to land.",
+  "asr_s": 0.189
+ },
+ "SYN_KATL_HELDOUT3_01_C_LAND_CROSS_01": {
+  "text": "Frontier 1076, Roger. Clear to land runway 26L.",
+  "asr_s": 0.199
+ },
+ "SYN_KATL_HELDOUT3_01_C_LAND_CROSS_02": {
+  "text": "Delta 1037, follow the Airbus 320, cross runway 26L at Echo.",
+  "asr_s": 0.22
+ },
+ "SYN_KATL_HELDOUT3_01_C_LAND_CROSS_03": {
+  "text": "Crossing runway 2-6 left at Echo, Delta 10-37.",
+  "asr_s": 0.192
+ }
+}

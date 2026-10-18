@@ -1,0 +1,18 @@
+{
+ "icao": "KRDU",
+ "checked_at": "2026-10-18T07:17:02-0400",
+ "dpi": 300,
+ "ink_level": 250,
+ "tolerance_px": 1,
+ "pdf_sha256": "438961f017677e0036276a72aa27f72bc0d1a508b7609b047d7b1ab9cab26623",
+ "faa_ink_px": 620174,
+ "reconstruction_ink_px": 628015,
+ "covered_pct": 99.729,
+ "extra_pct": 0.338,
+ "thresholds": {
+  "min_covered_pct": 99.0,
+  "max_extra_pct": 2.0
+ },
+ "pass": true,
+ "note": "faithful.svg uses original FAA styling; visible-text labels use a substitute font."
+}

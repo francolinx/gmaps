@@ -1,0 +1,162 @@
+{
+ "SYN_KATL_DEV4_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "JetBlue two seventeen, runway eight right cleared to land.",
+  "asr_s": 0.387,
+  "words": [
+   {
+    "w": "JetBlue",
+    "p": 0.9617
+   },
+   {
+    "w": "two",
+    "p": 0.488
+   },
+   {
+    "w": "seventeen,",
+    "p": 0.447
+   },
+   {
+    "w": "runway",
+    "p": 0.9975
+   },
+   {
+    "w": "eight",
+    "p": 0.9971
+   },
+   {
+    "w": "right",
+    "p": 0.9882
+   },
+   {
+    "w": "cleared",
+    "p": 0.5093
+   },
+   {
+    "w": "to",
+    "p": 0.9965
+   },
+   {
+    "w": "land.",
+    "p": 0.9731
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "Clear to land eight right, JetBlue two 17.",
+  "asr_s": 0.433,
+  "words": [
+   {
+    "w": "Clear",
+    "p": 0.4725
+   },
+   {
+    "w": "to",
+    "p": 0.9916
+   },
+   {
+    "w": "land",
+    "p": 0.9969
+   },
+   {
+    "w": "eight",
+    "p": 0.8232
+   },
+   {
+    "w": "right,",
+    "p": 0.9789
+   },
+   {
+    "w": "JetBlue",
+    "p": 0.8302
+   },
+   {
+    "w": "two",
+    "p": 0.5625
+   },
+   {
+    "w": "17.",
+    "p": 0.5254
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "Spirit 1669, at Delta Cross runway eight right without delay.",
+  "asr_s": 0.436,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9587
+   },
+   {
+    "w": "1669,",
+    "p": 0.5685
+   },
+   {
+    "w": "at",
+    "p": 0.5857
+   },
+   {
+    "w": "Delta",
+    "p": 0.9045
+   },
+   {
+    "w": "Cross",
+    "p": 0.7371
+   },
+   {
+    "w": "runway",
+    "p": 0.7438
+   },
+   {
+    "w": "eight",
+    "p": 0.9323
+   },
+   {
+    "w": "right",
+    "p": 0.6529
+   },
+   {
+    "w": "without",
+    "p": 0.9321
+   },
+   {
+    "w": "delay.",
+    "p": 0.9297
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Cross eight, ride a Delta, Spirit 1669.",
+  "asr_s": 0.364,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.9161
+   },
+   {
+    "w": "eight,",
+    "p": 0.5196
+   },
+   {
+    "w": "ride",
+    "p": 0.7388
+   },
+   {
+    "w": "a",
+    "p": 0.9685
+   },
+   {
+    "w": "Delta,",
+    "p": 0.5606
+   },
+   {
+    "w": "Spirit",
+    "p": 0.9437
+   },
+   {
+    "w": "1669.",
+    "p": 0.7817
+   }
+  ]
+ }
+}

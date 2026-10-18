@@ -1,0 +1,14 @@
+id: Q5_04_CROSS_AFTER_CLEAR
+title: Correctly sequenced crossing after the landing aircraft reports clear (no alert)
+airport: XSIM
+simulated: true
+end_t: 80
+transmissions:
+  - {id: t1, t: 0, speaker: ATC, text: "SimAir two one two, runway three six, cleared to land.", cite: "7110.65 3-10-5a"}
+  - {id: t2, t: 5, speaker: PILOT, callsign: SIM212, text: "Cleared to land runway three six, SimAir two one two.", cite: "AIM via 7110.65 2-4-3 NOTE 1c"}
+  - {id: t3, t: 40, speaker: PILOT, callsign: SIM212, text: "SimAir two one two, clear of runway three six.", cite: "7110.65 3-10-9 (exit; the pilot's clear-of-runway report releases the landing, GMAPS section 8)"}
+  - {id: t4, t: 50, speaker: ATC, text: "Rescue seven, cross runway three six at Kilo.", cite: "7110.65 3-7-2a/c"}
+  - {id: t5, t: 56, speaker: PILOT, callsign: RESCUE7, text: "Crossing runway three six at Kilo, Rescue seven.", cite: "7110.65 2-4-3 (read back)"}
+expected_alerts: []
+expected_no_alert:
+  - {window: [0, 80], why: "the crossing is cleared only after the landing aircraft reported clear of the runway"}

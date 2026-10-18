@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Frontier 1700, Runway 31, cleared to land, Wing 060 at 1-5.",
+  "asr_s": 0.229
+ },
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Runway 31, cleared the land, frontier 1700.",
+  "asr_s": 0.175
+ },
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_02": {
+  "text": "Spirit 1169, cross runway 22 at Foxtrot without delay, traffic short final.",
+  "asr_s": 0.212
+ },
+ "SYN_KLGA_HELDOUT4_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Bought runway 22 at Parkstraat, period 1169",
+  "asr_s": 0.181
+ }
+}

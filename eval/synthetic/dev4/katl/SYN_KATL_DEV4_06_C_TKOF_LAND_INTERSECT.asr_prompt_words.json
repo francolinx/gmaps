@@ -1,0 +1,258 @@
+{
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Bonanza two six zero two Bravo, runway two six left at hotel, cleared for takeoff.",
+  "asr_s": 0.469,
+  "words": [
+   {
+    "w": "Bonanza",
+    "p": 0.8935
+   },
+   {
+    "w": "two",
+    "p": 0.926
+   },
+   {
+    "w": "six",
+    "p": 0.9956
+   },
+   {
+    "w": "zero",
+    "p": 0.7823
+   },
+   {
+    "w": "two",
+    "p": 0.9896
+   },
+   {
+    "w": "Bravo,",
+    "p": 0.734
+   },
+   {
+    "w": "runway",
+    "p": 0.9975
+   },
+   {
+    "w": "two",
+    "p": 0.9945
+   },
+   {
+    "w": "six",
+    "p": 0.999
+   },
+   {
+    "w": "left",
+    "p": 0.9987
+   },
+   {
+    "w": "at",
+    "p": 0.973
+   },
+   {
+    "w": "hotel,",
+    "p": 0.5427
+   },
+   {
+    "w": "cleared",
+    "p": 0.9991
+   },
+   {
+    "w": "for",
+    "p": 0.9992
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.9546
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Bonanza two six zero two Bravo, cleared for takeoff, runway two six left.",
+  "asr_s": 0.464,
+  "words": [
+   {
+    "w": "Bonanza",
+    "p": 0.8318
+   },
+   {
+    "w": "two",
+    "p": 0.7894
+   },
+   {
+    "w": "six",
+    "p": 0.9979
+   },
+   {
+    "w": "zero",
+    "p": 0.9907
+   },
+   {
+    "w": "two",
+    "p": 0.9556
+   },
+   {
+    "w": "Bravo,",
+    "p": 0.7688
+   },
+   {
+    "w": "cleared",
+    "p": 0.995
+   },
+   {
+    "w": "for",
+    "p": 0.9976
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.614
+   },
+   {
+    "w": "runway",
+    "p": 0.9903
+   },
+   {
+    "w": "two",
+    "p": 0.9884
+   },
+   {
+    "w": "six",
+    "p": 0.9966
+   },
+   {
+    "w": "left.",
+    "p": 0.9552
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Delta three hundred, wind one seven zero at seven gusts one eight, runway two six left, cleared to land.",
+  "asr_s": 0.498,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9744
+   },
+   {
+    "w": "three",
+    "p": 0.5174
+   },
+   {
+    "w": "hundred,",
+    "p": 0.9767
+   },
+   {
+    "w": "wind",
+    "p": 0.9755
+   },
+   {
+    "w": "one",
+    "p": 0.9942
+   },
+   {
+    "w": "seven",
+    "p": 0.9954
+   },
+   {
+    "w": "zero",
+    "p": 0.9953
+   },
+   {
+    "w": "at",
+    "p": 0.9176
+   },
+   {
+    "w": "seven",
+    "p": 0.9825
+   },
+   {
+    "w": "gusts",
+    "p": 0.8029
+   },
+   {
+    "w": "one",
+    "p": 0.9902
+   },
+   {
+    "w": "eight,",
+    "p": 0.9379
+   },
+   {
+    "w": "runway",
+    "p": 0.9996
+   },
+   {
+    "w": "two",
+    "p": 0.994
+   },
+   {
+    "w": "six",
+    "p": 0.9978
+   },
+   {
+    "w": "left,",
+    "p": 0.9635
+   },
+   {
+    "w": "cleared",
+    "p": 0.9976
+   },
+   {
+    "w": "to",
+    "p": 0.9854
+   },
+   {
+    "w": "land.",
+    "p": 0.9716
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Delta three hundred, roger. Cleared to land, runway two six left.",
+  "asr_s": 0.434,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9845
+   },
+   {
+    "w": "three",
+    "p": 0.5928
+   },
+   {
+    "w": "hundred,",
+    "p": 0.9448
+   },
+   {
+    "w": "roger.",
+    "p": 0.886
+   },
+   {
+    "w": "Cleared",
+    "p": 0.9414
+   },
+   {
+    "w": "to",
+    "p": 0.9994
+   },
+   {
+    "w": "land,",
+    "p": 0.8245
+   },
+   {
+    "w": "runway",
+    "p": 0.9991
+   },
+   {
+    "w": "two",
+    "p": 0.9804
+   },
+   {
+    "w": "six",
+    "p": 0.9971
+   },
+   {
+    "w": "left.",
+    "p": 0.9735
+   }
+  ]
+ }
+}

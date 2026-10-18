@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KLGA_HELDOUT_04_C_TKOF_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "C_TKOF_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7302,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "Y",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier two four eight eight, runway four, wind two seven zero at eight, cleared for takeoff.",
+   "id": "SYN_KLGA_HELDOUT_04_C_TKOF_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared for takeoff runway four, Frontier two four eight eight.",
+   "id": "SYN_KLGA_HELDOUT_04_C_TKOF_CROSS_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "American fourteen sixty three, at Yankee cross runway four.",
+   "id": "SYN_KLGA_HELDOUT_04_C_TKOF_CROSS_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway four at Yankee, American fourteen sixty three.",
+   "id": "SYN_KLGA_HELDOUT_04_C_TKOF_CROSS_03"
+  }
+ ]
+}

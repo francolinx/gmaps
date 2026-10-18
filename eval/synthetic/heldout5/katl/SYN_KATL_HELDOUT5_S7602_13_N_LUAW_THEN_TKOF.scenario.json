@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7602_13_N_LUAW_THEN_TKOF",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "N_LUAW_THEN_TKOF",
+ "basis": "line up and wait, then the same aircraft's takeoff clearance (3-9-4, 3-9-10)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7602,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "SC",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American twenty one oh five, runway niner right, line up and wait, traffic landing runway eight left.",
+   "id": "SYN_KATL_HELDOUT5_S7602_13_N_LUAW_THEN_TKOF_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Line up and wait runway niner right, American twenty one oh five.",
+   "id": "SYN_KATL_HELDOUT5_S7602_13_N_LUAW_THEN_TKOF_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 40,
+   "speaker": "ATC",
+   "text": "American twenty one oh five, runway niner right, cleared for takeoff, turn left heading two seven zero.",
+   "id": "SYN_KATL_HELDOUT5_S7602_13_N_LUAW_THEN_TKOF_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 44,
+   "speaker": "PILOT",
+   "text": "Roger, cleared for takeoff niner right, American twenty one oh five.",
+   "id": "SYN_KATL_HELDOUT5_S7602_13_N_LUAW_THEN_TKOF_03",
+   "speaker_ref": "a"
+  }
+ ]
+}

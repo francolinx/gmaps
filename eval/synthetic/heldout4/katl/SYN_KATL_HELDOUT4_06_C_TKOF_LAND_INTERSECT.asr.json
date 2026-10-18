@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Delta-1976, runway 26L at Delta, intersection departure cleared for takeoff.",
+  "asr_s": 0.237
+ },
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Roger, cleared for takeoff, 6 left, delta 197.",
+  "asr_s": 0.188
+ },
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "United 6414, runway 26L, cleared to land, wind 100 at 13.",
+  "asr_s": 0.216
+ },
+ "SYN_KATL_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Runway 26L cleared the land United 6414",
+  "asr_s": 0.18
+ }
+}

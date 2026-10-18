@@ -1,0 +1,13 @@
+{
+ "source": "OpenStreetMap via Overpass API",
+ "licence": "ODbL 1.0",
+ "attribution": "\u00a9 OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+ "endpoint": "https://overpass.private.coffee/api/interpreter",
+ "requested_at": "2026-10-09T03:52:11Z",
+ "osm_data_timestamp": "2026-07-28T02:16:18Z",
+ "generator": "Overpass API 0.7.62.11 87bfad18",
+ "query_file": "query.overpassql",
+ "raw_file": "overpass_raw.json",
+ "raw_sha256": "1f6f10794696d210d201581cde066ff795179ac76095952c1c985c6cbc4cb228",
+ "elements": 497
+}

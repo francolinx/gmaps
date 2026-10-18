@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout3",
+ "phrasing_pool": "D",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "basis": "section 8: pilot's 'clear of the runway' releases the landing",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7401,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "E",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit eight hundred one, wind zero one zero at one zero gusts two one, runway eight right, cleared to land.",
+   "id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Spirit eight hundred one, roger, cleared to land runway eight right.",
+   "id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "Spirit eight hundred one, clear runway eight right at Alpha three.",
+   "id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "Spirit ten seventy four, at Echo cross runway eight right without delay.",
+   "id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Crossing runway eight right at Echo, Spirit ten seventy four.",
+   "id": "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "speaker_ref": "b"
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "SIMULATED": true,
+ "via": "gym eval run",
+ "rollouts": "gym/rollouts/validation_gmaps-parser.jsonl",
+ "model": "gmaps-parser",
+ "sets": {
+  "heldout4_asr": {
+   "n": 138,
+   "record_exact": 0.652,
+   "field_exact": {
+    "speaker_role": 0.942,
+    "callsign": 0.783,
+    "runway": 0.891,
+    "instruction": 0.942,
+    "taxiways": 0.935
+   },
+   "json_valid": 1.0,
+   "groundable": 0.754,
+   "record_exact_and_groundable": 0.572,
+   "failures": 0
+  },
+  "heldout4_asr_prompt": {
+   "n": 138,
+   "record_exact": 0.761,
+   "field_exact": {
+    "speaker_role": 0.971,
+    "callsign": 0.855,
+    "runway": 0.913,
+    "instruction": 0.993,
+    "taxiways": 0.957
+   },
+   "json_valid": 1.0,
+   "groundable": 0.899,
+   "record_exact_and_groundable": 0.761,
+   "failures": 0
+  },
+  "heldout5_script": {
+   "n": 414,
+   "record_exact": 0.899,
+   "field_exact": {
+    "speaker_role": 0.966,
+    "callsign": 0.993,
+    "runway": 0.952,
+    "instruction": 0.988,
+    "taxiways": 0.998
+   },
+   "json_valid": 1.0,
+   "groundable": 0.986,
+   "record_exact_and_groundable": 0.899,
+   "failures": 0
+  }
+ }
+}

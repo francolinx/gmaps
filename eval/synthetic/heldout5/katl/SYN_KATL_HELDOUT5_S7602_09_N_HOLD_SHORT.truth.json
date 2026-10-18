@@ -1,0 +1,51 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7602_09_N_HOLD_SHORT",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "EDV2257"
+    ],
+    "runway": "27L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7602_09_N_HOLD_SHORT_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "EDV2257"
+    ],
+    "runway": "27L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7602_09_N_HOLD_SHORT_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA1200"
+    ],
+    "runway": "27L",
+    "instruction": "TAXI"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7602_09_N_HOLD_SHORT_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA1200"
+    ],
+    "runway": "27L",
+    "instruction": "HOLD_SHORT"
+   },
+   "id": "SYN_KATL_HELDOUT5_S7602_09_N_HOLD_SHORT_03"
+  }
+ ]
+}

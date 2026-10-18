@@ -1,0 +1,120 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31005_14_N_LUAW_CONTINUE",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31005_14_N_LUAW_CONTINUE_00",
+   "fields": {
+    "callsigns": [
+     "N8354L"
+    ],
+    "runway": "22",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N8354L",
+    "runway": "22",
+    "instruction": "LUAW",
+    "taxiways": [
+     "N",
+     "L"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31005_14_N_LUAW_CONTINUE_01",
+   "fields": {
+    "callsigns": [
+     "N8354L"
+    ],
+    "runway": "22",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N8354L",
+    "runway": "22",
+    "instruction": "LUAW",
+    "taxiways": [
+     "N",
+     "L"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31005_14_N_LUAW_CONTINUE_02",
+   "fields": {
+    "callsigns": [
+     "JBU1095"
+    ],
+    "runway": "22",
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "JBU1095",
+    "runway": "22",
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31005_14_N_LUAW_CONTINUE_03",
+   "fields": {
+    "callsigns": [
+     "JBU1095"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "JBU1095",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31005_14_N_LUAW_CONTINUE_04",
+   "fields": {
+    "callsigns": [
+     "N8354L"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N8354L",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "N",
+     "L"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31005_14_N_LUAW_CONTINUE_05",
+   "fields": {
+    "callsigns": [
+     "N8354L"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N8354L",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": [
+     "N",
+     "L"
+    ]
+   }
+  }
+ ]
+}

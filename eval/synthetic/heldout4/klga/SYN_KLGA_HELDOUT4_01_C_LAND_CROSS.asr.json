@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_00": {
+  "text": "Winchester Niner 303 Hotel, number 2, runway 4, cleared to left.",
+  "asr_s": 0.233
+ },
+ "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_01": {
+  "text": "Runway 4 cleared to land, Twin Cessna 90303 Hotel.",
+  "asr_s": 0.211
+ },
+ "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_02": {
+  "text": "Jet Blue 1400, proceed by Charlie Cross Runway 4.",
+  "asr_s": 0.185
+ },
+ "SYN_KLGA_HELDOUT4_01_C_LAND_CROSS_03": {
+  "text": "Cross runway 4 at Charlie, jet blue 1400.",
+  "asr_s": 0.173
+ }
+}

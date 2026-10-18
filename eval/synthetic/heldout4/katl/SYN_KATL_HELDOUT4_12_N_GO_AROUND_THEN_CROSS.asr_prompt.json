@@ -1,0 +1,26 @@
+{
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_00": {
+  "text": "United eight eight zero five, number two, runway two seven right, cleared to land.",
+  "asr_s": 0.211
+ },
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_01": {
+  "text": "Runway two seven right, cleared to land, United eight eight zero five.",
+  "asr_s": 0.194
+ },
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_02": {
+  "text": "United 8805, go around traffic on the runway.",
+  "asr_s": 0.184
+ },
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_03": {
+  "text": "United 8805 is going around.",
+  "asr_s": 0.162
+ },
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_04": {
+  "text": "Delta three three zero three, proceed via Delta, cross runway two seven right.",
+  "asr_s": 0.203
+ },
+ "SYN_KATL_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_05": {
+  "text": "Cross runway two seven, ride at Delta, Delta three three zero three.",
+  "asr_s": 0.192
+ }
+}

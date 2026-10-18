@@ -1,0 +1,178 @@
+{
+ "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_00": {
+  "text": "American 2233, number two, runway four, cleared to land.",
+  "asr_s": 0.389,
+  "words": [
+   {
+    "w": "American",
+    "p": 0.968
+   },
+   {
+    "w": "2233,",
+    "p": 0.5634
+   },
+   {
+    "w": "number",
+    "p": 0.9608
+   },
+   {
+    "w": "two,",
+    "p": 0.6006
+   },
+   {
+    "w": "runway",
+    "p": 0.9996
+   },
+   {
+    "w": "four,",
+    "p": 0.714
+   },
+   {
+    "w": "cleared",
+    "p": 0.9945
+   },
+   {
+    "w": "to",
+    "p": 0.9677
+   },
+   {
+    "w": "land.",
+    "p": 0.9276
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_01": {
+  "text": "Onway four cleared to land, American 2233.",
+  "asr_s": 0.427,
+  "words": [
+   {
+    "w": "Onway",
+    "p": 0.2834
+   },
+   {
+    "w": "four",
+    "p": 0.9664
+   },
+   {
+    "w": "cleared",
+    "p": 0.4938
+   },
+   {
+    "w": "to",
+    "p": 0.9589
+   },
+   {
+    "w": "land,",
+    "p": 0.8891
+   },
+   {
+    "w": "American",
+    "p": 0.6888
+   },
+   {
+    "w": "2233.",
+    "p": 0.8188
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_02": {
+  "text": "Delta six two one seven, hold short runway four, traffic on fire.",
+  "asr_s": 0.457,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9933
+   },
+   {
+    "w": "six",
+    "p": 0.7666
+   },
+   {
+    "w": "two",
+    "p": 0.9724
+   },
+   {
+    "w": "one",
+    "p": 0.9148
+   },
+   {
+    "w": "seven,",
+    "p": 0.9007
+   },
+   {
+    "w": "hold",
+    "p": 0.9858
+   },
+   {
+    "w": "short",
+    "p": 0.9993
+   },
+   {
+    "w": "runway",
+    "p": 0.9145
+   },
+   {
+    "w": "four,",
+    "p": 0.9207
+   },
+   {
+    "w": "traffic",
+    "p": 0.9991
+   },
+   {
+    "w": "on",
+    "p": 0.9981
+   },
+   {
+    "w": "fire.",
+    "p": 0.3727
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_09_N_HOLD_SHORT_03": {
+  "text": "Hold short of runway four, delta six two one seven.",
+  "asr_s": 0.437,
+  "words": [
+   {
+    "w": "Hold",
+    "p": 0.9578
+   },
+   {
+    "w": "short",
+    "p": 0.8833
+   },
+   {
+    "w": "of",
+    "p": 0.966
+   },
+   {
+    "w": "runway",
+    "p": 0.9901
+   },
+   {
+    "w": "four,",
+    "p": 0.8758
+   },
+   {
+    "w": "delta",
+    "p": 0.5377
+   },
+   {
+    "w": "six",
+    "p": 0.8056
+   },
+   {
+    "w": "two",
+    "p": 0.9742
+   },
+   {
+    "w": "one",
+    "p": 0.9561
+   },
+   {
+    "w": "seven.",
+    "p": 0.8665
+   }
+  ]
+ }
+}

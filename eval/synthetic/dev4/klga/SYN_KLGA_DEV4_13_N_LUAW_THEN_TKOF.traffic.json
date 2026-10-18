@@ -1,0 +1,32 @@
+{
+ "id": "SYN_KLGA_DEV4_13_N_LUAW_THEN_TKOF",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL2340",
+  "FFT1494",
+  "FFT609",
+  "N1127Y",
+  "N3034T",
+  "N5914H",
+  "NKS1094",
+  "NKS2120",
+  "NKS800",
+  "SWA324"
+ ],
+ "realistic": [
+  "AAL2340",
+  "FFT103",
+  "FFT1251",
+  "FFT1494",
+  "FFT609",
+  "N1127Y",
+  "N3034T",
+  "N5914H",
+  "NKS1094",
+  "NKS2120",
+  "NKS800",
+  "SWA1043",
+  "SWA324"
+ ]
+}

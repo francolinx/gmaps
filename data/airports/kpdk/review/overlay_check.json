@@ -1,0 +1,18 @@
+{
+ "icao": "KPDK",
+ "checked_at": "2026-10-09T14:14:00-0400",
+ "dpi": 300,
+ "ink_level": 250,
+ "tolerance_px": 1,
+ "pdf_sha256": "424430bf990a787cad5a37faf58c288b515b656b29a2a54d474e3ed8aa75bacf",
+ "faa_ink_px": 827417,
+ "reconstruction_ink_px": 832879,
+ "covered_pct": 99.798,
+ "extra_pct": 0.26,
+ "thresholds": {
+  "min_covered_pct": 99.0,
+  "max_extra_pct": 2.0
+ },
+ "pass": true,
+ "note": "faithful.svg uses original FAA styling; visible-text labels use a substitute font."
+}

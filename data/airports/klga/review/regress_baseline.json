@@ -1,0 +1,60 @@
+{
+ "icao": "KLGA",
+ "recorded_at": "2026-10-08T23:12:04-0400",
+ "commit": "b5318f7",
+ "metrics": {
+  "objects": {
+   "arrowhead": 23,
+   "building": 12,
+   "frame": 1,
+   "glyph": 1129,
+   "graticule_label": 29,
+   "graticule_line": 20,
+   "hatch": 12,
+   "hold_line_candidate": 11,
+   "hot_spot": 13,
+   "label_background": 2,
+   "linework": 201,
+   "pavement": 208,
+   "runway": 2,
+   "runway_centerline_extension": 22,
+   "runway_marking": 4,
+   "symbol": 10
+  },
+  "labels": {
+   "annotation": 17,
+   "dimension": 2,
+   "elevation": 4,
+   "gate_leadin": 20,
+   "heading": 4,
+   "helipad_label": 1,
+   "hot_spot_label": 2,
+   "note": 64,
+   "runway_end": 4,
+   "taxiway_candidate": 94,
+   "terminal_label": 3
+  },
+  "overlay": {
+   "covered_pct": 99.771,
+   "extra_pct": 0.296
+  },
+  "georef_m": {
+   "04": 4.43,
+   "13": 10.4,
+   "22": 7.48,
+   "31": 13.68,
+   "H1": 0.94
+  },
+  "hold_lines": 4,
+  "statuses": {
+   "overlay_ink": "pass",
+   "runway_ends": "pass",
+   "runway_identifiers": "pass",
+   "taxiway_names": "pass",
+   "hot_spots": "pass",
+   "ils_hold_lines": "pass",
+   "unclassified": "pass",
+   "cycle_current": "pass"
+  }
+ }
+}

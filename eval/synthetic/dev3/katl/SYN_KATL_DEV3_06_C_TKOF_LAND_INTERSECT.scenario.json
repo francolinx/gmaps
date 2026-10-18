@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_DEV3_06_C_TKOF_LAND_INTERSECT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev3",
+ "phrasing_pool": "C",
+ "template": "C_TKOF_LAND_INTERSECT",
+ "basis": "R4 takeoff vs landing on intersecting runways (3-9-8, 3-10-4); airports with no intersecting runways use R3",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9201,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "E3",
+  "hot_spot": null
+ },
+ "note": "KATL has no intersecting runways: R3 (same runway) used instead of R4. Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier six four seven, runway eight right, wind zero niner zero at one niner, cleared for takeoff.",
+   "id": "SYN_KATL_DEV3_06_C_TKOF_LAND_INTERSECT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared for takeoff eight right, Frontier six four seven.",
+   "id": "SYN_KATL_DEV3_06_C_TKOF_LAND_INTERSECT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "JetBlue nineteen ninety five, runway eight right, cleared to land.",
+   "id": "SYN_KATL_DEV3_06_C_TKOF_LAND_INTERSECT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Cleared to land eight right, JetBlue nineteen ninety five.",
+   "id": "SYN_KATL_DEV3_06_C_TKOF_LAND_INTERSECT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

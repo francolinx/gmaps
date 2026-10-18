@@ -1,0 +1,62 @@
+{
+ "icao": "KJFK",
+ "recorded_at": "2026-10-09T14:14:29-0400",
+ "commit": "a72c5a2",
+ "metrics": {
+  "objects": {
+   "arrowhead": 21,
+   "building": 31,
+   "frame": 1,
+   "glyph": 1302,
+   "graticule_label": 43,
+   "graticule_line": 35,
+   "hold_line_candidate": 3,
+   "hot_spot": 7,
+   "label_background": 2,
+   "linework": 330,
+   "pavement": 483,
+   "runway": 4,
+   "runway_centerline_extension": 43,
+   "runway_marking": 6,
+   "symbol": 40
+  },
+  "labels": {
+   "annotation": 14,
+   "closed_marker": 1,
+   "dimension": 4,
+   "elevation": 9,
+   "heading": 8,
+   "hot_spot_label": 1,
+   "note": 58,
+   "runway_end": 8,
+   "taxiway_candidate": 193,
+   "terminal_label": 1
+  },
+  "overlay": {
+   "covered_pct": 99.8,
+   "extra_pct": 0.259
+  },
+  "georef_m": {
+   "04L": 11.37,
+   "04R": 25.18,
+   "13L": 21.47,
+   "13R": 21.51,
+   "22L": 9.46,
+   "22R": 26.53,
+   "31L": 9.88,
+   "31R": 18.35
+  },
+  "hold_lines": 1,
+  "statuses": {
+   "overlay_ink": "pass",
+   "runway_ends": "pass",
+   "runway_identifiers": "pass",
+   "taxiway_names": "pass",
+   "hot_spots": "pass",
+   "ils_hold_lines": "pass",
+   "unclassified": "pass",
+   "cycle_current": "pass",
+   "lahso_points": "not_applicable"
+  }
+ }
+}

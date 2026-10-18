@@ -1,0 +1,6 @@
+gmaps_parser_resources_server:
+  resources_servers:
+    gmaps_parser:
+      entrypoint: app.py
+      domain: other
+      verified: false

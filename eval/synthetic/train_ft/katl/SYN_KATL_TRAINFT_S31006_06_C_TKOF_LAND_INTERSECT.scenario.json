@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31006_06_C_TKOF_LAND_INTERSECT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_TKOF_LAND_INTERSECT",
+ "basis": "R4 takeoff vs landing on intersecting runways (3-9-8, 3-10-4); airports with no intersecting runways use R3",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31006,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "E3",
+  "hot_spot": null
+ },
+ "note": "KATL has no intersecting runways: R3 (same runway) used instead of R4. Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest ten sixty four, wind two four zero at eight, runway two six left, cleared for takeoff.",
+   "id": "SYN_KATL_TRAINFT_S31006_06_C_TKOF_LAND_INTERSECT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared for takeoff two six left, Southwest ten sixty four.",
+   "id": "SYN_KATL_TRAINFT_S31006_06_C_TKOF_LAND_INTERSECT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Bonanza six eight six three X-ray, runway two six left cleared to land.",
+   "id": "SYN_KATL_TRAINFT_S31006_06_C_TKOF_LAND_INTERSECT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Cleared to land two six left, Bonanza six eight six three X-ray.",
+   "id": "SYN_KATL_TRAINFT_S31006_06_C_TKOF_LAND_INTERSECT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

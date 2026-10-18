@@ -1,0 +1,1509 @@
+{
+ "SIMULATED": true,
+ "date": "2026-10-17",
+ "started": "06:24:34",
+ "finished": "06:36:26",
+ "speed": 1.0,
+ "config": {
+  "mode": "audio (synthetic voices, real time)",
+  "traffic": "perfect",
+  "whisper_prompt": "XSIM tower. United, Delta, American, Jazz, Frontier, JetBlue, Southwest, Spirit, Republic, Endeavor, Tradewind, Cactus, Brickyard, Skywest, Envoy, Piedmont, Cobalt, Speedbird, SimAir, Air Canada. Car, Fire, Operations, Ops, Rescue, Truck. Runway one eight, runway three six. Taxiway Alpha Bravo Charlie Delta Echo Foxtrot Golf Hotel India Juliett Kilo Lima Mike November Oscar Papa Quebec Romeo Sierra Tango Uniform Victor Whiskey X-ray Yankee Zulu. Cleared to land, cleared for takeoff, line up and wait, hold short, cross runway, go around, roger, wilco.",
+  "llm_fallback": true,
+  "llm_endpoint": {
+   "base_url": "http://127.0.0.1:8001/v1",
+   "model": "gmaps-parser"
+  },
+  "text_mode_arrival": null
+ },
+ "transmissions": 45,
+ "out_json": "eval/results/sim_2026-10-17_lora_traffic_prompt.json",
+ "overall": {
+  "scenarios": 11,
+  "passed": 8,
+  "expected": 8,
+  "detected": 5,
+  "missed": 3,
+  "false_alarms": 1,
+  "latency_s": {
+   "n": 5,
+   "median": 0.487,
+   "max": 15.743
+  }
+ },
+ "per_scenario": [
+  {
+   "scenario": "Q5_01_LAND_VS_CROSS",
+   "expected": 1,
+   "detected": 1,
+   "missed": 0,
+   "false_alarms": 0,
+   "shadow_alerts": 0,
+   "latency_s": [
+    0.47
+   ],
+   "rows": [
+    {
+     "expected": "A1",
+     "rule": [
+      "R1"
+     ],
+     "detected": true,
+     "warning_id": "w0001",
+     "latency_s": 0.47
+    }
+   ],
+   "false_alarm_detail": [],
+   "pass": true
+  },
+  {
+   "scenario": "Q5_02_LUAW_VS_LAND",
+   "expected": 1,
+   "detected": 1,
+   "missed": 0,
+   "false_alarms": 0,
+   "shadow_alerts": 0,
+   "latency_s": [
+    0.487
+   ],
+   "rows": [
+    {
+     "expected": "A1",
+     "rule": [
+      "R5"
+     ],
+     "detected": true,
+     "warning_id": "w0002",
+     "latency_s": 0.487
+    }
+   ],
+   "false_alarm_detail": [],
+   "pass": true
+  },
+  {
+   "scenario": "Q5_03_TKOF_VS_CROSS",
+   "expected": 1,
+   "detected": 0,
+   "missed": 1,
+   "false_alarms": 0,
+   "shadow_alerts": 0,
+   "latency_s": [],
+   "rows": [
+    {
+     "expected": "A1",
+     "rule": [
+      "R2"
+     ],
+     "detected": false,
+     "warning_id": null,
+     "latency_s": null
+    }
+   ],
+   "false_alarm_detail": [],
+   "pass": false
+  },
+  {
+   "scenario": "Q5_04_CROSS_AFTER_CLEAR",
+   "expected": 0,
+   "detected": 0,
+   "missed": 0,
+   "false_alarms": 0,
+   "shadow_alerts": 0,
+   "latency_s": [],
+   "rows": [],
+   "false_alarm_detail": [],
+   "pass": true
+  },
+  {
+   "scenario": "Q5_05_READBACK_ONLY",
+   "expected": 0,
+   "detected": 0,
+   "missed": 0,
+   "false_alarms": 0,
+   "shadow_alerts": 0,
+   "latency_s": [],
+   "rows": [],
+   "false_alarm_detail": [],
+   "pass": true
+  },
+  {
+   "scenario": "Q6_01_LAND_THEN_TKOF",
+   "expected": 1,
+   "detected": 1,
+   "missed": 0,
+   "false_alarms": 0,
+   "shadow_alerts": 0,
+   "latency_s": [
+    0.487
+   ],
+   "rows": [
+    {
+     "expected": "A1",
+     "rule": [
+      "R3"
+     ],
+     "detected": true,
+     "warning_id": "w0003",
+     "latency_s": 0.487
+    }
+   ],
+   "false_alarm_detail": [],
+   "pass": true
+  },
+  {
+   "scenario": "Q6_02_CROSS_THEN_TKOF",
+   "expected": 1,
+   "detected": 0,
+   "missed": 1,
+   "false_alarms": 0,
+   "shadow_alerts": 0,
+   "latency_s": [],
+   "rows": [
+    {
+     "expected": "A1",
+     "rule": [
+      "R2",
+      "R10"
+     ],
+     "detected": false,
+     "warning_id": null,
+     "latency_s": null
+    }
+   ],
+   "false_alarm_detail": [],
+   "pass": false
+  },
+  {
+   "scenario": "Q6_03_NREG_LAND_VS_CROSS",
+   "expected": 1,
+   "detected": 0,
+   "missed": 1,
+   "false_alarms": 1,
+   "shadow_alerts": 0,
+   "latency_s": [],
+   "rows": [
+    {
+     "expected": "A1",
+     "rule": [
+      "R1"
+     ],
+     "detected": false,
+     "warning_id": null,
+     "latency_s": null
+    }
+   ],
+   "false_alarm_detail": [
+    {
+     "warning_id": "w0004",
+     "rule": "R1",
+     "runway": "XSIM:RWY:18-36",
+     "aircraft": [
+      "N6648",
+      "TRUCK3"
+     ],
+     "t_fired": 23.39,
+     "in_no_alert_window": false
+    }
+   ],
+   "pass": false
+  },
+  {
+   "scenario": "Q6_04_TWO_CROSSINGS",
+   "expected": 1,
+   "detected": 1,
+   "missed": 0,
+   "false_alarms": 0,
+   "shadow_alerts": 0,
+   "latency_s": [
+    0.454
+   ],
+   "rows": [
+    {
+     "expected": "A1",
+     "rule": [
+      "R11"
+     ],
+     "detected": true,
+     "warning_id": "w0006",
+     "latency_s": 0.454
+    }
+   ],
+   "false_alarm_detail": [],
+   "pass": true
+  },
+  {
+   "scenario": "Q6_05_HOLD_SHORT_READBACK",
+   "expected": 0,
+   "detected": 0,
+   "missed": 0,
+   "false_alarms": 0,
+   "shadow_alerts": 0,
+   "latency_s": [],
+   "rows": [],
+   "false_alarm_detail": [],
+   "pass": true
+  },
+  {
+   "scenario": "Q6_06_HOLD_SHORT_NO_READBACK",
+   "expected": 1,
+   "detected": 1,
+   "missed": 0,
+   "false_alarms": 0,
+   "shadow_alerts": 0,
+   "latency_s": [
+    15.743
+   ],
+   "rows": [
+    {
+     "expected": "A1",
+     "rule": [
+      "R7"
+     ],
+     "detected": true,
+     "warning_id": "w0007",
+     "latency_s": 15.743
+    }
+   ],
+   "false_alarm_detail": [],
+   "pass": true
+  }
+ ],
+ "runs": {
+  "Q5_01_LAND_VS_CROSS": {
+   "alerts": [
+    {
+     "warning_id": "w0001",
+     "rule": "R1",
+     "severity": "CONFLICT",
+     "runway": "XSIM:RWY:18-36",
+     "aircraft": [
+      "SIM212",
+      "RESCUE7"
+     ],
+     "t_fired": 23.79,
+     "shadow": false,
+     "via": "host fast path",
+     "alert_wall": 1792232714.2039483,
+     "after_tx": "t3",
+     "latency_s": 0.47
+    }
+   ],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 4.24,
+     "script": "SimAir two one two, runway three six, cleared to land.",
+     "whisper": "SimAir two one two, runway three six cleared to land.",
+     "asr_s": 0.191,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t2",
+     "t_script": 5,
+     "t_arrival": 9.39,
+     "script": "Cleared to land runway three six, SimAir two one two.",
+     "whisper": "Cleared to land, runway three six, SimAir two one two.",
+     "asr_s": 0.192,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 20,
+     "t_arrival": 23.79,
+     "script": "Rescue seven, cross runway three six at Kilo.",
+     "whisper": "Rescue seven, cross runway three six at Kilo.",
+     "asr_s": 0.176,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t4",
+     "t_script": 26,
+     "t_arrival": 30.11,
+     "script": "Crossing runway three six at Kilo, Rescue seven.",
+     "whisper": "Crossing runway three six at Kilo Rescue seven.",
+     "asr_s": 0.174,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    }
+   ]
+  },
+  "Q5_02_LUAW_VS_LAND": {
+   "alerts": [
+    {
+     "warning_id": "w0002",
+     "rule": "R5",
+     "severity": "CONFLICT",
+     "runway": "XSIM:RWY:18-36",
+     "aircraft": [
+      "SIM456",
+      "SIM212"
+     ],
+     "t_fired": 26.25,
+     "shadow": false,
+     "via": "host fast path (callsign_repaired)",
+     "alert_wall": 1792232777.1637738,
+     "after_tx": "t3",
+     "latency_s": 0.487
+    }
+   ],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 4.5,
+     "script": "SimAir four five six, runway three six, line up and wait.",
+     "whisper": "XM Air four five six, runway three six, line up and wait.",
+     "asr_s": 0.201,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LUAW",
+     "callsigns": [
+      "SIM456"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": null,
+       "matched": "SIM456",
+       "rule": "flight number 456 in the text"
+      }
+     ]
+    },
+    {
+     "tx": "t2",
+     "t_script": 5,
+     "t_arrival": 9.38,
+     "script": "Runway three six, line up and wait, SimAir four five six.",
+     "whisper": "Runway three six, line up and wait, SimAir four five six.",
+     "asr_s": 0.2,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LUAW",
+     "callsigns": [
+      "SIM456"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM456",
+       "matched": "SIM456",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 22,
+     "t_arrival": 26.25,
+     "script": "SimAir two one two, runway three six, cleared to land.",
+     "whisper": "SimAir two one two, runway three six cleared to land.",
+     "asr_s": 0.193,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t4",
+     "t_script": 28,
+     "t_arrival": 32.4,
+     "script": "Cleared to land runway three six, SimAir two one two.",
+     "whisper": "Cleared to land, runway three six, SimAir two one two.",
+     "asr_s": 0.199,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    }
+   ]
+  },
+  "Q5_03_TKOF_VS_CROSS": {
+   "alerts": [],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 4.64,
+     "script": "SimAir four five six, runway three six, cleared for takeoff.",
+     "whisper": "SimAirfour five six, runway three six, cleared for takeoff.",
+     "asr_s": 0.203,
+     "path": "left to the agent (off in the simulator)",
+     "llm": {
+      "source_id": "Q5_03_TKOF_VS_CROSS-t1",
+      "t": 4.64,
+      "latency_s": 1.589,
+      "reason": "grounding: flight number not heard",
+      "raw": "{\"speaker_role\":\"ATC\",\"callsign\":\"N456\",\"runway\":\"36\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+      "dropped": true,
+      "actionable": false
+     },
+     "endpoint_wait_s": 0.281,
+     "grammar": false,
+     "kind": null,
+     "callsigns": null,
+     "runway": null,
+     "callsign_match": null
+    },
+    {
+     "tx": "t2",
+     "t_script": 5,
+     "t_arrival": 9.35,
+     "script": "Cleared for takeoff runway three six, SimAir four five six.",
+     "whisper": "Cleared for takeoff, runway three six. SimAir four five six.",
+     "asr_s": 0.199,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "TAKEOFF_CLEARANCE",
+     "callsigns": [
+      "SIM456"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM456",
+       "matched": "SIM456",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 18,
+     "t_arrival": 21.78,
+     "script": "Rescue seven, cross runway three six at Kilo.",
+     "whisper": "Rescue seven, cross runway three six at Kilo.",
+     "asr_s": 0.172,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t4",
+     "t_script": 24,
+     "t_arrival": 28.12,
+     "script": "Crossing runway three six at Kilo, Rescue seven.",
+     "whisper": "Crossing runway three six at Kilo Rescue seven.",
+     "asr_s": 0.175,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    }
+   ]
+  },
+  "Q5_04_CROSS_AFTER_CLEAR": {
+   "alerts": [],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 4.25,
+     "script": "SimAir two one two, runway three six, cleared to land.",
+     "whisper": "SimAir two one two, runway three six cleared to land.",
+     "asr_s": 0.191,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t2",
+     "t_script": 5,
+     "t_arrival": 9.39,
+     "script": "Cleared to land runway three six, SimAir two one two.",
+     "whisper": "Cleared to land, runway three six, SimAir two one two.",
+     "asr_s": 0.2,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 40,
+     "t_arrival": 44.03,
+     "script": "SimAir two one two, clear of runway three six.",
+     "whisper": "SimAir two one two, clear of runway three six.",
+     "asr_s": 0.171,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "CROSSING_COMPLETE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t4",
+     "t_script": 50,
+     "t_arrival": 53.78,
+     "script": "Rescue seven, cross runway three six at Kilo.",
+     "whisper": "Rescue seven, cross runway three six at Kilo.",
+     "asr_s": 0.173,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t5",
+     "t_script": 56,
+     "t_arrival": 60.11,
+     "script": "Crossing runway three six at Kilo, Rescue seven.",
+     "whisper": "Crossing runway three six at Kilo Rescue seven.",
+     "asr_s": 0.171,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    }
+   ]
+  },
+  "Q5_05_READBACK_ONLY": {
+   "alerts": [],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 4.24,
+     "script": "SimAir two one two, runway three six, cleared to land.",
+     "whisper": "SimAir two one two, runway three six cleared to land.",
+     "asr_s": 0.195,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t2",
+     "t_script": 5,
+     "t_arrival": 9.39,
+     "script": "Cleared to land runway three six, SimAir two one two.",
+     "whisper": "Cleared to land, runway three six, SimAir two one two.",
+     "asr_s": 0.189,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 18,
+     "t_arrival": 22.56,
+     "script": "Holding short of runway three six at Kilo, Rescue seven.",
+     "whisper": "Holding short of runway three six at Kilo, rescue seven.",
+     "asr_s": 0.177,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "HOLD_SHORT",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": null,
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t4",
+     "t_script": 45,
+     "t_arrival": 49.03,
+     "script": "SimAir two one two, clear of runway three six.",
+     "whisper": "SimAir two one two, clear of runway three six.",
+     "asr_s": 0.177,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "CROSSING_COMPLETE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    }
+   ]
+  },
+  "Q6_01_LAND_THEN_TKOF": {
+   "alerts": [
+    {
+     "warning_id": "w0003",
+     "rule": "R3",
+     "severity": "CONFLICT",
+     "runway": "XSIM:RWY:18-36",
+     "aircraft": [
+      "SIM212",
+      "DAL432"
+     ],
+     "t_fired": 24.43,
+     "shadow": false,
+     "via": "host fast path",
+     "alert_wall": 1792233047.3498254,
+     "after_tx": "t3",
+     "latency_s": 0.487
+    }
+   ],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 4.26,
+     "script": "SimAir two one two, runway three six, cleared to land.",
+     "whisper": "SimAir two one two, runway three six cleared to land.",
+     "asr_s": 0.19,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t2",
+     "t_script": 5,
+     "t_arrival": 9.4,
+     "script": "Cleared to land runway three six, SimAir two one two.",
+     "whisper": "Cleared to land, runway three six, SimAir two one two.",
+     "asr_s": 0.197,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 20,
+     "t_arrival": 24.43,
+     "script": "Delta four thirty two, runway three six, cleared for takeoff.",
+     "whisper": "Delta four thirty two, runway three six, cleared for takeoff.",
+     "asr_s": 0.19,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "TAKEOFF_CLEARANCE",
+     "callsigns": [
+      "DAL432"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "DAL432",
+       "matched": "DAL432",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t4",
+     "t_script": 25,
+     "t_arrival": 28.98,
+     "script": "Cleared for takeoff runway three six, Delta four thirty two.",
+     "whisper": "Cleared for takeoff runway three six, Delta 432.",
+     "asr_s": 0.187,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "TAKEOFF_CLEARANCE",
+     "callsigns": [
+      "DAL432"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "DAL432",
+       "matched": "DAL432",
+       "rule": "exact"
+      }
+     ]
+    }
+   ]
+  },
+  "Q6_02_CROSS_THEN_TKOF": {
+   "alerts": [],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 3.73,
+     "script": "Rescue nine, cross runway three six at Kilo.",
+     "whisper": "Rescue nine, cross runway three six at Kilo.",
+     "asr_s": 0.172,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "RESCUE9"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "RESCUE9",
+       "matched": "RESCUE9",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t2",
+     "t_script": 5,
+     "t_arrival": 8.51,
+     "script": "Crossing runway three six at Kilo, Rescue nine.",
+     "whisper": "Crossing runway three six a kilo, rescue nine.",
+     "asr_s": 0.17,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "RESCUE9"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "RESCUE9",
+       "matched": "RESCUE9",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 15,
+     "t_arrival": 19.63,
+     "script": "SimAir four five six, runway three six, cleared for takeoff.",
+     "whisper": "SimAirfour five six, runway three six, cleared for takeoff.",
+     "asr_s": 0.201,
+     "path": "left to the agent (off in the simulator)",
+     "llm": {
+      "source_id": "Q6_02_CROSS_THEN_TKOF-t3",
+      "t": 19.63,
+      "latency_s": 1.646,
+      "reason": "grounding: flight number not heard",
+      "raw": "{\"speaker_role\":\"ATC\",\"callsign\":\"N456\",\"runway\":\"36\",\"instruction\":\"TAKEOFF_CLEARANCE\",\"taxiways\":[]}",
+      "dropped": true,
+      "actionable": false
+     },
+     "endpoint_wait_s": 0.28,
+     "grammar": false,
+     "kind": null,
+     "callsigns": null,
+     "runway": null,
+     "callsign_match": null
+    },
+    {
+     "tx": "t4",
+     "t_script": 20,
+     "t_arrival": 24.36,
+     "script": "Cleared for takeoff runway three six, SimAir four five six.",
+     "whisper": "Cleared for takeoff, runway three six. SimAir four five six.",
+     "asr_s": 0.192,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "TAKEOFF_CLEARANCE",
+     "callsigns": [
+      "SIM456"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM456",
+       "matched": "SIM456",
+       "rule": "exact"
+      }
+     ]
+    }
+   ]
+  },
+  "Q6_03_NREG_LAND_VS_CROSS": {
+   "alerts": [
+    {
+     "warning_id": "w0004",
+     "rule": "R1",
+     "severity": "CONFLICT",
+     "runway": "XSIM:RWY:18-36",
+     "aircraft": [
+      "N6648",
+      "TRUCK3"
+     ],
+     "t_fired": 23.39,
+     "shadow": false,
+     "via": "host fast path",
+     "alert_wall": 1792233167.319229,
+     "after_tx": "t3",
+     "latency_s": 0.475
+    }
+   ],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 5.22,
+     "script": "November six six four eight Juliet, runway three six, cleared to land.",
+     "whisper": "November six six four eight, Juliet. Runway three six, cleared to land.",
+     "asr_s": 0.209,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "N6648"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "N6648",
+       "matched": null,
+       "rule": "no unique match (kept as heard)"
+      }
+     ]
+    },
+    {
+     "tx": "t2",
+     "t_script": 6,
+     "t_arrival": 12.63,
+     "script": "Cleared to land runway three six, November six six four eight Juliet.",
+     "whisper": "Cleared to land, runway three six. November six six four eight, Juliet.",
+     "asr_s": 0.201,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "N6648"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "N6648",
+       "matched": null,
+       "rule": "no unique match (kept as heard)"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 20,
+     "t_arrival": 23.39,
+     "script": "Truck three, cross runway three six at Kilo.",
+     "whisper": "Truck three, cross runway three six at Kilo.",
+     "asr_s": 0.176,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "TRUCK3"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "TRUCK3",
+       "matched": "TRUCK3",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t4",
+     "t_script": 25,
+     "t_arrival": 29.22,
+     "script": "Crossing runway three six at Kilo, Truck three.",
+     "whisper": "Crossing runway three six at Kilo, truck three.",
+     "asr_s": 0.178,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "TRUCK3"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "TRUCK3",
+       "matched": "TRUCK3",
+       "rule": "exact"
+      }
+     ]
+    }
+   ]
+  },
+  "Q6_04_TWO_CROSSINGS": {
+   "alerts": [
+    {
+     "warning_id": "w0006",
+     "rule": "R11",
+     "severity": "CAUTION",
+     "runway": "XSIM:RWY:18-36",
+     "aircraft": [
+      "RESCUE7",
+      "TRUCK3"
+     ],
+     "t_fired": 15.37,
+     "shadow": false,
+     "via": "host fast path",
+     "alert_wall": 1792233219.7998326,
+     "after_tx": "t3",
+     "latency_s": 0.454
+    }
+   ],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 3.79,
+     "script": "Rescue seven, cross runway three six at Kilo.",
+     "whisper": "Rescue seven, cross runway three six at Kilo.",
+     "asr_s": 0.171,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t2",
+     "t_script": 5,
+     "t_arrival": 9.11,
+     "script": "Crossing runway three six at Kilo, Rescue seven.",
+     "whisper": "Crossing runway three six at Kilo Rescue seven.",
+     "asr_s": 0.169,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 12,
+     "t_arrival": 15.37,
+     "script": "Truck three, cross runway three six at Kilo.",
+     "whisper": "Truck three, cross runway three six at Kilo.",
+     "asr_s": 0.167,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "TRUCK3"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "TRUCK3",
+       "matched": "TRUCK3",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t4",
+     "t_script": 17,
+     "t_arrival": 21.22,
+     "script": "Crossing runway three six at Kilo, Truck three.",
+     "whisper": "Crossing runway three six at Kilo, truck three.",
+     "asr_s": 0.17,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "CROSS",
+     "callsigns": [
+      "TRUCK3"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "TRUCK3",
+       "matched": "TRUCK3",
+       "rule": "exact"
+      }
+     ]
+    }
+   ]
+  },
+  "Q6_05_HOLD_SHORT_READBACK": {
+   "alerts": [],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 4.25,
+     "script": "SimAir two one two, runway three six, cleared to land.",
+     "whisper": "SimAir two one two, runway three six cleared to land.",
+     "asr_s": 0.198,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t2",
+     "t_script": 5,
+     "t_arrival": 9.39,
+     "script": "Cleared to land runway three six, SimAir two one two.",
+     "whisper": "Cleared to land, runway three six, SimAir two one two.",
+     "asr_s": 0.195,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 15,
+     "t_arrival": 19.26,
+     "script": "Rescue seven, hold short of runway three six at Kilo.",
+     "whisper": "Rescue seven, hold short of runway three six at Kilo.",
+     "asr_s": 0.185,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "HOLD_SHORT",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": null,
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t4",
+     "t_script": 20,
+     "t_arrival": 24.56,
+     "script": "Holding short of runway three six at Kilo, Rescue seven.",
+     "whisper": "Holding short of runway three six at Kilo, rescue seven.",
+     "asr_s": 0.179,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "HOLD_SHORT",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": null,
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": "RESCUE7",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t5",
+     "t_script": 45,
+     "t_arrival": 49.03,
+     "script": "SimAir two one two, clear of runway three six.",
+     "whisper": "SimAir two one two, clear of runway three six.",
+     "asr_s": 0.177,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "CROSSING_COMPLETE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    }
+   ]
+  },
+  "Q6_06_HOLD_SHORT_NO_READBACK": {
+   "alerts": [
+    {
+     "warning_id": "w0007",
+     "rule": "R7",
+     "severity": "CAUTION",
+     "runway": "XSIM:RWY:18-36",
+     "aircraft": [
+      "RESCUE7"
+     ],
+     "t_fired": 34.25,
+     "shadow": false,
+     "via": "sim clock",
+     "alert_wall": 1792233369.951446,
+     "after_tx": "t3",
+     "latency_s": 15.743
+    }
+   ],
+   "heard": [
+    {
+     "tx": "t1",
+     "t_script": 0,
+     "t_arrival": 4.25,
+     "script": "SimAir two one two, runway three six, cleared to land.",
+     "whisper": "SimAir two one two, runway three six cleared to land.",
+     "asr_s": 0.192,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t2",
+     "t_script": 5,
+     "t_arrival": 9.4,
+     "script": "Cleared to land runway three six, SimAir two one two.",
+     "whisper": "Cleared to land, runway three six, SimAir two one two.",
+     "asr_s": 0.199,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.28,
+     "grammar": true,
+     "kind": "LANDING_CLEARANCE",
+     "callsigns": [
+      "SIM212"
+     ],
+     "runway": "36",
+     "callsign_match": [
+      {
+       "heard": "SIM212",
+       "matched": "SIM212",
+       "rule": "exact"
+      }
+     ]
+    },
+    {
+     "tx": "t3",
+     "t_script": 15,
+     "t_arrival": 19.25,
+     "script": "Rescue seven, hold short of runway three six at Kilo.",
+     "whisper": "Rescue seven, hold short of runway three six at Kilo.",
+     "asr_s": 0.18,
+     "path": "grammar",
+     "llm": null,
+     "endpoint_wait_s": 0.281,
+     "grammar": true,
+     "kind": "HOLD_SHORT",
+     "callsigns": [
+      "RESCUE7"
+     ],
+     "runway": null,
+     "callsign_match": [
+      {
+       "heard": "RESCUE7",
+       "matched": null,
+       "rule": "no unique match (kept as heard)"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "live_path": "Kokoro (local) + radio channel -> 20 ms real-time stream -> squelch end of speech (300 ms) -> Whisper large-v3-turbo (warm, offline container, round-3 prompt) -> GmapsTools.fast_path (grammar + LLM fallback + ledger) + 1 s scenario clock"
+}

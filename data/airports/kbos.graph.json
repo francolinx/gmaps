@@ -1,0 +1,2867 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "2026-10-03.draft2",
+  "airport": {
+    "icao": "KBOS",
+    "faa": "BOS",
+    "name": "General Edward Lawrence Logan International"
+  },
+  "created_at": "2026-10-03T06:53:39.437065+00:00",
+  "intended_use": "prototype_source_review",
+  "coverage": {
+    "inventory": "Selected visually read identifiers; not an exhaustive airport database.",
+    "topology": "Small source-supported fragment around physical runway 09/27 x 15R/33L and taxiways D, D1, D2 only; independently re-checked on the AL-58 NE-1 2610 chart. No inferred links outside the listed nodes and segments.",
+    "excluded": [
+      "Unmodeled taxiway connections",
+      "Exact hold-line locations",
+      "Surveyed coordinates, pavement polygons and distances",
+      "Live closures, NOTAMs, direction restrictions and vehicle access",
+      "Historical incident geometry and timing"
+    ]
+  },
+  "usability": {
+    "identifier_lookup": true,
+    "topology_review": true,
+    "automatic_routing": false,
+    "physical_position_inference": false,
+    "metric_prediction": false,
+    "operational_navigation": false
+  },
+  "sources": [
+    {
+      "id": "BOS-FAA-UPLOAD",
+      "title": "Uploaded Boston FAA airport diagram",
+      "kind": "faa_diagram",
+      "uri": "chatgpt-conversation://6abaf68c-b514-83ea-838e-7f25cd3ec019",
+      "local_path": "sources/bos_airport_diagram.pdf",
+      "sha256": "36121d2286d09cb269ba7bc20d8fd95b9c1e76839d92809dcce2ce043b96de15",
+      "retrieved_on": "2026-10-03",
+      "effective_from": "2026-10-01",
+      "effective_to": "2026-10-29",
+      "printed_cycle": "NE-1, 01 OCT 2026 to 29 OCT 2026",
+      "chart_code": "AL-58; printed revision mark 26134",
+      "date_status": "within_printed_range",
+      "authority_scope": "Printed diagram labels and visible pavement only; operational status, exact metrics and historical applicability unverified."
+    },
+    {
+      "id": "JOE-NOTES-DERIVED",
+      "title": "Addendum 14: resources from Joe notes (Claude synthesis)",
+      "kind": "project_notes",
+      "uri": "https://docs.google.com/document/d/19kFmgREr4ycLPEqDrG5l4vE3MK5_A-eGYhChIqXZ52E/edit",
+      "local_path": "sources/lga_resources_addendum14.txt",
+      "sha256": "18d8ae1eb44674119842281a82547be3933a853e5df1b3ee68383bfa6c27b314",
+      "retrieved_on": "2026-10-03",
+      "effective_from": null,
+      "effective_to": null,
+      "printed_cycle": null,
+      "chart_code": null,
+      "date_status": "not_applicable",
+      "authority_scope": "Project design context; not authoritative airport geometry or authenticated incident evidence."
+    },
+    {
+      "id": "JOE-DESIGN-DERIVED",
+      "title": "Addendum 11: Eichelberger meeting (Claude synthesis)",
+      "kind": "project_notes",
+      "uri": "https://docs.google.com/document/d/1ojw7iaw_9RiXLgznxKMGdUykYk9zTjEuE1yO_L7LtmU/edit",
+      "local_path": "sources/joe_design_addendum11.txt",
+      "sha256": "ef9dd15cf6e33405d9b3e006c08dd0655de86f8cb652068e2775c798adcb1e15",
+      "retrieved_on": "2026-10-03",
+      "effective_from": null,
+      "effective_to": null,
+      "printed_cycle": null,
+      "chart_code": null,
+      "date_status": "not_applicable",
+      "authority_scope": "Project design context; not authoritative airport geometry or authenticated incident evidence."
+    },
+    {
+      "id": "GMAPS-MASTER",
+      "title": "GMAPS master source of truth",
+      "kind": "project_master",
+      "uri": "https://docs.google.com/document/d/1_sam1PEukE0KoAoO1Ty1HOf4WnUTwbuBnS8213NmqRw/edit",
+      "local_path": "sources/gmaps_master_reference.txt",
+      "sha256": "de54b83d61bd501899c30e2d012e902babf52cbc6e12d70318e3baa7fd3a4323",
+      "retrieved_on": "2026-10-03",
+      "effective_from": null,
+      "effective_to": null,
+      "printed_cycle": null,
+      "chart_code": null,
+      "date_status": "not_applicable",
+      "authority_scope": "Project design context; not authoritative airport geometry or authenticated incident evidence."
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "KBOS:RWY:04L-22R",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway end labels, pavement dimension text and runway data block",
+          "claim": "Identifier 04L/22R appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway",
+      "identifier": "04L/22R",
+      "aliases": [
+        "04l/22r"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": {
+        "length": 7864,
+        "width": 150
+      }
+    },
+    {
+      "id": "KBOS:RWY:04R-22L",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway end labels, pavement dimension text and runway data block",
+          "claim": "Identifier 04R/22L appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway",
+      "identifier": "04R/22L",
+      "aliases": [
+        "04r/22l"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": {
+        "length": 10006,
+        "width": 150
+      }
+    },
+    {
+      "id": "KBOS:RWY:09-27",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway end labels, pavement dimension text and runway data block",
+          "claim": "Identifier 09/27 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway",
+      "identifier": "09/27",
+      "aliases": [
+        "09/27"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": {
+        "length": 7001,
+        "width": 150
+      }
+    },
+    {
+      "id": "KBOS:RWY:14-32",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway end labels, pavement dimension text and runway data block",
+          "claim": "Identifier 14/32 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway",
+      "identifier": "14/32",
+      "aliases": [
+        "14/32"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": {
+        "length": 5000,
+        "width": 100
+      }
+    },
+    {
+      "id": "KBOS:RWY:15L-33R",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway end labels, pavement dimension text and runway data block",
+          "claim": "Identifier 15L/33R appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway",
+      "identifier": "15L/33R",
+      "aliases": [
+        "15l/33r"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": {
+        "length": 2557,
+        "width": 100
+      }
+    },
+    {
+      "id": "KBOS:RWY:15R-33L",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway end labels, pavement dimension text and runway data block",
+          "claim": "Identifier 15R/33L appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway",
+      "identifier": "15R/33L",
+      "aliases": [
+        "15r/33l"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": {
+        "length": 10083,
+        "width": 150
+      }
+    },
+    {
+      "id": "KBOS:TWY:A",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label A on main map; lighting circles excluded",
+          "claim": "Identifier A appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "A",
+      "aliases": [
+        "a",
+        "alfa",
+        "alpha",
+        "taxiway a",
+        "taxiway alpha"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:A1",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label A1 on main map; lighting circles excluded",
+          "claim": "Identifier A1 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "A1",
+      "aliases": [
+        "a 1",
+        "a1",
+        "alfa one",
+        "alpha 1",
+        "alpha one",
+        "taxiway a 1",
+        "taxiway a1",
+        "taxiway alpha 1",
+        "taxiway alpha one"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:A2",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label A2 on main map; lighting circles excluded",
+          "claim": "Identifier A2 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "A2",
+      "aliases": [
+        "a 2",
+        "a2",
+        "alfa two",
+        "alpha 2",
+        "alpha two",
+        "taxiway a 2",
+        "taxiway a2",
+        "taxiway alpha 2",
+        "taxiway alpha two"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:B",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label B on main map; lighting circles excluded",
+          "claim": "Identifier B appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "B",
+      "aliases": [
+        "b",
+        "bravo",
+        "taxiway b",
+        "taxiway bravo"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:C",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label C on main map; lighting circles excluded",
+          "claim": "Identifier C appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "C",
+      "aliases": [
+        "c",
+        "charlie",
+        "taxiway c",
+        "taxiway charlie"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:C1",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label C1 on main map; lighting circles excluded",
+          "claim": "Identifier C1 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "C1",
+      "aliases": [
+        "c 1",
+        "c1",
+        "charlie 1",
+        "charlie one",
+        "taxiway c 1",
+        "taxiway c1",
+        "taxiway charlie 1",
+        "taxiway charlie one"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:D",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label D on main map; lighting circles excluded",
+          "claim": "Identifier D appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "D",
+      "aliases": [
+        "d",
+        "delta",
+        "taxiway d",
+        "taxiway delta"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:D1",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label D1 on main map; lighting circles excluded",
+          "claim": "Identifier D1 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "D1",
+      "aliases": [
+        "d 1",
+        "d1",
+        "delta 1",
+        "delta one",
+        "taxiway d 1",
+        "taxiway d1",
+        "taxiway delta 1",
+        "taxiway delta one"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:D2",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label D2 on main map; lighting circles excluded",
+          "claim": "Identifier D2 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "D2",
+      "aliases": [
+        "d 2",
+        "d2",
+        "delta 2",
+        "delta two",
+        "taxiway d 2",
+        "taxiway d2",
+        "taxiway delta 2",
+        "taxiway delta two"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:E",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label E on main map; lighting circles excluded",
+          "claim": "Identifier E appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "E",
+      "aliases": [
+        "e",
+        "echo",
+        "taxiway e",
+        "taxiway echo"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:E1",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label E1 on main map; lighting circles excluded",
+          "claim": "Identifier E1 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "E1",
+      "aliases": [
+        "e 1",
+        "e1",
+        "echo 1",
+        "echo one",
+        "taxiway e 1",
+        "taxiway e1",
+        "taxiway echo 1",
+        "taxiway echo one"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:E2",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label E2 on main map; lighting circles excluded",
+          "claim": "Identifier E2 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "E2",
+      "aliases": [
+        "e 2",
+        "e2",
+        "echo 2",
+        "echo two",
+        "taxiway e 2",
+        "taxiway e2",
+        "taxiway echo 2",
+        "taxiway echo two"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:F",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label F on main map; lighting circles excluded",
+          "claim": "Identifier F appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "F",
+      "aliases": [
+        "f",
+        "foxtrot",
+        "taxiway f",
+        "taxiway foxtrot"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:G",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label G on main map; lighting circles excluded",
+          "claim": "Identifier G appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "G",
+      "aliases": [
+        "g",
+        "golf",
+        "taxiway g",
+        "taxiway golf"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:H",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label H on main map; lighting circles excluded",
+          "claim": "Identifier H appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "H",
+      "aliases": [
+        "h",
+        "hotel",
+        "taxiway h",
+        "taxiway hotel"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:J",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label J on main map; lighting circles excluded",
+          "claim": "Identifier J appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "J",
+      "aliases": [
+        "j",
+        "juliet",
+        "juliett",
+        "taxiway j",
+        "taxiway juliett"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:J1",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label J1 on main map; lighting circles excluded",
+          "claim": "Identifier J1 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "J1",
+      "aliases": [
+        "j 1",
+        "j1",
+        "juliet 1",
+        "juliet one",
+        "juliett 1",
+        "juliett one",
+        "taxiway j 1",
+        "taxiway j1",
+        "taxiway juliett 1",
+        "taxiway juliett one"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:K",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label K on main map; lighting circles excluded",
+          "claim": "Identifier K appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "K",
+      "aliases": [
+        "k",
+        "kilo",
+        "taxiway k",
+        "taxiway kilo"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:L",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label L on main map; lighting circles excluded",
+          "claim": "Identifier L appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "L",
+      "aliases": [
+        "l",
+        "lima",
+        "taxiway l",
+        "taxiway lima"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:M",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label M on main map; lighting circles excluded",
+          "claim": "Identifier M appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "M",
+      "aliases": [
+        "m",
+        "mike",
+        "taxiway m",
+        "taxiway mike"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:M1",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label M1 on main map; lighting circles excluded",
+          "claim": "Identifier M1 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "M1",
+      "aliases": [
+        "m 1",
+        "m1",
+        "mike 1",
+        "mike one",
+        "taxiway m 1",
+        "taxiway m1",
+        "taxiway mike 1",
+        "taxiway mike one"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:N",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label N on main map; lighting circles excluded",
+          "claim": "Identifier N appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "N",
+      "aliases": [
+        "n",
+        "november",
+        "taxiway n",
+        "taxiway november"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:N1",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label N1 on main map; lighting circles excluded",
+          "claim": "Identifier N1 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "N1",
+      "aliases": [
+        "n 1",
+        "n1",
+        "november 1",
+        "november one",
+        "taxiway n 1",
+        "taxiway n1",
+        "taxiway november 1",
+        "taxiway november one"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:N2",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label N2 on main map; lighting circles excluded",
+          "claim": "Identifier N2 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "N2",
+      "aliases": [
+        "n 2",
+        "n2",
+        "november 2",
+        "november two",
+        "taxiway n 2",
+        "taxiway n2",
+        "taxiway november 2",
+        "taxiway november two"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:N3",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label N3 on main map; lighting circles excluded",
+          "claim": "Identifier N3 appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "N3",
+      "aliases": [
+        "n 3",
+        "n3",
+        "november 3",
+        "november three",
+        "taxiway n 3",
+        "taxiway n3",
+        "taxiway november 3",
+        "taxiway november three"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:Q",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label Q on main map; lighting circles excluded",
+          "claim": "Identifier Q appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "Q",
+      "aliases": [
+        "q",
+        "quebec",
+        "taxiway q",
+        "taxiway quebec"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:R",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label R on main map; lighting circles excluded",
+          "claim": "Identifier R appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "R",
+      "aliases": [
+        "r",
+        "romeo",
+        "taxiway r",
+        "taxiway romeo"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:T",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label T on main map; lighting circles excluded",
+          "claim": "Identifier T appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "T",
+      "aliases": [
+        "t",
+        "tango",
+        "taxiway t",
+        "taxiway tango"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:Y",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label Y on main map; lighting circles excluded",
+          "claim": "Identifier Y appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "Y",
+      "aliases": [
+        "taxiway y",
+        "taxiway yankee",
+        "y",
+        "yankee"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:TWY:Z",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway pavement label Z on main map; lighting circles excluded",
+          "claim": "Identifier Z appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway",
+      "identifier": "Z",
+      "aliases": [
+        "taxiway z",
+        "taxiway zulu",
+        "z",
+        "zulu"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:AREA:Main_Fire_Station",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Named facility on main diagram; no access connector inferred",
+          "claim": "Identifier Main Fire Station appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "Main Fire Station",
+      "aliases": [
+        "main fire station"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:AREA:Satellite_Fire_Station",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Named facility on main diagram; no access connector inferred",
+          "claim": "Identifier Satellite Fire Station appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "Satellite Fire Station",
+      "aliases": [
+        "satellite fire station"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:AREA:General_Aviation_Ramp",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Named facility on main diagram; no access connector inferred",
+          "claim": "Identifier General Aviation Ramp appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "General Aviation Ramp",
+      "aliases": [
+        "general aviation ramp"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    },
+    {
+      "id": "KBOS:AREA:J_Pad_Parking",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Named facility on main diagram; no access connector inferred",
+          "claim": "Identifier J Pad Parking appears on the diagram.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "named_area",
+      "identifier": "J Pad Parking",
+      "aliases": [
+        "j pad parking"
+      ],
+      "geometry": null,
+      "published_dimensions_ft": null
+    }
+  ],
+  "runway_ends": [
+    {
+      "id": "KBOS:END:04L",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 4L",
+          "claim": "Direction identifier 04L belongs to physical runway 04L/22R.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "04L",
+      "runway_id": "KBOS:RWY:04L-22R",
+      "reciprocal_end_id": "KBOS:END:22R",
+      "aliases": [
+        "04 left",
+        "04l",
+        "4 left",
+        "4l",
+        "four left",
+        "runway 04 left",
+        "runway 04l",
+        "runway 4 left",
+        "runway 4l",
+        "runway four left"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:22R",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 22R",
+          "claim": "Direction identifier 22R belongs to physical runway 04L/22R.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "22R",
+      "runway_id": "KBOS:RWY:04L-22R",
+      "reciprocal_end_id": "KBOS:END:04L",
+      "aliases": [
+        "22 right",
+        "22r",
+        "runway 22 right",
+        "runway 22r",
+        "runway two two right",
+        "two two right"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:04R",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 4R",
+          "claim": "Direction identifier 04R belongs to physical runway 04R/22L.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "04R",
+      "runway_id": "KBOS:RWY:04R-22L",
+      "reciprocal_end_id": "KBOS:END:22L",
+      "aliases": [
+        "04 right",
+        "04r",
+        "4 right",
+        "4r",
+        "four right",
+        "runway 04 right",
+        "runway 04r",
+        "runway 4 right",
+        "runway 4r",
+        "runway four right"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:22L",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 22L",
+          "claim": "Direction identifier 22L belongs to physical runway 04R/22L.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "22L",
+      "runway_id": "KBOS:RWY:04R-22L",
+      "reciprocal_end_id": "KBOS:END:04R",
+      "aliases": [
+        "22 left",
+        "22l",
+        "runway 22 left",
+        "runway 22l",
+        "runway two two left",
+        "two two left"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:09",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 9",
+          "claim": "Direction identifier 09 belongs to physical runway 09/27.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "09",
+      "runway_id": "KBOS:RWY:09-27",
+      "reciprocal_end_id": "KBOS:END:27",
+      "aliases": [
+        "09",
+        "9",
+        "nine",
+        "runway 09",
+        "runway 9",
+        "runway nine"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:27",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 27",
+          "claim": "Direction identifier 27 belongs to physical runway 09/27.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "27",
+      "runway_id": "KBOS:RWY:09-27",
+      "reciprocal_end_id": "KBOS:END:09",
+      "aliases": [
+        "27",
+        "runway 27",
+        "runway two seven",
+        "two seven"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:14",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 14",
+          "claim": "Direction identifier 14 belongs to physical runway 14/32.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "14",
+      "runway_id": "KBOS:RWY:14-32",
+      "reciprocal_end_id": "KBOS:END:32",
+      "aliases": [
+        "14",
+        "one four",
+        "runway 14",
+        "runway one four"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:32",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 32",
+          "claim": "Direction identifier 32 belongs to physical runway 14/32.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "32",
+      "runway_id": "KBOS:RWY:14-32",
+      "reciprocal_end_id": "KBOS:END:14",
+      "aliases": [
+        "32",
+        "runway 32",
+        "runway three two",
+        "three two"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:15L",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 15L",
+          "claim": "Direction identifier 15L belongs to physical runway 15L/33R.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "15L",
+      "runway_id": "KBOS:RWY:15L-33R",
+      "reciprocal_end_id": "KBOS:END:33R",
+      "aliases": [
+        "15 left",
+        "15l",
+        "one five left",
+        "runway 15 left",
+        "runway 15l",
+        "runway one five left"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:33R",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 33R",
+          "claim": "Direction identifier 33R belongs to physical runway 15L/33R.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "33R",
+      "runway_id": "KBOS:RWY:15L-33R",
+      "reciprocal_end_id": "KBOS:END:15L",
+      "aliases": [
+        "33 right",
+        "33r",
+        "runway 33 right",
+        "runway 33r",
+        "runway three three right",
+        "three three right"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:15R",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 15R",
+          "claim": "Direction identifier 15R belongs to physical runway 15R/33L.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "15R",
+      "runway_id": "KBOS:RWY:15R-33L",
+      "reciprocal_end_id": "KBOS:END:33L",
+      "aliases": [
+        "15 right",
+        "15r",
+        "one five right",
+        "runway 15 right",
+        "runway 15r",
+        "runway one five right"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "KBOS:END:33L",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Printed runway end 33L",
+          "claim": "Direction identifier 33L belongs to physical runway 15R/33L.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "identifier": "33L",
+      "runway_id": "KBOS:RWY:15R-33L",
+      "reciprocal_end_id": "KBOS:END:15R",
+      "aliases": [
+        "33 left",
+        "33l",
+        "runway 33 left",
+        "runway 33l",
+        "runway three three left",
+        "three three left"
+      ],
+      "geometry": null
+    }
+  ],
+  "nodes": [
+    {
+      "id": "KBOS:N:RWY09-27_RWY15R-33L",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Southeast runway crossing, by HS 4; 27 and 33L are direction labels for these physical runways",
+          "claim": "Visible pavement junction between KBOS:RWY:09-27, KBOS:RWY:15R-33L.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway 9/27 (7001 X 150, 092/272 deg labels) crosses runway 15R/33L (10083 X 150, 330 deg label) southeast of centre field; crossing centre sits just east of the HS 4 ellipse edge; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Physical runways 09/27 and 15R/33L intersect; spoken 27 and 33L are direction names of these two physical runways, not separate pavements. 15L/33R (2557 X 100) is a different runway further north.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Junction existence visually supported; turn permissions, surveyed position and protected boundaries unverified.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_intersection",
+      "surface_ids": [
+        "KBOS:RWY:09-27",
+        "KBOS:RWY:15R-33L"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    },
+    {
+      "id": "KBOS:N:D_RWY15R-33L",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway D crossing of 15R/33L just northwest of the runway/runway intersection",
+          "claim": "Visible pavement junction between KBOS:TWY:D, KBOS:RWY:15R-33L.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Inside HS 4 ellipse: D pavement from the west (label D) meets 15R/33L and continues east-northeast on the far side toward D1/D2; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "D crosses 15R/33L northwest of the 9/27 intersection.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Junction existence visually supported; turn permissions, surveyed position and protected boundaries unverified.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_taxiway_junction",
+      "surface_ids": [
+        "KBOS:TWY:D",
+        "KBOS:RWY:15R-33L"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    },
+    {
+      "id": "KBOS:N:D_D1",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway D and D1 north of runway 9/27",
+          "claim": "Visible pavement junction between KBOS:TWY:D, KBOS:TWY:D1.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D1 label on connector from D (north) down to runway 9/27, between the D crossing of 15R/33L and D2; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "D and D1 meet.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Junction existence visually supported; turn permissions, surveyed position and protected boundaries unverified.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway_junction",
+      "surface_ids": [
+        "KBOS:TWY:D",
+        "KBOS:TWY:D1"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    },
+    {
+      "id": "KBOS:N:D_D2",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway D and D2 near the runway 27 end",
+          "claim": "Visible pavement junction between KBOS:TWY:D, KBOS:TWY:D2.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D2 label on connector from D down to runway 9/27, east of D1 and west of the runway 27 threshold; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "D and D2 meet.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Junction existence visually supported; turn permissions, surveyed position and protected boundaries unverified.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "taxiway_junction",
+      "surface_ids": [
+        "KBOS:TWY:D",
+        "KBOS:TWY:D2"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    },
+    {
+      "id": "KBOS:N:D1_RWY09-27",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D1 joins runway 9/27, west of D2",
+          "claim": "Visible pavement junction between KBOS:TWY:D1, KBOS:RWY:09-27.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "South end of D1 connector at north edge of runway 9/27; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "D1 joins 9/27.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Junction existence visually supported; turn permissions, surveyed position and protected boundaries unverified.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_taxiway_junction",
+      "surface_ids": [
+        "KBOS:TWY:D1",
+        "KBOS:RWY:09-27"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    },
+    {
+      "id": "KBOS:N:D2_RWY09-27",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D2 joins runway 9/27, near end 27",
+          "claim": "Visible pavement junction between KBOS:TWY:D2, KBOS:RWY:09-27.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "South end of D2 connector at north edge of runway 9/27, west of the 27 threshold box; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "D2 joins 9/27.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Junction existence visually supported; turn permissions, surveyed position and protected boundaries unverified.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_taxiway_junction",
+      "surface_ids": [
+        "KBOS:TWY:D2",
+        "KBOS:RWY:09-27"
+      ],
+      "geometry": null,
+      "is_hold_point": false
+    }
+  ],
+  "segments": [
+    {
+      "id": "KBOS:S:D_RWY15_TO_D1",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway D east of 15R/33L to D1",
+          "claim": "Visible connection along KBOS:TWY:D between the two cited junctions.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D between east edge of 15R/33L and D1; no other branch visible on this stretch; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Continuous D pavement, no intervening junction seen.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Visual topology only. Hold/control boundaries and operational direction must be reviewed before routing.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "surface_id": "KBOS:TWY:D",
+      "from_node_id": "KBOS:N:D_RWY15R-33L",
+      "to_node_id": "KBOS:N:D_D1",
+      "topology": "visible_pavement_connection",
+      "direction_permission": "unknown",
+      "geometry": null,
+      "length_m": null,
+      "width_m": null,
+      "atomicity": "junctions_only_hold_boundaries_unresolved",
+      "routing_enabled": false
+    },
+    {
+      "id": "KBOS:S:D_D1_TO_D2",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Taxiway D between D1 and D2",
+          "claim": "Visible connection along KBOS:TWY:D between the two cited junctions.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D between D1 and D2; no other branch visible; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Continuous D pavement, no intervening junction seen.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Visual topology only. Hold/control boundaries and operational direction must be reviewed before routing.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "surface_id": "KBOS:TWY:D",
+      "from_node_id": "KBOS:N:D_D1",
+      "to_node_id": "KBOS:N:D_D2",
+      "topology": "visible_pavement_connection",
+      "direction_permission": "unknown",
+      "geometry": null,
+      "length_m": null,
+      "width_m": null,
+      "atomicity": "junctions_only_hold_boundaries_unresolved",
+      "routing_enabled": false
+    },
+    {
+      "id": "KBOS:S:D1_TO_RWY09",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D1 connector north of runway 9/27",
+          "claim": "Visible connection along KBOS:TWY:D1 between the two cited junctions.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D1 connector, D to runway 9/27; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Continuous connector pavement; hold marking not depicted on this chart.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Visual topology only. Hold/control boundaries and operational direction must be reviewed before routing.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "surface_id": "KBOS:TWY:D1",
+      "from_node_id": "KBOS:N:D_D1",
+      "to_node_id": "KBOS:N:D1_RWY09-27",
+      "topology": "visible_pavement_connection",
+      "direction_permission": "unknown",
+      "geometry": null,
+      "length_m": null,
+      "width_m": null,
+      "atomicity": "junctions_only_hold_boundaries_unresolved",
+      "routing_enabled": false
+    },
+    {
+      "id": "KBOS:S:D2_TO_RWY09",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D2 connector north of runway 9/27",
+          "claim": "Visible connection along KBOS:TWY:D2 between the two cited junctions.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D2 connector, D to runway 9/27; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Continuous connector pavement; hold marking not depicted on this chart.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Visual topology only. Hold/control boundaries and operational direction must be reviewed before routing.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "surface_id": "KBOS:TWY:D2",
+      "from_node_id": "KBOS:N:D_D2",
+      "to_node_id": "KBOS:N:D2_RWY09-27",
+      "topology": "visible_pavement_connection",
+      "direction_permission": "unknown",
+      "geometry": null,
+      "length_m": null,
+      "width_m": null,
+      "atomicity": "junctions_only_hold_boundaries_unresolved",
+      "routing_enabled": false
+    },
+    {
+      "id": "KBOS:S:RWY09_X_TO_D1",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway 9/27 from 15R/33L intersection eastward to D1",
+          "claim": "Visible connection along KBOS:RWY:09-27 between the two cited junctions.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway 9/27 from the 15R/33L crossing east to D1; no other connector seen on either side of this stretch; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Continuous runway pavement between the cited junctions.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Visual topology only. Hold/control boundaries and operational direction must be reviewed before routing.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "surface_id": "KBOS:RWY:09-27",
+      "from_node_id": "KBOS:N:RWY09-27_RWY15R-33L",
+      "to_node_id": "KBOS:N:D1_RWY09-27",
+      "topology": "visible_pavement_connection",
+      "direction_permission": "unknown",
+      "geometry": null,
+      "length_m": null,
+      "width_m": null,
+      "atomicity": "junctions_only_hold_boundaries_unresolved",
+      "routing_enabled": false
+    },
+    {
+      "id": "KBOS:S:RWY09_D1_TO_D2",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway 9/27 between D1 and D2",
+          "claim": "Visible connection along KBOS:RWY:09-27 between the two cited junctions.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway 9/27 between D1 and D2; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Continuous runway pavement between the cited junctions.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Visual topology only. Hold/control boundaries and operational direction must be reviewed before routing.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "surface_id": "KBOS:RWY:09-27",
+      "from_node_id": "KBOS:N:D1_RWY09-27",
+      "to_node_id": "KBOS:N:D2_RWY09-27",
+      "topology": "visible_pavement_connection",
+      "direction_permission": "unknown",
+      "geometry": null,
+      "length_m": null,
+      "width_m": null,
+      "atomicity": "junctions_only_hold_boundaries_unresolved",
+      "routing_enabled": false
+    },
+    {
+      "id": "KBOS:S:RWY15_D_TO_X",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "15R/33L between D and runway 9/27; hold boundary remains separate and unresolved",
+          "claim": "Visible connection along KBOS:RWY:15R-33L between the two cited junctions.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway 15R/33L between the D crossing and the 9/27 crossing; the dashed LAHSO line crosses this stretch; taxiway C runs parallel on the southwest side without joining here; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Continuous runway pavement; the LAHSO line lies on this stretch (see hold record), so it is not atomic for routing.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Visual topology only. Contains the charted LAHSO line; must be split at the reviewed line and runway protected boundaries before any routing.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "surface_id": "KBOS:RWY:15R-33L",
+      "from_node_id": "KBOS:N:D_RWY15R-33L",
+      "to_node_id": "KBOS:N:RWY09-27_RWY15R-33L",
+      "topology": "visible_pavement_connection",
+      "direction_permission": "unknown",
+      "geometry": null,
+      "length_m": null,
+      "width_m": null,
+      "atomicity": "junctions_only_hold_boundaries_unresolved",
+      "routing_enabled": false
+    }
+  ],
+  "hold_points": [
+    {
+      "id": "KBOS:HOLD:D1_APPROACH_RWY09",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Conceptual constraint associated with crossing; physical hold marking not located",
+          "claim": "A hold constraint must stop before the protected area; this record does not assert an exact physical hold-line position.",
+          "method": "design_convention"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "design_only",
+        "reason": "Location, approach applicability and protected boundary need expert evidence.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_hold_constraint",
+      "protected_surface_id": "KBOS:RWY:09-27",
+      "approach_surface_id": "KBOS:TWY:D1",
+      "approach_segment_id": "KBOS:S:D1_TO_RWY09",
+      "approach_from_node_id": "KBOS:N:D_D1",
+      "node_id": null,
+      "physical_marking_status": "not_located",
+      "geometry": null,
+      "offset_m": null,
+      "crossing_authority": "not_granted_by_graph"
+    },
+    {
+      "id": "KBOS:HOLD:D2_APPROACH_RWY09",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Conceptual constraint associated with crossing; physical hold marking not located",
+          "claim": "A hold constraint must stop before the protected area; this record does not assert an exact physical hold-line position.",
+          "method": "design_convention"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "design_only",
+        "reason": "Location, approach applicability and protected boundary need expert evidence.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_hold_constraint",
+      "protected_surface_id": "KBOS:RWY:09-27",
+      "approach_surface_id": "KBOS:TWY:D2",
+      "approach_segment_id": "KBOS:S:D2_TO_RWY09",
+      "approach_from_node_id": "KBOS:N:D_D2",
+      "node_id": null,
+      "physical_marking_status": "not_located",
+      "geometry": null,
+      "offset_m": null,
+      "crossing_authority": "not_granted_by_graph"
+    },
+    {
+      "id": "KBOS:HOLD:LAHSO_RWY15R_BEFORE09",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "LAHSO leader near HS 4; identify exact landing direction and physical line with expert before use",
+          "claim": "A hold constraint must stop before the protected area; this record does not assert an exact physical hold-line position.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Dashed line with LAHSO label, inside/next to HS 4: drawn perpendicular to 15R/33L, crossing 15R/33L northwest of the 9/27 crossing and southeast of the D crossing; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Chart depicts a LAHSO hold-short line across runway 15R/33L on the northwest (15R-arrival) side of runway 09/27.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Same dashed line",
+          "claim": "Applicability to 15R arrivals is read from orientation and side: a 33L arrival reaches the 9/27 crossing before this line. Availability, conditions and published landing distance are not on this chart.",
+          "method": "design_convention"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "ambiguous",
+        "reason": "Line position relative to D and 9/27 is visible on the chart; direction meaning is a reading of the depiction; current LAHSO availability and conditions need the Chart Supplement / ATC review. No distance recorded.",
+        "alternatives": [
+          "Applies to runway 15R landings holding short of runway 09/27 (primary reading)",
+          "Charted line exists but LAHSO is not currently authorized or is restricted (check Chart Supplement)"
+        ],
+        "confidence": null
+      },
+      "kind": "lahso_hold",
+      "protected_surface_id": "KBOS:RWY:09-27",
+      "approach_surface_id": "KBOS:RWY:15R-33L",
+      "approach_segment_id": "KBOS:S:RWY15_D_TO_X",
+      "approach_from_node_id": "KBOS:N:D_RWY15R-33L",
+      "node_id": null,
+      "physical_marking_status": "chart_depicted_location_unmeasured",
+      "geometry": null,
+      "offset_m": null,
+      "crossing_authority": "not_granted_by_graph"
+    },
+    {
+      "id": "KBOS:HOLD:D_EAST_APPROACH_RWY15R33L",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Conceptual constraint for D approaching 15R/33L from the D1 side inside HS 4; physical hold marking not depicted on this chart",
+          "claim": "A hold constraint must stop before the protected area of 15R/33L; this record does not assert an exact physical hold-line position.",
+          "method": "design_convention"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "design_only",
+        "reason": "Approach side known from graph (D1 side); location and protected boundary need expert evidence.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "runway_hold_constraint",
+      "protected_surface_id": "KBOS:RWY:15R-33L",
+      "approach_surface_id": "KBOS:TWY:D",
+      "approach_segment_id": "KBOS:S:D_RWY15_TO_D1",
+      "approach_from_node_id": "KBOS:N:D_D1",
+      "node_id": null,
+      "physical_marking_status": "not_located",
+      "geometry": null,
+      "offset_m": null,
+      "crossing_authority": "not_granted_by_graph"
+    }
+  ],
+  "zones": [
+    {
+      "id": "KBOS:ZONE:RWY27_33L_SHARED",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Physical 9/27 by 15R/33L runway intersection, no measured extent",
+          "claim": "Review reference only; extent and occupancy boundary are unknown.",
+          "method": "design_convention"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Runway/runway crossing, 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Symbolic shared-resource reference for physical 09/27 and 15R/33L; HS 4 is a separate annotation.",
+          "method": "design_convention"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "design_only",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "conflict_area_reference",
+      "surface_ids": [
+        "KBOS:RWY:09-27",
+        "KBOS:RWY:15R-33L"
+      ],
+      "node_ids": [
+        "KBOS:N:RWY09-27_RWY15R-33L"
+      ],
+      "geometry": null,
+      "boundary_status": "unknown",
+      "usable_for_occupancy": false
+    },
+    {
+      "id": "KBOS:ZONE:HS4",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Brown HS 4 ellipse near Charlie/Delta; not the runway conflict polygon",
+          "claim": "Review reference only; extent and occupancy boundary are unknown.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Brown HS 4 ellipse, 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Ellipse encloses labels D and C, the D crossing of 15R/33L, the C crossing of 9/27 and part of the LAHSO line; the runway/runway crossing centre appears just outside its east edge. Label membership only; no connectivity or boundary.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Membership read from the annotation; ellipse is an attention mark, not an occupancy polygon.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "kind": "hotspot_annotation",
+      "surface_ids": [
+        "KBOS:RWY:09-27",
+        "KBOS:RWY:15R-33L",
+        "KBOS:TWY:C",
+        "KBOS:TWY:D"
+      ],
+      "node_ids": [
+        "KBOS:N:D_RWY15R-33L"
+      ],
+      "geometry": null,
+      "boundary_status": "unknown",
+      "usable_for_occupancy": false
+    }
+  ],
+  "route_templates": [
+    {
+      "id": "KBOS:ROUTE:D_D1_FRAGMENT",
+      "evidence": [
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "Delta to Delta One in northeast part of HS 4 fragment",
+          "claim": "Draft taxiway walk to runway 9/27; authorization and hold boundaries absent.",
+          "method": "visual_transcription"
+        },
+        {
+          "source_id": "BOS-FAA-UPLOAD",
+          "page": 1,
+          "locator": "D (from 15R/33L crossing) east to D1, then D1 to 9/27; 1200-dpi render, 2026-10-03 independent re-check",
+          "claim": "Walk is continuous on the chart; storage order is not a permitted direction.",
+          "method": "visual_transcription"
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": "No expert acceptance recorded."
+      },
+      "uncertainty": {
+        "label": "source_supported",
+        "reason": "Transcribed from source; independent expert review pending.",
+        "alternatives": [],
+        "confidence": null
+      },
+      "label": "Delta / Delta One toward runway 9/27",
+      "surface_sequence": [
+        "KBOS:TWY:D",
+        "KBOS:TWY:D1"
+      ],
+      "node_sequence": [
+        "KBOS:N:D_RWY15R-33L",
+        "KBOS:N:D_D1",
+        "KBOS:N:D1_RWY09-27"
+      ],
+      "segment_sequence": [
+        "KBOS:S:D_RWY15_TO_D1",
+        "KBOS:S:D1_TO_RWY09"
+      ],
+      "hold_point_ids": [
+        "KBOS:HOLD:D1_APPROACH_RWY09"
+      ],
+      "route_status": "draft_connected_fragment",
+      "grants_authority": false,
+      "missing_inputs": [
+        "Exact D1 hold line",
+        "Confirmed origin and clearance limit",
+        "Independent operational review",
+        "Reverse direction needs KBOS:HOLD:D_EAST_APPROACH_RWY15R33L located before 15R/33L"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "KBOS:ISSUE:GEOMETRY",
+      "entity_ids": [],
+      "severity": "blocking",
+      "question": "Which surveyed or explicitly fictional geometry will support motion prediction?",
+      "required_evidence": "Document coordinate frame, units, origin/CRS, accuracy, source and review. No coordinates may be added to v1 drafts.",
+      "status": "open"
+    },
+    {
+      "id": "KBOS:ISSUE:HOLDS",
+      "entity_ids": [
+        "KBOS:HOLD:D1_APPROACH_RWY09",
+        "KBOS:HOLD:D2_APPROACH_RWY09",
+        "KBOS:HOLD:LAHSO_RWY15R_BEFORE09",
+        "KBOS:HOLD:D_EAST_APPROACH_RWY15R33L"
+      ],
+      "severity": "blocking",
+      "question": "Where exactly are each approach-side hold line and protected boundary?",
+      "required_evidence": "Expert review, source-marked location, approach direction and independent coordinates; split segments at verified boundaries.",
+      "status": "open"
+    },
+    {
+      "id": "KBOS:ISSUE:CURRENCY",
+      "entity_ids": [],
+      "severity": "blocking",
+      "question": "Which closures, access restrictions and direction permissions apply at the exercise time?",
+      "required_evidence": "Applicable chart cycle, NOTAMs, airport restrictions, review timestamp; expiry-time semantics not inferred from printed dates.",
+      "status": "open"
+    },
+    {
+      "id": "KBOS:ISSUE:HISTORICAL",
+      "entity_ids": [],
+      "severity": "blocking",
+      "question": "Does the October 2026 AL-58 diagram match the June 2026 Logan event geometry?",
+      "required_evidence": "June-cycle chart and change comparison. Incident distances/timings from reports must not be used as graph geometry.",
+      "status": "open"
+    },
+    {
+      "id": "KBOS:ISSUE:TOPOLOGY",
+      "entity_ids": [
+        "KBOS:S:D_RWY15_TO_D1",
+        "KBOS:S:D_D1_TO_D2",
+        "KBOS:S:D1_TO_RWY09",
+        "KBOS:S:D2_TO_RWY09",
+        "KBOS:S:RWY09_X_TO_D1",
+        "KBOS:S:RWY09_D1_TO_D2",
+        "KBOS:S:RWY15_D_TO_X"
+      ],
+      "severity": "blocking",
+      "question": "Are the visible links and intervening junctions correct and sufficient for the chosen route?",
+      "required_evidence": "Expert-marked diagram; accepted node order and hold boundaries; retain alternatives until resolved.",
+      "status": "open"
+    },
+    {
+      "id": "KBOS:ISSUE:TRACKS",
+      "entity_ids": [],
+      "severity": "blocking",
+      "question": "Which independent observations establish actor position, speed and uncertainty?",
+      "required_evidence": "Timestamped observed or explicitly simulated tracks, actor association, uncertainty, footprint, stale-input rules and time basis.",
+      "status": "open"
+    },
+    {
+      "id": "KBOS:ISSUE:LAHSO",
+      "entity_ids": [
+        "KBOS:HOLD:LAHSO_RWY15R_BEFORE09",
+        "KBOS:S:RWY15_D_TO_X"
+      ],
+      "severity": "blocking",
+      "question": "Confirm the HS 4 LAHSO line is for runway 15R arrivals holding short of 09/27, its current availability/conditions and physical marking.",
+      "required_evidence": "Chart Supplement LAHSO entry for BOS plus expert review; record no available-landing-distance value in v1. Never treat the line as a clearance or a prediction boundary.",
+      "status": "open"
+    },
+    {
+      "id": "KBOS:ISSUE:D_EAST_END",
+      "entity_ids": [
+        "KBOS:N:D_D2",
+        "KBOS:TWY:D2"
+      ],
+      "severity": "review",
+      "question": "East of D2, unlabeled pavement continues from D and curves south to runway 9/27 near the 27 threshold. Is it part of D, part of D2, or unnamed?",
+      "required_evidence": "Expert reading or larger-scale source; not added to the graph until identified.",
+      "status": "open"
+    },
+    {
+      "id": "KBOS:ISSUE:D_WEST_SIDE",
+      "entity_ids": [
+        "KBOS:N:D_RWY15R-33L",
+        "KBOS:TWY:C"
+      ],
+      "severity": "review",
+      "question": "West of 15R/33L, C branches from D and crosses 9/27 inside HS 4. Should a D/C junction be modeled so the west-side D hold for 15R/33L can be represented?",
+      "required_evidence": "Expert-confirmed junction order west of 15R/33L; currently no west-side node, so no west-side hold record.",
+      "status": "open"
+    },
+    {
+      "id": "KBOS:ISSUE:HS4_EXTENT",
+      "entity_ids": [
+        "KBOS:ZONE:HS4",
+        "KBOS:ZONE:RWY27_33L_SHARED"
+      ],
+      "severity": "blocking",
+      "question": "What protected area should conflict logic use around the 09/27 x 15R/33L crossing?",
+      "required_evidence": "Reviewed metric boundaries. HS 4 ellipse is offset west of the runway crossing and must not be used as an occupancy polygon.",
+      "status": "open"
+    },
+    {
+      "id": "KBOS:ISSUE:ALIASES",
+      "entity_ids": [],
+      "severity": "review",
+      "question": "Parser aliases now include digit-plus-spoken-suffix forms (runway 33 left, delta 1). Confirm these match the ASR output style.",
+      "required_evidence": "ASR transcripts from re-voiced or fictional audio; aliases are parser conveniences, not chart facts.",
+      "status": "open"
+    }
+  ]
+}

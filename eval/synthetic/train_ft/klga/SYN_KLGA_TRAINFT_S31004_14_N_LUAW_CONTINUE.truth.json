@@ -1,0 +1,108 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31004_14_N_LUAW_CONTINUE",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KLGA_TRAINFT_S31004_14_N_LUAW_CONTINUE_00",
+   "fields": {
+    "callsigns": [
+     "UAL827"
+    ],
+    "runway": "22",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "UAL827",
+    "runway": "22",
+    "instruction": "LUAW",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31004_14_N_LUAW_CONTINUE_01",
+   "fields": {
+    "callsigns": [
+     "UAL827"
+    ],
+    "runway": "22",
+    "instruction": "LUAW"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL827",
+    "runway": "22",
+    "instruction": "LUAW",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31004_14_N_LUAW_CONTINUE_02",
+   "fields": {
+    "callsigns": [
+     "SWA2471"
+    ],
+    "runway": "22",
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "SWA2471",
+    "runway": "22",
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31004_14_N_LUAW_CONTINUE_03",
+   "fields": {
+    "callsigns": [
+     "SWA2471"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "SWA2471",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31004_14_N_LUAW_CONTINUE_04",
+   "fields": {
+    "callsigns": [
+     "UAL827"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "UAL827",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KLGA_TRAINFT_S31004_14_N_LUAW_CONTINUE_05",
+   "fields": {
+    "callsigns": [
+     "UAL827"
+    ],
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "UAL827",
+    "runway": "22",
+    "instruction": "TAKEOFF_CLEARANCE",
+    "taxiways": []
+   }
+  }
+ ]
+}

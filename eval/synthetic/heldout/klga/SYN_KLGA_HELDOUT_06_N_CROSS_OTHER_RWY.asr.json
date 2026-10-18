@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT_06_N_CROSS_OTHER_RWY_00": {
+  "text": "Spirit 2151, cleared to land runway 4.",
+  "asr_s": 0.186
+ },
+ "SYN_KLGA_HELDOUT_06_N_CROSS_OTHER_RWY_01": {
+  "text": "Lear to land for spirit 2151.",
+  "asr_s": 0.165
+ },
+ "SYN_KLGA_HELDOUT_06_N_CROSS_OTHER_RWY_02": {
+  "text": "Southwest 1446 and through the cross runway 31.",
+  "asr_s": 0.181
+ },
+ "SYN_KLGA_HELDOUT_06_N_CROSS_OTHER_RWY_03": {
+  "text": "Crossing runway 31 at Zulu, Southwest 1446.",
+  "asr_s": 0.187
+ }
+}

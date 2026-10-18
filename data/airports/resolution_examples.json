@@ -1,0 +1,240 @@
+{
+  "example_kind": "synthetic_acceptance_fixtures_not_historical_transcripts",
+  "cases": [
+    {
+      "id": "lga_delta",
+      "airport": "KLGA",
+      "input": "Delta",
+      "expected_kind": "taxiway",
+      "expected_candidates": [
+        "KLGA:TWY:D"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "bos_delta_one",
+      "airport": "KBOS",
+      "input": "delta one",
+      "expected_kind": "taxiway",
+      "expected_candidates": [
+        "KBOS:TWY:D1"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "lga_alpha_alpha",
+      "airport": "KLGA",
+      "input": "alpha alpha",
+      "expected_kind": "taxiway",
+      "expected_candidates": [
+        "KLGA:TWY:AA"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "lga_four",
+      "airport": "KLGA",
+      "input": "runway four",
+      "expected_kind": "runway_end",
+      "expected_candidates": [
+        "KLGA:END:04"
+      ],
+      "physical_surface": "KLGA:RWY:04-22",
+      "expected_position": null
+    },
+    {
+      "id": "bos_33_left",
+      "airport": "KBOS",
+      "input": "runway three three left",
+      "expected_kind": "runway_end",
+      "expected_candidates": [
+        "KBOS:END:33L"
+      ],
+      "physical_surface": "KBOS:RWY:15R-33L",
+      "expected_position": null
+    },
+    {
+      "id": "bos_four_ambiguous",
+      "airport": "KBOS",
+      "input": "runway four",
+      "expected_kind": "runway_end",
+      "expected_candidates": [
+        "KBOS:END:04L",
+        "KBOS:END:04R"
+      ],
+      "resolution_status": "ambiguous_missing_suffix",
+      "expected_position": null
+    },
+    {
+      "id": "cross_airport_D1",
+      "airport": "KLGA",
+      "input": "delta one",
+      "expected_kind": "taxiway",
+      "expected_candidates": [],
+      "resolution_status": "unresolved_in_selected_inventory",
+      "expected_position": null
+    },
+    {
+      "id": "no_runway_three_at_lga",
+      "airport": "KLGA",
+      "input": "runway three",
+      "expected_kind": "runway_end",
+      "expected_candidates": [],
+      "resolution_status": "unresolved",
+      "expected_position": null
+    },
+    {
+      "id": "report_at_delta",
+      "airport": "KLGA",
+      "input": "Truck 1 holding short runway four at Delta",
+      "speech_act": "position_report",
+      "expected_candidate_junctions": [
+        "KLGA:N:D_RWY04-22"
+      ],
+      "expected_hold_candidates": [
+        "KLGA:HOLD:D_APPROACH_FROM_AA",
+        "KLGA:HOLD:D_APPROACH_FROM_B"
+      ],
+      "approach_side": null,
+      "observation_status": "reported_not_observed",
+      "expected_position": null
+    },
+    {
+      "id": "via_not_position",
+      "airport": "KLGA",
+      "input": "Truck 1 proceed via Delta",
+      "speech_act": "instruction",
+      "expected_candidates": [
+        "KLGA:TWY:D"
+      ],
+      "current_position_changed": false,
+      "expected_position": null
+    },
+    {
+      "id": "stop_not_motion",
+      "airport": "KLGA",
+      "input": "Truck 1 stop",
+      "speech_act": "instruction",
+      "instructed_motion": "stop",
+      "observed_speed_mps": null,
+      "physical_stop_confirmed": false
+    },
+    {
+      "id": "alley_not_node",
+      "airport": "KLGA",
+      "input": "alley fifteen",
+      "named_area": "KLGA:AREA:Alley_15",
+      "exact_node_id": null,
+      "expected_position": null
+    },
+    {
+      "id": "bos_27_digits",
+      "airport": "KBOS",
+      "input": "runway 27",
+      "expected_kind": "runway_end",
+      "expected_candidates": [
+        "KBOS:END:27"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "bos_27_words",
+      "airport": "KBOS",
+      "input": "runway two seven",
+      "expected_kind": "runway_end",
+      "expected_candidates": [
+        "KBOS:END:27"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "bos_33_left_digits",
+      "airport": "KBOS",
+      "input": "runway 33 left",
+      "expected_kind": "runway_end",
+      "expected_candidates": [
+        "KBOS:END:33L"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "bos_33_missing_suffix_digits",
+      "airport": "KBOS",
+      "input": "runway 33",
+      "expected_kind": "runway_end",
+      "expected_candidates": [
+        "KBOS:END:33L",
+        "KBOS:END:33R"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "bos_33_missing_suffix_words",
+      "airport": "KBOS",
+      "input": "runway three three",
+      "expected_kind": "runway_end",
+      "expected_candidates": [
+        "KBOS:END:33L",
+        "KBOS:END:33R"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "bos_15_missing_suffix",
+      "airport": "KBOS",
+      "input": "runway 15",
+      "expected_kind": "runway_end",
+      "expected_candidates": [
+        "KBOS:END:15L",
+        "KBOS:END:15R"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "bos_delta_not_delta_one",
+      "airport": "KBOS",
+      "input": "delta",
+      "expected_kind": "taxiway",
+      "expected_candidates": [
+        "KBOS:TWY:D"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "bos_delta_one_digits",
+      "airport": "KBOS",
+      "input": "delta 1",
+      "expected_kind": "taxiway",
+      "expected_candidates": [
+        "KBOS:TWY:D1"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "bos_delta_two",
+      "airport": "KBOS",
+      "input": "delta two",
+      "expected_kind": "taxiway",
+      "expected_candidates": [
+        "KBOS:TWY:D2"
+      ],
+      "expected_position": null
+    },
+    {
+      "id": "cross_airport_D2",
+      "airport": "KLGA",
+      "input": "delta two",
+      "expected_kind": "taxiway",
+      "expected_candidates": [],
+      "expected_position": null
+    },
+    {
+      "id": "cross_airport_33L",
+      "airport": "KLGA",
+      "input": "runway 33 left",
+      "expected_kind": "runway_end",
+      "expected_candidates": [],
+      "expected_position": null
+    }
+  ]
+}

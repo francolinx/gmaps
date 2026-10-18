@@ -1,0 +1,26 @@
+{
+ "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_00": {
+  "text": "American 505, runway 4, wind 1-7-0 at 1-9-er, cleared to land.",
+  "asr_s": 0.243
+ },
+ "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_01": {
+  "text": "Clear to land 4. American 505.",
+  "asr_s": 0.181
+ },
+ "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_02": {
+  "text": "American 505, go around, fly runway heading, climb and maintain 2000.",
+  "asr_s": 0.235
+ },
+ "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_03": {
+  "text": "Going around. American 505.",
+  "asr_s": 0.165
+ },
+ "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_04": {
+  "text": "Endeavour 1530 at Quebec, cross runway 4.",
+  "asr_s": 0.183
+ },
+ "SYN_KLGA_DEV3_12_N_GO_AROUND_THEN_CROSS_05": {
+  "text": "Cross 4 at Quebec, Endeavour 1530.",
+  "asr_s": 0.168
+ }
+}

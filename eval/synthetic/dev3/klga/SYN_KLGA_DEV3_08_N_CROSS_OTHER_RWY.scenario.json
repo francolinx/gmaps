@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "dev3",
+ "phrasing_pool": "C",
+ "template": "N_CROSS_OTHER_RWY",
+ "basis": "crossing a runway with no active operation",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9201,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "F",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Delta one zero niner, runway two two, wind one six zero at two zero, cleared to land.",
+   "id": "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two two, Delta one zero niner.",
+   "id": "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "American sixteen thirty three, at Romeo, cross runway three one.",
+   "id": "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross three one at Romeo, American sixteen thirty three.",
+   "id": "SYN_KLGA_DEV3_08_N_CROSS_OTHER_RWY_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

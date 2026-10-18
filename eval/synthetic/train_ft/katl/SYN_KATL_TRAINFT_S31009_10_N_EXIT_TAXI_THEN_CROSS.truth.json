@@ -1,0 +1,114 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31009_10_N_EXIT_TAXI_THEN_CROSS",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_10_N_EXIT_TAXI_THEN_CROSS_00",
+   "fields": {
+    "callsigns": [
+     "AAL1067"
+    ],
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "AAL1067",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_10_N_EXIT_TAXI_THEN_CROSS_01",
+   "fields": {
+    "callsigns": [
+     "AAL1067"
+    ],
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "AAL1067",
+    "runway": "8R",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_10_N_EXIT_TAXI_THEN_CROSS_02",
+   "fields": {
+    "callsigns": [
+     "AAL1067"
+    ],
+    "runway": null,
+    "instruction": "TAXI"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "AAL1067",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_10_N_EXIT_TAXI_THEN_CROSS_03",
+   "fields": {
+    "callsigns": [
+     "AAL1067"
+    ],
+    "runway": null,
+    "instruction": "TAXI"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "AAL1067",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": [
+     "L1"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_10_N_EXIT_TAXI_THEN_CROSS_04",
+   "fields": {
+    "callsigns": [
+     "FFT400"
+    ],
+    "runway": "8R",
+    "instruction": "CROSS"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "FFT400",
+    "runway": "8R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "E7"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31009_10_N_EXIT_TAXI_THEN_CROSS_05",
+   "fields": {
+    "callsigns": [
+     "FFT400"
+    ],
+    "runway": "8R",
+    "instruction": "CROSS"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "FFT400",
+    "runway": "8R",
+    "instruction": "CROSS",
+    "taxiways": [
+     "E7"
+    ]
+   }
+  }
+ ]
+}

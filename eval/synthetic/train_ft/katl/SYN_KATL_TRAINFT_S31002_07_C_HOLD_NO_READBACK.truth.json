@@ -1,0 +1,108 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31002_07_C_HOLD_NO_READBACK",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_07_C_HOLD_NO_READBACK_00",
+   "fields": {
+    "callsigns": [
+     "NKS305"
+    ],
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "NKS305",
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_07_C_HOLD_NO_READBACK_01",
+   "fields": {
+    "callsigns": [
+     "NKS305"
+    ],
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS305",
+    "runway": "9L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_07_C_HOLD_NO_READBACK_02",
+   "fields": {
+    "callsigns": [
+     "JBU415"
+    ],
+    "runway": "9L",
+    "instruction": "HOLD_SHORT"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "JBU415",
+    "runway": "9L",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_07_C_HOLD_NO_READBACK_03",
+   "fields": {
+    "callsigns": [
+     "JBU415"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "JBU415",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_07_C_HOLD_NO_READBACK_04",
+   "fields": {
+    "callsigns": [
+     "JBU415"
+    ],
+    "runway": null,
+    "instruction": "OTHER"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "JBU415",
+    "runway": null,
+    "instruction": "OTHER",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31002_07_C_HOLD_NO_READBACK_05",
+   "fields": {
+    "callsigns": [
+     "JBU415"
+    ],
+    "runway": "9L",
+    "instruction": "HOLD_SHORT"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "JBU415",
+    "runway": "9L",
+    "instruction": "HOLD_SHORT",
+    "taxiways": []
+   }
+  }
+ ]
+}

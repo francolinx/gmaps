@@ -1,0 +1,27 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_11_N_CLEAR_REPORT_THEN_CROSS",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "DAL2800",
+  "DAL7850",
+  "EDV1911",
+  "JBU2025",
+  "JBU2628",
+  "JBU2900",
+  "N1128N",
+  "N2656U",
+  "SWA2900",
+  "SWA6354"
+ ],
+ "realistic": [
+  "DAL1947",
+  "EDV1911",
+  "JBU2025",
+  "JBU2600",
+  "JBU2628",
+  "N2656U",
+  "SWA2900",
+  "UAL2000"
+ ]
+}

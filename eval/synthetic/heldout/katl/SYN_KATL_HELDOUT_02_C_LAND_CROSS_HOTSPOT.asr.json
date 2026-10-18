@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "You're at Niner 3 8, cleared to land runway 8L.",
+  "asr_s": 0.201
+ },
+ "SYN_KATL_HELDOUT_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "Clear to land 8 left, Spirit 9 or free 8.",
+  "asr_s": 0.176
+ },
+ "SYN_KATL_HELDOUT_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "Delta six niner at Delta cross runway eight left.",
+  "asr_s": 0.177
+ },
+ "SYN_KATL_HELDOUT_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Crossing runway 8, left is Delta, Delta 6-9.",
+  "asr_s": 0.189
+ }
+}

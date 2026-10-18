@@ -1,0 +1,26 @@
+{
+ "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_00": {
+  "text": "Delta 500, wind 1-8-0 at 1-8 gusts 2-8. Runway 4, cleared to land.",
+  "asr_s": 0.264
+ },
+ "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_01": {
+  "text": "Delta 500 roger, clear to land runway 4.",
+  "asr_s": 0.177
+ },
+ "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_02": {
+  "text": "The 500 go around, climb, and maintain 3,000.",
+  "asr_s": 0.191
+ },
+ "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_03": {
+  "text": "Delta 500 going around.",
+  "asr_s": 0.155
+ },
+ "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_04": {
+  "text": "Spirit 627 and Charlie cross runway 4 without delay.",
+  "asr_s": 0.178
+ },
+ "SYN_KLGA_HELDOUT3_12_N_GO_AROUND_THEN_CROSS_05": {
+  "text": "Crossing runway 4 at Charlie, Spirit 627.",
+  "asr_s": 0.176
+ }
+}

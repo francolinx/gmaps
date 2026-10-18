@@ -1,0 +1,143 @@
+{
+ "icao": "KORD",
+ "source": "outline_glyph_decode",
+ "about": "Graticule values drawn as outlines only, decoded by exact glyph shape against glyphs the same chart draws over its own text layer, and tied to the extracted grid lines by position (tools/airport_map/graticule.py). Not human-confirmed.",
+ "pdf_sha256": "e936b9b0a787042c522c0bb50b38837c08d628d78fb4ef876d816fda47fb44de",
+ "read_at": "2026-10-09T12:26:33-0400",
+ "confirmed_by": null,
+ "parallels": [
+  {
+   "value": "42°00'N",
+   "lat": 42.0,
+   "line_pt_y": 142.604,
+   "label_bbox": [
+    23.15,
+    139.94,
+    46.05,
+    144.97
+   ]
+  },
+  {
+   "value": "41°59'N",
+   "lat": 41.983333333333334,
+   "line_pt_y": 256.767,
+   "label_bbox": [
+    343.69,
+    254.14,
+    366.58,
+    259.16
+   ]
+  },
+  {
+   "value": "41°58'N",
+   "lat": 41.96666666666667,
+   "line_pt_y": 370.942,
+   "label_bbox": [
+    343.69,
+    368.3,
+    366.58,
+    373.32
+   ]
+  },
+  {
+   "value": "41°57'N",
+   "lat": 41.95,
+   "line_pt_y": 485.08,
+   "label_bbox": [
+    343.35,
+    482.0,
+    366.25,
+    487.02
+   ]
+  }
+ ],
+ "meridians": [
+  {
+   "value": "87°56'W",
+   "lon": -87.93333333333334,
+   "line_pt_x": 52.819,
+   "label_bbox": [
+    41.1,
+    48.18,
+    65.63,
+    53.12
+   ]
+  },
+  {
+   "value": "87°55'W",
+   "lon": -87.91666666666667,
+   "line_pt_x": 137.959,
+   "label_bbox": [
+    126.3,
+    48.18,
+    150.83,
+    53.12
+   ]
+  },
+  {
+   "value": "87°53'W",
+   "lon": -87.88333333333334,
+   "line_pt_x": 308.29,
+   "label_bbox": [
+    296.41,
+    162.23,
+    320.94,
+    167.17
+   ]
+  }
+ ],
+ "decode": {
+  "method": "exact glyph-shape match against glyphs the same chart draws over its own text layer",
+  "training": "this chart",
+  "training_glyphs": 1643,
+  "rule": "every glyph within 0.03 of a learned shape of one character, and at least 0.1 from any other character (Franco, Oct 9: unambiguous only)",
+  "per_value": [
+   {
+    "text": "87°53'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "87°54'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "87°55'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "87°56'W",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": 1.28
+   },
+   {
+    "text": "41°57'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "41°58'N",
+    "max_deviation": 0.01,
+    "min_margin_to_other_char": null
+   },
+   {
+    "text": "41°59'N",
+    "max_deviation": 0.0,
+    "min_margin_to_other_char": 1.27
+   },
+   {
+    "text": "42°00'N",
+    "max_deviation": 0.0,
+    "min_margin_to_other_char": null
+   }
+  ],
+  "distinct_shapes": 677,
+  "decoded_labels": 8,
+  "undecoded_groups": 0
+ },
+ "values_without_line": [
+  "no meridian line for 87°54'W"
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY_00": {
+  "text": "Endeavor 2800, number two, runway two two, cleared to land.",
+  "asr_s": 0.439,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.1212
+   },
+   {
+    "w": "2800,",
+    "p": 0.6689
+   },
+   {
+    "w": "number",
+    "p": 0.94
+   },
+   {
+    "w": "two,",
+    "p": 0.652
+   },
+   {
+    "w": "runway",
+    "p": 0.999
+   },
+   {
+    "w": "two",
+    "p": 0.9968
+   },
+   {
+    "w": "two,",
+    "p": 0.7614
+   },
+   {
+    "w": "cleared",
+    "p": 0.9886
+   },
+   {
+    "w": "to",
+    "p": 0.9641
+   },
+   {
+    "w": "land.",
+    "p": 0.938
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_16_RB_MISSING_RUNWAY_01": {
+  "text": "Roger, cleared to land, Endeavor 2800.",
+  "asr_s": 0.44,
+  "words": [
+   {
+    "w": "Roger,",
+    "p": 0.6707
+   },
+   {
+    "w": "cleared",
+    "p": 0.9903
+   },
+   {
+    "w": "to",
+    "p": 0.7494
+   },
+   {
+    "w": "land,",
+    "p": 0.9123
+   },
+   {
+    "w": "Endeavor",
+    "p": 0.8973
+   },
+   {
+    "w": "2800.",
+    "p": 0.9203
+   }
+  ]
+ }
+}

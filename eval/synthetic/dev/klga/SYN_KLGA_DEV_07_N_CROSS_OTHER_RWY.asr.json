@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV_07_N_CROSS_OTHER_RWY_00": {
+  "text": "Frontier 2203, runway 4 cleared to land.",
+  "asr_s": 0.206
+ },
+ "SYN_KLGA_DEV_07_N_CROSS_OTHER_RWY_01": {
+  "text": "Runway 4, cleared to land. Frontier 2203.",
+  "asr_s": 0.215
+ },
+ "SYN_KLGA_DEV_07_N_CROSS_OTHER_RWY_02": {
+  "text": "Frontier 2743, cross runway 31 at Romeo.",
+  "asr_s": 0.215
+ },
+ "SYN_KLGA_DEV_07_N_CROSS_OTHER_RWY_03": {
+  "text": "Cross runway 31 at Romeo, Frontier 2743.",
+  "asr_s": 0.211
+ }
+}

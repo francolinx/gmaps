@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KATL_HELDOUT_03_C_TKOF_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "C_TKOF_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7301,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "B1",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier two seventy eight, runway eight left, wind two seven zero at eight, cleared for takeoff.",
+   "id": "SYN_KATL_HELDOUT_03_C_TKOF_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared for takeoff runway eight left, Frontier two seventy eight.",
+   "id": "SYN_KATL_HELDOUT_03_C_TKOF_CROSS_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Frontier one two eight two, at Bravo one cross runway eight left.",
+   "id": "SYN_KATL_HELDOUT_03_C_TKOF_CROSS_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway eight left at Bravo one, Frontier one two eight two.",
+   "id": "SYN_KATL_HELDOUT_03_C_TKOF_CROSS_03"
+  }
+ ]
+}

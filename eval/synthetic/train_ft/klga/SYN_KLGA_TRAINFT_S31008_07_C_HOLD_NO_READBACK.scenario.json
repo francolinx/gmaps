@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31008_07_C_HOLD_NO_READBACK",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_HOLD_NO_READBACK",
+ "basis": "R7 hold short acknowledged with 'roger' only, read back requested later (3-7-2h, 2-4-3b)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31008,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "U",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Cessna niner five three one Whiskey, wind one eight zero at two one, runway four, cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31008_07_C_HOLD_NO_READBACK_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land four, Cessna niner five three one Whiskey.",
+   "id": "SYN_KLGA_TRAINFT_S31008_07_C_HOLD_NO_READBACK_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Endeavor two hundred two, hold short of runway four.",
+   "id": "SYN_KLGA_TRAINFT_S31008_07_C_HOLD_NO_READBACK_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Roger, Endeavor two hundred two.",
+   "id": "SYN_KLGA_TRAINFT_S31008_07_C_HOLD_NO_READBACK_03",
+   "speaker_ref": "b"
+  },
+  {
+   "t": 40,
+   "speaker": "ATC",
+   "text": "Endeavor two hundred two, read back hold instructions.",
+   "id": "SYN_KLGA_TRAINFT_S31008_07_C_HOLD_NO_READBACK_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 44,
+   "speaker": "PILOT",
+   "text": "Holding short runway four, Endeavor two hundred two.",
+   "id": "SYN_KLGA_TRAINFT_S31008_07_C_HOLD_NO_READBACK_05",
+   "speaker_ref": "b"
+  }
+ ]
+}

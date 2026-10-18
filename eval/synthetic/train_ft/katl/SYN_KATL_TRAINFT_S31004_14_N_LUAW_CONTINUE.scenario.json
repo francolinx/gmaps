@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31004_14_N_LUAW_CONTINUE",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_LUAW_CONTINUE",
+ "basis": "line up and wait; the arrival is told 'continue, traffic holding in position' (3-9-4c1), not cleared to land",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31004,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "L",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor fifteen twenty eight, runway two seven right, line up and wait. Traffic a Embraer one seventy five, five mile final.",
+   "id": "SYN_KATL_TRAINFT_S31004_14_N_LUAW_CONTINUE_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Endeavor fifteen twenty eight, line up and wait runway two seven right.",
+   "id": "SYN_KATL_TRAINFT_S31004_14_N_LUAW_CONTINUE_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "November seven two six two Uniform, runway two seven right, continue, traffic holding in position.",
+   "id": "SYN_KATL_TRAINFT_S31004_14_N_LUAW_CONTINUE_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "November seven two six two Uniform, continuing.",
+   "id": "SYN_KATL_TRAINFT_S31004_14_N_LUAW_CONTINUE_03",
+   "speaker_ref": "b"
+  },
+  {
+   "t": 30,
+   "speaker": "ATC",
+   "text": "Endeavor fifteen twenty eight, runway two seven right, wind two three zero at one four gusts two seven. Cleared for takeoff.",
+   "id": "SYN_KATL_TRAINFT_S31004_14_N_LUAW_CONTINUE_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 34,
+   "speaker": "PILOT",
+   "text": "Endeavor fifteen twenty eight, cleared for takeoff runway two seven right.",
+   "id": "SYN_KATL_TRAINFT_S31004_14_N_LUAW_CONTINUE_05",
+   "speaker_ref": "a"
+  }
+ ]
+}

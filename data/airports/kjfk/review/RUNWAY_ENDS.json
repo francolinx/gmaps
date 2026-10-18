@@ -1,0 +1,93 @@
+{
+ "icao": "KJFK",
+ "graticule_source": "outline_glyph_decode",
+ "fit": {
+  "fitted_on": "graticule intersections only",
+  "graticule_source": "outline_glyph_decode",
+  "control_points_n": 10,
+  "fit_rms_m": 0.071
+ },
+ "along_flag_m": 5.0,
+ "flagged_fit_problems": [],
+ "diagnosis": {},
+ "ends": [
+  {
+   "id": "04L",
+   "residual_m": 11.37,
+   "along_m": -1.0,
+   "across_m": 11.32
+  },
+  {
+   "id": "04R",
+   "residual_m": 25.18,
+   "along_m": -0.61,
+   "across_m": 25.17
+  },
+  {
+   "id": "13L",
+   "residual_m": 21.47,
+   "along_m": 0.27,
+   "across_m": -21.47
+  },
+  {
+   "id": "13R",
+   "residual_m": 21.51,
+   "along_m": 0.21,
+   "across_m": -21.51
+  },
+  {
+   "id": "22L",
+   "residual_m": 9.46,
+   "along_m": -0.95,
+   "across_m": -9.41
+  },
+  {
+   "id": "22R",
+   "residual_m": 26.53,
+   "along_m": -0.62,
+   "across_m": 26.52
+  },
+  {
+   "id": "31L",
+   "residual_m": 9.88,
+   "along_m": -0.44,
+   "across_m": -9.87
+  },
+  {
+   "id": "31R",
+   "residual_m": 18.35,
+   "along_m": 0.29,
+   "across_m": 18.34
+  }
+ ],
+ "runways": [
+  {
+   "runway": "04L/22R",
+   "nasr_length_ft": 12079,
+   "diagram_length_ft": 12085,
+   "length_diff_m": 1.8,
+   "bearing_diff_deg": 0.589
+  },
+  {
+   "runway": "04R/22L",
+   "nasr_length_ft": 8400,
+   "diagram_length_ft": 8405,
+   "length_diff_m": 1.4,
+   "bearing_diff_deg": 0.353
+  },
+  {
+   "runway": "13L/31R",
+   "nasr_length_ft": 10000,
+   "diagram_length_ft": 9999,
+   "length_diff_m": -0.2,
+   "bearing_diff_deg": -0.059
+  },
+  {
+   "runway": "13R/31L",
+   "nasr_length_ft": 14511,
+   "diagram_length_ft": 14512,
+   "length_diff_m": 0.4,
+   "bearing_diff_deg": -0.406
+  }
+ ]
+}

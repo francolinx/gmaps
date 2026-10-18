@@ -1,0 +1,18 @@
+{
+ "icao": "KATL",
+ "checked_at": "2026-10-09T00:03:58-0400",
+ "dpi": 300,
+ "ink_level": 250,
+ "tolerance_px": 1,
+ "pdf_sha256": "3c3182e793a411bbcfd2820844539a5a268e5b6bae81f2633bc07067b9198c23",
+ "faa_ink_px": 879732,
+ "reconstruction_ink_px": 877721,
+ "covered_pct": 99.818,
+ "extra_pct": 0.238,
+ "thresholds": {
+  "min_covered_pct": 99.0,
+  "max_extra_pct": 2.0
+ },
+ "pass": true,
+ "note": "faithful.svg uses original FAA styling; visible-text labels use a substitute font."
+}

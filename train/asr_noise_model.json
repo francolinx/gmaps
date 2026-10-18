@@ -1,0 +1,73 @@
+{
+ "learned_from": [
+  "dev",
+  "dev3",
+  "dev4"
+ ],
+ "never_from": [
+  "heldout3",
+  "heldout4",
+  "heldout5"
+ ],
+ "models": {
+  "unprompted": {
+   "pairs": 354,
+   "p_digits": {
+    "flight": 0.986,
+    "runway": 0.906,
+    "taxiway_number": 1.0,
+    "other": 0.858
+   },
+   "seen": {
+    "flight": 362,
+    "runway": 256,
+    "taxiway_number": 23,
+    "other": 162
+   },
+   "runway_format": {
+    "26L": 55,
+    "joined": 214,
+    "other": 51,
+    "spaced": 18
+   },
+   "word_subs": {
+    "cleared": {
+     "clear": 0.165
+    },
+    "uniform": {
+     "unifor": 0.25
+    },
+    "jetblue": {
+     "jet blue": 0.143
+    },
+    "foxtrot": {
+     "farkstraat": 0.4
+    }
+   }
+  },
+  "prompted": {
+   "pairs": 138,
+   "p_digits": {
+    "flight": 0.62,
+    "runway": 0.0,
+    "taxiway_number": 0.0,
+    "other": 0.043
+   },
+   "seen": {
+    "flight": 142,
+    "runway": 108,
+    "taxiway_number": 8,
+    "other": 70
+   },
+   "runway_format": {},
+   "word_subs": {
+    "cleared": {
+     "clear": 0.028
+    },
+    "gusts": {
+     "gust": 0.222
+    }
+   }
+  }
+ }
+}

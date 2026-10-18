@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT_05_C_LUAW_LAND_00": {
+  "text": "2175, line up and wait runway 9 and right.",
+  "asr_s": 0.185
+ },
+ "SYN_KATL_HELDOUT_05_C_LUAW_LAND_01": {
+  "text": "Line up and wait Niner right, Frontier 175.",
+  "asr_s": 0.181
+ },
+ "SYN_KATL_HELDOUT_05_C_LUAW_LAND_02": {
+  "text": "Endeavor 850, cleared to land runway 901.",
+  "asr_s": 0.181
+ },
+ "SYN_KATL_HELDOUT_05_C_LUAW_LAND_03": {
+  "text": "Clear to land 9 or right, Endeavor 8-15.",
+  "asr_s": 0.183
+ }
+}

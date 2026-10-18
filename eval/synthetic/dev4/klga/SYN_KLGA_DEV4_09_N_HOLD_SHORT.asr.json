@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV4_09_N_HOLD_SHORT_00": {
+  "text": "United 1151, runway 31, cleared to land.",
+  "asr_s": 0.184
+ },
+ "SYN_KLGA_DEV4_09_N_HOLD_SHORT_01": {
+  "text": "United 1151, Roger, cleared to land runway 31.",
+  "asr_s": 0.191
+ },
+ "SYN_KLGA_DEV4_09_N_HOLD_SHORT_02": {
+  "text": "Southwest 294, hold short of runway 31, traffic landing runway 31.",
+  "asr_s": 0.212
+ },
+ "SYN_KLGA_DEV4_09_N_HOLD_SHORT_03": {
+  "text": "Southwest 294, holding short of runway 31.",
+  "asr_s": 0.176
+ }
+}

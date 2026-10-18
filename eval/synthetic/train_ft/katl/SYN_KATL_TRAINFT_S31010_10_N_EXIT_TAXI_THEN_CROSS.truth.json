@@ -1,0 +1,118 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS",
+ "TRAINING_ONLY": true,
+ "transmissions": [
+  {
+   "id": "SYN_KATL_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_00",
+   "fields": {
+    "callsigns": [
+     "NKS557"
+    ],
+    "runway": "8L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "NKS557",
+    "runway": "8L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_01",
+   "fields": {
+    "callsigns": [
+     "NKS557"
+    ],
+    "runway": "8L",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "NKS557",
+    "runway": "8L",
+    "instruction": "LANDING_CLEARANCE",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_02",
+   "fields": {
+    "callsigns": [
+     "NKS557"
+    ],
+    "runway": null,
+    "instruction": "TAXI"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "NKS557",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": []
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_03",
+   "fields": {
+    "callsigns": [
+     "NKS557"
+    ],
+    "runway": null,
+    "instruction": "TAXI"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "NKS557",
+    "runway": null,
+    "instruction": "TAXI",
+    "taxiways": [
+     "W"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_04",
+   "fields": {
+    "callsigns": [
+     "N1666G"
+    ],
+    "runway": "8L",
+    "instruction": "CROSS"
+   },
+   "target": {
+    "speaker_role": "ATC",
+    "callsign": "N1666G",
+    "runway": "8L",
+    "instruction": "CROSS",
+    "taxiways": [
+     "N",
+     "G",
+     "D"
+    ]
+   }
+  },
+  {
+   "id": "SYN_KATL_TRAINFT_S31010_10_N_EXIT_TAXI_THEN_CROSS_05",
+   "fields": {
+    "callsigns": [
+     "N1666G"
+    ],
+    "runway": "8L",
+    "instruction": "CROSS"
+   },
+   "target": {
+    "speaker_role": "PILOT",
+    "callsign": "N1666G",
+    "runway": "8L",
+    "instruction": "CROSS",
+    "taxiways": [
+     "D",
+     "N",
+     "G"
+    ]
+   }
+  }
+ ]
+}

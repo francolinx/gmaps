@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_DEV3_03_C_TKOF_CROSS_00": {
+  "text": "United 1514, runway 22 at Delta, cleared for takeoff.",
+  "asr_s": 0.205
+ },
+ "SYN_KLGA_DEV3_03_C_TKOF_CROSS_01": {
+  "text": "Cleared for takeoff 2-2, United 15-14.",
+  "asr_s": 0.192
+ },
+ "SYN_KLGA_DEV3_03_C_TKOF_CROSS_02": {
+  "text": "Southwest 1878, cross runway 22 at Farkstraat.",
+  "asr_s": 0.196
+ },
+ "SYN_KLGA_DEV3_03_C_TKOF_CROSS_03": {
+  "text": "Cross 2-2 at Foxtrot, Southwest 1878.",
+  "asr_s": 0.197
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_TRAINFT_S31004_03_C_TKOF_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "C_TKOF_CROSS",
+ "basis": "R2 crossing vs active takeoff (3-7-2g1)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31004,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "E3",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit twenty four twenty seven, runway two six left, wind three two zero at one two gusts two seven, cleared for takeoff.",
+   "id": "SYN_KATL_TRAINFT_S31004_03_C_TKOF_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared for takeoff two six left, Spirit twenty four twenty seven.",
+   "id": "SYN_KATL_TRAINFT_S31004_03_C_TKOF_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "JetBlue ten eighty two, at Echo three cross runway two six left without delay.",
+   "id": "SYN_KATL_TRAINFT_S31004_03_C_TKOF_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross two six left at Echo three, JetBlue ten eighty two.",
+   "id": "SYN_KATL_TRAINFT_S31004_03_C_TKOF_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

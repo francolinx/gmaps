@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "N_CROSS_OTHER_RWY",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7301,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "N5",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Endeavor fourteen seventy five, cleared to land runway niner left.",
+   "id": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land niner left, Endeavor fourteen seventy five.",
+   "id": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Delta one three seven, at Bravo three cross runway two six right.",
+   "id": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway two six right at Bravo three, Delta one three seven.",
+   "id": "SYN_KATL_HELDOUT_06_N_CROSS_OTHER_RWY_03"
+  }
+ ]
+}

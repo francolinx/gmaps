@@ -1,0 +1,48 @@
+{
+ "id": "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7302,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "Q",
+  "hot_spot": "HS 2"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Delta seven four, cleared to land runway four.",
+   "id": "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land four, Delta seven four.",
+   "id": "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_01"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "Delta seven four is clear of four.",
+   "id": "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_02"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "United seven seven five, at Quebec cross runway four.",
+   "id": "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_03"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Crossing runway four at Quebec, United seven seven five.",
+   "id": "SYN_KLGA_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_04"
+  }
+ ]
+}

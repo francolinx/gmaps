@@ -1,0 +1,1312 @@
+{
+ "scenario": {
+  "id": "BOS_2026-06-20",
+  "title": "Logan, June 20, 2026 \u2014 takeoff clearance on 27 issued with a landing clearance active on intersecting 33L (NTSB DCA26LA242, Table 1)",
+  "airport": "KBOS",
+  "runways_in_use": {
+   "arrivals": "33L",
+   "departures": "27"
+  },
+  "position": "LCW (local control west), one frequency",
+  "t0_definition": "t=0 is 11:32:21 EDT (first row of Table 1).",
+  "expected_flags": [
+   {
+    "t": 82,
+    "rule": "takeoff_vs_crossing",
+    "runways": [
+     "27",
+     "33L"
+    ],
+    "a": "DAL2351 LANDING_CLEARANCE 33L t=14",
+    "b": "AAL3161 TAKEOFF_CLEARANCE 27 t=82",
+    "severity": "conflict",
+    "explain": "Runways 27 and 33L intersect. A takeoff authorization on 27 was issued 68 s after a landing authorization on 33L; both were live. Fires 62 s before the go-around call."
+   }
+  ]
+ },
+ "timeline": [
+  {
+   "t": 0,
+   "freq": "tower",
+   "text": "American 3161, runway 27, line up and wait. Traffic landing runway 33L.",
+   "event": {
+    "event_id": "ev00001",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "AAL3161"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "LUAW",
+    "raw_text": "American 3161, runway 27, line up and wait. Traffic landing runway 33L.",
+    "normalized_text": "RUNWAY 27 , LINE UP AND WAIT . TRAFFIC LANDING RUNWAY 33L .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#0",
+    "source_start_s": 0,
+    "source_end_s": null,
+    "event_time": 0,
+    "received_time": 0,
+    "runway": "27",
+    "runway_end_candidates": [
+     "KBOS:END:27"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": "TRAFFIC LANDING RUNWAY 33L",
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 0,
+   "freq": "tower",
+   "text": "Line up and wait runway 27, American 3161.",
+   "event": {
+    "event_id": "ev00002",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "AAL3161"
+    ],
+    "speaker_role": "PILOT",
+    "speech_act": "readback",
+    "kind": "LUAW",
+    "raw_text": "Line up and wait runway 27, American 3161.",
+    "normalized_text": "LINE UP AND WAIT RUNWAY 27 , .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#0",
+    "source_start_s": 0,
+    "source_end_s": null,
+    "event_time": 0,
+    "received_time": 0,
+    "runway": "27",
+    "runway_end_candidates": [
+     "KBOS:END:27"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 14,
+   "freq": "tower",
+   "text": "Delta 2351, runway 33L, cleared to land. Traffic holding on runway 27.",
+   "event": {
+    "event_id": "ev00003",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "DAL2351"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "LANDING_CLEARANCE",
+    "raw_text": "Delta 2351, runway 33L, cleared to land. Traffic holding on runway 27.",
+    "normalized_text": "RUNWAY 33L , CLEARED TO LAND . TRAFFIC HOLDING ON RUNWAY 27 .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#14",
+    "source_start_s": 14,
+    "source_end_s": null,
+    "event_time": 14,
+    "received_time": 14,
+    "runway": "33L",
+    "runway_end_candidates": [
+     "KBOS:END:33L"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": "TRAFFIC HOLDING ON RUNWAY 27",
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 14,
+   "freq": "tower",
+   "text": "Cleared to land 33L, Delta 2351.",
+   "event": {
+    "event_id": "ev00004",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "?2351"
+    ],
+    "speaker_role": "PILOT",
+    "speech_act": "readback",
+    "kind": "LANDING_CLEARANCE",
+    "raw_text": "Cleared to land 33L, Delta 2351.",
+    "normalized_text": "CLEARED TO LAND 33L , D .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#14",
+    "source_start_s": 14,
+    "source_end_s": null,
+    "event_time": 14,
+    "received_time": 14,
+    "runway": "33L",
+    "runway_end_candidates": [
+     "KBOS:END:33L"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 53,
+   "freq": "adsb",
+   "text": "AAL3161 positioned at the threshold of runway 27.",
+   "kind": "OBSERVATION"
+  },
+  {
+   "t": 72,
+   "freq": "adsb",
+   "text": "Tradewind 82 (PC-12) crossed the threshold of runway 33L and landed.",
+   "kind": "OBSERVATION"
+  },
+  {
+   "t": 82,
+   "freq": "tower",
+   "text": "American 3161, runway 27, cleared for takeoff.",
+   "event": {
+    "event_id": "ev00005",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "AAL3161"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "TAKEOFF_CLEARANCE",
+    "raw_text": "American 3161, runway 27, cleared for takeoff.",
+    "normalized_text": "RUNWAY 27 , CLEARED FOR TAKEOFF .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#82",
+    "source_start_s": 82,
+    "source_end_s": null,
+    "event_time": 82,
+    "received_time": 82,
+    "runway": "27",
+    "runway_end_candidates": [
+     "KBOS:END:27"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 85,
+   "freq": "tower",
+   "text": "Cleared for takeoff 27, American 3161.",
+   "event": {
+    "event_id": "ev00006",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "AAL3161"
+    ],
+    "speaker_role": "PILOT",
+    "speech_act": "readback",
+    "kind": "TAKEOFF_CLEARANCE",
+    "raw_text": "Cleared for takeoff 27, American 3161.",
+    "normalized_text": "CLEARED FOR TAKEOFF 27 , .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#85",
+    "source_start_s": 85,
+    "source_end_s": null,
+    "event_time": 85,
+    "received_time": 85,
+    "runway": "27",
+    "runway_end_candidates": [
+     "KBOS:END:27"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 85,
+   "freq": "adsb",
+   "text": "GPD82 crossed the intersection of runways 33L and 27.",
+   "kind": "OBSERVATION"
+  },
+  {
+   "t": 101,
+   "freq": "tower",
+   "text": "Tradewind 82, turn left on taxiway Tango, expedite, traffic on a one-and-a-quarter-mile final.",
+   "event": {
+    "event_id": "ev00007",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "GPD82"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "TAXI",
+    "raw_text": "Tradewind 82, turn left on taxiway Tango, expedite, traffic on a one-and-a-quarter-mile final.",
+    "normalized_text": "TURN LEFT ON T , EXPEDITE , TRAFFIC ON 1 AND QUARTER MILE FINAL .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#101",
+    "source_start_s": 101,
+    "source_end_s": null,
+    "event_time": 101,
+    "received_time": 101,
+    "runway": null,
+    "runway_end_candidates": [],
+    "route": [
+     "T"
+    ],
+    "route_surface_candidates": [
+     {
+      "word": "T",
+      "candidates": [
+       "KBOS:TWY:T"
+      ]
+     }
+    ],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.8,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null,
+    "route_check": [
+     {
+      "word": "T",
+      "taxiway_id": "KBOS:TWY:T",
+      "status": "no_crossing_data_in_draft_graph",
+      "crossings": []
+     }
+    ]
+   }
+  },
+  {
+   "t": 105,
+   "freq": "adsb",
+   "text": "AAL3161 velocity increased from zero, then back to zero 8 s later.",
+   "kind": "OBSERVATION"
+  },
+  {
+   "t": 119,
+   "freq": "tower",
+   "text": "Tradewind 82, continue on runway 27, turn left on taxiway Tango.",
+   "event": {
+    "event_id": "ev00008",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "GPD82"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "TAXI",
+    "raw_text": "Tradewind 82, continue on runway 27, turn left on taxiway Tango.",
+    "normalized_text": "CONTINUE ON RUNWAY 27 , TURN LEFT ON T .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#119",
+    "source_start_s": 119,
+    "source_end_s": null,
+    "event_time": 119,
+    "received_time": 119,
+    "runway": null,
+    "runway_end_candidates": [],
+    "route": [
+     "T"
+    ],
+    "route_surface_candidates": [
+     {
+      "word": "T",
+      "candidates": [
+       "KBOS:TWY:T"
+      ]
+     }
+    ],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.8,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": "ev00007",
+    "route_check": [
+     {
+      "word": "T",
+      "taxiway_id": "KBOS:TWY:T",
+      "status": "no_crossing_data_in_draft_graph",
+      "crossings": []
+     }
+    ]
+   }
+  },
+  {
+   "t": 130,
+   "freq": "tower",
+   "text": "Tradewind 82, additional taxi instructions.",
+   "event": {
+    "event_id": "ev00009",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "GPD82"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "unknown",
+    "kind": "OTHER",
+    "raw_text": "Tradewind 82, additional taxi instructions.",
+    "normalized_text": "ADDITIONAL TAXI INSTRUCTIONS .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#130",
+    "source_start_s": 130,
+    "source_end_s": null,
+    "event_time": 130,
+    "received_time": 130,
+    "runway": null,
+    "runway_end_candidates": [],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "residue",
+    "uncertainty": {
+     "confidence_heuristic": 0.3,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 132,
+   "freq": "adsb",
+   "text": "GPD82 exited runway 27 onto taxiway T.",
+   "kind": "OBSERVATION"
+  },
+  {
+   "t": 136,
+   "freq": "adsb",
+   "text": "AAL3161 velocity began to increase (takeoff roll).",
+   "kind": "OBSERVATION"
+  },
+  {
+   "t": 144,
+   "freq": "tower",
+   "text": "Delta 2351 is going around, due to the American.",
+   "event": {
+    "event_id": "ev00010",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "DAL2351"
+    ],
+    "speaker_role": "PILOT",
+    "speech_act": "report",
+    "kind": "GO_AROUND",
+    "raw_text": "Delta 2351 is going around, due to the American.",
+    "normalized_text": "IS GOING AROUND , DUE TO AMERICAN .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#144",
+    "source_start_s": 144,
+    "source_end_s": null,
+    "event_time": 144,
+    "received_time": 144,
+    "runway": null,
+    "runway_end_candidates": [],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.9,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 149,
+   "freq": "tower",
+   "text": "American 3161, where are you going?",
+   "event": {
+    "event_id": "ev00011",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "AAL3161"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "unknown",
+    "kind": "OTHER",
+    "raw_text": "American 3161, where are you going?",
+    "normalized_text": "WHERE ARE YOU GOING ?",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#149",
+    "source_start_s": 149,
+    "source_end_s": null,
+    "event_time": 149,
+    "received_time": 149,
+    "runway": null,
+    "runway_end_candidates": [],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "residue",
+    "uncertainty": {
+     "confidence_heuristic": 0.3,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 164,
+   "freq": "tower",
+   "text": "Delta 2351, go-around instructions.",
+   "event": {
+    "event_id": "ev00012",
+    "airport_icao": "KBOS",
+    "actor_candidates": [
+     "DAL2351"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "GO_AROUND",
+    "raw_text": "Delta 2351, go-around instructions.",
+    "normalized_text": "GO AROUND INSTRUCTIONS .",
+    "asr_repairs_applied": [],
+    "source_id": "BOS_2026-06-20#164",
+    "source_start_s": 164,
+    "source_end_s": null,
+    "event_time": 164,
+    "received_time": 164,
+    "runway": null,
+    "runway_end_candidates": [],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.9,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  }
+ ],
+ "airport": {
+  "icao": "KBOS",
+  "dataset_version": "2026-10-03.draft2",
+  "status": "draft, expert review pending; topology review only"
+ },
+ "events": [
+  {
+   "event_id": "ev00001",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "AAL3161"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "LUAW",
+   "raw_text": "American 3161, runway 27, line up and wait. Traffic landing runway 33L.",
+   "normalized_text": "RUNWAY 27 , LINE UP AND WAIT . TRAFFIC LANDING RUNWAY 33L .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#0",
+   "source_start_s": 0,
+   "source_end_s": null,
+   "event_time": 0,
+   "received_time": 0,
+   "runway": "27",
+   "runway_end_candidates": [
+    "KBOS:END:27"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": "TRAFFIC LANDING RUNWAY 33L",
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00002",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "AAL3161"
+   ],
+   "speaker_role": "PILOT",
+   "speech_act": "readback",
+   "kind": "LUAW",
+   "raw_text": "Line up and wait runway 27, American 3161.",
+   "normalized_text": "LINE UP AND WAIT RUNWAY 27 , .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#0",
+   "source_start_s": 0,
+   "source_end_s": null,
+   "event_time": 0,
+   "received_time": 0,
+   "runway": "27",
+   "runway_end_candidates": [
+    "KBOS:END:27"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00003",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "DAL2351"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "LANDING_CLEARANCE",
+   "raw_text": "Delta 2351, runway 33L, cleared to land. Traffic holding on runway 27.",
+   "normalized_text": "RUNWAY 33L , CLEARED TO LAND . TRAFFIC HOLDING ON RUNWAY 27 .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#14",
+   "source_start_s": 14,
+   "source_end_s": null,
+   "event_time": 14,
+   "received_time": 14,
+   "runway": "33L",
+   "runway_end_candidates": [
+    "KBOS:END:33L"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": "TRAFFIC HOLDING ON RUNWAY 27",
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00004",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "?2351"
+   ],
+   "speaker_role": "PILOT",
+   "speech_act": "readback",
+   "kind": "LANDING_CLEARANCE",
+   "raw_text": "Cleared to land 33L, Delta 2351.",
+   "normalized_text": "CLEARED TO LAND 33L , D .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#14",
+   "source_start_s": 14,
+   "source_end_s": null,
+   "event_time": 14,
+   "received_time": 14,
+   "runway": "33L",
+   "runway_end_candidates": [
+    "KBOS:END:33L"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00005",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "AAL3161"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "TAKEOFF_CLEARANCE",
+   "raw_text": "American 3161, runway 27, cleared for takeoff.",
+   "normalized_text": "RUNWAY 27 , CLEARED FOR TAKEOFF .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#82",
+   "source_start_s": 82,
+   "source_end_s": null,
+   "event_time": 82,
+   "received_time": 82,
+   "runway": "27",
+   "runway_end_candidates": [
+    "KBOS:END:27"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00006",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "AAL3161"
+   ],
+   "speaker_role": "PILOT",
+   "speech_act": "readback",
+   "kind": "TAKEOFF_CLEARANCE",
+   "raw_text": "Cleared for takeoff 27, American 3161.",
+   "normalized_text": "CLEARED FOR TAKEOFF 27 , .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#85",
+   "source_start_s": 85,
+   "source_end_s": null,
+   "event_time": 85,
+   "received_time": 85,
+   "runway": "27",
+   "runway_end_candidates": [
+    "KBOS:END:27"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00007",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "GPD82"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "TAXI",
+   "raw_text": "Tradewind 82, turn left on taxiway Tango, expedite, traffic on a one-and-a-quarter-mile final.",
+   "normalized_text": "TURN LEFT ON T , EXPEDITE , TRAFFIC ON 1 AND QUARTER MILE FINAL .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#101",
+   "source_start_s": 101,
+   "source_end_s": null,
+   "event_time": 101,
+   "received_time": 101,
+   "runway": null,
+   "runway_end_candidates": [],
+   "route": [
+    "T"
+   ],
+   "route_surface_candidates": [
+    {
+     "word": "T",
+     "candidates": [
+      "KBOS:TWY:T"
+     ]
+    }
+   ],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.8,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null,
+   "route_check": [
+    {
+     "word": "T",
+     "taxiway_id": "KBOS:TWY:T",
+     "status": "no_crossing_data_in_draft_graph",
+     "crossings": []
+    }
+   ]
+  },
+  {
+   "event_id": "ev00008",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "GPD82"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "TAXI",
+   "raw_text": "Tradewind 82, continue on runway 27, turn left on taxiway Tango.",
+   "normalized_text": "CONTINUE ON RUNWAY 27 , TURN LEFT ON T .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#119",
+   "source_start_s": 119,
+   "source_end_s": null,
+   "event_time": 119,
+   "received_time": 119,
+   "runway": null,
+   "runway_end_candidates": [],
+   "route": [
+    "T"
+   ],
+   "route_surface_candidates": [
+    {
+     "word": "T",
+     "candidates": [
+      "KBOS:TWY:T"
+     ]
+    }
+   ],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.8,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": "ev00007",
+   "route_check": [
+    {
+     "word": "T",
+     "taxiway_id": "KBOS:TWY:T",
+     "status": "no_crossing_data_in_draft_graph",
+     "crossings": []
+    }
+   ]
+  },
+  {
+   "event_id": "ev00009",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "GPD82"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "unknown",
+   "kind": "OTHER",
+   "raw_text": "Tradewind 82, additional taxi instructions.",
+   "normalized_text": "ADDITIONAL TAXI INSTRUCTIONS .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#130",
+   "source_start_s": 130,
+   "source_end_s": null,
+   "event_time": 130,
+   "received_time": 130,
+   "runway": null,
+   "runway_end_candidates": [],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "residue",
+   "uncertainty": {
+    "confidence_heuristic": 0.3,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00010",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "DAL2351"
+   ],
+   "speaker_role": "PILOT",
+   "speech_act": "report",
+   "kind": "GO_AROUND",
+   "raw_text": "Delta 2351 is going around, due to the American.",
+   "normalized_text": "IS GOING AROUND , DUE TO AMERICAN .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#144",
+   "source_start_s": 144,
+   "source_end_s": null,
+   "event_time": 144,
+   "received_time": 144,
+   "runway": null,
+   "runway_end_candidates": [],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.9,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00011",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "AAL3161"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "unknown",
+   "kind": "OTHER",
+   "raw_text": "American 3161, where are you going?",
+   "normalized_text": "WHERE ARE YOU GOING ?",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#149",
+   "source_start_s": 149,
+   "source_end_s": null,
+   "event_time": 149,
+   "received_time": 149,
+   "runway": null,
+   "runway_end_candidates": [],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "residue",
+   "uncertainty": {
+    "confidence_heuristic": 0.3,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00012",
+   "airport_icao": "KBOS",
+   "actor_candidates": [
+    "DAL2351"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "GO_AROUND",
+   "raw_text": "Delta 2351, go-around instructions.",
+   "normalized_text": "GO AROUND INSTRUCTIONS .",
+   "asr_repairs_applied": [],
+   "source_id": "BOS_2026-06-20#164",
+   "source_start_s": 164,
+   "source_end_s": null,
+   "event_time": 164,
+   "received_time": 164,
+   "runway": null,
+   "runway_end_candidates": [],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.9,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  }
+ ],
+ "reservations": [
+  {
+   "reservation_id": "r0001",
+   "callsign": "AAL3161",
+   "type": "LUAW",
+   "runway_end": "27",
+   "physical": "KBOS:RWY:09-27",
+   "physical_candidates": [
+    "KBOS:RWY:09-27"
+   ],
+   "t": 0,
+   "event_id": "ev00001",
+   "status": "released",
+   "ack": "acknowledged",
+   "released_at": 82,
+   "released_by": "takeoff clearance issued",
+   "advisory": "TRAFFIC LANDING RUNWAY 33L",
+   "basis": "authorized",
+   "at": null
+  },
+  {
+   "reservation_id": "r0002",
+   "callsign": "DAL2351",
+   "type": "LANDING",
+   "runway_end": "33L",
+   "physical": "KBOS:RWY:15R-33L",
+   "physical_candidates": [
+    "KBOS:RWY:15R-33L"
+   ],
+   "t": 14,
+   "event_id": "ev00003",
+   "status": "released",
+   "ack": "acknowledged",
+   "released_at": 144,
+   "released_by": "go-around reported",
+   "advisory": "TRAFFIC HOLDING ON RUNWAY 27",
+   "basis": "authorized",
+   "at": null
+  },
+  {
+   "reservation_id": "r0003",
+   "callsign": "AAL3161",
+   "type": "TAKEOFF",
+   "runway_end": "27",
+   "physical": "KBOS:RWY:09-27",
+   "physical_candidates": [
+    "KBOS:RWY:09-27"
+   ],
+   "t": 82,
+   "event_id": "ev00005",
+   "status": "active",
+   "ack": "acknowledged",
+   "released_at": null,
+   "released_by": null,
+   "advisory": null,
+   "basis": "authorized",
+   "at": null
+  }
+ ],
+ "warnings": [
+  {
+   "warning_id": "w0001",
+   "rule_id": "R4",
+   "name": "takeoff vs landing, intersecting runways",
+   "severity": "CONFLICT",
+   "runway": [
+    "KBOS:RWY:09-27",
+    "KBOS:RWY:15R-33L"
+   ],
+   "t_fired": 82,
+   "status": "cleared",
+   "cleared_at": 144,
+   "cleared_by": "go-around reported",
+   "authorization_a": {
+    "callsign": "DAL2351",
+    "type": "LANDING",
+    "runway_end": "33L",
+    "physical_runway": "KBOS:RWY:15R-33L",
+    "t_issued": 14,
+    "event_id": "ev00003",
+    "acknowledged": "acknowledged"
+   },
+   "authorization_b": {
+    "callsign": "AAL3161",
+    "type": "TAKEOFF",
+    "runway_end": "27",
+    "physical_runway": "KBOS:RWY:09-27",
+    "t_issued": 82,
+    "event_id": "ev00005",
+    "acknowledged": "pending"
+   },
+   "state_snapshot": {
+    "DAL2351": {
+     "authorized": "landing clearance, rwy 33L",
+     "acknowledged": "read back: landing clearance, rwy 33L",
+     "reported": null,
+     "inferred": null,
+     "observed": null
+    },
+    "AAL3161": {
+     "authorized": "takeoff clearance, rwy 27",
+     "acknowledged": "read back: luaw, rwy 27",
+     "reported": null,
+     "inferred": null,
+     "observed": "AAL3161 positioned at the threshold of runway 27. [adsb]"
+    }
+   },
+   "explain": "Runways 33L and 27 intersect (draft graph node KBOS:N:RWY09-27_RWY15R-33L). A takeoff authorization for AAL3161 was recorded at t=82 while a landing authorization for DAL2351 (t=14) is still live; no traffic information was included in the second clearance.",
+   "what_would_clear_it": "DAL2351 or AAL3161 authorization released (go-around, takeoff cancelled and acknowledged, operation complete)",
+   "cite": "JO 7110.65BB 3-9 intersecting runway operations; 3-10-4",
+   "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+   "graph_basis": "KBOS:N:RWY09-27_RWY15R-33L"
+  }
+ ],
+ "notes": [
+  {
+   "t": 14,
+   "event_id": "ev00004",
+   "note": "abbreviated callsign 2351 resolved to DAL2351 (most recent match; heuristic)"
+  },
+  {
+   "t": 101,
+   "event_id": "ev00007",
+   "note": "route words T: no reviewed runway-crossing data in the draft graph; hold coverage not checkable (unresolved, not 'clear')"
+  },
+  {
+   "t": 119,
+   "event_id": "ev00008",
+   "note": "route words T: no reviewed runway-crossing data in the draft graph; hold coverage not checkable (unresolved, not 'clear')"
+  },
+  {
+   "t": 164,
+   "event_id": "ev00012",
+   "note": "go-around for DAL2351: landing authorization already released"
+  }
+ ],
+ "actors": {
+  "AAL3161": {
+   "authorized": [
+    {
+     "value": "luaw, rwy 27",
+     "t": 0,
+     "event_id": "ev00001"
+    },
+    {
+     "value": "takeoff clearance, rwy 27",
+     "t": 82,
+     "event_id": "ev00005"
+    }
+   ],
+   "acknowledged": [
+    {
+     "value": "read back: luaw, rwy 27",
+     "t": 0,
+     "event_id": "ev00002"
+    },
+    {
+     "value": "read back: takeoff clearance, rwy 27",
+     "t": 85,
+     "event_id": "ev00006"
+    }
+   ],
+   "reported": [],
+   "inferred": [],
+   "observed": [
+    {
+     "value": "AAL3161 positioned at the threshold of runway 27. [adsb]",
+     "t": 53,
+     "event_id": null
+    },
+    {
+     "value": "AAL3161 velocity increased from zero, then back to zero 8 s later. [adsb]",
+     "t": 105,
+     "event_id": null
+    },
+    {
+     "value": "AAL3161 velocity began to increase (takeoff roll). [adsb]",
+     "t": 136,
+     "event_id": null
+    }
+   ]
+  },
+  "DAL2351": {
+   "authorized": [
+    {
+     "value": "landing clearance, rwy 33L",
+     "t": 14,
+     "event_id": "ev00003"
+    },
+    {
+     "value": "go around",
+     "t": 164,
+     "event_id": "ev00012"
+    }
+   ],
+   "acknowledged": [
+    {
+     "value": "read back: landing clearance, rwy 33L",
+     "t": 14,
+     "event_id": "ev00004"
+    }
+   ],
+   "reported": [
+    {
+     "value": "go around",
+     "t": 144,
+     "event_id": "ev00010"
+    }
+   ],
+   "inferred": [],
+   "observed": []
+  },
+  "GPD82": {
+   "authorized": [
+    {
+     "value": "taxi, via T",
+     "t": 101,
+     "event_id": "ev00007"
+    },
+    {
+     "value": "taxi, via T",
+     "t": 119,
+     "event_id": "ev00008"
+    }
+   ],
+   "acknowledged": [],
+   "reported": [],
+   "inferred": [],
+   "observed": [
+    {
+     "value": "Tradewind 82 (PC-12) crossed the threshold of runway 33L and landed. [adsb]",
+     "t": 72,
+     "event_id": null
+    },
+    {
+     "value": "GPD82 crossed the intersection of runways 33L and 27. [adsb]",
+     "t": 85,
+     "event_id": null
+    },
+    {
+     "value": "GPD82 exited runway 27 onto taxiway T. [adsb]",
+     "t": 132,
+     "event_id": null
+    }
+   ]
+  }
+ },
+ "claim_limit": "Recorded authorizations and open obligations only; no prevention claims."
+}

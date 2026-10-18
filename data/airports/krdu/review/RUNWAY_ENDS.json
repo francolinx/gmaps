@@ -1,0 +1,82 @@
+{
+ "icao": "KRDU",
+ "graticule_source": "outline_glyph_decode",
+ "fit": {
+  "fitted_on": "graticule intersections only",
+  "graticule_source": "outline_glyph_decode",
+  "control_points_n": 4,
+  "fit_rms_m": 0.0
+ },
+ "along_flag_m": 5.0,
+ "flagged_fit_problems": [
+  "05L",
+  "14",
+  "32"
+ ],
+ "diagnosis": {
+  "05L": "FIT PROBLEM: the error is not explained by this runway being drawn short or long",
+  "14": "FIT PROBLEM: the error is not explained by this runway being drawn short or long",
+  "32": "FIT PROBLEM: the error is not explained by this runway being drawn short or long"
+ },
+ "ends": [
+  {
+   "id": "05L",
+   "residual_m": 7.88,
+   "along_m": 5.63,
+   "across_m": 5.51
+  },
+  {
+   "id": "05R",
+   "residual_m": 10.83,
+   "along_m": -1.09,
+   "across_m": 10.78
+  },
+  {
+   "id": "14",
+   "residual_m": 48.75,
+   "along_m": 45.28,
+   "across_m": -18.04
+  },
+  {
+   "id": "23L",
+   "residual_m": 8.76,
+   "along_m": 3.09,
+   "across_m": -8.2
+  },
+  {
+   "id": "23R",
+   "residual_m": 8.77,
+   "along_m": 2.1,
+   "across_m": -8.52
+  },
+  {
+   "id": "32",
+   "residual_m": 30.15,
+   "along_m": 22.19,
+   "across_m": 20.42
+  }
+ ],
+ "runways": [
+  {
+   "runway": "05L/23R",
+   "nasr_length_ft": 10000,
+   "diagram_length_ft": 9975,
+   "length_diff_m": -7.5,
+   "bearing_diff_deg": -0.057
+  },
+  {
+   "runway": "05R/23L",
+   "nasr_length_ft": 7500,
+   "diagram_length_ft": 7493,
+   "length_diff_m": -2.0,
+   "bearing_diff_deg": 0.065
+  },
+  {
+   "runway": "14/32",
+   "nasr_length_ft": 3570,
+   "diagram_length_ft": 3349,
+   "length_diff_m": -67.4,
+   "bearing_diff_deg": 0.134
+  }
+ ]
+}

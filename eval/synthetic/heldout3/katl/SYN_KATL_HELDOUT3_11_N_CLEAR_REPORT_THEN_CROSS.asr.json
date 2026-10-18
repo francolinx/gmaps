@@ -1,0 +1,22 @@
+{
+ "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Spirit 801, wind 010 at 10 gusts 21. Runway 8 right, cleared to land.",
+  "asr_s": 0.242
+ },
+ "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "Spirit 800-1 roger, cleared to land runway 8 right.",
+  "asr_s": 0.199
+ },
+ "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Spirit 801, clear runway 8, right at Alpha 3.",
+  "asr_s": 0.195
+ },
+ "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "Spirit 1074 at Echo Cross Runway 8, right without delay.",
+  "asr_s": 0.198
+ },
+ "SYN_KATL_HELDOUT3_11_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Crossing runway 8, RIDED ECHO, SPIRIT 1074.",
+  "asr_s": 0.208
+ }
+}

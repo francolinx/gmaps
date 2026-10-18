@@ -1,0 +1,16 @@
+# demo/run_track.sh vllm — captured on the Spark, server 127.0.0.1:8001 (run gmaps-parser-4b-20261017-034510). SIMULATED data.
+
+--- vLLM server on http://127.0.0.1:8001/v1
+  base <- /base
+  gmaps-parser <- /adapter
+
+--- serve command (one 4B base + the LoRA adapter, 0.15 of GPU memory)
+    nohup timeout "${HOURS}h" docker run --rm --name "$NAME" --gpus all -p 127.0.0.1:$PORT:8000 \
+      -v "$BASE":/base:ro -v "$RUN/adapter":/adapter:ro \
+      vllm/vllm-openai:v0.27.1 --model /base --served-model-name base --enable-lora --lora-modules gmaps-parser=/adapter --max-lora-rank 16 \
+      --max-model-len 8192 --gpu-memory-utilization 0.15 --enable-auto-tool-choice --tool-call-parser hermes \
+      > "$LOG" 2>&1 &
+
+--- latency (one request each)
+  base             106 ms  completion_tokens=2
+  gmaps-parser     110 ms  completion_tokens=2

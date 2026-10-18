@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_TRAINFT_S31009_09_N_HOLD_SHORT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "train_ft",
+ "phrasing_pool": "C (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_HOLD_SHORT",
+ "basis": "hold short, read back",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 31009,
+ "context": {
+  "runway": "13-31",
+  "taxiway": "R",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only. TRAINING split (text only, no TTS); never used for evaluation.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest niner six five, runway three one cleared to land.",
+   "id": "SYN_KLGA_TRAINFT_S31009_09_N_HOLD_SHORT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land three one, Southwest niner six five.",
+   "id": "SYN_KLGA_TRAINFT_S31009_09_N_HOLD_SHORT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Bonanza six seven zero seven Kilo, hold short of runway three one.",
+   "id": "SYN_KLGA_TRAINFT_S31009_09_N_HOLD_SHORT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Holding short runway three one, Bonanza six seven zero seven Kilo.",
+   "id": "SYN_KLGA_TRAINFT_S31009_09_N_HOLD_SHORT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

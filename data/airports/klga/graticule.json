@@ -1,0 +1,9 @@
+{
+ "icao": "KLGA",
+ "about": "Graticule values printed on the FAA airport diagram as outline lettering only (no text layer), so they cannot be extracted automatically. Values transcribed from the chart and confirmed by Franco (Oct 8). Line positions are extracted automatically (class graticule_line); each value is tied to its line by position.",
+ "confirmed_by": "Franco",
+ "confirmed_at": "2026-10-08",
+ "pdf_sha256": "99951faddb8779db57ba617e6f136338a3df6df4a37dc300a749d7dd3af54b93",
+ "parallels": [{"position": "top", "value": "40°47'N", "lat": 40.78333333333333}, {"position": "bottom", "value": "40°46'N", "lat": 40.766666666666666}],
+ "meridians": [{"position": "left", "value": "73°53'W", "lon": -73.88333333333334}, {"position": "right", "value": "73°52'W", "lon": -73.86666666666666}]
+}

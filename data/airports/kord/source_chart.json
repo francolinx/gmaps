@@ -1,0 +1,39 @@
+{
+ "id": "ORD-FAA-2610",
+ "kind": "faa_diagram",
+ "title": "FAA Chicago O'Hare Intl airport diagram, cycle 2610, 00166AD.PDF",
+ "uri": "https://aeronav.faa.gov/d-tpp/2610/00166AD.PDF",
+ "local_path": "sources/ord_faa_2610_00166AD.pdf",
+ "sha256": "e936b9b0a787042c522c0bb50b38837c08d628d78fb4ef876d816fda47fb44de",
+ "retrieved_on": "2026-10-09",
+ "effective_from": "2026-10-01",
+ "effective_to": "2026-10-29",
+ "dtpp_cycle": "2610",
+ "dtpp_metafile": "https://aeronav.faa.gov/d-tpp/2610/xml_data/d-TPP_Metafile.xml",
+ "apd_record": {
+  "chartseq": "70000",
+  "chart_code": "APD",
+  "chart_name": "AIRPORT DIAGRAM",
+  "useraction": "",
+  "pdf_name": "00166AD.PDF",
+  "cn_flg": "N",
+  "cnsection": "",
+  "cnpage": "",
+  "bvsection": "",
+  "bvpage": "202",
+  "procuid": "765",
+  "two_colored": "Y",
+  "civil": "C",
+  "faanfd18": "",
+  "copter": "",
+  "amdtnum": "",
+  "amdtdate": ""
+ },
+ "airport": {
+  "ID": "CHICAGO O'HARE INTL",
+  "apt_ident": "ORD",
+  "icao_ident": "KORD",
+  "alnum": "166"
+ },
+ "chart_code": null
+}

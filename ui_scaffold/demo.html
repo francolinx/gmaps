@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>GMAPS · one-page demo (SIMULATED)</title>
+<style>
+/* One-page demo for a general audience. Renders the same timeline JSON as index.html; computes nothing about traffic.
+   Left = the radio as it is today. Right = the same radio with GMAPS. Everything here is a FICTIONAL, scripted scenario. */
+:root{
+  /* GMAPS look (Oct 18): one token set for both pages; semantic colours kept for conflict / caution / ok */
+  --bg:#0f1115; --panel:#171a21; --panel2:#1d2129; --line:#2a3140; --ink:#eef1f5; --dim:#a3adbd; --faint:#6b7585;
+  --gmaps:#2dd4bf; --human:#e2b43a; --conflict:#ff4d4f; --caution:#f5a524; --look:#fb923c; --ok:#34d399; --unav:#a78bfa;
+  --air:#60a5fa; --veh:#f59e0b;
+  --rwy:#2b3038; --twy:#1f4d57; --zone:rgba(255,77,79,.10); --zoneline:rgba(255,77,79,.55); --hold:#f5a524;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{display:flex;flex-direction:column;min-height:100%}
+button,select{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font:inherit;cursor:pointer}
+button:hover,select:hover{border-color:#3a4354}
+header{display:flex;gap:14px;align-items:center;padding:12px 18px;border-bottom:1px solid var(--human);flex-wrap:wrap}
+header h1{font-size:20px;margin:0;letter-spacing:.06em;color:var(--gmaps)}
+header h1 small{color:var(--dim)}
+header h1 small{font-weight:400;color:var(--dim);letter-spacing:0;font-size:15px;margin-left:10px}
+.badge{font:700 12px/1 var(--mono);padding:6px 12px;border-radius:999px;border:1px solid rgba(245,165,36,.45);color:var(--caution);background:rgba(245,165,36,.08);letter-spacing:.04em}
+.badge.hist{color:var(--gmaps);border-color:rgba(45,212,191,.45);background:rgba(45,212,191,.08)}
+.mapnote{padding:18px;color:var(--dim);font-size:15px}
+.ico{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.22em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ico.big{width:34px;height:34px;stroke-width:1.8}
+.who .ico{width:1.4em;height:1.4em;vertical-align:-.35em;margin-right:4px}
+.tile .hdr{display:flex;align-items:center;gap:10px}
+.tile .hdr .v{margin-top:0}
+.tx.now .plain{display:block} .tx .plain{display:none}
+.tx .said{font-size:17px}
+details.why{margin-top:6px} details.why summary{cursor:pointer;font:12px var(--mono);color:var(--dim)} details.why .small{margin-top:4px}
+@keyframes pulse{0%,100%{box-shadow:inset 4px 0 0 var(--conflict),0 0 0 0 rgba(255,77,79,0)}50%{box-shadow:inset 4px 0 0 var(--conflict),0 0 0 6px rgba(255,77,79,.25)}}
+.tile.CONFLICT{animation:pulse 1.2s ease-in-out infinite}
+.pickers{margin-left:auto;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.pickers label{color:var(--dim);font-size:13px}
+select{max-width:420px}
+.story{padding:14px 18px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--panel),var(--bg))}
+.story .t{font:700 14px var(--mono);color:var(--dim);letter-spacing:.08em;text-transform:uppercase}
+.story #scen{text-transform:none;letter-spacing:0;font:14px system-ui,sans-serif;color:var(--dim)}
+.story .line{font-size:24px;line-height:1.3;margin-top:4px;min-height:62px}
+.story .line b{color:var(--human)}
+.story .line .warnw{color:var(--conflict)} .story .line .cautw{color:var(--caution)} .story .line .lookw{color:var(--look)} .story .line .humw{color:var(--human)}
+main{display:grid;grid-template-columns:minmax(480px,1.25fr) minmax(560px,1fr);gap:12px;padding:12px 18px;flex:1;min-height:600px}
+.right{display:flex;flex-direction:column;gap:12px;min-height:0}
+.right .col{flex:1;min-height:0}
+.split{display:grid;grid-template-columns:minmax(300px,1.1fr) 1fr;flex:1;min-height:0}
+.gmaps .fixed{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-content:start}
+.gmaps .fixed .tile{margin:0}
+.gmaps .fixed .tile.wide{grid-column:1/-1}
+.split .fixed{overflow:auto;padding:10px 12px;border-right:1px solid var(--line)}
+.split .scroll{padding:8px 12px}
+@media (max-width:1150px){main{grid-template-columns:1fr}.col3{min-height:520px}}
+.col{background:var(--panel);border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+main{height:calc(100vh - 330px);min-height:600px}
+@media (max-height:900px){main{height:auto}.col3{min-height:560px}.right .col{min-height:300px}}
+.col .hd{padding:10px 14px;border-bottom:1px solid var(--line)}
+.col .hd h2{margin:0;font-size:15px;letter-spacing:.1em;text-transform:uppercase}
+.col .hd p{margin:3px 0 0;color:var(--dim);font-size:13.5px}
+.today .hd h2{color:var(--dim)} .gmaps .hd h2{color:var(--gmaps)} .col3 .hd h2{color:var(--gmaps)}
+.fixed{padding:12px 14px 0}
+.scroll{padding:6px 14px 12px;overflow:auto;flex:1;min-height:0}
+.tx{display:grid;grid-template-columns:58px 1fr;gap:6px 10px;padding:7px 10px;border-radius:8px;margin-bottom:6px;opacity:.3;border-left:4px solid transparent}
+.tx.past{opacity:1} .tx.now{background:var(--panel2);border-left-color:var(--gmaps)}
+.tx .when{font:600 14px var(--mono);color:var(--dim)}
+.tx .who{font:700 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.tx .who.tower{color:var(--human)} .tx .who.air{color:var(--air)} .tx .who.veh{color:var(--veh)}
+.tx .said{font-size:16px;margin-top:2px}
+.tx .plain{color:var(--dim);font-size:14px;margin-top:3px}
+.tx.human{border-left-color:var(--human);background:rgba(226,180,58,.10)}
+.tx.human .who{color:var(--human)}
+.tile{border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin-bottom:8px;background:var(--panel2);box-shadow:inset 4px 0 0 var(--faint)}
+.tile .k{font:700 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.tile .v{font-size:17px;font-weight:700;margin-top:2px}
+.tile.none .v{color:var(--dim);font-weight:500}
+.tile.CONFLICT{box-shadow:inset 4px 0 0 var(--conflict)} .tile.CONFLICT .v{color:var(--conflict)}
+.tile.CAUTION{box-shadow:inset 4px 0 0 var(--caution)} .tile.CAUTION .v{color:var(--caution)}
+.tile.LOOK{box-shadow:inset 4px 0 0 var(--look)} .tile.LOOK .v{color:var(--look)}
+.tile.UNAV{box-shadow:inset 4px 0 0 var(--unav)} .tile.UNAV .v{color:var(--unav)}
+.tile.OK{box-shadow:inset 4px 0 0 var(--ok)} .tile.OK .v{color:var(--ok)}
+.tile.human{background:rgba(226,180,58,.10);box-shadow:inset 4px 0 0 var(--human)} .tile.human .v{color:var(--human)}
+.tile p{margin:6px 0 0;font-size:14px;color:var(--ink)}
+.tile .small{font:12px var(--mono);color:var(--dim);margin-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip{font:600 12px var(--mono);padding:4px 10px;border-radius:999px;background:var(--panel);color:var(--ink);border:1px solid var(--line)}
+.chip.air{border-color:rgba(96,165,250,.5)} .chip.veh{border-color:rgba(245,158,11,.5)}
+.chip.gone{opacity:.45;text-decoration:line-through}
+.chip.stopped{border-color:var(--human);color:var(--human)}
+.pch{font:700 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:10px 0 6px}.pch span{text-transform:none;letter-spacing:0;font-weight:400;margin-left:8px}
+.pcrow{border:1px solid var(--line);border-radius:8px;padding:7px 10px;margin-bottom:6px;background:var(--panel2)}
+.pcrow .k{font:600 12px var(--mono);color:var(--ink);margin-bottom:5px}
+.pcs{display:flex;flex-wrap:wrap;gap:6px}
+.pc{font:600 12px var(--mono);padding:3px 7px;border-radius:5px;border:1px solid var(--line);color:var(--dim)}
+.pc.ok{border-color:#2a6b4a;color:var(--ok)} .pc.bad{border-color:#6b2a2a;color:var(--conflict)} .pc.na{opacity:.5}
+.tabs{display:flex;gap:6px;padding:8px 10px;border-bottom:1px solid var(--line)}
+.tabs button{padding:6px 10px;font-size:13px} .tabs button.on{border-color:var(--gmaps);color:var(--gmaps)}
+.mapwrap{position:relative;flex:1;min-height:360px}
+canvas{width:100%;display:block;background:var(--bg)}
+.zoom{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px}
+.zoom button{width:36px;height:36px;padding:0;font-size:18px}
+.legend{position:absolute;left:10px;bottom:8px;font:12px var(--mono);color:var(--dim);background:rgba(15,17,21,.85);padding:6px 8px;border-radius:6px;max-width:92%}
+.refwrap{flex:1;min-height:360px;display:none;flex-direction:column}
+.refwrap .note{padding:8px 12px;font-size:13px;color:var(--caution);background:rgba(245,165,36,.08);border-bottom:1px solid rgba(245,165,36,.35)}
+.refwrap iframe{flex:1;border:0;width:100%;min-height:300px;background:#fff}
+.ruler{padding:6px 18px 2px;border-top:1px solid var(--line)}
+.ruler svg{width:100%;height:124px;display:block}   /* height set by renderRuler() from the rows it needs */
+.rlegend{font:12px var(--mono);color:var(--faint);padding:2px 0 4px}
+footer{display:flex;gap:12px;align-items:center;padding:10px 18px 14px;flex-wrap:wrap}
+footer button.play{font-size:18px;padding:10px 18px;border-color:var(--gmaps);color:#0f1115;background:var(--gmaps);font-weight:700}
+.clock{font:700 26px var(--mono);min-width:150px}
+input[type=range]{flex:1;min-width:200px;accent-color:var(--gmaps);height:28px}
+.jump{display:flex;gap:6px;flex-wrap:wrap} .jump button{font-size:13px;padding:6px 10px}
+.jump button.w{border-color:var(--conflict)} .jump button.c{border-color:var(--caution)} .jump button.l{border-color:var(--look)}
+.help{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:9}
+.help .box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 24px;max-width:720px;font-size:16px}
+.help h3{margin:0 0 8px} .help li{margin:6px 0} .help .dim{color:var(--dim);font-size:14px}
+.empty{color:var(--faint);font-style:italic;padding:8px 2px}
+/* AS-IS / WITH GMAPS playback switch (fictional scenarios only) */
+.modesw{display:flex;gap:8px;align-items:center} .modesw[hidden]{display:none}
+.modesw button{flex:1;font-size:14px;padding:8px 12px}
+.modesw button.on{border-color:var(--gmaps);color:#0f1115;background:var(--gmaps);font-weight:700}
+.modesw button.on.asis{border-color:var(--dim);background:var(--dim)}
+.col.gmaps{position:relative}
+.col.gmaps.off .hd,.col.gmaps.off .split{opacity:.18;pointer-events:none}
+.col.gmaps .offnote{display:none;position:absolute;inset:0;align-items:center;justify-content:center;text-align:center;padding:20px;font:700 18px system-ui,sans-serif;color:var(--dim);letter-spacing:.02em}
+.col.gmaps.off .offnote{display:flex}
+</style>
+</head>
+<body>
+<header>
+  <h1>GMAPS <small>a runway cross-check for the control tower</small></h1>
+  <span class="badge" id="badge">SIMULATED · FICTIONAL AIRPORT · SCRIPTED SCENARIO</span>
+  <div class="pickers">
+    <label>Scenario</label><select id="pick"></select>
+    <label>Reference map</label><select id="mapPick"></select>
+    <button id="helpBtn" title="How to read this page">? How to read this</button>
+  </div>
+</header>
+
+<section class="story">
+  <div class="t" id="scen"></div>
+  <div class="t" id="storyT" style="margin-top:6px">now</div>
+  <div class="line" id="story">Loading…</div>
+</section>
+
+<main>
+  <section class="col col3">
+    <div class="hd"><h2 id="whereH">Where · fictional airport SIM-1</h2><p id="whereSub">Simulated positions on a fictional airport. Dots = last reported position; dashed = model projection (not truth).</p></div>
+    <div class="tabs"><button id="tabSim" class="on">Scenario map (fictional)</button><button id="tabRef">Reference diagram (real airport, display only)</button></div>
+    <div class="mapwrap" id="simwrap">
+      <div class="mapnote" id="mapnote" hidden></div>
+      <canvas id="map"></canvas>
+      <div class="zoom"><button id="zin" title="zoom in">+</button><button id="zout" title="zoom out">−</button><button id="zfit" title="fit">⤢</button></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="refwrap" id="refwrap">
+      <div class="note" id="refnote">Reference only. The scenario is NOT at this airport. No traffic, no predictions are drawn here.</div>
+      <iframe id="ref" title="reference airport diagram"></iframe>
+    </div>
+  </section>
+
+  <div class="right">
+    <div class="modesw" id="modesw" hidden><button id="mAsis" class="asis">Play as today · no GMAPS</button><button id="mGmaps">Play with GMAPS</button></div>
+    <section class="col today">
+      <div class="hd"><h2>Today · radio only</h2><p id="todaySub">What the tower hears. The cross-check between clearances lives in the controller's head.</p></div>
+      <div class="split">
+        <div class="fixed" id="todayTiles"></div>
+        <div class="scroll" id="txToday"></div>
+      </div>
+    </section>
+
+    <section class="col gmaps" id="gmapsCol">
+      <div class="offnote">GMAPS is not running in this playback</div>
+      <div class="hd"><h2>With GMAPS · same radio</h2><p id="gmapsSub">Each call is typed, the ledger keeps who is cleared to do what, every warning says why. The controller decides.</p></div>
+      <div class="split">
+        <div class="fixed" id="tiles"></div>
+        <div class="scroll" id="warn"></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<section class="ruler"><svg id="rulerSvg" aria-label="shared time ruler"></svg>
+  <div class="rlegend"><span style="color:var(--human)">●</span> tower call &nbsp; <span style="color:var(--ok)">●</span> read back &nbsp; <span id="rlegLook"><span style="color:var(--look)">▬</span> look-ahead: overlap projected &nbsp; <span style="color:var(--unav)">▪</span> prediction unavailable &nbsp;</span><span id="rlegOut" hidden><span style="color:var(--conflict)">▮</span> simulated outcome &nbsp;</span>·&nbsp; one ruler for both columns; <span id="rulerNote">every time on it is in the scenario script</span></div></section>
+
+<footer>
+  <button class="play" id="play">▶ Play</button>
+  <span class="clock" id="clock">t = +0 s</span>
+  <input type="range" id="slider" min="0" max="100" value="0" step="1">
+  <select id="speed"><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select>
+  <div class="jump" id="jump"></div>
+  <button id="audioBtn" disabled title="Re-voiced, owned clips served locally (venue/audio_server.py)">Voices: n/a</button>
+  <span id="status" style="font:11px var(--mono);color:var(--faint);margin-left:auto"></span>
+</footer>
+
+<div class="help" id="help"><div class="box">
+  <h3>How to read this page</h3>
+  <ul>
+    <li><b>Left</b> is the radio as it is today: the tower talks, pilots and drivers read back. Nothing checks one clearance against another.</li>
+    <li><b>Middle</b> is the same radio with GMAPS: it types each call, keeps a ledger of who is cleared to do what on which runway, and when two open clearances need the same runway it says so, names both, and cites the rule.</li>
+    <li><b>Right</b> shows where things are on a <b>fictional</b> airport, from simulated position reports. The look-ahead only speaks when it has fresh positions; otherwise it says <i>unavailable</i>, never “clear”.</li>
+    <li>The time ruler at the bottom marks the moments: when GMAPS warns, and when the controller steps in. In the fictional scenarios both times are in the script.</li>
+  </ul>
+  <p class="dim">GMAPS is decision support. It does not transmit, it does not move anything, and the controller decides. Every warning means: two recorded authorizations, or an open obligation, at that moment.</p>
+  <button id="helpClose">Close</button>
+</div></div>
+
+<script>
+// ---- scenarios (fictional SIM-1 episodes only; the historical fixtures are never listed here) ----
+const SCEN = [
+  ['SIM_E1_CROSS_DURING_ROLLOUT', '1 · Crossing cleared while a plane is landing', 'The classic pair: a landing clearance, then a crossing clearance on the same runway.'],
+  ['SIM_E2_SAME_PATHS_LATER',     '2 · Same pair, 74 seconds apart', 'The plane has rolled past, but nobody has reported it clear, so the ledger still shows the pair. The look-ahead, which sees positions, projects no overlap.'],
+  ['SIM_E3_STOP_NOT_OBSERVED',    '3 · Controller says stop · no answer', 'GMAPS flags the pair at +28. In the script the controller catches it at +38 and says stop; nobody reads it back, so at +48 a caution.'],
+  ['SIM_E4_FEED_LOSS',            '4 · Position feed drops out', 'Mid-crossing the vehicle’s positions stop arriving. GMAPS says “prediction unavailable” instead of guessing.'],
+  ['SIM_E5_HOLD_NOT_SLOWING',     '5 · Told to hold short, not slowing', 'The vehicle reads back “hold short”, but the simulated positions show it is not slowing. The look-ahead raises it.'],
+  ['SIM_E6_HOLD_OK',              '6 · Told to hold short, complies', 'Same hold-short; the vehicle slows normally. No warning: the quiet case matters too.'],
+];
+// Fixtures replayed on the reference diagram, ledger only (no positions, no look-ahead). A fixture is listed when its sample exists.
+const FIXTURES = [
+  {id: 'RDU_EXERCISE_FICTIONAL', name: 'Raleigh-Durham · fictional exercise in RDU phraseology (ledger only)', map: 'krdu', needsMap: true, t0: 0, t1: 60, clip: null, historical: false,
+   blurb: 'A scripted, fictional exchange using RDU runway and taxiway names: the ledger runs, the runway lights up on the diagram, nothing moves. Not a reconstruction of any real event.'},
+];
+const FIXOK = {};   // id -> true when listed
+const MAPS = [['', '— none —'], ['krdu', 'Raleigh-Durham (KRDU) · draft, display only'], ['klga', 'New York LaGuardia (KLGA)'], ['katl', 'Atlanta Hartsfield-Jackson (KATL)'], ['kbos', 'Boston Logan (KBOS)'],
+  ['kjfk', 'New York JFK (KJFK)'], ['kewr', 'Newark (KEWR)'], ['kord', 'Chicago O’Hare (KORD)'], ['ksfo', 'San Francisco (KSFO)'],
+  ['kpdk', 'Atlanta Peachtree-DeKalb (KPDK)'], ['kahn', 'Athens, GA (KAHN)'], ['khwd', 'Hayward, CA (KHWD)']];
+const BUILD = '2026-10-18v';   // shown in the footer; bump when the page or the map page changes (also busts the browser cache for the map iframe)
+const $ = id => document.getElementById(id);
+const ICONS = {
+  tower: '<path d="M12 2v6M8 8h8M9 8l-3 14M15 8l3 14M7.5 15h9"/>',
+  air: '<path d="M2 14l9-2 2-8 2 0-1 8 7 1v2l-7 1 1 5h-2l-2-5-9-1z"/>',
+  veh: '<path d="M3 15V9h10v6M13 11h4l3 3v1H3M6 18a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM17 18a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>',
+  phone: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',
+  warn: '<path d="M12 3l10 18H2L12 3zM12 10v5M12 18v.5"/>',
+  ledger: '<path d="M5 4h14v16H5zM8 9h8M8 13h8M8 17h5"/>',
+  look: '<path d="M12 12L19 6M12 12m-9 0a9 9 0 1 0 18 0 9 9 0 1 0-18 0M12 12m-5 0a5 5 0 1 0 10 0 5 5 0 1 0-10 0"/>',
+  none: '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3zM4 4l16 16"/>',
+  stop: '<path d="M7 11V5a1.5 1.5 0 0 1 3 0v6M10 10V4a1.5 1.5 0 0 1 3 0v6M13 10V5a1.5 1.5 0 0 1 3 0v8M16 12a1.5 1.5 0 0 1 3 0v3c0 4-3 7-7 7h-1c-2 0-3.5-1-4.5-2.5L4 15a1.5 1.5 0 0 1 2.5-1.5L8 15"/>',
+  ok: '<path d="M4 12l5 5L20 7"/>',
+  unav: '<path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 8v5M12 16v.5"/>',
+};
+const icon = (n, cls = '') => `<svg class="ico ${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n] || ''}</svg>`;
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let D = null, PC = null, T = 0, tMin = 0, tMax = 100, timer = null, Z = 2, ROLE = {}, NICE = {}, TRACK = {};
+// Playback mode for the fictional scenarios: 'gmaps' (today's page) or 'asis' (the same script with GMAPS not running). Deep link &mode=asis|gmaps.
+let MODE = new URLSearchParams(location.search).get('mode') === 'asis' ? 'asis' : 'gmaps';
+const ASIS = () => MODE === 'asis' && D && D.frames && !D.episode.fixture;
+const HOLD = () => !!(D && D.frames && !D.episode.fixture && OUTCOME != null && T >= OUTCOME);   // both modes, from the outcome second on: movers drawn at that second (the simulation's outcome does not depend on GMAPS)
+let FOCUS = false;   // true while held: the fictional map is centred on the crossing zone
+// Simulated outcome (fictional scenarios only): the first second at which the airplane and the vehicle are both inside the crossing
+// zone, from D.frames and the zone polygon only, counting fresh position reports only (age <= 3 s, the map's own stale rule).
+// OUTCOME = that second or null; OUTGAP = {who, t0, t1} when no such second exists but a position feed went stale (so it cannot be said).
+let OUTCOME = null, OUTGAP = null;
+
+SCEN.forEach(([id, name]) => { const o = document.createElement('option'); o.value = id; o.textContent = name; $('pick').appendChild(o); });
+FIXTURES.forEach(f => {
+  const o = document.createElement('option'); o.value = f.id; o.textContent = f.name; o.hidden = true; $('pick').appendChild(o);
+  // a fixture that needs its map (the RDU exercise) is listed only when maps/<icao>/map_meta.json exists
+  (f.needsMap ? fetch(`maps/${f.map}/map_meta.json`, {cache: 'no-store'}).then(r => r.ok ? r.json() : null).then(m => !!m && m.status !== 'draft' && m.overlays_allowed !== false) : Promise.resolve(true)).then(ok => ok ? fetch(`samples/${f.id}.json`, {method: 'HEAD', cache: 'no-store'}) : {ok: false}).then(r => { if (!r.ok) return; FIXOK[f.id] = {}; o.hidden = false;
+    fetch(`samples/${f.id}.review.json`, {cache: 'no-store'}).then(r2 => r2.ok ? r2.json() : null).then(rv => { if (rv) FIXOK[f.id].review = rv; }).catch(() => {});
+  }).catch(() => {});
+});
+MAPS.forEach(([id, name]) => { const o = document.createElement('option'); o.value = id; o.textContent = name; if (id) o.hidden = true; $('mapPick').appendChild(o); });
+MAPS.filter(m => m[0]).forEach(([id]) => fetch(`maps/${id}/map_meta.json`, {method: 'HEAD', cache: 'no-store'}).then(r => { if (r.ok) $('mapPick').querySelector(`option[value="${id}"]`).hidden = false; }).catch(() => {}));
+$('pick').onchange = () => { stop(true); loadUrl('samples/' + $('pick').value + '.json'); };
+$('mapPick').onchange = () => showRef($('mapPick').value);
+$('mAsis').onclick = () => setMode('asis'); $('mGmaps').onclick = () => setMode('gmaps');
+function setMode(m){
+  MODE = m; const u = new URL(location.href); u.searchParams.set('mode', m); history.replaceState(null, '', u);
+  if (D){ buildJump(); render(); } }
+$('helpBtn').onclick = () => $('help').style.display = 'flex';
+$('helpClose').onclick = () => $('help').style.display = 'none';
+$('help').onclick = e => { if (e.target === $('help')) $('help').style.display = 'none'; };
+let VIEWMODE = 'sim';   // 'sim' = fictional canvas · 'follow' = diagram glides onto the runway the ledger is about · 'whole' = diagram, no gliding
+$('tabSim').onclick = () => tab('sim'); $('tabRef').onclick = () => tab('ref');
+function tab(w){
+  const fixture = D && D.episode && D.episode.fixture;
+  if (fixture){ VIEWMODE = w === 'sim' ? 'follow' : 'whole'; w = 'ref'; $('tabSim').classList.toggle('on', VIEWMODE === 'follow'); $('tabRef').classList.toggle('on', VIEWMODE === 'whole'); }
+  const ref = w === 'ref'; $('simwrap').style.display = ref ? 'none' : ''; $('refwrap').style.display = ref ? 'flex' : 'none';
+  if (!fixture){ $('tabSim').classList.toggle('on', !ref); $('tabRef').classList.toggle('on', ref); }
+  if (fixture) postLedger();
+  $('whereH').textContent = ref ? (fixture ? 'Where · the real diagram · ledger only' : 'Reference · real airport diagram · display only') : 'Where · fictional airport SIM-1';
+  $('whereSub').textContent = ref ? (fixture ? 'Runway tint = open clearances on it. Ring = the crossing point the clearance names. Dashes = the end a runway is cleared from. Nothing here is a position: no track data exists for this event.' : 'A reconstructed FAA diagram for orientation only. The scenario is NOT here; no traffic or predictions are drawn on it.') : 'Simulated positions on a fictional airport. Dots = last reported position; dashed = model projection (not truth).';
+  if (!ref) render(); }
+function showRef(icao){
+  if (!icao){ $('ref').removeAttribute('src'); tab('sim'); return; }
+  const name = (MAPS.find(m => m[0] === icao) || [])[1] || icao.toUpperCase();
+  $('refnote').textContent = D && D.episode && D.episode.fixture && FIXTURES.some(f => f.id === D.episode.id && f.map === icao)
+    ? `${name}: reconstructed FAA diagram. The tint shows the ledger's open authorizations per runway; nothing here is a position or a prediction.`
+    : `${name}: reconstructed FAA diagram, reference only. The scenario is NOT at this airport. No traffic, no predictions are drawn here.`;
+  $('ref').src = 'airport_map.html?icao=' + encodeURIComponent(icao) + '&v=' + BUILD;
+  if (D && D.episode && D.episode.fixture) tab(VIEWMODE === 'whole' ? 'ref' : 'sim'); else tab('ref');
+}
+$('ref').onload = () => { setTimeout(postLedger, 400); setTimeout(postLedger, 1500); setTimeout(postLedger, 3500); };
+let ACK = {};
+window.addEventListener('message', e => { if (e.origin !== location.origin || !e.data) return;
+  if (e.data.type === 'gmaps-ledger-ack'){ ACK.points = e.data.points; ACK.drawn = e.data.drawn; ACK.page = e.data.page; ACK.error = e.data.error; ACK.known = e.data.known; ACK.refused = e.data.refused || null; status(); }
+  if (e.data.type === 'gmaps-view-ack'){ ACK.focus = e.data.focus; status(); } });
+function status(){
+  const fixture = D && D.episode && D.episode.fixture;
+  let s = `page ${BUILD}`;
+  if (D && D.frames && !D.episode.fixture) s += ` · mode ${ASIS() ? 'asis' : 'gmaps'} · outcome ${OUTCOME != null ? '+' + OUTCOME : OUTGAP ? 'unreadable (feed gap)' : 'none'}`;
+  if (fixture){ s += ACK.page ? ` · map ${ACK.page} · overlay: ${ACK.refused ? 'refused (' + ACK.refused + ')' : (ACK.drawn || []).length ? ACK.drawn.join(', ') : 'none yet'}${(ACK.points || []).length ? ' · points: ' + ACK.points.join(', ') : ''}${ACK.error ? ' · runway_ends: ' + ACK.error : (ACK.known && !ACK.known.length ? ' · runway_ends.json has no runways for this airport' : '')} · view: ${ACK.focus ? 'close-up ' + ACK.focus : 'whole'}`
+                        : ' · map: old page or not loaded — press Ctrl+Shift+R'; }
+  $('status').textContent = s;
+}
+
+async function loadUrl(u){
+  const m = u.match(/samples\/([^.]+)\.json/); if (m) $('pick').value = m[1];
+  try { const r = await fetch(u, {cache: 'no-store'}), d = await r.json();
+    const fx = d.scenario && FIXTURES.find(f => f.id === d.scenario.id);   // a fixture never runs on a draft map, deep link or not
+    if (fx && fx.needsMap){ const mm = await fetch(`maps/${fx.map}/map_meta.json`, {cache: 'no-store'}).then(x => x.ok ? x.json() : null).catch(() => null);
+      if (!mm || mm.status === 'draft' || mm.overlays_allowed === false){ $('story').textContent = `This exercise is parked: its map (${fx.map.toUpperCase()}) is ${mm ? 'a draft, display only, with no overlays' : 'not built'}.`; return; } }
+    setData(d); }
+  catch(e){ $('story').textContent = 'Could not load ' + u + ' — serve ui_scaffold/ (venue/start_demo.sh or python3 -m http.server).'; }
+}
+const TELEPHONY = {JZA: 'Jazz', UAL: 'United', DAL: 'Delta', FFT: 'Frontier', AAL: 'American', SWA: 'Southwest', JBU: 'JetBlue', RPA: 'Republic', EDV: 'Endeavor', ACA: 'Air Canada', SIM: 'SimAir'};
+function normalizeFixture(d, fx){
+  const t0 = fx && fx.t0 != null ? fx.t0 : Math.min(...d.timeline.map(x => x.t)), t1 = fx && fx.t1 != null ? fx.t1 : Math.max(...d.timeline.map(x => x.t)) + 5;
+  const rows = d.timeline.filter(x => x.t >= t0 && x.t <= t1).map(x => { const e = x.event || {};
+    return {t: x.t, freq: x.freq, text: x.text, speech_act: e.speech_act_resolved || e.speech_act || (x.kind === 'PHONE' ? 'phone' : 'unknown'), kind: e.kind || x.kind || 'OTHER',
+            callsigns: (e.actor_candidates || []).map(c => c.replace(/^\?/, '')), runway: e.runway ? String(e.runway).replace(/^0+(?=\d)/, '') : null, at: e.crossing_at || null, source_id: x.source_id,
+            hold: (e.hold_constraints || [])[0] ? {runway: String(e.hold_constraints[0].on_runway || '').replace(/^0+(?=\d)/, ''), at: e.hold_constraints[0].taxiway || null} : null}; });   // story wording only; not a runway authorization
+  return {episode: {id: d.scenario.id, title: d.scenario.title, airport: d.scenario.airport || (d.airport || {}).icao, is_fictional: /FICTIONAL/.test(d.scenario.id), historical: !/FICTIONAL/.test(d.scenario.id), fixture: true, t0, t1, claim_limit: d.claim_limit},
+          transcript: rows, ledger: {warnings: (d.warnings || []).filter(w => w.t_fired <= t1)}, reservations: d.reservations || [], frames: null, map: null};
+}
+function zonePoly(m){ const z = m.zones['XSIM:ZONE:Z1']; return z.polygon || [[z.xmin, z.ymin], [z.xmax, z.ymin], [z.xmax, z.ymax], [z.xmin, z.ymax]]; }
+function inPoly(x, y, poly){ let k = false; for (let i = 0, j = poly.length - 1; i < poly.length; j = i++){ const [xi, yi] = poly[i], [xj, yj] = poly[j];
+  if (((yi > y) !== (yj > y)) && x <= (xj - xi) * (y - yi) / (yj - yi) + xi) k = !k; } return k; }   // ray casting
+function setData(d){
+  const fx = d.scenario ? FIXTURES.find(f => f.id === d.scenario.id) : null;
+  if (d.timeline && d.scenario) d = normalizeFixture(d, fx);
+  if (!d.episode || (!d.frames && !d.episode.fixture)){ $('story').textContent = 'This page shows the fictional SIM-1 scenarios and the listed fixtures only.'; return; }
+  $('badge').textContent = d.episode.historical ? ('HISTORICAL REPLAY · RE-VOICED · SECONDARY SOURCE · ' + d.episode.airport)
+                        : d.episode.fixture ? 'FICTIONAL EXERCISE · LEDGER ONLY · NO POSITIONS' : 'SIMULATED · FICTIONAL AIRPORT · SCRIPTED SCENARIO';
+  $('badge').className = 'badge' + (d.episode.historical ? ' hist' : '');
+  D = d;
+  if (d.frames){ tMin = d.frames[0].t; tMax = d.frames[d.frames.length - 1].t; } else { tMin = d.episode.t0; tMax = d.episode.t1; }
+  ROLE = {}; NICE = {}; TRACK = {}; OUTCOME = null; OUTGAP = null;
+  if (d.frames && !d.episode.fixture){
+    const zp = zonePoly(d.map), fresh = p => p && p.age_s <= 3 && inPoly(p.x, p.y, zp);
+    const hit = d.frames.find(f => fresh(f.positions['T-AC1']) && fresh(f.positions['T-VH7'])); if (hit) OUTCOME = hit.t;
+    else { const st = d.frames.filter(f => Object.values(f.positions || {}).some(p => p.age_s > 3));
+      if (st.length){ const ids = [...new Set(st.flatMap(f => Object.entries(f.positions).filter(([, p]) => p.age_s > 3).map(([id]) => id)))]; OUTGAP = {ids, t0: st[0].t, t1: st[st.length - 1].t}; } } }
+  (d.frames || []).forEach(f => Object.entries(f.positions || {}).forEach(([id, p]) => { ROLE[p.callsign] = id.startsWith('T-AC') ? 'air' : 'veh'; TRACK[id] = p.callsign; }));
+  d.transcript.forEach(x => (x.callsigns || []).forEach(cs => { if (!ROLE[cs]) ROLE[cs] = /TRUCK|RESCUE|OPS|CAR|FIRE/.test(cs) ? 'veh' : /^[A-Z]{3}\d|^N\d/.test(cs) ? 'air' : ''; }));
+  Object.keys(ROLE).forEach(cs => { NICE[cs] = nice(cs); });
+  const sc = SCEN.find(s => s[0] === d.episode.id);
+  $('scen').textContent = sc ? `Scenario ${sc[1]} — ${sc[2]}` : fx ? `${fx.name} — ${fx.blurb}` : d.episode.title;
+  const rv = FIXOK[d.episode.id] && FIXOK[d.episode.id].review;
+  $('todaySub').textContent = d.episode.historical ? `What the tower heard, as published (captions of a secondary source; times approximate${rv && rv.labels_verified ? '; lines checked by ' + (rv.verified_by || 'the team') : '; not yet human-checked'}). The cross-check lived in the controller’s head.`
+                                                   : 'What the tower hears. The cross-check between clearances lives in the controller\'s head.';
+  $('gmapsSub').textContent = d.episode.fixture ? `Each call typed, the ledger of who is cleared to do what, every warning with its reason. ${d.episode.claim_limit || 'Recorded authorizations and open obligations only; no prevention claims.'}`
+                                                : 'Each call is typed, the ledger keeps who is cleared to do what, every warning says why. The controller decides.';
+  if (d.episode.fixture){ $('tabSim').textContent = 'Runway close-up (follows the ledger)'; $('tabRef').textContent = 'Whole airport'; VIEWMODE = 'follow';
+    if (fx && fx.map){ $('mapPick').value = fx.map; showRef(fx.map); if (new URLSearchParams(location.search).get('tab') === 'whole') tab('ref'); } else tab('sim'); }   // ?tab=whole opens the whole-airport tab (screenshots)
+  else { $('tabSim').textContent = 'Scenario map (fictional)'; $('tabRef').textContent = 'Reference diagram (real airport, display only)'; VIEWMODE = 'sim'; tab('sim'); }
+  $('slider').min = tMin; $('slider').max = tMax; T = tMin; Z = 2;
+  const qt = new URLSearchParams(location.search).get('t'); if (qt != null && isFinite(+qt)) T = Math.max(tMin, Math.min(tMax, +qt));   // ?t=40 opens at that second (screenshots, deep links)
+  $('slider').value = T;
+  PC = null; buildJump(); render();
+  fetch(`samples/parsers_${d.episode.id}.json`, {cache: 'no-store'}).then(r => r.ok ? r.json() : null).then(j => { if (j && D && j.episode === D.episode.id){ PC = j; buildJump(); render(); } }).catch(() => {});
+}
+// Parser comparison rows: the scenario's own clips through Whisper, then grammar / untuned model / tuned model. Produced offline on the Spark
+// (tools/parser_compare.py); this page only displays it. A call counts as "typed right" when the runtime accepted the record and the
+// callsign and instruction match the script.
+function pcRows(){ return PC && Array.isArray(PC.rows) ? PC.rows : []; }
+function pcName(sys){ const m = (PC && PC.models) || {}; return m[sys] ? m[sys].split(' (')[0] : (sys === 'base' ? 'Qwen3-4B base' : 'gmaps-parser'); }
+function pcOk(row, sys){
+  const r = row[sys]; if (!r || !r.accepted) return false;
+  const line = D.transcript.find(x => x.t === row.t) || {}; const cs = (line.callsigns || [])[0]; const f = r.fields || {};
+  if (cs && f.callsign && f.callsign !== cs) return false;
+  if (line.kind && f.instruction && f.instruction !== line.kind) return false;
+  return true;
+}
+function nice(cs){ // friendly names; the fictional actors and common telephony, anything else keeps its callsign
+  if (/^SIM(\d+)$/.test(cs)) return 'SimAir ' + cs.slice(3) + ' (airplane)';
+  if (/^RESCUE(\d+)$/.test(cs)) return 'Rescue ' + cs.slice(6) + ' (vehicle)';
+  if (/^TRUCK(\d+)$/.test(cs)) return 'Truck ' + cs.slice(5) + ' (vehicle)';
+  const m = cs.match(/^([A-Z]{3})(\d+)$/); if (m && TELEPHONY[m[1]]) return `${TELEPHONY[m[1]]} ${m[2]} (airplane)`;
+  return cs + (ROLE[cs] === 'air' ? ' (airplane)' : ROLE[cs] === 'veh' ? ' (vehicle)' : '');
+}
+function short(cs){ return NICE[cs] ? NICE[cs].replace(/ \(.*\)$/, '') : cs; }
+const RWY = () => { const r = Object.keys((D && D.map && D.map.runways) || {})[0] || ''; return r.split(':').pop().split('-').pop() || (D && D.frames ? '36' : ''); };   // '36' is the fictional SIM-1 runway; never a fixture's
+
+// ---- plain-language sentences (display only; derived from the typed transcript and the ledger output) ----
+function plain(x, before){
+  const cs = (x.callsigns || [])[0] || '', who = short(cs), rw = x.runway || (x.hold && x.hold.runway) || RWY(), at = x.at || (x.hold && x.hold.at) || (D.frames ? 'K' : '');
+  const openLanding = before.filter(y => y.speech_act === 'instruction' && y.kind === 'LANDING_CLEARANCE' && y.t < x.t && (!y.runway || !x.runway || y.runway === x.runway)).slice(-1)[0];
+  const k = x.speech_act + ':' + x.kind;
+  switch (k){
+    case 'instruction:LANDING_CLEARANCE': return `Tower clears ${who} to land on runway ${rw}.`;
+    case 'readback:LANDING_CLEARANCE':    return `${who} confirms: cleared to land.`;
+    case 'request:CROSS_REQUEST':         return `${who} asks to cross runway ${rw} at taxiway ${at}.`;
+    case 'instruction:CROSS':             return `Tower clears ${who} to cross runway ${rw} at ${at}` + (openLanding && (openLanding.runway || rw) === rw ? ` — the runway ${short((openLanding.callsigns||[])[0])} is cleared to land on.` : '.');
+    case 'readback:CROSS':                return `${who} confirms: crossing.`;
+    case 'instruction:HOLD_SHORT':        return `Tower tells ${who} to hold short of runway ${rw}` + ((x.at || (x.hold && x.hold.at)) ? ` at ${x.at || x.hold.at}` : '') + ` (wait at the line).`;
+    case 'readback:HOLD_SHORT':           return `${who} confirms: holding short.`;
+    case 'instruction:CANCEL':            return `The controller steps in: “${x.text}”`;
+    case 'readback:CANCEL':               return `${who} confirms the stop.`;
+    default: return x.text;
+  }
+}
+function warnHead(w){
+  const a = w.authorization_a || {}, b = w.authorization_b || {}, rw = a.runway_end ? String(a.runway_end).replace(/^0+(?=\d)/, '') : RWY();
+  if (w.rule_id === 'R1')  return [`Two clearances on runway ${rw} at the same time`, `${short(a.callsign)} is cleared to land on it and ${short(b.callsign)} is cleared to cross it. GMAPS does not know who is where; it knows both clearances are open, and that is enough to tell the controller.`];
+  if (w.rule_id === 'R13'){ const st = D.transcript.filter(x => x.speech_act === 'instruction' && x.kind === 'CANCEL' && x.t <= w.t_fired).slice(-1)[0];
+    return [`Stop given, no answer`, `The controller said stop${st ? ' at +' + st.t + ' s' : ''}${a.callsign ? ' to ' + short(a.callsign) : ''}; nobody read it back within 10 seconds. GMAPS keeps the clearance open rather than assuming the stop took effect.`]; }
+  return [w.name, w.explain];
+}
+function lookState(f){ // from the frame's combined look-ahead output only
+  if (!f) return ['UNAV', 'Not available in a replay', 'A replay has no observation feed and no reviewed metric geometry, so the look-ahead does not run. Not available is not “clear”.'];
+  const c = f.combined || {}, raised = (c.candidates || []).filter(x => x.raised), cond = (c.candidates || []).filter(x => !x.raised && x.overlap);
+  if (raised.length){
+    const r = raised.find(x => x.type === 'occupancy_overlap'), h = raised.find(x => x.type === 'hold_exceedance');
+    let s = [];
+    if (r) s.push(`airplane and vehicle both expected in the crossing zone around +${Math.max(0, Math.round(r.overlap[0] - T))}…+${Math.round(r.overlap[1] - T)} s`);
+    if (h) s.push('the vehicle was told to hold short, but its motion is not consistent with stopping');
+    return ['LOOK', 'Overlap projected', s.join('; ') + ' (estimate from simulated positions, not truth).'];
+  }
+  if ((c.unavailable || []).length && T > 0){
+    const tname = id => id === 'all' ? 'anyone' : TRACK[id] ? short(TRACK[id]) + (id.startsWith('T-AC') ? ' (the airplane)' : ' (the vehicle)') : id.startsWith('T-AC') ? 'the airplane' : 'the vehicle';
+    const who = c.unavailable.map(u => tname(u.track)).join(' and ');
+    return ['UNAV', 'Prediction unavailable', `No fresh position reports for ${who}. GMAPS will not guess: “unavailable” is not “clear”.`];
+  }
+  if (cond.length) return ['OK', 'Conditional', 'Overlap only if the vehicle does not hold short; positions so far are consistent with stopping.'];
+  if (T <= 0) return ['none', 'Waiting for positions', 'No position reports yet.'];
+  return ['OK', 'No overlap projected', 'Nothing projected in the crossing zone in the next 60 s (simulated positions).'];
+}
+
+// ---- moments: everything that can be said about the scenario, in time order ----
+function moments(){
+  const tx = D.transcript, out = [];
+  tx.forEach(x => out.push({t: x.t, kind: x.speech_act === 'instruction' && x.kind === 'CANCEL' ? 'human' : 'tx', text: plain(x, tx), raw: x}));
+  D.ledger.warnings.forEach(w => { const [h] = warnHead(w); out.push({t: w.t_fired, kind: w.severity === 'CONFLICT' ? 'warn' : 'caut', text: `GMAPS ${w.severity === 'CONFLICT' ? 'warns' : 'cautions'}: ${h.charAt(0).toLowerCase() + h.slice(1)}.`, raw: w});   // keep '23L' as written
+    if (w.status === 'cleared' && w.cleared_at != null) out.push({t: w.cleared_at, kind: 'ok', text: `Warning cleared (${w.cleared_by || ''}).`}); });
+  let prev = null; (D.frames || []).forEach(f => { const r = (f.combined.candidates || []).filter(x => x.raised).map(x => x.type).sort().join(','); const u = (f.combined.unavailable || []).map(x => x.track).join(',');
+    const key = r + '|' + u; if (prev !== null && key !== prev){
+      if (u && !prev.split('|')[1] && f.t > 1) out.push({t: f.t, kind: 'unav', text: 'Look-ahead: a position feed stopped, so the projection is withdrawn: prediction unavailable (which is not “clear”).'});
+      else if (r && !(prev.split('|')[0])) out.push({t: f.t, kind: 'look', text: 'Look-ahead: overlap projected from positions.'});
+      else if (!r && prev.split('|')[0]) out.push({t: f.t, kind: 'ok', text: 'Look-ahead: projected overlap has passed.'});
+      else if (!u && prev.split('|')[1] && f.t > 21) out.push({t: f.t, kind: 'ok', text: 'Look-ahead: positions are back.'});
+    } prev = key; });
+  if (OUTCOME != null) out.push({t: OUTCOME, kind: 'outc', text: 'Simulated outcome: airplane and vehicle in the crossing zone at the same time. ' + (ASIS() ? 'The playback holds them here.' : (() => {
+    const w = D.ledger.warnings.filter(w => w.t_fired <= OUTCOME).map(w => w.t_fired), la = (D.frames.find(f => f.t <= OUTCOME && (f.combined.candidates || []).some(x => x.raised)) || {}).t;   // this episode's own ledger and look-ahead
+    const first = Math.min(...w, la == null ? Infinity : la); return isFinite(first) ? `GMAPS warned at +${first} s; the controller decides.` : 'GMAPS had no warning to give.'; })())});
+  else if (D.frames && !D.episode.fixture) out.push({t: tMax, kind: 'outn', text: OUTGAP
+    ? `Simulated outcome: cannot be read from the positions on this page. Reports from ${OUTGAP.ids.map(id => TRACK[id] ? short(TRACK[id]) : id).join(' and ')} stop from +${OUTGAP.t0} to +${OUTGAP.t1} s, so the page does not say whether both were in the crossing zone.`
+    : 'Simulated outcome: no overlap in this scenario. The airplane and the vehicle are never in the crossing zone at the same time.'});
+  const order = {tx: 0, human: 1, warn: 2, caut: 3, look: 4, unav: 5, ok: 6, outc: 7, outn: 7};
+  return out.filter(m => !ASIS() || ['tx', 'human', 'outc', 'outn'].includes(m.kind)).sort((a, b) => a.t - b.t || order[a.kind] - order[b.kind]);
+}
+
+// ---- rendering ----
+function render(){
+  if (!D) return;
+  $('clock').textContent = 't = ' + (T >= 0 ? '+' : '') + T + ' s';
+  const sim = !!(D.frames && !D.episode.fixture); $('modesw').hidden = !sim;
+  $('mAsis').classList.toggle('on', !!ASIS()); $('mGmaps').classList.toggle('on', !ASIS()); $('gmapsCol').classList.toggle('off', !!ASIS()); $('rlegOut').hidden = OUTCOME == null; $('rlegLook').hidden = !!ASIS();
+  if (sim && $('simwrap').style.display !== 'none') $('whereSub').textContent = ASIS() ? 'Simulated positions on a fictional airport: the simulation, not GMAPS. Dots = last reported position; no projection is drawn, GMAPS is not running.' : 'Simulated positions on a fictional airport. Dots = last reported position; dashed = model projection (not truth).';
+  renderStory(); renderToday(); if (ASIS()){ $('tiles').innerHTML = ''; $('warn').innerHTML = ''; } else renderGmaps(); renderRuler(); status();
+  if ($('simwrap').style.display !== 'none' && D.frames) renderMap();
+  postLedger(); syncAudio();
+}
+// Ledger state for the reference diagram (fixtures only): which physical runways hold open authorizations at T, and whether a
+// warning on that runway is open. Display tint only; no positions.
+function postLedger(){
+  const fr = $('ref'); if (!fr || !fr.contentWindow || !fr.getAttribute('src')) return;
+  const states = {}; let focus = null, points = [], ends = [];
+  if (D && D.episode.fixture){
+    (D.reservations || []).filter(r => r.t <= T && (r.released_at == null || r.released_at > T)).forEach(r => { const k = r.physical || ('RWY:' + r.runway_end); states[k] = states[k] || {n: 0, who: [], uses: []}; states[k].n++; states[k].who.push(short(r.callsign)); states[k].uses.push({callsign: r.callsign, type: r.type, end: r.runway_end}); });
+    const ws = D.ledger.warnings.filter(w => w.t_fired <= T && !(w.status === 'cleared' && w.cleared_at <= T));
+    let best = null;
+    Object.entries(states).forEach(([k, st]) => { const w = ws.find(w => (w.runway || (w.authorization_a || {}).physical_runway) === k);
+      st.state = w ? (w.severity === 'CONFLICT' ? 'conflict' : 'caution') : 'reserved';
+      const name = k.split(':').pop().replace(/^0+(?=\d)/, '').replace('-0', '-'), end = (st.uses.find(u => u.type === 'LANDING' || u.type === 'TAKEOFF') || st.uses[0] || {}).end;
+      const rw = end ? String(end).replace(/^0+(?=\d)/, '') : name.split('-')[0];
+      st.text = w ? `RUNWAY ${rw} · ${st.n} clearances open` : `runway ${rw} · ${st.n} clearance${st.n > 1 ? 's' : ''}`;
+      st.sub = st.uses.map(u => `${short(u.callsign)} ${u.type.toLowerCase()}`).join(' · ');
+      const score = (st.state === 'conflict' ? 3 : st.state === 'caution' ? 2 : 1) * 100 + st.n; if (!best || score > best.score) best = {k, score, state: st.state}; });
+    if (VIEWMODE === 'follow' && best && best.state !== 'reserved') focus = best.k;
+    // crossing points: for each vehicle whose crossing request/clearance names a taxiway, the phase of that clearance at T. The map draws
+    // a ring at the place the clearance names (taxiway × runway); it is never a vehicle position.
+    const tx = D.transcript.filter(x => x.t <= T), by = {};
+    tx.forEach(x => { const cs = (x.callsigns || [])[0];
+      if ((x.kind === 'CROSS_REQUEST' || x.kind === 'CROSS') && x.at && x.runway && cs){
+        const p = by[cs] = by[cs] || {callsign: cs, who: short(cs), taxiway: x.at, runway: x.runway, rwname: x.runway};
+        p.phase = x.kind === 'CROSS_REQUEST' ? (p.phase || 'requested') : x.speech_act === 'readback' ? 'crossing' : 'cleared'; p.text = x.text; } });
+    tx.filter(x => x.kind === 'CANCEL').forEach(x => (x.callsigns || []).forEach(cs => { const p = by[cs]; if (!p) return;
+      p.phase = x.speech_act === 'readback' ? 'stop_acknowledged' : (p.phase === 'stop_acknowledged' ? p.phase : 'stop_issued'); p.text = x.text; }));
+    ws.filter(w => w.rule_id === 'R13').forEach(w => Object.values(by).forEach(p => { if (p.phase === 'stop_issued' && JSON.stringify(w).includes(p.callsign)) p.phase = 'stop_unacknowledged'; }));
+    points = Object.values(by);
+    ends = (D.reservations || []).filter(r => r.t <= T && (r.released_at == null || r.released_at > T) && (r.type === 'LANDING' || r.type === 'TAKEOFF')).map(r => ({runway: r.physical || r.runway_end, end: r.runway_end, callsign: r.callsign, who: short(r.callsign), type: r.type}));
+    if (VIEWMODE === 'follow' && points.length) focus = Object.keys(states).find(k => k.split(':').pop().split('-').map(x => x.replace(/^0+(?=\d)/, '')).includes(points[0].runway)) || points[0].runway;
+  }
+  try { fr.contentWindow.postMessage({type: 'gmaps-ledger', runways: states, points, ends}, location.origin); fr.contentWindow.postMessage({type: 'gmaps-view', focus, pad: 520}, location.origin); } catch (_) {}
+}
+function renderStory(){
+  const ms = moments().filter(m => m.t <= T && (!HOLD() || m.t <= OUTCOME)); const last = ms.length ? ms[ms.length - 1].t : null;
+  const now = ms.filter(m => m.t === last);
+  const cls = {warn: 'warnw', caut: 'cautw', look: 'lookw', unav: 'lookw', human: 'humw', ok: '', tx: '', outc: 'warnw', outn: ''};
+  $('storyT').textContent = last == null ? 'before the first call' : (last === T ? `now · t = ${T < 0 ? '' : '+'}${T} s` : `last thing that happened · t = ${last < 0 ? '' : '+'}${last} s`);
+  $('story').innerHTML = now.length ? now.map(m => `<span class="${cls[m.kind]}">${esc(m.text)}</span>`).join(' ') : 'Quiet frequency. Press Play.';
+}
+function who(x){ if (x.speech_act === 'instruction') return ['tower', 'Tower']; if (x.speech_act === 'phone') return ['', 'Phone']; const cs = (x.callsigns || [])[0] || ''; return [ROLE[cs] || '', short(cs) || (x.speech_act === 'unknown' ? 'Unknown' : 'Pilot')]; }
+function renderToday(){
+  const tx = D.transcript; let lastPast = -1; tx.forEach((x, i) => { if (x.t <= T) lastPast = i; });
+  const stop = tx.find(x => x.speech_act === 'instruction' && x.kind === 'CANCEL' && x.t <= T);
+  const none = `<div class="tile none"><div class="k">Automatic check</div><div class="hdr">${icon('none', 'big')}<div class="v">None</div></div><p>Two clearances can be open on one runway; nothing on the frequency says so.</p></div>`;
+  $('todayTiles').innerHTML = (ASIS() ? none : '') + (stop
+    ? `<div class="tile human"><div class="k">Controller steps in · t = +${stop.t} s</div><div class="hdr">${icon('stop', 'big')}<div class="v">“${esc(stop.text)}”</div></div><p>${D.episode.historical ? 'As published; times approximate. Nothing after this point is shown.' : 'Scripted: the controller notices and stops it.'}</p></div>`
+    : (ASIS() ? '' : none));
+  $('txToday').innerHTML = tx.map((x, i) => { const [cls, name] = who(x), human = x.speech_act === 'instruction' && x.kind === 'CANCEL';
+    const ic = human ? 'stop' : cls === 'tower' ? 'tower' : cls === 'air' ? 'air' : cls === 'veh' ? 'veh' : x.speech_act === 'phone' ? 'phone' : 'air';
+    return `<div class="tx ${x.t <= T ? 'past' : ''} ${i === lastPast ? 'now' : ''} ${human && x.t <= T ? 'human' : ''}" id="tx${i}">
+      <div class="when">${x.t < 0 ? '' : '+'}${x.t}s</div><div><div class="who ${cls}">${icon(ic)}${esc(name)}</div><div class="said">${esc(x.text)}</div>${x.t <= T ? `<div class="plain">${esc(plain(x, tx))}</div>` : ''}</div></div>`; }).join('');
+  const el = $('tx' + lastPast); if (el) el.scrollIntoView({block: 'nearest'});
+}
+function renderGmaps(){
+  const tx = D.transcript.filter(x => x.t <= T), f = frameAt(T);
+  // ledger made visible: runway clearances recorded so far (display-only reading of the typed speech acts; hold-shorts only when a runway is named)
+  const open = tx.filter(x => x.speech_act === 'instruction' && ['LANDING_CLEARANCE', 'CROSS', 'TAKEOFF_CLEARANCE', 'LUAW', 'HOLD_SHORT'].includes(x.kind) && (x.kind !== 'HOLD_SHORT' || x.runway || D.frames));
+  const stops = {}; tx.filter(x => x.kind === 'CANCEL').forEach(x => (x.callsigns || []).forEach(cs => { stops[cs] = stops[cs] || {}; stops[cs][x.speech_act === 'instruction' ? 'given' : 'ack'] = x.t; }));
+  const chips = open.map(x => { const cs = (x.callsigns || [])[0], rw = x.runway || RWY(), at = x.at || (D.frames ? 'K' : ''); const what = {LANDING_CLEARANCE: 'land ' + rw, CROSS: 'cross ' + rw + (at ? ' at ' + at : ''), TAKEOFF_CLEARANCE: 'take off ' + rw, LUAW: 'line up ' + rw, HOLD_SHORT: 'hold short ' + rw}[x.kind];
+    const ack = tx.some(y => y.speech_act === 'readback' && y.kind === x.kind && (y.callsigns || []).includes(cs) && y.t > x.t);
+    const st = x.kind === 'CROSS' && stops[cs] && stops[cs].given > x.t ? stops[cs] : null;
+    const r13 = st && !st.ack && D.ledger.warnings.some(w => w.rule_id === 'R13' && w.t_fired <= T && w.t_fired >= st.given && JSON.stringify(w).includes(cs));   // the caution for this stop has fired
+    return `<span class="chip ${ROLE[cs] || ''} ${st ? (st.ack ? 'gone' : 'stopped') : ''}">${esc(short(cs))} · ${esc(what)} · +${x.t}s${ack ? ' ✓ read back' : ''}${st ? (st.ack ? ' · stopped ✓' : ` · stop given +${st.given}s${r13 ? ', not read back' : ''}`) : ''}</span>`; }).join('');
+  const ws = D.ledger.warnings.filter(w => w.t_fired <= T && !(w.status === 'cleared' && w.cleared_at <= T));
+  const top = ws.find(w => w.severity === 'CONFLICT') || ws.find(w => w.severity === 'CAUTION') || ws[0];
+  const [lk, lv, lp] = lookState(f);
+  $('tiles').innerHTML =
+    `<div class="tile wide ${open.length ? '' : 'none'}"><div class="k">Ledger · ${D.frames ? 'clearances recorded on runway ' + esc(RWY()) : 'runway clearances recorded'}</div><div class="hdr">${icon('ledger', 'big')}<div class="v">${open.length || 'None yet'}</div></div><div class="chips">${chips}</div></div>` +
+    (top ? `<div class="tile ${top.severity}"><div class="k">Warning · ${esc(top.rule_id)} · since +${top.t_fired} s</div><div class="hdr">${icon('warn', 'big')}<div class="v">${esc(top.severity === 'CONFLICT' ? 'CONFLICT' : 'CAUTION')}</div></div><p>${esc(warnHead(top)[0])}</p></div>`
+         : `<div class="tile ${ws.length ? '' : 'OK'}"><div class="k">Warning</div><div class="hdr">${icon(ws.length ? 'warn' : 'ok', 'big')}<div class="v">${ws.length ? esc(ws[0].severity) : 'None'}</div></div></div>`) +
+    `<div class="tile ${lk}"><div class="k">Look-ahead · next 60 s</div><div class="hdr">${icon(lk === 'LOOK' ? 'look' : lk === 'UNAV' ? 'unav' : lk === 'OK' ? 'ok' : 'look', 'big')}<div class="v">${esc(lv)}</div></div><p style="font-size:13px">${esc(lp)}</p></div>` +
+    (pcRows().length ? (() => { // the pipeline: the grammar types what it can; a model is asked only about the lines the grammar refuses
+      const rows = pcRows().filter(r => r.t <= T), n = rows.length, g = rows.filter(r => pcOk(r, 'grammar')).length, rest = rows.filter(r => !pcOk(r, 'grammar')), m = rest.length,
+            b = rest.filter(r => pcOk(r, 'base')).length, a = rest.filter(r => pcOk(r, 'gmaps-parser')).length;
+      return `<div class="tile wide ${m && b < a ? 'CAUTION' : 'none'}"><div class="k">Same radio through the parsers · calls typed right so far</div><div class="v">typed by grammar ${g}/${n}${m ? ` · on the ${m} lines the grammar did not type right: untuned ${b}/${m} · fine-tuned ${a}/${m}` : ' · the grammar typed every line'}</div><p style="font-size:13px;color:var(--dim)">typed right = callsign and instruction match the ledger line · accepted = the runtime took the record: grammar ${rows.filter(r => (r.grammar || {}).accepted).length}/${n} · untuned ${rows.filter(r => (r.base || {}).accepted).length}/${n} · fine-tuned ${rows.filter(r => (r['gmaps-parser'] || {}).accepted).length}/${n}</p>${PC.note ? `<p style="font-size:13px;color:var(--dim)">${esc(PC.note)}</p>` : ''}<p><b>untuned:</b> ${esc((PC.models || {}).base || 'Qwen3-4B-Instruct-2507 (base)')} · <b>fine-tuned:</b> ${esc((PC.models || {})['gmaps-parser'] || 'gmaps-parser (LoRA)')}. Measured on this scenario's own lines (details below).</p></div>`; })() : '');
+  let html = '';
+  ws.slice().reverse().forEach(w => { const [h, p] = warnHead(w), a = w.authorization_a || {}, b = w.authorization_b || {};
+    html += `<div class="tile ${w.severity}"><div class="k">${esc(w.severity)} · ${esc(w.rule_id)} · t = +${w.t_fired} s</div><div class="hdr">${icon('warn', 'big')}<div class="v">${esc(h)}</div></div><p>${esc(p)}</p>
+      <details class="why"><summary>why, and what clears it</summary>
+      <div class="small">Recorded: ${esc(a.callsign)} ${esc(a.type)} @+${esc(a.t_issued)}${a.acknowledged ? ' (read back ' + esc(a.acknowledged) + ')' : ''}${b.callsign ? ` · ${esc(b.callsign)} ${esc(b.type)} @+${esc(b.t_issued)}` : ''}</div>
+      <div class="small">What would clear it: ${esc(w.what_would_clear_it)}</div>
+      <div class="small">${esc(w.cite)} · ${esc(w.claim_limit)}</div></details></div>`; });
+  D.ledger.warnings.filter(w => w.status === 'cleared' && w.cleared_at <= T).forEach(w => { html += `<div class="tile none"><div class="k">cleared · t = +${w.cleared_at} s</div><div class="v">${esc(warnHead(w)[0])}</div><p>${esc(w.cleared_by || '')}</p></div>`; });
+  if (pcRows().length){
+    const rows = pcRows().filter(r => r.t <= T);
+    if (rows.length){
+      html += `<div class="pch">Same radio through Whisper · what each parser typed <span>${esc(PC.source || '')}</span></div>`;
+      rows.slice().reverse().forEach(r => {
+        const cell = (sys, name) => { const x = r[sys] || {}, ok = pcOk(r, sys); const f = x.fields || {};
+          return `<span class="pc ${x.accepted == null ? 'na' : ok ? 'ok' : 'bad'}">${esc(name)} ${x.accepted == null ? '—' : ok ? '✓' : '✗'}${f.callsign ? ' ' + esc(f.callsign) : ''}${f.instruction ? ' · ' + esc(f.instruction) : ''}${!ok && x.reason ? ' · ' + esc(String(x.reason).slice(0, 60)) : ''}</span>`; };
+        html += `<div class="pcrow"><div class="k">+${r.t}s · heard: “${esc(r.whisper || '')}”</div><div class="pcs">${cell('grammar', 'grammar')}${cell('base', 'untuned')}${cell('gmaps-parser', 'tuned')}</div></div>`;
+      });
+    }
+  }
+  $('warn').innerHTML = html || '<div class="empty">No open warning.</div>';
+}
+function frameAt(t){ if (!D.frames) return null; let f = D.frames[0]; for (const x of D.frames) if (x.t <= t) f = x; return f; }
+
+// ---- time ruler: one axis for both columns ----
+// Every label is measured after the fonts are known and put in the first row where its box (with its pill) touches no other box,
+// so labels never overlap at any width. Upper band: GMAPS / controller / look-ahead marks; lower band: the parser marks.
+let MEASURE = null;
+function textW(txt, size, weight, family){
+  const svg = $('rulerSvg');
+  if (!MEASURE || MEASURE.ownerSVGElement !== svg){ MEASURE = document.createElementNS('http://www.w3.org/2000/svg', 'text'); MEASURE.setAttribute('visibility', 'hidden'); }
+  if (MEASURE.parentNode !== svg) svg.appendChild(MEASURE);
+  MEASURE.setAttribute('font-size', size); MEASURE.setAttribute('font-weight', weight); MEASURE.setAttribute('font-family', family); MEASURE.textContent = txt;
+  const w = MEASURE.getComputedTextLength(); return w > 0 ? w : txt.length * size * .6;
+}
+// greedy rows: items in placement order; each gets .row and .bx = [x0, x1] (the pill's horizontal extent)
+function packRows(items, L, R){
+  const rows = [];
+  items.forEach(m => { const px = 5, w = m.w + 2 * px; let x0 = m.x + 4, right = false;
+    if (x0 + w > R){ x0 = m.x - 4 - w; right = true; } if (x0 < L - 12){ x0 = L - 12; right = false; }
+    m.bx = [x0, x0 + w]; m.right = right; m.tx = right ? x0 + w - px : x0 + px;
+    let r = 0; while ((rows[r] || []).some(b => m.bx[0] < b[1] + 6 && m.bx[1] + 6 > b[0])) r++;
+    (rows[r] = rows[r] || []).push(m.bx); m.row = r; });
+  return rows.length;
+}
+function renderRuler(){
+  const svg = $('rulerSvg'), W = svg.clientWidth || 1200, L = 16, R = W - 16, X = t => L + (t - tMin) / (tMax - tMin) * (R - L);
+  const SANS = 'system-ui,sans-serif', MONO = 'ui-monospace,monospace', TOPH = 17, LOWH = 16;
+  // labelled markers (upper band), in placement order: warnings and the controller first, then the rest
+  const marks = [], asis = ASIS();
+  if (OUTCOME != null) marks.push({t: OUTCOME, pri: 0, col: css('--conflict'), lab: `both in the crossing zone · +${OUTCOME} s · SIMULATED`});
+  if (!asis) D.ledger.warnings.forEach(w => marks.push({t: w.t_fired, pri: 0, col: w.severity === 'CONFLICT' ? css('--conflict') : css('--caution'), lab: `GMAPS ${w.severity === 'CONFLICT' ? 'warns' : 'cautions'} · +${w.t_fired} s`}));
+  if (!asis) D.transcript.filter(x => x.speech_act === 'instruction' && x.kind === 'CANCEL').forEach(x => marks.push({t: x.t, pri: 0, col: css('--human'), lab: `controller steps in · +${x.t} s`}));
+  const first = !asis && (D.frames || []).find(f => (f.combined.candidates || []).some(x => x.raised)); if (first && !marks.some(m => Math.abs(m.t - first.t) < 1)) marks.push({t: first.t, pri: 1, col: css('--look'), lab: `look-ahead raises · +${first.t} s`});
+  // parser marks (lower band): the grey/green pair where the fine-tuned model typed what the untuned one missed, and (Franco's ask,
+  // honest form) one compact line per clearance the ledger records, from the parsers file with the page's typed-right rule; grammar
+  // time = the scoreboard's grammar median (0.020 s).
+  const pmarks = [], pcr = asis ? [] : pcRows();
+  pcr.forEach(r => { const b = pcOk(r, 'base'), a = pcOk(r, 'gmaps-parser'); if (!b && a){ const ta = r.t + ((r['gmaps-parser'] || {}).latency_s || 0);
+    pmarks.push({t: r.t, col: '#aab6c6', bold: true, lab: `untuned ${pcName('base')} ✗ · +${r.t} s`}); pmarks.push({t: ta, col: '#3ccf91', bold: true, lab: `fine-tuned ${pcName('gmaps-parser')} ✓ · +${ta.toFixed(1)} s`}); } });
+  const PK = ['LANDING_CLEARANCE', 'TAKEOFF_CLEARANCE', 'LUAW', 'CROSS', 'CANCEL'];   // the clearance kinds the ledger rules act on
+  D.transcript.filter(x => x.speech_act === 'instruction' && PK.includes(x.kind)).forEach(x => {
+    const r = pcr.find(r => r.t === x.t && r.script === x.text); if (!r || (!pcOk(r, 'base') && pcOk(r, 'gmaps-parser'))) return;
+    const g = pcOk(r, 'grammar'), b = pcOk(r, 'base'), a = pcOk(r, 'gmaps-parser');
+    pmarks.push({t: x.t, col: css('--dim'), bold: false, lab: `${g ? 'typed by grammar · 20 ms' : 'grammar ✗'} · untuned ${b ? '✓' : '✗'} · fine-tuned ${a ? '✓' : '✗'}`,
+      tip: `+${x.t}: grammar ${g ? 'typed it right (median 20 ms per transmission, docs/SCOREBOARD.md)' : 'did not type it right'}; untuned ${(PC.models || {}).base || 'base'} ${b ? 'typed it right' : 'did not type it right'}; fine-tuned ${(PC.models || {})['gmaps-parser'] || 'gmaps-parser'} ${a ? 'typed it right' : 'did not type it right'} (typed right = accepted and callsign + instruction match the ledger line)`});
+  });
+  marks.forEach(m => { m.x = X(m.t); m.w = textW(m.lab, 12, 700, SANS); });
+  pmarks.forEach(m => { m.x = X(m.t); m.w = textW(m.lab, 11, m.bold ? 700 : 400, MONO); });
+  const nt = Math.max(1, packRows(marks.slice().sort((m, n) => m.pri - n.pri || m.t - n.t), L, R)), np = packRows(pmarks.slice().sort((m, n) => n.bold - m.bold || m.t - n.t), L, R);
+  const A = 10 + nt * TOPH, P0 = A + 50, H = P0 + np * LOWH + (np ? 2 : 0);   // A = the axis; P0 = the first parser row's top
+  const pill = (m, top, h, fs, ff, fw) => `<rect x="${m.bx[0]}" y="${top}" width="${m.bx[1] - m.bx[0]}" height="${h}" rx="${h / 2}" fill="#0f1115" stroke="${m.col}" stroke-opacity=".45"/>`
+    + `<text x="${m.tx}" y="${top + h / 2 + fs * .36}" fill="${m.col}" font-size="${fs}" font-weight="${fw}" text-anchor="${m.right ? 'end' : 'start'}" font-family="${ff}">${m.tip ? `<title>${esc(m.tip)}</title>` : ''}${esc(m.lab)}</text>`;
+  let s = '', lab = '';
+  for (let t = Math.ceil(tMin / 10) * 10; t <= tMax; t += 10) s += `<line x1="${X(t)}" y1="${A - 3}" x2="${X(t)}" y2="${A + 3}" stroke="${css('--faint')}"/><text x="${X(t)}" y="${A + 17}" fill="${css('--faint')}" font-size="11" text-anchor="middle" font-family="${MONO}">${t < 0 ? t : '+' + t}</text>`;
+  s += `<line x1="${L}" y1="${A}" x2="${R}" y2="${A}" stroke="${css('--line')}" stroke-width="2"/>`;
+  // look-ahead raised spans (orange band) and unavailable spans (purple dots)
+  const bands = asis ? [] : (D.frames || []);
+  let a = null; bands.forEach((f, i) => { const r = (f.combined.candidates || []).some(x => x.raised); if (r && a === null) a = f.t; if ((!r || i === D.frames.length - 1) && a !== null){ s += `<rect x="${X(a)}" y="${A + 5}" width="${Math.max(2, X(f.t) - X(a))}" height="5" fill="#ff8a3d" opacity=".8"/>`; a = null; } });
+  let ua = null; bands.forEach((f, i) => { const u = f.t > 1 && (f.combined.unavailable || []).length > 0; if (u && ua === null) ua = f.t; if ((!u || i === D.frames.length - 1) && ua !== null){ s += `<rect x="${X(ua)}" y="${A + 12}" width="${Math.max(2, X(f.t) - X(ua))}" height="4" fill="#b48cff" opacity=".8"/>`; ua = null; } });
+  D.transcript.forEach(x => { s += `<circle cx="${X(x.t)}" cy="${A}" r="3.5" fill="${x.speech_act === 'instruction' ? css('--human') : css('--ok')}"/>`; });
+  // stems first, pills on top of them
+  marks.forEach(m => { const top = A - 8 - (m.row + 1) * TOPH + 2; s += `<line x1="${m.x}" y1="${top + 7}" x2="${m.x}" y2="${A - 3}" stroke="${m.col}" stroke-width="2"/>`; lab += pill(m, top, TOPH - 3, 12, SANS, 700); });
+  pmarks.forEach(m => { const top = P0 + m.row * LOWH; s += `<line x1="${m.x}" y1="${A + 4}" x2="${m.x}" y2="${top + 7}" stroke="${m.col}" stroke-width="1" stroke-dasharray="2 2"/>`; lab += pill(m, top, LOWH - 2, 11, MONO, m.bold ? 700 : 400); });
+  s += `<line x1="${X(T)}" y1="2" x2="${X(T)}" y2="${A + 25}" stroke="${css('--ink')}" stroke-width="2"/>` + lab + `<text x="${X(T)}" y="${A + 37}" fill="${css('--ink')}" font-size="11" text-anchor="middle" font-family="${MONO}">now</text>`;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.style.height = H + 'px'; svg.innerHTML = s; MEASURE = null;
+  $('rulerNote').textContent = D.episode.historical ? 'times are from the published captions, approximate; the replay ends at the controller’s stop' : asis ? 'GMAPS is not running in this playback: only the radio and the simulated outcome are marked' : 'every time on it is in the scenario script';
+}
+function buildJump(){
+  const j = []; const addJ = (t, lab, cls) => { if (!j.some(x => x.t === t)) j.push({t, lab, cls}); };
+  const asis = ASIS();
+  addJ(tMin, 'start', '');
+  if (OUTCOME != null) addJ(OUTCOME, `outcome +${OUTCOME}`, 'w');
+  if (!asis) D.ledger.warnings.forEach(w => addJ(w.t_fired, `${w.severity === 'CONFLICT' ? 'warning' : 'caution'} +${w.t_fired}`, w.severity === 'CONFLICT' ? 'w' : 'c'));
+  D.transcript.filter(x => x.speech_act === 'instruction' && x.kind === 'CANCEL').forEach(x => addJ(x.t, `controller stops it +${x.t}`, 'c'));
+  const first = !asis && (D.frames || []).find(f => (f.combined.candidates || []).some(x => x.raised)); if (first) addJ(first.t, `look-ahead +${first.t}`, 'l');
+  let pu = false; (asis ? [] : D.frames || []).forEach(f => { const u = (f.combined.unavailable || []).length > 0; if (u && !pu && f.t > 21) addJ(f.t, `feed lost +${f.t}`, 'l'); pu = u; });
+  (asis ? [] : pcRows()).filter(r => !pcOk(r, 'base') && pcOk(r, 'gmaps-parser')).forEach(r => addJ(r.t, `untuned ✗ / fine-tuned ✓ +${r.t}`, ''));
+  j.sort((a, b) => a.t - b.t);
+  $('jump').innerHTML = '<span style="color:var(--dim);font-size:13px">Jump to:</span>' + j.map(x => `<button class="${x.cls}" data-t="${x.t}">${esc(x.lab)}</button>`).join('');
+  $('jump').querySelectorAll('button').forEach(b => b.onclick = () => { stop(true); T = +b.dataset.t; $('slider').value = T; render(); });
+}
+
+// ---- fictional map (same drawing as index.html, plus zoom around the crossing zone) ----
+function canvasCtx(){
+  const cv = $('map'), r = cv.parentElement.getBoundingClientRect(), dpr = window.devicePixelRatio || 1, h = Math.max(300, r.height);
+  cv.width = r.width * dpr; cv.height = h * dpr; cv.style.height = h + 'px';
+  const c = cv.getContext('2d'); c.setTransform(dpr, 0, 0, dpr, 0, 0); return [c, r.width, h];
+}
+// Phase of an actor at time t, from the transcript only (what was said, not where anyone is): colours the fictional map's trail.
+const VPH = [['#9fb0c9', 'no crossing request yet'], ['#d8b45a', 'asked to cross'], ['#f59e0b', 'cleared to cross'], ['#fb923c', 'crossing (read back)'], ['#ef4444', 'STOP issued'], ['#64748b', 'stop read back']];
+const APH = [['#9fb0c9', 'no landing clearance yet'], ['#60a5fa', 'cleared to land'], ['#64748b', 'clear of the runway (reported)']];
+function phaseAt(cs, role, t){
+  let k = 0;
+  D.transcript.filter(x => x.t <= t && (x.callsigns || []).includes(cs)).forEach(x => {
+    if (role === 'veh'){ if (x.kind === 'CROSS_REQUEST') k = Math.max(k, 1); else if (x.kind === 'CROSS') k = Math.max(k, x.speech_act === 'readback' ? 3 : 2);
+      else if (x.kind === 'CANCEL') k = x.speech_act === 'readback' ? 5 : Math.max(k, 4); }
+    else { if (x.kind === 'LANDING_CLEARANCE') k = Math.max(k, 1); if (/LANDING_COMPLETE|CROSSING_COMPLETE|CLEAR_OF_RUNWAY/.test(x.kind) || (x.speech_act === 'report' && /\bclear of\b/i.test(x.text || ''))) k = 2; } });
+  return (role === 'veh' ? VPH : APH)[k];
+}
+function renderMap(){
+  const [c, W, H] = canvasCtx(); const m = D.map;
+  if (HOLD() && !FOCUS){ FOCUS = true; Z = 4; } else if (!HOLD() && FOCUS){ FOCUS = false; Z = 2; }   // at the outcome: 2x the default zoom, centred on the crossing zone; +/- still work
+  const zc = m.zones['XSIM:ZONE:Z1'], cx = FOCUS ? (zc.xmin + zc.xmax) / 2 : 1250 + 250 * (1 - 1 / Z), cy = FOCUS ? (zc.ymin + zc.ymax) / 2 : -60, hw = 1180 / Z, hh = Math.max(hw * H / W, 120), x0 = cx - hw, x1 = cx + hw, y0 = cy - hh, y1 = cy + hh;
+  const s = Math.min(W / (x1 - x0), H / (y1 - y0)), ox = (W - (x1 - x0) * s) / 2, oy = (H - (y1 - y0) * s) / 2;
+  const label = (txt, x, y) => { const w = c.measureText(txt).width; c.fillText(txt, Math.min(Math.max(8, x), W - w - 8), Math.min(Math.max(14, y), H - 6)); };
+  const P = (x, y) => [ox + (x - x0) * s, oy + (y1 - y) * s];
+  c.clearRect(0, 0, W, H);
+  const rw = m.runways['XSIM:RWY:18-36']; let [a1, b1] = P(rw.centerline[0][0], 22.5), [a2, b2] = P(rw.centerline[1][0], -22.5);
+  c.fillStyle = css('--rwy'); c.fillRect(a1, b1, a2 - a1, b2 - b1);
+  c.setLineDash([10, 10]); c.strokeStyle = '#cfd6df'; c.lineWidth = 1; c.beginPath(); c.moveTo(...P(x0, 0)); c.lineTo(...P(x1, 0)); c.stroke(); c.setLineDash([]);
+  const k = m.taxiways['XSIM:TWY:K']; [a1, b1] = P(1500 - 11.5, k.centerline[1][1]); [a2, b2] = P(1500 + 11.5, k.centerline[0][1]);
+  c.fillStyle = css('--twy'); c.fillRect(a1, b1, a2 - a1, b2 - b1);
+  const z = m.zones['XSIM:ZONE:Z1']; [a1, b1] = P(z.xmin, z.ymax); [a2, b2] = P(z.xmax, z.ymin);
+  c.fillStyle = css('--zone'); c.fillRect(a1, b1, a2 - a1, b2 - b1); c.strokeStyle = css('--zoneline'); c.strokeRect(a1, b1, a2 - a1, b2 - b1);
+  if (OUTCOME != null && T >= OUTCOME){   // simulated outcome: outlined red, slow pulse
+    c.fillStyle = `rgba(255,77,79,${(.28 + .14 * Math.sin(Date.now() / 2400 * 2 * Math.PI)).toFixed(3)})`; c.fillRect(a1, b1, a2 - a1, b2 - b1); c.strokeStyle = css('--conflict'); c.lineWidth = 3; c.strokeRect(a1, b1, a2 - a1, b2 - b1); c.lineWidth = 1; }
+  c.strokeStyle = css('--hold'); c.lineWidth = 3;
+  Object.values(m.hold_lines).forEach(h => { const [hx, hy] = P(h.point[0] - 16, h.point[1]); const [hx2] = P(h.point[0] + 16, h.point[1]); c.beginPath(); c.moveTo(hx, hy); c.lineTo(hx2, hy); c.stroke(); });
+  c.lineWidth = 1; c.fillStyle = css('--dim'); c.font = '13px system-ui,sans-serif';
+  label('runway ' + RWY() + ' → (fictional)', ...P(x0 + 30 / Z, 36)); label('taxiway K', ...P(1514, Math.min(y1, 400) - 14 / Z)); label('crossing zone', ...P(z.xmin - 6, z.ymin - 8)); if (Z >= 2.2) label('hold line', ...P(1522, -92));
+  const TM = HOLD() ? OUTCOME : T, f = frameAt(TM);   // held at the simulated outcome (both modes); the clock, ruler, transcript and GMAPS panel keep running
+  ['T-AC1', 'T-VH7'].forEach(id => {
+    // trail: one segment per frame, coloured by the actor's phase at that frame's time (transcript only)
+    const fr = D.frames.filter(x => x.t <= TM && x.positions[id]), role = id === 'T-AC1' ? 'air' : 'veh';
+    c.globalAlpha = .8; c.lineWidth = 2.5;
+    fr.forEach((x, i) => { if (!i) return; const [ax, ay] = P(fr[i - 1].positions[id].x, fr[i - 1].positions[id].y), [bx, by] = P(x.positions[id].x, x.positions[id].y);
+      c.strokeStyle = phaseAt(x.positions[id].callsign, role, x.t)[0]; c.beginPath(); c.moveTo(ax, ay); c.lineTo(bx, by); c.stroke(); });
+    fr.filter(x => x.t % 10 === 0).forEach(x => { const [px, py] = P(x.positions[id].x, x.positions[id].y); c.fillStyle = phaseAt(x.positions[id].callsign, role, x.t)[0]; c.beginPath(); c.arc(px, py, 2.5, 0, Math.PI * 2); c.fill(); }); c.globalAlpha = 1; c.lineWidth = 1;
+    const p = f.positions[id]; if (!p) return;
+    const [px, py] = P(p.x, p.y), stale = p.age_s > 3, [pcol, pword] = phaseAt(p.callsign, role, TM);
+    c.fillStyle = stale ? css('--faint') : pcol; c.beginPath(); c.arc(px, py, id === 'T-AC1' ? 8 : 6, 0, Math.PI * 2); c.fill();
+    c.fillStyle = css('--ink'); c.font = 'bold 13px system-ui,sans-serif'; label(`${short(p.callsign)} · ${pword}${stale ? '  (last report ' + p.age_s + ' s ago)' : ''}`, px + 11, py - 9);
+  });
+  if (!ASIS() && !HOLD()) drawProjection(c, P, m, f, label);   // the projection is GMAPS's look-ahead; in AS-IS only the simulated positions move; not drawn over the held outcome
+  if (HOLD()){   // impact marker: a red burst centred between the two symbols' true simulated positions (the symbols are never moved together)
+    const pa = f.positions['T-AC1'], pv = f.positions['T-VH7'], [ax, ay] = P(pa.x, pa.y), [vx, vy] = P(pv.x, pv.y), mx = (ax + vx) / 2, my = (ay + vy) / 2;
+    const r = Math.max(18, Math.hypot(ax - vx, ay - vy) / 2 + 14), ph = (Date.now() / 2400) % 1;
+    c.save(); c.strokeStyle = css('--conflict'); c.fillStyle = css('--conflict'); c.lineWidth = 3;
+    c.beginPath(); c.arc(mx, my, r, 0, Math.PI * 2); c.stroke();
+    c.globalAlpha = 1 - ph; c.beginPath(); c.arc(mx, my, r * (1 + .6 * ph), 0, Math.PI * 2); c.stroke(); c.globalAlpha = 1;
+    for (let k = 0; k < 12; k++){ const an = k * Math.PI / 6; c.beginPath(); c.moveTo(mx + Math.cos(an) * (r + 4), my + Math.sin(an) * (r + 4)); c.lineTo(mx + Math.cos(an) * (r + (k % 2 ? 10 : 18)), my + Math.sin(an) * (r + (k % 2 ? 10 : 18))); c.stroke(); }
+    const t = `SIMULATED OUTCOME · both in the crossing zone · +${OUTCOME} s`; c.font = 'bold 14px system-ui,sans-serif'; const tw = c.measureText(t).width;
+    c.fillStyle = 'rgba(15,17,21,.9)'; c.fillRect(mx - tw / 2 - 8, my - r - 46, tw + 16, 24); c.fillStyle = css('--conflict'); label(t, mx - tw / 2, my - r - 29); c.restore(); }
+  const sw = (arr, names) => arr.map(([c0], i) => `<span style="color:${c0}">━</span>${names[i]}`).join(' ');
+  $('legend').innerHTML = `trail colour = what the radio has said · vehicle ${sw(VPH, ['none', 'asked', 'cleared', 'crossing', 'STOP', 'stop read back'])} · airplane ${sw(APH, ['none', 'cleared to land', 'clear'])}<br><span style="color:${css('--hold')}">━</span> hold line · red box = crossing zone${ASIS() ? ' · GMAPS not running: no projection drawn' : ' · dashed = model projection (simulated, not truth)'} · zoom ${Z.toFixed(1)}×`;
+}
+function drawProjection(c, P, m, f, label){
+  const la = f.combined || {}; if (la.as_of == null) return;
+  const z = m.zones['XSIM:ZONE:Z1'], unav = new Set((la.unavailable || []).map(u => u.track)), asof = la.as_of < T - 0.5 ? ` [as of +${la.as_of} s]` : '';
+  c.font = '13px system-ui,sans-serif';
+  const raised = (la.candidates || []).filter(x => x.raised && x.overlap), cond = (la.candidates || []).filter(x => !x.raised && x.overlap);
+  if (raised.length || cond.length){
+    const [a1, b1] = P(z.xmin, z.ymax), [a2, b2] = P(z.xmax, z.ymin);
+    c.fillStyle = raised.length ? 'rgba(255,70,70,.38)' : 'rgba(255,190,60,.25)'; c.fillRect(a1, b1, a2 - a1, b2 - b1);
+    const o = (raised[0] || cond[0]).overlap; c.fillStyle = raised.length ? '#ff8080' : '#ffc860';
+    label(`${raised.length ? 'projected overlap' : 'overlap only if no hold'} +${Math.round(o[0])}…+${Math.round(o[1])} s (model)${asof}`, a1 - 40, b1 - 10);
+  }
+  const lines = [...Object.values(m.runways), ...Object.values(m.taxiways)].map(r => r.centerline);
+  ['T-AC1', 'T-VH7'].forEach((id, k) => {
+    const p = f.positions[id]; if (!p) return;
+    const [px, py] = P(p.x, p.y), col = id === 'T-AC1' ? css('--air') : css('--veh'), ly = py + 20 + 14 * k, a = (la.actors || {})[id];
+    if (!a || a.status !== 'ok' || unav.has(id) || unav.has('all')){ c.fillStyle = '#c8a0ff'; label(`prediction unavailable${asof}`, px + 11, ly); return; }
+    let best = null;
+    lines.forEach(l => { const [x0, y0] = l[0], [x1, y1] = l[1], L = Math.hypot(x1 - x0, y1 - y0), dx = (x1 - x0) / L, dy = (y1 - y0) / L; const d = Math.abs((p.x - x0) * dy - (p.y - y0) * dx); if (!best || d < best.d) best = {d, dx, dy}; });
+    const far = Math.max(...[[z.xmin, z.ymin], [z.xmin, z.ymax], [z.xmax, z.ymin], [z.xmax, z.ymax]].map(([qx, qy]) => (qx - p.x) * best.dx + (qy - p.y) * best.dy));
+    const occ = a.occupancy || {}; let lab;
+    if (occ.status === 'window'){ const [w0, w1] = occ.window; lab = w0 > T ? `enters the zone in ~${Math.round(w0 - T)} s (model)` : (w1 == null || w1 > T ? 'in the zone window now (model)' : 'zone window passed (model)'); if (occ.hypothesis) lab += ' · start time assumed'; }
+    else if (occ.status === 'no_entry_within_horizon') lab = 'no zone entry in the next 60 s (model)';
+    else if (occ.status === 'past_zone') lab = 'past the zone (model)';
+    else lab = 'projection: ' + (occ.status || 'n/a');
+    if (far > 0 && occ.status !== 'past_zone'){ const [qx, qy] = P(p.x + best.dx * far, p.y + best.dy * far); c.save(); c.strokeStyle = col; c.lineWidth = 2.5; c.setLineDash([7, 5]); c.beginPath(); c.moveTo(px, py); c.lineTo(qx, qy); c.stroke(); c.restore(); }
+    c.fillStyle = col; label(lab + asof, px + 11, ly);
+  });
+}
+setInterval(() => { if (D && OUTCOME != null && T >= OUTCOME && D.frames && $('simwrap').style.display !== 'none') renderMap(); }, 150);   // keeps the outcome flash / pulse going while paused
+$('zin').onclick = () => { Z = Math.min(6, Z * 1.5); renderMap(); }; $('zout').onclick = () => { Z = Math.max(1, Z / 1.5); renderMap(); }; $('zfit').onclick = () => { Z = 2; renderMap(); };
+$('map').addEventListener('wheel', e => { e.preventDefault(); Z = Math.max(1, Math.min(6, Z * (e.deltaY < 0 ? 1.2 : 1 / 1.2))); renderMap(); }, {passive: false});
+
+// ---- playback ----
+// stop(): pause playback and the voice clip with it; stop(true) (jump, slider, scenario change) also discards the clip
+function stop(discard = false){ if (timer){ clearInterval(timer); timer = null; } $('play').textContent = '▶ Play'; if (discard) stopAudio(); else player.pause(); }
+$('slider').oninput = () => { stop(true); T = +$('slider').value; render(); };
+$('play').onclick = () => {
+  if (timer){ stop(); return; }
+  if (T >= tMax) T = tMin;
+  resumeAudio();
+  $('play').textContent = '❚❚ Pause';
+  const sp = audioActive() ? 1 : +$('speed').value;
+  timer = setInterval(() => { T = Math.min(tMax, T + 1); $('slider').value = T; render(); if (T >= tMax){ clearInterval(timer); timer = null; $('play').textContent = '▶ Play'; } }, 1000 / sp);   // the end of the script lets the last clip finish
+};
+document.addEventListener('keydown', e => { if (e.target.closest('input, select, textarea, button')) return;
+  if (e.key === ' '){ e.preventDefault(); $('play').click(); } if (e.key === 'ArrowRight'){ stop(); T = Math.min(tMax, T + 1); $('slider').value = T; render(); } if (e.key === 'ArrowLeft'){ stop(); T = Math.max(tMin, T - 1); $('slider').value = T; render(); } });
+
+// ---- owned clip audio (re-voiced clips, SIM episodes only), same local server and rules as index.html; nothing private ----
+const AUDIO = 'http://127.0.0.1:8767';
+let OWNED = new Set(), AUDIO_ON = false, prevT = null, queue = [], CUR = null;   // CUR = {n, t}: the clip in the player and its line's time
+const player = new Audio(); player.onended = () => { CUR = null; const n = queue.shift(); if (n) playClip(n.n, n.t); };
+window.GMAPS_AUDIO = player;   // read by the headless check (paused / src); never written from outside
+function playClip(n, t){ CUR = {n, t}; player.src = AUDIO + '/owned/' + encodeURIComponent(n); player.play().catch(() => {}); }
+function stopAudio(){ queue = []; CUR = null; player.pause(); player.removeAttribute('src'); player.load(); }   // stop and discard
+// ▶ after a pause: continue the held clip only while the clock is still inside its line's window (line time … + clip length), else drop it
+function resumeAudio(){
+  if (!CUR || !player.paused || !audioActive()) return;
+  const len = isFinite(player.duration) ? player.duration : 0;
+  if (T >= CUR.t && T <= CUR.t + Math.ceil(len)) player.play().catch(() => {}); else stopAudio(); }
+function clipFor(x){ if (!D) return null; const fx = FIXTURES.find(f => f.id === D.episode.id); if (fx) return fx.clip ? `${fx.clip}${Math.round(x.t)}.wav` : null; return x.source_id || `${D.episode.id}_${Math.round(x.t)}.wav`; }
+function audioActive(){ return AUDIO_ON && D && D.transcript.some(x => OWNED.has(clipFor(x))); }
+function syncAudio(){
+  if (!audioActive()){ prevT = T; return; }
+  const played = new Set();
+  if (prevT !== null && T > prevT && T - prevT <= 3) D.transcript.forEach(x => { const c = clipFor(x); if (x.t > prevT && x.t <= T && OWNED.has(c) && !played.has(c)){ played.add(c); if (!CUR || player.paused) playClip(c, x.t); else queue.push({n: c, t: x.t}); } });   // a held (paused) clip gives way to the new line
+  else if (prevT !== null && T !== prevT) stopAudio();
+  prevT = T;
+}
+fetch(AUDIO + '/owned/index.json').then(r => r.json()).then(d => { OWNED = new Set(d.clips.map(c => c.name)); AUDIO_ON = true; $('audioBtn').disabled = false; $('audioBtn').textContent = 'Voices: on (re-voiced)'; render(); }).catch(() => {});
+$('audioBtn').onclick = () => { AUDIO_ON = !AUDIO_ON; if (!AUDIO_ON) stopAudio(); $('audioBtn').textContent = 'Voices: ' + (AUDIO_ON ? 'on (re-voiced)' : 'off'); render(); };
+
+function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+window.onresize = render;
+const q = new URLSearchParams(location.search);
+if (q.get('map')) { $('mapPick').value = q.get('map'); showRef(q.get('map')); }
+const want = q.get('s');
+loadUrl(q.get('f') || ('samples/' + (SCEN.some(s => s[0] === want) || FIXTURES.some(f => f.id === want) ? want : 'SIM_E3_STOP_NOT_OBSERVED') + '.json'));
+</script>
+</body>
+</html>

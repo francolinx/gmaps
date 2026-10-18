@@ -1,0 +1,37 @@
+name: gmaps_parser
+version: 0.1.0
+experimental: true
+kind: environment
+integration_profile: custom-gym-verifier
+domain: other
+description: 'GMAPS ATC clearance parser: one transcribed radio transmission -> typed JSON {speaker_role, callsign, runway, instruction, taxiways}; reward = record exact match against scripted-scenario gold; groundable = also accepted by the runtime grounding rule. SIMULATED (FAA JO 7110.65 phraseology, fictional traffic).'
+modality: text
+licensing: unknown
+authors:
+- Franco Plathottathil (GMAPS)
+reward:
+  range:
+  - 0.0
+  - 1.0
+  higher_is_better: true
+determinism: unknown
+resources_server: gmaps_parser
+agent_server: simple_agent
+datasets:
+- name: heldout5_script
+  type: validation
+  jsonl_fpath: environments/gmaps_parser/data/heldout5_script.jsonl
+  num_repeats: 1
+  license: Apache 2.0
+- name: heldout4_asr
+  type: validation
+  jsonl_fpath: environments/gmaps_parser/data/heldout4_asr.jsonl
+  num_repeats: 1
+  license: Apache 2.0
+- name: heldout4_asr_prompt
+  type: validation
+  jsonl_fpath: environments/gmaps_parser/data/heldout4_asr_prompt.jsonl
+  num_repeats: 1
+  license: Apache 2.0
+model_server: policy_model
+lifecycle: active

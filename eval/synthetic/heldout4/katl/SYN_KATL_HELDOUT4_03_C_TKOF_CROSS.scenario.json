@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout4",
+ "phrasing_pool": "E",
+ "template": "C_TKOF_CROSS",
+ "basis": "R2 crossing vs active takeoff (3-7-2g1)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7501,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "B1",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United thirteen twenty one, runway two six right, cleared for takeoff, turn left heading two seven zero.",
+   "id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Roger, cleared for takeoff two six right, United thirteen twenty one.",
+   "id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "United twenty three twelve, proceed via Bravo one, cross runway two six right.",
+   "id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway two six right at Bravo one, United twenty three twelve.",
+   "id": "SYN_KATL_HELDOUT4_03_C_TKOF_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

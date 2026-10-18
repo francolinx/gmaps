@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT3_04_C_LUAW_LAND_00": {
+  "text": "Air to 1035, runway 27 right, line up the fleet, track of Boeing 726, 4 mile final.",
+  "asr_s": 0.245
+ },
+ "SYN_KATL_HELDOUT3_04_C_LUAW_LAND_01": {
+  "text": "American 1035, line up and wait runway 27R.",
+  "asr_s": 0.184
+ },
+ "SYN_KATL_HELDOUT3_04_C_LUAW_LAND_02": {
+  "text": "Output 507, runway 27R, wind 150 at 6 gust 20, cleared to land, traffic holding in position.",
+  "asr_s": 0.258
+ },
+ "SYN_KATL_HELDOUT3_04_C_LUAW_LAND_03": {
+  "text": "Southwest 507, Roger. Clear to land runway 27R.",
+  "asr_s": 0.194
+ }
+}

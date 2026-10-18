@@ -1,0 +1,10 @@
+{
+ "SYN_KATL_DEV4_16_RB_MISSING_RUNWAY_00": {
+  "text": "Delta 2593, runway 26L, wind 050 at 12, cleared to land.",
+  "asr_s": 0.227
+ },
+ "SYN_KATL_DEV4_16_RB_MISSING_RUNWAY_01": {
+  "text": "Delta 2593 cleared to land.",
+  "asr_s": 0.159
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_00": {
+  "text": "Spirit four, niner niner five, runway two two, cleared for takeoff, turn left heading two seven zero.",
+  "asr_s": 0.249
+ },
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_01": {
+  "text": "Roger, cleared for takeoff, PC Spirit four, line up and line up and wait.",
+  "asr_s": 0.208
+ },
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_02": {
+  "text": "Endeavor 2302, number two, runway three one, cleared to land.",
+  "asr_s": 0.201
+ },
+ "SYN_KLGA_HELDOUT4_06_C_TKOF_LAND_INTERSECT_03": {
+  "text": "Runway three one, cleared to land, Endeavor 2302.",
+  "asr_s": 0.186
+ }
+}

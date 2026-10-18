@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "Never 1558, number two, runway two two, cleared to land.",
+  "asr_s": 0.194
+ },
+ "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "Runway two two, cleared to land, Endeavor 1558.",
+  "asr_s": 0.189
+ },
+ "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "Delta 2152, proceed via Quebec, cross runway two two.",
+  "asr_s": 0.191
+ },
+ "SYN_KLGA_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Cross runway two two at Quebec Delta 2152.",
+  "asr_s": 0.174
+ }
+}

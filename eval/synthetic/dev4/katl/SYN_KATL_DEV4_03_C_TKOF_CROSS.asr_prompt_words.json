@@ -1,0 +1,198 @@
+{
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_00": {
+  "text": "Endeavor 1580, runway niner left, wind two eight zero at two one, cleared for takeoff.",
+  "asr_s": 0.541,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.8652
+   },
+   {
+    "w": "1580,",
+    "p": 0.7434
+   },
+   {
+    "w": "runway",
+    "p": 0.9948
+   },
+   {
+    "w": "niner",
+    "p": 0.8047
+   },
+   {
+    "w": "left,",
+    "p": 0.9865
+   },
+   {
+    "w": "wind",
+    "p": 0.9279
+   },
+   {
+    "w": "two",
+    "p": 0.9849
+   },
+   {
+    "w": "eight",
+    "p": 0.9986
+   },
+   {
+    "w": "zero",
+    "p": 0.999
+   },
+   {
+    "w": "at",
+    "p": 0.9765
+   },
+   {
+    "w": "two",
+    "p": 0.9828
+   },
+   {
+    "w": "one,",
+    "p": 0.74
+   },
+   {
+    "w": "cleared",
+    "p": 0.9988
+   },
+   {
+    "w": "for",
+    "p": 0.9982
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.942
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_01": {
+  "text": "Endeavor 1580, cleared for takeoff runway nine or left.",
+  "asr_s": 0.461,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.9356
+   },
+   {
+    "w": "1580,",
+    "p": 0.519
+   },
+   {
+    "w": "cleared",
+    "p": 0.997
+   },
+   {
+    "w": "for",
+    "p": 0.9972
+   },
+   {
+    "w": "takeoff",
+    "p": 0.9955
+   },
+   {
+    "w": "runway",
+    "p": 0.5728
+   },
+   {
+    "w": "nine",
+    "p": 0.5322
+   },
+   {
+    "w": "or",
+    "p": 0.8918
+   },
+   {
+    "w": "left.",
+    "p": 0.9613
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_02": {
+  "text": "Endeavor 1391, cross runway niner left at November five.",
+  "asr_s": 0.452,
+  "words": [
+   {
+    "w": "Endeavor",
+    "p": 0.7501
+   },
+   {
+    "w": "1391,",
+    "p": 0.5732
+   },
+   {
+    "w": "cross",
+    "p": 0.944
+   },
+   {
+    "w": "runway",
+    "p": 0.9983
+   },
+   {
+    "w": "niner",
+    "p": 0.9489
+   },
+   {
+    "w": "left",
+    "p": 0.8932
+   },
+   {
+    "w": "at",
+    "p": 0.9651
+   },
+   {
+    "w": "November",
+    "p": 0.9406
+   },
+   {
+    "w": "five.",
+    "p": 0.8323
+   }
+  ]
+ },
+ "SYN_KATL_DEV4_03_C_TKOF_CROSS_03": {
+  "text": "Crossing runway nine are left at November five, endeavor 1391.",
+  "asr_s": 0.441,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.868
+   },
+   {
+    "w": "runway",
+    "p": 0.9598
+   },
+   {
+    "w": "nine",
+    "p": 0.9465
+   },
+   {
+    "w": "are",
+    "p": 0.6468
+   },
+   {
+    "w": "left",
+    "p": 0.9993
+   },
+   {
+    "w": "at",
+    "p": 0.6705
+   },
+   {
+    "w": "November",
+    "p": 0.9562
+   },
+   {
+    "w": "five,",
+    "p": 0.8711
+   },
+   {
+    "w": "endeavor",
+    "p": 0.5172
+   },
+   {
+    "w": "1391.",
+    "p": 0.8162
+   }
+  ]
+ }
+}

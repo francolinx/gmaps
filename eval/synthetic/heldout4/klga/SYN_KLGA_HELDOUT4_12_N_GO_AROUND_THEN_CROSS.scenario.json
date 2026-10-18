@@ -1,0 +1,61 @@
+{
+ "id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout4",
+ "phrasing_pool": "E",
+ "template": "N_GO_AROUND_THEN_CROSS",
+ "basis": "go-around releases the landing (3-8-1), then a crossing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7502,
+ "context": {
+  "runway": "13-31",
+  "taxiway": "W",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Southwest twelve sixty two, runway three one, cleared to land, wind calm.",
+   "id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway three one, cleared to land, Southwest twelve sixty two.",
+   "id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 30,
+   "speaker": "ATC",
+   "text": "Southwest twelve sixty two, go around, traffic on the runway.",
+   "id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 33,
+   "speaker": "PILOT",
+   "text": "Southwest twelve sixty two is going around.",
+   "id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_03",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "ATC",
+   "text": "American niner zero four niner, cross runway three one at Whiskey, hold short of runway four.",
+   "id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_04",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 49,
+   "speaker": "PILOT",
+   "text": "Cross runway three one at Whiskey, American niner zero four niner.",
+   "id": "SYN_KLGA_HELDOUT4_12_N_GO_AROUND_THEN_CROSS_05",
+   "speaker_ref": "b"
+  }
+ ]
+}

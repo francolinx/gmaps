@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_00": {
+  "text": "9 and 4, 8, 7, 2. Number 2, runway 9 or left, cleared to left.",
+  "asr_s": 0.236
+ },
+ "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_01": {
+  "text": "Runway Niner left, cleared to land, United 4872.",
+  "asr_s": 0.192
+ },
+ "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_02": {
+  "text": "On tier 2, 4-1-1, cross runway Niner left to Delta without delay, traffic short final.",
+  "asr_s": 0.25
+ },
+ "SYN_KATL_HELDOUT4_02_C_LAND_CROSS_HOTSPOT_03": {
+  "text": "Cross runway Niner left at Delta, Frontier 2411.",
+  "asr_s": 0.186
+ }
+}

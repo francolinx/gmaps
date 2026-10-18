@@ -1,0 +1,18 @@
+{
+ "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_00": {
+  "text": "Spirit 7508, runway four, cleared for takeoff, turn left heading 270.",
+  "asr_s": 0.22
+ },
+ "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_01": {
+  "text": "Roger, cleared for takeoff, full speed, 7508.",
+  "asr_s": 0.177
+ },
+ "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_02": {
+  "text": "Delta 1800, cross runway four at uniform without delay, traffic short finally.",
+  "asr_s": 0.198
+ },
+ "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_03": {
+  "text": "Cross runway four at uniform, Delta 1800.",
+  "asr_s": 0.157
+ }
+}

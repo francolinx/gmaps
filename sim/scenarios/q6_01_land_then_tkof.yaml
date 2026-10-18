@@ -1,0 +1,15 @@
+# Held-out (claude/sim-upgrades, Oct 16): written before any run; the parser and ledger were not changed for it.
+id: Q6_01_LAND_THEN_TKOF
+title: Landing clearance, then a takeoff clearance on the same runway (alert expected)
+airport: XSIM
+simulated: true
+end_t: 60
+transmissions:
+  - {id: t1, t: 0, speaker: ATC, text: "SimAir two one two, runway three six, cleared to land.", cite: "7110.65 3-10-5a"}
+  - {id: t2, t: 5, speaker: PILOT, callsign: SIM212, text: "Cleared to land runway three six, SimAir two one two.", cite: "AIM via 7110.65 2-4-3 NOTE 1c"}
+  - {id: t3, t: 20, speaker: ATC, text: "Delta four thirty two, runway three six, cleared for takeoff.", cite: "7110.65 3-9-10a; 2-4-20a2 (group form)"}
+  - {id: t4, t: 25, speaker: PILOT, callsign: DAL432, text: "Cleared for takeoff runway three six, Delta four thirty two.", cite: "AIM via 7110.65 2-4-3 NOTE 1c"}
+expected_alerts:
+  - {id: A1, rule: [R3], runway: "36", aircraft: [SIM212, DAL432], window: [20, 40], why: "a takeoff clearance while a landing clearance on the same runway is open (3-9-6 / 3-10-3 separation is the controller's call; GMAPS flags the pair)"}
+expected_no_alert:
+  - {window: [0, 19], why: "only the landing clearance and its read back"}

@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV3_04_C_LUAW_LAND_00": {
+  "text": "American 2959, runway 26L at Echo 5, line up and wait.",
+  "asr_s": 0.207
+ },
+ "SYN_KATL_DEV3_04_C_LUAW_LAND_01": {
+  "text": "Line up, and wait 2-6 left. American 29-59.",
+  "asr_s": 0.2
+ },
+ "SYN_KATL_DEV3_04_C_LUAW_LAND_02": {
+  "text": "Delta 1726, runway 26L, cleared to land, traffic holding in position.",
+  "asr_s": 0.216
+ },
+ "SYN_KATL_DEV3_04_C_LUAW_LAND_03": {
+  "text": "cleared to land two six left delta 1726",
+  "asr_s": 0.178
+ }
+}

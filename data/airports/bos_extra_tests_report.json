@@ -1,0 +1,108 @@
+{
+  "all_passed": true,
+  "tests": [
+    {
+      "name": "missing_geometry_key_on_node",
+      "passed": true,
+      "rejected_by": [
+        "schema:nodes/0: 'geometry' is a required property"
+      ]
+    },
+    {
+      "name": "missing_length_key_on_segment",
+      "passed": true,
+      "rejected_by": [
+        "schema:segments/0: 'length_m' is a required property"
+      ]
+    },
+    {
+      "name": "invented_hold_offset",
+      "passed": true,
+      "rejected_by": [
+        "schema:hold_points/2/offset_m: 60 is not of type 'null'"
+      ]
+    },
+    {
+      "name": "lahso_at_runway_intersection_node",
+      "passed": true,
+      "rejected_by": [
+        "schema:hold_points/2/node_id: 'KBOS:N:RWY09-27_RWY15R-33L' is not of type 'null'"
+      ]
+    },
+    {
+      "name": "hold_approach_from_inside_protected_runway",
+      "passed": true,
+      "rejected_by": [
+        "hold approach incorrectly starts inside protected runway"
+      ]
+    },
+    {
+      "name": "cross_airport_entity_id",
+      "passed": true,
+      "rejected_by": [
+        "wrong airport namespace"
+      ]
+    },
+    {
+      "name": "cross_airport_segment_endpoint",
+      "passed": true,
+      "rejected_by": [
+        "dangling segment endpoint",
+        "hold side is not an approach endpoint"
+      ]
+    },
+    {
+      "name": "merge_33L_into_15L-33R",
+      "passed": true,
+      "rejected_by": [
+        "reciprocal physical runway mismatch",
+        "reciprocal physical runway mismatch"
+      ]
+    },
+    {
+      "name": "drop_runway_suffix_33L_to_33",
+      "passed": true,
+      "rejected_by": [
+        "bad reciprocal runway suffix",
+        "bad reciprocal runway suffix"
+      ]
+    },
+    {
+      "name": "hs4_usable_for_occupancy",
+      "passed": true,
+      "rejected_by": [
+        "schema:zones/1/usable_for_occupancy: False was expected"
+      ]
+    },
+    {
+      "name": "route_grants_authority",
+      "passed": true,
+      "rejected_by": [
+        "schema:route_templates/0/grants_authority: False was expected"
+      ]
+    },
+    {
+      "name": "automatic_routing_on",
+      "passed": true,
+      "rejected_by": [
+        "schema:usability/automatic_routing: False was expected"
+      ]
+    },
+    {
+      "name": "KNOWN_GAP_schema_accepts_numeric_confidence",
+      "passed": true,
+      "known_gap": true,
+      "detail": "v1 schema allows confidence 0-1; SCHEMA_GUIDE says null. Not enforced by validate.py; enforced by the audit below."
+    },
+    {
+      "name": "audit_all_confidence_null_both_airports",
+      "passed": true,
+      "detail": "all null"
+    },
+    {
+      "name": "metric_query_refused_without_geometry",
+      "passed": true,
+      "detail": "refused: v1 graph has no reviewed geometry or segment lengths"
+    }
+  ]
+}

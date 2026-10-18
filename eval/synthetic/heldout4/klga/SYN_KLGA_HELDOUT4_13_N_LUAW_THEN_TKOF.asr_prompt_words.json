@@ -1,0 +1,170 @@
+{
+ "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_00": {
+  "text": "United 1736, runway four and Papa line up and wait.",
+  "asr_s": 0.393,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9905
+   },
+   {
+    "w": "1736,",
+    "p": 0.5443
+   },
+   {
+    "w": "runway",
+    "p": 0.9977
+   },
+   {
+    "w": "four",
+    "p": 0.9988
+   },
+   {
+    "w": "and",
+    "p": 0.9683
+   },
+   {
+    "w": "Papa",
+    "p": 0.9505
+   },
+   {
+    "w": "line",
+    "p": 0.9966
+   },
+   {
+    "w": "up",
+    "p": 0.9994
+   },
+   {
+    "w": "and",
+    "p": 0.9818
+   },
+   {
+    "w": "wait.",
+    "p": 0.6789
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_01": {
+  "text": "Line up and wait runway four, United 1736.",
+  "asr_s": 0.435,
+  "words": [
+   {
+    "w": "Line",
+    "p": 0.9723
+   },
+   {
+    "w": "up",
+    "p": 0.9642
+   },
+   {
+    "w": "and",
+    "p": 0.9855
+   },
+   {
+    "w": "wait",
+    "p": 0.9988
+   },
+   {
+    "w": "runway",
+    "p": 0.7467
+   },
+   {
+    "w": "four,",
+    "p": 0.8143
+   },
+   {
+    "w": "United",
+    "p": 0.9192
+   },
+   {
+    "w": "1736.",
+    "p": 0.6579
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_02": {
+  "text": "United 1736, runway four at Papa intersection departure, cleared for takeoff.",
+  "asr_s": 0.435,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9793
+   },
+   {
+    "w": "1736,",
+    "p": 0.468
+   },
+   {
+    "w": "runway",
+    "p": 0.9723
+   },
+   {
+    "w": "four",
+    "p": 0.9894
+   },
+   {
+    "w": "at",
+    "p": 0.5916
+   },
+   {
+    "w": "Papa",
+    "p": 0.9582
+   },
+   {
+    "w": "intersection",
+    "p": 0.4789
+   },
+   {
+    "w": "departure,",
+    "p": 0.534
+   },
+   {
+    "w": "cleared",
+    "p": 0.9973
+   },
+   {
+    "w": "for",
+    "p": 0.9984
+   },
+   {
+    "w": "takeoff.",
+    "p": 0.8511
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_13_N_LUAW_THEN_TKOF_03": {
+  "text": "Roger, cleared for takeoff, four. United, 1736.",
+  "asr_s": 0.409,
+  "words": [
+   {
+    "w": "Roger,",
+    "p": 0.7055
+   },
+   {
+    "w": "cleared",
+    "p": 0.9833
+   },
+   {
+    "w": "for",
+    "p": 0.9918
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.5269
+   },
+   {
+    "w": "four.",
+    "p": 0.2575
+   },
+   {
+    "w": "United,",
+    "p": 0.5028
+   },
+   {
+    "w": "1736.",
+    "p": 0.7774
+   }
+  ]
+ }
+}

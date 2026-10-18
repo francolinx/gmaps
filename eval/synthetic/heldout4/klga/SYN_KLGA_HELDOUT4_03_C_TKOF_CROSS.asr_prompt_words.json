@@ -1,0 +1,174 @@
+{
+ "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_00": {
+  "text": "Spirit 7508, runway four, cleared for takeoff, turn left heading 270.",
+  "asr_s": 0.462,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9864
+   },
+   {
+    "w": "7508,",
+    "p": 0.3648
+   },
+   {
+    "w": "runway",
+    "p": 0.9907
+   },
+   {
+    "w": "four,",
+    "p": 0.8208
+   },
+   {
+    "w": "cleared",
+    "p": 0.9988
+   },
+   {
+    "w": "for",
+    "p": 0.9993
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.6753
+   },
+   {
+    "w": "turn",
+    "p": 0.9309
+   },
+   {
+    "w": "left",
+    "p": 0.9995
+   },
+   {
+    "w": "heading",
+    "p": 0.9656
+   },
+   {
+    "w": "270.",
+    "p": 0.8706
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_01": {
+  "text": "Roger, cleared for takeoff, force field 7508.",
+  "asr_s": 0.448,
+  "words": [
+   {
+    "w": "Roger,",
+    "p": 0.3979
+   },
+   {
+    "w": "cleared",
+    "p": 0.9885
+   },
+   {
+    "w": "for",
+    "p": 0.9984
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.912
+   },
+   {
+    "w": "force",
+    "p": 0.1504
+   },
+   {
+    "w": "field",
+    "p": 0.2983
+   },
+   {
+    "w": "7508.",
+    "p": 0.8038
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_02": {
+  "text": "Delta 1800, cross runway four at uniform without delay, traffic short finally.",
+  "asr_s": 0.459,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9824
+   },
+   {
+    "w": "1800,",
+    "p": 0.4748
+   },
+   {
+    "w": "cross",
+    "p": 0.905
+   },
+   {
+    "w": "runway",
+    "p": 0.998
+   },
+   {
+    "w": "four",
+    "p": 0.9951
+   },
+   {
+    "w": "at",
+    "p": 0.9285
+   },
+   {
+    "w": "uniform",
+    "p": 0.8577
+   },
+   {
+    "w": "without",
+    "p": 0.924
+   },
+   {
+    "w": "delay,",
+    "p": 0.7481
+   },
+   {
+    "w": "traffic",
+    "p": 0.9975
+   },
+   {
+    "w": "short",
+    "p": 0.9665
+   },
+   {
+    "w": "finally.",
+    "p": 0.6278
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_03_C_TKOF_CROSS_03": {
+  "text": "Cross runway four at uniform, Delta 1800.",
+  "asr_s": 0.41,
+  "words": [
+   {
+    "w": "Cross",
+    "p": 0.9306
+   },
+   {
+    "w": "runway",
+    "p": 0.9843
+   },
+   {
+    "w": "four",
+    "p": 0.9966
+   },
+   {
+    "w": "at",
+    "p": 0.9176
+   },
+   {
+    "w": "uniform,",
+    "p": 0.4362
+   },
+   {
+    "w": "Delta",
+    "p": 0.9675
+   },
+   {
+    "w": "1800.",
+    "p": 0.7356
+   }
+  ]
+ }
+}

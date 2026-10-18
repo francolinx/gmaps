@@ -1,0 +1,242 @@
+{
+ "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_00": {
+  "text": "Delta six seven three one, runway eight right, cleared to land, wind calm.",
+  "asr_s": 0.503,
+  "words": [
+   {
+    "w": "Delta",
+    "p": 0.9758
+   },
+   {
+    "w": "six",
+    "p": 0.8793
+   },
+   {
+    "w": "seven",
+    "p": 0.8606
+   },
+   {
+    "w": "three",
+    "p": 0.9933
+   },
+   {
+    "w": "one,",
+    "p": 0.8888
+   },
+   {
+    "w": "runway",
+    "p": 0.9983
+   },
+   {
+    "w": "eight",
+    "p": 0.9973
+   },
+   {
+    "w": "right,",
+    "p": 0.876
+   },
+   {
+    "w": "cleared",
+    "p": 0.9922
+   },
+   {
+    "w": "to",
+    "p": 0.8835
+   },
+   {
+    "w": "land,",
+    "p": 0.9068
+   },
+   {
+    "w": "wind",
+    "p": 0.9051
+   },
+   {
+    "w": "calm.",
+    "p": 0.604
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_01": {
+  "text": "Runway eight right, cleared to land, Delta six seven three one.",
+  "asr_s": 0.468,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.5408
+   },
+   {
+    "w": "eight",
+    "p": 0.9904
+   },
+   {
+    "w": "right,",
+    "p": 0.9279
+   },
+   {
+    "w": "cleared",
+    "p": 0.9929
+   },
+   {
+    "w": "to",
+    "p": 0.7703
+   },
+   {
+    "w": "land,",
+    "p": 0.9494
+   },
+   {
+    "w": "Delta",
+    "p": 0.9296
+   },
+   {
+    "w": "six",
+    "p": 0.5838
+   },
+   {
+    "w": "seven",
+    "p": 0.9524
+   },
+   {
+    "w": "three",
+    "p": 0.9613
+   },
+   {
+    "w": "one.",
+    "p": 0.98
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_02": {
+  "text": "United 2400, hold short runway eight right, traffic on final.",
+  "asr_s": 0.478,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9904
+   },
+   {
+    "w": "2400,",
+    "p": 0.7475
+   },
+   {
+    "w": "hold",
+    "p": 0.9771
+   },
+   {
+    "w": "short",
+    "p": 0.9992
+   },
+   {
+    "w": "runway",
+    "p": 0.7681
+   },
+   {
+    "w": "eight",
+    "p": 0.9938
+   },
+   {
+    "w": "right,",
+    "p": 0.8759
+   },
+   {
+    "w": "traffic",
+    "p": 0.9979
+   },
+   {
+    "w": "on",
+    "p": 0.9981
+   },
+   {
+    "w": "final.",
+    "p": 0.9157
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_03": {
+  "text": "Wilco United 2400.",
+  "asr_s": 0.393,
+  "words": [
+   {
+    "w": "Wilco",
+    "p": 0.2693
+   },
+   {
+    "w": "United",
+    "p": 0.7557
+   },
+   {
+    "w": "2400.",
+    "p": 0.6489
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_04": {
+  "text": "United 2400, read back hold instructions.",
+  "asr_s": 0.451,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9716
+   },
+   {
+    "w": "2400,",
+    "p": 0.5704
+   },
+   {
+    "w": "read",
+    "p": 0.9662
+   },
+   {
+    "w": "back",
+    "p": 0.7581
+   },
+   {
+    "w": "hold",
+    "p": 0.7785
+   },
+   {
+    "w": "instructions.",
+    "p": 0.7903
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_07_C_HOLD_NO_READBACK_05": {
+  "text": "Hold short of runway eight right, United 2400.",
+  "asr_s": 0.42,
+  "words": [
+   {
+    "w": "Hold",
+    "p": 0.41
+   },
+   {
+    "w": "short",
+    "p": 0.9172
+   },
+   {
+    "w": "of",
+    "p": 0.971
+   },
+   {
+    "w": "runway",
+    "p": 0.991
+   },
+   {
+    "w": "eight",
+    "p": 0.9908
+   },
+   {
+    "w": "right,",
+    "p": 0.8295
+   },
+   {
+    "w": "United",
+    "p": 0.7128
+   },
+   {
+    "w": "2400.",
+    "p": 0.8971
+   }
+  ]
+ }
+}

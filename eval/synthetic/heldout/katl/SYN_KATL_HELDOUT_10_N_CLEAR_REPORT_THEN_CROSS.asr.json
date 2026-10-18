@@ -1,0 +1,22 @@
+{
+ "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_00": {
+  "text": "Delta 1668, cleared to land runway 27L.",
+  "asr_s": 0.181
+ },
+ "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_01": {
+  "text": "Clear to land 2-7 left, Delta 1-6-6-8.",
+  "asr_s": 0.213
+ },
+ "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_02": {
+  "text": "Delta 1668 is clear of 27 left.",
+  "asr_s": 0.202
+ },
+ "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_03": {
+  "text": "American 4 Niner 6 at Romeo 7 cross runway 27L.",
+  "asr_s": 0.194
+ },
+ "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_04": {
+  "text": "Crossing runway 27L at Romeo 7, American 49er 6.",
+  "asr_s": 0.188
+ }
+}

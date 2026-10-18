@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KLGA_HELDOUT_08_N_HOLD_SHORT",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "N_HOLD_SHORT",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7302,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "P",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit one four four zero, cleared to land runway two two.",
+   "id": "SYN_KLGA_HELDOUT_08_N_HOLD_SHORT_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two two, Spirit one four four zero.",
+   "id": "SYN_KLGA_HELDOUT_08_N_HOLD_SHORT_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Spirit one one three, hold short runway two two at Papa.",
+   "id": "SYN_KLGA_HELDOUT_08_N_HOLD_SHORT_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Holding short runway two two at Papa, Spirit one one three.",
+   "id": "SYN_KLGA_HELDOUT_08_N_HOLD_SHORT_03"
+  }
+ ]
+}

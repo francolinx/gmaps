@@ -1,0 +1,106 @@
+{
+ "SIMULATED": true,
+ "TRAINING_ONLY": true,
+ "text_only": true,
+ "source_split": "eval/synthetic/train_ft (scenario + truth)",
+ "generator": "train/augment_asr_noise.py",
+ "generator_commit": "07f01da",
+ "seed": 20261017,
+ "variants": [
+  "clean",
+  "unprompted",
+  "prompted",
+  "harsh"
+ ],
+ "noise_model": {
+  "file": "train/asr_noise_model.json",
+  "learned_from": [
+   "dev",
+   "dev3",
+   "dev4"
+  ],
+  "never_from": [
+   "heldout3",
+   "heldout4",
+   "heldout5"
+  ],
+  "dev_pairs": {
+   "unprompted": 354,
+   "prompted": 138
+  },
+  "p_digits": {
+   "unprompted": {
+    "flight": 0.986,
+    "runway": 0.906,
+    "taxiway_number": 1.0,
+    "other": 0.858
+   },
+   "prompted": {
+    "flight": 0.62,
+    "runway": 0.0,
+    "taxiway_number": 0.0,
+    "other": 0.043
+   }
+  }
+ },
+ "gold_correction_W1": {
+  "taxiways_inside_N_registration_removed": 378,
+  "note": "train_ft targets only; held-out truth untouched (DECISIONS N19)"
+ },
+ "prompt_source": {
+  "KLGA": "chart_identifiers",
+  "KATL": "chart_identifiers"
+ },
+ "rows_written": 7065,
+ "include_ungroundable": false,
+ "per_variant": {
+  "clean": {
+   "rows": 1794,
+   "groundable": 1794
+  },
+  "unprompted": {
+   "rows": 1794,
+   "groundable": 1780,
+   "ungroundable": 14,
+   "ungroundable_reasons": 0
+  },
+  "prompted": {
+   "rows": 1794,
+   "groundable": 1794
+  },
+  "harsh": {
+   "rows": 1794,
+   "groundable": 1697,
+   "ungroundable": 97,
+   "ungroundable_reasons": 0
+  },
+  "harsh_reasons": {
+   "grounding: taxiway CY not heard": 5,
+   "grounding: taxiway Z not heard": 4,
+   "grounding: taxiway F not heard": 4,
+   "grounding: airline not heard and not resolved by the traffic list": 55,
+   "grounding: taxiway Q not heard": 4,
+   "grounding: taxiway G not heard": 1,
+   "grounding: taxiway P not heard": 8,
+   "grounding: taxiway U not heard": 5,
+   "grounding: taxiway Y not heard": 2,
+   "grounding: taxiway C not heard": 4,
+   "grounding: taxiway F4 not heard": 1,
+   "grounding: taxiway L3 not heard": 1,
+   "grounding: taxiway L not heard": 3
+  },
+  "unprompted_reasons": {
+   "grounding: taxiway F not heard": 7,
+   "grounding: taxiway U not heard": 6,
+   "grounding: taxiway F4 not heard": 1
+  }
+ },
+ "overlap_with_heldout_after_drop": 0,
+ "pairs_asr_jsonl": {
+  "sha256": "dc6523439c9a5fadf8b95b22ba0bac5dc3be8da07f5e36ce3b125dd650cbc6e0",
+  "bytes": 25684730,
+  "tracked_in_git": false,
+  "why": "over the 5 MB pre-commit limit; regenerate with this script (deterministic for a seed)"
+ },
+ "script_sha256": "5d92304fdc258ae0bbb51a11dc2934353ccc05d746d67979f21bb46604b8a0e2"
+}

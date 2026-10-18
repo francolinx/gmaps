@@ -1,0 +1,31 @@
+{
+ "id": "SYN_KLGA_DEV4_08_N_CROSS_OTHER_RWY",
+ "SIMULATED": true,
+ "note": "Callsigns on frequency (stand-in for ADS-B / flight plans); an observation, not truth labels.",
+ "perfect": [
+  "AAL882",
+  "EDV136",
+  "JBU200",
+  "N6990H",
+  "N7284K",
+  "NKS1544",
+  "NKS1680",
+  "NKS328",
+  "SWA900",
+  "UAL708"
+ ],
+ "realistic": [
+  "AAL882",
+  "DAL200",
+  "EDV136",
+  "EDV1826",
+  "EDV952",
+  "JBU200",
+  "N6990H",
+  "N7284K",
+  "NKS1544",
+  "NKS1680",
+  "NKS328",
+  "UAL708"
+ ]
+}

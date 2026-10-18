@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND",
+ "airport": "KLGA",
+ "SIMULATED": true,
+ "split": "heldout3",
+ "phrasing_pool": "D",
+ "template": "C_LUAW_LAND",
+ "basis": "R5 line up and wait vs landing, same runway (3-9-4; landing clearance carries 'traffic holding in position': CAUTION)",
+ "generator": "eval/synthetic/generate_v3.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7402,
+ "context": {
+  "runway": "04-22",
+  "taxiway": "E",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Spirit seven hundred, runway two two, line up and wait. Traffic a Embraer one seventy five, six mile final.",
+   "id": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Spirit seven hundred, line up and wait runway two two.",
+   "id": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "American seven hundred, runway two two, wind zero eight zero at six gusts one eight, cleared to land. Traffic holding in position.",
+   "id": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "American seven hundred, roger, cleared to land runway two two.",
+   "id": "SYN_KLGA_HELDOUT3_04_C_LUAW_LAND_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "icao": "KJFK",
+ "checked_at": "2026-10-08T23:50:08-0400",
+ "dpi": 300,
+ "ink_level": 250,
+ "tolerance_px": 1,
+ "pdf_sha256": "332ea819838b60066ad7308aab9c1bdf93fc8550617c535ac2644e184583793d",
+ "faa_ink_px": 768182,
+ "reconstruction_ink_px": 770006,
+ "covered_pct": 99.8,
+ "extra_pct": 0.259,
+ "thresholds": {
+  "min_covered_pct": 99.0,
+  "max_extra_pct": 2.0
+ },
+ "pass": true,
+ "note": "faithful.svg uses original FAA styling; visible-text labels use a substitute font."
+}

@@ -1,0 +1,1031 @@
+{
+ "SIMULATED": true,
+ "bench": "venue/tool_loop_bench.py",
+ "model": "lightning [v3]",
+ "procedure": "v3",
+ "base_url": "http://127.0.0.1:8002/v1",
+ "episode": "SIM_E6_HOLD_OK",
+ "generated": "2026-10-17T18:02:22",
+ "summary": {
+  "no_feed": {
+   "runs": 2,
+   "pass_rate": 1.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 1.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 0,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.0,
+   "model_latency_median_s": 0.953,
+   "time_to_alert_median_s": null
+  },
+  "positive": {
+   "runs": 2,
+   "pass_rate": 1.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 1.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 0,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.0,
+   "model_latency_median_s": 0.986,
+   "time_to_alert_median_s": null
+  },
+  "stale": {
+   "runs": 2,
+   "pass_rate": 1.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 1.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 0,
+   "faults_injected": 0,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.0,
+   "model_latency_median_s": 0.972,
+   "time_to_alert_median_s": null
+  },
+  "transient": {
+   "runs": 2,
+   "pass_rate": 1.0,
+   "ingest_recall_mean": 1.0,
+   "alerts_exact_rate": 1.0,
+   "invalid_call_rate": 0.0,
+   "recoveries": 2,
+   "faults_injected": 2,
+   "refused_retries": 0,
+   "refused_reposts": 0,
+   "duplicates_ignored": 0,
+   "rounds_exhausted": 0,
+   "model_calls_per_turn": 4.25,
+   "model_latency_median_s": 0.733,
+   "time_to_alert_median_s": null
+  }
+ },
+ "runs": [
+  {
+   "run_id": "20261017-175933_positive_0",
+   "episode": "SIM_E6_HOLD_OK",
+   "scenario": "positive",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 4,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 16
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 0.9945,
+    "p95": 3.629,
+    "n": 16
+   },
+   "turn_wall_s_median": 5.791,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E6_HOLD_OK_000",
+     "t": 0,
+     "wall_s": 4.675,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** ATC cleared SimAir\u202f212 to land on runway\u202f36 at\u202ft=0\u202fs (event\u202fev00005, LANDING_CLEARANCE). The ledger added the landing intent and reserved runway\u202f36 for that aircraft.\n\n**Warning posted:** None. The landing clearance did not generate a CONFLICT warning.\n\n**Look\u2011ahead result"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_003",
+     "t": 3,
+     "wall_s": 5.433,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=3\u202fs, tower cleared SimAir\u202f212 to land runway\u202f36. The parse produced event\u202fev00006 (LANDING_CLEARANCE) and ledger_ingest added the landing intent for SIM212 on runway\u202f36; no warnings were generated or cleared.\n\n**Warning posted:** None. The new_warnings list was empty,"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_018",
+     "t": 18,
+     "wall_s": 6.406,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=18\u202fs, ATC instructed \u201cRescue seven, hold short runway 36 at Kilo, traffic landing.\u201d The parse produced event\u202fev00007 (HOLD_SHORT) and ledger ingestion returned no new warnings and no cleared warnings.\n\n**Warning posted:** None \u2014 the new_warnings list was empty and no "
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_021",
+     "t": 21,
+     "wall_s": 6.149,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded.**  \nThe pilot readback \u201cHold short runway 36 at Kilo, Rescue\u202f7\u201d was parsed as event **ev00008** (HOLD_SHORT) and ingested into the ledger. The ledger returned no new warnings and no cleared warnings.\n\n**Look\u2011ahead at t\u202f=\u202f21\u202fs** shows aircraft SIM212 (landing on runway\u202f36) an"
+    }
+   ],
+   "trace": "eval/results/toolbench/trace_20261017-175933_positive_0.jsonl"
+  },
+  {
+   "run_id": "20261017-175933_positive_1",
+   "episode": "SIM_E6_HOLD_OK",
+   "scenario": "positive",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 4,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 16
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 0.9770000000000001,
+    "p95": 3.387,
+    "n": 16
+   },
+   "turn_wall_s_median": 5.452,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E6_HOLD_OK_000",
+     "t": 0,
+     "wall_s": 4.884,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** ATC instructed SimAir\u202f212 to land on runway\u202f36 at t\u202f=\u202f0\u202fs (event\u202fev00013). The landing clearance was ingested into the ledger, reserving runway\u202f36 for that aircraft.\n\n**Warning posted:** None. The ledger had no new warnings of severity \"CONFLICT\", so no alert was posted.\n\n"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_003",
+     "t": 3,
+     "wall_s": 4.863,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=3\u202fs, pilot SimAir\u202f212 read back a landing clearance for runway\u202f36. The ledger ingested event\u202fev00014 and reserved runway\u202f36 for that aircraft.\n\n**Warning posted:** No CONFLICT\u2011severity warning was generated, so no alert was posted.\n\n**Look\u2011ahead at t=3\u202fs:** The look\u2011a"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_018",
+     "t": 18,
+     "wall_s": 6.318,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission t=18 s, source SIM_E6_HOLD_OK_018**\n\nThe ATC transmission \u201cRescue seven, hold short runway 36 at Kilo, traffic landing\u201d was parsed as a HOLD_SHORT instruction for callsign RESCUE7 on runway 36 at fix K. The event was ingested into the ledger (event_id\u202fev00015). No immediate conflict w"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_021",
+     "t": 21,
+     "wall_s": 6.02,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded.**  \nThe pilot readback \u201cHold short runway 36 at Kilo\u201d for Rescue\u202f7 was parsed as event\u202fev00016 and ingested into the ledger. The ledger returned no new or cleared warnings, and there was no CONFLICT severity to trigger an alert.\n\n**Look\u2011ahead at t\u202f=\u202f21\u202fs** shows two aircraft"
+    }
+   ],
+   "trace": "eval/results/toolbench/trace_20261017-175933_positive_1.jsonl"
+  },
+  {
+   "run_id": "20261017-175933_no_feed_0",
+   "episode": "SIM_E6_HOLD_OK",
+   "scenario": "no_feed",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 4,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 16
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 0.953,
+    "p95": 2.201,
+    "n": 16
+   },
+   "turn_wall_s_median": 4.557,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E6_HOLD_OK_000",
+     "t": 0,
+     "wall_s": 4.302,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** ATC clearance \u201cSimAir\u202f212, runway\u202f36, cleared to land\u201d parsed as a LANDING_CLEARANCE event (event_id\u202fev00021). The ledger added the landing intent for SIM212 on runway\u202f36.\n\n**Warning posted:** None \u2013 the ledger reported no new warnings, and severity was not \u201cCONFLICT\u201d.\n\n**Look\u2011ahead re"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_003",
+     "t": 3,
+     "wall_s": 4.812,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** A pilot readback of a landing clearance for SimAir\u202f212 on runway\u202f36 at\u202ft\u202f=\u202f3\u202fs (event\u202fev00022). The ledger now shows an active landing intent on that runway.\n\n**Warning posted:** None. The new\u2011warnings list is empty, so no CONFLICT\u2011severity alert was triggered.\n\n**Look\u2011ahead result:** "
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_018",
+     "t": 18,
+     "wall_s": 4.993,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** ATC instructed \u201cRescue seven, hold short runway 36 at Kilo, traffic landing\u201d at t=18\u202fs. The grammar parsed a HOLD_SHORT event (event_id\u202fev00023) and it was ingested into the ledger. No new warnings were generated, and the ledger shows an active landing reservation on runway\u202f36.\n\n**Warn"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_021",
+     "t": 21,
+     "wall_s": 4.229,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** At t=21\u202fs, tower received a pilot read\u2011back \u201cHold short runway\u202f36 at Kilo, Rescue\u202f7\u201d (event\u202fev00024). The ledger entry shows no new or cleared warnings and reserves a landing on runway\u202f36 for SIM212.\n\n**Warning posted:** None \u2013 the event carries no CONFLICT severity.\n\n**Look\u2011ahead resu"
+    }
+   ],
+   "trace": "eval/results/toolbench/trace_20261017-175933_no_feed_0.jsonl"
+  },
+  {
+   "run_id": "20261017-175933_no_feed_1",
+   "episode": "SIM_E6_HOLD_OK",
+   "scenario": "no_feed",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 4,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 16
+   },
+   "invalid_calls": 0,
+   "injected_faults": 0,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 0.9525,
+    "p95": 2.223,
+    "n": 16
+   },
+   "turn_wall_s_median": 4.7225,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E6_HOLD_OK_000",
+     "t": 0,
+     "wall_s": 4.276,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** ATC cleared SimAir\u202f212 to land on runway\u202f36 at\u202ft=0\u202fs (event\u202fev00029). The landing\u2011clearance was ingested into the ledger, and a reservation for that landing was created.\n\n**Warning posted:** None \u2013 the ledger had no new warnings of severity \"CONFLICT\".\n\n**Look\u2011ahead result:** Predictio"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_003",
+     "t": 3,
+     "wall_s": 5.3,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** At t=3\u202fs a pilot readback \u201cCleared to land runway\u202f36, SimAir\u202f212\u201d was parsed as a LANDING_CLEARANCE event (event_id\u202fev00030). The ledger added the callsign SIM212 with an active landing status on runway\u202f36; no new warnings were generated.\n\n**Warning posted:** None \u2013 the event produced "
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_018",
+     "t": 18,
+     "wall_s": 4.825,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** Tower instructed Rescue\u202f7 to hold short of runway\u202f36 at Kilo at 18\u202fs (event\u202fev00031). The ledger entry shows no new warnings and no cleared warnings; a reservation for a landing on runway\u202f36 (SIM212) remains active.\n\n**Warning posted:** None \u2013 the event kind is HOLD_SHORT and no CONFLI"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_021",
+     "t": 21,
+     "wall_s": 4.62,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** At t=21\u202fs pilot readback \u201cHold short runway\u202f36 at Kilo, Rescue\u202f7\u201d was parsed as a HOLD_SHORT event (event_id\u202fev00032) and ingested into the ledger. The ledger also noted an active reservation for SIM212 on runway\u202f36.\n\n**Warning posted:** None \u2013 there were no new warnings of severity \u201cC"
+    }
+   ],
+   "trace": "eval/results/toolbench/trace_20261017-175933_no_feed_1.jsonl"
+  },
+  {
+   "run_id": "20261017-175933_transient_0",
+   "episode": "SIM_E6_HOLD_OK",
+   "scenario": "transient",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 4,
+    "tool_calls": 13,
+    "tool_errors": 1,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 1,
+    "rounds_exhausted": 0,
+    "model_calls": 17
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 1,
+   "model_latency_s": {
+    "median": 0.755,
+    "p95": 3.432,
+    "n": 17
+   },
+   "turn_wall_s_median": 5.9105,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E6_HOLD_OK_000",
+     "t": 0,
+     "wall_s": 5.774,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** ATC cleared SimAir\u202f212 to land on runway\u202f36 at\u202ft\u202f=\u202f0\u202fs (event\u202fev00037). The landing\u2011clearance was ingested into the ledger, creating an active landing reservation for that aircraft on runway\u202f36.\n\n**Warning posted:** No CONFLICT\u2011severity warning was generated, so no alert w"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_003",
+     "t": 3,
+     "wall_s": 4.976,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission t=3\u202fs**  \nThe parser identified a landing clearance for SimAir\u202f212 on runway\u202f36. The ledger recorded the event (ev00038) and added the aircraft to the active landing reservation for runway\u202f36. No new warnings were generated, and no conflict alert was posted.\n\n**Look\u2011ahead at t=3\u202fs**  "
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_018",
+     "t": 18,
+     "wall_s": 6.445,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** ATC instructed Rescue\u202f7 to hold short of runway\u202f36 at Kilo (t\u202f=\u202f18\u202fs, event\u202fev00039). The hold\u2011short constraint was ingested into the ledger; no new warnings were generated.\n\n**Warning posted:** None \u2014 the ledger returned no CONFLICT\u2011severity warnings, so no alert was post"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_021",
+     "t": 21,
+     "wall_s": 6.047,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=21\u202fs, pilot of RESCUE7 read back \u201cHold short runway 36 at Kilo.\u201d The event was parsed as ev00040 and ingested into the ledger; no new warnings were generated, and the ledger shows an active landing reservation for SIM212 on runway\u202f36.\n\n**Warning posted:** None \u2013 the l"
+    }
+   ],
+   "trace": "eval/results/toolbench/trace_20261017-175933_transient_0.jsonl"
+  },
+  {
+   "run_id": "20261017-175933_transient_1",
+   "episode": "SIM_E6_HOLD_OK",
+   "scenario": "transient",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 4,
+    "tool_calls": 13,
+    "tool_errors": 1,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 1,
+    "rounds_exhausted": 0,
+    "model_calls": 17
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 1,
+   "model_latency_s": {
+    "median": 0.711,
+    "p95": 2.493,
+    "n": 17
+   },
+   "turn_wall_s_median": 5.2765,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E6_HOLD_OK_000",
+     "t": 0,
+     "wall_s": 5.523,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 1,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** ATC cleared SimAir\u202f212 to land on runway\u202f36 at\u202ft\u202f=\u202f0\u202fs (event\u202fev00045). The landing\u2011clearance was ingested into the ledger, which created a reservation for that aircraft on runway\u202f36.\n\n**Warning posted:** None. The ledger had no new warnings of severity \u201cCONFLICT\u201d, so no a"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_003",
+     "t": 3,
+     "wall_s": 4.938,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=3\u202fs, pilot SimAir\u202f212 read back a landing clearance for runway\u202f36. The ledger ingested event\u202fev00046 and reserved runway\u202f36 for a landing.\n\n**Warning posted:** No CONFLICT\u2011severity warning was generated, so no alert was posted.\n\n**Look\u2011ahead at t=3\u202fs:** The look\u2011ahead"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_018",
+     "t": 18,
+     "wall_s": 6.692,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=18\u202fs, ATC instructed \u201cRescue seven, hold short runway 36 at Kilo, traffic landing.\u201d The grammar parsed it as a HOLD_SHORT instruction (event_id\u202fev00047) and the ledger ingest added it; no new warnings were generated and no warnings were cleared.\n\n**Warning posted:** N"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_021",
+     "t": 21,
+     "wall_s": 5.03,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded.**  \nThe pilot readback \u201cHold short runway 36 at Kilo\u201d for Rescue\u202f7 was parsed (event\u202fev00048) and ingested into the ledger. No new warnings were generated, and the look\u2011ahead at t\u202f=\u202f21\u202fs shows the two actors (SIM212 on runway\u202f36 and RESCUE7 holding short) have overlapping wi"
+    }
+   ],
+   "trace": "eval/results/toolbench/trace_20261017-175933_transient_1.jsonl"
+  },
+  {
+   "run_id": "20261017-175933_stale_0",
+   "episode": "SIM_E6_HOLD_OK",
+   "scenario": "stale",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 4,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 16
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 0.9849999999999999,
+    "p95": 2.674,
+    "n": 16
+   },
+   "turn_wall_s_median": 5.2490000000000006,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E6_HOLD_OK_000",
+     "t": 0,
+     "wall_s": 4.418,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission processed:** At t=0\u202fs, tower cleared SimAir\u202f212 to land on runway\u202f36. The parser identified a LANDING_CLEARANCE event (event_id\u202fev00053) and ingested it into the ledger; no immediate runway\u2011incursion warnings were generated. The look\u2011ahead at as_of=0 returned **prediction_unavailable*"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_003",
+     "t": 3,
+     "wall_s": 5.202,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission t=3\u202fs**  \n- Parsed as a pilot read\u2011back/landing clearance for SimAir\u202f212 on runway\u202f36.  \n- Ingested into the ledger (event\u202fev00054); no new warnings were generated, and no existing warnings were cleared.  \n- The look\u2011ahead at t=3\u202fs reports the Sim212 track as \u201cunavailable\u201d (airborne p"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_018",
+     "t": 18,
+     "wall_s": 6.129,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=18\u202fs, ATC instructed \u201cRescue\u202f7, hold short runway\u202f36 at\u202fKilo, traffic landing.\u201d The parse produced event\u202fev00055 (HOLD_SHORT) and ledger ingestion returned no new warnings or cleared warnings.\n\n**Warning posted:** None \u2014 the ledger had no CONFLICT\u2011severity warnings, s"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_021",
+     "t": 21,
+     "wall_s": 5.296,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded.** The pilot readback \u201cHold short runway 36 at Kilo, Rescue\u202f7\u201d was parsed as event\u202fev00056 (HOLD_SHORT) and ingested into the ledger. The ledger returned no new warnings and no cleared warnings. The look\u2011ahead at t\u202f=\u202f21\u202fs shows aircraft\u202fSIM212 (landing on runway\u202f36) and vehic"
+    }
+   ],
+   "trace": "eval/results/toolbench/trace_20261017-175933_stale_0.jsonl"
+  },
+  {
+   "run_id": "20261017-175933_stale_1",
+   "episode": "SIM_E6_HOLD_OK",
+   "scenario": "stale",
+   "model": "lightning",
+   "procedure": "v3",
+   "passed": true,
+   "checks": {
+    "ingest_recall": 1.0,
+    "ingest_once": true,
+    "alerts_exact": true,
+    "extra_alerts": 0,
+    "lookahead_every_turn": true,
+    "summary_every_turn": true,
+    "unavailable_reported": true,
+    "no_refused_retries": true,
+    "no_refused_reposts": true,
+    "recovered_all_faults": true
+   },
+   "stats": {
+    "turns": 4,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "duplicates_ignored": 0,
+    "unavailable_retries_refused": 0,
+    "reposts_refused": 0,
+    "recovered_after_error": 0,
+    "rounds_exhausted": 0,
+    "model_calls": 16
+   },
+   "invalid_calls": 0,
+   "injected_faults": 1,
+   "injected_transient": 0,
+   "model_latency_s": {
+    "median": 0.96,
+    "p95": 2.806,
+    "n": 16
+   },
+   "turn_wall_s_median": 5.306,
+   "time_to_alert_s": null,
+   "alert_turn_t": null,
+   "reference_posted": [],
+   "posted": [],
+   "turns": [
+    {
+     "source_id": "SIM_E6_HOLD_OK_000",
+     "t": 0,
+     "wall_s": 4.445,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": true,
+     "unavailable_said": true,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Recorded:** ATC clearance \u201cSimAir\u202f212, runway\u202f36, cleared to land.\u201d parsed as a LANDING_CLEARANCE event (event_id\u202fev00061) and ingested into the ledger. The ledger reserved runway\u202f36 for SIM212\u2019s landing.\n\n**Warning posted:** None \u2013 the ledger reported no new warnings and no cleared warnings.\n\n**L"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_003",
+     "t": 3,
+     "wall_s": 5.32,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded:** At t=3\u202fs, tower cleared SimAir\u202f212 to land runway\u202f36. The parser identified a LANDING_CLEARANCE readback (event\u202fev00062) and ingested it into the ledger; the ledger reserved runway\u202f36 for SIM212 and produced no new or cleared warnings.\n\n**Warning posted:** None. The ledger"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_018",
+     "t": 18,
+     "wall_s": 5.58,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded.**  \nThe hold\u2011short instruction for Rescue\u202f7 on runway\u202f36\u202fat\u202fKilo was parsed (event\u202fev00063) and ingested into the ledger; no new warnings were generated. The look\u2011ahead at t\u202f=\u202f18\u202fs shows that the simulated aircraft SIM212 (T\u2011AC1) has no surface observation yet, so its occupa"
+    },
+    {
+     "source_id": "SIM_E6_HOLD_OK_021",
+     "t": 21,
+     "wall_s": 5.292,
+     "calls": [
+      "parse_transmission",
+      "ledger_ingest",
+      "lookahead"
+     ],
+     "errors": 0,
+     "lookahead_at_t": true,
+     "lookahead_via_post_alert": false,
+     "lookahead_unavailable": false,
+     "unavailable_said": null,
+     "summary_ok": true,
+     "posted": 0,
+     "summary": "**Transmission recorded.**  \nThe pilot readback \u201cHold short runway 36 at Kilo\u201d for Rescue\u202f7 was parsed as event\u202fev00064 and ingested into the ledger. No new warnings were generated, and the look\u2011ahead at t\u202f=\u202f21\u202fs shows a conditional occupancy overlap between SIM212 (SIM212) and RESCUE7 in zone\u202fZ1, w"
+    }
+   ],
+   "trace": "eval/results/toolbench/trace_20261017-175933_stale_1.jsonl"
+  }
+ ]
+}

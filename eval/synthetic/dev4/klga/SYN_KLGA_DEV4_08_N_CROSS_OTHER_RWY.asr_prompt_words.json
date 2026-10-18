@@ -1,0 +1,162 @@
+{
+ "SYN_KLGA_DEV4_08_N_CROSS_OTHER_RWY_00": {
+  "text": "Spirit 1544, runway two two, cleared to land.",
+  "asr_s": 0.459,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9888
+   },
+   {
+    "w": "1544,",
+    "p": 0.5858
+   },
+   {
+    "w": "runway",
+    "p": 0.9666
+   },
+   {
+    "w": "two",
+    "p": 0.9976
+   },
+   {
+    "w": "two,",
+    "p": 0.9565
+   },
+   {
+    "w": "cleared",
+    "p": 0.9946
+   },
+   {
+    "w": "to",
+    "p": 0.9963
+   },
+   {
+    "w": "land.",
+    "p": 0.9653
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_08_N_CROSS_OTHER_RWY_01": {
+  "text": "Spirit 1544, roger. Cleared to land, runway two two.",
+  "asr_s": 0.44,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9763
+   },
+   {
+    "w": "1544,",
+    "p": 0.6674
+   },
+   {
+    "w": "roger.",
+    "p": 0.8481
+   },
+   {
+    "w": "Cleared",
+    "p": 0.964
+   },
+   {
+    "w": "to",
+    "p": 0.9996
+   },
+   {
+    "w": "land,",
+    "p": 0.9035
+   },
+   {
+    "w": "runway",
+    "p": 0.9978
+   },
+   {
+    "w": "two",
+    "p": 0.9985
+   },
+   {
+    "w": "two.",
+    "p": 0.988
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_08_N_CROSS_OTHER_RWY_02": {
+  "text": "Southwest nine hundred, cross runway one three at Zulu.",
+  "asr_s": 0.444,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.8935
+   },
+   {
+    "w": "nine",
+    "p": 0.5415
+   },
+   {
+    "w": "hundred,",
+    "p": 0.9044
+   },
+   {
+    "w": "cross",
+    "p": 0.9878
+   },
+   {
+    "w": "runway",
+    "p": 0.997
+   },
+   {
+    "w": "one",
+    "p": 0.9844
+   },
+   {
+    "w": "three",
+    "p": 0.9916
+   },
+   {
+    "w": "at",
+    "p": 0.8117
+   },
+   {
+    "w": "Zulu.",
+    "p": 0.9166
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_08_N_CROSS_OTHER_RWY_03": {
+  "text": "Crossing runway one three at Zulu, Southwest 900.",
+  "asr_s": 0.449,
+  "words": [
+   {
+    "w": "Crossing",
+    "p": 0.7955
+   },
+   {
+    "w": "runway",
+    "p": 0.9269
+   },
+   {
+    "w": "one",
+    "p": 0.967
+   },
+   {
+    "w": "three",
+    "p": 0.9779
+   },
+   {
+    "w": "at",
+    "p": 0.8088
+   },
+   {
+    "w": "Zulu,",
+    "p": 0.6793
+   },
+   {
+    "w": "Southwest",
+    "p": 0.9242
+   },
+   {
+    "w": "900.",
+    "p": 0.4924
+   }
+  ]
+ }
+}

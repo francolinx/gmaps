@@ -1,0 +1,274 @@
+{
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_00": {
+  "text": "United five six seven eight, runway nine right, cleared for takeoff, turn left heading two seven zero.",
+  "asr_s": 0.541,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9835
+   },
+   {
+    "w": "five",
+    "p": 0.789
+   },
+   {
+    "w": "six",
+    "p": 0.9361
+   },
+   {
+    "w": "seven",
+    "p": 0.9872
+   },
+   {
+    "w": "eight,",
+    "p": 0.9205
+   },
+   {
+    "w": "runway",
+    "p": 0.9997
+   },
+   {
+    "w": "nine",
+    "p": 0.504
+   },
+   {
+    "w": "right,",
+    "p": 0.385
+   },
+   {
+    "w": "cleared",
+    "p": 0.9984
+   },
+   {
+    "w": "for",
+    "p": 0.9978
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.851
+   },
+   {
+    "w": "turn",
+    "p": 0.9377
+   },
+   {
+    "w": "left",
+    "p": 0.9994
+   },
+   {
+    "w": "heading",
+    "p": 0.9478
+   },
+   {
+    "w": "two",
+    "p": 0.99
+   },
+   {
+    "w": "seven",
+    "p": 0.9985
+   },
+   {
+    "w": "zero.",
+    "p": 0.9225
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_01": {
+  "text": "Bar two cleared for takeoff, niner right, united five six seven eight.",
+  "asr_s": 0.446,
+  "words": [
+   {
+    "w": "Bar",
+    "p": 0.3906
+   },
+   {
+    "w": "two",
+    "p": 0.1242
+   },
+   {
+    "w": "cleared",
+    "p": 0.5898
+   },
+   {
+    "w": "for",
+    "p": 0.9691
+   },
+   {
+    "w": "takeoff,",
+    "p": 0.9237
+   },
+   {
+    "w": "niner",
+    "p": 0.4493
+   },
+   {
+    "w": "right,",
+    "p": 0.9512
+   },
+   {
+    "w": "united",
+    "p": 0.92
+   },
+   {
+    "w": "five",
+    "p": 0.7981
+   },
+   {
+    "w": "six",
+    "p": 0.9446
+   },
+   {
+    "w": "seven",
+    "p": 0.9505
+   },
+   {
+    "w": "eight.",
+    "p": 0.4752
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_02": {
+  "text": "Twin Cessna Niner six two three Delta, runway niner right, cleared for land, wind three three zero at one two.",
+  "asr_s": 0.535,
+  "words": [
+   {
+    "w": "Twin",
+    "p": 0.3043
+   },
+   {
+    "w": "Cessna",
+    "p": 0.872
+   },
+   {
+    "w": "Niner",
+    "p": 0.7576
+   },
+   {
+    "w": "six",
+    "p": 0.488
+   },
+   {
+    "w": "two",
+    "p": 0.8066
+   },
+   {
+    "w": "three",
+    "p": 0.9815
+   },
+   {
+    "w": "Delta,",
+    "p": 0.7505
+   },
+   {
+    "w": "runway",
+    "p": 0.9992
+   },
+   {
+    "w": "niner",
+    "p": 0.4862
+   },
+   {
+    "w": "right,",
+    "p": 0.9586
+   },
+   {
+    "w": "cleared",
+    "p": 0.9888
+   },
+   {
+    "w": "for",
+    "p": 0.5059
+   },
+   {
+    "w": "land,",
+    "p": 0.8451
+   },
+   {
+    "w": "wind",
+    "p": 0.8714
+   },
+   {
+    "w": "three",
+    "p": 0.9918
+   },
+   {
+    "w": "three",
+    "p": 0.9973
+   },
+   {
+    "w": "zero",
+    "p": 0.9989
+   },
+   {
+    "w": "at",
+    "p": 0.8504
+   },
+   {
+    "w": "one",
+    "p": 0.9894
+   },
+   {
+    "w": "two.",
+    "p": 0.958
+   }
+  ]
+ },
+ "SYN_KATL_HELDOUT4_05_C_TKOF_LAND_SAME_03": {
+  "text": "runway nine right, cleared for land, twin Cessna nine six two three left.",
+  "asr_s": 0.468,
+  "words": [
+   {
+    "w": "runway",
+    "p": 0.8729
+   },
+   {
+    "w": "nine",
+    "p": 0.7123
+   },
+   {
+    "w": "right,",
+    "p": 0.6498
+   },
+   {
+    "w": "cleared",
+    "p": 0.9592
+   },
+   {
+    "w": "for",
+    "p": 0.4047
+   },
+   {
+    "w": "land,",
+    "p": 0.5328
+   },
+   {
+    "w": "twin",
+    "p": 0.7972
+   },
+   {
+    "w": "Cessna",
+    "p": 0.6277
+   },
+   {
+    "w": "nine",
+    "p": 0.6922
+   },
+   {
+    "w": "six",
+    "p": 0.6418
+   },
+   {
+    "w": "two",
+    "p": 0.665
+   },
+   {
+    "w": "three",
+    "p": 0.9561
+   },
+   {
+    "w": "left.",
+    "p": 0.4379
+   }
+  ]
+ }
+}

@@ -1,0 +1,747 @@
+{
+ "scenario": {
+  "id": "RDU_EXERCISE_FICTIONAL",
+  "title": "Fictional exercise in RDU phraseology: crossing clearance on the landing runway, stop given, no readback",
+  "airport": "KRDU",
+  "is_fictional": true,
+  "source_note": "Fictional, scripted exchange. Callsigns invented (SimAir, Rescue). Uses KRDU runway and taxiway names only; not a reconstruction of any event. Ledger only: no positions, no predictions.",
+  "expected_engine_behaviour": [
+   "t=0 landing clearance runway 23L recorded (SIM212); t=3 read back.",
+   "t=28 crossing clearance runway 23L at C (RESCUE7): two recorded authorizations on 05R-23L -> R1 CONFLICT.",
+   "t=38 stop issued to RESCUE7; no readback follows -> R13 CAUTION at t=48."
+  ]
+ },
+ "timeline": [
+  {
+   "t": 0,
+   "freq": "tower",
+   "text": "SimAir two one two, runway two three left, cleared to land.",
+   "event": {
+    "event_id": "ev00001",
+    "airport_icao": "KRDU",
+    "actor_candidates": [
+     "SIM212"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "LANDING_CLEARANCE",
+    "raw_text": "SimAir two one two, runway two three left, cleared to land.",
+    "normalized_text": "RUNWAY 23L , CLEARED TO LAND .",
+    "asr_repairs_applied": [],
+    "source_id": "RDU_EXERCISE_FICTIONAL#0",
+    "source_start_s": 0,
+    "source_end_s": null,
+    "event_time": 0,
+    "received_time": 0,
+    "runway": "23L",
+    "runway_end_candidates": [
+     "KRDU:END:23L"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 3,
+   "freq": "tower",
+   "text": "Cleared to land runway two three left, SimAir two one two.",
+   "event": {
+    "event_id": "ev00002",
+    "airport_icao": "KRDU",
+    "actor_candidates": [
+     "SIM212"
+    ],
+    "speaker_role": "PILOT",
+    "speech_act": "readback",
+    "kind": "LANDING_CLEARANCE",
+    "raw_text": "Cleared to land runway two three left, SimAir two one two.",
+    "normalized_text": "CLEARED TO LAND RUNWAY 23L , .",
+    "asr_repairs_applied": [],
+    "source_id": "RDU_EXERCISE_FICTIONAL#3",
+    "source_start_s": 3,
+    "source_end_s": null,
+    "event_time": 3,
+    "received_time": 3,
+    "runway": "23L",
+    "runway_end_candidates": [
+     "KRDU:END:23L"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 24,
+   "freq": "tower",
+   "text": "Raleigh tower, Rescue seven, request to cross runway two three left at Charlie.",
+   "event": {
+    "event_id": "ev00003",
+    "airport_icao": "KRDU",
+    "actor_candidates": [
+     "RESCUE7"
+    ],
+    "speaker_role": "PILOT",
+    "speech_act": "request",
+    "kind": "CROSS_REQUEST",
+    "raw_text": "Raleigh tower, Rescue seven, request to cross runway two three left at Charlie.",
+    "normalized_text": "RALEIGH TOWER , , REQUEST TO CROSS RUNWAY 23L AT C .",
+    "asr_repairs_applied": [],
+    "source_id": "RDU_EXERCISE_FICTIONAL#24",
+    "source_start_s": 24,
+    "source_end_s": null,
+    "event_time": 24,
+    "received_time": 24,
+    "runway": "23L",
+    "runway_end_candidates": [
+     "KRDU:END:23L"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": "C",
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 28,
+   "freq": "tower",
+   "text": "Rescue seven, cross runway two three left at Charlie.",
+   "event": {
+    "event_id": "ev00004",
+    "airport_icao": "KRDU",
+    "actor_candidates": [
+     "RESCUE7"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "CROSS",
+    "raw_text": "Rescue seven, cross runway two three left at Charlie.",
+    "normalized_text": "CROSS RUNWAY 23L AT C .",
+    "asr_repairs_applied": [],
+    "source_id": "RDU_EXERCISE_FICTIONAL#28",
+    "source_start_s": 28,
+    "source_end_s": null,
+    "event_time": 28,
+    "received_time": 28,
+    "runway": "23L",
+    "runway_end_candidates": [
+     "KRDU:END:23L"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": "C",
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 31,
+   "freq": "tower",
+   "text": "Crossing runway two three left at Charlie, Rescue seven.",
+   "event": {
+    "event_id": "ev00005",
+    "airport_icao": "KRDU",
+    "actor_candidates": [
+     "RESCUE7"
+    ],
+    "speaker_role": "PILOT",
+    "speech_act": "readback",
+    "kind": "CROSS",
+    "raw_text": "Crossing runway two three left at Charlie, Rescue seven.",
+    "normalized_text": "CROSSING RUNWAY 23L AT C , .",
+    "asr_repairs_applied": [],
+    "source_id": "RDU_EXERCISE_FICTIONAL#31",
+    "source_start_s": 31,
+    "source_end_s": null,
+    "event_time": 31,
+    "received_time": 31,
+    "runway": "23L",
+    "runway_end_candidates": [
+     "KRDU:END:23L"
+    ],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": "C",
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.95,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  },
+  {
+   "t": 38,
+   "freq": "tower",
+   "text": "Rescue seven, stop, stop, stop.",
+   "event": {
+    "event_id": "ev00006",
+    "airport_icao": "KRDU",
+    "actor_candidates": [
+     "RESCUE7"
+    ],
+    "speaker_role": "ATC",
+    "speech_act": "instruction",
+    "kind": "CANCEL",
+    "raw_text": "Rescue seven, stop, stop, stop.",
+    "normalized_text": "STOP , STOP , STOP .",
+    "asr_repairs_applied": [],
+    "source_id": "RDU_EXERCISE_FICTIONAL#38",
+    "source_start_s": 38,
+    "source_end_s": null,
+    "event_time": 38,
+    "received_time": 38,
+    "runway": null,
+    "runway_end_candidates": [],
+    "route": null,
+    "route_surface_candidates": [],
+    "hold_constraints": [],
+    "hold_position": false,
+    "crossing_at": null,
+    "traffic_advisory": null,
+    "sequence": null,
+    "clipped": false,
+    "parse_path": "grammar",
+    "uncertainty": {
+     "confidence_heuristic": 0.9,
+     "note": "heuristic parser score, not a calibrated probability",
+     "unresolved": []
+    },
+    "supersedes_event_id": null
+   }
+  }
+ ],
+ "airport": {
+  "icao": "KRDU",
+  "dataset_version": "chart identifiers (synthetic evaluation only)",
+  "status": "identifiers and topology only; no predictions"
+ },
+ "events": [
+  {
+   "event_id": "ev00001",
+   "airport_icao": "KRDU",
+   "actor_candidates": [
+    "SIM212"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "LANDING_CLEARANCE",
+   "raw_text": "SimAir two one two, runway two three left, cleared to land.",
+   "normalized_text": "RUNWAY 23L , CLEARED TO LAND .",
+   "asr_repairs_applied": [],
+   "source_id": "RDU_EXERCISE_FICTIONAL#0",
+   "source_start_s": 0,
+   "source_end_s": null,
+   "event_time": 0,
+   "received_time": 0,
+   "runway": "23L",
+   "runway_end_candidates": [
+    "KRDU:END:23L"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00002",
+   "airport_icao": "KRDU",
+   "actor_candidates": [
+    "SIM212"
+   ],
+   "speaker_role": "PILOT",
+   "speech_act": "readback",
+   "kind": "LANDING_CLEARANCE",
+   "raw_text": "Cleared to land runway two three left, SimAir two one two.",
+   "normalized_text": "CLEARED TO LAND RUNWAY 23L , .",
+   "asr_repairs_applied": [],
+   "source_id": "RDU_EXERCISE_FICTIONAL#3",
+   "source_start_s": 3,
+   "source_end_s": null,
+   "event_time": 3,
+   "received_time": 3,
+   "runway": "23L",
+   "runway_end_candidates": [
+    "KRDU:END:23L"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00003",
+   "airport_icao": "KRDU",
+   "actor_candidates": [
+    "RESCUE7"
+   ],
+   "speaker_role": "PILOT",
+   "speech_act": "request",
+   "kind": "CROSS_REQUEST",
+   "raw_text": "Raleigh tower, Rescue seven, request to cross runway two three left at Charlie.",
+   "normalized_text": "RALEIGH TOWER , , REQUEST TO CROSS RUNWAY 23L AT C .",
+   "asr_repairs_applied": [],
+   "source_id": "RDU_EXERCISE_FICTIONAL#24",
+   "source_start_s": 24,
+   "source_end_s": null,
+   "event_time": 24,
+   "received_time": 24,
+   "runway": "23L",
+   "runway_end_candidates": [
+    "KRDU:END:23L"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": "C",
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00004",
+   "airport_icao": "KRDU",
+   "actor_candidates": [
+    "RESCUE7"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "CROSS",
+   "raw_text": "Rescue seven, cross runway two three left at Charlie.",
+   "normalized_text": "CROSS RUNWAY 23L AT C .",
+   "asr_repairs_applied": [],
+   "source_id": "RDU_EXERCISE_FICTIONAL#28",
+   "source_start_s": 28,
+   "source_end_s": null,
+   "event_time": 28,
+   "received_time": 28,
+   "runway": "23L",
+   "runway_end_candidates": [
+    "KRDU:END:23L"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": "C",
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00005",
+   "airport_icao": "KRDU",
+   "actor_candidates": [
+    "RESCUE7"
+   ],
+   "speaker_role": "PILOT",
+   "speech_act": "readback",
+   "kind": "CROSS",
+   "raw_text": "Crossing runway two three left at Charlie, Rescue seven.",
+   "normalized_text": "CROSSING RUNWAY 23L AT C , .",
+   "asr_repairs_applied": [],
+   "source_id": "RDU_EXERCISE_FICTIONAL#31",
+   "source_start_s": 31,
+   "source_end_s": null,
+   "event_time": 31,
+   "received_time": 31,
+   "runway": "23L",
+   "runway_end_candidates": [
+    "KRDU:END:23L"
+   ],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": "C",
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.95,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  },
+  {
+   "event_id": "ev00006",
+   "airport_icao": "KRDU",
+   "actor_candidates": [
+    "RESCUE7"
+   ],
+   "speaker_role": "ATC",
+   "speech_act": "instruction",
+   "kind": "CANCEL",
+   "raw_text": "Rescue seven, stop, stop, stop.",
+   "normalized_text": "STOP , STOP , STOP .",
+   "asr_repairs_applied": [],
+   "source_id": "RDU_EXERCISE_FICTIONAL#38",
+   "source_start_s": 38,
+   "source_end_s": null,
+   "event_time": 38,
+   "received_time": 38,
+   "runway": null,
+   "runway_end_candidates": [],
+   "route": null,
+   "route_surface_candidates": [],
+   "hold_constraints": [],
+   "hold_position": false,
+   "crossing_at": null,
+   "traffic_advisory": null,
+   "sequence": null,
+   "clipped": false,
+   "parse_path": "grammar",
+   "uncertainty": {
+    "confidence_heuristic": 0.9,
+    "note": "heuristic parser score, not a calibrated probability",
+    "unresolved": []
+   },
+   "supersedes_event_id": null
+  }
+ ],
+ "reservations": [
+  {
+   "reservation_id": "r0001",
+   "callsign": "SIM212",
+   "type": "LANDING",
+   "runway_end": "23L",
+   "physical": "KRDU:RWY:05R-23L",
+   "physical_candidates": [
+    "KRDU:RWY:05R-23L"
+   ],
+   "t": 0,
+   "event_id": "ev00001",
+   "status": "active",
+   "ack": "acknowledged",
+   "released_at": null,
+   "released_by": null,
+   "advisory": null,
+   "basis": "authorized",
+   "at": null
+  },
+  {
+   "reservation_id": "r0002",
+   "callsign": "RESCUE7",
+   "type": "CROSSING",
+   "runway_end": "23L",
+   "physical": "KRDU:RWY:05R-23L",
+   "physical_candidates": [
+    "KRDU:RWY:05R-23L"
+   ],
+   "t": 28,
+   "event_id": "ev00004",
+   "status": "cancel_unacknowledged",
+   "ack": "acknowledged",
+   "released_at": null,
+   "released_by": null,
+   "advisory": null,
+   "basis": "authorized",
+   "at": "C",
+   "cancel_status": "unacknowledged",
+   "cancel_t": 38
+  }
+ ],
+ "warnings": [
+  {
+   "warning_id": "w0001",
+   "rule_id": "R1",
+   "name": "crossing vs active landing",
+   "severity": "CONFLICT",
+   "category": "conflict",
+   "runway": "KRDU:RWY:05R-23L",
+   "t_fired": 28,
+   "status": "open",
+   "cleared_at": null,
+   "cleared_by": null,
+   "authorization_a": {
+    "callsign": "SIM212",
+    "type": "LANDING",
+    "runway_end": "23L",
+    "physical_runway": "KRDU:RWY:05R-23L",
+    "t_issued": 0,
+    "event_id": "ev00001",
+    "acknowledged": "acknowledged",
+    "reservation_id": "r0001"
+   },
+   "authorization_b": {
+    "callsign": "RESCUE7",
+    "type": "CROSSING",
+    "runway_end": "23L",
+    "physical_runway": "KRDU:RWY:05R-23L",
+    "t_issued": 28,
+    "event_id": "ev00004",
+    "acknowledged": "pending",
+    "reservation_id": "r0002"
+   },
+   "state_snapshot": {
+    "SIM212": {
+     "authorized": "landing clearance, rwy 23L",
+     "acknowledged": "read back: landing clearance, rwy 23L",
+     "reported": null,
+     "inferred": null,
+     "observed": null
+    },
+    "RESCUE7": {
+     "authorized": "cross, rwy 23L, at C",
+     "acknowledged": null,
+     "reported": "requests cross_request runway 23L at C",
+     "inferred": null,
+     "observed": null
+    }
+   },
+   "explain": "Runway 23L has a recorded landing authorization for SIM212 (t=0) and a crossing authorization for RESCUE7 at C (t=28). Both need the 05R-23L protected area.",
+   "what_would_clear_it": "RESCUE7 reports clear of runway, or SIM212 go-around / landing complete",
+   "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+   "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+   "basis": [
+    [
+     "r0001",
+     "r0002"
+    ]
+   ]
+  },
+  {
+   "warning_id": "w0002",
+   "rule_id": "R13",
+   "name": "stop/cancel unacknowledged",
+   "severity": "CAUTION",
+   "category": "conflict",
+   "runway": "KRDU:RWY:05R-23L",
+   "t_fired": 48,
+   "status": "open",
+   "cleared_at": null,
+   "cleared_by": null,
+   "authorization_a": {
+    "callsign": "RESCUE7",
+    "type": "CROSSING",
+    "runway_end": "23L",
+    "physical_runway": "KRDU:RWY:05R-23L",
+    "t_issued": 28,
+    "event_id": "ev00004",
+    "acknowledged": "acknowledged",
+    "reservation_id": "r0002"
+   },
+   "authorization_b": null,
+   "state_snapshot": {
+    "RESCUE7": {
+     "authorized": "cancel",
+     "acknowledged": "read back: cross, rwy 23L, at C",
+     "reported": "requests cross_request runway 23L at C",
+     "inferred": null,
+     "observed": null
+    }
+   },
+   "explain": "Stop/cancel issued to RESCUE7 at t=38; no acknowledgement heard in 10 s. The reservation is kept: the engine does not assume the stop took effect.",
+   "what_would_clear_it": "RESCUE7 acknowledges, or an observed/reported stop",
+   "cite": "JO 7110.65BB stop/cancel acknowledgement (engine rule)",
+   "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+   "basis": [
+    [
+     "r0002"
+    ]
+   ]
+  },
+  {
+   "warning_id": "w0003",
+   "rule_id": "R8",
+   "name": "crossing not closed out",
+   "severity": "REMINDER",
+   "category": "conflict",
+   "runway": "KRDU:RWY:05R-23L",
+   "t_fired": 118,
+   "status": "open",
+   "cleared_at": null,
+   "cleared_by": null,
+   "authorization_a": {
+    "callsign": "RESCUE7",
+    "type": "CROSSING",
+    "runway_end": "23L",
+    "physical_runway": "KRDU:RWY:05R-23L",
+    "t_issued": 28,
+    "event_id": "ev00004",
+    "acknowledged": "acknowledged",
+    "reservation_id": "r0002"
+   },
+   "authorization_b": null,
+   "state_snapshot": {
+    "RESCUE7": {
+     "authorized": "cancel",
+     "acknowledged": "read back: cross, rwy 23L, at C",
+     "reported": "requests cross_request runway 23L at C",
+     "inferred": null,
+     "observed": null
+    }
+   },
+   "explain": "Crossing authorization for RESCUE7 on 23L is 90 s old with no crossing-complete / clear-of-runway report. The runway stays reserved.",
+   "what_would_clear_it": "crossing complete reported",
+   "cite": "JO 7110.65BB 3-1-3",
+   "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+   "basis": [
+    [
+     "r0002"
+    ]
+   ]
+  }
+ ],
+ "notes": [],
+ "actors": {
+  "SIM212": {
+   "authorized": [
+    {
+     "value": "landing clearance, rwy 23L",
+     "t": 0,
+     "event_id": "ev00001"
+    }
+   ],
+   "acknowledged": [
+    {
+     "value": "read back: landing clearance, rwy 23L",
+     "t": 3,
+     "event_id": "ev00002"
+    }
+   ],
+   "reported": [],
+   "inferred": [],
+   "observed": []
+  },
+  "RESCUE7": {
+   "authorized": [
+    {
+     "value": "cross, rwy 23L, at C",
+     "t": 28,
+     "event_id": "ev00004"
+    },
+    {
+     "value": "cancel",
+     "t": 38,
+     "event_id": "ev00006"
+    }
+   ],
+   "acknowledged": [
+    {
+     "value": "read back: cross, rwy 23L, at C",
+     "t": 31,
+     "event_id": "ev00005"
+    }
+   ],
+   "reported": [
+    {
+     "value": "requests cross_request runway 23L at C",
+     "t": 24,
+     "event_id": "ev00003"
+    }
+   ],
+   "inferred": [],
+   "observed": []
+  }
+ },
+ "expiries": [],
+ "cap_events": [],
+ "health": {
+  "degraded": false,
+  "since": null,
+  "reason": null,
+  "over_cap_admissions": 0
+ },
+ "history_pruned": {
+  "warnings": 0,
+  "notes": 0,
+  "events": 0,
+  "reservations": 0,
+  "expiries": 0,
+  "cap_events": 0,
+  "pending": 0
+ },
+ "claim_limit": "Recorded authorizations and open obligations only; no prevention claims."
+}

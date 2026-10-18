@@ -1,0 +1,18 @@
+{
+ "icao": "KAHN",
+ "checked_at": "2026-10-08T23:19:45-0400",
+ "dpi": 300,
+ "ink_level": 250,
+ "tolerance_px": 1,
+ "pdf_sha256": "de0a0c699100ae1075a0887abd908c912f7c78f66e83285fd57d506f0f11a1b3",
+ "faa_ink_px": 363008,
+ "reconstruction_ink_px": 367746,
+ "covered_pct": 99.56,
+ "extra_pct": 0.567,
+ "thresholds": {
+  "min_covered_pct": 99.0,
+  "max_extra_pct": 2.0
+ },
+ "pass": true,
+ "note": "faithful.svg uses original FAA styling; visible-text labels use a substitute font."
+}

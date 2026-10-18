@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout4",
+ "phrasing_pool": "E",
+ "template": "C_LAND_CROSS",
+ "basis": "R1 crossing vs active landing (3-7-2g2)",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7501,
+ "context": {
+  "runway": "08L-26R",
+  "taxiway": "D",
+  "hot_spot": "HS 1"
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Twin Cessna six six four eight Juliett, runway two six right, cleared to land, wind calm.",
+   "id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Runway two six right, cleared to land, Twin Cessna six six four eight Juliett.",
+   "id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Spirit niner six two four, proceed via Delta, cross runway two six right.",
+   "id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Cross runway two six right at Delta, Spirit niner six two four.",
+   "id": "SYN_KATL_HELDOUT4_01_C_LAND_CROSS_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

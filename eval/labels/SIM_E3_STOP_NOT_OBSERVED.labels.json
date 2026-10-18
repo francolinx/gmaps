@@ -1,0 +1,25 @@
+{
+ "episode_id": "SIM_E3_STOP_NOT_OBSERVED",
+ "generated_from": "simulation truth (evaluation only)",
+ "truth_zone_intervals": {
+  "T-AC1": [
+   45.8,
+   54.9
+  ],
+  "T-VH7": [
+   52.35,
+   65.65
+  ]
+ },
+ "truth_encounter_interval": [
+  52.35,
+  54.9
+ ],
+ "vehicle_passes_hold_line_at": 52.35,
+ "should_raise_candidate": true,
+ "expected_ledger_rules": [
+  "R1",
+  "R13"
+ ],
+ "note": "Labels are computed from truth that the runtime never sees. Prediction quality is scored against these, not tuned to them."
+}

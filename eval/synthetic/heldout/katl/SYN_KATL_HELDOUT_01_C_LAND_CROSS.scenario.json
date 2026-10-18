@@ -1,0 +1,42 @@
+{
+ "id": "SYN_KATL_HELDOUT_01_C_LAND_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "C_LAND_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7301,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "E1",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Frontier one zero three four, cleared to land runway eight right.",
+   "id": "SYN_KATL_HELDOUT_01_C_LAND_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land eight right, Frontier one zero three four.",
+   "id": "SYN_KATL_HELDOUT_01_C_LAND_CROSS_01"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Spirit two five three seven, at Echo one cross runway eight right.",
+   "id": "SYN_KATL_HELDOUT_01_C_LAND_CROSS_02"
+  },
+  {
+   "t": 22,
+   "speaker": "PILOT",
+   "text": "Crossing runway eight right at Echo one, Spirit two five three seven.",
+   "id": "SYN_KATL_HELDOUT_01_C_LAND_CROSS_03"
+  }
+ ]
+}

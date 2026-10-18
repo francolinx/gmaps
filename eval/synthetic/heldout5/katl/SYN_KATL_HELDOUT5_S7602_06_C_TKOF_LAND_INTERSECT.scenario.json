@@ -1,0 +1,47 @@
+{
+ "id": "SYN_KATL_HELDOUT5_S7602_06_C_TKOF_LAND_INTERSECT",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout5",
+ "phrasing_pool": "E",
+ "template": "C_TKOF_LAND_INTERSECT",
+ "basis": "R4 takeoff vs landing on intersecting runways (3-9-8, 3-10-4); airports with no intersecting runways use R3",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 7602,
+ "context": {
+  "runway": "08R-26L",
+  "taxiway": "E5",
+  "hot_spot": null
+ },
+ "note": "KATL has no intersecting runways: R3 (same runway) used instead of R4. Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "American sixteen seventy, runway eight right at Delta, intersection departure, cleared for takeoff.",
+   "id": "SYN_KATL_HELDOUT5_S7602_06_C_TKOF_LAND_INTERSECT_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Roger, cleared for takeoff eight right, American sixteen seventy.",
+   "id": "SYN_KATL_HELDOUT5_S7602_06_C_TKOF_LAND_INTERSECT_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 14,
+   "speaker": "ATC",
+   "text": "Endeavor fourteen forty six, runway eight right, cleared to land, wind zero two zero at one four.",
+   "id": "SYN_KATL_HELDOUT5_S7602_06_C_TKOF_LAND_INTERSECT_02",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 18,
+   "speaker": "PILOT",
+   "text": "Runway eight right, cleared to land, Endeavor fourteen forty six.",
+   "id": "SYN_KATL_HELDOUT5_S7602_06_C_TKOF_LAND_INTERSECT_03",
+   "speaker_ref": "b"
+  }
+ ]
+}

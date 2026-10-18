@@ -1,0 +1,41 @@
+{
+ "id": "SIM_E2_SAME_PATHS_LATER",
+ "airport": "XSIM",
+ "is_fictional": true,
+ "title": "Same paths, crossing issued after the aircraft has passed (fictional)",
+ "purpose": "Timing case: authorizations still overlap in the ledger (route-only would alarm), but observed motion shows no occupancy overlap.",
+ "map": "SIM-1",
+ "revoice_note": "Record each line as its own clip; file name = <id>_<t>.wav. Fictional callsigns.",
+ "events": [
+  {
+   "t": 0,
+   "freq": "tower",
+   "speaker": "ATC",
+   "text_clean": "SimAir two one two, runway three six, cleared to land."
+  },
+  {
+   "t": 3,
+   "freq": "tower",
+   "speaker": "SIM212",
+   "text_clean": "Cleared to land runway three six, SimAir two one two."
+  },
+  {
+   "t": 70,
+   "freq": "tower",
+   "speaker": "RESCUE7",
+   "text_clean": "Tower, Rescue seven, request to cross runway three six at Kilo."
+  },
+  {
+   "t": 74,
+   "freq": "tower",
+   "speaker": "ATC",
+   "text_clean": "Rescue seven, cross runway three six at Kilo."
+  },
+  {
+   "t": 77,
+   "freq": "tower",
+   "speaker": "RESCUE7",
+   "text_clean": "Crossing runway three six at Kilo, Rescue seven."
+  }
+ ]
+}

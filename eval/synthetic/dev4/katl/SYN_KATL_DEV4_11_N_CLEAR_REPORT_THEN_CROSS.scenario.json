@@ -1,0 +1,54 @@
+{
+ "id": "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "dev4",
+ "phrasing_pool": "D (pilot/scenario forms; ATC elements drawn from C/D)",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "basis": "section 8: pilot's 'clear of the runway' releases the landing",
+ "generator": "eval/synthetic/generate_v4.py (phrasings: phraseology_7110.json, FAA JO 7110.65BB)",
+ "seed": 9301,
+ "context": {
+  "runway": "09L-27R",
+  "taxiway": "N5",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "United five hundred, runway two seven right, wind two zero zero at four, cleared to land.",
+   "id": "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_00",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "United five hundred, roger, cleared to land runway two seven right.",
+   "id": "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_01",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "United five hundred, clear runway two seven right at Lima five.",
+   "id": "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_02",
+   "speaker_ref": "a"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "November seven seven zero four Kilo, taxi via November five, cross runway two seven right.",
+   "id": "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_03",
+   "speaker_ref": "atc"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Crossing runway two seven right at November five, November seven seven zero four Kilo.",
+   "id": "SYN_KATL_DEV4_11_N_CLEAR_REPORT_THEN_CROSS_04",
+   "speaker_ref": "b"
+  }
+ ]
+}

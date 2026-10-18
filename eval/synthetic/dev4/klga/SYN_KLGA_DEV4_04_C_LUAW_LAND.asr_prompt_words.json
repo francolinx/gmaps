@@ -1,0 +1,262 @@
+{
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_00": {
+  "text": "November seven six zero one Victor, runway two two, line up and wait, trafficker Airbus three twenty, four mile final.",
+  "asr_s": 0.574,
+  "words": [
+   {
+    "w": "November",
+    "p": 0.9366
+   },
+   {
+    "w": "seven",
+    "p": 0.5944
+   },
+   {
+    "w": "six",
+    "p": 0.8597
+   },
+   {
+    "w": "zero",
+    "p": 0.9862
+   },
+   {
+    "w": "one",
+    "p": 0.8433
+   },
+   {
+    "w": "Victor,",
+    "p": 0.4981
+   },
+   {
+    "w": "runway",
+    "p": 0.9812
+   },
+   {
+    "w": "two",
+    "p": 0.9969
+   },
+   {
+    "w": "two,",
+    "p": 0.8962
+   },
+   {
+    "w": "line",
+    "p": 0.9922
+   },
+   {
+    "w": "up",
+    "p": 0.9982
+   },
+   {
+    "w": "and",
+    "p": 0.9935
+   },
+   {
+    "w": "wait,",
+    "p": 0.5119
+   },
+   {
+    "w": "trafficker",
+    "p": 0.462
+   },
+   {
+    "w": "Airbus",
+    "p": 0.7519
+   },
+   {
+    "w": "three",
+    "p": 0.563
+   },
+   {
+    "w": "twenty,",
+    "p": 0.5993
+   },
+   {
+    "w": "four",
+    "p": 0.9927
+   },
+   {
+    "w": "mile",
+    "p": 0.9606
+   },
+   {
+    "w": "final.",
+    "p": 0.8536
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_01": {
+  "text": "Line up and wait two two, November seven six zero one Victor.",
+  "asr_s": 0.43,
+  "words": [
+   {
+    "w": "Line",
+    "p": 0.9835
+   },
+   {
+    "w": "up",
+    "p": 0.9735
+   },
+   {
+    "w": "and",
+    "p": 0.9907
+   },
+   {
+    "w": "wait",
+    "p": 0.9979
+   },
+   {
+    "w": "two",
+    "p": 0.6934
+   },
+   {
+    "w": "two,",
+    "p": 0.822
+   },
+   {
+    "w": "November",
+    "p": 0.967
+   },
+   {
+    "w": "seven",
+    "p": 0.7859
+   },
+   {
+    "w": "six",
+    "p": 0.8952
+   },
+   {
+    "w": "zero",
+    "p": 0.9929
+   },
+   {
+    "w": "one",
+    "p": 0.9012
+   },
+   {
+    "w": "Victor.",
+    "p": 0.592
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_02": {
+  "text": "November eight seven two eight Lima, runway two two, cleared to land, traffic holding in position.",
+  "asr_s": 0.534,
+  "words": [
+   {
+    "w": "November",
+    "p": 0.9469
+   },
+   {
+    "w": "eight",
+    "p": 0.8198
+   },
+   {
+    "w": "seven",
+    "p": 0.7379
+   },
+   {
+    "w": "two",
+    "p": 0.9078
+   },
+   {
+    "w": "eight",
+    "p": 0.9935
+   },
+   {
+    "w": "Lima,",
+    "p": 0.5539
+   },
+   {
+    "w": "runway",
+    "p": 0.9892
+   },
+   {
+    "w": "two",
+    "p": 0.9959
+   },
+   {
+    "w": "two,",
+    "p": 0.8639
+   },
+   {
+    "w": "cleared",
+    "p": 0.9763
+   },
+   {
+    "w": "to",
+    "p": 0.9819
+   },
+   {
+    "w": "land,",
+    "p": 0.7277
+   },
+   {
+    "w": "traffic",
+    "p": 0.9884
+   },
+   {
+    "w": "holding",
+    "p": 0.9982
+   },
+   {
+    "w": "in",
+    "p": 0.9968
+   },
+   {
+    "w": "position.",
+    "p": 0.9729
+   }
+  ]
+ },
+ "SYN_KLGA_DEV4_04_C_LUAW_LAND_03": {
+  "text": "Cleared to land two two, November eight seven two, eight Lima.",
+  "asr_s": 0.462,
+  "words": [
+   {
+    "w": "Cleared",
+    "p": 0.7335
+   },
+   {
+    "w": "to",
+    "p": 0.9992
+   },
+   {
+    "w": "land",
+    "p": 0.9949
+   },
+   {
+    "w": "two",
+    "p": 0.7225
+   },
+   {
+    "w": "two,",
+    "p": 0.5539
+   },
+   {
+    "w": "November",
+    "p": 0.9573
+   },
+   {
+    "w": "eight",
+    "p": 0.7135
+   },
+   {
+    "w": "seven",
+    "p": 0.5502
+   },
+   {
+    "w": "two,",
+    "p": 0.7254
+   },
+   {
+    "w": "eight",
+    "p": 0.9856
+   },
+   {
+    "w": "Lima.",
+    "p": 0.9464
+   }
+  ]
+ }
+}

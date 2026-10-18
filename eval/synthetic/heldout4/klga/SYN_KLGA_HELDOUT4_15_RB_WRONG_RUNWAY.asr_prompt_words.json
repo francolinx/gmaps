@@ -1,0 +1,106 @@
+{
+ "SYN_KLGA_HELDOUT4_15_RB_WRONG_RUNWAY_00": {
+  "text": "Southwest twelve hundred, runway two two, cleared to land, wind two six zero at seven.",
+  "asr_s": 0.471,
+  "words": [
+   {
+    "w": "Southwest",
+    "p": 0.953
+   },
+   {
+    "w": "twelve",
+    "p": 0.4259
+   },
+   {
+    "w": "hundred,",
+    "p": 0.8811
+   },
+   {
+    "w": "runway",
+    "p": 0.9955
+   },
+   {
+    "w": "two",
+    "p": 0.9974
+   },
+   {
+    "w": "two,",
+    "p": 0.6373
+   },
+   {
+    "w": "cleared",
+    "p": 0.9885
+   },
+   {
+    "w": "to",
+    "p": 0.8538
+   },
+   {
+    "w": "land,",
+    "p": 0.9732
+   },
+   {
+    "w": "wind",
+    "p": 0.9153
+   },
+   {
+    "w": "two",
+    "p": 0.9658
+   },
+   {
+    "w": "six",
+    "p": 0.9804
+   },
+   {
+    "w": "zero",
+    "p": 0.9799
+   },
+   {
+    "w": "at",
+    "p": 0.806
+   },
+   {
+    "w": "seven.",
+    "p": 0.9528
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_15_RB_WRONG_RUNWAY_01": {
+  "text": "Runway one three, cleared to land, Southwest, 1200.",
+  "asr_s": 0.387,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.816
+   },
+   {
+    "w": "one",
+    "p": 0.9785
+   },
+   {
+    "w": "three,",
+    "p": 0.8747
+   },
+   {
+    "w": "cleared",
+    "p": 0.9808
+   },
+   {
+    "w": "to",
+    "p": 0.9552
+   },
+   {
+    "w": "land,",
+    "p": 0.5552
+   },
+   {
+    "w": "Southwest,",
+    "p": 0.6609
+   },
+   {
+    "w": "1200.",
+    "p": 0.3294
+   }
+  ]
+ }
+}

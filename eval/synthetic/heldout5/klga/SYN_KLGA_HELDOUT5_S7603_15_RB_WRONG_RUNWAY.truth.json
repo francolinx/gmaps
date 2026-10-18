@@ -1,0 +1,31 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7603_15_RB_WRONG_RUNWAY",
+ "EVALUATION_ONLY": true,
+ "expected_alert": false,
+ "expected_rules": [],
+ "conflict_t": null,
+ "expected_readback_mismatch": true,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "NKS2205"
+    ],
+    "runway": "22",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_15_RB_WRONG_RUNWAY_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "NKS2205"
+    ],
+    "runway": "31",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_15_RB_WRONG_RUNWAY_01"
+  }
+ ]
+}

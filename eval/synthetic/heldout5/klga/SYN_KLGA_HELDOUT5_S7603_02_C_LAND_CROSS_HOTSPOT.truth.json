@@ -1,0 +1,53 @@
+{
+ "id": "SYN_KLGA_HELDOUT5_S7603_02_C_LAND_CROSS_HOTSPOT",
+ "EVALUATION_ONLY": true,
+ "expected_alert": true,
+ "expected_rules": [
+  "R1"
+ ],
+ "conflict_t": null,
+ "expected_readback_mismatch": false,
+ "section8_case": false,
+ "transmissions": [
+  {
+   "fields": {
+    "callsigns": [
+     "SWA2488"
+    ],
+    "runway": "13",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_02_C_LAND_CROSS_HOTSPOT_00"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "SWA2488"
+    ],
+    "runway": "13",
+    "instruction": "LANDING_CLEARANCE"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_02_C_LAND_CROSS_HOTSPOT_01"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "N7771M"
+    ],
+    "runway": "13",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_02_C_LAND_CROSS_HOTSPOT_02"
+  },
+  {
+   "fields": {
+    "callsigns": [
+     "N7771M"
+    ],
+    "runway": "13",
+    "instruction": "CROSS"
+   },
+   "id": "SYN_KLGA_HELDOUT5_S7603_02_C_LAND_CROSS_HOTSPOT_03"
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS",
+ "airport": "KATL",
+ "SIMULATED": true,
+ "split": "heldout",
+ "phrasing_pool": "B",
+ "template": "N_CLEAR_REPORT_THEN_CROSS",
+ "generator": "eval/synthetic/generate.py v2",
+ "seed": 7301,
+ "context": {
+  "runway": "09R-27L",
+  "taxiway": "R7",
+  "hot_spot": null
+ },
+ "note": "Synthetic phraseology from chart identifiers; no positions; no predictions on real geometry. Evaluation harness only.",
+ "transmissions": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "Delta one six six eight, cleared to land runway two seven left.",
+   "id": "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_00"
+  },
+  {
+   "t": 4,
+   "speaker": "PILOT",
+   "text": "Cleared to land two seven left, Delta one six six eight.",
+   "id": "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_01"
+  },
+  {
+   "t": 45,
+   "speaker": "PILOT",
+   "text": "Delta one six six eight is clear of two seven left.",
+   "id": "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_02"
+  },
+  {
+   "t": 55,
+   "speaker": "ATC",
+   "text": "American four niner six, at Romeo seven cross runway two seven left.",
+   "id": "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_03"
+  },
+  {
+   "t": 59,
+   "speaker": "PILOT",
+   "text": "Crossing runway two seven left at Romeo seven, American four niner six.",
+   "id": "SYN_KATL_HELDOUT_10_N_CLEAR_REPORT_THEN_CROSS_04"
+  }
+ ]
+}

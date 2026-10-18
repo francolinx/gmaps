@@ -1,0 +1,26 @@
+{
+ "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_00": {
+  "text": "Frontier 1864, runway 22, line up and wait.",
+  "asr_s": 0.199
+ },
+ "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_01": {
+  "text": "Line up and wait 2-2. Frontier 1864.",
+  "asr_s": 0.193
+ },
+ "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_02": {
+  "text": "Delta 715, runway 22, continue traffic holding in position.",
+  "asr_s": 0.198
+ },
+ "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_03": {
+  "text": "Continue Delta-7-1-5.",
+  "asr_s": 0.162
+ },
+ "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_04": {
+  "text": "Frontier 1864, runway 22, cleared for takeoff.",
+  "asr_s": 0.202
+ },
+ "SYN_KLGA_DEV3_14_N_LUAW_CONTINUE_05": {
+  "text": "Cleared for takeoff 2-2. Frontier 1864.",
+  "asr_s": 0.202
+ }
+}

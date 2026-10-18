@@ -1,0 +1,6972 @@
+{
+ "meta": {
+  "icao": "KJFK",
+  "pdf": "data/airports/sources/jfk_faa_2610_00610AD.pdf",
+  "pdf_sha256": "332ea819838b60066ad7308aab9c1bdf93fc8550617c535ac2644e184583793d",
+  "page_size_pt": [
+   387.36,
+   594.0
+  ],
+  "content_rotation_deg": 90,
+  "frame_size_pt": [
+   594.0,
+   387.36
+  ],
+  "chart_frame_bbox": [
+   44.72,
+   18.04,
+   549.11,
+   369.32
+  ],
+  "extractor": "pdfminer.six 20260107",
+  "styles": "tools/airport_map/styles/faa_apd.json",
+  "debug_text_layer_in_preview": false
+ },
+ "objects_total": 2351,
+ "objects_by_class": {
+  "glyph": 1302,
+  "pavement": 483,
+  "linework": 330,
+  "runway_centerline_extension": 43,
+  "graticule_label": 43,
+  "symbol": 40,
+  "graticule_line": 35,
+  "building": 31,
+  "arrowhead": 21,
+  "hot_spot": 7,
+  "runway_marking": 6,
+  "runway": 4,
+  "hold_line_candidate": 3,
+  "label_background": 2,
+  "frame": 1
+ },
+ "labels_total": 297,
+ "labels_by_class": {
+  "taxiway_candidate": 193,
+  "note": 58,
+  "annotation": 14,
+  "elevation": 9,
+  "runway_end": 8,
+  "heading": 8,
+  "dimension": 4,
+  "hot_spot_label": 1,
+  "terminal_label": 1,
+  "closed_marker": 1
+ },
+ "fill_rule": {
+  "evenodd": 1933
+ },
+ "multi_subpath_objects": 468,
+ "bezier_objects": 93,
+ "dashed_objects": [
+  {
+   "index": 13,
+   "class": "linework",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 14,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 15,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 16,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 17,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 18,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 19,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 20,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 21,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 22,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 23,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 24,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 25,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 26,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 27,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 28,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 29,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 30,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 31,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 32,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 33,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 34,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 35,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 36,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 37,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 38,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 39,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 40,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 41,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 42,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 43,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 44,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 45,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 46,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 47,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 48,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 49,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 50,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 51,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 52,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 53,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 54,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 55,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 56,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 57,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 58,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 59,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 60,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 61,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 62,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 63,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 64,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 65,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 66,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 67,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 68,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 69,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 70,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 71,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 72,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 73,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 74,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 75,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 76,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 77,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 78,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 79,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 80,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 81,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 82,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 83,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 84,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 85,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 86,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 87,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 88,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 89,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 90,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 91,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 92,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 93,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 94,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 95,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 96,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 97,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 98,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 99,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 100,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 101,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 102,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 103,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 104,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 105,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 106,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 107,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 108,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 109,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 110,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 111,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 112,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 113,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 114,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 115,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 116,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 117,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 118,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 119,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 120,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 121,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 122,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 123,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 124,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 125,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 126,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 127,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 128,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 129,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 130,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 131,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 132,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 133,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 134,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 135,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 136,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 137,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 138,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 139,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 140,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 141,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 142,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 143,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 144,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 145,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 146,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 147,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 148,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 149,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 150,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 151,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 152,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 153,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 154,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 155,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 156,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 157,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 158,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 159,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 160,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 161,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 162,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 163,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 164,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 165,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 166,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 167,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 168,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 169,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 170,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 171,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 172,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 173,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 174,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 175,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 176,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 177,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 178,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 179,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 180,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 181,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 182,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 183,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 184,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 185,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 186,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 187,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 188,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 189,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 190,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 191,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 192,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 193,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 194,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 195,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 196,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 197,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 198,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 199,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 200,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 201,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 202,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 203,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 204,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 205,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 206,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 207,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 208,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 209,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 210,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 211,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 212,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 213,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 214,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 215,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 216,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 217,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 218,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 219,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 220,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 221,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 222,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 223,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 224,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 225,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 226,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 227,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 228,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 229,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 230,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 231,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 232,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 233,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 234,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 235,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 236,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 237,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 238,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 239,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 240,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 241,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 242,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 243,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 244,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 245,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 246,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 247,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 248,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 249,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 250,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 251,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 252,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 253,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 254,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 255,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 256,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 257,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 258,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 259,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 260,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 261,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 262,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 263,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 264,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 265,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 266,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 267,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 268,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 269,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 270,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 271,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 272,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 273,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 274,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 275,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 276,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 277,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 278,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 279,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 280,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 281,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 282,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 283,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 284,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 285,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 286,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 287,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 288,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 289,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 290,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 291,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 292,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 293,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 294,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 295,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 296,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 297,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 298,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 299,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 300,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 301,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 302,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 303,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 304,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 305,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 306,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 307,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 308,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 309,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 310,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 311,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 312,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 313,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 314,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 315,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 316,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 317,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 318,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 319,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 320,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 321,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 322,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 323,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 324,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 325,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 326,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 327,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 328,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 329,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 330,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 331,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 332,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 333,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 334,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 335,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 336,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 337,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 338,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 339,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 340,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 341,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 342,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 343,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 344,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 345,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 346,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 347,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 348,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 349,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 350,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 351,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 352,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 353,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 354,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 355,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 356,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 357,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 358,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 359,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 360,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 361,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 362,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 363,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 364,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 365,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 366,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 367,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 368,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 369,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 370,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 371,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 372,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 373,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 374,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 375,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 376,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 377,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 378,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 379,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 380,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 381,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 382,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 383,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 384,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 385,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 386,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 387,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 388,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 389,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 390,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 391,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 392,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 393,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 394,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 395,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 396,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 397,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 398,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 399,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 400,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 401,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 402,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 403,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 404,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 405,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 406,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 407,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 408,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 409,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 410,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 411,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 412,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 413,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 414,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 415,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 416,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 417,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 418,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 419,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 420,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 421,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 422,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 423,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 424,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 425,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 426,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 427,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 428,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 429,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 430,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 431,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 432,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 433,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 434,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 435,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 436,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 437,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 438,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 439,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 440,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 441,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 442,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 443,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 444,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 445,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 446,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 447,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 448,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 449,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 450,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 451,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 452,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 453,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 454,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 455,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 456,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 457,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 458,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 459,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 460,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 461,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 462,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 463,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 464,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 465,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 466,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 467,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 468,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 469,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 470,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 471,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 472,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 473,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 474,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 475,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 476,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 477,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 478,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 479,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 480,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 481,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 482,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 483,
+   "class": "pavement",
+   "dash": [
+    [
+     7.92,
+     2.16
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 564,
+   "class": "runway_marking",
+   "dash": [
+    [
+     0.87,
+     2.58
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 565,
+   "class": "runway_marking",
+   "dash": [
+    [
+     0.87,
+     2.58
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 566,
+   "class": "runway_marking",
+   "dash": [
+    [
+     0.87,
+     2.58
+    ],
+    0.0
+   ]
+  },
+  {
+   "index": 567,
+   "class": "runway_marking",
+   "dash": [
+    [
+     0.87,
+     2.58
+    ],
+    0.0
+   ]
+  }
+ ],
+ "clipped_objects": [],
+ "runways": [
+  {
+   "index": 507,
+   "long_pt": 216.147,
+   "short_pt": 4.557,
+   "axis_deg": 30.7
+  },
+  {
+   "index": 508,
+   "long_pt": 261.221,
+   "short_pt": 7.047,
+   "axis_deg": -58.6
+  },
+  {
+   "index": 509,
+   "long_pt": 181.671,
+   "short_pt": 5.48,
+   "axis_deg": -58.9
+  },
+  {
+   "index": 510,
+   "long_pt": 313.701,
+   "short_pt": 6.601,
+   "axis_deg": 30.3
+  }
+ ],
+ "runway_end_points_pt": [
+  [
+   271.76,
+   76.98
+  ],
+  [
+   457.61,
+   187.33
+  ],
+  [
+   299.72,
+   356.79
+  ],
+  [
+   435.64,
+   133.72
+  ],
+  [
+   390.31,
+   329.43
+  ],
+  [
+   484.22,
+   173.91
+  ],
+  [
+   112.92,
+   151.03
+  ],
+  [
+   383.64,
+   309.51
+  ]
+ ],
+ "hold_line_groups": [
+  {
+   "group": 14,
+   "dashes": 3,
+   "bbox": [
+    382.11,
+    321.64,
+    385.0,
+    333.09
+   ],
+   "nearest_annotation": "CAT 2 HOLD",
+   "annotation_dist_pt": 26.3,
+   "indices": [
+    2344,
+    2345,
+    2346
+   ]
+  }
+ ],
+ "hot_spot_labels": [
+  "HS 1"
+ ],
+ "runway_end_labels": [
+  "4L",
+  "4R",
+  "13L",
+  "13R",
+  "22L",
+  "22R",
+  "31L",
+  "31R"
+ ],
+ "gate_leadins": [],
+ "elevations": [
+  "12",
+  "13"
+ ],
+ "taxiway_candidates": [
+  "A",
+  "A1",
+  "A10",
+  "A14",
+  "A4",
+  "A5",
+  "B",
+  "C",
+  "C1",
+  "C2",
+  "C3",
+  "C5",
+  "C6",
+  "C7",
+  "D",
+  "DA",
+  "DB",
+  "E",
+  "EA",
+  "EE",
+  "F",
+  "FA",
+  "FB",
+  "G",
+  "GG",
+  "H",
+  "HB",
+  "J",
+  "JA",
+  "JB",
+  "K",
+  "K1",
+  "K2",
+  "K3",
+  "K4",
+  "KD",
+  "KE",
+  "KF",
+  "KG",
+  "L",
+  "LA",
+  "LL",
+  "M",
+  "MA",
+  "MB",
+  "MC",
+  "MD",
+  "N",
+  "NA",
+  "NB",
+  "NC",
+  "P",
+  "PA",
+  "PB",
+  "PC",
+  "PD",
+  "PE",
+  "PF",
+  "Q",
+  "Q1",
+  "Q2",
+  "Q3",
+  "Q4",
+  "Q5",
+  "R",
+  "S",
+  "SA",
+  "SB",
+  "SC",
+  "SD",
+  "T",
+  "TA",
+  "TB",
+  "TT",
+  "U",
+  "U1",
+  "U2",
+  "U3",
+  "V",
+  "VA",
+  "W",
+  "WW",
+  "Y",
+  "YA",
+  "Z",
+  "ZA"
+ ],
+ "terminal_labels": [
+  "GA"
+ ],
+ "helipad_labels": [],
+ "unclassified_numbers": [],
+ "visible_text_labels": [
+  "NE-2, 01 OCT 2026 to 29 OCT 2026",
+  "NE-2, 01 OCT 2026 to 29 OCT 2026"
+ ],
+ "label_glyph_shortfall": [],
+ "label_glyphs": [
+  {
+   "text": "FIELD",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "13",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "READBACK OF ALL RUNWAY HOLDING INSTRUCTIONS IS REQUIRED.",
+   "chars": 49,
+   "glyphs": 50
+  },
+  {
+   "text": "CAUTION: BE ALERT TO RUNWAY CROSSING CLEARANCES.",
+   "chars": 42,
+   "glyphs": 43
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "A5",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "HS 1",
+   "chars": 3,
+   "glyphs": 0
+  },
+  {
+   "text": "VAR 13° W",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "RLLS Rwys 13L and 13R",
+   "chars": 17,
+   "glyphs": 17
+  },
+  {
+   "text": "TDZL/RCLS Rwys 4L, 4R, 22L, 13L, 31R",
+   "chars": 30,
+   "glyphs": 30
+  },
+  {
+   "text": "HIRL Rwys 4L-22R, 4R-22L, 13L-31R, 13R-31L",
+   "chars": 37,
+   "glyphs": 37
+  },
+  {
+   "text": "(JFK)",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "NEW YORK, NEW YORK",
+   "chars": 15,
+   "glyphs": 15
+  },
+  {
+   "text": "NEW YORK, NEW YORK",
+   "chars": 15,
+   "glyphs": 15
+  },
+  {
+   "text": "(JFK)",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "AL-610 (FAA)",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "AIRPORT DIAGRAM",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "AIRPORT DIAGRAM",
+   "chars": 14,
+   "glyphs": 16
+  },
+  {
+   "text": "JOHN F KENNEDY INTL",
+   "chars": 16,
+   "glyphs": 18
+  },
+  {
+   "text": "JOHN F KENNEDY INTL",
+   "chars": 16,
+   "glyphs": 18
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "Y",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "JB",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "J",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "G",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "H",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "H",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "J",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "S",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "JA",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Y",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "FB",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "FB",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "FA",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "YA",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Y",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "YA",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "K1",
+   "chars": 2,
+   "glyphs": 7
+  },
+  {
+   "text": "K2",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "K3",
+   "chars": 2,
+   "glyphs": 6
+  },
+  {
+   "text": "K",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "K",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "K4",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "KE",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "FB",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "EE",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 8
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "DB",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "C7",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "W",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "V",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "C5",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "C5",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "C1",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "C3",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "C2",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "C6",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "Q2",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "Q1",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "Q",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "Q",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "Q",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "PF",
+   "chars": 2,
+   "glyphs": 6
+  },
+  {
+   "text": "PE",
+   "chars": 2,
+   "glyphs": 6
+  },
+  {
+   "text": "PD",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "PC",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 7
+  },
+  {
+   "text": "Q4",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "PA",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "MD",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "MC",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "N",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "MB",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "M",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "L",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "KE",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "K",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "J",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "N",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "NA",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "S",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "R",
+   "chars": 1,
+   "glyphs": 6
+  },
+  {
+   "text": "SB",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "E",
+   "chars": 1,
+   "glyphs": 6
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 5
+  },
+  {
+   "text": "MA",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 5
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 6
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "KF",
+   "chars": 2,
+   "glyphs": 6
+  },
+  {
+   "text": "V",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "TB",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "TA",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "TT",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "T",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "T",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "KD",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 5
+  },
+  {
+   "text": "NC",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "NB",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "SA",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "U1",
+   "chars": 2,
+   "glyphs": 7
+  },
+  {
+   "text": "U2",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "U3",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "U",
+   "chars": 1,
+   "glyphs": 5
+  },
+  {
+   "text": "SC",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "SD",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "HB",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "H",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "GG",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "WW",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "YA",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "ZA",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "DA",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "DB",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "A1",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "G",
+   "chars": 1,
+   "glyphs": 5
+  },
+  {
+   "text": "G",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "EA",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "4L",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "22R",
+   "chars": 3,
+   "glyphs": 7
+  },
+  {
+   "text": "4R",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "22L",
+   "chars": 3,
+   "glyphs": 4
+  },
+  {
+   "text": "13L",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "31R",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "13R",
+   "chars": 3,
+   "glyphs": 4
+  },
+  {
+   "text": "31L",
+   "chars": 3,
+   "glyphs": 4
+  },
+  {
+   "text": "12",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "13",
+   "chars": 2,
+   "glyphs": 3
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "12",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "12",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "13",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "13",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "13",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "13",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "ELEV",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "TERMINAL",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "GA",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "STATION",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "FIRE",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "U.S. CUSTOMS",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "TERMINAL",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "ARRIVAL",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "INTERNATIONAL",
+   "chars": 13,
+   "glyphs": 13
+  },
+  {
+   "text": "STATION",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "AUX FIRE",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "Y",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "Y",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Y",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Y",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "W",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Z",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "H",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "J",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "F",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "FB",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Q",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "Q",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "P",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 5
+  },
+  {
+   "text": "Y",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "S",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "S",
+   "chars": 1,
+   "glyphs": 6
+  },
+  {
+   "text": "SB",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "R",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "R",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "R",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 1
+  },
+  {
+   "text": "C",
+   "chars": 1,
+   "glyphs": 5
+  },
+  {
+   "text": "12079 X 200",
+   "chars": 9,
+   "glyphs": 12
+  },
+  {
+   "text": "8400 X 200",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "10000 X 200",
+   "chars": 9,
+   "glyphs": 12
+  },
+  {
+   "text": "14511 X 200",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "PDC",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "CPDLC",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "125.05",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "RAMP CON",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "135.05 348.6",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "CLNC DEL",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "121.9 348.6",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "GND CON",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "123.9 281.55 (RWYS 04L-22R, 13R-31L)",
+   "chars": 32,
+   "glyphs": 32
+  },
+  {
+   "text": "119.1 281.55 (RWYS 04R-22L, 13L-31R)",
+   "chars": 32,
+   "glyphs": 32
+  },
+  {
+   "text": "KENNEDY TOWER",
+   "chars": 12,
+   "glyphs": 12
+  },
+  {
+   "text": "128.725",
+   "chars": 7,
+   "glyphs": 7
+  },
+  {
+   "text": "117.7 ARR NE",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "115.4 ARR SW",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "D-ATIS",
+   "chars": 6,
+   "glyphs": 6
+  },
+  {
+   "text": "CAT 2 HOLD",
+   "chars": 8,
+   "glyphs": 8
+  },
+  {
+   "text": "EMAS",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "EMAS",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "D-210, 2D-550, 2D/2D2-1100",
+   "chars": 24,
+   "glyphs": 24
+  },
+  {
+   "text": "PCR 1260 F/B/X/T",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "RWY 04R-22L",
+   "chars": 10,
+   "glyphs": 10
+  },
+  {
+   "text": "D-210, 2D-550, 2D/2D2-1100",
+   "chars": 24,
+   "glyphs": 24
+  },
+  {
+   "text": "PCR 1260 R/B/W/T",
+   "chars": 14,
+   "glyphs": 14
+  },
+  {
+   "text": "RWYS 04L-22R, 13L-31R, 13R-31L",
+   "chars": 27,
+   "glyphs": 27
+  },
+  {
+   "text": "Runway Status Lights in operation.",
+   "chars": 30,
+   "glyphs": 33
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "A4",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "W",
+   "chars": 1,
+   "glyphs": 2
+  },
+  {
+   "text": "D",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "X",
+   "chars": 1,
+   "glyphs": 5
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 9
+  },
+  {
+   "text": "A",
+   "chars": 1,
+   "glyphs": 4
+  },
+  {
+   "text": "B",
+   "chars": 1,
+   "glyphs": 6
+  },
+  {
+   "text": "LA",
+   "chars": 2,
+   "glyphs": 11
+  },
+  {
+   "text": "VA",
+   "chars": 2,
+   "glyphs": 5
+  },
+  {
+   "text": "enabled on all airport surfaces.",
+   "chars": 28,
+   "glyphs": 29
+  },
+  {
+   "text": "altitude reporting mode and ADS-B (if equipped)",
+   "chars": 41,
+   "glyphs": 45
+  },
+  {
+   "text": "ASDE-X in use. Operate transponders with",
+   "chars": 35,
+   "glyphs": 37
+  },
+  {
+   "text": "26246",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "26246",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "TWR",
+   "chars": 3,
+   "glyphs": 3
+  },
+  {
+   "text": "A10",
+   "chars": 3,
+   "glyphs": 4
+  },
+  {
+   "text": "M",
+   "chars": 1,
+   "glyphs": 3
+  },
+  {
+   "text": "Q5",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "HARDSTAND",
+   "chars": 9,
+   "glyphs": 9
+  },
+  {
+   "text": "SOUTH",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "KG",
+   "chars": 2,
+   "glyphs": 11
+  },
+  {
+   "text": "LL",
+   "chars": 2,
+   "glyphs": 13
+  },
+  {
+   "text": "A14",
+   "chars": 3,
+   "glyphs": 9
+  },
+  {
+   "text": "Q3",
+   "chars": 2,
+   "glyphs": 2
+  },
+  {
+   "text": "JANUARY 2020",
+   "chars": 11,
+   "glyphs": 11
+  },
+  {
+   "text": "ANNUAL RATE OF CHANGE",
+   "chars": 18,
+   "glyphs": 18
+  },
+  {
+   "text": "0.1° E",
+   "chars": 5,
+   "glyphs": 5
+  },
+  {
+   "text": "224°",
+   "chars": 4,
+   "glyphs": 7
+  },
+  {
+   "text": "044°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "314°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "134°",
+   "chars": 4,
+   "glyphs": 6
+  },
+  {
+   "text": "224°",
+   "chars": 4,
+   "glyphs": 7
+  },
+  {
+   "text": "044°",
+   "chars": 4,
+   "glyphs": 5
+  },
+  {
+   "text": "314°",
+   "chars": 4,
+   "glyphs": 8
+  },
+  {
+   "text": "134°",
+   "chars": 4,
+   "glyphs": 4
+  },
+  {
+   "text": "PB",
+   "chars": 2,
+   "glyphs": 4
+  },
+  {
+   "text": "NE-2, 01 OCT 2026 to 29 OCT 2026",
+   "chars": 25,
+   "glyphs": 0
+  },
+  {
+   "text": "NE-2, 01 OCT 2026 to 29 OCT 2026",
+   "chars": 25,
+   "glyphs": 0
+  }
+ ],
+ "unclassified_objects": []
+}

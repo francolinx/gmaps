@@ -1,0 +1,18 @@
+{
+ "SYN_KATL_DEV4_09_N_HOLD_SHORT_00": {
+  "text": "American 2331, runway 27R, wind 120 at 17 gusts 30, cleared to land.",
+  "asr_s": 0.229
+ },
+ "SYN_KATL_DEV4_09_N_HOLD_SHORT_01": {
+  "text": "American 23-31, Roger. Clear to land runway 27 right.",
+  "asr_s": 0.196
+ },
+ "SYN_KATL_DEV4_09_N_HOLD_SHORT_02": {
+  "text": "Southwest 700, hold short of runway 27R, traffic landing runway 27R.",
+  "asr_s": 0.216
+ },
+ "SYN_KATL_DEV4_09_N_HOLD_SHORT_03": {
+  "text": "Southwest 700 holding short of runway 27 right.",
+  "asr_s": 0.176
+ }
+}

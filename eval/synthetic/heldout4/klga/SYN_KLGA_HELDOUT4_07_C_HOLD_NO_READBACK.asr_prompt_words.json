@@ -1,0 +1,218 @@
+{
+ "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_00": {
+  "text": "United 2355, runway two two, cleared to land, wind calm.",
+  "asr_s": 0.463,
+  "words": [
+   {
+    "w": "United",
+    "p": 0.9943
+   },
+   {
+    "w": "2355,",
+    "p": 0.4292
+   },
+   {
+    "w": "runway",
+    "p": 0.9977
+   },
+   {
+    "w": "two",
+    "p": 0.9983
+   },
+   {
+    "w": "two,",
+    "p": 0.7125
+   },
+   {
+    "w": "cleared",
+    "p": 0.9836
+   },
+   {
+    "w": "to",
+    "p": 0.9273
+   },
+   {
+    "w": "land,",
+    "p": 0.9653
+   },
+   {
+    "w": "wind",
+    "p": 0.9477
+   },
+   {
+    "w": "calm.",
+    "p": 0.8734
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_01": {
+  "text": "Runway two two, cleared to land, United 2355.",
+  "asr_s": 0.393,
+  "words": [
+   {
+    "w": "Runway",
+    "p": 0.7925
+   },
+   {
+    "w": "two",
+    "p": 0.9856
+   },
+   {
+    "w": "two,",
+    "p": 0.794
+   },
+   {
+    "w": "cleared",
+    "p": 0.9701
+   },
+   {
+    "w": "to",
+    "p": 0.9501
+   },
+   {
+    "w": "land,",
+    "p": 0.856
+   },
+   {
+    "w": "United",
+    "p": 0.9214
+   },
+   {
+    "w": "2355.",
+    "p": 0.9366
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_02": {
+  "text": "Spirit 1400, hold short runway two two, traffic on final.",
+  "asr_s": 0.411,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.6877
+   },
+   {
+    "w": "1400,",
+    "p": 0.7129
+   },
+   {
+    "w": "hold",
+    "p": 0.9253
+   },
+   {
+    "w": "short",
+    "p": 0.9983
+   },
+   {
+    "w": "runway",
+    "p": 0.604
+   },
+   {
+    "w": "two",
+    "p": 0.9947
+   },
+   {
+    "w": "two,",
+    "p": 0.8343
+   },
+   {
+    "w": "traffic",
+    "p": 0.9966
+   },
+   {
+    "w": "on",
+    "p": 0.999
+   },
+   {
+    "w": "final.",
+    "p": 0.9344
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_03": {
+  "text": "Wilco Spirit 1400",
+  "asr_s": 0.371,
+  "words": [
+   {
+    "w": "Wilco",
+    "p": 0.8331
+   },
+   {
+    "w": "Spirit",
+    "p": 0.7654
+   },
+   {
+    "w": "1400",
+    "p": 0.8272
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_04": {
+  "text": "Spirit 1400, read back hold instruction.",
+  "asr_s": 0.41,
+  "words": [
+   {
+    "w": "Spirit",
+    "p": 0.9578
+   },
+   {
+    "w": "1400,",
+    "p": 0.7698
+   },
+   {
+    "w": "read",
+    "p": 0.9609
+   },
+   {
+    "w": "back",
+    "p": 0.6752
+   },
+   {
+    "w": "hold",
+    "p": 0.8991
+   },
+   {
+    "w": "instruction.",
+    "p": 0.9298
+   }
+  ]
+ },
+ "SYN_KLGA_HELDOUT4_07_C_HOLD_NO_READBACK_05": {
+  "text": "Hold short of runway two two, spirit 1400.",
+  "asr_s": 0.426,
+  "words": [
+   {
+    "w": "Hold",
+    "p": 0.9475
+   },
+   {
+    "w": "short",
+    "p": 0.8406
+   },
+   {
+    "w": "of",
+    "p": 0.9794
+   },
+   {
+    "w": "runway",
+    "p": 0.9928
+   },
+   {
+    "w": "two",
+    "p": 0.9725
+   },
+   {
+    "w": "two,",
+    "p": 0.8375
+   },
+   {
+    "w": "spirit",
+    "p": 0.5416
+   },
+   {
+    "w": "1400.",
+    "p": 0.4794
+   }
+  ]
+ }
+}
