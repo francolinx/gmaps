@@ -1,0 +1,1086 @@
+{
+ "command": [
+  "/usr/bin/python3",
+  "demo/run_open_agent.py",
+  "--scenario",
+  "all",
+  "--provider",
+  "local"
+ ],
+ "host": "spark-6771",
+ "started_utc": "2026-10-27T23:33:16Z",
+ "duration_s": 21.7,
+ "exit_code": 0,
+ "interval_s": 0.5,
+ "verdict": {
+  "process_tree_loopback_only": true,
+  "python_connect_calls": 22,
+  "python_connect_targets": [
+   "127.0.0.1:8002"
+  ],
+  "process_tree_remote_endpoints": [
+   "127.0.0.1:8002"
+  ],
+  "machine_non_loopback_established": 33,
+  "gpu": "NVIDIA GB10",
+  "gpu_util_max": 96.0,
+  "model_calls_in_window": 22,
+  "models_reported": [
+   "nemotron-3-nano-30b-a3b-nvfp4"
+  ]
+ },
+ "python_connect_calls": [
+  {
+   "ts": 1793143996.4162319,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793143997.655068,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793143997.9495866,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793143999.3980396,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144000.0056076,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144001.2077978,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144001.57314,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144002.8241918,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144003.1834712,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144004.593191,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144005.3738778,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144006.8491602,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144007.5508468,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144008.4355495,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144008.743627,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144010.2844288,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144011.11042,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144012.1666603,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144013.1956627,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144014.7201934,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144015.5811398,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  },
+  {
+   "ts": 1793144016.7229924,
+   "pid": 78566,
+   "family": "2",
+   "host": "127.0.0.1",
+   "port": 8002,
+   "resolved": [
+    "127.0.0.1"
+   ],
+   "local_only": true
+  }
+ ],
+ "process_tree_connections": [
+  {
+   "remote": "127.0.0.1:8002",
+   "local_only": true,
+   "first_t": 0.56,
+   "process": "python3",
+   "states": [
+    "ESTABLISHED"
+   ]
+  }
+ ],
+ "machine_non_loopback": [
+  {
+   "remote": "54.145.204.130:443",
+   "local": "192.168.1.13:56680",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "104.18.32.47:443",
+   "local": "192.168.1.13:53156",
+   "pid": 54465,
+   "process": "ChatGPT",
+   "first_t": 0.0
+  },
+  {
+   "remote": "162.247.243.29:443",
+   "local": "192.168.1.13:37618",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "18.97.36.77:443",
+   "local": "192.168.1.13:47286",
+   "pid": 53735,
+   "process": "claude-desktop",
+   "first_t": 0.0
+  },
+  {
+   "remote": "172.64.155.209:443",
+   "local": "192.168.1.13:34706",
+   "pid": 57145,
+   "process": "codex",
+   "first_t": 0.0
+  },
+  {
+   "remote": "172.253.124.188:5228",
+   "local": "192.168.1.13:59728",
+   "pid": 54465,
+   "process": "ChatGPT",
+   "first_t": 0.0
+  },
+  {
+   "remote": "172.64.146.98:443",
+   "local": "192.168.1.13:50832",
+   "pid": 54465,
+   "process": "ChatGPT",
+   "first_t": 0.0
+  },
+  {
+   "remote": "18.155.1.126:443",
+   "local": "192.168.1.13:52206",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "185.199.110.215:443",
+   "local": "192.168.1.13:38350",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "104.18.37.228:443",
+   "local": "192.168.1.13:35310",
+   "pid": 54465,
+   "process": "ChatGPT",
+   "first_t": 0.0
+  },
+  {
+   "remote": "35.190.80.1:443",
+   "local": "192.168.1.13:54570",
+   "pid": 54465,
+   "process": "ChatGPT",
+   "first_t": 0.0
+  },
+  {
+   "remote": "192.73.243.135:443",
+   "local": "192.168.1.13:35584",
+   "pid": null,
+   "process": "unknown (not readable; run with sudo)",
+   "first_t": 0.0
+  },
+  {
+   "remote": "104.18.39.21:443",
+   "local": "192.168.1.13:36758",
+   "pid": 54465,
+   "process": "ChatGPT",
+   "first_t": 0.0
+  },
+  {
+   "remote": "104.21.89.212:443",
+   "local": "192.168.1.13:33612",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "185.199.108.133:443",
+   "local": "192.168.1.13:36624",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "34.93.91.7:443",
+   "local": "192.168.1.13:50278",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "184.72.81.171:443",
+   "local": "192.168.1.13:34252",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "151.101.1.91:443",
+   "local": "192.168.1.13:43198",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "13.225.143.15:443",
+   "local": "192.168.1.13:37962",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "142.250.9.132:443",
+   "local": "192.168.1.13:56758",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "172.253.124.95:443",
+   "local": "192.168.1.13:45316",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "140.82.114.5:443",
+   "local": "192.168.1.13:47454",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "23.39.174.238:443",
+   "local": "192.168.1.13:45618",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "160.79.104.10:443",
+   "local": "192.168.1.13:33412",
+   "pid": 53675,
+   "process": "claude-desktop",
+   "first_t": 0.0
+  },
+  {
+   "remote": "54.145.145.102:443",
+   "local": "192.168.1.13:58028",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "98.95.172.138:443",
+   "local": "192.168.1.13:53364",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "74.125.21.188:5228",
+   "local": "192.168.1.13:45670",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "199.165.136.100:443",
+   "local": "192.168.1.13:57322",
+   "pid": null,
+   "process": "unknown (not readable; run with sudo)",
+   "first_t": 0.0
+  },
+  {
+   "remote": "142.251.154.120:443",
+   "local": "192.168.1.13:52374",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "74.125.138.91:443",
+   "local": "192.168.1.13:33558",
+   "pid": 74286,
+   "process": "chrome",
+   "first_t": 0.0
+  },
+  {
+   "remote": "192.200.0.105:443",
+   "local": "192.168.1.13:54868",
+   "pid": null,
+   "process": "unknown (not readable; run with sudo)",
+   "first_t": 0.0
+  },
+  {
+   "remote": "172.17.0.3:8000",
+   "local": "172.17.0.1:39950",
+   "pid": null,
+   "process": "unknown (not readable; run with sudo)",
+   "first_t": 0.56
+  },
+  {
+   "remote": "34.149.66.165:443",
+   "local": "192.168.1.13:36740",
+   "pid": 65697,
+   "process": "claude",
+   "first_t": 3.9
+  }
+ ],
+ "model_calls": [
+  {
+   "t": 1793144010.284,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1540.1,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E5_HOLD_NOT_SLOWING-local-20261027-233328.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1540.1 ms"
+  },
+  {
+   "t": 1793144011.11,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 825.7,
+   "outcome": "retried",
+   "file": "runs/traces/SIM_E5_HOLD_NOT_SLOWING-local-20261027-233328.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 825.7 ms"
+  },
+  {
+   "t": 1793144012.166,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1055.9,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E5_HOLD_NOT_SLOWING-local-20261027-233328.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1055.9 ms"
+  },
+  {
+   "t": 1793144013.195,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1028.7,
+   "outcome": "rejected",
+   "file": "runs/traces/SIM_E5_HOLD_NOT_SLOWING-local-20261027-233328.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1028.7 ms"
+  },
+  {
+   "t": 1793144014.72,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1524.2,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E5_HOLD_NOT_SLOWING-local-20261027-233328.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1524.2 ms"
+  },
+  {
+   "t": 1793144015.581,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 860.5,
+   "outcome": "retried",
+   "file": "runs/traces/SIM_E5_HOLD_NOT_SLOWING-local-20261027-233328.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 860.5 ms"
+  },
+  {
+   "t": 1793144016.723,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1141.5,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E5_HOLD_NOT_SLOWING-local-20261027-233328.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1141.5 ms"
+  },
+  {
+   "t": 1793144017.918,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1195.6,
+   "outcome": "rejected",
+   "file": "runs/traces/SIM_E5_HOLD_NOT_SLOWING-local-20261027-233328.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1195.6 ms"
+  },
+  {
+   "t": 1793143997.655,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1251.3,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E1_CROSS_DURING_ROLLOUT-local-20261027-233316.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1251.3 ms"
+  },
+  {
+   "t": 1793143997.949,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 294.1,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E1_CROSS_DURING_ROLLOUT-local-20261027-233316.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 294.1 ms"
+  },
+  {
+   "t": 1793143999.398,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1448.0,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E1_CROSS_DURING_ROLLOUT-local-20261027-233316.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1448.0 ms"
+  },
+  {
+   "t": 1793144000.005,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 607.1,
+   "outcome": "retried",
+   "file": "runs/traces/SIM_E1_CROSS_DURING_ROLLOUT-local-20261027-233316.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 607.1 ms"
+  },
+  {
+   "t": 1793144001.207,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1201.8,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E1_CROSS_DURING_ROLLOUT-local-20261027-233316.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1201.8 ms"
+  },
+  {
+   "t": 1793144001.549,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 341.6,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E1_CROSS_DURING_ROLLOUT-local-20261027-233316.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 341.6 ms"
+  },
+  {
+   "t": 1793144002.824,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1250.6,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E3_STOP_NOT_OBSERVED-local-20261027-233321.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1250.6 ms"
+  },
+  {
+   "t": 1793144003.183,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 358.9,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E3_STOP_NOT_OBSERVED-local-20261027-233321.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 358.9 ms"
+  },
+  {
+   "t": 1793144004.593,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1409.3,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E3_STOP_NOT_OBSERVED-local-20261027-233321.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1409.3 ms"
+  },
+  {
+   "t": 1793144005.373,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 780.2,
+   "outcome": "retried",
+   "file": "runs/traces/SIM_E3_STOP_NOT_OBSERVED-local-20261027-233321.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 780.2 ms"
+  },
+  {
+   "t": 1793144006.849,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 1475.0,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E3_STOP_NOT_OBSERVED-local-20261027-233321.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 1475.0 ms"
+  },
+  {
+   "t": 1793144007.543,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 694.2,
+   "outcome": "rejected",
+   "file": "runs/traces/SIM_E3_STOP_NOT_OBSERVED-local-20261027-233321.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 694.2 ms"
+  },
+  {
+   "t": 1793144008.435,
+   "step": "explain",
+   "role": "explainer",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 884.3,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E3_STOP_NOT_OBSERVED-local-20261027-233321.jsonl",
+   "label": "explainer/explain \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 884.3 ms"
+  },
+  {
+   "t": 1793144008.729,
+   "step": "critique",
+   "role": "critic",
+   "provider": "local",
+   "model_reported": "nemotron-3-nano-30b-a3b-nvfp4",
+   "latency_ms": 293.2,
+   "outcome": "accepted",
+   "file": "runs/traces/SIM_E3_STOP_NOT_OBSERVED-local-20261027-233321.jsonl",
+   "label": "critic/critique \u00b7 local \u00b7 nemotron-3-nano-30b-a3b-nvfp4 \u00b7 293.2 ms"
+  }
+ ],
+ "gpu_samples": [
+  {
+   "t": 0.0,
+   "name": "NVIDIA GB10",
+   "util": 1.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 10.28
+  },
+  {
+   "t": 0.56,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 23.48
+  },
+  {
+   "t": 1.14,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 31.51
+  },
+  {
+   "t": 1.69,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.91
+  },
+  {
+   "t": 2.24,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 34.1
+  },
+  {
+   "t": 2.8,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 31.64
+  },
+  {
+   "t": 3.35,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 32.7
+  },
+  {
+   "t": 3.9,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.81
+  },
+  {
+   "t": 4.48,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 32.84
+  },
+  {
+   "t": 5.04,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 32.87
+  },
+  {
+   "t": 5.58,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.77
+  },
+  {
+   "t": 6.14,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 32.62
+  },
+  {
+   "t": 6.69,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.14
+  },
+  {
+   "t": 7.24,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.72
+  },
+  {
+   "t": 7.79,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 32.21
+  },
+  {
+   "t": 8.34,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 32.68
+  },
+  {
+   "t": 8.9,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.05
+  },
+  {
+   "t": 9.46,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.18
+  },
+  {
+   "t": 10.01,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.03
+  },
+  {
+   "t": 10.56,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.05
+  },
+  {
+   "t": 11.12,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.2
+  },
+  {
+   "t": 11.67,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.27
+  },
+  {
+   "t": 12.22,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.67
+  },
+  {
+   "t": 12.8,
+   "name": "NVIDIA GB10",
+   "util": 89.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 34.27
+  },
+  {
+   "t": 13.35,
+   "name": "NVIDIA GB10",
+   "util": 89.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.12
+  },
+  {
+   "t": 13.9,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 32.17
+  },
+  {
+   "t": 14.46,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.39
+  },
+  {
+   "t": 15.01,
+   "name": "NVIDIA GB10",
+   "util": 96.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.1
+  },
+  {
+   "t": 15.56,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.05
+  },
+  {
+   "t": 16.11,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.16
+  },
+  {
+   "t": 16.66,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.13
+  },
+  {
+   "t": 17.22,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 32.92
+  },
+  {
+   "t": 17.8,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 32.8
+  },
+  {
+   "t": 18.35,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 31.63
+  },
+  {
+   "t": 18.9,
+   "name": "NVIDIA GB10",
+   "util": 92.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.28
+  },
+  {
+   "t": 19.45,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.15
+  },
+  {
+   "t": 20.0,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.1
+  },
+  {
+   "t": 20.55,
+   "name": "NVIDIA GB10",
+   "util": 92.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.2
+  },
+  {
+   "t": 21.1,
+   "name": "NVIDIA GB10",
+   "util": 92.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 33.11
+  },
+  {
+   "t": 21.65,
+   "name": "NVIDIA GB10",
+   "util": 95.0,
+   "mem_used_mib": null,
+   "mem_total_mib": null,
+   "power_w": 29.79
+  }
+ ]
+}
