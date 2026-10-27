@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Nightshift smoke test: one residue transmission (fictional SIM-1 phrasing the grammar does not type) -> NightshiftLLM.parse_residue,
-then the grounding rule. Prints model_reported + latency and writes runs/smoke/nightshift_<ts>.txt. Needs NIGHTSHIFT_BASE_URL,
-NIGHTSHIFT_API_KEY (NIGHTSHIFT_MODEL optional). The key is never printed or written."""
+then the grounding rule. Prints model_reported + latency and writes runs/smoke/nightshift_<ts>.txt. Needs NIGHTSHIFT_API_KEY
+(NIGHTSHIFT_BASE_URL defaults to http://127.0.0.1:8088/v1; NIGHTSHIFT_MODEL optional). The key is never printed or written.
+  python3 tools/nightshift_smoke.py --models     # list the model ids Nightshift serves (pick the Nemotron one)"""
 import json, sys, time
 from pathlib import Path
 
@@ -17,6 +18,9 @@ try:
     llm = NightshiftLLM()
 except ValueError as e:
     print(f'NOT RUN: {e}'); sys.exit(2)
+if '--models' in sys.argv:
+    ids = llm.models()
+    print('\n'.join(ids)); print('Nemotron ids:', [i for i in ids if 'nemotron' in (i or '').lower()] or 'none listed: add NVIDIA in the Providers tab'); sys.exit(0)
 g = parse(TEXT, 'XSIM')
 lines.append(f'transmission: {TEXT!r}  grammar: speech_act={g["speech_act"]} kind={g["kind"]}')
 d = llm.parse_residue(TEXT, 'XSIM')

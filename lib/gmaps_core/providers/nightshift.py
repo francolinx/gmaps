@@ -1,4 +1,10 @@
-"""NightshiftLLM: OpenAI-compatible chat completions against NIGHTSHIFT_BASE_URL (Open Agent Hackathon 2026).
+"""NightshiftLLM: OpenAI-compatible chat completions against Meterless Nightshift (Open Agent Hackathon 2026).
+
+Nightshift runs on your own machine/network and exposes one OpenAI-compatible base URL and a runtime key (both shown in the
+Nightshift Console); NVIDIA is added in Nightshift's Providers tab (the NVIDIA key lives there, never in this project).
+NIGHTSHIFT_BASE_URL defaults to http://127.0.0.1:8088/v1 and may be pasted as host:port, .../v1, .../v1/models or
+.../v1/chat/completions. NIGHTSHIFT_MODEL: a Nemotron id from `python3 tools/nightshift_smoke.py --models` (meterless/auto may
+route to a non-NVIDIA model; model_reported in every trace line shows which model actually answered).
 
 A NEW provider class: LocalLLM (gmaps_core.adapters) still refuses every non-local URL, and the Raleigh local path never
 routes here. Credentials only from the environment (NIGHTSHIFT_API_KEY); nothing is written to disk except the trace,
@@ -8,24 +14,48 @@ after that a typed 'provider_unavailable' result, never a guess. model_reported 
 import json, os, time, urllib.error, urllib.request
 from .base import ProviderBase
 
-DEFAULT_MODEL = os.environ.get('NIGHTSHIFT_DEFAULT_MODEL', 'nvidia/nemotron-3.5-lightning-30b-a3b')   # placeholder: set NIGHTSHIFT_MODEL to the id Nightshift lists
+DEFAULT_MODEL = 'meterless/auto'          # set NIGHTSHIFT_MODEL to the Nemotron id Nightshift lists, for the NVIDIA award
+DEFAULT_BASE = 'http://127.0.0.1:8088/v1'
+
+
+def normalize_base(url):
+    u = (url or DEFAULT_BASE).strip().rstrip('/')
+    if '://' not in u:
+        u = 'http://' + u
+    for tail in ('/chat/completions', '/models', '/healthz'):
+        if u.endswith(tail):
+            u = u[: -len(tail)]
+    return u if u.endswith('/v1') else u + '/v1'
 
 
 class NightshiftLLM(ProviderBase):
     name = 'nightshift'
 
     def __init__(self, base_url=None, api_key=None, model=None, timeout=None, retries=1):
-        self.base = (base_url or os.environ.get('NIGHTSHIFT_BASE_URL') or '').rstrip('/')
+        self.base = normalize_base(base_url or os.environ.get('NIGHTSHIFT_BASE_URL'))
         self.key = api_key or os.environ.get('NIGHTSHIFT_API_KEY') or ''
         self.model = model or os.environ.get('NIGHTSHIFT_MODEL') or DEFAULT_MODEL
         self.timeout = float(timeout or os.environ.get('NIGHTSHIFT_TIMEOUT_S') or 30)
         self.retries = retries
-        if not self.base or not self.key:
-            raise ValueError('NightshiftLLM needs NIGHTSHIFT_BASE_URL and NIGHTSHIFT_API_KEY in the environment')
+        if not self.key:
+            raise ValueError('NightshiftLLM needs NIGHTSHIFT_API_KEY (the runtime key from the Nightshift Console) in the environment')
+        self.run_id = os.environ.get('GMAPS_RUN_ID', '')
+
+    def headers(self):
+        h = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + self.key, 'meterless-app': 'gmaps', 'meterless-scope': 'user'}
+        if self.run_id:
+            h['X-Run-Id'] = self.run_id
+        return h
+
+    def models(self):
+        """GET /v1/models -> list of model ids (raises on HTTP errors)."""
+        req = urllib.request.Request(self.base + '/models', headers=self.headers())
+        with urllib.request.urlopen(req, timeout=self.timeout) as r:
+            return [m.get('id') for m in json.loads(r.read()).get('data', [])]
 
     def _post(self, body):
         req = urllib.request.Request(self.base + '/chat/completions', data=json.dumps(body).encode(), method='POST',
-                                     headers={'Content-Type': 'application/json', 'Authorization': 'Bearer ' + self.key})
+                                     headers=self.headers())
         with urllib.request.urlopen(req, timeout=self.timeout) as r:
             return json.loads(r.read())
 

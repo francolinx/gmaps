@@ -9,7 +9,13 @@
 # docs/model_card/open_agent_2026, ui_scaffold/samples/open_agent_status.json.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-: "${NIGHTSHIFT_BASE_URL:?export NIGHTSHIFT_BASE_URL}" "${NIGHTSHIFT_API_KEY:?export NIGHTSHIFT_API_KEY}"
+: "${NIGHTSHIFT_API_KEY:?export NIGHTSHIFT_API_KEY (runtime key from the Nightshift Console)}"
+export NIGHTSHIFT_BASE_URL=${NIGHTSHIFT_BASE_URL:-http://127.0.0.1:8088/v1}
+if [ -z "${NIGHTSHIFT_MODEL:-}" ]; then   # pick the first Nemotron model Nightshift lists (the NVIDIA award needs a Nemotron model)
+  NIGHTSHIFT_MODEL=$(python3 tools/nightshift_smoke.py --models | grep -i nemotron | grep -v '^Nemotron ids' | head -1 || true)
+  export NIGHTSHIFT_MODEL=${NIGHTSHIFT_MODEL:-meterless/auto}
+fi
+echo "Nightshift: $NIGHTSHIFT_BASE_URL  model: $NIGHTSHIFT_MODEL"
 TS=$(date -u +%Y%m%d-%H%M%S)
 GYMPY=${GYMPY:-$HOME/gymvenv313/bin}
 mkdir -p runs/tests runs/smoke

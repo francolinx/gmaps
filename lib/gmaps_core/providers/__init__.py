@@ -1,6 +1,6 @@
 """Provider selection (Open Agent Hackathon 2026): GMAPS_PROVIDER=nightshift|local|sample.
 
-Default: nightshift when NIGHTSHIFT_API_KEY and NIGHTSHIFT_BASE_URL are set, else sample (one-line banner on stderr).
+Default: nightshift when NIGHTSHIFT_API_KEY is set (base URL defaults to Nightshift's http://127.0.0.1:8088/v1), else sample (one-line banner on stderr).
 'local' wraps the pre-existing LocalLLM (refuses non-local URLs; GMAPS_LLM_BASE_URL / GMAPS_LLM_MODEL).
 """
 import os, sys
@@ -35,9 +35,9 @@ def _local():
 def get_provider(name=None, quiet=False):
     name = name or os.environ.get('GMAPS_PROVIDER')
     if not name:
-        name = 'nightshift' if os.environ.get('NIGHTSHIFT_API_KEY') and os.environ.get('NIGHTSHIFT_BASE_URL') else 'sample'
+        name = 'nightshift' if os.environ.get('NIGHTSHIFT_API_KEY') else 'sample'
         if name == 'sample' and not quiet:
-            print('[gmaps] no NIGHTSHIFT_API_KEY / NIGHTSHIFT_BASE_URL: SAMPLE MODE, replaying recorded Nightshift traces (no network)', file=sys.stderr)
+            print('[gmaps] no NIGHTSHIFT_API_KEY: SAMPLE MODE, replaying recorded Nightshift traces (no network)', file=sys.stderr)
     if name == 'nightshift':
         from .nightshift import NightshiftLLM
         return NightshiftLLM()

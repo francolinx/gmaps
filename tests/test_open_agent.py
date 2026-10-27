@@ -34,7 +34,7 @@ class Mock(BaseHTTPRequestHandler):
 
     def do_POST(self):
         body = json.loads(self.rfile.read(int(self.headers['Content-Length'])))
-        Mock.calls.append({'auth': self.headers.get('Authorization'), 'body': body})
+        Mock.calls.append({'auth': self.headers.get('Authorization'), 'app': self.headers.get('meterless-app'), 'body': body})
         if Mock.fail_next > 0:
             Mock.fail_next -= 1
             self.send_response(503); self.end_headers(); self.wfile.write(b'busy'); return
@@ -80,6 +80,7 @@ class OpenAgentTests(unittest.TestCase):
         self.assertEqual(d['_call']['attempts'], 2)
         self.assertEqual(Mock.calls[-1]['body']['temperature'], 0)
         self.assertEqual(Mock.calls[-1]['auth'], 'Bearer fake-key')
+        self.assertEqual(Mock.calls[-1]['app'], 'gmaps')
 
     def test_two_5xx_is_typed_unavailable_not_a_guess(self):
         Mock.fail_next = 2
