@@ -15,6 +15,14 @@ python3 tools/show_trace.py samples/open_agent/traces/SIM_E1_CROSS_DURING_ROLLOU
 python3 tests/run_all.py                                              # snapshot checks + open-agent tests
 ```
 
+### Local-execution proof (new)
+`python3 tools/local_proof.py -- demo/run_open_agent.py --scenario all --provider nightshift` wraps any run and records:
+- every `connect()` made by its Python processes (an auditor injected for that run only, so nothing is missed between samples);
+- every non-loopback connection on the machine during the run;
+- GPU utilization, power and memory from `nvidia-smi`, with each model call from the trace marked on the chart.
+
+It writes `runs/proof/local_<ts>.json` and a self-contained `.html` page, with the verdict "loopback only" or a list of exactly what left the machine. `demo/record_open_agent.sh` runs the live scenarios under it.
+
 ### Animated LaGuardia view (new)
 `ui_scaffold/lga_scene.html` replays the six scripted SIM scenarios on the real LaGuardia layout, with AS-IS and WITH GMAPS side by side on one clock. Run `cd ui_scaffold && python3 -m http.server 8765 --bind 127.0.0.1`, then open `lga_scene.html?s=SIM_E1_CROSS_DURING_ROLLOUT`.
 

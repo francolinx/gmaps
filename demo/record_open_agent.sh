@@ -5,7 +5,7 @@
 #     optional COMPARE_DEADLINE_UTC=HH:MM stops at a fixed prefix and records n)
 #  3. the three scenarios live, recorded as the sample fixtures   4. replayed in sample mode with an empty environment
 #  5. tests   6. wait for 2, then draw its chart
-# Then review `git status` and commit runs/smoke, runs/tests, samples/open_agent, eval/results/open_agent_2026,
+# Then review `git status` and commit runs/proof, runs/smoke, runs/tests, samples/open_agent, eval/results/open_agent_2026,
 # docs/model_card/open_agent_2026, ui_scaffold/samples/open_agent_status.json.
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -23,7 +23,8 @@ python3 tools/nightshift_smoke.py
 "$GYMPY/python" eval/run_provider_compare.py --set heldout4_asr --provider nightshift ${COMPARE_DEADLINE_UTC:+--deadline-utc $COMPARE_DEADLINE_UTC} \
   > "runs/tests/compare_heldout4_${TS}.txt" 2>&1 &
 CMP=$!
-python3 demo/run_open_agent.py --scenario all --provider nightshift --record | tee "runs/tests/open_agent_live_${TS}.txt"
+# live scenarios under the local-execution proof: every connect() + GPU samples -> runs/proof/local_<ts>.{json,html}
+python3 tools/local_proof.py --interval 0.5 -- demo/run_open_agent.py --scenario all --provider nightshift --record | tee "runs/tests/open_agent_live_${TS}.txt"
 env -i PATH="$PATH" HOME="$HOME" python3 demo/run_open_agent.py --scenario all --provider sample | tee "runs/tests/open_agent_sample_replay_${TS}.txt"
 python3 tests/run_all.py > "runs/tests/run_all_${TS}.txt" 2>&1 || true
 tail -4 "runs/tests/run_all_${TS}.txt"

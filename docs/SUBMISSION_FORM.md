@@ -31,7 +31,8 @@ New work is commit range `e97a9a1..HEAD` on `main`.
 3. **Traces** (`lib/gmaps_core/trace.py`, `tools/show_trace.py`): one JSON line per step and per model call, with `model_requested` and `model_reported`.
 4. **Sample mode** that replays recorded Nightshift answers by request hash, with no credentials and no network.
 5. **Animated LaGuardia view** (`ui_scaffold/lga_scene.html`): AS-IS vs WITH GMAPS side by side on the real KLGA layout (OSM). The ledger re-runs on LGA identifiers.
-6. **Nemotron vs the fine-tuned 4B parser** on the same 138 held-out transmissions, scored by the same verifier (`eval/run_provider_compare.py`).
+6. **Local-execution proof** (`tools/local_proof.py`): wraps a live run and records every `connect()` of the GMAPS processes (exact), every non-loopback connection on the machine, and GPU utilization, power and memory from `nvidia-smi`, with the model calls marked on the chart. Evidence: `runs/proof/local_[ts].html`, verdict **[process_tree_loopback_only]**, GPU **[name]**.
+7. **Nemotron vs the fine-tuned 4B parser** on the same 138 held-out transmissions, scored by the same verifier (`eval/run_provider_compare.py`).
 
 ## Pre-existing components (declare)
 Everything in commit `e97a9a1` and earlier (the public GMAPS snapshot of 18 Oct 2026), including:

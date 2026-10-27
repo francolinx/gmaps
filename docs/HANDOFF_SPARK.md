@@ -64,6 +64,7 @@ This does the following:
 Without the NeMo Gym venv, skip the comparison (run the scenario lines by hand) and say "comparison not run" in the docs.
 
 Check the outputs:
+- `runs/proof/local_<ts>.html` and `.json`: the local-execution proof (`tools/local_proof.py`). Its verdict must say `process_tree_loopback_only: true` with the Nightshift address (127.0.0.1) as the only connect target, and the GPU charts must show utilization spikes at the orange model-call markers. If the machine-wide table lists a cloud host owned by Nightshift or vLLM during the run, report it honestly: it means a model call left the machine. Run it with `sudo -E` to see every process's owner.
 - `python3 tools/show_trace.py samples/open_agent/traces/SIM_E1_CROSS_DURING_ROLLOUT.jsonl --calls` shows `explainer` and `critic` rows with the Nemotron id in `model_reported`;
 - the offline replay output shows the same explanations, labelled "critic: supported".
 
@@ -82,14 +83,14 @@ Check the outputs:
 python3 tests/run_all.py | tail -3
 env -i PATH=$PATH HOME=$HOME python3 demo/run_open_agent.py --scenario all --provider sample | head -20   # judges' path: no key, no network
 git grep -I -n -E 'sk-[A-Za-z0-9]{12,}|Bearer [A-Za-z0-9._-]{16,}' || echo clean
-git add -A runs/smoke runs/tests samples/open_agent eval/results docs ui_scaffold/samples README.md
+git add -A runs/proof runs/smoke runs/tests samples/open_agent eval/results docs ui_scaffold/samples README.md
 git commit -m "Live Nemotron via Nightshift: traces, smoke, comparison, docs" && git push origin main
 ```
 Do not commit `runs/traces/` or `runs/ledger/`; they are gitignored. Copies of the recorded traces live in `samples/open_agent/traces/`.
 
 ## 3. Franco's last 20 minutes (remind him)
 1. Create the team on HackOS: a solo team is fine, but it's required to submit.
-2. Record the 2–3 minute video, following the script in `docs/SUBMISSION_FORM.md`:
+2. Record the 2–3 minute video, following the script in `docs/SUBMISSION_FORM.md`. Include 10 seconds of `runs/proof/local_<ts>.html`: the PASS line, the GPU spikes on the model calls, and the GB10 name.
    - the LaGuardia view: `cd ui_scaffold && python3 -m http.server 8765`, then open `lga_scene.html?s=SIM_E1_CROSS_DURING_ROLLOUT` and play;
    - the live trace with `model_reported`;
    - the fine-tune chart.
