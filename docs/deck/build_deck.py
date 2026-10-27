@@ -64,10 +64,10 @@ def picture(s, name, x, y, w=None, h=None):
 
 # 1 title
 s = slide('GMAPS · Ground Movement Awareness and Prediction System')
-text(s, 'Open Agent Hackathon 2026 · Wildcard [Tinkerer] · Franco Plathottathil', 0.6, 1.75, 12, 0.6, 22, DIM)
+text(s, 'Open Agent Hackathon 2026 · Wildcard [Tinkerer] · Franco Plathottathil', 0.6, 2.15, 12, 0.6, 22, DIM)
 text(s, 'A controller-side cross-check for the tower: radio becomes typed clearances, a ledger tracks who holds each runway, '
         'and an agent loop warns when two recorded authorizations, or an open obligation, hold the same runway at the same time.',
-     0.6, 2.7, 12, 1.6, 22, INK)
+     0.6, 3.1, 12, 1.6, 22, INK)
 text(s, 'Decision support only. GMAPS never transmits; the controller decides. All traffic and positions shown are SIMULATED.', 0.6, 6.4, 12, 0.6, 16, AMBER)
 
 # 2 problem
@@ -107,7 +107,7 @@ text(s, 'Qwen3-4B-Instruct-2507 + LoRA "gmaps-parser", local vLLM on the DGX Spa
         'Record exact 0.254 → 0.652 on 138 held-out Whisper-text transmissions; paired +39.9 points, 95 % CI [+31.9, +48.6], McNemar p = 5.6e-17.\n'
         'Blind scripted set (414): 0.365 → 0.906. Grammar alone: 0.377 / 0.773.\n'
         'huggingface.co/darkstar008/gmaps-parser-qwen3-4b-lora', 7.1, 2.2, 5.8, 2.6, 14, INK)
-text(s, 'NVIDIA Nemotron 30B via Meterless Nightshift (new)', 7.1, 4.75, 5.8, 0.5, 19, TEAL, bold=True)
+text(s, 'Nemotron 30B via Nightshift (new)', 7.1, 4.75, 5.8, 0.5, 19, TEAL, bold=True)
 text(s, 'Residue parse and the two-sentence explanation of every warning, through Nightshift (OpenAI-compatible). '
         'model_reported is logged on every call. Live run on the Spark pending at the time this deck was written.', 7.1, 5.25, 5.8, 1.6, 14, INK)
 text(s, 'SIMULATED data. Charts and numbers: docs/model_card/, docs/PAIRED_STATS.md.', 0.5, 6.9, 7, 0.4, 11, DIM)
