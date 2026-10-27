@@ -92,12 +92,12 @@ for x, (t, b, c) in zip(xs, [('Planner', 'grammar first; residue → model; look
                              ('Executor', 'bounded tools only: parse, ingest, look-ahead, explain, post alert. No shell.', BLUE),
                              ('Evaluator', 'grounding rule on every model answer; one retry with the airport vocabulary; then escalate "needs readback"', AMBER),
                              ('Risk', 'SIM-1 look-ahead each second; stale feed → "prediction unavailable"', RGBColor(0xfb, 0x92, 0x3c)),
-                             ('Explainer', 'Nemotron via Nightshift: two sentences; rejected or unavailable → labelled ledger text', RGBColor(0xa7, 0x8b, 0xfa)),
+                             ('Explainer + Critic', 'Nemotron drafts two sentences; a second Nemotron call critiques them against the facts → one revision, else labelled ledger text', RGBColor(0xa7, 0x8b, 0xfa)),
                              ('Alert', 'display only, never a radio frequency', RED)]):
     box(s, x, 1.9, 1.95, 2.6, t, b, c)
 text(s, 'Shared state: the runway ledger + runway memory (open obligations per runway) · trace: runs/traces/<run_id>.jsonl (role, provider, model_reported, latency, tokens, outcome, grounding)',
      0.5, 4.8, 12.3, 0.9, 16, DIM)
-text(s, 'Real code paths, with tests: retry, escalation, fallback when the provider is down, replay of recorded traces in sample mode (no key, no network).', 0.5, 5.8, 12.3, 0.9, 16, INK)
+text(s, 'Real code paths, with tests: critique → revision loop, retry, escalation, fallback when the provider is down, replay of recorded traces in sample mode (no key, no network).', 0.5, 5.8, 12.3, 0.9, 16, INK)
 
 # 5 two small models
 s = slide('Two small models, one loop', 'MODELS')
