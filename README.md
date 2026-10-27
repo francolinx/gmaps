@@ -1,5 +1,20 @@
 # GMAPS: Ground Movement Awareness and Prediction System
 
+## Open Agent Hackathon 2026 (new work on branch `open-agent-2026`)
+**Submission:** [`docs/OPEN_AGENT_2026_SUBMISSION.md`](docs/OPEN_AGENT_2026_SUBMISSION.md). It covers the pre-existing work declaration (everything up to `e97a9a1`), the sponsor status, the traces and the limits. Everything is SIMULATED (fictional SIM-1 map).
+
+- **What is new:** an agent loop (`agent/open_agent_loop.py`) with these roles: Planner → Executor → Evaluator (grounding rule, one retry, escalation) → Risk (SIM-1 look-ahead; "prediction unavailable" when positions are stale) → Explainer (Nemotron via Nightshift) → Alert (display only).
+- **Providers:** `NightshiftLLM` (`GMAPS_PROVIDER=nightshift`) and offline replay (`sample`); the Raleigh `local` path is unchanged.
+- **Traces:** one JSON line per step (`tools/show_trace.py`).
+- **Not integrated:** Meterless and Zetaris. Local fallbacks run in their place, and the docs say so.
+- **Dependencies:** none added (Python 3.9+, stdlib only); `requirements.txt` is unchanged. Credentials come from environment variables only (see `.env.example`).
+```
+python3 demo/run_open_agent.py --scenario all --provider sample      # no key, no network
+demo/record_open_agent.sh                                             # live: needs NIGHTSHIFT_BASE_URL / _API_KEY / _MODEL
+python3 tools/show_trace.py samples/open_agent/traces/SIM_E1_CROSS_DURING_ROLLOUT.jsonl --calls
+python3 tests/run_all.py                                              # snapshot checks + open-agent tests
+```
+
 ## What GMAPS is
 GMAPS is a controller-side cross-check for the tower: it turns radio speech into typed instructions and keeps a ledger of who has been cleared to do what on each runway. It warns when two recorded authorizations, or an open obligation such as an unacknowledged "stop", hold the same runway at the same time, and every warning names both sides and the rule it cites. On a fictional map with simulated surveillance it also projects whether two movers will meet at a shared zone, and when that projection cannot be trusted it says "prediction unavailable", which is not the same as "no conflict". Everything here is SIMULATED; GMAPS is decision support, it never transmits, and the controller decides.
 

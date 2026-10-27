@@ -308,8 +308,12 @@ function status(){
   if (D && D.frames && !D.episode.fixture) s += ` · mode ${ASIS() ? 'asis' : 'gmaps'} · outcome ${OUTCOME != null ? '+' + OUTCOME : OUTGAP ? 'unreadable (feed gap)' : 'none'}`;
   if (fixture){ s += ACK.page ? ` · map ${ACK.page} · overlay: ${ACK.refused ? 'refused (' + ACK.refused + ')' : (ACK.drawn || []).length ? ACK.drawn.join(', ') : 'none yet'}${(ACK.points || []).length ? ' · points: ' + ACK.points.join(', ') : ''}${ACK.error ? ' · runway_ends: ' + ACK.error : (ACK.known && !ACK.known.length ? ' · runway_ends.json has no runways for this airport' : '')} · view: ${ACK.focus ? 'close-up ' + ACK.focus : 'whole'}`
                         : ' · map: old page or not loaded — press Ctrl+Shift+R'; }
+  if (OA && OA.steps && OA.steps.length){ const st = OA.steps[OA.steps.length - 1];   // Open Agent 2026: which model handled which step (demo/run_open_agent.py)
+    s += ` · agent ${OA.provider}: ${(OA.model_reported || []).join(', ') || 'no model answer recorded'} · ${OA.scenario} last step ${st.role}/${st.step} (${st.outcome})`; }
   $('status').textContent = s;
 }
+var OA = null;
+fetch('samples/open_agent_status.json', {cache: 'no-store'}).then(r => r.ok ? r.json() : null).then(j => { OA = j; status(); }).catch(() => {});
 
 async function loadUrl(u){
   const m = u.match(/samples\/([^.]+)\.json/); if (m) $('pick').value = m[1];

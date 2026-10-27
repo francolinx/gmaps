@@ -71,7 +71,7 @@ class OpenAgentTests(unittest.TestCase):
         Mock.fail_next, Mock.mode, Mock.calls = 0, 'good', []
 
     def llm(self):
-        return NightshiftLLM(base_url=self.url, api_key='test-key-not-real', model='requested-model', timeout=5)
+        return NightshiftLLM(base_url=self.url, api_key='fake-key', model='requested-model', timeout=5)
 
     def test_retry_once_on_5xx_then_model_reported(self):
         Mock.fail_next = 1
@@ -79,7 +79,7 @@ class OpenAgentTests(unittest.TestCase):
         self.assertEqual(d['_call']['model_reported'], MOCK_MODEL)
         self.assertEqual(d['_call']['attempts'], 2)
         self.assertEqual(Mock.calls[-1]['body']['temperature'], 0)
-        self.assertEqual(Mock.calls[-1]['auth'], 'Bearer test-key-not-real')
+        self.assertEqual(Mock.calls[-1]['auth'], 'Bearer fake-key')
 
     def test_two_5xx_is_typed_unavailable_not_a_guess(self):
         Mock.fail_next = 2

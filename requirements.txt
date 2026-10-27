@@ -1,2 +1,3 @@
 jsonschema>=4.18   # only for data/airports/validate.py; everything else is stdlib
+# Open Agent Hackathon 2026 additions (providers, trace, agent loop, tests): stdlib only, no new packages
 # venue (already in the NGC vLLM container): torch, transformers; plus soundfile, librosa from GB10_ARSENAL/wheels
