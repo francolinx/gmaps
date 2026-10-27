@@ -17,6 +17,7 @@ New work is the commit range **`e97a9a1..HEAD` on branch `open-agent-2026`**. Ne
 - `eval/run_provider_compare.py`; the `--open-agent-compare` chart in `tools/release_charts.py` (other charts unchanged, verified byte-identical); `docs/model_card/` (copies of the pre-existing published cards)
 - `tests/test_open_agent.py`, `tests/test_meterless_engine.py`, `tests/test_zetaris_store.py`, plus a hook in `tests/run_all.py`
 - `.env.example`, this document, the README section
+- `ui_scaffold/lga_scene.html`, `ui_scaffold/lga/` and `tools/build_lga_scene.py`: the animated LaGuardia scenario view (see the README)
 - One small change to `ui_scaffold/demo.html`: the status line shows the agent's provider, the model it reported, and the last step. The AS-IS / WITH GMAPS playback is untouched.
 
 ## (b) Sponsor technology
@@ -130,7 +131,7 @@ Live mode: export `NIGHTSHIFT_BASE_URL`, `NIGHTSHIFT_API_KEY`, `NIGHTSHIFT_MODEL
 Fields per line: ts, run_id, scenario, step, role, provider, model_requested, model_reported, latency_ms, prompt_tokens, completion_tokens, outcome (accepted / rejected / retried / escalated / unavailable / ok), grounding, plus request_sha and response on model calls.
 
 ## (e) Limits
-- Simulated airport (SIM-1), synthetic phraseology, simulated positions. Real airport diagrams are display-only, and no LaGuardia material is used.
+- Simulated traffic, synthetic phraseology, simulated positions. The look-ahead runs only on the fictional SIM-1 model. The LaGuardia view (`ui_scaffold/lga_scene.html`) uses the real LGA layout (OSM, ODbL) with the fictional SIM scenarios placed on it, and depicts no real event. Its look-ahead is the SIM-1 computation drawn on LGA geometry; its ledger runs on LGA identifiers.
 - Decision support only: alerts go to the display, never to a radio frequency, and no model has shell access. Tools are bounded to parse, ingest, look-ahead, list warnings, explain and post alert.
 - **Not integrated:** Meterless (H-MEM), Zetaris.
 - **Nightshift:** built, tested against a local mock server for code paths only, and live run pending at push time.

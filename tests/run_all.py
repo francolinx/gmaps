@@ -166,7 +166,7 @@ print(f"\n{sum(r[1] for r in results)} passed, {len(skipped)} skipped (public sn
 # Open Agent Hackathon 2026 (new work, branch open-agent-2026): unittest modules, counted separately from the snapshot checks above.
 import unittest
 sys.path.insert(0, str(HERE))
-_suite = unittest.defaultTestLoader.loadTestsFromNames(['test_open_agent', 'test_meterless_engine', 'test_zetaris_store'])
+_suite = unittest.defaultTestLoader.loadTestsFromNames(['test_open_agent', 'test_meterless_engine', 'test_zetaris_store', 'test_lga_scene'])
 sys.path.insert(0, str(HERE))
 _r = unittest.TextTestRunner(stream=open(os.devnull, 'w'), verbosity=0).run(_suite)
 for _t, _why in _r.skipped:

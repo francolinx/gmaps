@@ -1,0 +1,68 @@
+[
+ {
+  "id": "SIM_E1_CROSS_DURING_ROLLOUT",
+  "title": "Crossing clearance issued while a landing aircraft is rolling out (fictional)",
+  "outcome_t": 54,
+  "warnings": [
+   [
+    "R1",
+    28
+   ]
+  ],
+  "ledger_same_as_sim1": true
+ },
+ {
+  "id": "SIM_E2_SAME_PATHS_LATER",
+  "title": "Same paths, crossing issued after the aircraft has passed (fictional)",
+  "outcome_t": null,
+  "warnings": [
+   [
+    "R1",
+    74
+   ]
+  ],
+  "ledger_same_as_sim1": true
+ },
+ {
+  "id": "SIM_E3_STOP_NOT_OBSERVED",
+  "title": "Stop issued, but observed motion continues (fictional)",
+  "outcome_t": 54,
+  "warnings": [
+   [
+    "R1",
+    28
+   ],
+   [
+    "R13",
+    48
+   ]
+  ],
+  "ledger_same_as_sim1": true
+ },
+ {
+  "id": "SIM_E4_FEED_LOSS",
+  "title": "Vehicle track lost mid-crossing (fictional)",
+  "outcome_t": null,
+  "warnings": [
+   [
+    "R1",
+    28
+   ]
+  ],
+  "ledger_same_as_sim1": true
+ },
+ {
+  "id": "SIM_E5_HOLD_NOT_SLOWING",
+  "title": "Hold-short read back, but the vehicle is not slowing (fictional)",
+  "outcome_t": 48,
+  "warnings": [],
+  "ledger_same_as_sim1": true
+ },
+ {
+  "id": "SIM_E6_HOLD_OK",
+  "title": "Hold-short read back and the vehicle slows normally (fictional)",
+  "outcome_t": null,
+  "warnings": [],
+  "ledger_same_as_sim1": true
+ }
+]

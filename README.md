@@ -15,6 +15,16 @@ python3 tools/show_trace.py samples/open_agent/traces/SIM_E1_CROSS_DURING_ROLLOU
 python3 tests/run_all.py                                              # snapshot checks + open-agent tests
 ```
 
+### Animated LaGuardia view (new)
+`ui_scaffold/lga_scene.html` replays the six scripted SIM scenarios on the real LaGuardia layout, with AS-IS and WITH GMAPS side by side on one clock. Run `cd ui_scaffold && python3 -m http.server 8765 --bind 127.0.0.1`, then open `lga_scene.html?s=SIM_E1_CROSS_DURING_ROLLOUT`.
+
+- **Layout:** OpenStreetMap runways, taxiways, aprons and hold bars (ODbL), placed in the FAA AL-289 diagram frame. Rebuild with `python3 tools/build_lga_scene.py`.
+- **Placement:** SIM runway 36 becomes LGA runway 04 (landing SW→NE), and SIM taxiway K becomes LGA taxiway G. The SIM hold lines are mapped onto G's real hold bars, 79 m and 74 m from the runway.
+- **Ledger:** re-run on LGA identifiers ("runway four", "Golf") against `data/airports/klga.graph.json`. It fires the same rules at the same seconds as SIM-1 in all six scenarios (`ui_scaffold/lga/index.json`).
+- **Look-ahead:** the SIM-1 computation, drawn on LGA geometry.
+- **Traffic is fictional** (SimAir 212, Rescue 7) and depicts no real event. Taxiway D is deliberately not used, because the repo's historical LGA fixture involves D.
+- **Controls:** play/pause, speed, scrub, auto camera (whole airport, then the G crossing), drag to pan, wheel to zoom, Space and the arrow keys.
+
 ### The fine-tuned parser: pre-existing, published before this hackathon
 Model [darkstar008/gmaps-parser-qwen3-4b-lora](https://huggingface.co/darkstar008/gmaps-parser-qwen3-4b-lora) · dataset [darkstar008/gmaps-parser-qwen3-4b-lora-data](https://huggingface.co/datasets/darkstar008/gmaps-parser-qwen3-4b-lora-data) · cards and charts copied in [`docs/model_card/`](docs/model_card/README.md).
 

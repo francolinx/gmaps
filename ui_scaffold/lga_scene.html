@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaGuardia scenario view</title>
+<style>
+:root{
+  --bg:#0f1115; --panel:#171a21; --panel2:#1d2129; --line:#2a3140; --ink:#eef1f5; --dim:#a3adbd; --faint:#6b7585;
+  --gmaps:#2dd4bf; --human:#e2b43a; --conflict:#ff4d4f; --caution:#f5a524; --look:#fb923c; --ok:#34d399; --unav:#a78bfa;
+  --air:#60a5fa; --veh:#f59e0b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 var(--sans)}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:12px 16px;border-bottom:1px solid var(--line)}
+header h1{font-size:17px;margin:0;font-weight:650;letter-spacing:.2px}
+.badge{font:11px var(--mono);padding:3px 8px;border-radius:4px;background:#2a1d0b;color:var(--human);border:1px solid #5a4317;white-space:nowrap}
+.sub{color:var(--dim);font-size:13px;flex-basis:100%;margin:0}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--panel)}
+select,button{font:13px var(--sans);color:var(--ink);background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:6px 10px;cursor:pointer}
+button.on{border-color:var(--gmaps);color:var(--gmaps)}
+button:focus-visible,select:focus-visible{outline:2px solid var(--gmaps);outline-offset:1px}
+#play{min-width:76px;font-weight:600}
+.time{font:600 15px var(--mono);min-width:72px;text-align:right}
+.spacer{flex:1}
+.scrub{position:relative;padding:6px 16px 14px;background:var(--panel);border-bottom:1px solid var(--line)}
+#range{width:100%;accent-color:var(--gmaps)}
+#marks{position:relative;height:16px;margin:0 8px}
+#marks span{position:absolute;top:0;transform:translateX(-50%);font:10px var(--mono);white-space:nowrap}
+#marks i{position:absolute;top:0;width:2px;height:8px;transform:translateX(-1px)}
+.views{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.views.single{grid-template-columns:1fr}
+.views.single .v-asis{display:none}
+.view{position:relative;background:#0b0e13;min-height:420px;height:58vh}
+.view canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}
+.vh{position:absolute;left:10px;top:10px;padding:5px 9px;border-radius:6px;font:600 12px var(--sans);letter-spacing:.3px;pointer-events:none}
+.v-asis .vh{background:rgba(226,180,58,.14);color:var(--human);border:1px solid rgba(226,180,58,.45)}
+.v-gmaps .vh{background:rgba(45,212,191,.12);color:var(--gmaps);border:1px solid rgba(45,212,191,.45)}
+.cap{position:absolute;left:10px;right:10px;bottom:10px;padding:8px 10px;border-radius:6px;background:rgba(15,17,21,.86);border:1px solid var(--line);font-size:13px;min-height:20px;pointer-events:none}
+.cap b{font:600 11px var(--mono);color:var(--dim);margin-right:6px}
+.banner{position:absolute;left:50%;top:44px;transform:translateX(-50%);max-width:92%;padding:8px 12px;border-radius:6px;font:600 13px var(--sans);text-align:center;pointer-events:none;display:none}
+.banner.conflict{display:block;background:rgba(255,77,79,.18);border:1px solid var(--conflict);color:#ffd5d5}
+.banner.caution{display:block;background:rgba(245,165,36,.16);border:1px solid var(--caution);color:#ffe7bf}
+.banner.look{display:block;background:rgba(251,146,60,.16);border:1px solid var(--look);color:#ffe0c7}
+.banner.unav{display:block;background:rgba(167,139,250,.16);border:1px solid var(--unav);color:#e7deff}
+.banner.out{display:block;background:rgba(255,77,79,.28);border:1px solid var(--conflict);color:#fff}
+.lower{display:grid;grid-template-columns:1.1fr 1fr 0.9fr;gap:1px;background:var(--line)}
+.box{background:var(--panel);padding:12px 16px;min-width:0}
+.box h2{font-size:13px;margin:0 0 8px;color:var(--dim);font-weight:600;text-transform:uppercase;letter-spacing:.6px}
+.radio div{padding:4px 6px;border-radius:4px;color:var(--faint);font-size:13px}
+.radio div.past{color:var(--dim)}
+.radio div.now{color:var(--ink);background:var(--panel2)}
+.radio .t{font:11px var(--mono);margin-right:6px}
+.radio .who{font:600 11px var(--mono);margin-right:6px}
+.alert{border-left:3px solid var(--line);padding:6px 10px;margin:0 0 8px;background:var(--panel2);border-radius:0 6px 6px 0}
+.alert .k{font:600 11px var(--mono);letter-spacing:.3px}
+.alert p{margin:3px 0 0;color:var(--dim);font-size:13px}
+.alert.conflict{border-color:var(--conflict)} .alert.conflict .k{color:var(--conflict)}
+.alert.caution{border-color:var(--caution)} .alert.caution .k{color:var(--caution)}
+.alert.look{border-color:var(--look)} .alert.look .k{color:var(--look)}
+.alert.unav{border-color:var(--unav)} .alert.unav .k{color:var(--unav)}
+.alert.out{border-color:var(--conflict)} .alert.out .k{color:#fff}
+.alert.ok{border-color:var(--ok)} .alert.ok .k{color:var(--ok)}
+.empty{color:var(--faint);font-size:13px}
+.about{font-size:12.5px;color:var(--dim)} .about p{margin:0 0 6px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:12px;color:var(--dim)}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--c)}
+footer{padding:10px 16px;color:var(--faint);font-size:11.5px;border-top:1px solid var(--line)}
+@media (max-width:900px){
+  .views{grid-template-columns:1fr}
+  .view{height:46vh;min-height:320px}
+  .lower{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>LaGuardia (KLGA) · runway 04 landing, crossing at G</h1>
+  <span class="badge">SIMULATED · FICTIONAL TRAFFIC · REAL LAYOUT</span>
+  <p class="sub" id="scenSub">Loading…</p>
+</header>
+<div class="bar">
+  <select id="scen" aria-label="Scenario"></select>
+  <button id="play" aria-label="Play or pause">▶ Play</button>
+  <button id="restart" title="Back to t = 0">⟲</button>
+  <select id="speed" aria-label="Playback speed"><option value="1">1×</option><option value="2" selected>2×</option><option value="4">4×</option><option value="8">8×</option></select>
+  <span class="time" id="clock">+0.0 s</span>
+  <span class="spacer"></span>
+  <button id="bSplit" class="on" title="AS-IS and WITH GMAPS side by side">Side by side</button>
+  <button id="bSingle" title="WITH GMAPS only">GMAPS only</button>
+  <button id="bAuto" class="on" title="Camera follows the action">Auto camera</button>
+  <button id="bWhole" title="Whole airport">Whole airport</button>
+  <button id="bClose" title="Close-up on the G crossing">G × 04/22</button>
+</div>
+<div class="scrub">
+  <input type="range" id="range" min="0" max="100" step="0.1" value="0" aria-label="Scenario time">
+  <div id="marks"></div>
+</div>
+<div class="views" id="views">
+  <div class="view v-asis"><canvas id="cAsis"></canvas><div class="vh">AS-IS · today: radio and eyes only</div><div class="banner" id="banAsis"></div><div class="cap" id="capAsis"></div></div>
+  <div class="view v-gmaps"><canvas id="cGmaps"></canvas><div class="vh">WITH GMAPS · ledger + look-ahead</div><div class="banner" id="banGmaps"></div><div class="cap" id="capGmaps"></div></div>
+</div>
+<div class="lower">
+  <div class="box"><h2>Radio (scripted, tower frequency)</h2><div class="radio" id="radio"></div></div>
+  <div class="box"><h2>GMAPS alerts to the controller</h2><div id="alerts"><p class="empty">None yet.</p></div></div>
+  <div class="box about"><h2>About this view</h2>
+    <p><b>Layout is real, traffic is not.</b> Runways, taxiways, aprons and hold bars are LaGuardia from OpenStreetMap, placed in the FAA airport-diagram frame. The aircraft (SimAir 212) and the vehicle (Rescue 7) are the fictional scripted GMAPS scenarios, not any real event.</p>
+    <p>Positions are simulated. The look-ahead is computed on the fictional SIM-1 model and drawn here. The ledger runs on LaGuardia identifiers (runway 04/22, taxiway G). Decision support only: GMAPS never transmits, and the controller decides.</p>
+    <div class="legend"><span style="--c:var(--air)">aircraft</span><span style="--c:var(--veh)">vehicle</span><span style="--c:var(--conflict)">ledger conflict on runway</span><span style="--c:var(--look)">look-ahead projection</span><span style="--c:var(--unav)">prediction unavailable</span><span style="--c:#e8c547">hold bar</span></div>
+  </div>
+</div>
+<footer id="foot"></footer>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+const NICE = {SIM212: 'SimAir 212', RESCUE7: 'Rescue 7'};
+const SCEN_NAMES = {
+  SIM_E1_CROSS_DURING_ROLLOUT: '1 · Crossing cleared while a plane is landing',
+  SIM_E2_SAME_PATHS_LATER: '2 · Same pair, 74 s later (no overlap)',
+  SIM_E3_STOP_NOT_OBSERVED: '3 · Controller says stop, no answer',
+  SIM_E4_FEED_LOSS: '4 · Position feed drops out',
+  SIM_E5_HOLD_NOT_SLOWING: '5 · Told to hold short, not slowing',
+  SIM_E6_HOLD_OK: '6 · Told to hold short, complies'};
+let A = null, S = null, T = 0, playing = false, speed = 2, lastTs = null, auto = true;
+const T_END = 100;
+const cam = {cx: 0, cy: 0, scale: 0.3};          // world metres -> px
+let camGoal = null;
+
+// ---------------------------------------------------------------- data
+async function getJSON(u){ const r = await fetch(u, {cache: 'no-store'}); if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); }
+async function init(){
+  try { A = await getJSON('lga/airport.json'); } catch (e){ $('scenSub').textContent = 'Could not load lga/airport.json: run python3 tools/build_lga_scene.py, then serve ui_scaffold/ over http.'; return; }
+  const idx = await getJSON('lga/index.json');
+  $('scen').innerHTML = idx.map(s => `<option value="${s.id}">${esc(SCEN_NAMES[s.id] || s.title)}</option>`).join('');
+  const want = new URLSearchParams(location.search).get('s');
+  if (want && idx.some(s => s.id === want)) $('scen').value = want;
+  $('foot').textContent = `${A.attribution} · Frame and chart: ${A.chart_footer}`;
+  labelIndex();
+  await load($('scen').value);
+  requestAnimationFrame(loop);
+}
+async function load(id){
+  S = await getJSON(`lga/${id}.json`);
+  T = 0; playing = false; $('play').textContent = '▶ Play';
+  $('scenSub').textContent = `${S.title.replace(' (fictional)', '')}. ${S.purpose}`;
+  history.replaceState(null, '', `?s=${id}`);
+  buildEvents(); marks(); fitWhole(true); render();
+}
+
+// ---------------------------------------------------------------- events (alerts, outcome)
+let EV = [];
+function lookFirsts(){
+  const out = [], seen = new Set(); let unav = false;
+  for (const f of S.lookahead){
+    for (const r of f.raised){ const k = r.type + r.callsigns.join(); if (!seen.has(k)){ seen.add(k); out.push({t: f.t, kind: 'look', r}); } }
+    const stale = f.unavailable.filter(u => /old|withdrawn|lost/.test(u));
+    if (stale.length && !unav){ unav = true; out.push({t: f.t, kind: 'unav', why: stale[0]}); }
+    if (!stale.length) unav = false;
+  }
+  return out;
+}
+function buildEvents(){
+  EV = [];
+  for (const w of S.warnings){
+    EV.push({t: w.t, view: 'gmaps', cls: w.severity === 'CONFLICT' ? 'conflict' : 'caution', head: `${w.rule} ${w.severity} · runway 04/22 · ${w.name}`, body: w.explain, w});
+    if (w.cleared_at != null) EV.push({t: w.cleared_at, view: 'gmaps', cls: 'ok', head: `${w.rule} cleared`, body: w.cleared_by || ''});
+  }
+  for (const L of lookFirsts()){
+    if (L.kind === 'look'){
+      const who = L.r.callsigns.map(c => NICE[c] || c).join(' / ');
+      const lead = L.r.lead_s != null ? ` · about ${Math.round(L.r.lead_s)} s ahead (model estimate)` : '';
+      EV.push({t: L.t, view: 'gmaps', cls: 'look', head: `LOOK-AHEAD · ${L.r.type.replace(/_/g, ' ')} at the G crossing${lead}`,
+               body: (L.r.basis && L.r.basis.length ? L.r.basis.join('; ') : `${who}: projected occupancy windows overlap`) + '. Estimate from simulated positions, not truth.'});
+    } else EV.push({t: L.t, view: 'gmaps', cls: 'unav', head: 'PREDICTION UNAVAILABLE', body: `${L.why}. This is not "no conflict"; the ledger warning stays open.`});
+  }
+  if (S.outcome_t != null){
+    const first = EV.filter(e => e.view === 'gmaps' && e.cls !== 'ok').map(e => e.t).sort((a, b) => a - b)[0];
+    EV.push({t: S.outcome_t, view: 'both', cls: 'out', head: `SIMULATED ENCOUNTER · both in the G crossing zone at +${S.outcome_t} s`,
+             body: 'The simulation outcome, shown in both views: GMAPS does not change the traffic.' + (first != null ? ` In the GMAPS view the first alert came at +${first} s, ${S.outcome_t - first} s earlier.` : '')});
+  }
+  EV.sort((a, b) => a.t - b.t);
+}
+function marks(){
+  const pct = t => (t / T_END * 100) + '%';
+  let h = S.transcript.map(x => `<i style="left:${pct(x.t)};background:var(--dim)" title="+${x.t}s radio"></i>`).join('');
+  for (const e of EV){ const c = {conflict: 'var(--conflict)', caution: 'var(--caution)', look: 'var(--look)', unav: 'var(--unav)', out: '#fff', ok: 'var(--ok)'}[e.cls];
+    h += `<i style="left:${pct(e.t)};background:${c};height:12px" title="+${e.t}s ${esc(e.head)}"></i>`; }
+  $('marks').innerHTML = h;
+}
+
+// ---------------------------------------------------------------- track interpolation
+function sampleAt(tr, t){
+  const s = tr.samples; if (!s.length || t < s[0][0]) return null;
+  let i = s.length - 1; while (i > 0 && s[i][0] > t) i--;
+  const a = s[i], b = s[i + 1];
+  let x = a[1], y = a[2], age = a[3] + (t - a[0]);
+  if (b && b[3] <= 3 && a[3] <= 3 && (b[1] !== a[1] || b[2] !== a[2])){ const k = (t - a[0]) / (b[0] - a[0]); x = a[1] + (b[1] - a[1]) * k; y = a[2] + (b[2] - a[2]) * k; age = 0; }
+  else if (b && b[3] > a[3] && b[1] === a[1]) age = a[3] + (t - a[0]);
+  else age = Math.max(0, a[3]);
+  // heading from the motion around t
+  let hx = 0, hy = 0;
+  for (let j = Math.max(0, i - 2); j < Math.min(s.length - 1, i + 3); j++){ hx += s[j + 1][1] - s[j][1]; hy += s[j + 1][2] - s[j][2]; }
+  const moving = Math.hypot(hx, hy) > 0.5;
+  return {x, y, age, hdg: moving ? Math.atan2(hy, hx) : (tr._hdg != null ? tr._hdg : 0), moving};
+}
+function speedAt(tid, t){ const f = S.lookahead[Math.min(S.lookahead.length - 1, Math.max(0, Math.floor(t)))]; const a = f && f.actors[tid]; return a && a.v != null ? a.v : null; }
+
+// ---------------------------------------------------------------- camera
+function views(){ return [['asis', $('cAsis')], ['gmaps', $('cGmaps')]].filter(([, c]) => c.offsetParent !== null); }
+function fitBox(x0, y0, x1, y1){
+  const c = views()[0][1], w = c.clientWidth || 600, h = c.clientHeight || 400;
+  const TOP = 92, BOTTOM = 70;   // keep the fitted box clear of the view chip / banner (top) and the radio caption (bottom)
+  const scale = Math.min(w / (x1 - x0), (h - TOP - BOTTOM) / (y1 - y0)) * 0.94;
+  return {cx: (x0 + x1) / 2, cy: (y0 + y1) / 2 + (BOTTOM - TOP) / 2 / scale, scale};
+}
+const APPROACH_M = 650;   // the approach cue is drawn this far out along the extended runway-04 centerline (a cue, not a position)
+function approachPts(){ const p = A.placement.landing_path, a = p[0], b = p[1], L = Math.hypot(b[0] - a[0], b[1] - a[1]), ux = (b[0] - a[0]) / L, uy = (b[1] - a[1]) / L;
+  return [[a[0] - ux * APPROACH_M, a[1] - uy * APPROACH_M], [a[0] - ux * 40, a[1] - uy * 40]]; }
+function wholeGoal(){ const [x0, y0, x1, y1] = A.bounds, [q] = approachPts(); return fitBox(Math.min(x0, q[0]) - 80, Math.min(y0, q[1]) - 80, x1 + 80, y1 + 80); }
+function closeGoal(){ const [cx, cy] = A.placement.crossing_point; return fitBox(cx - 520, cy - 330, cx + 520, cy + 330); }
+function fitWhole(now){ camGoal = wholeGoal(); if (now) Object.assign(cam, camGoal); }
+function autoGoal(){
+  // director: whole airport while the aircraft is on final, then follow the landing roll toward the G crossing
+  const ac = S.tracks['T-AC1'] ? sampleAt(S.tracks['T-AC1'], T) : null;
+  if (!ac || T < 8) return wholeGoal();
+  const [cx, cy] = A.placement.crossing_point;
+  const x0 = Math.min(ac.x, cx) - 260, x1 = Math.max(ac.x, cx) + 260, y0 = Math.min(ac.y, cy) - 220, y1 = Math.max(ac.y, cy) + 220;
+  const g = fitBox(x0, y0, x1, y1), close = closeGoal();
+  return g.scale > close.scale ? close : g;
+}
+const W2S = (c, x, y) => [c.width / 2 / devicePixelRatio + (x - cam.cx) * cam.scale, c.height / 2 / devicePixelRatio - (y - cam.cy) * cam.scale];
+
+// ---------------------------------------------------------------- drawing
+let LABELS = [];
+function labelIndex(){
+  // one label per taxiway ref, at the midpoint of its longest piece
+  const best = {};
+  for (const t of A.taxiways){ if (!t.ref) continue; let L = 0; for (let i = 1; i < t.pts.length; i++) L += Math.hypot(t.pts[i][0] - t.pts[i - 1][0], t.pts[i][1] - t.pts[i - 1][1]);
+    if (!best[t.ref] || L > best[t.ref].L) best[t.ref] = {L, t}; }
+  LABELS = Object.entries(best).map(([ref, {t}]) => { const m = t.pts[Math.floor(t.pts.length / 2)]; return {ref, x: m[0], y: m[1]}; });
+}
+function poly(g, c, pts, close){ pts.forEach((p, i) => { const [x, y] = W2S(c, p[0], p[1]); i ? g.lineTo(x, y) : g.moveTo(x, y); }); if (close) g.closePath(); }
+function drawAirport(g, c, view, tint){
+  const s = cam.scale;
+  g.fillStyle = '#0b0e13'; g.fillRect(0, 0, c.width, c.height);
+  g.fillStyle = '#161b23';
+  for (const a of A.aprons){ g.beginPath(); poly(g, c, a.pts, true); g.fill(); }
+  g.lineCap = 'round'; g.lineJoin = 'round';
+  g.strokeStyle = '#1e242e'; g.lineWidth = Math.max(1, 12 * s);
+  for (const t of A.taxilanes){ g.beginPath(); poly(g, c, t.pts); g.stroke(); }
+  g.strokeStyle = '#262d39'; g.lineWidth = Math.max(2, 23 * s);
+  for (const t of A.taxiways){ g.beginPath(); poly(g, c, t.pts); g.stroke(); }
+  g.strokeStyle = 'rgba(232,197,71,.55)'; g.lineWidth = 1;
+  for (const t of A.taxiways){ g.beginPath(); poly(g, c, t.pts); g.stroke(); }
+  // taxiway G emphasised
+  const G = A.taxiways.find(t => t.id === A.placement.taxiway_osm);
+  if (G){ g.strokeStyle = 'rgba(232,197,71,.95)'; g.lineWidth = 2; g.beginPath(); poly(g, c, G.pts); g.stroke(); }
+  g.lineCap = 'butt';
+  for (const r of A.runways){
+    const active = r.ref === A.placement.runway;
+    g.strokeStyle = active && tint ? tint : '#3a404b'; g.lineWidth = Math.max(4, r.width_m * s);
+    g.beginPath(); poly(g, c, r.pts); g.stroke();
+    if (active && tint){ g.strokeStyle = '#3a404b'; g.lineWidth = Math.max(2, r.width_m * s * 0.72); g.beginPath(); poly(g, c, r.pts); g.stroke(); }
+    g.strokeStyle = 'rgba(255,255,255,.75)'; g.lineWidth = Math.max(1, 0.9 * s); g.setLineDash([Math.max(3, 36 * s), Math.max(3, 24 * s)]);
+    g.beginPath(); poly(g, c, r.pts); g.stroke(); g.setLineDash([]);
+    for (const [des, p] of Object.entries(r.ends)){   // threshold bar + designator
+      const o = Object.entries(r.ends).find(([d]) => d !== des)[1];
+      const ux = (o[0] - p[0]), uy = (o[1] - p[1]), L = Math.hypot(ux, uy), nx = -uy / L, ny = ux / L, half = r.width_m / 2;
+      g.strokeStyle = 'rgba(255,255,255,.85)'; g.lineWidth = Math.max(1.5, 3 * s); g.beginPath();
+      const p0 = [p[0] + ux / L * 12, p[1] + uy / L * 12];
+      poly(g, c, [[p0[0] + nx * half, p0[1] + ny * half], [p0[0] - nx * half, p0[1] - ny * half]]); g.stroke();
+      if (s > 0.12){ const q = [p[0] + ux / L * 70, p[1] + uy / L * 70], [sx, sy] = W2S(c, q[0], q[1]);
+        g.save(); g.translate(sx, sy); g.rotate(-Math.atan2(uy, ux) + Math.PI / 2); g.fillStyle = 'rgba(255,255,255,.9)';
+        g.font = `700 ${Math.max(10, Math.min(22, 26 * s))}px ${getComputedStyle(document.body).fontFamily}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(des, 0, 0); g.restore(); }
+    }
+  }
+  // hold bars (all), the two on G brighter
+  const gh = new Set(Object.values(A.placement.holds).map(h => h.osm));
+  for (const h of A.holds){
+    if (!Array.isArray(h.pts[0])) continue;
+    const hot = gh.has(h.id);
+    g.strokeStyle = hot ? '#e8c547' : 'rgba(232,197,71,.45)'; g.lineWidth = hot ? Math.max(2.5, 3 * s) : 1.2;
+    g.beginPath(); poly(g, c, h.pts); g.stroke();
+  }
+  // taxiway labels
+  if (s > 0.16){
+    g.font = `600 ${Math.max(10, Math.min(14, 16 * s))}px ${getComputedStyle(document.body).fontFamily}`; g.textAlign = 'center'; g.textBaseline = 'middle';
+    for (const l of LABELS){ const [x, y] = W2S(c, l.x, l.y); if (x < -20 || y < -20 || x > c.width || y > c.height) continue;
+      const w = g.measureText(l.ref).width + 8; g.fillStyle = l.ref === 'G' ? '#e8c547' : 'rgba(20,22,27,.85)'; g.fillRect(x - w / 2, y - 8, w, 16);
+      g.fillStyle = l.ref === 'G' ? '#111' : '#e8c547'; g.fillText(l.ref, x, y + 0.5); }
+  }
+}
+function drawZone(g, c, fill, stroke){ g.beginPath(); poly(g, c, S.zone, true); g.fillStyle = fill; g.fill(); g.strokeStyle = stroke; g.lineWidth = 1.5; g.setLineDash([5, 4]); g.stroke(); g.setLineDash([]); }
+function plane(g, size){
+  g.beginPath(); g.moveTo(size, 0); g.lineTo(size * 0.2, size * 0.12); g.lineTo(-size * 0.1, size * 0.85); g.lineTo(-size * 0.3, size * 0.85); g.lineTo(-size * 0.12, size * 0.12);
+  g.lineTo(-size * 0.7, size * 0.1); g.lineTo(-size * 0.85, size * 0.38); g.lineTo(-size * 0.98, size * 0.38); g.lineTo(-size * 0.9, 0);
+  g.lineTo(-size * 0.98, -size * 0.38); g.lineTo(-size * 0.85, -size * 0.38); g.lineTo(-size * 0.7, -size * 0.1); g.lineTo(-size * 0.12, -size * 0.12);
+  g.lineTo(-size * 0.3, -size * 0.85); g.lineTo(-size * 0.1, -size * 0.85); g.lineTo(size * 0.2, -size * 0.12); g.closePath();
+}
+function drawMovers(g, c, view){
+  const s = cam.scale, now = performance.now();
+  // approach indicator before the first surface position
+  const ac = S.tracks['T-AC1'], acS = ac ? sampleAt(ac, T) : null;
+  const landing = S.transcript.find(x => x.kind === 'LANDING_CLEARANCE' && x.t <= T);
+  if (!acS && landing){
+    const [q0, q1] = approachPts(), [sx, sy] = W2S(c, q0[0], q0[1]), [ex, ey] = W2S(c, q1[0], q1[1]);
+    g.strokeStyle = 'rgba(96,165,250,.6)'; g.lineWidth = 2; g.setLineDash([6, 6]); g.beginPath(); g.moveTo(sx, sy); g.lineTo(ex, ey); g.stroke(); g.setLineDash([]);
+    g.save(); g.translate(sx, sy); g.rotate(-Math.atan2(q1[1] - q0[1], q1[0] - q0[0])); plane(g, 9); g.fillStyle = 'rgba(96,165,250,.35)'; g.fill(); g.strokeStyle = 'rgba(96,165,250,.9)'; g.lineWidth = 1; g.stroke(); g.restore();
+    g.fillStyle = 'rgba(96,165,250,.95)'; g.font = `600 12px ${getComputedStyle(document.body).fontFamily}`; g.textAlign = 'left';
+    g.fillText('SimAir 212 on final, runway 04', sx + 14, sy - 4);
+    g.fillStyle = 'rgba(163,173,189,.9)'; g.fillText('airborne: no surface position yet (cue, not a position)', sx + 14, sy + 12);
+  }
+  for (const [tid, tr] of Object.entries(S.tracks)){
+    const p = sampleAt(tr, T); if (!p) continue;
+    tr._hdg = p.hdg;
+    const stale = p.age > 3, air = tr.class === 'aircraft', col = air ? '#60a5fa' : '#f59e0b';
+    // trail (last 12 s)
+    g.strokeStyle = air ? 'rgba(96,165,250,.35)' : 'rgba(245,158,11,.35)'; g.lineWidth = 2; g.beginPath(); let first = true;
+    for (let t = Math.max(0, T - 12); t <= T; t += 0.5){ const q = sampleAt(tr, t); if (!q) continue; const [x, y] = W2S(c, q.x, q.y); first ? g.moveTo(x, y) : g.lineTo(x, y); first = false; }
+    g.stroke();
+    // look-ahead projection (GMAPS view only)
+    if (view === 'gmaps' && !stale){ const v = speedAt(tid, T); if (v && v > 0.5){
+      const d = Math.min(v * 10, 700), [x0, y0] = W2S(c, p.x, p.y), [x1, y1] = W2S(c, p.x + Math.cos(p.hdg) * d, p.y + Math.sin(p.hdg) * d);
+      g.strokeStyle = 'rgba(251,146,60,.85)'; g.lineWidth = 2; g.setLineDash([7, 5]); g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.stroke(); g.setLineDash([]); } }
+    const [x, y] = W2S(c, p.x, p.y);
+    g.save(); g.translate(x, y); g.rotate(-p.hdg);
+    if (air){ const z = Math.max(9, 20 * s); plane(g, z); g.fillStyle = stale ? 'transparent' : col; g.fill(); g.strokeStyle = stale ? '#a78bfa' : '#0b0e13'; g.lineWidth = 1.2; g.stroke(); }
+    else { const L = Math.max(9, 9 * s), Wd = Math.max(5, 4 * s); g.fillStyle = stale ? 'transparent' : col; g.strokeStyle = stale ? '#a78bfa' : '#0b0e13'; g.lineWidth = 1.2;
+      g.fillRect(-L / 2, -Wd / 2, L, Wd); g.strokeRect(-L / 2, -Wd / 2, L, Wd);
+      if (!stale && Math.floor(now / 250) % 2){ g.fillStyle = '#ff4d4f'; g.fillRect(-1.5, -Wd / 2 - 2, 3, 3); } }
+    g.restore();
+    const lab = (NICE[tr.callsign] || tr.callsign) + (stale ? ` · position ${Math.round(p.age)} s old` : (speedAt(tid, T) != null ? ` · ${Math.round(speedAt(tid, T) * 1.944)} kt` : ''));
+    g.font = `600 12px ${getComputedStyle(document.body).fontFamily}`; g.textAlign = 'left'; const w = g.measureText(lab).width + 10;
+    g.fillStyle = 'rgba(11,14,19,.85)'; g.fillRect(x + 12, y - 22, w, 18); g.fillStyle = stale ? '#c9b8ff' : col; g.fillText(lab, x + 17, y - 9);
+    if (view === 'gmaps' && stale){ g.fillStyle = '#c9b8ff'; g.fillText('prediction unavailable (not "no conflict")', x + 17, y + 12); }
+  }
+}
+function openWarnings(){ return S.warnings.filter(w => w.t <= T && !(w.cleared_at != null && w.cleared_at <= T)); }
+function lookNow(){ return S.lookahead[Math.min(S.lookahead.length - 1, Math.max(0, Math.floor(T)))]; }
+function render(){
+  if (!A || !S) return;
+  const ow = openWarnings(), lk = lookNow(), out = S.outcome_t != null && T >= S.outcome_t && T < S.outcome_t + 6;
+  const pulse = 0.5 + 0.5 * Math.sin(performance.now() / 180);
+  for (const [view, c] of views()){
+    const r = c.getBoundingClientRect(), dpr = devicePixelRatio || 1;
+    if (c.width !== Math.round(r.width * dpr) || c.height !== Math.round(r.height * dpr)){ c.width = Math.round(r.width * dpr); c.height = Math.round(r.height * dpr); }
+    const g = c.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const conflict = view === 'gmaps' && ow.some(w => w.severity === 'CONFLICT');
+    drawAirport(g, c, view, conflict ? `rgba(255,77,79,${0.55 + 0.35 * pulse})` : null);
+    if (view === 'gmaps'){
+      const raised = lk && lk.raised.length, watch = lk && lk.watch.length;
+      if (raised || conflict) drawZone(g, c, `rgba(255,77,79,${0.18 + 0.18 * pulse})`, 'rgba(255,77,79,.9)');
+      else if (watch) drawZone(g, c, 'rgba(251,146,60,.12)', 'rgba(251,146,60,.7)');
+      else drawZone(g, c, 'rgba(255,255,255,.03)', 'rgba(255,255,255,.18)');
+    }
+    if (out){ g.save(); drawZone(g, c, `rgba(255,77,79,${0.35 + 0.3 * pulse})`, '#fff'); g.restore(); }
+    drawMovers(g, c, view);
+    // north arrow + scale
+    g.fillStyle = 'rgba(163,173,189,.85)'; g.font = `600 11px ${getComputedStyle(document.body).fontFamily}`; g.textAlign = 'center';
+    const nx = r.width - 22, ny = 58; g.beginPath(); g.moveTo(nx, ny - 14); g.lineTo(nx - 5, ny); g.lineTo(nx + 5, ny); g.closePath(); g.fill(); g.fillText('N', nx, ny + 12);
+    const m = cam.scale > 0.5 ? 100 : 500, px = m * cam.scale; g.strokeStyle = 'rgba(163,173,189,.85)'; g.lineWidth = 2; g.beginPath(); g.moveTo(r.width - 16 - px, 80); g.lineTo(r.width - 16, 80); g.stroke();
+    g.textAlign = 'right'; g.fillText(`${m} m`, r.width - 16, 94);
+  }
+  // captions, banners, panels
+  const cur = [...S.transcript].reverse().find(x => x.t <= T && T - x.t < 5);
+  const capHtml = cur ? `<b>+${cur.t}s ${esc(cur.speaker === 'ATC' ? 'TOWER' : (NICE[cur.speaker] || cur.speaker).toUpperCase())}</b>${esc(cur.text)}` : '<b>RADIO</b><span style="color:var(--faint)">…</span>';
+  $('capAsis').innerHTML = capHtml; $('capGmaps').innerHTML = capHtml;
+  const latest = [...EV].reverse().find(e => e.t <= T && T - e.t < 7 && e.view !== 'asis' && e.cls !== 'ok');
+  const banG = $('banGmaps'), banA = $('banAsis');
+  if (latest){ banG.className = 'banner ' + latest.cls; banG.textContent = latest.head; } else banG.className = 'banner';
+  if (out){ banA.className = 'banner out'; banA.textContent = `Simulated encounter at the G crossing (+${S.outcome_t} s)`; }
+  else if (S.outcome_t == null && T > 90){ banA.className = 'banner caution'; banA.textContent = 'No encounter in this simulation'; }
+  else banA.className = 'banner';
+  $('radio').innerHTML = S.transcript.map(x => `<div class="${x.t <= T ? (T - x.t < 5 ? 'now' : 'past') : ''}"><span class="t">+${x.t}s</span><span class="who">${esc(x.speaker === 'ATC' ? 'TOWER' : (NICE[x.speaker] || x.speaker))}</span>${esc(x.text)}</div>`).join('');
+  const shown = EV.filter(e => e.t <= T && e.view !== 'asis');
+  $('alerts').innerHTML = shown.length ? shown.slice().reverse().map(e => `<div class="alert ${e.cls}"><div class="k">+${e.t}s · ${esc(e.head)}</div><p>${esc(e.body)}</p></div>`).join('')
+    : '<p class="empty">None yet. GMAPS shows a warning only when two recorded authorizations, or an open obligation, hold runway 04/22 at the same time, or when the look-ahead projects an overlap.</p>';
+  $('clock').textContent = `+${T.toFixed(1)} s`;
+  $('range').value = T;
+}
+
+// ---------------------------------------------------------------- loop & controls
+function loop(ts){
+  if (lastTs != null && playing){ T = Math.min(T_END, T + (ts - lastTs) / 1000 * speed); if (T >= T_END){ playing = false; $('play').textContent = '▶ Play'; } }
+  lastTs = ts;
+  if (auto) camGoal = autoGoal();
+  if (camGoal){ const k = 0.08; cam.cx += (camGoal.cx - cam.cx) * k; cam.cy += (camGoal.cy - cam.cy) * k; cam.scale *= Math.pow(camGoal.scale / cam.scale, k); }
+  render();
+  requestAnimationFrame(loop);
+}
+$('play').onclick = () => { if (T >= T_END) T = 0; playing = !playing; $('play').textContent = playing ? '❚❚ Pause' : '▶ Play'; };
+$('restart').onclick = () => { T = 0; };
+$('speed').onchange = e => { speed = +e.target.value; };
+$('range').oninput = e => { T = +e.target.value; };
+$('scen').onchange = e => load(e.target.value);
+function setAuto(on){ auto = on; $('bAuto').classList.toggle('on', on); }
+$('bAuto').onclick = () => setAuto(!auto);
+$('bWhole').onclick = () => { setAuto(false); camGoal = wholeGoal(); };
+$('bClose').onclick = () => { setAuto(false); camGoal = closeGoal(); };
+$('bSplit').onclick = () => { $('views').classList.remove('single'); $('bSplit').classList.add('on'); $('bSingle').classList.remove('on'); };
+$('bSingle').onclick = () => { $('views').classList.add('single'); $('bSingle').classList.add('on'); $('bSplit').classList.remove('on'); };
+document.addEventListener('keydown', e => { if (e.target.tagName === 'SELECT') return; if (e.code === 'Space'){ e.preventDefault(); $('play').click(); }
+  if (e.code === 'ArrowRight') T = Math.min(T_END, T + 1); if (e.code === 'ArrowLeft') T = Math.max(0, T - 1); });
+for (const c of [$('cAsis'), $('cGmaps')]){
+  let drag = null;
+  c.addEventListener('pointerdown', e => { drag = {x: e.clientX, y: e.clientY}; c.setPointerCapture(e.pointerId); setAuto(false); camGoal = null; });
+  c.addEventListener('pointermove', e => { if (!drag) return; cam.cx -= (e.clientX - drag.x) / cam.scale; cam.cy += (e.clientY - drag.y) / cam.scale; drag = {x: e.clientX, y: e.clientY}; });
+  c.addEventListener('pointerup', () => { drag = null; });
+  c.addEventListener('wheel', e => { e.preventDefault(); setAuto(false); camGoal = null;
+    const r = c.getBoundingClientRect(), mx = e.clientX - r.left - r.width / 2, my = e.clientY - r.top - r.height / 2;
+    const wx = cam.cx + mx / cam.scale, wy = cam.cy - my / cam.scale, f = Math.exp(-e.deltaY * 0.0015);
+    cam.scale = Math.max(0.05, Math.min(6, cam.scale * f)); cam.cx = wx - mx / cam.scale; cam.cy = wy + my / cam.scale; }, {passive: false});
+}
+init();
+</script>
+</body>
+</html>
