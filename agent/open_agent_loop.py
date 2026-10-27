@@ -13,7 +13,7 @@ Distinct roles over one shared state (the ledger, plus the runway memory engine)
              failure the ledger's own rule text is shown, labelled as such (fallback).
   Alert      posts to the display only (GMAPS never transmits on a radio frequency).
 A warning means two recorded authorizations, or an open obligation, at time t. Decision support only; the controller decides.
-Every transition is one trace line (gmaps_core.trace). The predictor never reads eval/truth or eval/labels.
+Every transition is one trace line (gmaps_core.trace). The predictor never reads the evaluation truth or label folders.
 """
 import hashlib, json, sys, time
 from pathlib import Path
@@ -143,7 +143,8 @@ class OpenAgent:
         return comb
 
     def explainer(self, facts, fallback_text, fallback_label='ledger rule text'):
-        out, call = self._call('explain', 'explainer', self.llm.explain_warning, facts)
+        model_facts = {k: v for k, v in facts.items() if k != 'alert_id'}   # ids come from process-wide counters: kept out so replays match
+        out, call = self._call('explain', 'explainer', self.llm.explain_warning, model_facts)
         if isinstance(out, Unavailable):
             self.tr.log_call('explain', 'explainer', call, 'unavailable', grounding=None, t=facts.get('t'), alert=facts['alert_id'])
             return fallback_text, f'{fallback_label} (provider unavailable: {out.reason[:80]})', call.get('model_reported')
@@ -222,5 +223,5 @@ class OpenAgent:
                    'latency_ms_all': lat, 'alerts': len(self.display), 'loop_wall_s': round(time.perf_counter() - t0, 2)}
         self.tr.log('end', 'planner', 'ok', **{k: v for k, v in summary.items() if k not in ('scenario', 'run_id')})
         return {'note': 'SIMULATED: fictional SIM-1 map, scripted radio, simulated positions. Decision support only.',
-                'summary': summary, 'transcript': self.heard, 'alerts': self.display, 'trace': str(self.tr.path.relative_to(ROOT)),
+                'summary': summary, 'transcript': self.heard, 'alerts': self.display, 'trace': str(self.tr.path.relative_to(ROOT)) if self.tr.path.is_relative_to(ROOT) else str(self.tr.path),
                 'ledger': {'warnings': self.led.warnings}}

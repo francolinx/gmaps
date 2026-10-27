@@ -162,4 +162,19 @@ for n, why in skipped:
     print(f'SKIP {n}  [{why}]')
 fails = sum(not r[1] for r in results)
 print(f"\n{sum(r[1] for r in results)} passed, {len(skipped)} skipped (public snapshot)" + (f', {fails} FAILED' if fails else ''))
-sys.exit(0 if not fails else 1)
+
+# Open Agent Hackathon 2026 (new work, branch open-agent-2026): unittest modules, counted separately from the snapshot checks above.
+import unittest
+sys.path.insert(0, str(HERE))
+_suite = unittest.defaultTestLoader.loadTestsFromNames(['test_open_agent', 'test_meterless_engine', 'test_zetaris_store'])
+sys.path.insert(0, str(HERE))
+_r = unittest.TextTestRunner(stream=open(os.devnull, 'w'), verbosity=0).run(_suite)
+for _t, _why in _r.skipped:
+    print(f'SKIP open-agent {_t.id()}  [{_why}]')
+for _t, _tb in _r.failures + _r.errors:
+    print(f'FAIL open-agent {_t.id()}\n{_tb}')
+if not (os.environ.get('NIGHTSHIFT_API_KEY') and os.environ.get('NIGHTSHIFT_BASE_URL')):
+    print('SKIP open-agent live Nightshift smoke (tools/nightshift_smoke.py)  [NIGHTSHIFT_API_KEY / NIGHTSHIFT_BASE_URL not set]')
+_oa_fail = len(_r.failures) + len(_r.errors)
+print(f"open-agent: {_r.testsRun - len(_r.skipped) - _oa_fail} passed, {len(_r.skipped)} skipped" + (f', {_oa_fail} FAILED' if _oa_fail else ''))
+sys.exit(0 if not fails and not _oa_fail else 1)

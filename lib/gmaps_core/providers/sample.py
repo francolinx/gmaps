@@ -25,7 +25,7 @@ class SampleLLM(ProviderBase):
                     continue
                 r = json.loads(line)
                 if r.get('request_sha') and r.get('response') is not None and r.get('provider') == 'nightshift' and not r.get('error'):
-                    self.index[r['request_sha']] = dict(r, _file=str(p.relative_to(ROOT)))
+                    self.index[r['request_sha']] = dict(r, _file=str(p.relative_to(ROOT)) if p.resolve().is_relative_to(ROOT) else str(p))
         self.model = 'replay'
 
     def chat(self, messages, **extra):

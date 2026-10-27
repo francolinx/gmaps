@@ -40,3 +40,4 @@ gym/**/.venv.setup.lock
 # Open Agent Hackathon 2026: per-run outputs (recorded live traces are copied to samples/open_agent/traces/)
 runs/traces/
 runs/ledger/
+runs/zetaris_tables/

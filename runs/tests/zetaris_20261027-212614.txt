@@ -1,0 +1,9 @@
+test_live_zetaris_roundtrip (__main__.StoreTests.test_live_zetaris_roundtrip) ... 
+SKIP live Zetaris: Zetaris is not integrated: no verified client (docs unreachable from the build session, no credentials). Use GMAPS_DATA=local.
+skipped 'Zetaris is not integrated: no verified client (docs unreachable from the build session, no credentials). Use GMAPS_DATA=local.'
+test_local_roundtrip (__main__.StoreTests.test_local_roundtrip) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.003s
+
+OK (skipped=1)
