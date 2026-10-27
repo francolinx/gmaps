@@ -19,7 +19,7 @@ if [ "${NO_DRAFTER:-0}" = 1 ]; then SPEC=(); MOUNT_DSPARK=(); fi
 echo "Lightning on 127.0.0.1:$PORT  drafter: $([ ${#SPEC[@]} -gt 0 ] && echo yes || echo no)  gpu-memory-utilization $GPU_UTIL"
 timeout "${HOURS}h" docker run --rm --gpus all --ipc=host -p 127.0.0.1:"$PORT":8000 \
   -v "$MODEL":/model:ro "${MOUNT_DSPARK[@]}" \
-  vllm/vllm-openai:v0.27.1 --model /model --served-model-name lightning \
+  vllm/vllm-openai:v0.27.1 --model /model --served-model-name "${SERVED_NAME:-lightning}" \
   --moe-backend marlin --kv-cache-dtype fp8 --enable-prefix-caching --gpu-memory-utilization "$GPU_UTIL" \
   --mamba-backend flashinfer --mamba-cache-mode align \
   --reasoning-parser nemotron_v3 --tool-call-parser qwen3_coder --enable-auto-tool-choice \

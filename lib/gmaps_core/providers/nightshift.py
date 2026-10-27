@@ -61,6 +61,8 @@ class NightshiftLLM(ProviderBase):
 
     def chat(self, messages, **extra):
         body = {'model': self.model, 'messages': messages}
+        if any(k in self.model.lower() for k in ('nemotron', 'lightning')):   # reasoning off: short JSON / two-sentence answers
+            body['chat_template_kwargs'] = {'enable_thinking': False}
         body.update(extra)
         t0, attempts, last_err = time.perf_counter(), 0, None
         while attempts <= self.retries:
@@ -70,8 +72,9 @@ class NightshiftLLM(ProviderBase):
                 break
             except urllib.error.HTTPError as e:
                 detail = e.read()[:300].decode(errors='replace')
-                if e.code == 400 and 'response_format' in body:   # provider without structured output: same prompt, JSON checked after
-                    body.pop('response_format'); attempts -= 1; last_err = f'HTTP 400 with response_format: {detail[:120]}'
+                optional = [k for k in ('chat_template_kwargs', 'response_format') if k in body]
+                if e.code == 400 and optional:   # route without that option: drop it, same prompt; JSON is checked after anyway
+                    body.pop(optional[0]); attempts -= 1; last_err = f'HTTP 400 with {optional[0]}: {detail[:120]}'
                     continue
                 last_err = f'HTTP {e.code}: {detail[:160]}'
                 if e.code < 500:
