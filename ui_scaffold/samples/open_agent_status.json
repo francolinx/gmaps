@@ -1,0 +1,92 @@
+{
+ "scenario": "SIM_E5_HOLD_NOT_SLOWING",
+ "provider": "sample",
+ "model_reported": [],
+ "steps": [
+  {
+   "t": 21,
+   "role": "executor",
+   "step": "grammar_parse",
+   "outcome": "ok",
+   "model_reported": null
+  },
+  {
+   "t": 21,
+   "role": "executor",
+   "step": "ledger_ingest",
+   "outcome": "ok",
+   "model_reported": null
+  },
+  {
+   "t": 21,
+   "role": "evaluator",
+   "step": "evaluate_ledger",
+   "outcome": "accepted",
+   "model_reported": null
+  },
+  {
+   "t": 21,
+   "role": "risk",
+   "step": "lookahead",
+   "outcome": "ok",
+   "model_reported": null
+  },
+  {
+   "t": 37,
+   "role": "risk",
+   "step": "lookahead",
+   "outcome": "ok",
+   "model_reported": null
+  },
+  {
+   "t": 37,
+   "role": "explainer",
+   "step": "explain",
+   "outcome": "unavailable",
+   "model_reported": null
+  },
+  {
+   "t": 37,
+   "role": "alert",
+   "step": "post_alert",
+   "outcome": "ok",
+   "model_reported": null
+  },
+  {
+   "t": 37,
+   "role": "explainer",
+   "step": "explain",
+   "outcome": "unavailable",
+   "model_reported": null
+  },
+  {
+   "t": 37,
+   "role": "alert",
+   "step": "post_alert",
+   "outcome": "ok",
+   "model_reported": null
+  },
+  {
+   "t": 52,
+   "role": "risk",
+   "step": "lookahead",
+   "outcome": "ok",
+   "model_reported": null
+  },
+  {
+   "t": 54,
+   "role": "risk",
+   "step": "lookahead",
+   "outcome": "ok",
+   "model_reported": null
+  },
+  {
+   "t": 56,
+   "role": "risk",
+   "step": "lookahead",
+   "outcome": "ok",
+   "model_reported": null
+  }
+ ],
+ "note": "SIMULATED"
+}

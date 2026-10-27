@@ -1,0 +1,70 @@
+{
+ "note": "SIMULATED: fictional SIM-1 map, scripted radio, simulated positions. Decision support only.",
+ "summary": {
+  "scenario": "SIM_E5_HOLD_NOT_SLOWING",
+  "run_id": "SIM_E5_HOLD_NOT_SLOWING-sample-20261027-212433",
+  "provider": "sample",
+  "store": "local",
+  "engine": "local.runway_memory",
+  "model_calls": 2,
+  "model_reported": [],
+  "latency_ms_median": null,
+  "latency_ms_all": [],
+  "alerts": 2,
+  "loop_wall_s": 0.03
+ },
+ "transcript": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "SimAir two one two, runway three six, cleared to land.",
+   "kind": "LANDING_CLEARANCE",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 3,
+   "speaker": "SIM212",
+   "text": "Cleared to land runway three six, SimAir two one two.",
+   "kind": "LANDING_CLEARANCE",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 18,
+   "speaker": "ATC",
+   "text": "Rescue seven, hold short runway three six at Kilo, traffic landing.",
+   "kind": "HOLD_SHORT",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 21,
+   "speaker": "RESCUE7",
+   "text": "Hold short runway three six at Kilo, Rescue seven.",
+   "kind": "HOLD_SHORT",
+   "parse_path": "grammar"
+  }
+ ],
+ "alerts": [
+  {
+   "t": 37,
+   "alert_id": "lookahead:hold_exceedance:RESCUE7+SIM212@37",
+   "severity": "LOOKAHEAD",
+   "headline": "look-ahead: hold exceedance \u00b7 XSIM:ZONE:Z1",
+   "explanation": "Look-ahead (hold exceedance) at zone XSIM:ZONE:Z1 for RESCUE7, SIM212 at t=+37 s: 5.4 s from the hold line at 9.5 m/s with no deceleration observed (declared warning time 6.0 s); runway authorization live for SIM212.",
+   "explanation_source": "ledger rule text (provider unavailable: provider_unavailable (not recorded: no sample trace for this request))",
+   "model_reported": null
+  },
+  {
+   "t": 37,
+   "alert_id": "lookahead:occupancy_overlap:SIM212+RESCUE7@37",
+   "severity": "LOOKAHEAD",
+   "headline": "look-ahead: occupancy overlap \u00b7 XSIM:ZONE:Z1",
+   "explanation": "Look-ahead (occupancy overlap) at zone XSIM:ZONE:Z1 for SIM212, RESCUE7 at t=+37 s: 5.4 s from the hold line at 9.5 m/s with no deceleration observed (declared warning time 6.0 s).",
+   "explanation_source": "ledger rule text (provider unavailable: provider_unavailable (not recorded: no sample trace for this request))",
+   "model_reported": null
+  }
+ ],
+ "trace": "runs/traces/SIM_E5_HOLD_NOT_SLOWING-sample-20261027-212433.jsonl",
+ "ledger": {
+  "warnings": []
+ }
+}

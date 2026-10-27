@@ -1,0 +1,136 @@
+{
+ "note": "SIMULATED: fictional SIM-1 map, scripted radio, simulated positions. Decision support only.",
+ "summary": {
+  "scenario": "SIM_E1_CROSS_DURING_ROLLOUT",
+  "run_id": "SIM_E1_CROSS_DURING_ROLLOUT-sample-20261027-212432",
+  "provider": "sample",
+  "store": "local",
+  "engine": "local.runway_memory",
+  "model_calls": 2,
+  "model_reported": [],
+  "latency_ms_median": null,
+  "latency_ms_all": [],
+  "alerts": 2,
+  "loop_wall_s": 0.03
+ },
+ "transcript": [
+  {
+   "t": 0,
+   "speaker": "ATC",
+   "text": "SimAir two one two, runway three six, cleared to land.",
+   "kind": "LANDING_CLEARANCE",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 3,
+   "speaker": "SIM212",
+   "text": "Cleared to land runway three six, SimAir two one two.",
+   "kind": "LANDING_CLEARANCE",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 24,
+   "speaker": "RESCUE7",
+   "text": "Tower, Rescue seven, request to cross runway three six at Kilo.",
+   "kind": "CROSS_REQUEST",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 28,
+   "speaker": "ATC",
+   "text": "Rescue seven, cross runway three six at Kilo.",
+   "kind": "CROSS",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 31,
+   "speaker": "RESCUE7",
+   "text": "Crossing runway three six at Kilo, Rescue seven.",
+   "kind": "CROSS",
+   "parse_path": "grammar"
+  }
+ ],
+ "alerts": [
+  {
+   "t": 28,
+   "alert_id": "w0001",
+   "severity": "CONFLICT",
+   "headline": "R1 crossing vs active landing \u00b7 runway XSIM:RWY:18-36",
+   "explanation": "Runway 36 has a recorded landing authorization for SIM212 (t=0) and a crossing authorization for RESCUE7 at K (t=28). Both need the 18-36 protected area.",
+   "explanation_source": "ledger rule text (provider unavailable: provider_unavailable (not recorded: no sample trace for this request))",
+   "model_reported": null
+  },
+  {
+   "t": 28,
+   "alert_id": "lookahead:occupancy_overlap:SIM212+RESCUE7@28",
+   "severity": "LOOKAHEAD",
+   "headline": "look-ahead: occupancy overlap \u00b7 XSIM:ZONE:Z1",
+   "explanation": "Look-ahead (occupancy overlap) at zone XSIM:ZONE:Z1 for SIM212, RESCUE7 at t=+28 s: projected occupancy windows overlap.",
+   "explanation_source": "ledger rule text (provider unavailable: provider_unavailable (not recorded: no sample trace for this request))",
+   "model_reported": null
+  }
+ ],
+ "trace": "runs/traces/SIM_E1_CROSS_DURING_ROLLOUT-sample-20261027-212432.jsonl",
+ "ledger": {
+  "warnings": [
+   {
+    "warning_id": "w0001",
+    "rule_id": "R1",
+    "name": "crossing vs active landing",
+    "severity": "CONFLICT",
+    "category": "conflict",
+    "runway": "XSIM:RWY:18-36",
+    "t_fired": 28,
+    "status": "open",
+    "cleared_at": null,
+    "cleared_by": null,
+    "authorization_a": {
+     "callsign": "SIM212",
+     "type": "LANDING",
+     "runway_end": "36",
+     "physical_runway": "XSIM:RWY:18-36",
+     "t_issued": 0,
+     "event_id": "ev00001",
+     "acknowledged": "acknowledged",
+     "reservation_id": "r0001"
+    },
+    "authorization_b": {
+     "callsign": "RESCUE7",
+     "type": "CROSSING",
+     "runway_end": "36",
+     "physical_runway": "XSIM:RWY:18-36",
+     "t_issued": 28,
+     "event_id": "ev00004",
+     "acknowledged": "pending",
+     "reservation_id": "r0002"
+    },
+    "state_snapshot": {
+     "SIM212": {
+      "authorized": "landing clearance, rwy 36",
+      "acknowledged": "read back: landing clearance, rwy 36",
+      "reported": null,
+      "inferred": null,
+      "observed": null
+     },
+     "RESCUE7": {
+      "authorized": "cross, rwy 36, at K",
+      "acknowledged": null,
+      "reported": "requests cross_request runway 36 at K",
+      "inferred": null,
+      "observed": null
+     }
+    },
+    "explain": "Runway 36 has a recorded landing authorization for SIM212 (t=0) and a crossing authorization for RESCUE7 at K (t=28). Both need the 18-36 protected area.",
+    "what_would_clear_it": "RESCUE7 reports clear of runway, or SIM212 go-around / landing complete",
+    "cite": "JO 7110.65BB 3-1-3; 3-7-2",
+    "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+    "basis": [
+     [
+      "r0001",
+      "r0002"
+     ]
+    ]
+   }
+  ]
+ }
+}
