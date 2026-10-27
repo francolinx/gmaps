@@ -43,6 +43,16 @@ def main():
             if prov.name != 'nightshift':
                 sys.exit('--record only records live nightshift runs')
             shutil.copy(tr.path, ROOT / 'samples' / 'open_agent' / 'traces' / f'{s}.jsonl')
+        # model calls for the LaGuardia view's Nemotron indicator (a sample replay never overwrites a recorded live run)
+        calls_file = ROOT / 'ui_scaffold' / 'samples' / f'nemotron_calls_{s}.json'
+        if prov.name == 'nightshift' or not calls_file.exists():
+            rows = [json.loads(l) for l in tr.path.read_text().splitlines()]
+            calls = [{'t': r.get('t'), 'role': r['role'], 'step': r['step'], 'provider': r['provider'], 'model_reported': r.get('model_reported'),
+                      'latency_ms': r.get('latency_ms'), 'outcome': r['outcome'], 'round': r.get('round'), 'replayed': bool(r.get('replayed_from'))}
+                     for r in rows if r.get('provider') and r['step'] not in ('start', 'end')]
+            calls_file.write_text(json.dumps({'scenario': s, 'provider': prov.name, 'run_id': run_id, 'trace': out['trace'],
+                                              'recorded_utc': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'calls': calls,
+                                              'note': 'SIMULATED scenario; scenario-time t of each model call; latency is the real round trip'}, indent=1) + '\n')
         sm = out['summary']
         print(f"{s}  provider={sm['provider']}  model_reported={sm['model_reported'] or '-'}  model_calls={sm['model_calls']}  "
               f"latency_median_ms={sm['latency_ms_median']}  alerts={sm['alerts']}  trace={out['trace']}")

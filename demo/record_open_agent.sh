@@ -9,7 +9,10 @@
 # docs/model_card/open_agent_2026, ui_scaffold/samples/open_agent_status.json.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-: "${NIGHTSHIFT_API_KEY:?export NIGHTSHIFT_API_KEY (runtime key from the Nightshift Console)}"
+if [ -z "${NIGHTSHIFT_API_KEY:-}" ] && [ -s "${NIGHTSHIFT_API_KEY_FILE:-$HOME/.nightshift_key}" ]; then
+  export NIGHTSHIFT_API_KEY="$(cat "${NIGHTSHIFT_API_KEY_FILE:-$HOME/.nightshift_key}")"
+fi
+: "${NIGHTSHIFT_API_KEY:?set NIGHTSHIFT_API_KEY or write the runtime key to ~/.nightshift_key (chmod 600)}"
 export NIGHTSHIFT_BASE_URL=${NIGHTSHIFT_BASE_URL:-http://127.0.0.1:8088/v1}
 if [ -z "${NIGHTSHIFT_MODEL:-}" ]; then   # pick the first Nemotron model Nightshift lists (the NVIDIA award needs a Nemotron model)
   NIGHTSHIFT_MODEL=$(python3 tools/nightshift_smoke.py --models | grep -i nemotron | grep -v '^Nemotron ids' | head -1 || true)

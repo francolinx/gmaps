@@ -18,6 +18,16 @@ DEFAULT_MODEL = 'meterless/auto'          # set NIGHTSHIFT_MODEL to the Nemotron
 DEFAULT_BASE = 'http://127.0.0.1:8088/v1'
 
 
+def read_key_file():
+    """NIGHTSHIFT_API_KEY_FILE (default ~/.nightshift_key, outside the repo): lets the key persist without an exported variable."""
+    p = os.path.expanduser(os.environ.get('NIGHTSHIFT_API_KEY_FILE', '~/.nightshift_key'))
+    try:
+        with open(p) as f:
+            return f.read().strip()
+    except OSError:
+        return ''
+
+
 def normalize_base(url):
     u = (url or DEFAULT_BASE).strip().rstrip('/')
     if '://' not in u:
@@ -33,7 +43,7 @@ class NightshiftLLM(ProviderBase):
 
     def __init__(self, base_url=None, api_key=None, model=None, timeout=None, retries=1):
         self.base = normalize_base(base_url or os.environ.get('NIGHTSHIFT_BASE_URL'))
-        self.key = api_key or os.environ.get('NIGHTSHIFT_API_KEY') or ''
+        self.key = api_key or os.environ.get('NIGHTSHIFT_API_KEY') or read_key_file()
         self.model = model or os.environ.get('NIGHTSHIFT_MODEL') or DEFAULT_MODEL
         self.timeout = float(timeout or os.environ.get('NIGHTSHIFT_TIMEOUT_S') or 30)
         self.retries = retries

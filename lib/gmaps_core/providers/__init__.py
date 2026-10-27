@@ -35,7 +35,8 @@ def _local():
 def get_provider(name=None, quiet=False):
     name = name or os.environ.get('GMAPS_PROVIDER')
     if not name:
-        name = 'nightshift' if os.environ.get('NIGHTSHIFT_API_KEY') else 'sample'
+        from .nightshift import read_key_file
+        name = 'nightshift' if (os.environ.get('NIGHTSHIFT_API_KEY') or read_key_file()) else 'sample'
         if name == 'sample' and not quiet:
             print('[gmaps] no NIGHTSHIFT_API_KEY: SAMPLE MODE, replaying recorded Nightshift traces (no network)', file=sys.stderr)
     if name == 'nightshift':

@@ -67,6 +67,18 @@ button:focus-visible,select:focus-visible{outline:2px solid var(--gmaps);outline
 .about{font-size:12.5px;color:var(--dim)} .about p{margin:0 0 6px}
 .legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:12px;color:var(--dim)}
 .legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--c)}
+.nemo{position:absolute;right:10px;bottom:58px;width:min(330px,62%);padding:9px 11px;border-radius:8px;background:rgba(15,17,21,.92);border:1px solid #3d5a1e;font-size:12px;pointer-events:none}
+.nemo .hd{display:flex;align-items:center;gap:8px;font:700 11px var(--mono);letter-spacing:.4px;color:#9be15d}
+.nemo .dot{width:10px;height:10px;border-radius:50%;background:#3d5a1e;flex:none}
+.nemo.busy{border-color:#76b900;box-shadow:0 0 0 1px rgba(118,185,0,.35),0 0 18px rgba(118,185,0,.25)}
+.nemo.busy .dot{background:#76b900;animation:bounce .55s ease-in-out infinite alternate}
+.nemo.busy .hd span.lbl{animation:pulse .9s ease-in-out infinite alternate}
+@keyframes bounce{from{transform:translateY(2px) scale(.9)}to{transform:translateY(-5px) scale(1.15)}}
+@keyframes pulse{from{opacity:.65}to{opacity:1}}
+.nemo .ln{margin-top:4px;color:var(--dim);font:11.5px var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nemo .ln b{color:var(--ink)}
+.nemo svg{display:block;width:100%;height:34px;margin-top:6px}
+@media (prefers-reduced-motion:reduce){.nemo.busy .dot,.nemo.busy .hd span.lbl{animation:none}}
 footer{padding:10px 16px;color:var(--faint);font-size:11.5px;border-top:1px solid var(--line)}
 @media (max-width:900px){
   .views{grid-template-columns:1fr}
@@ -100,7 +112,7 @@ footer{padding:10px 16px;color:var(--faint);font-size:11.5px;border-top:1px soli
 </div>
 <div class="views" id="views">
   <div class="view v-asis"><canvas id="cAsis"></canvas><div class="vh">AS-IS · today: radio and eyes only</div><div class="banner" id="banAsis"></div><div class="cap" id="capAsis"></div></div>
-  <div class="view v-gmaps"><canvas id="cGmaps"></canvas><div class="vh">WITH GMAPS · ledger + look-ahead</div><div class="banner" id="banGmaps"></div><div class="cap" id="capGmaps"></div></div>
+  <div class="view v-gmaps"><canvas id="cGmaps"></canvas><div class="vh">WITH GMAPS · ledger + look-ahead</div><div class="banner" id="banGmaps"></div><div class="cap" id="capGmaps"></div><div class="nemo" id="nemo" aria-live="polite"><div class="hd"><span class="dot"></span><span class="lbl">NEMOTRON · DGX SPARK</span></div><div class="ln" id="nemoLn">no recorded Nemotron run yet</div><div class="ln" id="nemoSub"></div><svg id="nemoGpu" viewBox="0 0 300 34" preserveAspectRatio="none"></svg></div></div>
 </div>
 <div class="lower">
   <div class="box"><h2>Radio (scripted, tower frequency)</h2><div class="radio" id="radio"></div></div>
@@ -142,8 +154,38 @@ async function init(){
   await load($('scen').value);
   requestAnimationFrame(loop);
 }
+let NC = null, GPU = null;
+async function loadNemo(id){
+  NC = null; try { NC = await getJSON(`samples/nemotron_calls_${id}.json`); } catch (e) {}
+  if (NC) NC.calls = NC.calls.filter(c => c.model_reported && c.t != null && ['explainer', 'critic', 'executor'].includes(c.role));
+  if (GPU === null){ try { GPU = await getJSON('samples/gpu_latest.json'); } catch (e) { GPU = false; } drawGpu(); }
+}
+function drawGpu(){
+  const svg = $('nemoGpu');
+  if (!GPU || !GPU.samples || !GPU.samples.length){ svg.innerHTML = ''; svg.style.display = 'none'; return; }
+  const t1 = GPU.samples[GPU.samples.length - 1][0] || 1, X = t => 2 + t / t1 * 296, Y = v => 32 - (v || 0) / 100 * 30;
+  const d = GPU.samples.map((p, i) => `${i ? 'L' : 'M'}${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`).join(' ');
+  svg.innerHTML = (GPU.calls_t || []).map(t => `<line x1="${X(t)}" x2="${X(t)}" y1="1" y2="33" stroke="#fb923c" stroke-width=".8" stroke-dasharray="2 2"/>`).join('')
+    + `<path d="${d}" fill="none" stroke="#76b900" stroke-width="1.5"/>`;
+}
+// calls that share an alert second are shown one after another (scenario time), each for 1.6 s
+function nemoActive(){
+  if (!NC || !NC.calls.length) return null;
+  const byT = {}; const sched = NC.calls.map(c => { const k = c.t; byT[k] = (byT[k] || 0) + 1; return {c, start: c.t + (byT[k] - 1) * 1.6}; });
+  return {now: sched.find(x => T >= x.start && T < x.start + 1.6), done: sched.filter(x => x.start <= T).length, total: sched.length};
+}
+function renderNemo(){
+  const el = $('nemo'); if (!el) return;
+  if (!NC || !NC.calls.length){ el.classList.remove('busy'); $('nemoLn').textContent = 'no recorded Nemotron run yet (run demo/record_open_agent.sh on the Spark)'; $('nemoSub').textContent = ''; return; }
+  const a = nemoActive(), m = NC.calls[0].model_reported, how = NC.provider === 'nightshift' ? 'live via Nightshift' : 'replay of a recorded run';
+  el.classList.toggle('busy', !!a.now);
+  if (a.now){ const c = a.now.c; $('nemoLn').innerHTML = `<b>${esc(c.role)}${c.round ? ' r' + c.round : ''}</b> · ${esc(c.model_reported)} · ${c.latency_ms != null ? Math.round(c.latency_ms) + ' ms' : 'recorded'} · ${esc(c.outcome)}`; }
+  else $('nemoLn').innerHTML = `<b>idle</b> · ${esc(m)} · ${a.done}/${a.total} calls so far`;
+  $('nemoSub').textContent = `${how}` + (GPU && GPU.gpu ? ` · ${GPU.gpu}${GPU.util_max != null ? ', peak ' + GPU.util_max + '%' : ''}${GPU.loopback_only ? ' · loopback only' : ''}` : '');
+}
 async function load(id){
   S = await getJSON(`lga/${id}.json`);
+  await loadNemo(id);
   T = 0; playing = false; $('play').textContent = '▶ Play';
   $('scenSub').textContent = `${S.title.replace(' (fictional)', '')}. ${S.purpose}`;
   history.replaceState(null, '', `?s=${id}`);
@@ -378,6 +420,7 @@ function render(){
   const shown = EV.filter(e => e.t <= T && e.view !== 'asis');
   $('alerts').innerHTML = shown.length ? shown.slice().reverse().map(e => `<div class="alert ${e.cls}"><div class="k">+${e.t}s · ${esc(e.head)}</div><p>${esc(e.body)}</p></div>`).join('')
     : '<p class="empty">None yet. GMAPS shows a warning only when two recorded authorizations, or an open obligation, hold runway 04/22 at the same time, or when the look-ahead projects an overlap.</p>';
+  renderNemo();
   $('clock').textContent = `+${T.toFixed(1)} s`;
   $('range').value = T;
 }
