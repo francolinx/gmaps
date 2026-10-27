@@ -41,3 +41,6 @@ gym/**/.venv.setup.lock
 runs/traces/
 runs/ledger/
 runs/zetaris_tables/
+
+# run.py traces (created at runtime)
+logs/

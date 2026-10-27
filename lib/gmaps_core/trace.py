@@ -6,7 +6,7 @@ token counts, the outcome (accepted / rejected / retried / escalated / unavailab
 A model-call line also carries request_sha (sha256 of the exact request messages) and the response text, so a recorded run
 can be replayed offline by the sample provider (providers/sample.py). Read with: python3 tools/show_trace.py <file>
 """
-import hashlib, json, time
+import hashlib, json, os, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -33,6 +33,8 @@ class TraceLogger:
         rec.update(extra)
         with self.path.open('a') as f:
             f.write(json.dumps(rec, ensure_ascii=False) + '\n')
+        if os.environ.get('GMAPS_TRACE_STDOUT'):
+            print(f"[trace] {rec['role']:<9} {rec['step']:<20} {rec['outcome']:<11} {rec.get('provider') or '':<10} {rec.get('model_reported') or ''}", flush=True)
         self.n += 1
         return rec
 

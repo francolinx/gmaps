@@ -40,12 +40,16 @@ def _h(o):
 
 
 class OpenAgent:
-    def __init__(self, scenario, provider, store, memory, trace, t_end=100):
+    def __init__(self, scenario, provider, store, memory, trace, t_end=100, transmissions=None):
+        """transmissions: optional list of {t, speaker, text} (a judge's own radio lines); then the scenario only supplies the
+        simulated positions (or none, if scenario is None: the look-ahead then reports 'prediction unavailable')."""
         self.scenario, self.llm, self.store, self.mem, self.tr, self.t_end = scenario, provider, store, memory, trace, t_end
+        self.custom = transmissions
         self.ap = SimAirport()
         self.led = Ledger(self.ap)
         self.ids = store.identifiers(ICAO)
-        ob = json.loads((ROOT / f'episodes/{scenario}.obs.json').read_text())   # simulated sensor packets (runtime input)
+        obs_file = ROOT / f'episodes/{scenario}.obs.json' if scenario else None
+        ob = json.loads(obs_file.read_text()) if obs_file and obs_file.exists() else {'tracks': {}, 'packets': []}   # simulated sensor packets (runtime input)
         self.tracks = {tid: dict(meta, packets=[p for p in ob['packets'] if p['track_id'] == tid]) for tid, meta in ob['tracks'].items()}
         self.by_cs = {meta['callsign']: self.tracks[tid]['packets'] for tid, meta in ob['tracks'].items()}
         self.zone_watch, self.last_risk, self.posted, self.ledger_hashes = False, None, set(), {}
@@ -206,7 +210,8 @@ class OpenAgent:
     def run(self):
         self.tr.log('start', 'planner', 'ok', provider=self.llm.name, model_requested=getattr(self.llm, 'model', None), store=self.store.name,
                     engine=self.mem.name, note='SIMULATED: fictional SIM-1 map, scripted radio, simulated positions')
-        lines = list(self.store.transmissions(self.scenario))
+        lines = (sorted(({'t': float(x['t']), 'speaker': x.get('speaker', 'ATC'), 'text': x['text']} for x in self.custom), key=lambda x: x['t'])
+                 if self.custom is not None else list(self.store.transmissions(self.scenario)))
         self.tr.log('read_transmissions', 'store', 'ok', store=self.store.name, n=len(lines))
         t0 = time.perf_counter()
         for as_of in range(0, self.t_end + 1):

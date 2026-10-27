@@ -78,12 +78,15 @@ Check the outputs:
 - `README.md`, "New this week" section: replace "not run" with the numbers, and embed `docs/model_card/open_agent_2026/nemotron_vs_parser.png`.
 - `docs/deck/build_deck.py`: on slides 5 and 9, replace "live run pending" with the real Nemotron id and measured numbers. Then `python3 docs/deck/build_deck.py`.
 
+**2.4b Regenerate the example outputs with the live provider (2 min).**
+`python3 run.py --write-outputs`. This writes `output_examples/example_{1,2,3}.json` with real Nemotron explanations; example 3 uses custom radio text. Commit `output_examples/`. Then `SAMPLE_MODE=true python3 run.py` must also run (replaying examples 1–2; example 3 falls back, labelled).
+
 **2.5 Verify and push (by 23:25).**
 ```
 python3 tests/run_all.py | tail -3
 env -i PATH=$PATH HOME=$HOME python3 demo/run_open_agent.py --scenario all --provider sample | head -20   # judges' path: no key, no network
 git grep -I -n -E 'sk-[A-Za-z0-9]{12,}|Bearer [A-Za-z0-9._-]{16,}' || echo clean
-git add -A runs/proof runs/smoke runs/tests samples/open_agent eval/results docs ui_scaffold/samples README.md
+git add -A output_examples runs/proof runs/smoke runs/tests samples/open_agent eval/results docs ui_scaffold/samples README.md
 git commit -m "Live Nemotron via Nightshift: traces, smoke, comparison, docs" && git push origin main
 ```
 Do not commit `runs/traces/` or `runs/ledger/`; they are gitignored. Copies of the recorded traces live in `samples/open_agent/traces/`.

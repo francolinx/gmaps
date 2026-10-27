@@ -1,0 +1,7 @@
+{"transmissions": [
+  {"t": 0, "speaker": "ATC", "text": "SimAir four five one, runway one eight, cleared for takeoff."},
+  {"t": 4, "speaker": "SIM451", "text": "Cleared for takeoff runway one eight, SimAir four five one."},
+  {"t": 12, "speaker": "ATC", "text": "Truck two, cross runway one eight at Kilo."},
+  {"t": 15, "speaker": "TRUCK2", "text": "Crossing runway one eight at Kilo, Truck two."},
+  {"t": 30, "speaker": "ATC", "text": "Truck two, uh, get across one eight right now at kilo"}
+]}

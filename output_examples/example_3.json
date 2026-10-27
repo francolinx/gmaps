@@ -1,0 +1,151 @@
+{
+ "note": "SIMULATED: fictional SIM-1 map, scripted radio, simulated positions. Decision support only.",
+ "summary": {
+  "scenario": null,
+  "run_id": "custom-sample-20261027-230510-621-3",
+  "provider": "sample",
+  "store": "local",
+  "engine": "local.runway_memory",
+  "model_calls": 1,
+  "model_reported": [],
+  "latency_ms_median": null,
+  "latency_ms_all": [],
+  "alerts": 1,
+  "loop_wall_s": 0.01
+ },
+ "transcript": [
+  {
+   "t": 0.0,
+   "speaker": "ATC",
+   "text": "SimAir four five one, runway one eight, cleared for takeoff.",
+   "kind": "TAKEOFF_CLEARANCE",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 4.0,
+   "speaker": "SIM451",
+   "text": "Cleared for takeoff runway one eight, SimAir four five one.",
+   "kind": "TAKEOFF_CLEARANCE",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 12.0,
+   "speaker": "ATC",
+   "text": "Truck two, cross runway one eight at Kilo.",
+   "kind": "CROSS",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 15.0,
+   "speaker": "TRUCK2",
+   "text": "Crossing runway one eight at Kilo, Truck two.",
+   "kind": "CROSS",
+   "parse_path": "grammar"
+  },
+  {
+   "t": 30.0,
+   "speaker": "ATC",
+   "text": "Truck two, uh, get across one eight right now at kilo",
+   "kind": "CROSSING_COMPLETE",
+   "parse_path": "grammar"
+  }
+ ],
+ "alerts": [
+  {
+   "t": 12.0,
+   "alert_id": "w0002",
+   "severity": "CONFLICT",
+   "headline": "R2 crossing vs active takeoff \u00b7 runway XSIM:RWY:18-36",
+   "explanation": "Takeoff authorization and crossing authorization recorded on the same runway (18-36).",
+   "explanation_source": "ledger rule text (provider unavailable: provider_unavailable (not recorded: no sample trace for this request))",
+   "model_reported": null
+  }
+ ],
+ "trace": "logs/custom-sample-20261027-230510-621-3.jsonl",
+ "ledger": {
+  "warnings": [
+   {
+    "warning_id": "w0002",
+    "rule_id": "R2",
+    "name": "crossing vs active takeoff",
+    "severity": "CONFLICT",
+    "category": "conflict",
+    "runway": "XSIM:RWY:18-36",
+    "t_fired": 12.0,
+    "status": "cleared",
+    "cleared_at": 30.0,
+    "cleared_by": "crossing complete reported",
+    "authorization_a": {
+     "callsign": "SIM451",
+     "type": "TAKEOFF",
+     "runway_end": "18",
+     "physical_runway": "XSIM:RWY:18-36",
+     "t_issued": 0.0,
+     "event_id": "ev00010",
+     "acknowledged": "acknowledged",
+     "reservation_id": "r0004"
+    },
+    "authorization_b": {
+     "callsign": "TRUCK2",
+     "type": "CROSSING",
+     "runway_end": "18",
+     "physical_runway": "XSIM:RWY:18-36",
+     "t_issued": 12.0,
+     "event_id": "ev00012",
+     "acknowledged": "pending",
+     "reservation_id": "r0005"
+    },
+    "state_snapshot": {
+     "SIM451": {
+      "authorized": "takeoff clearance, rwy 18",
+      "acknowledged": "read back: takeoff clearance, rwy 18",
+      "reported": null,
+      "inferred": null,
+      "observed": null
+     },
+     "TRUCK2": {
+      "authorized": "cross, rwy 18, at K",
+      "acknowledged": null,
+      "reported": null,
+      "inferred": null,
+      "observed": null
+     }
+    },
+    "explain": "Takeoff authorization and crossing authorization recorded on the same runway (18-36).",
+    "what_would_clear_it": "crossing complete, or takeoff cancelled and acknowledged",
+    "cite": "JO 7110.65BB 3-1-3; 3-9-10",
+    "claim_limit": "Two recorded authorizations / an open obligation at time t. Not a collision prediction.",
+    "basis": []
+   }
+  ]
+ },
+ "input": {
+  "transmissions": [
+   {
+    "t": 0,
+    "speaker": "ATC",
+    "text": "SimAir four five one, runway one eight, cleared for takeoff."
+   },
+   {
+    "t": 4,
+    "speaker": "SIM451",
+    "text": "Cleared for takeoff runway one eight, SimAir four five one."
+   },
+   {
+    "t": 12,
+    "speaker": "ATC",
+    "text": "Truck two, cross runway one eight at Kilo."
+   },
+   {
+    "t": 15,
+    "speaker": "TRUCK2",
+    "text": "Crossing runway one eight at Kilo, Truck two."
+   },
+   {
+    "t": 30,
+    "speaker": "ATC",
+    "text": "Truck two, uh, get across one eight right now at kilo"
+   }
+  ]
+ }
+}

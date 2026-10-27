@@ -15,6 +15,19 @@ python3 tools/show_trace.py samples/open_agent/traces/SIM_E1_CROSS_DURING_ROLLOU
 python3 tests/run_all.py                                              # snapshot checks + open-agent tests
 ```
 
+### Run it (judges): entry point, API, sample mode
+```
+python3 run.py                                   # runs input_examples/example_{1,2,3}.json; traces -> logs/<run_id>.jsonl
+SAMPLE_MODE=true python3 run.py                  # no Nightshift, no credentials, no network: real agent logic, recorded model answers replayed
+python3 run.py --serve --port 8000               # POST /run with an input JSON, GET /health
+curl -X POST localhost:8000/run -H 'Content-Type: application/json' -d @input_examples/example_3.json
+docker build -t gmaps . && docker run --rm -p 8000:8000 -e SAMPLE_MODE=true gmaps
+```
+- **Input:** `{"scenario": "SIM_E1_CROSS_DURING_ROLLOUT"}`, or your own radio lines, `{"transmissions": [{"t": 0, "speaker": "ATC", "text": "..."}]}`. `example_3` is one: the ledger raises R2 (crossing vs active takeoff) on it.
+- **Output:** the alerts, each with its explanation and which model or fallback produced it; how every line was typed; and the trace path. `output_examples/` holds the outputs of the three examples.
+- **Logs:** set `GMAPS_TRACE_STDOUT=1` to also print every step.
+- **Sample mode** replays model answers recorded in live Nightshift runs (`samples/open_agent/traces/`). Any request that was not recorded takes the labelled fallback, exactly as when the provider is down.
+
 ### Local-execution proof (new)
 `python3 tools/local_proof.py -- demo/run_open_agent.py --scenario all --provider nightshift` wraps any run and records:
 - every `connect()` made by its Python processes (an auditor injected for that run only, so nothing is missed between samples);
