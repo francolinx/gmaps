@@ -2,7 +2,7 @@
  "note": "SIMULATED: fictional SIM-1 map, scripted radio, simulated positions. Decision support only.",
  "summary": {
   "scenario": null,
-  "run_id": "custom-sample-20261027-230510-621-3",
+  "run_id": "custom-sample-20261027-230934-884-3",
   "provider": "sample",
   "store": "local",
   "engine": "local.runway_memory",
@@ -11,7 +11,7 @@
   "latency_ms_median": null,
   "latency_ms_all": [],
   "alerts": 1,
-  "loop_wall_s": 0.01
+  "loop_wall_s": 0.0
  },
  "transcript": [
   {
@@ -61,7 +61,7 @@
    "model_reported": null
   }
  ],
- "trace": "logs/custom-sample-20261027-230510-621-3.jsonl",
+ "trace": "logs/custom-sample-20261027-230934-884-3.jsonl",
  "ledger": {
   "warnings": [
    {

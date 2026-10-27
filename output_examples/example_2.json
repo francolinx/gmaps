@@ -2,7 +2,7 @@
  "note": "SIMULATED: fictional SIM-1 map, scripted radio, simulated positions. Decision support only.",
  "summary": {
   "scenario": "SIM_E5_HOLD_NOT_SLOWING",
-  "run_id": "SIM_E5_HOLD_NOT_SLOWING-sample-20261027-230510-621-2",
+  "run_id": "SIM_E5_HOLD_NOT_SLOWING-sample-20261027-230934-884-2",
   "provider": "sample",
   "store": "local",
   "engine": "local.runway_memory",
@@ -11,7 +11,7 @@
   "latency_ms_median": null,
   "latency_ms_all": [],
   "alerts": 2,
-  "loop_wall_s": 0.02
+  "loop_wall_s": 0.01
  },
  "transcript": [
   {
@@ -63,7 +63,7 @@
    "model_reported": null
   }
  ],
- "trace": "logs/SIM_E5_HOLD_NOT_SLOWING-sample-20261027-230510-621-2.jsonl",
+ "trace": "logs/SIM_E5_HOLD_NOT_SLOWING-sample-20261027-230934-884-2.jsonl",
  "ledger": {
   "warnings": []
  },

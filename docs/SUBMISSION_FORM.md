@@ -31,7 +31,7 @@ New work is commit range `e97a9a1..HEAD` on `main`.
 3. **Traces** (`lib/gmaps_core/trace.py`, `tools/show_trace.py`): one JSON line per step and per model call, with `model_requested` and `model_reported`.
 4. **Sample mode** that replays recorded Nightshift answers by request hash, with no credentials and no network.
 5. **Animated LaGuardia view** (`ui_scaffold/lga_scene.html`): AS-IS vs WITH GMAPS side by side on the real KLGA layout (OSM). The ledger re-runs on LGA identifiers.
-6. **Local-execution proof** (`tools/local_proof.py`): wraps a live run and records every `connect()` of the GMAPS processes (exact), every non-loopback connection on the machine, and GPU utilization, power and memory from `nvidia-smi`, with the model calls marked on the chart. Evidence: `runs/proof/local_[ts].html`, verdict **[process_tree_loopback_only]**, GPU **[name]**.
+6. **Local-execution proof** (`tools/local_proof.py`): wraps a live run and records every `connect()` of the GMAPS processes (exact), every non-loopback connection on the machine, and GPU utilization, power and memory from `nvidia-smi`, with the model calls marked on the chart. Evidence: not run (it wraps the Nightshift live run, which did not run).
 7. **Nemotron vs the fine-tuned 4B parser** on the same 138 held-out transmissions, scored by the same verifier (`eval/run_provider_compare.py`).
 
 ## Pre-existing components (declare)
@@ -43,12 +43,12 @@ Everything in commit `e97a9a1` and earlier (the public GMAPS snapshot of 18 Oct 
 - the original demo page.
 
 ## Sponsor technology explanation
-- **Meterless Nightshift (primary AI provider):** every model call in the agent loop goes to Nightshift's OpenAI-compatible endpoint, at `NIGHTSHIFT_BASE_URL` (default `http://127.0.0.1:8088/v1`) with the runtime key in `NIGHTSHIFT_API_KEY`. The response's `model` field is logged as `model_reported` on every trace line. Smoke test: `runs/smoke/nightshift_[ts].txt`.
-- **NVIDIA:** NVIDIA is connected in Nightshift's Providers tab.
-  - **Live in the agent loop:** **[Nemotron id from the trace]** writes the explanation of every warning and parses the transmissions the grammar cannot type. Quote one trace line: `[paste from python3 tools/show_trace.py samples/open_agent/traces/SIM_E1_CROSS_DURING_ROLLOUT.jsonl --calls]`.
-  - **Comparison:** on 138 held-out transmissions, Nemotron scored **[record exact from eval/results/open_agent_2026/nemotron_vs_parser_heldout4_asr.json]**, against 0.652 for the fine-tuned 4B (n = [n]).
+- **Meterless Nightshift (primary AI provider):** every model call in the agent loop goes to Nightshift's OpenAI-compatible endpoint, at `NIGHTSHIFT_BASE_URL` (default `http://127.0.0.1:8088/v1`) with the runtime key in `NIGHTSHIFT_API_KEY`. The response's `model` field is logged as `model_reported` on every trace line. Smoke test: **not run** (Nightshift was not listening on the Spark).
+- **NVIDIA:** Nemotron (`nemotron-3-nano-30b-a3b-nvfp4`) runs locally on the DGX Spark under vLLM; it was not connected through Nightshift at submission time.
+  - **Live in the agent loop:** **Nightshift live run: not run.** The loop is wired for Nemotron to write the explanation of every warning and parse the transmissions the grammar cannot type, but Nightshift was not running, so no trace line carries a live `model_reported`. The recorded run fell back to the labelled ledger text (`provider_unavailable`).
+  - **Comparison:** on 138 held-out transmissions, the Nemotron comparison was **not run** (it needs Nightshift); the fine-tuned 4B scores 0.652.
   - **Pre-existing (Raleigh):** the DGX Spark runtime, and local Nemotron 3.5 Lightning tool calling.
-- **Meterless Engine:** [if the H-MEM spec was implemented: "H-MEM as runway memory: every reservation and open obligation stored per runway; the Evaluator and Explainer retrieve the runway's open items when a new clearance arrives; test `tests/test_meterless_engine.py`". Otherwise write exactly: "Not integrated. A local runway memory with the same role runs in its place (`lib/gmaps_core/engines/runway_memory.py`, tested)."]
+- **Meterless Engine:** Not integrated. A local runway memory with the same role runs in its place (`lib/gmaps_core/engines/runway_memory.py`, tested).
 - **Zetaris:** Not integrated. The table design (identifiers, transmissions, ledger rows) and an idempotent loader are ready (`tools/zetaris_load.py --dry-run`). The agent reads and writes through a local store with the same interface.
 - **What is unique:** the cloud model never has the last word. Every Nemotron answer passes a deterministic grounding rule against the transmission text and the airport's identifier table. A failed or ungrounded answer becomes a visible escalation or a labelled fallback, never a guess. The trace that proves which model answered is also the offline fixture judges replay.
 
@@ -64,6 +64,6 @@ Live: install Meterless Nightshift, add NVIDIA in Providers, then `export NIGHTS
 ## Demo video script (about 2 min 30 s)
 1. **0:00–0:20 · The problem.** "A controller clears a landing on runway 4, then a crossing at Golf. Today nothing cross-checks the two." Show `lga_scene.html`, scenario 1, AS-IS on the left.
 2. **0:20–1:10 · Side by side.** Play at 2×. At +28 s the WITH GMAPS view turns 04/22 red: R1 CONFLICT names both authorizations. The look-ahead projects the overlap, and the simulated encounter comes at +54 s, 26 s after the first alert. Switch to scenario 4 (feed loss): "prediction unavailable, not 'no conflict'".
-3. **1:10–1:45 · The agents.** In a terminal, run `demo/run_open_agent.py --provider nightshift --scenario SIM_E3_STOP_NOT_OBSERVED`, then `tools/show_trace.py ... --calls`. Point at the explainer line with `model_reported = [Nemotron id]`, the evaluator line "accepted", and the R13 escalation.
-4. **1:45–2:05 · The fine-tune.** Show the paired-bars chart (0.254 → 0.652) and the HF page, plus the Nemotron-vs-4B bar if it has finished.
+3. **1:10–1:45 · The agents.** In a terminal, run `demo/run_open_agent.py --provider nightshift --scenario SIM_E3_STOP_NOT_OBSERVED`, then `tools/show_trace.py ... --calls`. Nightshift live run: not run, so point at the explainer line showing `provider_unavailable` and the labelled fallback, the evaluator line "accepted", and the R13 escalation.
+4. **1:45–2:05 · The fine-tune.** Show the paired-bars chart (0.254 → 0.652) and the HF page, (the Nemotron-vs-4B comparison did not run).
 5. **2:05–2:30 · Sponsors and limits.** Nightshift is the provider, and NVIDIA Nemotron does the explanations. Then say plainly which sponsor pieces are not integrated. Everything is simulated, decision support only.

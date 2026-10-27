@@ -24,8 +24,8 @@ New work is the commit range **`e97a9a1..HEAD` on branch `open-agent-2026`**. Ne
 
 | sponsor | status at push time | where |
 |---|---|---|
-| **Nightshift** (AI provider) | **built; live run pending on the Spark.** The build session had no Nightshift credentials, so no live call has been made. `model_reported` and latency come from the recorded run (see below). | `lib/gmaps_core/providers/nightshift.py` |
-| **NVIDIA Nemotron** (via Nightshift) | model id from `NIGHTSHIFT_MODEL` (Nemotron 3.5 Lightning 30B-A3B as listed by Nightshift). It is used for the residue parse and the two-sentence explainer. | trace lines with `role: executor/explainer` |
+| **Nightshift** (AI provider) | **built; Nightshift live run: not run.** Nightshift was not listening on the Spark (ports 8088/18088) at 23:09 UTC on 27 Oct 2026 and no runtime key was present, while vLLM was serving `nemotron-3-nano-30b-a3b-nvfp4` on 127.0.0.1:8002, so no live call was made through Nightshift and there is no `model_reported` or latency to report. | `lib/gmaps_core/providers/nightshift.py` |
+| **NVIDIA Nemotron** (via Nightshift) | model id from `NIGHTSHIFT_MODEL` (intended: the local `nemotron-3-nano-30b-a3b-nvfp4` behind Nightshift; not called, since Nightshift was not running). It is used for the residue parse and the two-sentence explainer. | trace lines with `role: executor/explainer` |
 | **Meterless** (one engine) | **not integrated** | `lib/gmaps_core/engines/meterless_hmem.py`, `runs/tests/meterless_*.txt` |
 | **Zetaris** (data layer) | **not integrated** | `lib/gmaps_core/data/zetaris_store.py`, `runs/tests/zetaris_*.txt` |
 
@@ -69,7 +69,7 @@ The agent reads identifiers and transmissions, and writes ledger rows, through `
 | model | where it runs | role in the loop | status |
 |---|---|---|---|
 | **gmaps-parser**: Qwen3-4B-Instruct-2507 + LoRA ([model](https://huggingface.co/darkstar008/gmaps-parser-qwen3-4b-lora), [data](https://huggingface.co/datasets/darkstar008/gmaps-parser-qwen3-4b-lora-data)) | local vLLM on the DGX Spark (`GMAPS_PROVIDER=local`, `LocalLLM`) | types the transmissions the grammar cannot (configuration A) | **pre-existing**, published before this hackathon |
-| **NVIDIA Nemotron 30B** (Nemotron 3.5 Lightning 30B-A3B, id per Nightshift) | Nightshift (`GMAPS_PROVIDER=nightshift`) | residue parse in the agent loop, two-sentence explanation of every warning | **new**; live run pending at push time |
+| **NVIDIA Nemotron 30B** (intended: `nemotron-3-nano-30b-a3b-nvfp4`, served locally by vLLM) | Nightshift (`GMAPS_PROVIDER=nightshift`) | residue parse in the agent loop, two-sentence explanation of every warning | **new**; Nightshift live run: not run |
 
 The Raleigh 33B cap does not apply in this hackathon, so the local 4B parser and Nemotron via Nightshift are one system here.
 
@@ -86,7 +86,7 @@ Pre-existing parser results (SIMULATED held-out sets, same verifier; from the pu
 - **A second adapter on all 7,065 pairs for 2 epochs scored lower** (0.609 / 0.674 / 0.761, `eval/results/brev/`). It is reported, not submitted.
 
 **New this week: Nemotron vs the fine-tuned 4B.** `eval/run_provider_compare.py --set heldout4_asr --provider nightshift` runs the same 138 transmissions with the same prompt and the same verifier (`gym/resources_servers/gmaps_parser/app.py`). It writes `eval/results/open_agent_2026/nemotron_vs_parser_heldout4_asr.json`, and `tools/release_charts.py --open-agent-compare` draws the chart from that JSON.
-- **Status at push time: not run** (no credentials in the build session). No number is claimed.
+- **Nightshift live run: not run** (Nightshift not listening on the Spark, no runtime key). No number is claimed.
 - The verdict sentence below is filled in only from the JSON:
   - If Nemotron scores higher: *the fine-tune still runs locally for privacy and latency, and Nemotron takes the residue and the explanation.*
   - If the 4B scores higher: *that is why the specialized small model stays in the loop, and Nemotron does planning and explanation.*
@@ -134,6 +134,6 @@ Fields per line: ts, run_id, scenario, step, role, provider, model_requested, mo
 - Simulated traffic, synthetic phraseology, simulated positions. The look-ahead runs only on the fictional SIM-1 model. The LaGuardia view (`ui_scaffold/lga_scene.html`) uses the real LGA layout (OSM, ODbL) with the fictional SIM scenarios placed on it, and depicts no real event. Its look-ahead is the SIM-1 computation drawn on LGA geometry; its ledger runs on LGA identifiers.
 - Decision support only: alerts go to the display, never to a radio frequency, and no model has shell access. Tools are bounded to parse, ingest, look-ahead, list warnings, explain and post alert.
 - **Not integrated:** Meterless (H-MEM), Zetaris.
-- **Nightshift:** built, tested against a local mock server for code paths only, and live run pending at push time.
+- **Nightshift:** built, tested against a local mock server for code paths only, and Nightshift live run: not run.
 - The Planner, Evaluator and Risk roles are deterministic code by design (safety). The model-backed roles are the residue parse and the Explainer.
 - Pre-existing test status in the build container: `tests/run_all.py` → 82 passed, 37 skipped, 1 FAILED. The failing check reads a private labels file outside the repo (`~/gmaps_venue/labels/real_clip_sets.json`). New tests: 12 passed, 2 skipped (live Meterless, live Zetaris), plus the live Nightshift smoke skipped without a key (`runs/tests/`).

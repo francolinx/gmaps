@@ -109,7 +109,7 @@ text(s, 'Qwen3-4B-Instruct-2507 + LoRA "gmaps-parser", local vLLM on the DGX Spa
         'huggingface.co/darkstar008/gmaps-parser-qwen3-4b-lora', 7.1, 2.2, 5.8, 2.6, 14, INK)
 text(s, 'Nemotron 30B via Nightshift (new)', 7.1, 4.75, 5.8, 0.5, 19, TEAL, bold=True)
 text(s, 'Residue parse and the two-sentence explanation of every warning, through Nightshift (OpenAI-compatible). '
-        'model_reported is logged on every call. Live run on the Spark pending at the time this deck was written.', 7.1, 5.25, 5.8, 1.6, 14, INK)
+        'model_reported is logged on every call. Nightshift live run: not run.', 7.1, 5.25, 5.8, 1.6, 14, INK)
 text(s, 'SIMULATED data. Charts and numbers: docs/model_card/, docs/PAIRED_STATS.md.', 0.5, 6.9, 7, 0.4, 11, DIM)
 
 # 6-8 product visuals
@@ -127,7 +127,7 @@ for name, title, cap in [('lga_SIM_E1_CROSS_DURING_ROLLOUT_40.png', 'LaGuardia v
 # 9 sponsor tech
 s = slide('Sponsor technology: what is real today', 'SPONSOR TECH')
 bullets(s, ['Meterless Nightshift:|NightshiftLLM (OpenAI-compatible, key from the environment, temperature 0, one retry on 5xx, typed "provider_unavailable"). '
-            'It is the primary provider for every model call in the loop. Live Nemotron run on the Spark pending at time of writing.',
+            'It is the primary provider for every model call in the loop. Nightshift live run: not run.',
             'NVIDIA:|Nemotron 30B through Nightshift for the residue parse and the explainer; the fine-tuned 4B and the DGX Spark runtime are pre-existing.',
             'Meterless Engine (H-MEM as runway memory):|not integrated. A local runway memory with the same interface (put / open_items / close) runs and is tested; '
             'trace lines say engine: local.runway_memory.',
