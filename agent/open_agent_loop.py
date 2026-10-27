@@ -9,8 +9,9 @@ Distinct roles over one shared state (the ledger, plus the runway memory engine)
              a second rejection ESCALATES ('needs readback', shown to the controller) instead of guessing.
   Risk       runs the SIM-1 look-ahead each second while a shared zone is watched; when positions are stale or missing it
              returns 'prediction unavailable', which is not 'no conflict'.
-  Explainer  the model writes two plain sentences for each new warning; the Evaluator checks them; on rejection or provider
-             failure the ledger's own rule text is shown, labelled as such (fallback).
+  Explainer  the model writes two plain sentences for each new warning; the Evaluator checks them deterministically;
+  Critic     a second model call reviews the draft against the facts; one revision round with its feedback; on rejection or
+             provider failure the ledger's own rule text is shown, labelled as such (fallback).
   Alert      posts to the display only (GMAPS never transmits on a radio frequency).
 A warning means two recorded authorizations, or an open obligation, at time t. Decision support only; the controller decides.
 Every transition is one trace line (gmaps_core.trace). The predictor never reads the evaluation truth or label folders.
@@ -60,7 +61,7 @@ class OpenAgent:
 
     def _call(self, step, role, fn, *a):
         out = fn(*a)
-        call = out.get('_call') if isinstance(out, dict) else (out.call if isinstance(out, Unavailable) else getattr(self.llm, 'last_call', {}))
+        call = out['_call'] if isinstance(out, dict) and '_call' in out else (out.call if isinstance(out, Unavailable) else getattr(self.llm, 'last_call', {}))
         self.model_calls.append({k: call.get(k) for k in ('provider', 'model_reported', 'latency_ms', 'replayed_from')} | {'step': step})
         return out, call
 
@@ -143,17 +144,31 @@ class OpenAgent:
         return comb
 
     def explainer(self, facts, fallback_text, fallback_label='ledger rule text'):
+        """Explainer drafts -> Evaluator (deterministic check) -> Critic (model) reviews against the facts; one revision round
+        with the critic's issue as feedback; anything still rejected falls back to the labelled rule text."""
         model_facts = {k: v for k, v in facts.items() if k != 'alert_id'}   # ids come from process-wide counters: kept out so replays match
-        out, call = self._call('explain', 'explainer', self.llm.explain_warning, model_facts)
-        if isinstance(out, Unavailable):
-            self.tr.log_call('explain', 'explainer', call, 'unavailable', grounding=None, t=facts.get('t'), alert=facts['alert_id'])
-            return fallback_text, f'{fallback_label} (provider unavailable: {out.reason[:80]})', call.get('model_reported')
-        ok, verdict = check_explanation(out, facts)
-        self.tr.log_call('explain', 'explainer', call, 'accepted' if ok else 'rejected', grounding=verdict, t=facts.get('t'), alert=facts['alert_id'])
-        self.tr.log('evaluate_explanation', 'evaluator', 'accepted' if ok else 'rejected', grounding=verdict, t=facts.get('t'))
-        if ok:
-            return out, f"{call.get('provider')} · {call.get('model_reported') or call.get('model_requested')}", call.get('model_reported')
-        return fallback_text, f'{fallback_label} (model answer rejected: {verdict})', call.get('model_reported')
+        feedback = None
+        for rnd in (1, 2):
+            out, call = self._call('explain', 'explainer', self.llm.explain_warning, model_facts, feedback)
+            if isinstance(out, Unavailable):
+                self.tr.log_call('explain', 'explainer', call, 'unavailable', grounding=None, t=facts.get('t'), alert=facts['alert_id'], round=rnd)
+                return fallback_text, f'{fallback_label} (provider unavailable: {out.reason[:80]})', call.get('model_reported')
+            ok, verdict = check_explanation(out, facts)
+            self.tr.log_call('explain', 'explainer', call, 'accepted' if ok else 'rejected', grounding=verdict, t=facts.get('t'), alert=facts['alert_id'], round=rnd)
+            self.tr.log('evaluate_explanation', 'evaluator', 'accepted' if ok else 'rejected', grounding=verdict, t=facts.get('t'), round=rnd)
+            if not ok:
+                return fallback_text, f'{fallback_label} (model answer rejected: {verdict})', call.get('model_reported')
+            crit, ccall = self._call('critique', 'critic', self.llm.critique_explanation, model_facts, out)
+            if isinstance(crit, Unavailable):   # the deterministic check passed; the critic could not review: shown, and labelled so
+                self.tr.log_call('critique', 'critic', ccall, 'unavailable', grounding=None, t=facts.get('t'), alert=facts['alert_id'], round=rnd)
+                return out, f"{call.get('provider')} · {call.get('model_reported') or call.get('model_requested')} (critic unavailable)", call.get('model_reported')
+            self.tr.log_call('critique', 'critic', ccall, 'accepted' if crit['supported'] else 'retried' if rnd == 1 else 'rejected',
+                             grounding=crit['issue'] or 'supported', t=facts.get('t'), alert=facts['alert_id'], round=rnd)
+            if crit['supported']:
+                tag = ' · revised after critique' if rnd == 2 else ''
+                return out, f"{call.get('provider')} · {call.get('model_reported') or call.get('model_requested')} · critic: supported{tag}", call.get('model_reported')
+            feedback = crit['issue'] or 'a claim is not supported by the facts'
+        return fallback_text, f'{fallback_label} (critic rejected the revision: {feedback[:80]})', call.get('model_reported')
 
     def post_alert(self, t, alert_id, severity, headline, explanation, source, model_reported):
         self.display.append({'t': t, 'alert_id': alert_id, 'severity': severity, 'headline': headline, 'explanation': explanation,

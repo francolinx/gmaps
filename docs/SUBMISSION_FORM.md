@@ -24,7 +24,8 @@ New work is commit range `e97a9a1..HEAD` on `main`.
    - Executor: runs the bounded tools.
    - Evaluator: applies a grounding rule to every model answer, retries once with the airport vocabulary, then escalates "needs readback".
    - Risk: SIM-1 look-ahead; "prediction unavailable" when positions are stale.
-   - Explainer: Nemotron writes the two sentences; the Evaluator checks them and falls back to the ledger text if needed.
+   - Explainer: Nemotron writes the two sentences, and the Evaluator checks them deterministically.
+   - Critic: a second Nemotron call reviews the draft against the warning facts. If it rejects the draft, the Explainer revises once with that feedback; if still rejected, the labelled ledger text is shown.
    - Alert: display only.
 2. **Meterless Nightshift as the AI provider** (`lib/gmaps_core/providers/nightshift.py`): OpenAI-compatible, local Console URL, runtime key from the environment, `meterless-app` / `meterless-scope` headers, one retry, a typed "unavailable" result instead of a guess.
 3. **Traces** (`lib/gmaps_core/trace.py`, `tools/show_trace.py`): one JSON line per step and per model call, with `model_requested` and `model_reported`.

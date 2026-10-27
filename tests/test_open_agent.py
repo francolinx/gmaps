@@ -39,7 +39,9 @@ class Mock(BaseHTTPRequestHandler):
             Mock.fail_next -= 1
             self.send_response(503); self.end_headers(); self.wfile.write(b'busy'); return
         user = body['messages'][-1]['content']
-        if 'Transmission:' in user:
+        if 'Explanation:' in user:
+            content = json.dumps({'supported': Mock.mode != 'critic_no', 'issue': '' if Mock.mode != 'critic_no' else 'states a time not in the facts'})
+        elif 'Transmission:' in user:
             if Mock.mode == 'bad_parse':
                 content = json.dumps({'speech_act': 'instruction', 'kind': 'CROSS', 'callsigns': ['RESCUE7'], 'runway': '27', 'route': None,
                                       'hold_short': None, 'crossing_at': 'K', 'confidence_note': ''})
@@ -47,7 +49,7 @@ class Mock(BaseHTTPRequestHandler):
                 content = json.dumps({'speech_act': 'instruction', 'kind': 'CROSS', 'callsigns': ['RESCUE7'], 'runway': '36', 'route': None,
                                       'hold_short': None, 'crossing_at': 'K', 'confidence_note': ''})
         else:
-            facts = json.loads(user.split('\n', 1)[1])
+            facts = json.JSONDecoder().raw_decode(user.split('\n', 1)[1])[0]
             cs = ' and '.join(facts['callsigns'])
             content = (f'Recorded authorizations for {cs} share runway 36 at t+{facts["t"]}. The rule flags them because both hold the same runway at this time.'
                        if Mock.mode != 'bad_explain' else f'{cs}. This would have prevented it. Three. Four.')
@@ -109,7 +111,7 @@ class OpenAgentTests(unittest.TestCase):
     def test_agent_explainer_accepted_then_offline_replay_matches(self):
         out, tr = self.run_agent('SIM_E3_STOP_NOT_OBSERVED', self.llm(), 'mock-e3')
         srcs = [a['explanation_source'] for a in out['alerts']]
-        self.assertTrue(out['alerts'] and all(MOCK_MODEL in s for s in srcs), srcs)
+        self.assertTrue(out['alerts'] and all(MOCK_MODEL in s and 'critic: supported' in s for s in srcs), srcs)
         rec = self.tmp / 'rec'; rec.mkdir(exist_ok=True)
         shutil.copy(tr.path, rec / 'SIM_E3_STOP_NOT_OBSERVED.jsonl')
         replay, tr2 = self.run_agent('SIM_E3_STOP_NOT_OBSERVED', SampleLLM(traces_dir=rec), 'replay-e3')
@@ -122,6 +124,15 @@ class OpenAgentTests(unittest.TestCase):
         out, tr = self.run_agent('SIM_E1_CROSS_DURING_ROLLOUT', self.llm(), 'mock-e1-bad')
         self.assertTrue(all('model answer rejected' in a['explanation_source'] for a in out['alerts']))
         self.assertTrue(any(r['step'] == 'evaluate_explanation' and r['outcome'] == 'rejected' for r in read(tr.path)))
+
+    def test_critic_rejects_twice_then_labelled_fallback(self):
+        Mock.mode = 'critic_no'
+        out, tr = self.run_agent('SIM_E1_CROSS_DURING_ROLLOUT', self.llm(), 'mock-e1-critic')
+        self.assertTrue(all('critic rejected the revision' in a['explanation_source'] for a in out['alerts']), [a['explanation_source'] for a in out['alerts']])
+        rows = read(tr.path)
+        self.assertIn(('critique', 'retried'), [(r['step'], r['outcome']) for r in rows])
+        self.assertTrue(any(r['step'] == 'explain' and r.get('round') == 2 for r in rows))
+        self.assertIn('reviewer rejected your previous draft', [c for c in Mock.calls if 'reviewer rejected' in c['body']['messages'][-1]['content']][0]['body']['messages'][-1]['content'])
 
     def test_residue_retry_then_escalate(self):
         Mock.mode = 'bad_parse'

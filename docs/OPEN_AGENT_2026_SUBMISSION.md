@@ -37,7 +37,7 @@ New work is the commit range **`e97a9a1..HEAD` on branch `open-agent-2026`**. Ne
 
 **What Nemotron does.**
 1. **Residue parse.** When the grammar cannot type a transmission, the Planner sends it to Nemotron with the pre-existing `RESIDUE_SYSTEM_PROMPT` / `RESIDUE_SCHEMA`. The Evaluator applies the grounding rule: kind words, callsign digits and name, runway number and taxiway must be heard, and the runway and taxiway must be on the airport's identifier list. On rejection it retries once with the airport vocabulary in the prompt. A second rejection escalates "needs readback" to the controller instead of guessing.
-2. **Explainer.** For each new warning, Nemotron writes two plain sentences from the warning's facts: both authorizations, rule id, times, and the runway's open items from runway memory. The Evaluator rejects text with more than two sentences, a missing callsign, "would have prevented" or "channel". The display then shows the ledger's own rule text, labelled as a fallback.
+2. **Explainer and Critic.** A second Nemotron call reviews each draft against the facts, with one revision round on its feedback. For each new warning, Nemotron writes two plain sentences from the warning's facts: both authorizations, rule id, times, and the runway's open items from runway memory. The Evaluator rejects text with more than two sentences, a missing callsign, "would have prevented" or "channel". The display then shows the ledger's own rule text, labelled as a fallback.
 
 In the three demo scenarios the grammar types every line. So Nemotron's work in those runs is the explainer, and the residue path is exercised by `tools/nightshift_smoke.py` and by the tests.
 
