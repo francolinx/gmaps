@@ -49,12 +49,15 @@ async def main():
     ap.add_argument('--deadline-utc', default=None, help='HH:MM (UTC, today): stop starting new tasks after this time')
     ap.add_argument('--exclude-airport', action='append', default=[])
     ap.add_argument('--max-tokens', type=int, default=160)
+    ap.add_argument('--limit', type=int, default=0, help='score only the first N tasks (a fixed prefix; n is recorded)')
     a = ap.parse_args()
     if a.model:
         os.environ['NIGHTSHIFT_MODEL'] = a.model
     prov = get_provider(a.provider)
     tasks = [json.loads(l) for l in open(REPO / f'gym/environments/gmaps_parser/data/{a.set}.jsonl')]
     tasks = [t for t in tasks if t['airport'] not in a.exclude_airport]
+    if a.limit:
+        tasks = tasks[:a.limit]
     deadline = None
     if a.deadline_utc:
         h, m = map(int, a.deadline_utc.split(':'))
