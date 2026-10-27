@@ -14,6 +14,7 @@ New work is the commit range **`e97a9a1..HEAD` on branch `open-agent-2026`**. Ne
 - `agent/open_agent_loop.py`: the Planner / Executor / Evaluator / Risk / Explainer / Alert loop
 - `demo/run_open_agent.py`, `demo/record_open_agent.sh`
 - `tools/show_trace.py`, `tools/nightshift_smoke.py`, `tools/zetaris_load.py`
+- `eval/run_provider_compare.py`; the `--open-agent-compare` chart in `tools/release_charts.py` (other charts unchanged, verified byte-identical); `docs/model_card/` (copies of the pre-existing published cards)
 - `tests/test_open_agent.py`, `tests/test_meterless_engine.py`, `tests/test_zetaris_store.py`, plus a hook in `tests/run_all.py`
 - `.env.example`, this document, the README section
 - One small change to `ui_scaffold/demo.html`: the status line shows the agent's provider, the model it reported, and the last step. The AS-IS / WITH GMAPS playback is untouched.
@@ -61,6 +62,52 @@ The agent reads identifiers and transmissions, and writes ledger rows, through `
 - The cloud model never has the last word. Every answer passes a deterministic grounding rule against the transmission text and the airport's identifier table.
 - A failed or ungrounded answer becomes a visible escalation or a labelled fallback, never a silent guess.
 - Every step is a trace line that names the model that handled it, and that trace is also the offline fixture judges can replay with no key.
+
+## Models that do the work
+
+| model | where it runs | role in the loop | status |
+|---|---|---|---|
+| **gmaps-parser**: Qwen3-4B-Instruct-2507 + LoRA ([model](https://huggingface.co/darkstar008/gmaps-parser-qwen3-4b-lora), [data](https://huggingface.co/datasets/darkstar008/gmaps-parser-qwen3-4b-lora-data)) | local vLLM on the DGX Spark (`GMAPS_PROVIDER=local`, `LocalLLM`) | types the transmissions the grammar cannot (configuration A) | **pre-existing**, published before this hackathon |
+| **NVIDIA Nemotron 30B** (Nemotron 3.5 Lightning 30B-A3B, id per Nightshift) | Nightshift (`GMAPS_PROVIDER=nightshift`) | residue parse in the agent loop, two-sentence explanation of every warning | **new**; live run pending at push time |
+
+The Raleigh 33B cap does not apply in this hackathon, so the local 4B parser and Nemotron via Nightshift are one system here.
+
+Pre-existing parser results (SIMULATED held-out sets, same verifier; from the published card, copied to `docs/model_card/`):
+
+| held-out set | n | untuned base | grammar | **gmaps-parser** |
+|---|---|---|---|---|
+| Whisper text (heldout4_asr), record exact | 138 | 0.254 | 0.377 | **0.652** |
+| blind scripted (heldout5_script), record exact | 414 | 0.365 | 0.773 | **0.906** |
+| Whisper text, correct AND accepted by the runtime | 138 | 0.239 | 0.355 | **0.572** |
+
+- **Paired comparison on Whisper text:** +39.9 points, 95 % CI [+31.9, +48.6], McNemar p = 5.6e-17 (`docs/PAIRED_STATS.md`).
+- **Correct and accepted are reported separately:** a perfect answer passes the grounding rule 67.4 % of the time on Whisper text.
+- **A second adapter on all 7,065 pairs for 2 epochs scored lower** (0.609 / 0.674 / 0.761, `eval/results/brev/`). It is reported, not submitted.
+
+**New this week: Nemotron vs the fine-tuned 4B.** `eval/run_provider_compare.py --set heldout4_asr --provider nightshift` runs the same 138 transmissions with the same prompt and the same verifier (`gym/resources_servers/gmaps_parser/app.py`). It writes `eval/results/open_agent_2026/nemotron_vs_parser_heldout4_asr.json`, and `tools/release_charts.py --open-agent-compare` draws the chart from that JSON.
+- **Status at push time: not run** (no credentials in the build session). No number is claimed.
+- The verdict sentence below is filled in only from the JSON:
+  - If Nemotron scores higher: *the fine-tune still runs locally for privacy and latency, and Nemotron takes the residue and the explanation.*
+  - If the 4B scores higher: *that is why the specialized small model stays in the loop, and Nemotron does planning and explanation.*
+- About half of heldout4 uses synthetic KLGA identifiers. `--exclude-airport KLGA` scores the comparison without them, with every row on the same tasks.
+
+## If registered in Nightshift
+If Nightshift's Providers tab accepts a custom OpenAI-compatible endpoint, register the Spark's vLLM so every model call goes through Nightshift. This requires the Spark's port to be reachable by Nightshift:
+```
+Nightshift custom provider: OpenAI-compatible, base URL http://<spark-address>:8001/v1, model gmaps-parser
+GMAPS: python3 eval/run_provider_compare.py --set heldout4_asr --provider nightshift --model <id Nightshift lists for gmaps-parser>
+```
+If this is not done, the 4B is served locally by vLLM (unchanged), and Nightshift is the primary provider for all Nemotron calls.
+
+## Deck and video notes (for Franco)
+- **Slide "Two small models, one loop."**
+  - Left: the fine-tuned 4B with `docs/model_card/gmaps-parser/assets/base_vs_adapter.svg` and the HF link.
+  - Right: Nemotron 30B via Nightshift with one trace line showing `model_reported` (`python3 tools/show_trace.py samples/open_agent/traces/SIM_E1_CROSS_DURING_ROLLOUT.jsonl --calls`).
+  - Centre: the ledger as the shared state.
+- **Video, 20 seconds on the fine-tune:**
+  - the paired-bars chart;
+  - the HF model page;
+  - one live residue parse (`python3 tools/nightshift_smoke.py`) with the trace showing which model took it.
 
 ## (c) Sample mode (no credentials, no network)
 ```

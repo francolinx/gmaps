@@ -15,6 +15,44 @@ python3 tools/show_trace.py samples/open_agent/traces/SIM_E1_CROSS_DURING_ROLLOU
 python3 tests/run_all.py                                              # snapshot checks + open-agent tests
 ```
 
+### The fine-tuned parser: pre-existing, published before this hackathon
+Model [darkstar008/gmaps-parser-qwen3-4b-lora](https://huggingface.co/darkstar008/gmaps-parser-qwen3-4b-lora) · dataset [darkstar008/gmaps-parser-qwen3-4b-lora-data](https://huggingface.co/datasets/darkstar008/gmaps-parser-qwen3-4b-lora-data) · cards and charts copied in [`docs/model_card/`](docs/model_card/README.md).
+
+GMAPS runs two small models that do real work in one loop:
+- **Fine-tuned 4B parser** (Qwen3-4B + LoRA `gmaps-parser`, local vLLM on the DGX Spark, pre-existing). It types the transmissions the grammar cannot.
+- **NVIDIA Nemotron 30B via Nightshift** (new). It does the residue parse and the two-sentence explanations in the agent loop.
+
+The Raleigh 33B cap does not apply here, so they run as one system.
+
+| held-out set (SIMULATED, same verifier) | n | untuned base | grammar | **gmaps-parser** |
+|---|---|---|---|---|
+| Whisper text (heldout4_asr), record exact | 138 | 0.254 | 0.377 | **0.652** |
+| blind scripted (heldout5_script), record exact | 414 | 0.365 | 0.773 | **0.906** |
+| Whisper text, correct AND accepted by the runtime | 138 | 0.239 | 0.355 | **0.572** |
+
+- **Paired comparison on Whisper text:** +39.9 points, 95 % CI [+31.9, +48.6], McNemar p = 5.6e-17 (`docs/PAIRED_STATS.md`).
+- **Correct and accepted are reported separately:** a perfect answer passes the runtime grounding rule only 67.4 % of the time on Whisper text.
+- **A second adapter trained on all 7,065 pairs for 2 epochs scored lower** on every held-out set (0.609 / 0.674 / 0.761, `eval/results/brev/`). It is reported, and the 3,000-pair adapter is the one published.
+
+![Untuned base vs gmaps-parser on Whisper text](docs/model_card/gmaps-parser/assets/base_vs_adapter.svg)
+
+*Same base model, same server, same transmissions: the adapter against the untuned base, with the paired interval and the McNemar test.*
+
+![Record exact on three held-out sets](docs/model_card/gmaps-parser/assets/record_exact.svg)
+
+*Record exact (all five fields right) on three held-out sets: untuned base, hand-written grammar and gmaps-parser, scored by the same verifier.* This chart carries both the blind-set bars and the grammar baseline.
+
+![Correct and accepted on three held-out sets](docs/model_card/gmaps-parser/assets/correct_and_accepted.svg)
+
+*Correct AND accepted by the runtime grounding rule. The dashed line is what a perfect answer reaches on Whisper text: the ceiling the speech recognizer imposes.*
+
+![Submitted adapter vs the full-data adapter](docs/model_card/gmaps-parser/assets/more_data_scored_lower.svg)
+
+*A second adapter trained on all pairs for 2 epochs scored lower on every held-out set. Both were scored on one machine with the same task files; the 3,000-pair adapter is the one published here.*
+
+### New this week: Nemotron via Nightshift vs the fine-tuned 4B on the same held-out set
+`eval/run_provider_compare.py` runs the same 138 Whisper-text transmissions with the same prompt and verifier. **Status at push time: not run.** The build session had no Nightshift credentials, so there are no numbers yet. Run it on the Spark (see `docs/OPEN_AGENT_2026_SUBMISSION.md`). The chart `docs/model_card/open_agent_2026/nemotron_vs_parser.png` is drawn only from the resulting JSON.
+
 ## What GMAPS is
 GMAPS is a controller-side cross-check for the tower: it turns radio speech into typed instructions and keeps a ledger of who has been cleared to do what on each runway. It warns when two recorded authorizations, or an open obligation such as an unacknowledged "stop", hold the same runway at the same time, and every warning names both sides and the rule it cites. On a fictional map with simulated surveillance it also projects whether two movers will meet at a shared zone, and when that projection cannot be trusted it says "prediction unavailable", which is not the same as "no conflict". Everything here is SIMULATED; GMAPS is decision support, it never transmits, and the controller decides.
 

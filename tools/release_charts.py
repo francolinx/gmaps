@@ -354,12 +354,43 @@ def verify():
     return len(good) == len(CHARTS)
 
 
+def chart_open_agent(compare_json, out):
+    """Open Agent Hackathon 2026: record exact for grammar / untuned 4B / fine-tuned 4B / Nemotron via Nightshift on the SAME tasks,
+    every value read from eval/results/open_agent_2026/nemotron_vs_parser_<set>.json (written by eval/run_provider_compare.py)."""
+    d = json.loads(Path(compare_json).read_text())
+    rows = [r for r in d['comparison'] if not r.get('missing')]
+    nem = rows[-1]
+    if not nem.get('n'):
+        sys.exit('no Nemotron rows scored: nothing to chart')
+    colors = [GREEN, GREY, BLUE, '#76b900']
+    short = ['grammar\n(no model)', 'untuned 4B\n(local)', 'fine-tuned 4B\ngmaps-parser (local)', 'Nemotron 30B\nvia Nightshift']
+    n = nem['n']
+    part = f"first {n} of {d['tasks_in_set']} (deadline)" if d.get('stopped') else f'all {n}'
+    f = fig(6.4, f"Record exact on {d['set']}: {part} transmissions",
+            f"same tasks, prompt and verifier for every bar · Nemotron: {', '.join(nem.get('model_reported') or ['model id not reported'])}")
+    ax = f.add_axes([0.08, 0.2, 0.9, 0.58])
+    for i, r in enumerate(rows):
+        v = r['record_exact']
+        ax.bar(i, v, color=colors[i % len(colors)], width=0.62)
+        label(ax, 'open_agent', i, v + 0.01, v, 3, (r['system'], d['set']))
+    ax.set_xticks(range(len(rows)), short[:len(rows)]); TEXTS.extend(short)
+    ax.set_ylim(0, 1.05); ax.set_ylabel('record exact (all five fields)')
+    f.text(0.98, 0.012, f"n = {n} · eval/results/open_agent_2026/{Path(compare_json).name}", fontsize=11, color=GREY, ha='right', va='bottom')
+    out = Path(out); out.mkdir(parents=True, exist_ok=True)
+    return save(f, out, 'nemotron_vs_parser')
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument('--out', required=True, help='directory for the model-card charts (<bundle>/assets)')
+    ap.add_argument('--out', help='directory for the model-card charts (<bundle>/assets)')
+    ap.add_argument('--open-agent-compare', help='Open Agent 2026: draw ONLY the Nemotron-vs-parser chart from this JSON into --out')
     ap.add_argument('--dataset-out', help='directory for the dataset-card chart (<bundle>/dataset/assets)')
     ap.add_argument('--verify', action='store_true')
     a = ap.parse_args(argv)
+    if not a.out:
+        ap.error('--out is required')
+    if a.open_agent_compare:
+        print(f'open_agent: {a.out}/{chart_open_agent(a.open_agent_compare, Path(a.out).expanduser())}.png'); return
     out = Path(a.out).expanduser(); out.mkdir(parents=True, exist_ok=True)
     for k, fn in CHARTS.items():
         print(f'{k}: {out}/{fn(out)}.png')
